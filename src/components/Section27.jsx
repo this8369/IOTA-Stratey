@@ -38,7 +38,7 @@ export default function Section27({ isActive }) {
                     
                     {/* Key Drivers */}
                     <div className={`relative w-full md:w-[500px] flex flex-col gap-3 transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
-                        <div className="text-[24px] font-black text-left text-[#1d1d1f] mb-2">{lang === 'kr' ? '5대 핵심 동력' : '5 Core Drivers'}</div>
+                        <div className="text-[24px] font-black text-left text-[#1d1d1f] mb-0">{lang === 'kr' ? '5대 핵심 동력' : '5 Core Drivers'}</div>
                         
                         <div className="flex items-center gap-4 bg-gray-50 border border-gray-200 p-4 rounded-xl shadow-sm text-left">
                             <div className="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center font-black text-[22px]">1</div>
@@ -74,7 +74,7 @@ export default function Section27({ isActive }) {
                     </div>
 
                     {/* Valuation Comparison */}
-                    <div className={`relative w-[460px] flex flex-col items-center bg-purple-900 rounded-[30px] shadow-xl p-8 transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-200 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className={`relative w-[460px] flex flex-col items-center bg-purple-900 rounded-[30px] shadow-xl p-8 mt-[10px] transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-200 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <div className="text-[20px] font-black text-purple-200 mb-8">{lang === 'kr' ? '2026.05 밸류에이션 비교' : 'May 2026 Valuation Comparison'}</div>
                         
                         <div className="w-full flex justify-between items-center relative py-4 px-2">
