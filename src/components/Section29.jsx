@@ -37,37 +37,37 @@ export default function Section29({ isActive }) {
                 <div className="relative w-full max-w-[1200px] mt-[40px] mb-[30px] h-auto flex flex-col md:flex-row items-stretch justify-center z-10 gap-6 md:gap-8">
                     
                     {/* CBD */}
-                    <div className={`flex-1 flex flex-col items-center bg-gray-50 border border-gray-100 rounded-[24px] p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:-translate-y-2 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className={`flex-1 flex flex-col items-center bg-gray-50 border border-gray-300 rounded-[24px] p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:-translate-y-2 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <div className="w-20 h-20 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center font-black text-[32px] mb-6 shadow-sm">CBD</div>
                         <h3 className="text-[26px] font-extrabold text-gray-900 mb-2">{lang === 'kr' ? '도심권역' : 'Central'}</h3>
                         <p className="text-[18px] font-bold text-gray-500 mb-6">{lang === 'kr' ? '광화문·시청·종로' : 'Gwanghwamun·Jongno'}</p>
                         <div className="w-full flex flex-col gap-3">
-                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-100 font-bold text-gray-700 shadow-sm">SFC (2002)</div>
-                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-100 font-bold text-gray-700 shadow-sm">종로타워 / 그랑서울 (2014)</div>
-                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-100 font-bold text-gray-700 shadow-sm">D타워 (2017) / 센트로폴리스 (2018)</div>
+                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-300 font-bold text-gray-700 shadow-sm">SFC (2002)</div>
+                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-300 font-bold text-gray-700 shadow-sm">종로타워 / 그랑서울 (2014)</div>
+                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-300 font-bold text-gray-700 shadow-sm">D타워 (2017) / 센트로폴리스 (2018)</div>
                         </div>
                     </div>
 
                     {/* GBD */}
-                    <div className={`flex-1 flex flex-col items-center bg-gray-50 border border-gray-100 rounded-[24px] p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:-translate-y-2 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className={`flex-1 flex flex-col items-center bg-gray-50 border border-gray-300 rounded-[24px] p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:-translate-y-2 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <div className="w-20 h-20 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center font-black text-[32px] mb-6 shadow-sm">GBD</div>
                         <h3 className="text-[26px] font-extrabold text-gray-900 mb-2">{lang === 'kr' ? '강남권역' : 'Gangnam'}</h3>
                         <p className="text-[18px] font-bold text-gray-500 mb-6">{lang === 'kr' ? '테헤란로 라인 핵심' : 'Teheran-ro Core'}</p>
                         <div className="w-full flex flex-col gap-3">
-                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-100 font-bold text-gray-700 shadow-sm">GFC (2001)</div>
-                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-100 font-bold text-gray-700 shadow-sm">파르나스타워 (2016)</div>
-                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-100 font-bold text-gray-700 shadow-sm">캐피탈타워 (1998)</div>
+                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-300 font-bold text-gray-700 shadow-sm">GFC (2001)</div>
+                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-300 font-bold text-gray-700 shadow-sm">파르나스타워 (2016)</div>
+                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-300 font-bold text-gray-700 shadow-sm">캐피탈타워 (1998)</div>
                         </div>
                     </div>
 
                     {/* YBD */}
-                    <div className={`flex-1 flex flex-col items-center bg-gray-50 border border-gray-100 rounded-[24px] p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:-translate-y-2 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className={`flex-1 flex flex-col items-center bg-gray-50 border border-gray-300 rounded-[24px] p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:-translate-y-2 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <div className="w-20 h-20 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center font-black text-[32px] mb-6 shadow-sm">YBD</div>
                         <h3 className="text-[26px] font-extrabold text-gray-900 mb-2">{lang === 'kr' ? '여의도권역' : 'Yeouido'}</h3>
                         <p className="text-[18px] font-bold text-gray-500 mb-6">{lang === 'kr' ? '두 번의 거대한 변곡점' : 'Two Major Turning Points'}</p>
                         <div className="w-full flex flex-col gap-3">
-                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-100 font-bold text-gray-700 shadow-sm">IFC 서울 (2012)</div>
-                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-100 font-bold text-gray-700 shadow-sm">파크원 Parc1 (2020)</div>
+                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-300 font-bold text-gray-700 shadow-sm">IFC 서울 (2012)</div>
+                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-300 font-bold text-gray-700 shadow-sm">파크원 Parc1 (2020)</div>
                             <div className="bg-transparent px-4 py-3"></div>
                         </div>
                     </div>

@@ -37,7 +37,7 @@ export default function Section30({ isActive }) {
                 <div className="relative w-full max-w-[1000px] mt-[40px] mb-[30px] h-auto flex flex-col md:flex-row items-center justify-center z-10 gap-10">
                     
                     {/* MBD */}
-                    <div className={`relative w-[400px] flex flex-col items-center bg-gray-50 border border-gray-100 rounded-[30px] p-10 shadow-xl hover:shadow-2xl transition-all duration-1000 hover:-translate-y-2 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                    <div className={`relative w-[400px] flex flex-col items-center bg-gray-50 border border-gray-300 rounded-[30px] p-10 shadow-xl hover:shadow-2xl transition-all duration-1000 hover:-translate-y-2 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
                         <div className="absolute -top-6 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-black text-[24px] px-6 py-2 rounded-full shadow-md">
                             MBD
                         </div>
@@ -45,10 +45,10 @@ export default function Section30({ isActive }) {
                         <p className="text-[18px] font-bold text-gray-500 mb-8">{lang === 'kr' ? 'R&D 융복합 클러스터' : 'R&D Convergence Cluster'}</p>
                         
                         <div className="w-full flex flex-col gap-4">
-                            <div className="flex flex-col items-center justify-center bg-white py-4 rounded-xl border border-gray-100 shadow-sm">
+                            <div className="flex flex-col items-center justify-center bg-white py-4 rounded-xl border border-gray-300 shadow-sm">
                                 <span className="font-bold text-[18px] text-gray-800">LG사이언스파크</span>
                             </div>
-                            <div className="flex flex-col items-center justify-center bg-white py-4 rounded-xl border border-gray-100 shadow-sm">
+                            <div className="flex flex-col items-center justify-center bg-white py-4 rounded-xl border border-gray-300 shadow-sm">
                                 <span className="font-bold text-[18px] text-gray-800">코오롱 One&Only타워</span>
                             </div>
                         </div>
@@ -59,7 +59,7 @@ export default function Section30({ isActive }) {
                     </div>
 
                     {/* BBD */}
-                    <div className={`relative w-[400px] flex flex-col items-center bg-gray-50 border border-gray-100 rounded-[30px] p-10 shadow-xl hover:shadow-2xl transition-all duration-1000 hover:-translate-y-2 ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
+                    <div className={`relative w-[400px] flex flex-col items-center bg-gray-50 border border-gray-300 rounded-[30px] p-10 shadow-xl hover:shadow-2xl transition-all duration-1000 hover:-translate-y-2 ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
                         <div className="absolute -top-6 bg-gradient-to-r from-teal-500 to-emerald-600 text-white font-black text-[24px] px-6 py-2 rounded-full shadow-md">
                             BBD
                         </div>
@@ -67,10 +67,10 @@ export default function Section30({ isActive }) {
                         <p className="text-[18px] font-bold text-gray-500 mb-8">{lang === 'kr' ? '한국의 실리콘밸리' : 'Silicon Valley of Korea'}</p>
                         
                         <div className="w-full flex flex-col gap-4">
-                            <div className="flex flex-col items-center justify-center bg-white py-4 rounded-xl border border-gray-100 shadow-sm">
+                            <div className="flex flex-col items-center justify-center bg-white py-4 rounded-xl border border-gray-300 shadow-sm">
                                 <span className="font-bold text-[18px] text-gray-800">판교테크노밸리</span>
                             </div>
-                            <div className="flex flex-col items-center justify-center bg-white py-4 rounded-xl border border-gray-100 shadow-sm">
+                            <div className="flex flex-col items-center justify-center bg-white py-4 rounded-xl border border-gray-300 shadow-sm">
                                 <span className="font-bold text-[18px] text-gray-800">알파돔시티 / K-스퀘어</span>
                             </div>
                         </div>
