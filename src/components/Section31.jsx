@@ -34,40 +34,105 @@ export default function Section31({ isActive }) {
                     {lang === 'kr' ? '코로나 이후의 급반등, 사실상 완전 임차에 도달하다' : 'Rapid Rebound Post-COVID, Reaching Full Occupancy'}
                 </h2>
 
-                <div className="relative w-full max-w-[1100px] mt-[40px] mb-[30px] h-auto flex flex-col items-center justify-center z-10 gap-8">
+                <div className="relative w-full max-w-[1100px] mt-[40px] mb-[20px] h-auto flex flex-col items-center justify-center z-10 gap-4">
                     
-                    {/* Vacancy Highlight Box */}
-                    <div className={`relative w-full flex flex-col md:flex-row items-center justify-between bg-gradient-to-br from-gray-900 to-black rounded-[30px] p-10 shadow-2xl transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-95'}`}>
+                    {/* Timeline Graph */}
+                    <div className={`w-full h-[150px] relative mb-2 transition-all duration-1000 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                        {/* SVG Line */}
+                        <svg className="absolute top-[50px] left-0 w-full h-[50px] z-0 overflow-visible" preserveAspectRatio="none" viewBox="0 0 100 100">
+                            <path 
+                                d="M 10,50 L 30,0 L 50,60 L 70,30 L 90,100" 
+                                fill="none" stroke="#cbd5e1" strokeWidth="3" vectorEffect="non-scaling-stroke" 
+                                strokeDasharray="6 6"
+                            />
+                        </svg>
+
+                        {/* Points & Labels */}
+                        <div className="absolute w-full h-full flex justify-between items-center z-10">
+                            
+                            {/* Point 1 */}
+                            <div className="flex flex-col items-center justify-center absolute left-[10%] -translate-x-1/2" style={{ top: 'calc(50px + 50px * 0.5 - 8px)' }}>
+                                <div className="w-4 h-4 rounded-full bg-blue-400 border-[3px] border-white shadow-sm mb-2 relative -top-2"></div>
+                                <div className="text-center absolute top-4 w-[150px]">
+                                    <div className="text-[13px] font-bold text-gray-400">{lang === 'kr' ? '2007~2010' : '2007-2010'}</div>
+                                    <div className="text-[15px] font-bold text-gray-800">{lang === 'kr' ? '글로벌 금융위기' : 'Global Fin. Crisis'}</div>
+                                    <div className="text-[16px] font-black text-blue-600">8~10%</div>
+                                </div>
+                            </div>
+                            
+                            {/* Point 2 */}
+                            <div className="flex flex-col items-center justify-center absolute left-[30%] -translate-x-1/2" style={{ top: 'calc(50px + 50px * 0.0 - 8px)' }}>
+                                <div className="text-center absolute bottom-4 w-[150px]">
+                                    <div className="text-[13px] font-bold text-gray-400">{lang === 'kr' ? '2013~2015' : '2013-2015'}</div>
+                                    <div className="text-[15px] font-bold text-gray-800 leading-tight">{lang === 'kr' ? '대형 공급(YBD)' : 'Massive Supply'}</div>
+                                    <div className="text-[16px] font-black text-red-500">{lang === 'kr' ? '18% 상승' : 'Rose to 18%'}</div>
+                                </div>
+                                <div className="w-4 h-4 rounded-full bg-red-400 border-[3px] border-white shadow-sm relative top-2"></div>
+                            </div>
+
+                            {/* Point 3 */}
+                            <div className="flex flex-col items-center justify-center absolute left-[50%] -translate-x-1/2" style={{ top: 'calc(50px + 50px * 0.6 - 8px)' }}>
+                                <div className="w-4 h-4 rounded-full bg-gray-400 border-[3px] border-white shadow-sm mb-2 relative -top-2"></div>
+                                <div className="text-center absolute top-4 w-[150px]">
+                                    <div className="text-[13px] font-bold text-gray-400">{lang === 'kr' ? '2018~2019' : '2018-2019'}</div>
+                                    <div className="text-[15px] font-bold text-gray-800">{lang === 'kr' ? '점진적 안정' : 'Stabilization'}</div>
+                                </div>
+                            </div>
+
+                            {/* Point 4 */}
+                            <div className="flex flex-col items-center justify-center absolute left-[70%] -translate-x-1/2" style={{ top: 'calc(50px + 50px * 0.3 - 8px)' }}>
+                                <div className="text-center absolute bottom-4 w-[150px]">
+                                    <div className="text-[13px] font-bold text-gray-400">{lang === 'kr' ? '2020~2021' : '2020-2021'}</div>
+                                    <div className="text-[15px] font-bold text-gray-800">{lang === 'kr' ? '코로나 시기' : 'COVID Era'}</div>
+                                    <div className="text-[15px] font-bold text-red-400">{lang === 'kr' ? '일시 상승' : 'Temp Rise'}</div>
+                                </div>
+                                <div className="w-4 h-4 rounded-full bg-red-400 border-[3px] border-white shadow-sm relative top-2"></div>
+                            </div>
+
+                            {/* Point 5 */}
+                            <div className="flex flex-col items-center justify-center absolute left-[90%] -translate-x-1/2" style={{ top: 'calc(50px + 50px * 1.0 - 8px)' }}>
+                                <div className="w-4 h-4 rounded-full bg-blue-600 border-[3px] border-white shadow-sm mb-2 relative -top-2"></div>
+                                <div className="text-center absolute top-4 w-[150px]">
+                                    <div className="text-[13px] font-bold text-gray-400">{lang === 'kr' ? '2022~' : '2022~'}</div>
+                                    <div className="text-[16px] font-black text-blue-600">{lang === 'kr' ? '급격히 하락' : 'Sharp Drop'}</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    {/* Vacancy Highlight Box (Height reduced by 30px using py-[25px] instead of p-10) */}
+                    <div className={`relative w-full flex flex-col md:flex-row items-center justify-between bg-gradient-to-br from-gray-900 to-black rounded-[24px] px-10 py-[25px] shadow-2xl transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-95'}`}>
                         
-                        <div className="flex-1 text-left flex flex-col gap-2">
-                            <div className="text-gray-400 font-bold text-[20px]">{lang === 'kr' ? 'CBRE 2025년 3분기 기준' : 'CBRE Q3 2025'}</div>
-                            <div className="text-white font-extrabold text-[32px] leading-tight break-keep">
+                        <div className="flex-1 text-left flex flex-col gap-1">
+                            <div className="text-gray-400 font-bold text-[18px]">{lang === 'kr' ? 'CBRE 2025년 3분기 기준' : 'CBRE Q3 2025'}</div>
+                            <div className="text-white font-extrabold text-[30px] leading-tight break-keep">
                                 {lang === 'kr' ? '서울 Grade-A 오피스 평균 공실률' : 'Seoul Grade-A Office Average Vacancy Rate'}
                             </div>
                         </div>
 
-                        <div className={`flex flex-col items-center justify-center px-10 py-6 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/20 transition-all duration-1000 delay-300 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
-                            <div className="text-blue-400 font-black text-[72px] leading-none mb-1">
-                                3.1<span className="text-[40px]">%</span>
+                        <div className={`flex flex-col items-center justify-center px-8 py-4 bg-white/10 rounded-[18px] backdrop-blur-sm border border-white/20 transition-all duration-1000 delay-300 ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
+                            <div className="text-blue-400 font-black text-[64px] leading-none mb-1">
+                                3.1<span className="text-[36px]">%</span>
                             </div>
-                            <div className="text-white font-bold text-[18px]">Full Occupancy</div>
+                            <div className="text-white font-bold text-[16px]">Full Occupancy</div>
                         </div>
 
                     </div>
 
                     {/* Breakdown Cards */}
-                    <div className="w-full flex justify-center gap-6">
-                        <div className={`flex-1 bg-white border border-gray-200 rounded-2xl p-6 shadow-sm transition-all duration-700 hover:-translate-y-2 delay-400 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-                            <div className="text-gray-500 font-bold text-[16px] mb-2">GBD</div>
-                            <div className="text-gray-900 font-black text-[36px]">1.5%</div>
+                    <div className="w-full flex justify-center gap-6 mt-2">
+                        <div className={`flex-1 bg-white border border-gray-200 rounded-[20px] py-4 px-6 shadow-sm transition-all duration-700 hover:-translate-y-2 delay-400 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                            <div className="text-gray-500 font-bold text-[15px] mb-1">GBD</div>
+                            <div className="text-gray-900 font-black text-[32px]">1.5%</div>
                         </div>
-                        <div className={`flex-1 bg-white border border-gray-200 rounded-2xl p-6 shadow-sm transition-all duration-700 hover:-translate-y-2 delay-500 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-                            <div className="text-gray-500 font-bold text-[16px] mb-2">YBD</div>
-                            <div className="text-gray-900 font-black text-[36px]">3.6%</div>
+                        <div className={`flex-1 bg-white border border-gray-200 rounded-[20px] py-4 px-6 shadow-sm transition-all duration-700 hover:-translate-y-2 delay-500 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                            <div className="text-gray-500 font-bold text-[15px] mb-1">YBD</div>
+                            <div className="text-gray-900 font-black text-[32px]">3.6%</div>
                         </div>
-                        <div className={`flex-1 bg-white border border-gray-200 rounded-2xl p-6 shadow-sm transition-all duration-700 hover:-translate-y-2 delay-600 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-                            <div className="text-gray-500 font-bold text-[16px] mb-2">CBD</div>
-                            <div className="text-gray-900 font-black text-[36px]">4.1%</div>
+                        <div className={`flex-1 bg-white border border-gray-200 rounded-[20px] py-4 px-6 shadow-sm transition-all duration-700 hover:-translate-y-2 delay-600 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                            <div className="text-gray-500 font-bold text-[15px] mb-1">CBD</div>
+                            <div className="text-gray-900 font-black text-[32px]">4.1%</div>
                         </div>
                     </div>
 
