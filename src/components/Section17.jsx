@@ -42,10 +42,10 @@ export default function Section17({ isActive }) {
                         <div className="w-[200px] h-[200px] bg-gradient-to-tr from-gray-200 to-white border-2 border-gray-300 rounded-2xl shadow-lg flex flex-col items-center justify-center p-4">
                             <span className="text-[18px] font-bold text-gray-700 mb-2">{lang === 'kr' ? '정유 4강 체제' : 'Big 4 Era'}</span>
                             <div className="flex flex-wrap justify-center gap-2">
-                                <span className="text-[11px] bg-gray-100 px-2 py-1 rounded">SK Innovation</span>
-                                <span className="text-[11px] bg-gray-100 px-2 py-1 rounded">GS Caltex</span>
-                                <span className="text-[11px] bg-gray-100 px-2 py-1 rounded">S-Oil</span>
-                                <span className="text-[11px] bg-gray-100 px-2 py-1 rounded">Hyundai Oilbank</span>
+                                <span className="text-[11px] bg-gray-100 text-gray-800 font-medium px-2 py-1 rounded shadow-sm border border-gray-200">SK Innovation</span>
+                                <span className="text-[11px] bg-gray-100 text-gray-800 font-medium px-2 py-1 rounded shadow-sm border border-gray-200">GS Caltex</span>
+                                <span className="text-[11px] bg-gray-100 text-gray-800 font-medium px-2 py-1 rounded shadow-sm border border-gray-200">S-Oil</span>
+                                <span className="text-[11px] bg-gray-100 text-gray-800 font-medium px-2 py-1 rounded shadow-sm border border-gray-200">Hyundai Oilbank</span>
                             </div>
                         </div>
                     </div>
