@@ -34,41 +34,41 @@ export default function Section23({ isActive }) {
                     {lang === 'kr' ? '글로벌 수출 폭발을 기록하며 급부상한 방위산업의 신데렐라 서사' : 'Cinderella Story of the Defense Industry Surging with Global Exports'}
                 </h2>
 
-                <div className="relative w-full max-w-[900px] -mt-[8px] h-[360px] flex items-center justify-center z-10 gap-10">
+                <div className="relative w-full max-w-[1000px] mt-[12px] mb-[10px] h-auto py-4 flex items-center justify-center z-10 gap-10">
                     
                     {/* Companies & Lineup */}
-                    <div className={`relative w-[280px] h-[240px] bg-stone-800 rounded-2xl shadow-xl flex flex-col items-center justify-center p-6 border-b-8 border-stone-600 transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
-                        <div className="text-[20px] font-black text-white mb-3">Core Lineup</div>
-                        <div className="w-full flex flex-col gap-2">
-                            <div className="flex justify-between items-center text-[12px] bg-stone-700 px-3 py-1.5 rounded text-gray-200">
+                    <div className={`relative w-[320px] h-[260px] bg-stone-800 rounded-3xl shadow-xl flex flex-col items-center justify-center p-6 border-b-8 border-stone-600 transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                        <div className="text-[26px] font-black text-white mb-4">Core Lineup</div>
+                        <div className="w-full flex flex-col gap-3">
+                            <div className="flex justify-between items-center text-[15px] bg-stone-700 px-4 py-2 rounded-lg text-gray-200">
                                 <span className="font-bold">Hanwha / Rotem</span>
-                                <span className="text-[#a3e635]">K9 / K2 Tanks</span>
+                                <span className="text-[#a3e635] font-semibold">K9 / K2 Tanks</span>
                             </div>
-                            <div className="flex justify-between items-center text-[12px] bg-stone-700 px-3 py-1.5 rounded text-gray-200">
+                            <div className="flex justify-between items-center text-[15px] bg-stone-700 px-4 py-2 rounded-lg text-gray-200">
                                 <span className="font-bold">KAI</span>
-                                <span className="text-[#a3e635]">FA-50</span>
+                                <span className="text-[#a3e635] font-semibold">FA-50</span>
                             </div>
-                            <div className="flex justify-between items-center text-[12px] bg-stone-700 px-3 py-1.5 rounded text-gray-200">
+                            <div className="flex justify-between items-center text-[15px] bg-stone-700 px-4 py-2 rounded-lg text-gray-200">
                                 <span className="font-bold">LIG Nex1</span>
-                                <span className="text-[#a3e635]">Cheongung</span>
+                                <span className="text-[#a3e635] font-semibold">Cheongung</span>
                             </div>
                         </div>
                     </div>
 
                     {/* Arrow Export */}
                     <div className={`flex flex-col items-center transition-all duration-1000 ${step >= 3 ? 'opacity-100' : 'opacity-0'}`}>
-                        <div className="text-[16px] font-black text-[#65a30d] mb-2 italic">Global Export</div>
-                        <div className="w-[120px] h-[4px] bg-gradient-to-r from-stone-400 to-[#65a30d] relative mb-2">
-                            <div className="absolute right-[-4px] top-1/2 -translate-y-1/2 border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-l-[12px] border-l-[#65a30d]"></div>
+                        <div className="text-[20px] font-black text-[#65a30d] mb-3 italic">Global Export</div>
+                        <div className="w-[160px] h-[6px] bg-gradient-to-r from-stone-400 to-[#65a30d] relative mb-3 rounded-full">
+                            <div className="absolute right-[-6px] top-1/2 -translate-y-1/2 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[16px] border-l-[#65a30d]"></div>
                         </div>
-                        <div className="text-[12px] font-bold text-gray-500">Poland, UAE, MENA</div>
+                        <div className="text-[16px] font-bold text-gray-500">Poland, UAE, MENA</div>
                     </div>
 
                     {/* Milestone Record */}
-                    <div className={`relative w-[220px] h-[220px] rounded-full bg-gradient-to-br from-[#bef264] to-[#65a30d] shadow-[0_0_40px_rgba(101,163,13,0.3)] flex flex-col items-center justify-center border-4 border-white transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-200 ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
-                        <span className="text-[16px] font-bold text-green-900 mb-1">2022 Record</span>
-                        <span className="text-[48px] font-black text-white leading-none mb-1">$17.3B</span>
-                        <span className="text-[12px] font-bold text-green-900 bg-white/40 px-3 py-1 rounded-full">{lang === 'kr' ? '사상 최고치 달성' : 'All-time High'}</span>
+                    <div className={`relative w-[260px] h-[260px] rounded-full bg-gradient-to-br from-[#bef264] to-[#65a30d] shadow-[0_0_40px_rgba(101,163,13,0.3)] flex flex-col items-center justify-center border-[6px] border-white transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-200 ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
+                        <span className="text-[20px] font-bold text-green-900 mb-1">2022 Record</span>
+                        <span className="text-[56px] font-black text-white leading-none mb-2">$17.3B</span>
+                        <span className="text-[15px] font-bold text-green-900 bg-white/40 px-4 py-1.5 rounded-full">{lang === 'kr' ? '사상 최고치 달성' : 'All-time High'}</span>
                     </div>
 
                 </div>
