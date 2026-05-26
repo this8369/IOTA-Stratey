@@ -26,7 +26,12 @@ export const menuDataEn = [
                     { label: "1조 달러에서 2조 달러로...", id: "page-10" },
                     { label: "Opening of the $1 Trillion Era", id: "page-11" },
                     { label: "Reaching the $2 Trillion Milestone", id: "page-12" },
-                    { label: "Dual Engine of Top 10 Industries", id: "page-13" }
+                ]
+            },
+            {
+                title: "Chapter 2",
+                items: [
+                    { label: "Industrial Momentum", id: "page-14" }
                 ]
             }
         ] 
@@ -76,7 +81,12 @@ export const menuDataKr = [
                     { label: "1조 달러에서 2조 달러로 거시 좌표의 이동", id: "page-10" },
                     { label: "1조 달러 시대의 개막과 담금질", id: "page-11" },
                     { label: "마침내 도달할 GDP 2조 달러 고지", id: "page-12" },
-                    { label: "10대 산업 듀얼 엔진의 위력과 양면성", id: "page-13" }
+                ]
+            },
+            {
+                title: "Chapter 2",
+                items: [
+                    { label: "산업별 모멘텀", id: "page-14" }
                 ]
             }
         ] 
