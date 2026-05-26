@@ -69,15 +69,15 @@ export default function Section26({ isActive }) {
                     <ul className="text-left inline-block space-y-3 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span>JP모건은 25년 10월 보고서 'Kospi 5000 on the Cards'에서 12개월 목표 5,000을 제시하며 <strong>풀불(full bull) 시 6,000</strong>까지 가능하다고 분석함.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span>Macquarie 역시 메모리 슈퍼사이클을 근거로 <strong>2026년 KOSPI 목표 6,000</strong>을 제시했고, NH투자·HMC증권은 5,500을 목표로 함.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span>이재명 대통령은 <strong>임기 내(2030년) KOSPI 5,000 시대를 공약</strong>했으나, 폭발적 랠리로 인해 <strong>임기 중반 이전에 이미 달성</strong>된 상태임.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span><strong>JP모건, 맥쿼리 등 글로벌 IB</strong>, 메모리 슈퍼사이클을 근거로 2026년 KOSPI 목표를 <strong>최고 6,000선(Full Bull)</strong>으로 상향 제시.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span>NH투자·HMC증권 등 국내 주요 증권사 역시 <strong>5,500선을 목표치</strong>로 상향 조정하며 강세장에 힘을 실음.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span>현 정부의 <strong>'임기 내 KOSPI 5,000' 공약이 폭발적 랠리로 조기 달성</strong>되며 자본시장의 새로운 국면 진입.</span></li>
                             </>
                         ) : (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span>JPMorgan set a 12-month target of 5,000 in its Oct '25 report, analyzing that <strong>6,000 is possible in a 'full bull' scenario</strong>.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span>Macquarie also proposed a <strong>2026 KOSPI target of 6,000</strong> based on the memory supercycle, while NH & HMC target 5,500.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span>President Lee Jae-myung <strong>pledged a KOSPI 5,000 era within his term (2030)</strong>, but it was <strong>already achieved before mid-term</strong> due to the explosive rally.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span><strong>Global IBs like JP Morgan & Macquarie</strong> upgraded 2026 KOSPI targets up to <strong>6,000 (Full Bull)</strong> on memory supercycle.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span>Major domestic securities firms like NH & HMC also raised targets to <strong>5,500</strong>, fueling the bull market.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span>The gov't pledge of <strong>'KOSPI 5,000 within term' was achieved early</strong> due to the rally, opening a new market phase.</span></li>
                             </>
                         )}
                     </ul>

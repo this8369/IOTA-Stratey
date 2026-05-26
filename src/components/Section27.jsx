@@ -111,15 +111,15 @@ export default function Section27({ isActive }) {
                     <ul className="text-left inline-block space-y-3 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-purple-700">▪</span><span>이러한 역사적 랠리의 핵심 동력은 반도체 HBM 부족 현상, 외국인 자금 회귀, 정부 주도의 강력한 <strong>친주주 밸류업 정책 및 자본시장법 개정</strong>임.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-purple-700">▪</span><span>무엇보다 KOSPI가 <strong>글로벌 AI 수혜에 가장 직접적으로 노출된 시장</strong>이라는 외국인 투자자들의 확고한 인식이 작용함.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-purple-700">▪</span><span>2026년 5월 KOSPI는 PER 13.2배로 상승했으나, 아시아 평균(16.1배) 대비 여전히 디스카운트 상태. <strong>"코리아 디스카운트의 마지막 잔여분"</strong>도 5년 내 해소될 전망임.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-purple-700">▪</span><span>핵심 상승 동력은 <strong>HBM 부족 현상 지속, 외국인 자금 회귀, 강력한 밸류업 정책 및 자본시장법 개정</strong>.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-purple-700">▪</span><span>무엇보다 KOSPI가 <strong>글로벌 AI 밸류체인의 핵심 수혜 시장</strong>이라는 외국인 투자자의 확고한 인식이 결정적 작용.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-purple-700">▪</span><span>PER 13.2배로 상승했으나 아시아 평균 대비 여전히 저평가 상태. <strong>향후 5년 내 "코리아 디스카운트"의 완전한 해소 전망</strong>.</span></li>
                             </>
                         ) : (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-purple-700">▪</span><span>The core drivers are HBM shortages, return of foreign funds, and government-led <strong>pro-shareholder Value-up policies & Capital Market Act revisions</strong>.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-purple-700">▪</span><span>Above all, foreign investors firmly perceive KOSPI as the <strong>market most directly exposed to global AI benefits</strong>.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-purple-700">▪</span><span>As of May 2026, KOSPI PER rose to 13.2x, but still discounted vs Asian avg (16.1x). The <strong>"last remnants of the Korea Discount"</strong> are expected to vanish within 5 years.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-purple-700">▪</span><span>Core drivers: <strong>prolonged HBM shortage, foreign inflows, strong Value-up policies, & Capital Market Act revisions</strong>.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-purple-700">▪</span><span>Above all, foreign investors firmly perceive KOSPI as a <strong>core beneficiary market in the global AI value chain</strong>.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-purple-700">▪</span><span>PER rose to 13.2x but still undervalued vs Asia avg. <strong>"Korea Discount" expected to fully dissolve within 5 years</strong>.</span></li>
                             </>
                         )}
                     </ul>
