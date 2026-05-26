@@ -276,12 +276,12 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
  <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex justify-between items-center transition-all duration-300">
  <a href="#page-1"
  onClick={(e) => handleScrollTo(e, 'page-1')}
- className="text-xl font-bold cursor-pointer hover:opacity-80 transition-opacity">
+ className="text-[18px] tracking-[-0.02em] font-bold cursor-pointer hover:opacity-80 transition-opacity">
  IGIS Strategy
  </a>
  <div className="hidden min-[1100px]:flex items-center gap-[30px]">
  <div
- className="flex gap-[32px] text-[16px] font-normal text-black ] font-sans"
+ className="flex gap-[32px] text-[14px] font-normal text-black font-sans"
  onMouseEnter={() => setIsMegaMenuOpen(true)}
  onMouseLeave={() => { setIsMegaMenuOpen(false); setHoveredIndex(null); }}
  >
