@@ -44,6 +44,12 @@ export const menuDataEn = [
                     { label: "[Platform] Logistics Reshape", id: "page-23" },
                     { label: "[Defense] K-Defense Boom", id: "page-24" }
                 ]
+            },
+            {
+                title: "Chapter 3",
+                items: [
+                    { label: "Capital Market Structural Changes", id: "page-25" }
+                ]
             }
         ] 
     },
@@ -109,6 +115,12 @@ export const menuDataKr = [
                     { label: "[2차전지] 구조적 조정기", id: "page-22" },
                     { label: "[플랫폼] 물류 지형 재편", id: "page-23" },
                     { label: "[방산] 수출 급부상", id: "page-24" }
+                ]
+            },
+            {
+                title: "Chapter 3",
+                items: [
+                    { label: "자본시장 구조의 변화", id: "page-25" }
                 ]
             }
         ] 
