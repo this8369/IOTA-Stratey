@@ -19,7 +19,17 @@ export default function App() {
  const toUrl = (page) => page === 'home' ? BASE : `${BASE}${page}`;
 
  const [currentPage, setCurrentPage] = React.useState(() => getPage());
- const [isNavOpen, setIsNavOpen] = React.useState(false); // Default closed
+ const [isNavOpen, setIsNavOpen] = React.useState(() => {
+     const saved = sessionStorage.getItem('isNavOpen');
+     if (saved !== null) {
+         return JSON.parse(saved);
+     }
+     return false; // Default closed
+ });
+
+ React.useEffect(() => {
+     sessionStorage.setItem('isNavOpen', JSON.stringify(isNavOpen));
+ }, [isNavOpen]);
 
  // Handle URL syncing and global left/right key navigation sequences
  React.useEffect(() => {
