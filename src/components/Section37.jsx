@@ -40,9 +40,15 @@ export default function Section37({ isActive }) {
                     <div className={`flex-1 flex flex-col items-center justify-center bg-gray-900 border border-gray-700 rounded-[24px] p-8 shadow-xl transition-all duration-1000 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <div className="text-gray-400 font-bold text-[20px] mb-2">{lang === 'kr' ? '한국 데이터센터 IT 용량 전망' : 'Korea DC IT Capacity Forecast'}</div>
                         
-                        <div className="my-6">
-                            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 font-black text-[56px] leading-tight tracking-tight">CAGR 26.3%</span>
-                            <span className="block text-gray-300 font-bold text-[18px] mt-2">1.96GW (2025) → 6.32GW (2030)</span>
+                        <div className="my-8 flex flex-col items-center">
+                            <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 font-black text-[36px] tracking-tight mb-3">CAGR 26.3%</span>
+                            <div className="flex items-baseline gap-2">
+                                <span className="text-white font-black text-[36px]">1.96GW</span>
+                                <span className="text-gray-400 font-bold text-[18px]">(2025)</span>
+                                <span className="text-cyan-400 font-black text-[30px] mx-2">→</span>
+                                <span className="text-white font-black text-[36px]">6.32GW</span>
+                                <span className="text-gray-400 font-bold text-[18px]">(2030)</span>
+                            </div>
                         </div>
                         
                         <span className="absolute bottom-4 left-6 text-[11px] text-gray-500 font-medium">* Mordor Intelligence</span>
