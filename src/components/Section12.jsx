@@ -10,10 +10,10 @@ export default function Section12({ isActive }) {
         }
         
         const t1 = setTimeout(() => setStep(1), 300); // Theme & Title
-        const t2 = setTimeout(() => setStep(2), 1000); // Intro Text
-        const t3 = setTimeout(() => setStep(3), 1600); // Left Engine (Traditional)
-        const t4 = setTimeout(() => setStep(4), 2200); // Right Engine (New Growth)
-        const t5 = setTimeout(() => setStep(5), 2800); // Center Core (Semiconductor Reliance)
+        const t2 = setTimeout(() => setStep(2), 1000); // Node 1
+        const t3 = setTimeout(() => setStep(3), 1600); // Node 2
+        const t4 = setTimeout(() => setStep(4), 2200); // Node 3
+        const t5 = setTimeout(() => setStep(5), 2800); // Intro Text
         
         return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); clearTimeout(t4); clearTimeout(t5); };
     }, [isActive]);
@@ -40,7 +40,7 @@ export default function Section12({ isActive }) {
                 <div className="relative w-full max-w-[1100px] mt-[50px] h-[360px] flex items-center justify-between">
                     
                     {/* Left Engine: Traditional */}
-                    <div className={`relative z-10 w-[320px] h-full flex flex-col items-center transition-all duration-[1000ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'}`}>
+                    <div className={`relative z-10 w-[320px] h-full flex flex-col items-center transition-all duration-[1000ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'}`}>
                         <div className="w-full bg-[#1e3a8a] text-white py-4 rounded-t-xl text-center shadow-lg">
                             <h3 className="text-[24px] font-black tracking-tight">5대 중후장대</h3>
                             <p className="text-[14px] font-medium text-blue-200">수출 제조업 슈퍼 사이클</p>
@@ -56,7 +56,7 @@ export default function Section12({ isActive }) {
                     </div>
 
                     {/* Center Core: Semiconductor Reliance & Resilience */}
-                    <div className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center transition-all duration-[1200ms] ease-out ${step >= 5 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
+                    <div className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center transition-all duration-[1200ms] ease-out ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
                         {/* Connecting Lines */}
                         <div className="absolute top-1/2 left-[-160px] w-[160px] h-[4px] bg-gradient-to-r from-[#1e3a8a] to-[#e11d48] -translate-y-1/2 -z-10"></div>
                         <div className="absolute top-1/2 right-[-160px] w-[160px] h-[4px] bg-gradient-to-l from-[#4B7053] to-[#e11d48] -translate-y-1/2 -z-10"></div>
@@ -71,7 +71,7 @@ export default function Section12({ isActive }) {
                     </div>
 
                     {/* Right Engine: New Growth */}
-                    <div className={`relative z-10 w-[320px] h-full flex flex-col items-center transition-all duration-[1000ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'}`}>
+                    <div className={`relative z-10 w-[320px] h-full flex flex-col items-center transition-all duration-[1000ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'}`}>
                         <div className="w-full bg-[#4B7053] text-white py-4 rounded-t-xl text-center shadow-lg">
                             <h3 className="text-[24px] font-black tracking-tight">5대 신성장</h3>
                             <p className="text-[14px] font-medium text-green-200">신규 엔진 장착</p>
@@ -91,7 +91,7 @@ export default function Section12({ isActive }) {
             
 
                 {/* Description Text */}
-                <div className={`mt-12 max-w-[1200px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`mt-12 max-w-[1200px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>1조 → 2조 달러 20년 구간의 본질은 <strong>"수출 제조업 슈퍼 사이클 + 신규 엔진 장착"</strong>임</span></li>
                         <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span><strong>5대 중후장대</strong>(반도체·자동차·조선 등)와 <strong>5대 신성장</strong>(콘텐츠·바이오 등)의 10대 산업 듀얼 엔진으로 확장됨</span></li>

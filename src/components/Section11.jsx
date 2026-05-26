@@ -10,10 +10,10 @@ export default function Section11({ isActive }) {
         }
         
         const t1 = setTimeout(() => setStep(1), 300); // Theme & Title
-        const t2 = setTimeout(() => setStep(2), 1000); // Intro Text
-        const t3 = setTimeout(() => setStep(3), 1600); // Small Box (2007)
-        const t4 = setTimeout(() => setStep(4), 2200); // Arrow (2.5x)
-        const t5 = setTimeout(() => setStep(5), 2600); // Large Box (2025-2027)
+        const t2 = setTimeout(() => setStep(2), 1000); // Node 1
+        const t3 = setTimeout(() => setStep(3), 1600); // Node 2
+        const t4 = setTimeout(() => setStep(4), 2200); // Node 3
+        const t5 = setTimeout(() => setStep(5), 2800); // Intro Text
         
         return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); clearTimeout(t4); clearTimeout(t5); };
     }, [isActive]);
@@ -40,7 +40,7 @@ export default function Section11({ isActive }) {
                 <div className="relative w-full max-w-[1000px] mt-[60px] h-[340px] flex items-end justify-center gap-12">
                     
                     {/* 2007 Box */}
-                    <div className={`relative flex flex-col items-center justify-end transition-all duration-[1000ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 3 ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-50 translate-y-20'}`}>
+                    <div className={`relative flex flex-col items-center justify-end transition-all duration-[1000ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-50 translate-y-20'}`}>
                         <div className="text-center mb-4">
                             <span className="block text-[24px] font-bold text-gray-500">2007년</span>
                             <span className="block text-[18px] text-gray-400">1조 달러 돌파</span>
@@ -52,7 +52,7 @@ export default function Section11({ isActive }) {
                     </div>
 
                     {/* Arrow / Multiplier */}
-                    <div className={`flex flex-col items-center justify-center mb-[40px] transition-all duration-[800ms] ease-out ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                    <div className={`flex flex-col items-center justify-center mb-[40px] transition-all duration-[800ms] ease-out ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
                         <span className="text-[48px] font-black text-transparent bg-clip-text bg-gradient-to-r from-[#1e3a8a] to-[#e04c9a] mb-2 tracking-tighter">
                             2.5X
                         </span>
@@ -63,7 +63,7 @@ export default function Section11({ isActive }) {
                     </div>
 
                     {/* 2027 Box */}
-                    <div className={`relative flex flex-col items-center justify-end transition-all duration-[1200ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 5 ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-50 translate-y-32'}`}>
+                    <div className={`relative flex flex-col items-center justify-end transition-all duration-[1200ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 4 ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-50 translate-y-32'}`}>
                         <div className="text-center mb-4">
                             <span className="block text-[32px] font-black text-[#1e3a8a]">2026~2027년 (E)</span>
                             <span className="block text-[20px] font-bold text-[#1e3a8a]">2조 달러 시대</span>
@@ -82,7 +82,7 @@ export default function Section11({ isActive }) {
             
 
                 {/* Description Text */}
-                <div className={`mt-12 max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`mt-12 max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>2024년 한국 명목 GDP 약 1.87조 달러, 2025년 1.95조 달러 내외를 기록함</span></li>
                         <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span><strong>2026~2027년 사이</strong>에 2조 달러를 공식 돌파할 전망임</span></li>

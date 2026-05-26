@@ -10,10 +10,10 @@ export default function Section10({ isActive }) {
         }
         
         const t1 = setTimeout(() => setStep(1), 300); // Theme & Title
-        const t2 = setTimeout(() => setStep(2), 1000); // Intro Text
-        const t3 = setTimeout(() => setStep(3), 1600); // 2007 Node
-        const t4 = setTimeout(() => setStep(4), 2200); // 2008 Node
-        const t5 = setTimeout(() => setStep(5), 2800); // 2010 Node
+        const t2 = setTimeout(() => setStep(2), 1000); // Node 1
+        const t3 = setTimeout(() => setStep(3), 1600); // Node 2
+        const t4 = setTimeout(() => setStep(4), 2200); // Node 3
+        const t5 = setTimeout(() => setStep(5), 2800); // Intro Text
         
         return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); clearTimeout(t4); clearTimeout(t5); };
     }, [isActive]);
@@ -48,10 +48,10 @@ export default function Section10({ isActive }) {
                     </div>
                     
                     <div className={`absolute top-1/2 left-0 h-[3px] bg-gradient-to-r from-[#1e3a8a] via-[#e11d48] to-[#1e3a8a] -translate-y-1/2 z-0 transition-all duration-[2000ms] ease-out`}
-                         style={{ width: step >= 5 ? '100%' : step >= 4 ? '50%' : step >= 3 ? '10%' : '0%' }}></div>
+                         style={{ width: step >= 4 ? '100%' : step >= 3 ? '50%' : step >= 2 ? '10%' : '0%' }}></div>
 
                     {/* 2007 Node (Success) */}
-                    <div className={`relative z-10 flex flex-col items-center transition-all duration-[800ms] ease-out w-1/3 -mt-[140px] ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-90'}`}>
+                    <div className={`relative z-10 flex flex-col items-center transition-all duration-[800ms] ease-out w-1/3 -mt-[140px] ${step >= 2 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-90'}`}>
                         <div className="mb-4 text-center">
                             <span className="block text-[32px] font-black text-[#1e3a8a] tracking-tight">2007</span>
                             <span className="block text-[16px] font-bold text-gray-500">최초 1조 달러 돌파</span>
@@ -69,7 +69,7 @@ export default function Section10({ isActive }) {
                     </div>
 
                     {/* 2008 Node (Crisis) */}
-                    <div className={`relative z-10 flex flex-col items-center transition-all duration-[800ms] ease-out w-1/3 mt-[140px] ${step >= 4 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-90'}`}>
+                    <div className={`relative z-10 flex flex-col items-center transition-all duration-[800ms] ease-out w-1/3 mt-[140px] ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-90'}`}>
                         <div className="mb-4 text-center">
                             <span className="block text-[32px] font-black text-[#e11d48] tracking-tight">2008~2009</span>
                             <span className="block text-[16px] font-bold text-gray-500">글로벌 금융위기</span>
@@ -81,7 +81,7 @@ export default function Section10({ isActive }) {
                     </div>
 
                     {/* 2010 Node (Recovery) */}
-                    <div className={`relative z-10 flex flex-col items-center transition-all duration-[800ms] ease-out w-1/3 -mt-[140px] ${step >= 5 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-90'}`}>
+                    <div className={`relative z-10 flex flex-col items-center transition-all duration-[800ms] ease-out w-1/3 -mt-[140px] ${step >= 4 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-90'}`}>
                         <div className="mb-4 text-center">
                             <span className="block text-[32px] font-black text-[#1e3a8a] tracking-tight">2010~</span>
                             <span className="block text-[16px] font-bold text-gray-500">완전한 안착</span>
@@ -98,7 +98,7 @@ export default function Section10({ isActive }) {
             
 
                 {/* Description Text */}
-                <div className={`mt-12 max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`mt-12 max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>한국이 GDP 1조 달러를 처음 돌파한 해는 <strong>2007년</strong>임</span></li>
                         <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>IMF 기준 명목 GDP <strong>약 1.12조 달러</strong>, 1인당 GDP <strong>약 2.4만 달러</strong> 기록</span></li>
