@@ -72,8 +72,8 @@ export default function Section25({ isActive }) {
 
                 </div>
 
-                <div className={`mt-[10px] max-w-[1100px] text-[16px] md:text-[20px] leading-[1.5] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    <ul className="text-left inline-block space-y-3 mx-auto">
+                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
                                 <li className="flex items-start"><span className="mr-3 text-amber-600">▪</span><span>금융위기 이후 <strong>2017~2020년 장기 박스피(1,800~2,400)</strong>에 갇히며 '코리아 디스카운트'가 고착화됨.</span></li>

@@ -65,8 +65,8 @@ export default function Section26({ isActive }) {
 
                 </div>
 
-                <div className={`mt-[10px] max-w-[1100px] text-[16px] md:text-[20px] leading-[1.5] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    <ul className="text-left inline-block space-y-3 mx-auto">
+                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
                                 <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span><strong>JP모건, 맥쿼리 등 글로벌 IB</strong>, 메모리 슈퍼사이클을 근거로 2026년 KOSPI 목표를 <strong>최고 6,000선(Full Bull)</strong>으로 상향 제시.</span></li>

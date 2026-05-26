@@ -116,8 +116,8 @@ export default function Section27({ isActive }) {
 
                 </div>
 
-                <div className={`mt-[10px] max-w-[1100px] text-[16px] md:text-[20px] leading-[1.5] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    <ul className="text-left inline-block space-y-3 mx-auto">
+                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
                                 <li className="flex items-start"><span className="mr-3 text-purple-700">▪</span><span>핵심 상승 동력은 <strong>HBM 부족 현상 지속, 외국인 자금 회귀, 강력한 밸류업 정책 및 자본시장법 개정</strong>.</span></li>
