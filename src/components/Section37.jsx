@@ -31,7 +31,7 @@ export default function Section37({ isActive }) {
                 </div>
 
                 <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    {lang === 'kr' ? '폭발하는 수요를 선점한 이지스의 압도적 포트폴리오' : 'IGIS’s Preemptive Portfolio Capturing Explosive Demand'}
+                    {lang === 'kr' ? 'DC는 급격한 성장이 예상되지만 수도권 병목이 구조적 문제' : 'Rapid DC Growth Expected, but Metropolitan Bottlenecks Persist'}
                 </h2>
 
                 <div className="relative w-full max-w-[1200px] mt-[50px] mb-[40px] h-auto flex flex-col md:flex-row items-stretch justify-center z-10 gap-6">
