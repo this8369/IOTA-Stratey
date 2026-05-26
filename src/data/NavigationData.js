@@ -33,17 +33,17 @@ export const menuDataEn = [
     },
     { 
         title: "Part 2. 미래 시나리오", 
-        id: "page-5", 
+        id: "", 
         chapters: [] 
     },
     { 
         title: "Part 3. 전략 포지셔닝", 
-        id: "page-7", 
+        id: "", 
         chapters: [] 
     },
     { 
         title: "Part 4. IOTA 실행전략", 
-        id: "page-8", 
+        id: "", 
         chapters: [] 
     }
 ];
@@ -83,17 +83,17 @@ export const menuDataKr = [
     },
     { 
         title: "Part 2. 미래 시나리오", 
-        id: "page-5", 
+        id: "", 
         chapters: [] 
     },
     { 
         title: "Part 3. 전략 포지셔닝", 
-        id: "page-7", 
+        id: "", 
         chapters: [] 
     },
     { 
         title: "Part 4. IOTA 실행전략", 
-        id: "page-8", 
+        id: "", 
         chapters: [] 
     }
 ];

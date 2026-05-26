@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Section12({ isActive }) {
+    const { lang } = useLanguage();
     const [step, setStep] = useState(0);
 
     useEffect(() => {
@@ -26,14 +28,17 @@ export default function Section12({ isActive }) {
                 {/* Theme */}
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        [산업 구조] 10대 산업 듀얼 엔진의 위력과 양면성
+                        {lang === 'kr' ? '[산업 구조] 10대 산업 듀얼 엔진의 위력과 양면성' : '[Industrial Structure] Power & Duality of the Dual Engine'}
                     </span>
                 </div>
 
                 {/* Main Title */}
                 <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    중후장대와 신성장 산업의 결합,<br/>
-                    그리고 심화된 단일 종목 종속성
+                    {lang === 'kr' ? (
+                        <>중후장대와 신성장 산업의 결합,<br/>그리고 심화된 단일 종목 종속성</>
+                    ) : (
+                        <>Combination of Heavy & New Growth Industries,<br/>And the Deepened Reliance on a Single Sector</>
+                    )}
                 </h2>
 
                 {/* Infographic Dual Engine Architecture */}
@@ -42,13 +47,13 @@ export default function Section12({ isActive }) {
                     {/* Left Engine: Traditional */}
                     <div className={`relative z-10 w-[310px] h-full flex flex-col items-center transition-all duration-[1000ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'}`}>
                         <div className="w-full bg-[#1e3a8a] text-white py-4 rounded-t-xl text-center shadow-lg">
-                            <h3 className="text-[24px] font-black tracking-tight">5대 중후장대</h3>
-                            <p className="text-[14px] font-medium text-blue-200">수출 제조업 슈퍼 사이클</p>
+                            <h3 className="text-[24px] font-black tracking-tight">{lang === 'kr' ? '5대 중후장대' : 'Top 5 Heavy Industries'}</h3>
+                            <p className="text-[14px] font-medium text-blue-200">{lang === 'kr' ? '수출 제조업 슈퍼 사이클' : 'Export Manufacturing Supercycle'}</p>
                         </div>
                         <div className="w-full flex-1 bg-white border-2 border-t-0 border-[#1e3a8a] rounded-b-xl shadow-lg flex flex-col justify-center px-6 space-y-3">
-                            {['반도체', '자동차', '조선', '석유화학', '철강'].map((item, idx) => (
+                            {(lang === 'kr' ? ['반도체', '자동차', '조선', '석유화학', '철강'] : ['Semiconductors', 'Automobiles', 'Shipbuilding', 'Petrochemicals', 'Steel']).map((item, idx) => (
                                 <div key={idx} className="flex items-center justify-between border-b border-gray-100 pb-2 last:border-0 last:pb-0">
-                                    <span className={`text-[18px] font-bold ${item === '반도체' ? 'text-[#e11d48]' : 'text-gray-800'}`}>{item}</span>
+                                    <span className={`text-[18px] font-bold ${idx === 0 ? 'text-[#e11d48]' : 'text-gray-800'}`}>{item}</span>
                                     <div className="w-2 h-2 rounded-full bg-[#1e3a8a]"></div>
                                 </div>
                             ))}
@@ -63,21 +68,25 @@ export default function Section12({ isActive }) {
                         
                         {/* Core Circle */}
                         <div className="w-[200px] h-[200px] rounded-full bg-white border-[8px] border-[#e11d48] shadow-2xl flex flex-col items-center justify-center p-4">
-                            <span className="text-[14px] font-bold text-gray-500 mb-1">거시적 양면성</span>
-                            <span className="text-[24px] font-black text-[#e11d48] text-center leading-tight mb-2">반도체<br/>의존도 심화</span>
+                            <span className="text-[14px] font-bold text-gray-500 mb-1">{lang === 'kr' ? '거시적 양면성' : 'Macro Duality'}</span>
+                            <span className="text-[24px] font-black text-[#e11d48] text-center leading-tight mb-2">
+                                {lang === 'kr' ? <>반도체<br/>의존도 심화</> : <>Deepened<br/>Semiconductor Reliance</>}
+                            </span>
                             <div className="w-full h-[1px] bg-gray-200 my-1"></div>
-                            <span className="text-[16px] font-bold text-gray-800 text-center">높은 회복탄력성<br/>(Resilience)</span>
+                            <span className="text-[16px] font-bold text-gray-800 text-center">
+                                {lang === 'kr' ? <>높은 회복탄력성<br/>(Resilience)</> : <>High Resilience<br/>(Resilience)</>}
+                            </span>
                         </div>
                     </div>
 
                     {/* Right Engine: New Growth */}
                     <div className={`relative z-10 w-[310px] h-full flex flex-col items-center transition-all duration-[1000ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'}`}>
                         <div className="w-full bg-[#4B7053] text-white py-4 rounded-t-xl text-center shadow-lg">
-                            <h3 className="text-[24px] font-black tracking-tight">5대 신성장</h3>
-                            <p className="text-[14px] font-medium text-green-200">신규 엔진 장착</p>
+                            <h3 className="text-[24px] font-black tracking-tight">{lang === 'kr' ? '5대 신성장' : 'Top 5 New Growth'}</h3>
+                            <p className="text-[14px] font-medium text-green-200">{lang === 'kr' ? '신규 엔진 장착' : 'Equipping New Engines'}</p>
                         </div>
                         <div className="w-full flex-1 bg-white border-2 border-t-0 border-[#4B7053] rounded-b-xl shadow-lg flex flex-col justify-center px-6 space-y-3">
-                            {['콘텐츠', '바이오', '2차전지', 'IT 플랫폼', '방산'].map((item, idx) => (
+                            {(lang === 'kr' ? ['콘텐츠', '바이오', '2차전지', 'IT 플랫폼', '방산'] : ['Content', 'Biotech', 'EV Batteries', 'IT Platforms', 'Defense']).map((item, idx) => (
                                 <div key={idx} className="flex items-center justify-between border-b border-gray-100 pb-2 last:border-0 last:pb-0">
                                     <div className="w-2 h-2 rounded-full bg-[#4B7053]"></div>
                                     <span className="text-[18px] font-bold text-gray-800">{item}</span>
@@ -93,10 +102,21 @@ export default function Section12({ isActive }) {
                 {/* Description Text */}
                 <div className={`mt-12 max-w-[1200px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-2 mx-auto">
-                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>1조 → 2조 달러 20년 구간의 본질은 <strong>"수출 제조업 슈퍼 사이클 + 신규 엔진 장착"</strong>임</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span><strong>5대 중후장대</strong>(반도체·자동차·조선 등)와 <strong>5대 신성장</strong>(콘텐츠·바이오 등)의 10대 산업 듀얼 엔진으로 확장됨</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>단일 동력원에 의존하지 않아 높은 <strong>회복탄력성(Resilience)</strong>을 입증함</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>반대로 <strong>반도체 단일 종목에 대한 의존도 심화</strong>라는 거시적 양면성도 함께 가짐</span></li>
+                        {lang === 'kr' ? (
+                            <>
+                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>1조 → 2조 달러 20년 구간의 본질은 <strong>"수출 제조업 슈퍼 사이클 + 신규 엔진 장착"</strong>임</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span><strong>5대 중후장대</strong>(반도체·자동차·조선 등)와 <strong>5대 신성장</strong>(콘텐츠·바이오 등)의 10대 산업 듀얼 엔진으로 확장됨</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>단일 동력원에 의존하지 않아 높은 <strong>회복탄력성(Resilience)</strong>을 입증함</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>반대로 <strong>반도체 단일 종목에 대한 의존도 심화</strong>라는 거시적 양면성도 함께 가짐</span></li>
+                            </>
+                        ) : (
+                            <>
+                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>The essence of the 20-year transition from $1T to $2T is <strong>"Export Manufacturing Supercycle + New Engines"</strong>.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>Expanded into a 10-industry dual engine: <strong>Top 5 Heavy</strong> (Semiconductors, Auto) and <strong>Top 5 New Growth</strong> (Content, Bio).</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>Proven high <strong>resilience</strong> by avoiding dependence on a single power source.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>Conversely, it holds the macro duality of <strong>deepened reliance on a single sector: Semiconductors</strong>.</span></li>
+                            </>
+                        )}
                     </ul>
                 </div>
 </div>
