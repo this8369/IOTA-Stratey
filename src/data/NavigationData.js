@@ -1,13 +1,11 @@
 export const menuDataEn = [
     { 
         title: "Prologue", 
-        id: "page-1", 
+        id: "page-3", 
         chapters: [
             {
                 title: "",
                 items: [
-                    { label: "The Era of $3 Trillion", id: "page-1" },
-                    { label: "Executive Summary", id: "page-2" },
                     { label: "Strategic Context", id: "page-3" },
                     { label: "Voyage Towards $3 Trillion", id: "page-4" },
                     { label: "Inflection Point for Global AM", id: "page-5" },
@@ -53,13 +51,11 @@ export const menuDataEn = [
 export const menuDataKr = [
     { 
         title: "Prologue", 
-        id: "page-1", 
+        id: "page-3", 
         chapters: [
             {
                 title: "",
                 items: [
-                    { label: "3조 달러 시대 이지스의 글로벌 도약", id: "page-1" },
-                    { label: "Executive Summary", id: "page-2" },
                     { label: "본 고민의 전략적 위치", id: "page-3" },
                     { label: "3조 달러 시대, 이지스자산운용의 전략적 좌표", id: "page-4" },
                     { label: "글로벌 운용사로의 도약 분기점", id: "page-5" },

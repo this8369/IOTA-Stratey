@@ -109,8 +109,11 @@ export default function LeftNavigator({ currentPage, isOpen, setIsOpen }) {
  <div className="flex-1 overflow-y-auto px-3 py-6 scroll-smooth">
  {menuData.map((section, idx) => (
  <div key={idx} className="mb-4 last:mb-0">
- <h3 className="text-[12px] font-bold text-gray-400 mb-2 px-1 uppercase font-guardian">
- {section.title}
+ <h3 
+     onClick={(e) => section.id && handleNavigate(e, { id: section.id })}
+     className={`text-[12px] font-bold mb-2 px-1 uppercase font-guardian transition-colors ${section.id ? 'text-gray-600 hover:text-black cursor-pointer' : 'text-gray-400'}`}
+ >
+     {section.title}
  </h3>
  {section.chapters?.map((chapter, chapIdx) => (
  <div key={chapIdx} className="mb-3 last:mb-0">
