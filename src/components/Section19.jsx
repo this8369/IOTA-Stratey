@@ -49,7 +49,7 @@ export default function Section19({ isActive }) {
                         {/* Orbiting Elements */}
                         <div className={`absolute flex items-center justify-center w-full h-full transition-all duration-[1500ms] ease-out ${step >= 3 ? 'opacity-100' : 'opacity-0 scale-50'}`}>
                             {/* HYBE / Big 4 */}
-                            <div className="absolute top-[10px] left-[5%] bg-white border-[4px] border-fuchsia-100 shadow-xl rounded-2xl px-6 py-4 flex flex-col items-center z-30">
+                            <div className="absolute top-[36px] left-[5%] ml-[26px] bg-white border-[4px] border-fuchsia-100 shadow-xl rounded-2xl px-6 py-4 flex flex-col items-center z-30">
                                 <span className="text-[28px] font-black text-[#d946ef] mb-1">4대 엔터</span>
                                 <span className="text-[16px] text-gray-600 font-bold">HYBE(BTS)·SM·JYP·YG</span>
                             </div>
@@ -61,7 +61,7 @@ export default function Section19({ isActive }) {
                             </div>
 
                             {/* Netflix */}
-                            <div className="absolute top-[40px] right-[5%] bg-white border-[4px] border-rose-100 shadow-xl rounded-2xl px-6 py-4 flex flex-col items-center z-30">
+                            <div className="absolute top-[40px] right-[5%] mr-[20px] bg-white border-[4px] border-rose-100 shadow-xl rounded-2xl px-6 py-4 flex flex-col items-center z-30">
                                 <span className="text-[28px] font-black text-[#e11d48] mb-1">Netflix 투자</span>
                                 <span className="text-[16px] text-gray-600 font-bold">$2.5B+ (2016~2025)</span>
                             </div>
