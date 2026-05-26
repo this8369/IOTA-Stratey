@@ -22,7 +22,7 @@ export default function Section24({ isActive }) {
             
             <style>{`
                 .gradient-text-ch3 {
-                    background: linear-gradient(90deg, #fcd34d, #b45309);
+                    background: linear-gradient(90deg, #c1e2dd, #587d94);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
@@ -32,13 +32,13 @@ export default function Section24({ isActive }) {
                 
                 {/* Top Small Text */}
                 <div className={`transition-all duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    <span className="inline-block text-[24px] md:text-[32px] font-bold text-white mb-[18px]">
+                    <span className="inline-block text-[20px] md:text-[24px] font-normal text-white mb-[14px]">
                         Chapter 3.
                     </span>
                 </div>
 
                 {/* Main Text */}
-                <h2 className={`text-[46px] md:text-[64px] lg:text-[76px] font-black leading-[calc(1.3em-6px)] break-keep transition-all duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[34px] md:text-[54px] lg:text-[66px] font-bold leading-[calc(1.3em-6px)] break-keep transition-all duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="gradient-text-ch3">
                         {lang === 'kr' ? (
                             <>자본시장 구조의 변화<br/>KOSPI 2,000에서 5,000으로</>
