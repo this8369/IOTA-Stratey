@@ -37,7 +37,7 @@ export default function Section10({ isActive }) {
                 </h2>
 
                 {/* Infographic Timeline */}
-                <div className="relative w-full max-w-[1000px] mt-[60px] h-[460px] flex items-center justify-between">
+                <div className="relative w-full max-w-[1000px] mt-[40px] h-[380px] flex items-center justify-between">
                     
                     {/* Connecting Line ($1 Trillion Baseline) */}
                     <div className="absolute top-1/2 left-0 w-full border-t-[2px] border-dashed border-gray-400 -translate-y-1/2 z-0"></div>
@@ -51,7 +51,7 @@ export default function Section10({ isActive }) {
                          style={{ width: step >= 4 ? '100%' : step >= 3 ? '50%' : step >= 2 ? '10%' : '0%' }}></div>
 
                     {/* 2007 Node (Success) */}
-                    <div className={`relative z-10 flex flex-col items-center transition-all duration-[800ms] ease-out w-1/3 -mt-[140px] ${step >= 2 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-90'}`}>
+                    <div className={`relative z-10 flex flex-col items-center transition-all duration-[800ms] ease-out w-1/3 -mt-[100px] ${step >= 2 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-90'}`}>
                         <div className="mb-4 text-center">
                             <span className="block text-[32px] font-black text-[#1e3a8a] tracking-tight">2007</span>
                             <span className="block text-[16px] font-bold text-gray-500">최초 1조 달러 돌파</span>
@@ -69,7 +69,7 @@ export default function Section10({ isActive }) {
                     </div>
 
                     {/* 2008 Node (Crisis) */}
-                    <div className={`relative z-10 flex flex-col items-center transition-all duration-[800ms] ease-out w-1/3 mt-[140px] ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-90'}`}>
+                    <div className={`relative z-10 flex flex-col items-center transition-all duration-[800ms] ease-out w-1/3 mt-[100px] ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-90'}`}>
                         <div className="mb-4 text-center">
                             <span className="block text-[32px] font-black text-[#e11d48] tracking-tight">2008~2009</span>
                             <span className="block text-[16px] font-bold text-gray-500">글로벌 금융위기</span>
@@ -81,7 +81,7 @@ export default function Section10({ isActive }) {
                     </div>
 
                     {/* 2010 Node (Recovery) */}
-                    <div className={`relative z-10 flex flex-col items-center transition-all duration-[800ms] ease-out w-1/3 -mt-[140px] ${step >= 4 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-90'}`}>
+                    <div className={`relative z-10 flex flex-col items-center transition-all duration-[800ms] ease-out w-1/3 -mt-[100px] ${step >= 4 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-90'}`}>
                         <div className="mb-4 text-center">
                             <span className="block text-[32px] font-black text-[#1e3a8a] tracking-tight">2010~</span>
                             <span className="block text-[16px] font-bold text-gray-500">완전한 안착</span>
@@ -98,7 +98,7 @@ export default function Section10({ isActive }) {
             
 
                 {/* Description Text */}
-                <div className={`mt-12 max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`mt-6 max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>한국이 GDP 1조 달러를 처음 돌파한 해는 <strong>2007년</strong>임</span></li>
                         <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>IMF 기준 명목 GDP <strong>약 1.12조 달러</strong>, 1인당 GDP <strong>약 2.4만 달러</strong> 기록</span></li>
