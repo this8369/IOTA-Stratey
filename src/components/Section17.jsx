@@ -34,7 +34,7 @@ export default function Section17({ isActive }) {
                     {lang === 'kr' ? '중국 자급률 상승이 촉발한 전통 에너지 섹터의 다운사이클' : "Downcycle of Traditional Energy Sector Triggered by China's Self-Sufficiency"}
                 </h2>
 
-                <div className="relative w-full max-w-[1000px] -mt-[8px] h-auto py-4 flex items-center justify-center z-10 gap-20">
+                <div className="relative w-full max-w-[1000px] mt-[12px] mb-[10px] h-auto py-4 flex items-center justify-center z-10 gap-20">
                     
                     {/* 2007 Era */}
                     <div className={`flex flex-col items-center transition-all duration-[1000ms] ease-out ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
