@@ -64,6 +64,15 @@ export const menuDataEn = [
                     { label: "[Office 4] Rent Gap with Tokyo", id: "page-33" },
                     { label: "[Office 5] 30T Volume & Return of Capital", id: "page-34" }
                 ]
+            },
+            {
+                title: "Chapter 5",
+                items: [
+                    { label: "Industrial/Logistics Real Estate", id: "page-35" },
+                    { label: "[Logistics 1] Coupang Effect", id: "page-36" },
+                    { label: "[Logistics 2] Supply Normalization", id: "page-37" },
+                    { label: "[Infra 3] Data Center Scarcity", id: "page-38" }
+                ]
             }
         ] 
     },
@@ -149,6 +158,15 @@ export const menuDataKr = [
                     { label: "[오피스 3] 완전 임차 도달", id: "page-32" },
                     { label: "[오피스 4] 도쿄 수렴의 법칙", id: "page-33" },
                     { label: "[오피스 5] 거래량 30조 시대", id: "page-34" }
+                ]
+            },
+            {
+                title: "Chapter 5",
+                items: [
+                    { label: "산업/물류 부동산 진화", id: "page-35" },
+                    { label: "[물류 인프라 1] 단일 임차인이 창조한 쿠팡 이펙트", id: "page-36" },
+                    { label: "[물류 인프라 2] 물류센터 공급 과잉의 소화와 정상화", id: "page-37" },
+                    { label: "[인프라 자산 3] 전력 병목이 낳은 데이터센터의 희소성", id: "page-38" }
                 ]
             }
         ] 
