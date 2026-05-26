@@ -42,11 +42,11 @@ export default function Section11({ isActive }) {
                 </h2>
 
                 {/* Growth Infographic */}
-                <div className="relative w-full max-w-[900px] mt-[32px] h-[360px] flex items-center justify-between">
+                <div className="relative w-full max-w-[900px] mt-[12px] h-[360px] flex items-center justify-between">
                     
                     {/* Small Box (2007) */}
                     <div className={`relative flex flex-col items-center justify-end transition-all duration-[1000ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-50 translate-y-20'}`}>
-                        <div className="text-center mb-3">
+                        <div className="text-center mb-1">
                             <span className="block text-[24px] font-black text-gray-400">2007</span>
                             <span className="block text-[14px] font-bold text-gray-500">{lang === 'kr' ? '1조 달러 돌파' : 'Passed $1 Trillion'}</span>
                         </div>
@@ -71,7 +71,7 @@ export default function Section11({ isActive }) {
 
                     {/* Large Box (2025-2027) */}
                     <div className={`relative flex flex-col items-center justify-end transition-all duration-[1200ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 4 ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-50 translate-y-32'}`}>
-                        <div className="text-center mb-4">
+                        <div className="text-center mb-1">
                             <span className="block text-[32px] font-black text-[#1e3a8a]">2025~2027</span>
                             <span className="block text-[16px] font-bold text-[#e11d48]">{lang === 'kr' ? '2조 달러 달성 예상' : 'Expected to Hit $2 Trillion'}</span>
                         </div>
