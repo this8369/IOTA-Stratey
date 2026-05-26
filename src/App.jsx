@@ -19,7 +19,7 @@ export default function App() {
  const toUrl = (page) => page === 'home' ? BASE : `${BASE}${page}`;
 
  const [currentPage, setCurrentPage] = React.useState(() => getPage());
- const [isNavOpen, setIsNavOpen] = React.useState(true); // Default open on desktop
+ const [isNavOpen, setIsNavOpen] = React.useState(false); // Default closed
 
  // Handle URL syncing and global left/right key navigation sequences
  React.useEffect(() => {
