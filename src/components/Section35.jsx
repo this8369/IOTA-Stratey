@@ -77,7 +77,7 @@ export default function Section35({ isActive }) {
                                 <div className={`absolute top-1/2 left-0 h-2 bg-gradient-to-r from-orange-400 to-red-500 -translate-y-1/2 rounded-full transition-all duration-[1500ms] delay-500`} style={{ width: step >= 4 ? '100%' : '0%' }}></div>
                                 
                                 {['용인', '이천', '안성', '평택'].map((city, idx) => (
-                                    <div key={city} className={`relative z-10 flex flex-col items-center transition-all duration-500`} style={{ transitionDelay: \`\${500 + (idx * 200)}ms\`, opacity: step >= 4 ? 1 : 0, transform: step >= 4 ? 'scale(1)' : 'scale(0.5)' }}>
+                                    <div key={city} className={`relative z-10 flex flex-col items-center transition-all duration-500`} style={{ transitionDelay: `${500 + (idx * 200)}ms`, opacity: step >= 4 ? 1 : 0, transform: step >= 4 ? 'scale(1)' : 'scale(0.5)' }}>
                                         <div className="w-6 h-6 bg-white border-4 border-red-500 rounded-full shadow-md"></div>
                                         <span className="absolute top-8 font-black text-[22px] text-gray-800 whitespace-nowrap">{city}</span>
                                     </div>
