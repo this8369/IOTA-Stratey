@@ -48,7 +48,7 @@ export default function Section15({ isActive }) {
                                 <span className="text-[12px] font-bold text-gray-500 mt-1">Global Top 3</span>
                             </div>
                             <div className="mt-4 bg-emerald-50 border border-emerald-100 rounded-lg p-3 text-center shadow-sm w-[160px]">
-                                <p className="text-[13px] font-bold text-gray-800">4M -> <span className="text-[#047857] text-[16px]">7.23M</span></p>
+                                <p className="text-[13px] font-bold text-gray-800">4M ➔ <span className="text-[#047857] text-[16px]">7.23M</span></p>
                                 <p className="text-[11px] text-gray-500 mt-1">{lang === 'kr' ? '2007~2024 글로벌 판매' : 'Global Sales (2007-2024)'}</p>
                             </div>
                         </div>
