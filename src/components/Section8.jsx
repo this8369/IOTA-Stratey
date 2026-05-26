@@ -1,0 +1,50 @@
+import React, { useState, useEffect } from 'react';
+
+export default function Section8({ isActive }) {
+    const [step, setStep] = useState(0);
+
+    useEffect(() => {
+        if (!isActive) {
+            setStep(0);
+            return;
+        }
+        
+        const t1 = setTimeout(() => setStep(1), 300); // Small text
+        const t2 = setTimeout(() => setStep(2), 900); // Big text
+        
+        return () => { clearTimeout(t1); clearTimeout(t2); };
+    }, [isActive]);
+
+    return (
+        <section className="section w-full h-full bg-black flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
+            
+            <style>{`
+                .gradient-text {
+                    background: linear-gradient(90deg, #e04c9a, #f45407);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    letter-spacing: -0.02em;
+                }
+            `}</style>
+
+            <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
+                
+                {/* Top Small Text */}
+                <div className={`transition-all duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <span className="inline-block text-[20px] md:text-[24px] font-bold text-white mb-[14px] uppercase tracking-[-0.02em]">
+                        Part 1
+                    </span>
+                </div>
+
+                {/* Main Flowing Text */}
+                <h2 className={`text-[40px] md:text-[60px] lg:text-[72px] font-bold leading-[calc(1.3em-6px)] break-keep tracking-[-0.02em] transition-all duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <span className="gradient-text">
+                        한국 GDP 1조 → 2조 달러 시대<br/>
+                        역사적 분석
+                    </span>
+                </h2>
+
+            </div>
+        </section>
+    );
+}
