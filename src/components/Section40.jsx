@@ -26,7 +26,7 @@ export default function Section40({ isActive }) {
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        {lang === 'kr' ? '[트로피 랜드마크 2] IFC 서울이 남긴 글로벌 자본 유입의 유산' : '[Trophy Landmark 2] Legacy of Global Capital Inflow by IFC'}
+                        {lang === 'kr' ? 'IFC 서울이 남긴 글로벌 자본 유입의 유산' : 'Legacy of Global Capital Inflow by IFC'}
                     </span>
                 </div>
 

@@ -58,7 +58,7 @@ export default function Section39({ isActive }) {
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        {lang === 'kr' ? '[트로피 랜드마크 1] 스카이라인을 바꾼 절대 좌표의 궤적' : '[Trophy Landmark 1] Trajectory of Absolute Coordinates'}
+                        {lang === 'kr' ? '스카이라인을 바꾼 절대 좌표의 궤적' : 'Trajectory of Absolute Coordinates'}
                     </span>
                 </div>
 
