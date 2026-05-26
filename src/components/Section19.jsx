@@ -38,32 +38,32 @@ export default function Section19({ isActive }) {
                     <div className="w-full h-full relative flex items-center justify-center">
                         
                         {/* Glow Background */}
-                        <div className={`absolute w-[400px] h-[400px] bg-fuchsia-500/20 blur-[80px] rounded-full transition-all duration-1000 ${step >= 2 ? 'opacity-100' : 'opacity-0'}`}></div>
+                        <div className={`absolute w-[480px] h-[480px] bg-fuchsia-500/20 blur-[80px] rounded-full transition-all duration-1000 ${step >= 2 ? 'opacity-100' : 'opacity-0'}`}></div>
 
                         {/* Central Core: Korea Premium */}
-                        <div className={`relative z-20 w-[200px] h-[200px] rounded-full bg-gradient-to-br from-[#d946ef] to-[#86198f] shadow-[0_0_50px_rgba(217,70,239,0.5)] flex flex-col items-center justify-center border-4 border-white transition-all duration-[1000ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 4 ? 'scale-100' : 'scale-0'}`}>
-                            <span className="text-[16px] font-bold text-fuchsia-200">{lang === 'kr' ? '자본시장 리레이팅' : 'Market Re-rating'}</span>
-                            <span className="text-[28px] font-black text-white leading-tight text-center">Korea<br/>Premium</span>
+                        <div className={`relative z-20 w-[260px] h-[260px] rounded-full bg-gradient-to-br from-[#d946ef] to-[#86198f] shadow-[0_0_60px_rgba(217,70,239,0.5)] flex flex-col items-center justify-center border-[6px] border-white transition-all duration-[1000ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 4 ? 'scale-100' : 'scale-0'}`}>
+                            <span className="text-[20px] font-bold text-fuchsia-200 mb-1">{lang === 'kr' ? '자본시장 리레이팅' : 'Market Re-rating'}</span>
+                            <span className="text-[36px] font-black text-white leading-tight text-center">Korea<br/>Premium</span>
                         </div>
 
                         {/* Orbiting Elements */}
                         <div className={`absolute flex items-center justify-center w-full h-full transition-all duration-[1500ms] ease-out ${step >= 3 ? 'opacity-100' : 'opacity-0 scale-50'}`}>
                             {/* HYBE / Big 4 */}
-                            <div className="absolute top-[40px] left-[15%] bg-white border border-gray-200 shadow-lg rounded-xl p-3 flex flex-col items-center">
-                                <span className="text-[16px] font-black text-[#d946ef]">4대 엔터</span>
-                                <span className="text-[12px] text-gray-500 font-bold">HYBE(BTS)·SM·JYP·YG</span>
+                            <div className="absolute top-[10px] left-[5%] bg-white border-[4px] border-fuchsia-100 shadow-xl rounded-2xl px-6 py-4 flex flex-col items-center z-30">
+                                <span className="text-[28px] font-black text-[#d946ef] mb-1">4대 엔터</span>
+                                <span className="text-[16px] text-gray-600 font-bold">HYBE(BTS)·SM·JYP·YG</span>
                             </div>
                             
                             {/* CJ ENM */}
-                            <div className="absolute bottom-[40px] left-[25%] bg-white border border-gray-200 shadow-lg rounded-xl p-3 flex flex-col items-center">
-                                <span className="text-[16px] font-black text-[#86198f]">CJ ENM</span>
-                                <span className="text-[12px] text-gray-500 font-bold">기생충 · 오징어 게임</span>
+                            <div className="absolute bottom-[20px] left-[15%] bg-white border-[4px] border-purple-100 shadow-xl rounded-2xl px-6 py-4 flex flex-col items-center z-30">
+                                <span className="text-[28px] font-black text-[#86198f] mb-1">CJ ENM</span>
+                                <span className="text-[16px] text-gray-600 font-bold">기생충 · 오징어 게임</span>
                             </div>
 
                             {/* Netflix */}
-                            <div className="absolute top-[60px] right-[15%] bg-white border border-gray-200 shadow-lg rounded-xl p-3 flex flex-col items-center">
-                                <span className="text-[16px] font-black text-[#e11d48]">Netflix 투자</span>
-                                <span className="text-[12px] text-gray-500 font-bold">$2.5B+ (2016~2025)</span>
+                            <div className="absolute top-[40px] right-[5%] bg-white border-[4px] border-rose-100 shadow-xl rounded-2xl px-6 py-4 flex flex-col items-center z-30">
+                                <span className="text-[28px] font-black text-[#e11d48] mb-1">Netflix 투자</span>
+                                <span className="text-[16px] text-gray-600 font-bold">$2.5B+ (2016~2025)</span>
                             </div>
                         </div>
 
