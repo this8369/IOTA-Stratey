@@ -40,14 +40,18 @@ export default function Section37({ isActive }) {
                     <div className={`flex-1 flex flex-col items-center justify-center bg-gray-900 border border-gray-700 rounded-[24px] p-8 shadow-xl transition-all duration-1000 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <div className="text-gray-400 font-bold text-[20px] mb-2">{lang === 'kr' ? '한국 데이터센터 IT 용량 전망' : 'Korea DC IT Capacity Forecast'}</div>
                         
-                        <div className="my-8 flex flex-col items-center">
-                            <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 font-black text-[36px] tracking-tight mb-3">CAGR 26.3%</span>
-                            <div className="flex items-baseline gap-2">
-                                <span className="text-white font-black text-[36px]">1.96GW</span>
-                                <span className="text-gray-400 font-bold text-[18px]">(2025)</span>
-                                <span className="text-cyan-400 font-black text-[30px] mx-2">→</span>
-                                <span className="text-white font-black text-[36px]">6.32GW</span>
-                                <span className="text-gray-400 font-bold text-[18px]">(2030)</span>
+                        <div className="my-8 flex flex-col items-center w-full">
+                            <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 font-black text-[36px] tracking-tight mb-4">CAGR 26.3%</span>
+                            <div className="flex items-center justify-center gap-3">
+                                <div className="flex flex-col items-center">
+                                    <span className="text-white font-black text-[36px] leading-none">1.96GW</span>
+                                    <span className="text-gray-400 font-bold text-[18px] mt-1">(2025)</span>
+                                </div>
+                                <span className="text-cyan-400 font-black text-[30px] mb-6 mx-1">→</span>
+                                <div className="flex flex-col items-center">
+                                    <span className="text-white font-black text-[36px] leading-none">6.32GW</span>
+                                    <span className="text-gray-400 font-bold text-[18px] mt-1">(2030)</span>
+                                </div>
                             </div>
                         </div>
                         
