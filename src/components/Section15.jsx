@@ -34,46 +34,46 @@ export default function Section15({ isActive }) {
                     {lang === 'kr' ? '로봇과 AI 인프라로 비즈니스 영토를 전면 확장하는 현대차그룹' : 'Hyundai Motor Group Radically Expanding Business Territory with Robotics & AI'}
                 </h2>
 
-                <div className="relative w-full max-w-[900px] -mt-[8px] h-[360px] flex flex-col items-center justify-center z-10">
+                <div className="relative w-full max-w-[1200px] mt-[12px] mb-[10px] h-auto py-10 flex flex-col items-center justify-center z-10">
                     <div className="w-full flex justify-between items-center px-4 relative mt-[40px]">
                         
                         {/* Connecting Line */}
-                        <div className="absolute top-1/2 left-[10%] w-[80%] h-[4px] bg-gray-200 -translate-y-1/2 -z-10"></div>
-                        <div className={`absolute top-1/2 left-[10%] h-[4px] bg-gradient-to-r from-[#047857] to-[#10b981] -translate-y-1/2 -z-10 transition-all duration-[1500ms] ease-out`} style={{ width: step >= 4 ? '80%' : step >= 3 ? '40%' : '0%' }}></div>
+                        <div className="absolute top-1/2 left-[10%] w-[80%] h-[8px] bg-gray-200 -translate-y-1/2 -z-10"></div>
+                        <div className={`absolute top-1/2 left-[10%] h-[8px] bg-gradient-to-r from-[#047857] to-[#10b981] -translate-y-1/2 -z-10 transition-all duration-[1500ms] ease-out`} style={{ width: step >= 4 ? '80%' : step >= 3 ? '40%' : '0%' }}></div>
 
                         {/* Pillar 1: Auto */}
                         <div className={`relative flex flex-col items-center transition-all duration-[800ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-90'}`}>
-                            <div className="w-[120px] h-[120px] rounded-2xl bg-white border-4 border-[#047857] shadow-xl flex flex-col items-center justify-center z-20">
-                                <span className="text-[32px] font-black text-[#047857]">Auto</span>
-                                <span className="text-[12px] font-bold text-gray-500 mt-1">Global Top 3</span>
+                            <div className="w-[240px] h-[240px] rounded-3xl bg-white border-[6px] border-[#047857] shadow-xl flex flex-col items-center justify-center z-20">
+                                <span className="text-[48px] font-black text-[#047857]">Auto</span>
+                                <span className="text-[20px] font-bold text-gray-500 mt-2">Global Top 3</span>
                             </div>
-                            <div className="mt-4 bg-emerald-50 border border-emerald-100 rounded-lg p-3 text-center shadow-sm w-[160px]">
-                                <p className="text-[13px] font-bold text-gray-800">4M ➔ <span className="text-[#047857] text-[16px]">7.23M</span></p>
-                                <p className="text-[11px] text-gray-500 mt-1">{lang === 'kr' ? '2007~2024 글로벌 판매' : 'Global Sales (2007-2024)'}</p>
+                            <div className="mt-8 bg-emerald-50 border-2 border-emerald-100 rounded-xl p-5 text-center shadow-md w-[280px]">
+                                <p className="text-[22px] font-bold text-gray-800">4M ➔ <span className="text-[#047857] text-[28px] font-black">7.23M</span></p>
+                                <p className="text-[16px] text-gray-500 mt-2">{lang === 'kr' ? '2007~2024 글로벌 판매' : 'Global Sales (2007-2024)'}</p>
                             </div>
                         </div>
 
                         {/* Pillar 2: Robotics */}
                         <div className={`relative flex flex-col items-center transition-all duration-[800ms] ease-out ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-90'}`}>
-                            <div className="w-[120px] h-[120px] rounded-2xl bg-white border-4 border-[#10b981] shadow-xl flex flex-col items-center justify-center z-20">
-                                <span className="text-[28px] font-black text-[#10b981]">Robotics</span>
-                                <span className="text-[12px] font-bold text-gray-500 mt-1">UAM & Droids</span>
+                            <div className="w-[240px] h-[240px] rounded-3xl bg-white border-[6px] border-[#10b981] shadow-xl flex flex-col items-center justify-center z-20">
+                                <span className="text-[42px] font-black text-[#10b981]">Robotics</span>
+                                <span className="text-[20px] font-bold text-gray-500 mt-2">UAM & Droids</span>
                             </div>
-                            <div className="mt-4 bg-emerald-50 border border-emerald-100 rounded-lg p-3 text-center shadow-sm w-[160px]">
-                                <p className="text-[13px] font-bold text-gray-800">Boston Dynamics</p>
-                                <p className="text-[11px] text-gray-500 mt-1">{lang === 'kr' ? '인수 및 슈퍼널 설립' : 'Acquisition & Supernal'}</p>
+                            <div className="mt-8 bg-emerald-50 border-2 border-emerald-100 rounded-xl p-5 text-center shadow-md w-[280px]">
+                                <p className="text-[22px] font-bold text-gray-800">Boston Dynamics</p>
+                                <p className="text-[16px] text-gray-500 mt-2">{lang === 'kr' ? '인수 및 슈퍼널 설립' : 'Acquisition & Supernal'}</p>
                             </div>
                         </div>
 
                         {/* Pillar 3: AI Infra */}
                         <div className={`relative flex flex-col items-center transition-all duration-[800ms] ease-out ${step >= 4 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-90'}`}>
-                            <div className="w-[120px] h-[120px] rounded-2xl bg-gradient-to-br from-[#0f172a] to-[#047857] shadow-2xl flex flex-col items-center justify-center z-20 border-4 border-white">
-                                <span className="text-[28px] font-black text-white">AI Infra</span>
-                                <span className="text-[12px] font-bold text-emerald-200 mt-1">Data Center</span>
+                            <div className="w-[240px] h-[240px] rounded-3xl bg-gradient-to-br from-[#0f172a] to-[#047857] shadow-2xl flex flex-col items-center justify-center z-20 border-[6px] border-white">
+                                <span className="text-[42px] font-black text-white">AI Infra</span>
+                                <span className="text-[20px] font-bold text-emerald-200 mt-2">Data Center</span>
                             </div>
-                            <div className="mt-4 bg-gray-900 border border-gray-700 rounded-lg p-3 text-center shadow-md w-[160px]">
-                                <p className="text-[13px] font-bold text-white">NVIDIA Partner</p>
-                                <p className="text-[11px] text-gray-400 mt-1">{lang === 'kr' ? 'AI 인프라 혁신(2026)' : 'AI Infra Innovation (2026)'}</p>
+                            <div className="mt-8 bg-gray-900 border-2 border-gray-700 rounded-xl p-5 text-center shadow-lg w-[280px]">
+                                <p className="text-[22px] font-bold text-white">NVIDIA Partner</p>
+                                <p className="text-[16px] text-gray-400 mt-2">{lang === 'kr' ? 'AI 인프라 혁신(2026)' : 'AI Infra Innovation (2026)'}</p>
                             </div>
                         </div>
 
