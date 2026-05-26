@@ -59,7 +59,7 @@ export default function Section27({ isActive }) {
                         <div className="flex items-center gap-4 bg-gray-50 border border-gray-200 p-4 rounded-xl shadow-sm text-left">
                             <div className="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center font-black text-[22px]">3</div>
                             <div className="flex-1">
-                                <div className="text-[22px] font-bold text-gray-800">{lang === 'kr' ? '정부의 친주주 정책' : 'Gov\\'t Pro-shareholder Policy'}</div>
+                                <div className="text-[22px] font-bold text-gray-800">{lang === 'kr' ? '정부의 친주주 정책' : "Gov't Pro-shareholder Policy"}</div>
                                 <div className="text-[14px] font-bold text-gray-500">{lang === 'kr' ? '밸류업 프로그램 및 자본시장법 개정안' : 'Value-up Program & Capital Market Act revision'}</div>
                             </div>
                         </div>
