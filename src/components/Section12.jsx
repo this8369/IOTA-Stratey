@@ -36,16 +36,6 @@ export default function Section12({ isActive }) {
                     그리고 심화된 단일 종목 종속성
                 </h2>
 
-                {/* Description Text */}
-                <div className={`mt-8 max-w-[1200px] text-[17px] md:text-[21px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    <ul className="text-left inline-block space-y-2 mx-auto">
-                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>1조 → 2조 달러 20년 구간의 본질은 <strong>"수출 제조업 슈퍼 사이클 + 신규 엔진 장착"</strong>임</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span><strong>5대 중후장대</strong>(반도체·자동차·조선 등)와 <strong>5대 신성장</strong>(콘텐츠·바이오 등)의 10대 산업 듀얼 엔진으로 확장됨</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>단일 동력원에 의존하지 않아 높은 <strong>회복탄력성(Resilience)</strong>을 입증함</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>반대로 <strong>반도체 단일 종목에 대한 의존도 심화</strong>라는 거시적 양면성도 함께 가짐</span></li>
-                    </ul>
-                </div>
-
                 {/* Infographic Dual Engine Architecture */}
                 <div className="relative w-full max-w-[1100px] mt-[50px] h-[360px] flex items-center justify-between">
                     
@@ -98,7 +88,18 @@ export default function Section12({ isActive }) {
 
                 </div>
 
-            </div>
+            
+
+                {/* Description Text */}
+                <div className={`mt-12 max-w-[1200px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <ul className="text-left inline-block space-y-2 mx-auto">
+                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>1조 → 2조 달러 20년 구간의 본질은 <strong>"수출 제조업 슈퍼 사이클 + 신규 엔진 장착"</strong>임</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span><strong>5대 중후장대</strong>(반도체·자동차·조선 등)와 <strong>5대 신성장</strong>(콘텐츠·바이오 등)의 10대 산업 듀얼 엔진으로 확장됨</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>단일 동력원에 의존하지 않아 높은 <strong>회복탄력성(Resilience)</strong>을 입증함</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>반대로 <strong>반도체 단일 종목에 대한 의존도 심화</strong>라는 거시적 양면성도 함께 가짐</span></li>
+                    </ul>
+                </div>
+</div>
         </section>
     );
 }

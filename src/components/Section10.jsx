@@ -36,17 +36,6 @@ export default function Section10({ isActive }) {
                     금융위기를 극복한 1조 경제의 안착
                 </h2>
 
-                {/* Description Text */}
-                <div className={`mt-10 max-w-[1000px] text-[17px] md:text-[21px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    <ul className="text-left inline-block space-y-2 mx-auto">
-                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>한국이 GDP 1조 달러를 처음 돌파한 해는 <strong>2007년</strong>임</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>IMF 기준 명목 GDP <strong>약 1.12조 달러</strong>, 1인당 GDP <strong>약 2.4만 달러</strong> 기록</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>KOSPI가 처음 <strong>2,000선</strong>을 돌파한 기념비적인 해</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>그러나 <strong>2008년 글로벌 금융위기</strong>로 1조 달러 아래로 후퇴하는 담금질을 겪음</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span><strong>2010년</strong>에 이르러서야 비로소 흔들림 없는 "안정적인 1조 달러 경제"로 정착함</span></li>
-                    </ul>
-                </div>
-
                 {/* Infographic Timeline */}
                 <div className="relative w-full max-w-[1000px] mt-[60px] h-[460px] flex items-center justify-between">
                     
@@ -106,7 +95,19 @@ export default function Section10({ isActive }) {
 
                 </div>
 
-            </div>
+            
+
+                {/* Description Text */}
+                <div className={`mt-12 max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <ul className="text-left inline-block space-y-2 mx-auto">
+                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>한국이 GDP 1조 달러를 처음 돌파한 해는 <strong>2007년</strong>임</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>IMF 기준 명목 GDP <strong>약 1.12조 달러</strong>, 1인당 GDP <strong>약 2.4만 달러</strong> 기록</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>KOSPI가 처음 <strong>2,000선</strong>을 돌파한 기념비적인 해</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>그러나 <strong>2008년 글로벌 금융위기</strong>로 1조 달러 아래로 후퇴하는 담금질을 겪음</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span><strong>2010년</strong>에 이르러서야 비로소 흔들림 없는 "안정적인 1조 달러 경제"로 정착함</span></li>
+                    </ul>
+                </div>
+</div>
         </section>
     );
 }

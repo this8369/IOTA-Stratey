@@ -36,16 +36,6 @@ export default function Section11({ isActive }) {
                     대한민국 매크로의 퀀텀 점프
                 </h2>
 
-                {/* Description Text */}
-                <div className={`mt-8 max-w-[1000px] text-[17px] md:text-[21px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    <ul className="text-left inline-block space-y-2 mx-auto">
-                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>2024년 한국 명목 GDP 약 1.87조 달러, 2025년 1.95조 달러 내외를 기록함</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span><strong>2026~2027년 사이</strong>에 2조 달러를 공식 돌파할 전망임</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>원화 환산 시 2007년 약 1,043조 원에서 2025년 약 2,650조 원으로 증가함</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>이는 단순 명목 기준으로 <strong>약 2.5배 확장된 퀀텀 점프</strong>를 의미함</span></li>
-                    </ul>
-                </div>
-
                 {/* Infographic Scale Comparison */}
                 <div className="relative w-full max-w-[1000px] mt-[60px] h-[340px] flex items-end justify-center gap-12">
                     
@@ -89,7 +79,18 @@ export default function Section11({ isActive }) {
 
                 </div>
 
-            </div>
+            
+
+                {/* Description Text */}
+                <div className={`mt-12 max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <ul className="text-left inline-block space-y-2 mx-auto">
+                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>2024년 한국 명목 GDP 약 1.87조 달러, 2025년 1.95조 달러 내외를 기록함</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span><strong>2026~2027년 사이</strong>에 2조 달러를 공식 돌파할 전망임</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>원화 환산 시 2007년 약 1,043조 원에서 2025년 약 2,650조 원으로 증가함</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>이는 단순 명목 기준으로 <strong>약 2.5배 확장된 퀀텀 점프</strong>를 의미함</span></li>
+                    </ul>
+                </div>
+</div>
         </section>
     );
 }
