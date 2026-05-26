@@ -56,7 +56,7 @@ export default function Section29({ isActive }) {
                         <div className="w-full flex flex-col gap-3">
                             <div className="bg-white px-4 py-3 rounded-xl border border-gray-100 font-bold text-gray-700 shadow-sm">GFC (2001)</div>
                             <div className="bg-white px-4 py-3 rounded-xl border border-gray-100 font-bold text-gray-700 shadow-sm">파르나스타워 (2016)</div>
-                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-100 font-bold text-gray-700 shadow-sm">캐피탈타워</div>
+                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-100 font-bold text-gray-700 shadow-sm">캐피탈타워 (1998)</div>
                         </div>
                     </div>
 
