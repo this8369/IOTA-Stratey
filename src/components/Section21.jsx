@@ -34,39 +34,39 @@ export default function Section21({ isActive }) {
                     {lang === 'kr' ? '국내 IPO 붐을 견인한 EV 배터리 시장의 구조적 조정기' : 'Structural Adjustment of the EV Battery Market that Led the IPO Boom'}
                 </h2>
 
-                <div className="relative w-full max-w-[900px] -mt-[8px] h-[360px] flex items-center justify-center z-10 gap-12">
+                <div className="relative w-full max-w-[1000px] mt-[12px] mb-[10px] h-auto py-4 flex items-center justify-center z-10 gap-16">
                     
                     {/* The Boom (Left) */}
                     <div className={`relative flex flex-col items-center transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-50 translate-y-20'}`}>
-                        <div className="w-[180px] h-[180px] bg-gradient-to-t from-green-400 to-emerald-600 rounded-2xl shadow-xl flex flex-col items-center justify-center border-4 border-white mb-2">
-                            <span className="text-[28px] font-black text-white">20%</span>
-                            <span className="text-[12px] font-bold text-green-100">{lang === 'kr' ? '글로벌 점유율' : 'Global Share'}</span>
-                            <div className="mt-2 text-center text-white text-[10px] font-bold flex flex-col">
+                        <div className="w-[260px] h-[260px] bg-gradient-to-t from-green-400 to-emerald-600 rounded-3xl shadow-xl flex flex-col items-center justify-center border-[6px] border-white mb-4">
+                            <span className="text-[56px] font-black text-white leading-none">20%</span>
+                            <span className="text-[20px] font-bold text-green-100 mt-2">{lang === 'kr' ? '글로벌 점유율' : 'Global Share'}</span>
+                            <div className="mt-4 text-center text-white text-[15px] font-bold flex flex-col gap-1">
                                 <span>LG Energy Solution</span>
                                 <span>Samsung SDI</span>
                                 <span>SK On</span>
                             </div>
                         </div>
-                        <span className="text-[16px] font-black text-emerald-600">{lang === 'kr' ? '2020 IPO 붐' : '2020 IPO Boom'}</span>
+                        <span className="text-[26px] font-black text-emerald-600">{lang === 'kr' ? '2020 IPO 붐' : '2020 IPO Boom'}</span>
                     </div>
 
                     {/* Chart Arrow */}
                     <div className={`flex flex-col items-center transition-all duration-1000 ${step >= 3 ? 'opacity-100' : 'opacity-0'}`}>
                         {/* A curved arrow pointing down slightly */}
-                        <svg className="w-32 h-16 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 100 50">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" d="M10 25 Q 50 -10, 90 40" />
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" d="M75 40 L 90 40 L 85 25" />
+                        <svg className="w-48 h-24 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 100 50">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M10 25 Q 50 -10, 90 40" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M75 40 L 90 40 L 85 25" />
                         </svg>
-                        <span className="text-[12px] font-bold text-gray-500 mt-2">{lang === 'kr' ? '2024~2026 사이클' : '2024-2026 Cycle'}</span>
+                        <span className="text-[20px] font-bold text-gray-500 mt-3">{lang === 'kr' ? '2024~2026 사이클' : '2024-2026 Cycle'}</span>
                     </div>
 
                     {/* The Adjustment (Right) */}
                     <div className={`relative flex flex-col items-center transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-200 ${step >= 4 ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-50 translate-y-20'}`}>
-                        <div className="w-[180px] h-[180px] bg-gradient-to-b from-gray-200 to-gray-300 rounded-2xl shadow-lg flex flex-col items-center justify-center border-4 border-white mb-2">
-                            <svg className="w-12 h-12 text-gray-500 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                            <span className="text-[14px] font-bold text-gray-600 text-center px-4 leading-tight">{lang === 'kr' ? '중국·미국 정책 변동' : 'US/China Policy Fluctuations'}</span>
+                        <div className="w-[260px] h-[260px] bg-gradient-to-b from-gray-200 to-gray-300 rounded-3xl shadow-lg flex flex-col items-center justify-center border-[6px] border-white mb-4">
+                            <svg className="w-20 h-20 text-gray-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            <span className="text-[22px] font-bold text-gray-600 text-center px-6 leading-tight">{lang === 'kr' ? '중국·미국 정책 변동' : 'US/China Policy Fluctuations'}</span>
                         </div>
-                        <span className="text-[16px] font-black text-gray-600">{lang === 'kr' ? '구조적 조정기' : 'Structural Adjustment'}</span>
+                        <span className="text-[26px] font-black text-gray-600">{lang === 'kr' ? '구조적 조정기' : 'Structural Adjustment'}</span>
                     </div>
 
                 </div>
