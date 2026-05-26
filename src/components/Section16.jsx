@@ -15,7 +15,8 @@ export default function Section16({ isActive }) {
             setTimeout(() => setStep(2), 1000),
             setTimeout(() => setStep(3), 1600),
             setTimeout(() => setStep(4), 2200),
-            setTimeout(() => setStep(5), 2800)
+            setTimeout(() => setStep(5), 2800),
+            setTimeout(() => setStep(6), 3400)
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -34,20 +35,29 @@ export default function Section16({ isActive }) {
                     {lang === 'kr' ? 'MASGA 흐름을 올라탄 K-조선 빅3의 압도적 시장 지배력' : 'Overwhelming Dominance of K-Shipbuilding Big 3 Riding the MASGA Wave'}
                 </h2>
 
-                <div className="relative w-full max-w-[1000px] mt-[12px] mb-[10px] h-auto py-4 flex items-center justify-center z-10 gap-10">
+                <div className="relative w-full max-w-[1200px] mt-[12px] mb-[10px] h-auto py-4 flex items-center justify-center z-10 gap-8">
                     
-                    {/* Left: BIG 3 Companies */}
-                    <div className={`relative w-[280px] h-[280px] rounded-full border-[10px] border-[#fdba74] bg-white flex flex-col items-center justify-center shadow-xl transition-all duration-[1000ms] ease-out ${step >= 2 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
-                        <span className="text-[20px] font-black text-gray-500 mb-3">{lang === 'kr' ? 'K-조선 BIG 3' : 'K-Shipbuilding'}</span>
-                        <div className="flex flex-col gap-2 w-[75%]">
-                            <span className="text-[16px] bg-orange-50 text-orange-900 font-bold px-3 py-2 rounded-lg text-center border border-orange-200">{lang === 'kr' ? 'HD현대중공업' : 'HD Hyundai'}</span>
-                            <span className="text-[16px] bg-orange-50 text-orange-900 font-bold px-3 py-2 rounded-lg text-center border border-orange-200">{lang === 'kr' ? '삼성중공업' : 'Samsung Heavy'}</span>
-                            <span className="text-[16px] bg-orange-50 text-orange-900 font-bold px-3 py-2 rounded-lg text-center border border-orange-200">{lang === 'kr' ? '한화오션' : 'Hanwha Ocean'}</span>
+                    {/* Far Left: BIG 3 Companies */}
+                    <div className={`relative w-[220px] h-[260px] rounded-3xl border-[4px] border-[#fdba74] bg-orange-50 flex flex-col items-center justify-center shadow-xl transition-all duration-[1000ms] ease-out ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
+                        <span className="text-[20px] font-black text-orange-800 mb-4">{lang === 'kr' ? 'K-조선 BIG 3' : 'K-Shipbuilding'}</span>
+                        <div className="flex flex-col gap-3 w-[85%]">
+                            <span className="text-[16px] bg-white text-orange-900 font-bold px-3 py-2.5 rounded-lg text-center shadow-sm">{lang === 'kr' ? 'HD현대중공업' : 'HD Hyundai'}</span>
+                            <span className="text-[16px] bg-white text-orange-900 font-bold px-3 py-2.5 rounded-lg text-center shadow-sm">{lang === 'kr' ? '삼성중공업' : 'Samsung Heavy'}</span>
+                            <span className="text-[16px] bg-white text-orange-900 font-bold px-3 py-2.5 rounded-lg text-center shadow-sm">{lang === 'kr' ? '한화오션' : 'Hanwha Ocean'}</span>
                         </div>
                     </div>
 
-                    {/* Middle: Market Share */}
-                    <div className={`relative w-[280px] h-[280px] rounded-full border-[12px] border-[#ea580c] bg-white flex flex-col items-center justify-center shadow-2xl transition-all duration-[1000ms] ease-out delay-100 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
+                    {/* Circle 1: Export Growth (Restored) */}
+                    <div className={`relative w-[260px] h-[260px] rounded-full border-[10px] border-[#fdba74] bg-white flex flex-col items-center justify-center shadow-xl transition-all duration-[1000ms] ease-out delay-100 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
+                        <span className="text-[16px] font-bold text-gray-500 mb-1">{lang === 'kr' ? '2025년 수출 증가율' : '2025 Export Growth'}</span>
+                        <span className="text-[48px] font-black text-[#ea580c] leading-none mb-2">+24.9%</span>
+                        <span className="text-[12px] font-bold text-orange-800 bg-orange-100 px-3 py-1 rounded-full text-center leading-tight">
+                            {lang === 'kr' ? <>반도체와 유일한<br/>두 자릿수 성장</> : <>Only Double-Digit<br/>Growth with Semi</>}
+                        </span>
+                    </div>
+
+                    {/* Circle 2: Market Share */}
+                    <div className={`relative w-[260px] h-[260px] rounded-full border-[12px] border-[#ea580c] bg-white flex flex-col items-center justify-center shadow-2xl transition-all duration-[1000ms] ease-out delay-200 ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
                         <div className="absolute top-4 w-[100px] h-[30px] bg-[#ea580c] text-white font-black text-[14px] flex items-center justify-center rounded-full shadow-md">DOMINANCE</div>
                         <span className="text-[18px] font-bold text-gray-600 mb-1">{lang === 'kr' ? '고부가가치선 점유율' : 'High-Value Ship Share'}</span>
                         <span className="text-[64px] font-black text-[#ea580c] leading-none mb-2">60%+</span>
@@ -56,8 +66,8 @@ export default function Section16({ isActive }) {
                         </span>
                     </div>
 
-                    {/* Right: MASGA */}
-                    <div className={`relative w-[280px] h-[280px] rounded-full bg-gradient-to-br from-[#1e3a8a] to-[#0f172a] flex flex-col items-center justify-center shadow-xl transition-all duration-[1000ms] ease-out delay-200 ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
+                    {/* Circle 3: MASGA */}
+                    <div className={`relative w-[260px] h-[260px] rounded-full bg-gradient-to-br from-[#1e3a8a] to-[#0f172a] flex flex-col items-center justify-center shadow-xl transition-all duration-[1000ms] ease-out delay-300 ${step >= 5 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
                         <span className="text-[18px] font-bold text-blue-200 mb-1">{lang === 'kr' ? '미·중 패권 수혜' : 'US-China Hegemony'}</span>
                         <span className="text-[42px] font-black text-white leading-none mb-2">MASGA</span>
                         <span className="text-[14px] font-bold text-gray-300 text-center px-4 leading-tight">
@@ -67,7 +77,7 @@ export default function Section16({ isActive }) {
 
                 </div>
 
-                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 6 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
