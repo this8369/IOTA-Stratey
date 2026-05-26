@@ -74,7 +74,7 @@ export default function Section27({ isActive }) {
                     </div>
 
                     {/* Valuation Comparison */}
-                    <div className={`relative w-[460px] flex flex-col items-center bg-purple-900 rounded-[30px] shadow-xl p-8 mt-[10px] transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-200 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className={`relative w-[460px] flex flex-col items-center bg-purple-900 rounded-[30px] shadow-xl p-8 mt-[20px] transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-200 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <div className="text-[20px] font-black text-purple-200 mb-8">{lang === 'kr' ? '2026.05 밸류에이션 비교' : 'May 2026 Valuation Comparison'}</div>
                         
                         <div className="w-full flex justify-between items-center relative py-4 px-2">
