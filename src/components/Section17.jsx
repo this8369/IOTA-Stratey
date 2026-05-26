@@ -34,18 +34,18 @@ export default function Section17({ isActive }) {
                     {lang === 'kr' ? '중국 자급률 상승이 촉발한 전통 에너지 섹터의 다운사이클' : "Downcycle of Traditional Energy Sector Triggered by China's Self-Sufficiency"}
                 </h2>
 
-                <div className="relative w-full max-w-[1000px] -mt-[8px] h-[360px] flex items-center justify-center z-10 gap-20">
+                <div className="relative w-full max-w-[1000px] -mt-[8px] h-auto py-4 flex items-center justify-center z-10 gap-20">
                     
                     {/* 2007 Era */}
                     <div className={`flex flex-col items-center transition-all duration-[1000ms] ease-out ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
                         <div className="text-[28px] font-black text-gray-400 mb-4">2007 Era</div>
-                        <div className="w-[260px] h-[260px] bg-gradient-to-tr from-gray-200 to-white border-2 border-gray-300 rounded-2xl shadow-lg flex flex-col items-center justify-center p-6">
-                            <span className="text-[28px] font-black text-gray-800 mb-4">{lang === 'kr' ? '정유 4강 체제' : 'Big 4 Era'}</span>
-                            <div className="flex flex-wrap justify-center gap-3">
-                                <span className="text-[13px] bg-gray-100 text-gray-800 font-bold px-3 py-1.5 rounded shadow-sm border border-gray-200">SK Innovation</span>
-                                <span className="text-[13px] bg-gray-100 text-gray-800 font-bold px-3 py-1.5 rounded shadow-sm border border-gray-200">GS Caltex</span>
-                                <span className="text-[13px] bg-gray-100 text-gray-800 font-bold px-3 py-1.5 rounded shadow-sm border border-gray-200">S-Oil</span>
-                                <span className="text-[13px] bg-gray-100 text-gray-800 font-bold px-3 py-1.5 rounded shadow-sm border border-gray-200">Hyundai Oilbank</span>
+                        <div className="w-[260px] bg-gradient-to-tr from-gray-200 to-white border-2 border-gray-300 rounded-2xl shadow-lg flex flex-col items-center justify-center p-8">
+                            <span className="text-[28px] font-black text-gray-800 mb-6">{lang === 'kr' ? '정유 4강 체제' : 'Big 4 Era'}</span>
+                            <div className="flex flex-col w-full gap-3">
+                                <span className="text-[16px] bg-gray-100 text-gray-800 font-bold px-4 py-2.5 rounded-lg shadow-sm border border-gray-200 text-center w-full">SK Innovation</span>
+                                <span className="text-[16px] bg-gray-100 text-gray-800 font-bold px-4 py-2.5 rounded-lg shadow-sm border border-gray-200 text-center w-full">GS Caltex</span>
+                                <span className="text-[16px] bg-gray-100 text-gray-800 font-bold px-4 py-2.5 rounded-lg shadow-sm border border-gray-200 text-center w-full">S-Oil</span>
+                                <span className="text-[16px] bg-gray-100 text-gray-800 font-bold px-4 py-2.5 rounded-lg shadow-sm border border-gray-200 text-center w-full">Hyundai Oilbank</span>
                             </div>
                         </div>
                     </div>
@@ -62,9 +62,9 @@ export default function Section17({ isActive }) {
                     {/* Mid 2020s */}
                     <div className={`flex flex-col items-center transition-all duration-[1000ms] ease-out delay-200 ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
                         <div className="text-[28px] font-black text-red-600 mb-4">Mid 2020s</div>
-                        <div className="w-[260px] h-[260px] bg-gradient-to-br from-red-50 to-white border-2 border-red-200 rounded-2xl shadow-xl flex flex-col items-center justify-center p-6">
-                            <svg className="w-20 h-20 text-red-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6" /></svg>
-                            <span className="text-[26px] font-black text-red-700 text-center leading-tight">{lang === 'kr' ? '후반부\n성장 둔화' : 'Latter Half\nSlowdown'}</span>
+                        <div className="w-[260px] flex-1 bg-gradient-to-br from-red-50 to-white border-2 border-red-200 rounded-2xl shadow-xl flex flex-col items-center justify-center p-8">
+                            <svg className="w-24 h-24 text-red-400 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6" /></svg>
+                            <span className="text-[28px] font-black text-red-700 text-center leading-tight">{lang === 'kr' ? '후반부\n성장 둔화' : 'Latter Half\nSlowdown'}</span>
                         </div>
                     </div>
 
