@@ -34,7 +34,7 @@ export default function Section23({ isActive }) {
                     {lang === 'kr' ? '글로벌 수출 폭발을 기록하며 급부상한 방위산업의 신데렐라 서사' : 'Cinderella Story of the Defense Industry Surging with Global Exports'}
                 </h2>
 
-                <div className="relative w-full max-w-[1000px] mt-[12px] mb-[10px] h-auto py-4 flex items-center justify-center z-10 gap-10">
+                <div className="relative w-full max-w-[1000px] mt-[22px] mb-[20px] h-auto py-4 flex items-center justify-center z-10 gap-10">
                     
                     {/* Companies & Lineup */}
                     <div className={`relative w-[320px] h-[260px] bg-stone-800 rounded-3xl shadow-xl flex flex-col items-center justify-center p-6 border-b-8 border-stone-600 transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>

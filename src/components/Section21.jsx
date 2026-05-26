@@ -34,7 +34,7 @@ export default function Section21({ isActive }) {
                     {lang === 'kr' ? '국내 IPO 붐을 견인한 EV 배터리 시장의 구조적 조정기' : 'Structural Adjustment of the EV Battery Market that Led the IPO Boom'}
                 </h2>
 
-                <div className="relative w-full max-w-[1000px] mt-[12px] mb-[10px] h-auto py-4 flex items-center justify-center z-10 gap-16">
+                <div className="relative w-full max-w-[1000px] mt-[22px] mb-[10px] h-auto py-4 flex items-center justify-center z-10 gap-16">
                     
                     {/* The Boom (Left) */}
                     <div className={`relative flex flex-col items-center transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-50 translate-y-20'}`}>
