@@ -70,8 +70,15 @@ export const menuDataEn = [
                 items: [
                     { label: "Industrial/Logistics Real Estate", id: "page-35" },
                     { label: "[Logistics 1] Coupang Effect", id: "page-36" },
-                    { label: "[Logistics 2] Supply Normalization", id: "page-37" },
-                    { label: "[Infra 3] Data Center Scarcity", id: "page-38" }
+                    { label: "[Logistics 2] Supply Normalization", id: "page-37" },                    { label: "[Infra 3] Data Center Scarcity", id: "page-38" }
+                ]
+            },
+            {
+                title: "Chapter 6",
+                items: [
+                    { label: "Lineage of Trophy Assets 2007~2026", id: "page-39" },
+                    { label: "[Trophy 1] Trajectory of Absolute Coordinates", id: "page-40" },
+                    { label: "[Trophy 2] Legacy of Global Capital Inflow by IFC", id: "page-41" }
                 ]
             }
         ] 
@@ -165,8 +172,15 @@ export const menuDataKr = [
                 items: [
                     { label: "산업/물류 부동산 진화", id: "page-35" },
                     { label: "[물류 인프라 1] 단일 임차인이 창조한 쿠팡 이펙트", id: "page-36" },
-                    { label: "[물류 인프라 2] 물류센터 공급 과잉의 소화와 정상화", id: "page-37" },
-                    { label: "[인프라 자산 3] 전력 병목이 낳은 데이터센터의 희소성", id: "page-38" }
+                    { label: "[물류 인프라 2] 물류센터 공급 과잉의 소화와 정상화", id: "page-37" },                    { label: "[인프라 자산 3] 전력 병목이 낳은 데이터센터의 희소성", id: "page-38" }
+                ]
+            },
+            {
+                title: "Chapter 6",
+                items: [
+                    { label: "2007~2026 트로피 자산의 계보", id: "page-39" },
+                    { label: "[트로피 랜드마크 1] 스카이라인을 바꾼 절대 좌표의 궤적", id: "page-40" },
+                    { label: "[트로피 랜드마크 2] IFC 서울이 남긴 글로벌 자본 유입의 유산", id: "page-41" }
                 ]
             }
         ] 
