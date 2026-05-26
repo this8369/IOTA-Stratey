@@ -26,58 +26,82 @@ export default function Section35({ isActive }) {
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        {lang === 'kr' ? '단일 임차인이 창조한 쿠팡 이펙트' : 'The Coupang Effect Created by a Single Tenant'}
+                        {lang === 'kr' ? '단일 임차인이 창조한 쿠팡 이펙트' : 'The Coupang Effect'}
                     </span>
                 </div>
 
                 <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    {lang === 'kr' ? '수도권 외곽을 물류 허브로 둔갑시킨 국가급 라스트마일 네트워크' : 'Transforming the Capital Outskirts into a National Last-Mile Network'}
+                    {lang === 'kr' ? '수도권 외곽을 물류 허브로 둔갑시킨 국가급 라스트마일 네트워크' : 'Transforming Outskirts into a National Last-Mile Network'}
                 </h2>
 
-                <div className="relative w-full max-w-[1200px] mt-[40px] mb-[30px] h-auto flex flex-col md:flex-row items-stretch justify-center z-10 gap-6 md:gap-8">
+                <div className="relative w-full max-w-[1200px] mt-[50px] mb-[40px] h-auto flex flex-col md:flex-row items-stretch justify-center z-10 gap-8">
                     
                     {/* Growth Box */}
-                    <div className={`flex-1 flex flex-col items-center bg-gray-50 border border-gray-300 rounded-[24px] p-10 shadow-lg hover:shadow-2xl transition-all duration-700 hover:-translate-y-2 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-                        <div className="w-20 h-20 bg-yellow-100 text-yellow-600 rounded-2xl flex items-center justify-center font-black text-[32px] mb-6 shadow-sm">40x</div>
-                        <h3 className="text-[26px] font-extrabold text-gray-900 mb-2">{lang === 'kr' ? '쿠팡 매출 폭발적 성장' : 'Explosive Revenue Growth'}</h3>
-                        <p className="text-[18px] font-bold text-gray-500 mb-8">{lang === 'kr' ? '2014년 1조 원 → 2024년 42조 원' : '1T KRW (2014) → 42T KRW (2024)'}</p>
+                    <div className={`w-[450px] flex flex-col items-center justify-center bg-gray-900 border border-gray-800 rounded-[24px] p-10 shadow-2xl transition-all duration-1000 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                        <div className="text-gray-400 font-bold text-[20px] mb-2">{lang === 'kr' ? '쿠팡 매출 폭발적 성장' : 'Coupang Revenue Surge'}</div>
                         
-                        <div className="w-full flex flex-col gap-4">
-                            <div className="bg-white px-6 py-4 rounded-xl border border-gray-300 shadow-sm flex flex-col items-center justify-center text-center">
-                                <span className="font-bold text-[18px] text-gray-800">{lang === 'kr' ? '가장 극적인 신규 섹터' : 'Most Dramatic New Sector'}</span>
-                                <span className="text-[14px] text-gray-500 font-medium mt-1">{lang === 'kr' ? '1조→2조 달러 구간의 상징' : 'Symbol of the $1T-$2T Era'}</span>
+                        <div className="w-full flex justify-between items-end mt-4 mb-4 px-2">
+                            <div className="flex flex-col items-center">
+                                <span className="text-gray-500 font-bold text-[16px]">2014</span>
+                                <span className="text-white font-black text-[42px]">1조</span>
                             </div>
+                            <div className="flex flex-col items-center mb-2">
+                                <span className="text-yellow-400 font-black text-[36px]">40배 🚀</span>
+                            </div>
+                            <div className="flex flex-col items-center">
+                                <span className="text-yellow-500 font-bold text-[16px]">2024</span>
+                                <span className="text-yellow-400 font-black text-[42px]">42조</span>
+                            </div>
+                        </div>
+
+                        <div className="w-full bg-white/10 py-3 rounded-xl border border-white/20 text-center mt-4">
+                            <span className="text-yellow-300 font-extrabold text-[18px]">{lang === 'kr' ? '최초의 국가급 물류 수요 창출' : 'Created First National Logistics Demand'}</span>
                         </div>
                     </div>
 
                     {/* Network Box */}
-                    <div className={`flex-1 flex flex-col items-center bg-gray-50 border border-gray-300 rounded-[24px] p-10 shadow-lg hover:shadow-2xl transition-all duration-700 hover:-translate-y-2 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-                        <div className="w-20 h-20 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center font-black text-[32px] mb-6 shadow-sm">NET</div>
-                        <h3 className="text-[26px] font-extrabold text-gray-900 mb-2">{lang === 'kr' ? '국가급 물류 네트워크 형성' : 'National Logistics Network'}</h3>
-                        <p className="text-[18px] font-bold text-gray-500 mb-8">{lang === 'kr' ? '용인·이천·안성·평택 라인' : 'Yongin·Icheon·Anseong·Pyeongtaek Line'}</p>
+                    <div className={`flex-1 flex flex-col justify-center bg-white border border-gray-300 rounded-[24px] p-10 shadow-xl transition-all duration-1000 delay-200 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
+                        <h3 className="text-[26px] font-extrabold text-gray-900 mb-8 text-center">{lang === 'kr' ? '초대형 물류 허브 벨트 완성' : 'Mega Logistics Hub Belt'}</h3>
                         
-                        <div className="w-full flex flex-col gap-3">
-                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-300 font-bold text-gray-700 shadow-sm">콜드체인 (Cold Chain)</div>
-                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-300 font-bold text-gray-700 shadow-sm">라스트마일 (Last-Mile)</div>
-                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-300 font-bold text-gray-700 shadow-sm">풀필먼트 센터 (Fulfillment Center)</div>
+                        <div className="w-full flex flex-col items-center">
+                            {/* Tags */}
+                            <div className="flex gap-3 mb-8">
+                                <span className="px-4 py-2 bg-blue-50 text-blue-700 font-bold rounded-full border border-blue-200">콜드체인</span>
+                                <span className="px-4 py-2 bg-orange-50 text-orange-700 font-bold rounded-full border border-orange-200">라스트마일</span>
+                                <span className="px-4 py-2 bg-purple-50 text-purple-700 font-bold rounded-full border border-purple-200">풀필먼트</span>
+                            </div>
+
+                            {/* Timeline Network */}
+                            <div className="relative w-full max-w-[500px] h-16 flex items-center justify-between">
+                                <div className="absolute top-1/2 left-0 w-full h-2 bg-gray-200 -translate-y-1/2 rounded-full"></div>
+                                <div className={`absolute top-1/2 left-0 h-2 bg-gradient-to-r from-orange-400 to-red-500 -translate-y-1/2 rounded-full transition-all duration-[1500ms] delay-500`} style={{ width: step >= 4 ? '100%' : '0%' }}></div>
+                                
+                                {['용인', '이천', '안성', '평택'].map((city, idx) => (
+                                    <div key={city} className={`relative z-10 flex flex-col items-center transition-all duration-500`} style={{ transitionDelay: \`\${500 + (idx * 200)}ms\`, opacity: step >= 4 ? 1 : 0, transform: step >= 4 ? 'scale(1)' : 'scale(0.5)' }}>
+                                        <div className="w-6 h-6 bg-white border-4 border-red-500 rounded-full shadow-md"></div>
+                                        <span className="absolute top-8 font-black text-[22px] text-gray-800 whitespace-nowrap">{city}</span>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
 
                 </div>
 
-                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                {/* Summarized Bottom Text */}
+                <div className={`mt-[30px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-orange-500">▪</span><span><strong>1조→2조 달러 구간의 가장 극적인 신규 섹터.</strong> 쿠팡 매출은 2014년 1조 원에서 2024년 약 42조 원으로 약 40배 확장됨.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-orange-500">▪</span><span>이는 단일 임차인이 만든 <strong>국가급 물류 수요의 첫 사례</strong>로 기록됨.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-orange-500">▪</span><span>콜드체인·라스트마일·풀필먼트 센터가 수도권 외곽인 <strong>용인·이천·안성·평택</strong>을 따라 거대한 허브로 형성됨.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-orange-500">▪</span><span><strong>압도적 매출 폭증(40배)</strong>: 1조→2조 달러 구간의 가장 극적인 신규 섹터 탄생</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-orange-500">▪</span><span><strong>단일 임차인 파워</strong>: 쿠팡이 창출한 최초의 국가급 물류 수요 사례</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-orange-500">▪</span><span><strong>허브 벨트 구축</strong>: 용인·이천·안성·평택을 잇는 거대한 풀필먼트·콜드체인 인프라 완성</span></li>
                             </>
                         ) : (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-orange-500">▪</span><span><strong>The most dramatic new sector of the $1T-$2T era.</strong> Coupang's revenue exploded 40x from 1T (2014) to 42T KRW (2024).</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-orange-500">▪</span><span>This marks the first instance of a <strong>national-scale logistics demand created by a single tenant</strong>.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-orange-500">▪</span><span>Cold chain, last-mile, and fulfillment centers formed massive hubs along <strong>Yongin, Icheon, Anseong, and Pyeongtaek</strong>.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-orange-500">▪</span><span><strong>Explosive Growth (40x)</strong>: The most dramatic new sector of the $1T-$2T era.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-orange-500">▪</span><span><strong>Single Tenant Power</strong>: First national-scale logistics demand created by Coupang.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-orange-500">▪</span><span><strong>Hub Belt</strong>: Massive fulfillment & cold chain infrastructure linking Yongin to Pyeongtaek.</span></li>
                             </>
                         )}
                     </ul>
