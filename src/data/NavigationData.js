@@ -35,7 +35,11 @@ export const menuDataEn = [
                     { label: "Industrial Momentum", id: "page-14" },
                     { label: "[Semi] AI Supercycle", id: "page-15" },
                     { label: "[Auto] Beyond Mobility", id: "page-16" },
-                    { label: "[Ship] MASGA Resurgence", id: "page-17" }
+                    { label: "[Ship] MASGA Resurgence", id: "page-17" },
+                    { label: "[Petro] Structural Limits", id: "page-18" },
+                    { label: "[Steel] Great Transition", id: "page-19" },
+                    { label: "[Content] Korea Premium", id: "page-20" },
+                    { label: "[Bio] Cluster Settlement", id: "page-21" }
                 ]
             }
         ] 
@@ -94,7 +98,11 @@ export const menuDataKr = [
                     { label: "산업별 모멘텀", id: "page-14" },
                     { label: "[반도체] AI 슈퍼사이클", id: "page-15" },
                     { label: "[자동차] 모빌리티 진화", id: "page-16" },
-                    { label: "[조선업] 패권 경쟁과 부활", id: "page-17" }
+                    { label: "[조선업] 패권 경쟁과 부활", id: "page-17" },
+                    { label: "[석유화학] 구조적 한계", id: "page-18" },
+                    { label: "[철강] 생존 대전환", id: "page-19" },
+                    { label: "[콘텐츠] 코리아 프리미엄", id: "page-20" },
+                    { label: "[바이오] 클러스터 안착", id: "page-21" }
                 ]
             }
         ] 

@@ -25,7 +25,7 @@ export default function Section16({ isActive }) {
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    <span className="inline-block text-[20px] md:text-[24px] font-bold text-[#ea580c] bg-orange-50 border border-orange-100 px-4 py-1 rounded-full mb-[12px]">
+                    <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
                         {lang === 'kr' ? '[산업 분석 3] 글로벌 패권 경쟁 속 조선업의 부활' : '[Industry 3] Resurgence of Shipbuilding amid Global Hegemony'}
                     </span>
                 </div>
