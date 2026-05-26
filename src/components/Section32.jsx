@@ -26,76 +26,76 @@ export default function Section32({ isActive }) {
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        {lang === 'kr' ? '[서울 오피스 5] 연간 거래량 30조 시대와 자본의 회귀' : '[Seoul Office 5] 30 Trillion Won Era & Return of Capital'}
+                        {lang === 'kr' ? '[서울 오피스 4] 도쿄와의 격차, 그리고 수렴의 법칙' : '[Seoul Office 4] The Gap with Tokyo & Law of Convergence'}
                     </span>
                 </div>
 
                 <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    {lang === 'kr' ? '금리 인하 기대 속 외국인 유동성의 대규모 진입과 캡레이트 압축' : 'Massive Influx of Foreign Liquidity & Cap Rate Compression'}
+                    {lang === 'kr' ? '누적 50% 상승에도 여전히 2배 높은 마루노우치가 제시하는 상승 여력' : 'Upside Potential Suggested by Marunouchi, Still 2x Higher Despite 50% Growth'}
                 </h2>
 
-                <div className="relative w-full max-w-[1100px] mt-[40px] mb-[30px] h-auto flex flex-col md:flex-row items-stretch justify-center z-10 gap-8">
+                <div className="relative w-full max-w-[1100px] mt-[40px] mb-[30px] h-auto flex flex-col items-center justify-center z-10 gap-10">
                     
-                    {/* Volume Card */}
-                    <div className={`flex-1 flex flex-col justify-center items-center bg-white border border-gray-200 rounded-[30px] p-10 shadow-xl transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-                        <div className="text-gray-500 font-bold text-[20px] mb-2">{lang === 'kr' ? '2025년 서울 상업용 부동산 거래량 (예상)' : '2025 Seoul CRE Transaction Volume (Est.)'}</div>
-                        <div className="text-[64px] font-black text-gray-900 leading-none mb-4">30<span className="text-[32px]">조 원</span></div>
+                    <div className={`w-full flex justify-between items-end pb-8 border-b-2 border-gray-100 transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         
-                        <div className="w-full mt-6 bg-gray-50 rounded-2xl p-4 flex flex-col gap-2 text-left border border-gray-100">
-                            <div className="flex justify-between items-center text-[16px] font-bold">
-                                <span className="text-gray-500">2021 (저금리기)</span>
-                                <span className="text-gray-800">21조 원</span>
-                            </div>
-                            <div className="flex justify-between items-center text-[16px] font-bold">
-                                <span className="text-gray-500">2024</span>
-                                <span className="text-gray-800">22조 원</span>
-                            </div>
-                            <div className="flex justify-between items-center text-[18px] font-black">
-                                <span className="text-blue-600">2025 연말 (예상)</span>
-                                <span className="text-blue-600">30조 원 돌파</span>
+                        {/* Seoul Office Rent */}
+                        <div className="flex flex-col items-start w-[45%]">
+                            <div className="bg-blue-100 text-blue-700 font-bold px-4 py-2 rounded-full mb-4">Seoul Prime</div>
+                            <div className="text-[20px] font-bold text-gray-500 mb-1">{lang === 'kr' ? '2025년 3분기 평균 명목임대료' : 'Q3 2025 Avg. Face Rent'}</div>
+                            <div className="text-[48px] font-black text-gray-900 leading-none mb-4">13.2<span className="text-[24px]">만 원</span><span className="text-[16px] text-gray-400 font-bold ml-2">/평·월</span></div>
+                            
+                            <div className="w-full flex items-center gap-2">
+                                <div className="h-6 w-1/2 bg-blue-300 rounded-l-full relative">
+                                    <div className="absolute top-8 left-0 text-[14px] font-bold text-gray-400">2007: 9만 원</div>
+                                </div>
+                                <div className="h-6 w-1/2 bg-blue-600 rounded-r-full relative flex items-center">
+                                    <div className="absolute -top-10 right-0 bg-blue-600 text-white font-bold px-3 py-1 rounded-lg shadow-sm">
+                                        +50%
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    {/* Cap Rate Card */}
-                    <div className={`flex-1 flex flex-col justify-center items-center bg-gray-900 text-white rounded-[30px] p-10 shadow-xl transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-200 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-                        <div className="text-gray-400 font-bold text-[20px] mb-2">{lang === 'kr' ? '2025 하반기 캡레이트 압축' : 'H2 2025 Cap Rate Compression'}</div>
-                        <div className="text-[64px] font-black text-blue-400 leading-none mb-4">4.2~4.5<span className="text-[32px]">%</span></div>
-                        
-                        <div className="w-full mt-6 bg-white/10 rounded-2xl p-4 flex flex-col gap-2 text-left border border-white/10">
-                            <div className="flex justify-between items-center text-[16px] font-bold text-gray-300">
-                                <span>2021 (저점)</span>
-                                <span>3.5~4.0%</span>
-                            </div>
-                            <div className="flex justify-between items-center text-[16px] font-bold text-gray-300">
-                                <span>2023~2024</span>
-                                <span>4.5~5.0%</span>
-                            </div>
-                            <div className="flex justify-between items-center text-[18px] font-black text-white">
-                                <span className="text-blue-300">{lang === 'kr' ? '외국인 자본 회귀 본격화' : 'Return of Foreign Capital'}</span>
-                                <span className="text-blue-300">Q3 2025</span>
+                        {/* Gap */}
+                        <div className={`flex flex-col items-center pb-6 transition-all duration-1000 delay-300 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
+                            <div className="text-[24px] font-black text-gray-300 mb-2">Gap-to-Tokyo</div>
+                            <div className="flex items-center gap-2">
+                                <div className="w-4 h-4 rounded-full bg-gray-200"></div>
+                                <div className="w-4 h-4 rounded-full bg-gray-300"></div>
+                                <div className="w-4 h-4 rounded-full bg-gray-400"></div>
+                                <div className="text-gray-500 font-bold ml-2">{lang === 'kr' ? '여전히 50% 이상 격차' : 'Still >50% gap'}</div>
                             </div>
                         </div>
-                        <div className="mt-4 text-[14px] font-bold text-gray-400">
-                            Aberdeen, BentallGreenOak, PAG 등
-                        </div>
-                    </div>
 
+                        {/* Tokyo Office Rent */}
+                        <div className="flex flex-col items-end w-[45%] text-right">
+                            <div className="bg-red-100 text-red-700 font-bold px-4 py-2 rounded-full mb-4">Tokyo Marunouchi</div>
+                            <div className="text-[20px] font-bold text-gray-500 mb-1">{lang === 'kr' ? '프라임 임대료 (환산)' : 'Prime Rent (Converted)'}</div>
+                            <div className="text-[48px] font-black text-gray-900 leading-none mb-4">200<span className="text-[24px]">$+</span><span className="text-[16px] text-gray-400 font-bold ml-2">/sqft</span></div>
+                            
+                            <div className="w-full flex items-center justify-end gap-2">
+                                <div className="h-6 w-[80%] bg-red-600 rounded-full relative flex items-center justify-end pr-4 text-white font-bold">
+                                    {lang === 'kr' ? '서울의 약 2배 수준' : 'Approx 2x of Seoul'}
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
                 <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-gray-500">▪</span><span>2025년 거래량은 9월 누적 25조 원을 기록, <strong>연말 30조 원 돌파 예상</strong>으로 과거 저금리기의 21조 원 기록을 크게 경신.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-gray-500">▪</span><span>캡레이트는 2023~2024년 4.5~5.0%에서 <strong>금리 인하 기대로 4.2~4.5%로 다시 압축</strong> 중.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-gray-500">▪</span><span>Aberdeen, BentallGreenOak, PAG 등 <strong>외국인 자본 회귀가 본격화된 시점이 2025년 3분기</strong>임.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-red-500">▪</span><span>서울 프라임 명목임대료는 2007년 9만 원에서 <strong>2025년 3분기 13.2만 원</strong>으로 18년간 누적 50% 상승.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-red-500">▪</span><span>그러나 도쿄 마루노우치 프라임 임대료는 약 200달러대까지 상승하며 <strong>서울의 약 2배 수준을 여전히 유지</strong>.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-red-500">▪</span><span>이는 글로벌 갭(gap-to-Tokyo)이 여전히 50% 이상 남아있음을 의미하며, 향후 <strong>트로피 자산의 Rent Re-pricing 정량적 근거</strong>가 됨.</span></li>
                             </>
                         ) : (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-gray-500">▪</span><span>2025 transaction volume hit 25T KRW by Q3, <strong>expected to break 30T KRW by year-end</strong>, smashing the 2021 record.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-gray-500">▪</span><span>Cap rates are <strong>compressing back to 4.2-4.5%</strong> from the 4.5-5.0% peak of 2023-2024.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-gray-500">▪</span><span>The <strong>return of foreign capital</strong> (Aberdeen, BGO, PAG) materialized in full force in Q3 2025.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-red-500">▪</span><span>Seoul Prime rent grew by 50% over 18 years, reaching <strong>132,000 KRW/pyeong in Q3 2025</strong>.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-red-500">▪</span><span>However, Tokyo Marunouchi rent rose to $200+, <strong>maintaining roughly a 2x multiple over Seoul</strong>.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-red-500">▪</span><span>This remaining 50%+ gap-to-Tokyo serves as the <strong>quantitative thesis for future rent re-pricing</strong> of trophy assets.</span></li>
                             </>
                         )}
                     </ul>

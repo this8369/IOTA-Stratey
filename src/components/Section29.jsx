@@ -26,53 +26,49 @@ export default function Section29({ isActive }) {
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        {lang === 'kr' ? '[서울 오피스 2] MBD(마곡)와 BBD(판교)의 급부상' : '[Seoul Office 2] Rapid Rise of MBD and BBD'}
+                        {lang === 'kr' ? '[서울 오피스 1] 3대 핵심 권역(CBD/GBD/YBD)의 골격' : '[Seoul Office 1] Foundation of 3 Core Districts'}
                     </span>
                 </div>
 
                 <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    {lang === 'kr' ? 'R&D 테크 자본 집중으로 다극화된 서울 오피스 5대 권역 재편' : 'Reorganization into 5 Core Districts Driven by R&D and Tech Capital'}
+                    {lang === 'kr' ? 'SFC부터 파크원까지 트로피 자산이 주도한 권역별 랜드마크 진화' : 'Trophy Assets like SFC to Parc1 Driving District Evolution'}
                 </h2>
 
-                <div className="relative w-full max-w-[1000px] mt-[40px] mb-[30px] h-auto flex flex-col md:flex-row items-center justify-center z-10 gap-10">
+                <div className="relative w-full max-w-[1200px] mt-[40px] mb-[30px] h-auto flex flex-col md:flex-row items-stretch justify-center z-10 gap-6 md:gap-8">
                     
-                    {/* MBD */}
-                    <div className={`relative w-[400px] flex flex-col items-center bg-gray-50 border border-gray-100 rounded-[30px] p-10 shadow-xl hover:shadow-2xl transition-all duration-1000 hover:-translate-y-2 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
-                        <div className="absolute -top-6 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-black text-[24px] px-6 py-2 rounded-full shadow-md">
-                            MBD
-                        </div>
-                        <h3 className="text-[28px] font-extrabold text-gray-900 mt-6 mb-2">{lang === 'kr' ? '마곡권역' : 'Magok'}</h3>
-                        <p className="text-[18px] font-bold text-gray-500 mb-8">{lang === 'kr' ? 'R&D 융복합 클러스터' : 'R&D Convergence Cluster'}</p>
-                        
-                        <div className="w-full flex flex-col gap-4">
-                            <div className="flex flex-col items-center justify-center bg-white py-4 rounded-xl border border-gray-100 shadow-sm">
-                                <span className="font-bold text-[18px] text-gray-800">LG사이언스파크</span>
-                            </div>
-                            <div className="flex flex-col items-center justify-center bg-white py-4 rounded-xl border border-gray-100 shadow-sm">
-                                <span className="font-bold text-[18px] text-gray-800">코오롱 One&Only타워</span>
-                            </div>
+                    {/* CBD */}
+                    <div className={`flex-1 flex flex-col items-center bg-gray-50 border border-gray-100 rounded-[24px] p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:-translate-y-2 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                        <div className="w-20 h-20 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center font-black text-[32px] mb-6 shadow-sm">CBD</div>
+                        <h3 className="text-[26px] font-extrabold text-gray-900 mb-2">{lang === 'kr' ? '도심권역' : 'Central'}</h3>
+                        <p className="text-[18px] font-bold text-gray-500 mb-6">{lang === 'kr' ? '광화문·시청·종로' : 'Gwanghwamun·Jongno'}</p>
+                        <div className="w-full flex flex-col gap-3">
+                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-100 font-bold text-gray-700 shadow-sm">SFC (2002)</div>
+                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-100 font-bold text-gray-700 shadow-sm">종로타워 / 그랑서울 (2014)</div>
+                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-100 font-bold text-gray-700 shadow-sm">D타워 (2017) / 센트로폴리스 (2018)</div>
                         </div>
                     </div>
 
-                    <div className={`text-[40px] font-black text-gray-300 transition-all duration-1000 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
-                        +
+                    {/* GBD */}
+                    <div className={`flex-1 flex flex-col items-center bg-gray-50 border border-gray-100 rounded-[24px] p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:-translate-y-2 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                        <div className="w-20 h-20 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center font-black text-[32px] mb-6 shadow-sm">GBD</div>
+                        <h3 className="text-[26px] font-extrabold text-gray-900 mb-2">{lang === 'kr' ? '강남권역' : 'Gangnam'}</h3>
+                        <p className="text-[18px] font-bold text-gray-500 mb-6">{lang === 'kr' ? '테헤란로 라인 핵심' : 'Teheran-ro Core'}</p>
+                        <div className="w-full flex flex-col gap-3">
+                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-100 font-bold text-gray-700 shadow-sm">GFC (2001)</div>
+                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-100 font-bold text-gray-700 shadow-sm">파르나스타워 (2016)</div>
+                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-100 font-bold text-gray-700 shadow-sm">캐피탈타워</div>
+                        </div>
                     </div>
 
-                    {/* BBD */}
-                    <div className={`relative w-[400px] flex flex-col items-center bg-gray-50 border border-gray-100 rounded-[30px] p-10 shadow-xl hover:shadow-2xl transition-all duration-1000 hover:-translate-y-2 ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
-                        <div className="absolute -top-6 bg-gradient-to-r from-teal-500 to-emerald-600 text-white font-black text-[24px] px-6 py-2 rounded-full shadow-md">
-                            BBD
-                        </div>
-                        <h3 className="text-[28px] font-extrabold text-gray-900 mt-6 mb-2">{lang === 'kr' ? '분당·판교권역' : 'Bundang/Pangyo'}</h3>
-                        <p className="text-[18px] font-bold text-gray-500 mb-8">{lang === 'kr' ? '한국의 실리콘밸리' : 'Silicon Valley of Korea'}</p>
-                        
-                        <div className="w-full flex flex-col gap-4">
-                            <div className="flex flex-col items-center justify-center bg-white py-4 rounded-xl border border-gray-100 shadow-sm">
-                                <span className="font-bold text-[18px] text-gray-800">판교테크노밸리</span>
-                            </div>
-                            <div className="flex flex-col items-center justify-center bg-white py-4 rounded-xl border border-gray-100 shadow-sm">
-                                <span className="font-bold text-[18px] text-gray-800">알파돔시티 / K-스퀘어</span>
-                            </div>
+                    {/* YBD */}
+                    <div className={`flex-1 flex flex-col items-center bg-gray-50 border border-gray-100 rounded-[24px] p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:-translate-y-2 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                        <div className="w-20 h-20 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center font-black text-[32px] mb-6 shadow-sm">YBD</div>
+                        <h3 className="text-[26px] font-extrabold text-gray-900 mb-2">{lang === 'kr' ? '여의도권역' : 'Yeouido'}</h3>
+                        <p className="text-[18px] font-bold text-gray-500 mb-6">{lang === 'kr' ? '두 번의 거대한 변곡점' : 'Two Major Turning Points'}</p>
+                        <div className="w-full flex flex-col gap-3">
+                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-100 font-bold text-gray-700 shadow-sm">IFC 서울 (2012)</div>
+                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-100 font-bold text-gray-700 shadow-sm">파크원 Parc1 (2020)</div>
+                            <div className="bg-transparent px-4 py-3"></div>
                         </div>
                     </div>
 
@@ -82,15 +78,13 @@ export default function Section29({ isActive }) {
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-indigo-600">▪</span><span>2010년대 중반 이후 <strong>MBD(마곡)</strong>가 LG사이언스파크 등 거대 R&D 자본을 흡수하며 융복합 클러스터로 형성됨.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-indigo-600">▪</span><span><strong>BBD(분당·판교)</strong>는 IT·테크 기업의 폭발적 성장과 함께 알파돔시티 등으로 대규모 확장.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-indigo-600">▪</span><span>결과적으로 1조→2조 달러 구간 동안 서울 오피스 시장은 전통 3대 권역에서 <strong>5대 권역으로 다극화</strong>되며 질적 성장을 이룸.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-600">▪</span><span>2007년 서울 오피스 시장은 <strong>CBD(광화문·시청·종로)</strong> 중심이었으며, SFC부터 센트로폴리스까지 핵심 랜드마크가 골격을 형성.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-600">▪</span><span><strong>GBD(강남)</strong>는 GFC와 파르나스타워 등 테헤란로 중심, <strong>YBD(여의도)</strong>는 IFC와 파크원으로 거대한 변곡점을 맞이함.</span></li>
                             </>
                         ) : (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-indigo-600">▪</span><span>Since the mid-2010s, <strong>MBD (Magok)</strong> formed a convergence cluster backed by R&D giants like LG Science Park.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-indigo-600">▪</span><span><strong>BBD (Bundang/Pangyo)</strong> massively expanded alongside the explosive growth of IT/Tech companies.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-indigo-600">▪</span><span>Consequently, the Seoul office market diversified from 3 to <strong>5 major districts</strong> during the $1T-$2T era.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-600">▪</span><span>In 2007, the market centered on <strong>CBD</strong>, with landmarks like SFC shaping its foundation.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-600">▪</span><span><strong>GBD</strong> grew around Teheran-ro (GFC, Parnas Tower), while <strong>YBD</strong> hit major turning points via IFC and Parc1.</span></li>
                             </>
                         )}
                     </ul>

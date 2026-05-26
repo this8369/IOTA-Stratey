@@ -26,48 +26,53 @@ export default function Section30({ isActive }) {
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        {lang === 'kr' ? '[서울 오피스 3] 자연 공실률 하한선 돌파' : '[Seoul Office 3] Breaking Natural Vacancy Floor'}
+                        {lang === 'kr' ? '[서울 오피스 2] MBD(마곡)와 BBD(판교)의 급부상' : '[Seoul Office 2] Rapid Rise of MBD and BBD'}
                     </span>
                 </div>
 
                 <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    {lang === 'kr' ? '코로나 이후의 급반등, 사실상 완전 임차에 도달하다' : 'Rapid Rebound Post-COVID, Reaching Full Occupancy'}
+                    {lang === 'kr' ? 'R&D 테크 자본 집중으로 다극화된 서울 오피스 5대 권역 재편' : 'Reorganization into 5 Core Districts Driven by R&D and Tech Capital'}
                 </h2>
 
-                <div className="relative w-full max-w-[1100px] mt-[40px] mb-[30px] h-auto flex flex-col items-center justify-center z-10 gap-8">
+                <div className="relative w-full max-w-[1000px] mt-[40px] mb-[30px] h-auto flex flex-col md:flex-row items-center justify-center z-10 gap-10">
                     
-                    {/* Vacancy Highlight Box */}
-                    <div className={`relative w-full flex flex-col md:flex-row items-center justify-between bg-gradient-to-br from-gray-900 to-black rounded-[30px] p-10 shadow-2xl transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-95'}`}>
+                    {/* MBD */}
+                    <div className={`relative w-[400px] flex flex-col items-center bg-gray-50 border border-gray-100 rounded-[30px] p-10 shadow-xl hover:shadow-2xl transition-all duration-1000 hover:-translate-y-2 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                        <div className="absolute -top-6 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-black text-[24px] px-6 py-2 rounded-full shadow-md">
+                            MBD
+                        </div>
+                        <h3 className="text-[28px] font-extrabold text-gray-900 mt-6 mb-2">{lang === 'kr' ? '마곡권역' : 'Magok'}</h3>
+                        <p className="text-[18px] font-bold text-gray-500 mb-8">{lang === 'kr' ? 'R&D 융복합 클러스터' : 'R&D Convergence Cluster'}</p>
                         
-                        <div className="flex-1 text-left flex flex-col gap-2">
-                            <div className="text-gray-400 font-bold text-[20px]">{lang === 'kr' ? 'CBRE 2025년 3분기 기준' : 'CBRE Q3 2025'}</div>
-                            <div className="text-white font-extrabold text-[32px] leading-tight break-keep">
-                                {lang === 'kr' ? '서울 Grade-A 오피스 평균 공실률' : 'Seoul Grade-A Office Average Vacancy Rate'}
+                        <div className="w-full flex flex-col gap-4">
+                            <div className="flex flex-col items-center justify-center bg-white py-4 rounded-xl border border-gray-100 shadow-sm">
+                                <span className="font-bold text-[18px] text-gray-800">LG사이언스파크</span>
+                            </div>
+                            <div className="flex flex-col items-center justify-center bg-white py-4 rounded-xl border border-gray-100 shadow-sm">
+                                <span className="font-bold text-[18px] text-gray-800">코오롱 One&Only타워</span>
                             </div>
                         </div>
-
-                        <div className={`flex flex-col items-center justify-center px-10 py-6 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/20 transition-all duration-1000 delay-300 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
-                            <div className="text-blue-400 font-black text-[72px] leading-none mb-1">
-                                3.1<span className="text-[40px]">%</span>
-                            </div>
-                            <div className="text-white font-bold text-[18px]">Full Occupancy</div>
-                        </div>
-
                     </div>
 
-                    {/* Breakdown Cards */}
-                    <div className="w-full flex justify-center gap-6">
-                        <div className={`flex-1 bg-white border border-gray-200 rounded-2xl p-6 shadow-sm transition-all duration-700 hover:-translate-y-2 delay-400 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-                            <div className="text-gray-500 font-bold text-[16px] mb-2">GBD</div>
-                            <div className="text-gray-900 font-black text-[36px]">1.5%</div>
+                    <div className={`text-[40px] font-black text-gray-300 transition-all duration-1000 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
+                        +
+                    </div>
+
+                    {/* BBD */}
+                    <div className={`relative w-[400px] flex flex-col items-center bg-gray-50 border border-gray-100 rounded-[30px] p-10 shadow-xl hover:shadow-2xl transition-all duration-1000 hover:-translate-y-2 ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
+                        <div className="absolute -top-6 bg-gradient-to-r from-teal-500 to-emerald-600 text-white font-black text-[24px] px-6 py-2 rounded-full shadow-md">
+                            BBD
                         </div>
-                        <div className={`flex-1 bg-white border border-gray-200 rounded-2xl p-6 shadow-sm transition-all duration-700 hover:-translate-y-2 delay-500 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-                            <div className="text-gray-500 font-bold text-[16px] mb-2">YBD</div>
-                            <div className="text-gray-900 font-black text-[36px]">3.6%</div>
-                        </div>
-                        <div className={`flex-1 bg-white border border-gray-200 rounded-2xl p-6 shadow-sm transition-all duration-700 hover:-translate-y-2 delay-600 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-                            <div className="text-gray-500 font-bold text-[16px] mb-2">CBD</div>
-                            <div className="text-gray-900 font-black text-[36px]">4.1%</div>
+                        <h3 className="text-[28px] font-extrabold text-gray-900 mt-6 mb-2">{lang === 'kr' ? '분당·판교권역' : 'Bundang/Pangyo'}</h3>
+                        <p className="text-[18px] font-bold text-gray-500 mb-8">{lang === 'kr' ? '한국의 실리콘밸리' : 'Silicon Valley of Korea'}</p>
+                        
+                        <div className="w-full flex flex-col gap-4">
+                            <div className="flex flex-col items-center justify-center bg-white py-4 rounded-xl border border-gray-100 shadow-sm">
+                                <span className="font-bold text-[18px] text-gray-800">판교테크노밸리</span>
+                            </div>
+                            <div className="flex flex-col items-center justify-center bg-white py-4 rounded-xl border border-gray-100 shadow-sm">
+                                <span className="font-bold text-[18px] text-gray-800">알파돔시티 / K-스퀘어</span>
+                            </div>
                         </div>
                     </div>
 
@@ -77,15 +82,15 @@ export default function Section30({ isActive }) {
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-gray-500">▪</span><span>2007~2010년 글로벌 금융위기로 8~10%대, 2013~2015년 대형 공급(IFC 등)으로 YBD 일시 18%까지 상승.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-gray-500">▪</span><span>2020~2021년 코로나 시기 일시 상승 후 2022년부터 급락, <strong>2025년 서울 Grade-A 공실률은 3.1%</strong> 기록.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-gray-500">▪</span><span>1조→2조 달러 구간 종료 시점, 서울 프라임 오피스는 사실상 <strong>자연 공실률을 하회하는 완전 임차 상태</strong> 도달.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-indigo-600">▪</span><span>2010년대 중반 이후 <strong>MBD(마곡)</strong>가 LG사이언스파크 등 거대 R&D 자본을 흡수하며 융복합 클러스터로 형성됨.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-indigo-600">▪</span><span><strong>BBD(분당·판교)</strong>는 IT·테크 기업의 폭발적 성장과 함께 알파돔시티 등으로 대규모 확장.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-indigo-600">▪</span><span>결과적으로 1조→2조 달러 구간 동안 서울 오피스 시장은 전통 3대 권역에서 <strong>5대 권역으로 다극화</strong>되며 질적 성장을 이룸.</span></li>
                             </>
                         ) : (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-gray-500">▪</span><span>Historically rose to 8-10% post-GFC, and YBD hit 18% during massive supply waves (2013-2015).</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-gray-500">▪</span><span>Dropped sharply since 2022. By 2025, <strong>Seoul Grade-A vacancy reached 3.1%</strong>.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-gray-500">▪</span><span>At the end of the $1T-$2T era, prime offices have effectively reached <strong>Full Occupancy</strong> below natural vacancy.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-indigo-600">▪</span><span>Since the mid-2010s, <strong>MBD (Magok)</strong> formed a convergence cluster backed by R&D giants like LG Science Park.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-indigo-600">▪</span><span><strong>BBD (Bundang/Pangyo)</strong> massively expanded alongside the explosive growth of IT/Tech companies.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-indigo-600">▪</span><span>Consequently, the Seoul office market diversified from 3 to <strong>5 major districts</strong> during the $1T-$2T era.</span></li>
                             </>
                         )}
                     </ul>
