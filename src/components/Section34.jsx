@@ -22,7 +22,7 @@ export default function Section34({ isActive }) {
             
             <style>{`
                 .gradient-text-ch5 {
-                    background: linear-gradient(90deg, #fcd34d, #f59e0b);
+                    background: linear-gradient(90deg, #e04c9a, #f45407);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
