@@ -37,13 +37,13 @@ export default function Section27({ isActive }) {
                 <div className="relative w-full max-w-[1200px] mt-[22px] mb-[20px] h-auto py-4 flex flex-col md:flex-row items-center justify-center z-10 gap-10">
                     
                     {/* Key Drivers */}
-                    <div className={`relative w-full md:w-[600px] flex flex-col gap-3 transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                    <div className={`relative w-full md:w-[500px] flex flex-col gap-3 transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
                         <div className="text-[24px] font-black text-left text-[#1d1d1f] mb-2">{lang === 'kr' ? '5대 핵심 동력' : '5 Core Drivers'}</div>
                         
                         <div className="flex items-center gap-4 bg-gray-50 border border-gray-200 p-4 rounded-xl shadow-sm text-left">
                             <div className="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center font-black text-[22px]">1</div>
                             <div className="flex-1">
-                                <div className="text-[18px] font-bold text-gray-800">{lang === 'kr' ? '반도체 슈퍼사이클' : 'Semi Supercycle'}</div>
+                                <div className="text-[22px] font-bold text-gray-800">{lang === 'kr' ? '반도체 슈퍼사이클' : 'Semi Supercycle'}</div>
                                 <div className="text-[14px] font-bold text-gray-500">{lang === 'kr' ? 'HBM 공급 부족 현상 지속' : 'Prolonged HBM Shortage'}</div>
                             </div>
                         </div>
@@ -51,7 +51,7 @@ export default function Section27({ isActive }) {
                         <div className="flex items-center gap-4 bg-gray-50 border border-gray-200 p-4 rounded-xl shadow-sm text-left">
                             <div className="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center font-black text-[22px]">2</div>
                             <div className="flex-1">
-                                <div className="text-[18px] font-bold text-gray-800">{lang === 'kr' ? '외국인 대규모 유입' : 'Massive Foreign Inflows'}</div>
+                                <div className="text-[22px] font-bold text-gray-800">{lang === 'kr' ? '외국인 대규모 유입' : 'Massive Foreign Inflows'}</div>
                                 <div className="text-[14px] font-bold text-gray-500">{lang === 'kr' ? '공매도 재개 이후 패시브/액티브 자금 회귀' : 'Return of funds post-short selling resume'}</div>
                             </div>
                         </div>
@@ -59,7 +59,7 @@ export default function Section27({ isActive }) {
                         <div className="flex items-center gap-4 bg-gray-50 border border-gray-200 p-4 rounded-xl shadow-sm text-left">
                             <div className="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center font-black text-[22px]">3</div>
                             <div className="flex-1">
-                                <div className="text-[18px] font-bold text-gray-800">{lang === 'kr' ? '친주주 밸류업 정책' : 'Pro-shareholder Value-up'}</div>
+                                <div className="text-[22px] font-bold text-gray-800">{lang === 'kr' ? '친주주 밸류업 정책' : 'Pro-shareholder Value-up'}</div>
                                 <div className="text-[14px] font-bold text-gray-500">{lang === 'kr' ? '밸류업 프로그램 및 자본시장법 개정안' : 'Value-up Program & Capital Market Act revision'}</div>
                             </div>
                         </div>
@@ -67,40 +67,49 @@ export default function Section27({ isActive }) {
                         <div className="flex items-center gap-4 bg-gray-50 border border-gray-200 p-4 rounded-xl shadow-sm text-left">
                             <div className="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center font-black text-[22px]">4</div>
                             <div className="flex-1">
-                                <div className="text-[18px] font-bold text-gray-800">{lang === 'kr' ? '글로벌 AI 수혜 노출도 1위' : '#1 Global AI Exposure'}</div>
+                                <div className="text-[22px] font-bold text-gray-800">{lang === 'kr' ? '글로벌 AI 수혜 노출도 1위' : '#1 Global AI Exposure'}</div>
                                 <div className="text-[14px] font-bold text-gray-500">{lang === 'kr' ? '전 세계에서 AI 수혜에 가장 직결된 시장 인식' : 'Perceived as the market most directly tied to AI'}</div>
                             </div>
                         </div>
                     </div>
 
                     {/* Valuation Comparison */}
-                    <div className={`relative w-[360px] flex flex-col items-center bg-purple-900 rounded-[30px] shadow-xl p-8 transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-200 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-                        <div className="text-[20px] font-black text-purple-200 mb-6">{lang === 'kr' ? '2026.05 밸류에이션 비교' : 'May 2026 Valuation Comparison'}</div>
+                    <div className={`relative w-[460px] flex flex-col items-center bg-purple-900 rounded-[30px] shadow-xl p-8 transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-200 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                        <div className="text-[20px] font-black text-purple-200 mb-8">{lang === 'kr' ? '2026.05 밸류에이션 비교' : 'May 2026 Valuation Comparison'}</div>
                         
-                        <div className="w-full flex justify-between items-center mb-6">
-                            <div className="flex flex-col items-center">
-                                <div className="text-[16px] font-bold text-purple-300 mb-1">KOSPI</div>
-                                <div className="text-[38px] font-black text-white">13.2<span className="text-[20px]">x</span></div>
-                                <div className="text-[14px] font-bold text-purple-400">PER</div>
+                        <div className="w-full flex justify-between items-center relative py-4 px-2">
+                            {/* KOSPI Column */}
+                            <div className="flex flex-col gap-10 w-[140px] items-center">
+                                <div className="flex flex-col items-center">
+                                    <div className="text-[16px] font-bold text-purple-300 mb-1">KOSPI</div>
+                                    <div className="text-[38px] font-black text-white">13.2<span className="text-[20px]">x</span></div>
+                                    <div className="text-[14px] font-bold text-purple-400">PER</div>
+                                </div>
+                                <div className="flex flex-col items-center">
+                                    <div className="text-[38px] font-black text-white">1.34<span className="text-[20px]">x</span></div>
+                                    <div className="text-[14px] font-bold text-purple-400">PBR</div>
+                                </div>
                             </div>
-                            <div className="text-purple-500 font-black text-[24px]">VS</div>
-                            <div className="flex flex-col items-center">
-                                <div className="text-[16px] font-bold text-purple-300 mb-1">Asia Avg.</div>
-                                <div className="text-[38px] font-black text-white">16.1<span className="text-[20px]">x</span></div>
-                                <div className="text-[14px] font-bold text-purple-400">PER</div>
-                            </div>
-                        </div>
 
-                        <div className="w-full h-[1px] bg-purple-700 mb-6"></div>
-
-                        <div className="w-full flex justify-between items-center">
-                            <div className="flex flex-col items-center">
-                                <div className="text-[38px] font-black text-white">1.34<span className="text-[20px]">x</span></div>
-                                <div className="text-[14px] font-bold text-purple-400">PBR</div>
+                            {/* Center VS */}
+                            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-purple-500 font-black text-[28px] bg-purple-900 px-4 py-2 z-10">
+                                VS
                             </div>
-                            <div className="flex flex-col items-center">
-                                <div className="text-[38px] font-black text-white">2.15<span className="text-[20px]">x</span></div>
-                                <div className="text-[14px] font-bold text-purple-400">PBR</div>
+
+                            {/* Vertical dividing line */}
+                            <div className="absolute left-1/2 top-0 bottom-0 w-[1px] bg-purple-700 -translate-x-1/2"></div>
+
+                            {/* Asia Avg Column */}
+                            <div className="flex flex-col gap-10 w-[140px] items-center">
+                                <div className="flex flex-col items-center">
+                                    <div className="text-[16px] font-bold text-purple-300 mb-1">Asia Avg.</div>
+                                    <div className="text-[38px] font-black text-white">16.1<span className="text-[20px]">x</span></div>
+                                    <div className="text-[14px] font-bold text-purple-400">PER</div>
+                                </div>
+                                <div className="flex flex-col items-center">
+                                    <div className="text-[38px] font-black text-white">2.15<span className="text-[20px]">x</span></div>
+                                    <div className="text-[14px] font-bold text-purple-400">PBR</div>
+                                </div>
                             </div>
                         </div>
                     </div>
