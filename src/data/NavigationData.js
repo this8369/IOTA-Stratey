@@ -53,6 +53,17 @@ export const menuDataEn = [
                     { label: "[Market 2] Global IB Optimism", id: "page-27" },
                     { label: "[Market 3] End of Korea Discount", id: "page-28" }
                 ]
+            },
+            {
+                title: "Chapter 4",
+                items: [
+                    { label: "Evolution of Seoul Office Market", id: "page-29" },
+                    { label: "[Office 1] 3 Core Districts", id: "page-30" },
+                    { label: "[Office 2] Rise of MBD & BBD", id: "page-31" },
+                    { label: "[Office 3] Breaking Natural Vacancy", id: "page-32" },
+                    { label: "[Office 4] Rent Gap with Tokyo", id: "page-33" },
+                    { label: "[Office 5] 30T Volume & Return of Capital", id: "page-34" }
+                ]
             }
         ] 
     },
@@ -127,6 +138,17 @@ export const menuDataKr = [
                     { label: "[자본 1] 박스피 뚫어낸 랠리", id: "page-26" },
                     { label: "[자본 2] 글로벌 IB 6,000 낙관론", id: "page-27" },
                     { label: "[자본 3] 디스카운트 구조적 종언", id: "page-28" }
+                ]
+            },
+            {
+                title: "Chapter 4",
+                items: [
+                    { label: "서울 오피스 시장 진화", id: "page-29" },
+                    { label: "[오피스 1] 3대 핵심 권역 골격", id: "page-30" },
+                    { label: "[오피스 2] MBD와 BBD 급부상", id: "page-31" },
+                    { label: "[오피스 3] 완전 임차 도달", id: "page-32" },
+                    { label: "[오피스 4] 도쿄 수렴의 법칙", id: "page-33" },
+                    { label: "[오피스 5] 거래량 30조 시대", id: "page-34" }
                 ]
             }
         ] 
