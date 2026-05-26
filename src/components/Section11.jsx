@@ -42,7 +42,7 @@ export default function Section11({ isActive }) {
                 </h2>
 
                 {/* Growth Infographic */}
-                <div className="relative w-full max-w-[900px] mt-[2px] h-[360px] flex items-center justify-between">
+                <div className="relative w-full max-w-[900px] -mt-[8px] h-[360px] flex items-center justify-between">
                     
                     {/* Small Box (2007) */}
                     <div className={`relative flex flex-col items-center justify-end transition-all duration-[1000ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-50 translate-y-20'}`}>
@@ -88,7 +88,7 @@ export default function Section11({ isActive }) {
             
 
                 {/* Description Text */}
-                <div className={`mt-[20px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
