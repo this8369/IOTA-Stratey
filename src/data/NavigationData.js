@@ -48,7 +48,10 @@ export const menuDataEn = [
             {
                 title: "Chapter 3",
                 items: [
-                    { label: "Capital Market Structural Changes", id: "page-25" }
+                    { label: "Capital Market Structural Changes", id: "page-25" },
+                    { label: "[Market 1] Breaking Boxpi", id: "page-26" },
+                    { label: "[Market 2] Global IB Optimism", id: "page-27" },
+                    { label: "[Market 3] End of Korea Discount", id: "page-28" }
                 ]
             }
         ] 
@@ -120,7 +123,10 @@ export const menuDataKr = [
             {
                 title: "Chapter 3",
                 items: [
-                    { label: "자본시장 구조의 변화", id: "page-25" }
+                    { label: "자본시장 구조의 변화", id: "page-25" },
+                    { label: "[자본 1] 박스피 뚫어낸 랠리", id: "page-26" },
+                    { label: "[자본 2] 글로벌 IB 6,000 낙관론", id: "page-27" },
+                    { label: "[자본 3] 디스카운트 구조적 종언", id: "page-28" }
                 ]
             }
         ] 
