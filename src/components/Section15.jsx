@@ -1,0 +1,105 @@
+import React, { useState, useEffect } from 'react';
+import { useLanguage } from '../context/LanguageContext';
+
+export default function Section15({ isActive }) {
+    const { lang } = useLanguage();
+    const [step, setStep] = useState(0);
+
+    useEffect(() => {
+        if (!isActive) {
+            setStep(0);
+            return;
+        }
+        const timers = [
+            setTimeout(() => setStep(1), 300),
+            setTimeout(() => setStep(2), 1000),
+            setTimeout(() => setStep(3), 1600),
+            setTimeout(() => setStep(4), 2200),
+            setTimeout(() => setStep(5), 2800)
+        ];
+        return () => timers.forEach(clearTimeout);
+    }, [isActive]);
+
+    return (
+        <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
+            <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
+                
+                <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <span className="inline-block text-[20px] md:text-[24px] font-bold text-[#047857] bg-emerald-50 border border-emerald-100 px-4 py-1 rounded-full mb-[12px]">
+                        {lang === 'kr' ? '[산업 분석 2] 모빌리티를 넘어선 자동차 산업의 진화' : '[Industry 2] Evolution of Automobiles Beyond Mobility'}
+                    </span>
+                </div>
+
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    {lang === 'kr' ? '로봇과 AI 인프라로 비즈니스 영토를 전면 확장하는 현대차그룹' : 'Hyundai Motor Group Radically Expanding Business Territory with Robotics & AI'}
+                </h2>
+
+                <div className="relative w-full max-w-[900px] -mt-[8px] h-[360px] flex flex-col items-center justify-center z-10">
+                    <div className="w-full flex justify-between items-center px-4 relative mt-[40px]">
+                        
+                        {/* Connecting Line */}
+                        <div className="absolute top-1/2 left-[10%] w-[80%] h-[4px] bg-gray-200 -translate-y-1/2 -z-10"></div>
+                        <div className={`absolute top-1/2 left-[10%] h-[4px] bg-gradient-to-r from-[#047857] to-[#10b981] -translate-y-1/2 -z-10 transition-all duration-[1500ms] ease-out`} style={{ width: step >= 4 ? '80%' : step >= 3 ? '40%' : '0%' }}></div>
+
+                        {/* Pillar 1: Auto */}
+                        <div className={`relative flex flex-col items-center transition-all duration-[800ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-90'}`}>
+                            <div className="w-[120px] h-[120px] rounded-2xl bg-white border-4 border-[#047857] shadow-xl flex flex-col items-center justify-center z-20">
+                                <span className="text-[32px] font-black text-[#047857]">Auto</span>
+                                <span className="text-[12px] font-bold text-gray-500 mt-1">Global Top 3</span>
+                            </div>
+                            <div className="mt-4 bg-emerald-50 border border-emerald-100 rounded-lg p-3 text-center shadow-sm w-[160px]">
+                                <p className="text-[13px] font-bold text-gray-800">4M -> <span className="text-[#047857] text-[16px]">7.23M</span></p>
+                                <p className="text-[11px] text-gray-500 mt-1">{lang === 'kr' ? '2007~2024 글로벌 판매' : 'Global Sales (2007-2024)'}</p>
+                            </div>
+                        </div>
+
+                        {/* Pillar 2: Robotics */}
+                        <div className={`relative flex flex-col items-center transition-all duration-[800ms] ease-out ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-90'}`}>
+                            <div className="w-[120px] h-[120px] rounded-2xl bg-white border-4 border-[#10b981] shadow-xl flex flex-col items-center justify-center z-20">
+                                <span className="text-[28px] font-black text-[#10b981]">Robotics</span>
+                                <span className="text-[12px] font-bold text-gray-500 mt-1">UAM & Droids</span>
+                            </div>
+                            <div className="mt-4 bg-emerald-50 border border-emerald-100 rounded-lg p-3 text-center shadow-sm w-[160px]">
+                                <p className="text-[13px] font-bold text-gray-800">Boston Dynamics</p>
+                                <p className="text-[11px] text-gray-500 mt-1">{lang === 'kr' ? '인수 및 슈퍼널 설립' : 'Acquisition & Supernal'}</p>
+                            </div>
+                        </div>
+
+                        {/* Pillar 3: AI Infra */}
+                        <div className={`relative flex flex-col items-center transition-all duration-[800ms] ease-out ${step >= 4 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-90'}`}>
+                            <div className="w-[120px] h-[120px] rounded-2xl bg-gradient-to-br from-[#0f172a] to-[#047857] shadow-2xl flex flex-col items-center justify-center z-20 border-4 border-white">
+                                <span className="text-[28px] font-black text-white">AI Infra</span>
+                                <span className="text-[12px] font-bold text-emerald-200 mt-1">Data Center</span>
+                            </div>
+                            <div className="mt-4 bg-gray-900 border border-gray-700 rounded-lg p-3 text-center shadow-md w-[160px]">
+                                <p className="text-[13px] font-bold text-white">NVIDIA Partner</p>
+                                <p className="text-[11px] text-gray-400 mt-1">{lang === 'kr' ? 'AI 인프라 혁신(2026)' : 'AI Infra Innovation (2026)'}</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <ul className="text-left inline-block space-y-2 mx-auto">
+                        {lang === 'kr' ? (
+                            <>
+                                <li className="flex items-start"><span className="mr-3 text-[#047857]">▪</span><span>2007년 글로벌 판매 약 400만 대에서 <strong>2024년 약 723만 대</strong>로 도요타·폭스바겐에 이은 <strong>글로벌 3위 그룹</strong>으로 확립.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#047857]">▪</span><span>전기차 전환에서 아이오닉·EV9 라인업으로 테슬라·BYD 다음 그룹에 안정적으로 안착함.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#047857]">▪</span><span>보스턴 다이내믹스 인수(2021) 및 슈퍼널(UAM) 설립으로 모빌리티의 경계를 허묾.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#047857]">▪</span><span>NVIDIA 협력 AI 데이터센터 건립을 통해 <strong>자동차 ➔ 로봇 ➔ AI 인프라</strong>까지 비즈니스 영역을 전면 확장 중.</span></li>
+                            </>
+                        ) : (
+                            <>
+                                <li className="flex items-start"><span className="mr-3 text-[#047857]">▪</span><span>Established as the <strong>world's 3rd largest group</strong>, with sales growing from ~4M units in 2007 to <strong>~7.23M in 2024</strong>.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#047857]">▪</span><span>Successfully positioned just behind Tesla and BYD in the EV transition with the Ioniq and EV9 lineups.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#047857]">▪</span><span>Breaking mobility boundaries through the acquisition of Boston Dynamics (2021) and establishment of Supernal.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#047857]">▪</span><span>Radically expanding business scope: <strong>Automobiles ➔ Robotics ➔ AI Infrastructure</strong> via NVIDIA partnership.</span></li>
+                            </>
+                        )}
+                    </ul>
+                </div>
+            </div>
+        </section>
+    );
+}

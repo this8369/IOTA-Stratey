@@ -32,7 +32,10 @@ export const menuDataEn = [
             {
                 title: "Chapter 2",
                 items: [
-                    { label: "Industrial Momentum", id: "page-14" }
+                    { label: "Industrial Momentum", id: "page-14" },
+                    { label: "[Semi] AI Supercycle", id: "page-15" },
+                    { label: "[Auto] Beyond Mobility", id: "page-16" },
+                    { label: "[Ship] MASGA Resurgence", id: "page-17" }
                 ]
             }
         ] 
@@ -88,7 +91,10 @@ export const menuDataKr = [
             {
                 title: "Chapter 2",
                 items: [
-                    { label: "산업별 모멘텀", id: "page-14" }
+                    { label: "산업별 모멘텀", id: "page-14" },
+                    { label: "[반도체] AI 슈퍼사이클", id: "page-15" },
+                    { label: "[자동차] 모빌리티 진화", id: "page-16" },
+                    { label: "[조선업] 패권 경쟁과 부활", id: "page-17" }
                 ]
             }
         ] 
