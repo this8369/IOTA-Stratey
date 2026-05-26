@@ -39,7 +39,10 @@ export const menuDataEn = [
                     { label: "[Petro] Structural Limits", id: "page-18" },
                     { label: "[Steel] Great Transition", id: "page-19" },
                     { label: "[Content] Korea Premium", id: "page-20" },
-                    { label: "[Bio] Cluster Settlement", id: "page-21" }
+                    { label: "[Bio] Cluster Settlement", id: "page-21" },
+                    { label: "[Battery] Structural Adjust", id: "page-22" },
+                    { label: "[Platform] Logistics Reshape", id: "page-23" },
+                    { label: "[Defense] K-Defense Boom", id: "page-24" }
                 ]
             }
         ] 
@@ -102,7 +105,10 @@ export const menuDataKr = [
                     { label: "[석유화학] 구조적 한계", id: "page-18" },
                     { label: "[철강] 생존 대전환", id: "page-19" },
                     { label: "[콘텐츠] 코리아 프리미엄", id: "page-20" },
-                    { label: "[바이오] 클러스터 안착", id: "page-21" }
+                    { label: "[바이오] 클러스터 안착", id: "page-21" },
+                    { label: "[2차전지] 구조적 조정기", id: "page-22" },
+                    { label: "[플랫폼] 물류 지형 재편", id: "page-23" },
+                    { label: "[방산] 수출 급부상", id: "page-24" }
                 ]
             }
         ] 
