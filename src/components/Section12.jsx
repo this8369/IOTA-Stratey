@@ -37,10 +37,10 @@ export default function Section12({ isActive }) {
                 </h2>
 
                 {/* Infographic Dual Engine Architecture */}
-                <div className="relative w-full max-w-[1100px] mt-[50px] h-[360px] flex items-center justify-between">
+                <div className="relative w-full max-w-[1020px] mt-[50px] h-[360px] flex items-center justify-between">
                     
                     {/* Left Engine: Traditional */}
-                    <div className={`relative z-10 w-[320px] h-full flex flex-col items-center transition-all duration-[1000ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'}`}>
+                    <div className={`relative z-10 w-[310px] h-full flex flex-col items-center transition-all duration-[1000ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'}`}>
                         <div className="w-full bg-[#1e3a8a] text-white py-4 rounded-t-xl text-center shadow-lg">
                             <h3 className="text-[24px] font-black tracking-tight">5대 중후장대</h3>
                             <p className="text-[14px] font-medium text-blue-200">수출 제조업 슈퍼 사이클</p>
@@ -71,7 +71,7 @@ export default function Section12({ isActive }) {
                     </div>
 
                     {/* Right Engine: New Growth */}
-                    <div className={`relative z-10 w-[320px] h-full flex flex-col items-center transition-all duration-[1000ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'}`}>
+                    <div className={`relative z-10 w-[310px] h-full flex flex-col items-center transition-all duration-[1000ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'}`}>
                         <div className="w-full bg-[#4B7053] text-white py-4 rounded-t-xl text-center shadow-lg">
                             <h3 className="text-[24px] font-black tracking-tight">5대 신성장</h3>
                             <p className="text-[14px] font-medium text-green-200">신규 엔진 장착</p>
