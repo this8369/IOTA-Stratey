@@ -28,7 +28,7 @@ export default function Section12({ isActive }) {
                 {/* Theme */}
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        {lang === 'kr' ? '[산업 구조] 10대 산업 듀얼 엔진의 위력과 양면성' : '[Industrial Structure] Power & Duality of the Dual Engine'}
+                        {lang === 'kr' ? '10대 산업 듀얼 엔진의 위력과 양면성' : 'Power & Duality of the Dual Engine'}
                     </span>
                 </div>
 

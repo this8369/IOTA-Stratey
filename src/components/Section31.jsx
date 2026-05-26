@@ -26,7 +26,7 @@ export default function Section31({ isActive }) {
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        {lang === 'kr' ? '[서울 오피스 3] 자연 공실률 하한선 돌파' : '[Seoul Office 3] Breaking Natural Vacancy Floor'}
+                        {lang === 'kr' ? '자연 공실률 하한선 돌파' : 'Breaking Natural Vacancy Floor'}
                     </span>
                 </div>
 
@@ -102,7 +102,7 @@ export default function Section31({ isActive }) {
                     </div>
 
                     {/* Vacancy Highlight Box (Height reduced by 30px using py-[25px] instead of p-10) */}
-                    <div className={`relative w-full flex flex-col md:flex-row items-center justify-between bg-gradient-to-br from-gray-900 to-black rounded-[24px] px-10 py-[25px] shadow-2xl transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-95'}`}>
+                    <div className={`-mt-[6px] relative w-full flex flex-col md:flex-row items-center justify-between bg-gradient-to-br from-gray-900 to-black rounded-[24px] px-10 py-[25px] shadow-2xl transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-95'}`}>
                         
                         <div className="flex-1 text-left flex flex-col gap-1">
                             <div className="text-gray-400 font-bold text-[18px]">{lang === 'kr' ? 'CBRE 2025년 3분기 기준' : 'CBRE Q3 2025'}</div>

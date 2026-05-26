@@ -26,7 +26,7 @@ export default function Section30({ isActive }) {
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        {lang === 'kr' ? '[서울 오피스 2] MBD(마곡)와 BBD(판교)의 급부상' : '[Seoul Office 2] Rapid Rise of MBD and BBD'}
+                        {lang === 'kr' ? 'MBD(마곡)와 BBD(판교)의 급부상' : 'Rapid Rise of MBD and BBD'}
                     </span>
                 </div>
 

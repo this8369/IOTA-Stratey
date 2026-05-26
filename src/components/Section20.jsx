@@ -26,7 +26,7 @@ export default function Section20({ isActive }) {
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        {lang === 'kr' ? '[산업 분석 7] K-바이오 클러스터의 성공적 안착' : '[Industry 7] Successful Settlement of the K-Bio Cluster'}
+                        {lang === 'kr' ? 'K-바이오 클러스터의 성공적 안착' : 'Successful Settlement of the K-Bio Cluster'}
                     </span>
                 </div>
 

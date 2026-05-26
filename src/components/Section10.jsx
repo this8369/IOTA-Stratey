@@ -28,7 +28,7 @@ export default function Section10({ isActive }) {
                 {/* Theme */}
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        {lang === 'kr' ? '[거시 경제] 1조 달러 시대의 개막과 담금질' : '[Macroeconomy] The Dawn and Forging of the $1 Trillion Era'}
+                        {lang === 'kr' ? '1조 달러 시대의 개막과 담금질' : 'The Dawn and Forging of the $1 Trillion Era'}
                     </span>
                 </div>
 

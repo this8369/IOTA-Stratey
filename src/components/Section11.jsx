@@ -28,7 +28,7 @@ export default function Section11({ isActive }) {
                 {/* Theme */}
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        {lang === 'kr' ? '[거시 경제] 마침내 도달할 GDP 2조 달러 고지' : '[Macroeconomy] Reaching the $2 Trillion GDP Milestone'}
+                        {lang === 'kr' ? '마침내 도달할 GDP 2조 달러 고지' : 'Reaching the $2 Trillion GDP Milestone'}
                     </span>
                 </div>
 

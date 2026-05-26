@@ -26,7 +26,7 @@ export default function Section19({ isActive }) {
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        {lang === 'kr' ? '[산업 분석 6] 코리아 프리미엄을 낳은 K-콘텐츠' : '[Industry 6] K-Content Creating the Korea Premium'}
+                        {lang === 'kr' ? '코리아 프리미엄을 낳은 K-콘텐츠' : 'K-Content Creating the Korea Premium'}
                     </span>
                 </div>
 

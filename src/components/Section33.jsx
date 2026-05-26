@@ -26,7 +26,7 @@ export default function Section33({ isActive }) {
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        {lang === 'kr' ? '[서울 오피스 5] 연간 거래량 30조 시대와 자본의 회귀' : '[Seoul Office 5] 30 Trillion Won Era & Return of Capital'}
+                        {lang === 'kr' ? '연간 거래량 30조 시대와 자본의 회귀' : '30 Trillion Won Era & Return of Capital'}
                     </span>
                 </div>
 

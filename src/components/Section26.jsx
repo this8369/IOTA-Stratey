@@ -26,7 +26,7 @@ export default function Section26({ isActive }) {
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        {lang === 'kr' ? '[자본 시장 2] 글로벌 IB들의 KOSPI 6,000 낙관론' : '[Capital Market 2] Global IBs\' Optimism on KOSPI 6,000'}
+                        {lang === 'kr' ? '글로벌 IB들의 KOSPI 6,000 낙관론' : 'Global IBs\' Optimism on KOSPI 6,000'}
                     </span>
                 </div>
 

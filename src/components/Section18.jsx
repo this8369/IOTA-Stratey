@@ -26,7 +26,7 @@ export default function Section18({ isActive }) {
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        {lang === 'kr' ? '[산업 분석 5] 철강 산업의 생존을 위한 대전환' : '[Industry 5] Great Transition of the Steel Industry'}
+                        {lang === 'kr' ? '철강 산업의 생존을 위한 대전환' : 'Great Transition of the Steel Industry'}
                     </span>
                 </div>
 
