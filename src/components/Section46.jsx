@@ -25,7 +25,7 @@ export default function Section46({ isActive }) {
                 </div>
 
                 {/* Right Side: Stats & Assumptions (Sharp Box, Large Text) */}
-                <div className={`shrink-0 w-full max-w-[590px] bg-[#fff8f8] rounded-none px-8 py-5 md:py-[18px] md:px-12 border-[6px] border-red-400 transition-all duration-[1000ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                <div className={`shrink-0 w-full max-w-[590px] bg-[#fff8f8] rounded-none px-8 py-7 md:py-[28px] md:px-12 border-[6px] border-red-400 transition-all duration-[1000ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                     <div className="space-y-4">
                         <div>
                             <p className="text-red-500 text-[16px] md:text-[17px] font-bold mb-2 uppercase">2030년 예상 GDP</p>
@@ -39,7 +39,7 @@ export default function Section46({ isActive }) {
                         <div className="w-full h-px bg-red-100"></div>
                         <div>
                             <p className="text-red-500 text-[16px] md:text-[17px] font-bold mb-4 uppercase">핵심 전제</p>
-                            <ul className="text-gray-800 space-y-4 text-[19px] md:text-[21px] break-keep leading-relaxed font-bold">
+                            <ul className="text-gray-800 space-y-3 text-[19px] md:text-[21px] break-keep leading-normal font-bold">
                                 <li className="flex items-start"><span className="text-red-400 mr-3">•</span><span>2024년 정점 이후 가파른 인구 감소 (인구 절벽)</span></li>
                                 <li className="flex items-start"><span className="text-red-400 mr-3">•</span><span>미·중 디커플링 심화 및 중국 반도체 자급 가속화</span></li>
                                 <li className="flex items-start"><span className="text-red-400 mr-3">•</span><span>가계부채 누적 및 부동산 PF 부실 재발</span></li>

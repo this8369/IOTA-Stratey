@@ -25,7 +25,7 @@ export default function Section45({ isActive }) {
                 </div>
 
                 {/* Right Side: Stats & Assumptions (Sharp Box, Large Text) */}
-                <div className={`shrink-0 w-full max-w-[590px] bg-[#f8fbff] rounded-none px-8 py-5 md:py-[18px] md:px-12 border-[6px] border-blue-400 transition-all duration-[1000ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                <div className={`shrink-0 w-full max-w-[590px] bg-[#f8fbff] rounded-none px-8 py-7 md:py-[28px] md:px-12 border-[6px] border-blue-400 transition-all duration-[1000ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                     <div className="space-y-4">
                         <div>
                             <p className="text-blue-500 text-[16px] md:text-[17px] font-bold mb-2 uppercase">2030년 예상 GDP</p>
@@ -39,7 +39,7 @@ export default function Section45({ isActive }) {
                         <div className="w-full h-px bg-blue-100"></div>
                         <div>
                             <p className="text-blue-500 text-[16px] md:text-[17px] font-bold mb-4 uppercase">핵심 전제</p>
-                            <ul className="text-gray-800 space-y-4 text-[19px] md:text-[21px] break-keep leading-relaxed font-bold">
+                            <ul className="text-gray-800 space-y-3 text-[19px] md:text-[21px] break-keep leading-normal font-bold">
                                 <li className="flex items-start"><span className="text-blue-400 mr-3">•</span><span>HBM/AI 인프라 패권 유지 및 대규모 외인 자본 유입</span></li>
                                 <li className="flex items-start"><span className="text-blue-400 mr-3">•</span><span>환율 KRW/USD 1,000~1,150 (원화 강세)</span></li>
                                 <li className="flex items-start"><span className="text-blue-400 mr-3">•</span><span>K-콘텐츠, K-방산, K-원전, K-조선 슈퍼사이클 진입</span></li>
