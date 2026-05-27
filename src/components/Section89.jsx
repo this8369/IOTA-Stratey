@@ -27,12 +27,12 @@ export default function Section89({ isActive }) {
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-12 transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-[38px] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? <>블랙스톤을 넘어선 In-house Vertical Integration의 완성</> : <>Completion of In-house Vertical Integration Beyond Blackstone</>}
                 </h2>
 
                 {/* 3 Pillars */}
-                <div className="w-full max-w-[1000px] grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 relative">
+                <div className="w-full max-w-[1000px] grid grid-cols-1 md:grid-cols-3 gap-6 mb-[30px] relative">
                     {/* Pillar 1 */}
                     <div className={`bg-white border-4 border-[#1e3a8a] rounded-lg p-6 shadow-sm flex flex-col items-center justify-center relative transition-all duration-[800ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} min-h-[220px]`}>
                         <div className="absolute top-4 left-5 text-[#1e3a8a] font-black text-[14px] opacity-80">01</div>
