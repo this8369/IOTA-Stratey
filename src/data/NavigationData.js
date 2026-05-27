@@ -151,6 +151,16 @@ export const menuDataEn = [
                     { label: "Seoul Mega Projects", id: "page-76" },
                     { label: "Foreign Capital Reversal", id: "page-77" }
                 ]
+            },
+            {
+                title: "Chapter 7. KOSPI Scenario Forecasts",
+                id: "page-78",
+                items: [
+                    { label: "Base Scenario", id: "page-79" },
+                    { label: "Bull Scenario", id: "page-80" },
+                    { label: "Bear Scenario", id: "page-81" },
+                    { label: "Real Estate Rerating", id: "page-82" }
+                ]
             }
         ] 
     },
@@ -318,6 +328,16 @@ export const menuDataKr = [
                     { label: "IOTA 서울 & GBC", id: "page-75" },
                     { label: "서울 메가 프로젝트", id: "page-76" },
                     { label: "외국인 자본 Reversal", id: "page-77" }
+                ]
+            },
+            {
+                title: "Chapter 7. KOSPI 시나리오별 전망",
+                id: "page-78",
+                items: [
+                    { label: "Base 시나리오", id: "page-79" },
+                    { label: "Bull 시나리오", id: "page-80" },
+                    { label: "Bear 시나리오", id: "page-81" },
+                    { label: "부동산 리레이팅", id: "page-82" }
                 ]
             }
         ] 
