@@ -49,7 +49,7 @@ export default function Section95({ isActive }) {
                         </div>
 
                         {/* PRESENT/FUTURE */}
-                        <div className="bg-[#1e3a8a] rounded-2xl p-8 h-full flex flex-col justify-center text-center border-4 border-blue-900 shadow-xl relative overflow-hidden">
+                        <div className="bg-[#1e3a8a] rounded-2xl p-8 flex-1 mt-5 flex flex-col justify-center text-center border-4 border-blue-900 shadow-xl relative overflow-hidden">
                             <div className="absolute -right-4 -bottom-4 text-blue-800/40 text-[100px] font-black leading-none">OS</div>
                             <h3 className="text-blue-200 font-bold text-[18px] mb-2 relative z-10">{lang === 'kr' ? '현재 및 미래 (Factorial Builders)' : 'Present & Future (Factorial Builders)'}</h3>
                             <p className="text-white font-extrabold text-[26px] break-keep relative z-10">
