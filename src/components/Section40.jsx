@@ -75,10 +75,10 @@ export default function Section40({ isActive }) {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
                             </svg>
                         </div>
-                        <h3 className="text-[28px] font-black mb-4 leading-snug break-keep">
-                            {lang === 'kr' ? 'IOTA Seoul의 명시적 포지셔닝' : 'Explicit Positioning of IOTA Seoul'}
+                        <h3 className="text-[32px] font-black mb-4 leading-snug break-keep text-center">
+                            {lang === 'kr' ? <>IOTA Seoul의<br />명시적 포지셔닝</> : <>Explicit Positioning of<br />IOTA Seoul</>}
                         </h3>
-                        <p className="text-[18px] text-blue-100 font-medium break-keep leading-relaxed">
+                        <p className="text-[20px] text-blue-100 font-medium break-keep leading-relaxed text-center">
                             {lang === 'kr' ? '"IFC에 이어 한국 상업용 부동산 시장을 대표하는 새로운 트로피에셋"' : '"The new trophy asset representing Korea\'s CRE market, succeeding the IFC."'}
                         </p>
                     </div>
