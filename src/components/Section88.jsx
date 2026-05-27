@@ -34,44 +34,44 @@ export default function Section88({ isActive }) {
                 {/* 4 Core Requirements */}
                 <div className="w-full max-w-[1000px] grid grid-cols-2 md:grid-cols-4 gap-4 mb-10 relative">
                     {/* Req 1 */}
-                    <div className={`bg-[#1e3a8a] rounded-lg p-6 shadow-md flex flex-col items-start justify-center transition-all duration-[800ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} min-h-[140px]`}>
-                        <div className="text-blue-300 font-black text-[15px] mb-2 opacity-80">01</div>
-                        <h3 className="font-extrabold text-[20px] md:text-[22px] text-white break-keep leading-snug">
+                    <div className={`bg-[#1e3a8a] rounded-lg p-6 shadow-md flex flex-col items-center justify-center relative transition-all duration-[800ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} min-h-[160px]`}>
+                        <div className="absolute top-4 left-4 text-blue-300 font-black text-[14px] opacity-80">01</div>
+                        <h3 className="font-extrabold text-[22px] md:text-[24px] text-white break-keep leading-tight text-center">
                             {lang === 'kr' ? '글로벌 LP 베이스 확보' : 'Securing Global LP Base'}
                         </h3>
                     </div>
                     {/* Req 2 */}
-                    <div className={`bg-[#1e3a8a] rounded-lg p-6 shadow-md flex flex-col items-start justify-center transition-all duration-[800ms] delay-[100ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} min-h-[140px]`}>
-                        <div className="text-blue-300 font-black text-[15px] mb-2 opacity-80">02</div>
-                        <h3 className="font-extrabold text-[20px] md:text-[22px] text-white break-keep leading-snug">
-                            {lang === 'kr' ? '운용 수수료 마진 구조 개선' : 'Improving Fee Margin Structure'}
+                    <div className={`bg-[#1e3a8a] rounded-lg p-6 shadow-md flex flex-col items-center justify-center relative transition-all duration-[800ms] delay-[100ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} min-h-[160px]`}>
+                        <div className="absolute top-4 left-4 text-blue-300 font-black text-[14px] opacity-80">02</div>
+                        <h3 className="font-extrabold text-[22px] md:text-[24px] text-white break-keep leading-tight text-center">
+                            {lang === 'kr' ? <>운용 수수료 마진 구조<br/>개선</> : <>Improving Fee Margin<br/>Structure</>}
                         </h3>
                     </div>
                     {/* Req 3 */}
-                    <div className={`bg-[#1e3a8a] rounded-lg p-6 shadow-md flex flex-col items-start justify-center transition-all duration-[800ms] delay-[200ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} min-h-[140px]`}>
-                        <div className="text-blue-300 font-black text-[15px] mb-2 opacity-80">03</div>
-                        <h3 className="font-extrabold text-[20px] md:text-[22px] text-white break-keep leading-snug">
-                            {lang === 'kr' ? '영구 자본(Permanent Capital) 확대' : 'Expanding Permanent Capital'}
+                    <div className={`bg-[#1e3a8a] rounded-lg p-6 shadow-md flex flex-col items-center justify-center relative transition-all duration-[800ms] delay-[200ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} min-h-[160px]`}>
+                        <div className="absolute top-4 left-4 text-blue-300 font-black text-[14px] opacity-80">03</div>
+                        <h3 className="font-extrabold text-[22px] md:text-[24px] text-white break-keep leading-tight text-center">
+                            {lang === 'kr' ? <>영구 자본<br/>(Permanent Capital) 확대</> : <>Expanding<br/>Permanent Capital</>}
                         </h3>
                     </div>
                     {/* Req 4 */}
-                    <div className={`bg-[#1e3a8a] rounded-lg p-6 shadow-md flex flex-col items-start justify-center transition-all duration-[800ms] delay-[300ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} min-h-[140px]`}>
-                        <div className="text-blue-300 font-black text-[15px] mb-2 opacity-80">04</div>
-                        <h3 className="font-extrabold text-[20px] md:text-[22px] text-white break-keep leading-snug">
-                            {lang === 'kr' ? '다전략(Multi-strategy) 플랫폼화' : 'Multi-strategy Platformization'}
+                    <div className={`bg-[#1e3a8a] rounded-lg p-6 shadow-md flex flex-col items-center justify-center relative transition-all duration-[800ms] delay-[300ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} min-h-[160px]`}>
+                        <div className="absolute top-4 left-4 text-blue-300 font-black text-[14px] opacity-80">04</div>
+                        <h3 className="font-extrabold text-[22px] md:text-[24px] text-white break-keep leading-tight text-center">
+                            {lang === 'kr' ? <>다전략(Multi-strategy)<br/>플랫폼화</> : <>Multi-strategy<br/>Platformization</>}
                         </h3>
                     </div>
                 </div>
 
                 {/* Blackstone Timeline */}
-                <div className={`w-full max-w-[1000px] bg-gray-50 border border-gray-200 rounded-2xl p-6 md:p-8 mb-10 transition-all duration-1000 ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
-                    <h4 className="font-bold text-gray-500 mb-6 text-[16px] md:text-[18px]">
+                <div className={`w-full max-w-[1000px] bg-gray-50 border border-gray-200 rounded-2xl p-8 md:p-12 mb-10 transition-all duration-1000 ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
+                    <h4 className="font-bold text-gray-500 mb-10 text-[18px] md:text-[20px]">
                         {lang === 'kr' ? 'Reference: 블랙스톤의 40년 진화 패턴 (한국 압축 버전 목표)' : 'Reference: Blackstone\'s 40-year Evolution Pattern (Goal: Korean Compressed Version)'}
                     </h4>
                     
-                    <div className="flex flex-col md:flex-row items-center justify-between relative w-full h-auto md:h-[60px] gap-6 md:gap-0">
+                    <div className="flex flex-col md:flex-row items-center justify-between relative w-full h-auto md:h-[80px] gap-6 md:gap-0">
                         {/* Connecting Line (Desktop) */}
-                        <div className="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-gray-300 -translate-y-1/2 z-0"></div>
+                        <div className="hidden md:block absolute top-1/2 left-0 w-full h-2 bg-gray-300 -translate-y-1/2 z-0"></div>
 
                         {/* Nodes */}
                         {[
@@ -81,9 +81,9 @@ export default function Section88({ isActive }) {
                             { year: '2015', text: lang === 'kr' ? 'BREIT 출시' : 'BREIT Launch' },
                             { year: '2023', text: lang === 'kr' ? '인프라/생명과학' : 'Infra/Life Science' }
                         ].map((item, idx) => (
-                            <div key={idx} className="relative z-10 flex flex-col items-center bg-white border-2 border-gray-300 rounded-lg px-4 py-2 w-full md:w-[150px] shadow-sm">
-                                <span className="font-black text-gray-800">{item.year}</span>
-                                <span className="text-[13px] text-gray-600 font-bold">{item.text}</span>
+                            <div key={idx} className="relative z-10 flex flex-col items-center bg-white border-4 border-gray-300 rounded-xl px-5 py-4 w-full md:w-[170px] shadow-md transition-transform hover:scale-105">
+                                <span className="font-black text-gray-800 text-[20px] mb-1">{item.year}</span>
+                                <span className="text-[15px] text-gray-600 font-bold">{item.text}</span>
                             </div>
                         ))}
                     </div>
