@@ -97,6 +97,20 @@ export const menuDataEn = [
                     { label: "Bear Scenario", id: "page-47" },
                     { label: "시나리오 종합", id: "page-48" }
                 ]
+            },
+            {
+                title: "Chapter 2. 핵심 산업 모멘텀 시나리오별 전망",
+                id: "page-49",
+                items: [
+                    { label: "AI 반도체 / HBM", id: "page-50" },
+                    { label: "AI 데이터센터", id: "page-51" },
+                    { label: "로봇 / 휴머노이드", id: "page-52" },
+                    { label: "바이오 / 장수의학", id: "page-53" },
+                    { label: "방산·우주", id: "page-54" },
+                    { label: "K-콘텐츠", id: "page-55" },
+                    { label: "양자 / 수소 / 우주", id: "page-56" },
+                    { label: "시니어 케어 경제", id: "page-57" }
+                ]
             }
         ] 
     },
@@ -210,6 +224,20 @@ export const menuDataKr = [
                     { label: "Bull Scenario", id: "page-46" },
                     { label: "Bear Scenario", id: "page-47" },
                     { label: "시나리오 종합", id: "page-48" }
+                ]
+            },
+            {
+                title: "Chapter 2. 핵심 산업 모멘텀 시나리오별 전망",
+                id: "page-49",
+                items: [
+                    { label: "AI 반도체 / HBM", id: "page-50" },
+                    { label: "AI 데이터센터", id: "page-51" },
+                    { label: "로봇 / 휴머노이드", id: "page-52" },
+                    { label: "바이오 / 장수의학", id: "page-53" },
+                    { label: "방산·우주", id: "page-54" },
+                    { label: "K-콘텐츠", id: "page-55" },
+                    { label: "양자 / 수소 / 우주", id: "page-56" },
+                    { label: "시니어 케어 경제", id: "page-57" }
                 ]
             }
         ] 
