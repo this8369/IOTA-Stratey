@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Section66({ isActive }) {
+    const { lang } = useLanguage();
     const [step, setStep] = useState(0);
 
     useEffect(() => {
@@ -40,10 +42,10 @@ export default function Section66({ isActive }) {
                         {/* Losers */}
                         <div className={`flex-1 border-[4px] border-gray-300 bg-gray-50 py-4 px-10 flex flex-col items-center text-center transition-all duration-1000 delay-100 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
                             <div className="text-[60px] mb-2 grayscale opacity-80">📉</div>
-                            <div className="text-[28px] font-black text-gray-700 mb-1">가치 약세 및 횡보</div>
+                            <div className="text-[28px] font-black text-gray-700 mb-1">{lang === 'kr' ? '가치 약세 및 횡보' : 'Value Weakness & Stagnation'}</div>
                             
-                            <div className="text-[20px] font-bold text-gray-600 mt-2">일반 등급 클래스(Class B) 공실 누적</div>
-                            <div className="text-[20px] font-bold text-gray-600 mt-2">CBD 일부 노후 자산 임대료 약세</div>
+                            <div className="text-[20px] font-bold text-gray-600 mt-2">{lang === 'kr' ? '일반 등급 클래스(Class B) 공실 누적' : 'General Grade (Class B) Vacancy Accumulation'}</div>
+                            <div className="text-[20px] font-bold text-gray-600 mt-2">{lang === 'kr' ? 'CBD 일부 노후 자산 임대료 약세' : 'CBD Aging Asset Rent Weakness'}</div>
                         </div>
 
                         {/* Winners (Shield) */}
@@ -52,9 +54,9 @@ export default function Section66({ isActive }) {
                                 Safe Haven
                             </div>
                             <div className="text-[60px] mb-2">🛡️</div>
-                            <div className="text-[28px] font-black text-[#1d1d1f] mb-1">절대적 방어력 (프리미엄 사수)</div>
+                            <div className="text-[28px] font-black text-[#1d1d1f] mb-1">{lang === 'kr' ? '절대적 방어력 (프리미엄 사수)' : 'Absolute Defense (Premium Retained)'}</div>
                             
-                            <div className="text-[22px] font-black text-[#1d1d1f] mt-2">IOTA · GBC 신규 트로피 자산</div>
+                            <div className="text-[22px] font-black text-[#1d1d1f] mt-2">{lang === 'kr' ? 'IOTA · GBC 신규 트로피 자산' : 'IOTA/GBC New Trophy Assets'}</div>
                             <div className="text-[18px] font-bold text-gray-700 mt-4 px-4">
                                 거시 하방 충격에도 GBD·삼성동 코어 수요 집중으로 견고한 가격 유지
                             </div>
@@ -65,9 +67,9 @@ export default function Section66({ isActive }) {
                 {/* Bottom Text */}
                 <div className={`mt-[10px] max-w-[1100px] text-[16px] md:text-[20px] leading-[1.5] font-bold text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-3 mx-auto">
-                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>Bear 시나리오 발동 시 2030년 정점 이후 인구 및 기업 본사 통폐합으로 전체 시장 임대료 횡보세 진입</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-gray-500">▪</span><span className="text-gray-600">CBD 일부 자산은 노후화와 수요 이탈로 약세를 보이며 극단적 양극화 현상 심화</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span className="text-[#1d1d1f]">반면 IOTA 등 삼성동 신규 랜드마크는 핵심 코어 자산으로서 자본의 '안전 도피처(Safe Haven)' 역할을 수행</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>{lang === 'kr' ? 'Bear 시나리오 발동 시 2030년 정점 이후 인구 및 기업 본사 통폐합으로 전체 시장 임대료 횡보세 진입' : 'Under Bear scenario, market rents stagnate due to demographic/corp consolidation post-2030'}</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-gray-500">▪</span><span className="text-gray-600">{lang === 'kr' ? 'CBD 일부 자산은 노후화와 수요 이탈로 약세를 보이며 극단적 양극화 현상 심화' : 'Some CBD assets weaken from aging/demand flight, worsening extreme polarization'}</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span className="text-[#1d1d1f]">{lang === 'kr' ? '반면 IOTA 등 삼성동 신규 랜드마크는 핵심 코어 자산으로서 자본의 \'안전 도피처(Safe Haven)\' 역할을 수행' : 'Conversely, new landmarks like IOTA act as a Safe Haven for capital as core assets'}</span></li>
                     </ul>
                 </div>
             </div>

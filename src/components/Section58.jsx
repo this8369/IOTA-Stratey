@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Section58({ isActive }) {
+    const { lang } = useLanguage();
     const [step, setStep] = useState(0);
 
     useEffect(() => {
@@ -37,54 +39,54 @@ export default function Section58({ isActive }) {
                 <div className="relative w-full max-w-[1000px] mt-[60px] mb-[60px] h-[300px] flex items-end justify-between px-4 md:px-12 border-b-[4px] border-[#1d1d1f]">
                     {/* Y-Axis Label */}
                     <div className="absolute left-[-30px] top-0 h-full flex flex-col justify-between text-gray-400 font-bold text-[14px]">
-                        <span>6,000만</span>
-                        <span>4,000만</span>
-                        <span>2,000만</span>
+                        <span>{lang === 'kr' ? '6,000만' : '60M'}</span>
+                        <span>{lang === 'kr' ? '4,000만' : '40M'}</span>
+                        <span>{lang === 'kr' ? '2,000만' : '20M'}</span>
                         <span>0</span>
                     </div>
 
                     {/* Bar 1: 2024 */}
                     <div className={`relative flex flex-col justify-end items-center w-[12%] transition-all duration-1000 ease-out h-full ${step >= 2 ? 'opacity-100' : 'opacity-0'}`}>
-                        <div className="absolute bottom-[calc(86%+10px)] text-[20px] md:text-[24px] font-black text-black">5,175만</div>
+                        <div className="absolute bottom-[calc(86%+10px)] text-[20px] md:text-[24px] font-black text-black">{lang === 'kr' ? '5,175만' : '51.75M'}</div>
                         <div className="w-full bg-[#1d1d1f] rounded-t-sm" style={{ height: '86%' }}></div>
-                        <div className="absolute -bottom-[35px] font-bold text-[16px] text-black">2024 (정점)</div>
+                        <div className="absolute -bottom-[35px] font-bold text-[16px] text-black">{lang === 'kr' ? '2024 (정점)' : '2024 (Peak)'}</div>
                     </div>
 
                     {/* Bar 2: 2040 */}
                     <div className={`relative flex flex-col justify-end items-center w-[12%] transition-all duration-1000 ease-out h-full ${step >= 3 ? 'opacity-100' : 'opacity-0'}`}>
-                        <div className="absolute bottom-[calc(79%+10px)] text-[18px] md:text-[22px] font-bold text-gray-600">4,734만</div>
+                        <div className="absolute bottom-[calc(79%+10px)] text-[18px] md:text-[22px] font-bold text-gray-600">{lang === 'kr' ? '4,734만' : '47.34M'}</div>
                         <div className="w-full bg-gray-400 rounded-t-sm" style={{ height: '79%' }}></div>
                         <div className="absolute -bottom-[35px] font-bold text-[16px] text-gray-600">2040</div>
                     </div>
 
                     {/* Bar 3: 2050 */}
                     <div className={`relative flex flex-col justify-end items-center w-[12%] transition-all duration-1000 ease-out h-full ${step >= 4 ? 'opacity-100' : 'opacity-0'}`}>
-                        <div className="absolute bottom-[calc(71%+10px)] text-[18px] md:text-[22px] font-bold text-gray-600">4,300만</div>
+                        <div className="absolute bottom-[calc(71%+10px)] text-[18px] md:text-[22px] font-bold text-gray-600">{lang === 'kr' ? '4,300만' : '43M'}</div>
                         <div className="w-full bg-gray-400 rounded-t-sm" style={{ height: '71%' }}></div>
                         <div className="absolute -bottom-[35px] font-bold text-[16px] text-gray-600">2050</div>
                     </div>
 
                     {/* Bar 4: 2060 */}
                     <div className={`relative flex flex-col justify-end items-center w-[12%] transition-all duration-1000 ease-out h-full ${step >= 5 ? 'opacity-100' : 'opacity-0'}`}>
-                        <div className="absolute bottom-[calc(61%+10px)] text-[18px] md:text-[22px] font-bold text-gray-600">3,664만</div>
+                        <div className="absolute bottom-[calc(61%+10px)] text-[18px] md:text-[22px] font-bold text-gray-600">{lang === 'kr' ? '3,664만' : '36.64M'}</div>
                         <div className="w-full bg-gray-400 rounded-t-sm" style={{ height: '61%' }}></div>
                         <div className="absolute -bottom-[35px] font-bold text-[16px] text-gray-600">2060</div>
                     </div>
 
                     {/* Bar 5: 2100 */}
                     <div className={`relative flex flex-col justify-end items-center w-[12%] transition-all duration-1000 ease-out h-full ${step >= 6 ? 'opacity-100' : 'opacity-0'}`}>
-                        <div className="absolute bottom-[calc(35%+10px)] text-[20px] md:text-[24px] font-black text-red-600 whitespace-nowrap">1,100~3,000만</div>
+                        <div className="absolute bottom-[calc(35%+10px)] text-[20px] md:text-[24px] font-black text-red-600 whitespace-nowrap">{lang === 'kr' ? '1,100~3,000만' : '11M~30M'}</div>
                         <div className="w-full bg-red-600 rounded-t-sm" style={{ height: '35%' }}></div>
-                        <div className="absolute -bottom-[35px] font-black text-[16px] text-red-600 whitespace-nowrap">2100 (추정)</div>
+                        <div className="absolute -bottom-[35px] font-black text-[16px] text-red-600 whitespace-nowrap">{lang === 'kr' ? '2100 (추정)' : '2100 (Est.)'}</div>
                     </div>
                 </div>
 
                 {/* Bottom Text */}
                 <div className={`mt-[20px] max-w-[1100px] text-[16px] md:text-[20px] leading-[1.5] font-bold text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 7 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-3 mx-auto">
-                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>통계청·UN 중위 변동치 기준 2024년 5,175만 명 정점 이후 본격적인 감소 진입</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>2040년 약 4,734만 명, 2050년 약 4,300만 명, 2060년 3,664만 명으로 가파른 축소</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-red-600">▪</span><span className="text-red-900">Bayesian 확률 추정 기준 2100년에는 1,100만~3,000만 명 사이로 국가 규모 축소 불가피</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>{lang === 'kr' ? '통계청·UN 중위 변동치 기준 2024년 5,175만 명 정점 이후 본격적인 감소 진입' : 'Entering full decline after 2024 peak of 51.75M (Statistics Korea/UN Med. Var.)'}</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>{lang === 'kr' ? '2040년 약 4,734만 명, 2050년 약 4,300만 명, 2060년 3,664만 명으로 가파른 축소' : 'Steep shrinkage: 47.34M by 2040, 43M by 2050, 36.64M by 2060'}</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-red-600">▪</span><span className="text-red-900">{lang === 'kr' ? 'Bayesian 확률 추정 기준 2100년에는 1,100만~3,000만 명 사이로 국가 규모 축소 불가피' : 'Inevitable scale down to 11M-30M by 2100 (Bayesian Prob. Est.)'}</span></li>
                     </ul>
                 </div>
             </div>

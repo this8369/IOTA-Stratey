@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Section63({ isActive }) {
+    const { lang } = useLanguage();
     const [step, setStep] = useState(0);
 
     useEffect(() => {
@@ -32,15 +34,15 @@ export default function Section63({ isActive }) {
                 <div className="flex flex-col lg:flex-row items-center justify-center gap-10 mt-[40px] mb-[30px] max-w-[1200px] w-full">
                     {/* 5 Hubs */}
                     <div className={`flex flex-col items-center bg-gray-50 border-[4px] border-gray-300 p-8 w-full lg:w-[40%] transition-all duration-1000 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
-                        <div className="text-[20px] font-black text-gray-600 mb-6 uppercase tracking-widest">기존 5축 권역 구조</div>
+                        <div className="text-[20px] font-black text-gray-600 mb-6 uppercase tracking-widest">{lang === 'kr' ? '기존 5축 권역 구조' : 'Existing 5-Axis Structure'}</div>
                         <div className="flex w-full justify-center gap-4">
                             <div className="bg-gray-800 text-white w-[100px] py-4 flex items-center justify-center font-black text-[22px] shadow-md">CBD</div>
                             <div className="bg-gray-800 text-white w-[100px] py-4 flex items-center justify-center font-black text-[22px] shadow-md">GBD</div>
                             <div className="bg-gray-800 text-white w-[100px] py-4 flex items-center justify-center font-black text-[22px] shadow-md">YBD</div>
                         </div>
                         <div className="flex w-full justify-center gap-4 mt-4">
-                            <div className="bg-gray-400 text-white w-[140px] py-3 flex items-center justify-center font-bold text-[18px]">MBD (마곡)</div>
-                            <div className="bg-gray-400 text-white w-[140px] py-3 flex items-center justify-center font-bold text-[18px]">BBD (분당·판교)</div>
+                            <div className="bg-gray-400 text-white w-[140px] py-3 flex items-center justify-center font-bold text-[18px]">{lang === 'kr' ? 'MBD (마곡)' : 'MBD (Magok)'}</div>
+                            <div className="bg-gray-400 text-white w-[140px] py-3 flex items-center justify-center font-bold text-[18px]">{lang === 'kr' ? 'BBD (분당·판교)' : 'BBD (Bundang/Pangyo)'}</div>
                         </div>
                     </div>
 
@@ -49,15 +51,15 @@ export default function Section63({ isActive }) {
 
                     {/* 7 Hubs */}
                     <div className={`flex flex-col items-center bg-blue-50 border-[6px] border-blue-600 py-7 px-10 w-full lg:w-[50%] shadow-2xl transition-all duration-1000 delay-400 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
-                        <div className="text-[24px] font-black text-blue-900 mb-6 uppercase tracking-widest">진화된 7축 메가 권역</div>
+                        <div className="text-[24px] font-black text-blue-900 mb-6 uppercase tracking-widest">{lang === 'kr' ? '진화된 7축 메가 권역' : 'Evolved 7-Axis Mega District'}</div>
                         <div className="w-full bg-white border-2 border-blue-200 p-6 flex flex-col items-center mb-4 shadow-sm relative">
-                            <div className="absolute -top-3 bg-blue-600 text-white px-4 py-1 text-[14px] font-bold uppercase">신규 메가 거점 편입</div>
+                            <div className="absolute -top-3 bg-blue-600 text-white px-4 py-1 text-[14px] font-bold uppercase">{lang === 'kr' ? '신규 메가 거점 편입' : 'New Mega Nodes Included'}</div>
                             <div className="text-[36px] font-black text-[#1d1d1f] leading-tight text-center mt-2">
-                                YSBD <span className="text-[20px] text-gray-500 font-bold">(용산·서울역)</span>
+                                YSBD <span className="text-[20px] text-gray-500 font-bold">{lang === 'kr' ? '(용산·서울역)' : '(Yongsan/Seoul Stn)'}</span>
                             </div>
                             <div className="text-blue-500 font-black text-[24px] -my-1">+</div>
                             <div className="text-[36px] font-black text-[#1d1d1f] leading-tight text-center">
-                                KBD <span className="text-[20px] text-gray-500 font-bold">(삼성·잠실)</span>
+                                KBD <span className="text-[20px] text-gray-500 font-bold">{lang === 'kr' ? '(삼성·잠실)' : '(Samsung/Jamsil)'}</span>
                             </div>
                         </div>
                         <div className="text-[20px] font-bold text-gray-500 flex items-center gap-2">
@@ -69,8 +71,8 @@ export default function Section63({ isActive }) {
                 {/* Bottom Text */}
                 <div className={`mt-[10px] max-w-[1100px] text-[16px] md:text-[20px] leading-[1.5] font-bold text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-3 mx-auto">
-                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>향후 15년간 가장 큰 구조 변화는 YSBD(용산역 + 서울역 IOTA 일대) 신규 권역의 등장과 GBD 동쪽 확장(GBC·잠실MICE·환승센터)임</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-blue-600">▪</span><span className="text-blue-900">기존 3대 핵심축(CBD, GBD, YBD)과 2대 확장축(MBD, BBD)에 2개의 신규 초대형 거점이 편입되며 7축 구조로 진화</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>{lang === 'kr' ? '향후 15년간 가장 큰 구조 변화는 YSBD(용산역 + 서울역 IOTA 일대) 신규 권역의 등장과 GBD 동쪽 확장(GBC·잠실MICE·환승센터)임' : 'Biggest shift over 15 yrs is emergence of YSBD and GBD eastbound expansion (GBC, Jamsil MICE)'}</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-blue-600">▪</span><span className="text-blue-900">{lang === 'kr' ? '기존 3대 핵심축(CBD, GBD, YBD)과 2대 확장축(MBD, BBD)에 2개의 신규 초대형 거점이 편입되며 7축 구조로 진화' : '2 new mega-nodes added to existing 3 cores and 2 extended axes, evolving into 7-axis structure'}</span></li>
                     </ul>
                 </div>
             </div>

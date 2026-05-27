@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Section41({ isActive }) {
+    const { lang } = useLanguage();
     const [step, setStep] = useState(0);
 
     useEffect(() => {
@@ -39,13 +41,13 @@ export default function Section41({ isActive }) {
                 {/* Main Flowing Text */}
                 <h2 className={`text-[40px] md:text-[60px] lg:text-[72px] font-bold leading-[calc(1.3em-6px)] break-keep tracking-[-0.02em] transition-all duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="gradient-text inline-grid grid-cols-[1fr_auto_1fr] gap-x-3 md:gap-x-4 lg:gap-x-5">
-                        <span className="text-right">한국 GDP 2조</span>
+                        <span className="text-right">{lang === 'kr' ? '한국 GDP 2조' : 'Korea GDP $2T'}</span>
                         <span className="text-center">→</span>
-                        <span className="text-left">3조 달러</span>
+                        <span className="text-left">{lang === 'kr' ? '3조 달러' : '$3T'}</span>
                         
                         <span className="text-right">2027</span>
                         <span className="text-center">→</span>
-                        <span className="text-left">2040 시나리오</span>
+                        <span className="text-left">{lang === 'kr' ? '2040 시나리오' : '2040 Scenario'}</span>
                     </span>
                 </h2>
 

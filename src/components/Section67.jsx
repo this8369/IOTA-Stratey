@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Section67({ isActive }) {
+    const { lang } = useLanguage();
     const [step, setStep] = useState(0);
 
     useEffect(() => {
@@ -33,28 +35,28 @@ export default function Section67({ isActive }) {
                     
                     {/* Tier 1: Prime Trophy */}
                     <div className={`w-[60%] lg:w-[45%] bg-[#1d1d1f] text-white py-4 px-6 border-b-[4px] border-white z-30 relative shadow-2xl transition-all duration-1000 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'}`}>
-                        <div className="text-[20px] font-black mb-2 text-gray-300">최상위 프라임 등급 (Trophy)</div>
-                        <div className="text-[34px] font-black text-white tracking-tighter">공실률 4% 이내 유지</div>
+                        <div className="text-[20px] font-black mb-2 text-gray-300">{lang === 'kr' ? '최상위 프라임 등급 (Trophy)' : 'Top Prime Grade (Trophy)'}</div>
+                        <div className="text-[34px] font-black text-white tracking-tighter">{lang === 'kr' ? '공실률 4% 이내 유지' : 'Sub-4% Vacancy Maintained'}</div>
                         <div className="absolute top-[50%] -translate-y-1/2 -right-6 translate-x-full hidden md:block text-left w-max">
-                            <span className="font-black text-[#1d1d1f] text-[20px]">▶ 완전 임차(Full Occupancy) 달성</span>
+                            <span className="font-black text-[#1d1d1f] text-[20px]">{lang === 'kr' ? '▶ 완전 임차(Full Occupancy) 달성' : '▶ Full Occupancy Achieved'}</span>
                         </div>
                     </div>
 
                     {/* Tier 2: Average */}
                     <div className={`w-[80%] lg:w-[65%] bg-gray-400 text-white py-4 px-6 border-b-[4px] border-white z-20 relative shadow-lg -mt-2 transition-all duration-1000 delay-100 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'}`}>
-                        <div className="text-[18px] font-bold mb-2 text-gray-200">서울 권역 평균 (Base 시나리오)</div>
-                        <div className="text-[30px] font-black">2035년 이후 6~8% 도달</div>
+                        <div className="text-[18px] font-bold mb-2 text-gray-200">{lang === 'kr' ? '서울 권역 평균 (Base 시나리오)' : 'Seoul Avg (Base Scenario)'}</div>
+                        <div className="text-[30px] font-black">{lang === 'kr' ? '2035년 이후 6~8% 도달' : '6~8% Reached Post-2035'}</div>
                         <div className="absolute top-[50%] -translate-y-1/2 -right-6 translate-x-full hidden md:block text-left w-max">
-                            <span className="font-bold text-gray-500 text-[18px]">▶ 인구 감소 충격 반영 (완충 구간)</span>
+                            <span className="font-bold text-gray-500 text-[18px]">{lang === 'kr' ? '▶ 인구 감소 충격 반영 (완충 구간)' : '▶ Reflects Demo Shock (Buffer Zone)'}</span>
                         </div>
                     </div>
 
                     {/* Tier 3: Class B / Bear */}
                     <div className={`w-full lg:w-[85%] bg-gray-100 border-[4px] border-gray-300 text-gray-800 py-5 px-8 z-10 relative shadow-sm -mt-2 transition-all duration-1000 delay-200 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'}`}>
-                        <div className="text-[18px] font-bold mb-2 text-gray-500">일반 오피스 & 노후 자산 (Class B 이하)</div>
-                        <div className="text-[30px] font-black text-gray-700">10%+ 의미 있는 심각한 공실 발생</div>
+                        <div className="text-[18px] font-bold mb-2 text-gray-500">{lang === 'kr' ? '일반 오피스 & 노후 자산 (Class B 이하)' : 'General/Aging (Class B & Below)'}</div>
+                        <div className="text-[30px] font-black text-gray-700">{lang === 'kr' ? '10%+ 의미 있는 심각한 공실 발생' : '10%+ Meaningful Severe Vacancy'}</div>
                         <div className="absolute top-[50%] -translate-y-1/2 -right-6 translate-x-full hidden md:block text-left w-max">
-                            <span className="font-black text-red-600 text-[18px]">▶ 자산 도태 가속화 (Flight-to-Quality)</span>
+                            <span className="font-black text-red-600 text-[18px]">{lang === 'kr' ? '▶ 자산 도태 가속화 (Flight-to-Quality)' : '▶ Accelerated Culling (Flight-to-Quality)'}</span>
                         </div>
                     </div>
 
@@ -63,9 +65,9 @@ export default function Section67({ isActive }) {
                 {/* Bottom Text */}
                 <div className={`mt-[10px] max-w-[1100px] text-[16px] md:text-[20px] leading-[1.5] font-bold text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-3 mx-auto">
-                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>권역 평균 공실률은 Base 시 2030년 5~7%, 2035년 이후 인구 감소가 반영되며 6~8%로 상승 전망</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-red-600">▪</span><span className="text-gray-600">Bear 시나리오 발동 시 권역 평균 10% 이상 도달 및 Class B 이하 노후 자산의 급격한 도태 우려</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span className="text-[#1d1d1f]">그러나 프라임 등급은 'Flight-to-Quality' 쏠림 현상으로 4% 이내의 완전 임차 상태를 구조적으로 향유</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>{lang === 'kr' ? '권역 평균 공실률은 Base 시 2030년 5~7%, 2035년 이후 인구 감소가 반영되며 6~8%로 상승 전망' : 'Avg vacancy to rise from 5-7% in 2030 to 6-8% post-2035 reflecting demo decline (Base)'}</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-red-600">▪</span><span className="text-gray-600">{lang === 'kr' ? 'Bear 시나리오 발동 시 권역 평균 10% 이상 도달 및 Class B 이하 노후 자산의 급격한 도태 우려' : 'Under Bear, avg vacancy tops 10% triggering rapid culling of Class B and below'}</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span className="text-[#1d1d1f]">{lang === 'kr' ? '그러나 프라임 등급은 \'Flight-to-Quality\' 쏠림 현상으로 4% 이내의 완전 임차 상태를 구조적으로 향유' : 'However, Prime grades structurally enjoy sub-4% full occupancy due to Flight-to-Quality'}</span></li>
                     </ul>
                 </div>
             </div>

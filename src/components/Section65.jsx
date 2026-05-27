@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Section65({ isActive }) {
+    const { lang } = useLanguage();
     const [step, setStep] = useState(0);
 
     useEffect(() => {
@@ -32,12 +34,12 @@ export default function Section65({ isActive }) {
                     {/* Left: Seoul Trophy */}
                     <div className={`flex-1 bg-white border-[6px] border-[#1d1d1f] p-10 flex flex-col justify-center items-center shadow-2xl relative transition-all duration-1000 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <div className="absolute -top-4 bg-[#1d1d1f] text-white px-6 py-1 font-black text-[16px] uppercase tracking-wider">2040 Bull Scenario</div>
-                        <div className="text-[24px] font-bold text-gray-500 mb-2 mt-4">IOTA·GBC 신규 트로피 자산</div>
+                        <div className="text-[24px] font-bold text-gray-500 mb-2 mt-4">{lang === 'kr' ? 'IOTA·GBC 신규 트로피 자산' : 'IOTA/GBC New Trophy Assets'}</div>
                         <div className="flex items-end mt-4">
                             <span className="text-[90px] font-black text-[#1d1d1f] leading-none tracking-tighter">50</span>
-                            <span className="text-[36px] font-black text-gray-800 mb-2 ml-2">만 원</span>
+                            <span className="text-[36px] font-black text-gray-800 mb-2 ml-2">{lang === 'kr' ? '만 원' : '0k KRW'}</span>
                         </div>
-                        <div className="text-[18px] font-bold text-gray-500 mt-2">/ 평·월</div>
+                        <div className="text-[18px] font-bold text-gray-500 mt-2">{lang === 'kr' ? '/ 평·월' : '/ py·mo'}</div>
                         <div className="w-full bg-gray-100 mt-8 p-4 font-bold text-gray-800 text-[22px] border-l-[6px] border-[#1d1d1f]">
                             환산 시 USD 200/sqft 돌파
                         </div>
@@ -51,7 +53,7 @@ export default function Section65({ isActive }) {
                     {/* Right: Tokyo Marunouchi */}
                     <div className={`flex-1 bg-[#1d1d1f] text-white border-[6px] border-[#1d1d1f] p-10 flex flex-col justify-center items-center shadow-2xl relative transition-all duration-1000 delay-300 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <div className="absolute -top-4 bg-yellow-500 text-black px-6 py-1 font-black text-[16px] uppercase tracking-wider">Global Benchmark</div>
-                        <div className="text-[24px] font-bold text-gray-400 mb-2 mt-4">글로벌 최고 수준 핵심 권역</div>
+                        <div className="text-[24px] font-bold text-gray-400 mb-2 mt-4">{lang === 'kr' ? '글로벌 최고 수준 핵심 권역' : 'Global Top-Tier Core'}</div>
                         <div className="text-[54px] font-black text-white leading-tight mt-4 text-center">
                             도쿄<br/>마루노우치
                         </div>
@@ -66,9 +68,9 @@ export default function Section65({ isActive }) {
                 {/* Bottom Text */}
                 <div className={`mt-[10px] max-w-[1100px] text-[16px] md:text-[20px] leading-[1.5] font-bold text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-3 mx-auto">
-                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>가장 낙관적인 Bull 시나리오 발동 시, GBD 프라임은 2040년 38~42만 원 수준 도달 전망</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span className="text-[#1d1d1f]">IOTA 및 GBC 트로피 자산은 2035년 35만 원을 거쳐 2040년 45~50만 원/평·월 시대 개막</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>이는 도쿄 마루노우치 코어 오피스의 상징적 저항선인 USD 200/sqft와 완전히 수렴하는 역사적 분기점</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>{lang === 'kr' ? '가장 낙관적인 Bull 시나리오 발동 시, GBD 프라임은 2040년 38~42만 원 수준 도달 전망' : 'In most optimistic Bull Scenario, GBD Prime to reach 380k-420k KRW by 2040'}</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span className="text-[#1d1d1f]">{lang === 'kr' ? 'IOTA 및 GBC 트로피 자산은 2035년 35만 원을 거쳐 2040년 45~50만 원/평·월 시대 개막' : 'IOTA/GBC Trophies passing 350k in 2035 to open 450k-500k KRW/py era by 2040'}</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>{lang === 'kr' ? '이는 도쿄 마루노우치 코어 오피스의 상징적 저항선인 USD 200/sqft와 완전히 수렴하는 역사적 분기점' : 'A historic inflection point fully converging with Tokyo Marunouchi\'s USD 200/sqft resistance line'}</span></li>
                     </ul>
                 </div>
             </div>

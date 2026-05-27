@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Section43({ isActive }) {
+    const { lang } = useLanguage();
     const [step, setStep] = useState(0);
 
     useEffect(() => {
@@ -11,10 +13,10 @@ export default function Section43({ isActive }) {
     }, [isActive]);
 
     const variables = [
-        { title: "인구", sub: "Population" },
-        { title: "생산성", sub: "Productivity" },
-        { title: "지정학", sub: "Geopolitics" },
-        { title: "기술 패권", sub: "Tech Hegemony" }
+        { title: lang === "kr" ? "인구" : "Population", sub: "Population" },
+        { title: lang === "kr" ? "생산성" : "Productivity", sub: "Productivity" },
+        { title: lang === "kr" ? "지정학" : "Geopolitics", sub: "Geopolitics" },
+        { title: lang === "kr" ? "기술 패권" : "Tech Hegemony", sub: "Tech Hegemony" }
     ];
 
     return (

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Section59({ isActive }) {
+    const { lang } = useLanguage();
     const [step, setStep] = useState(0);
 
     useEffect(() => {
@@ -33,7 +35,7 @@ export default function Section59({ isActive }) {
                     
                     {/* Left: Aging Percentage */}
                     <div className={`flex-1 flex flex-col items-center bg-gray-50 border-[4px] border-gray-300 p-8 transition-all duration-1000 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
-                        <h3 className="text-[24px] font-black text-black mb-8">고령 인구(65세 이상) 비중 급증</h3>
+                        <h3 className="text-[24px] font-black text-black mb-8">{lang === 'kr' ? '고령 인구(65세 이상) 비중 급증' : 'Senior Pop (65+) Surge'}</h3>
                         <div className="flex w-full items-end justify-center gap-6 h-[180px]">
                             <div className="flex flex-col items-center w-[30%]">
                                 <span className="font-bold text-gray-500 mb-2">20%</span>
@@ -55,13 +57,13 @@ export default function Section59({ isActive }) {
 
                     {/* Right: Shrinking Workforce */}
                     <div className={`flex-1 flex flex-col items-center bg-gray-50 border-[4px] border-gray-300 p-8 transition-all duration-1000 delay-200 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
-                        <h3 className="text-[24px] font-black text-gray-900 mb-8">생산가능인구(15~64세) 증발</h3>
+                        <h3 className="text-[24px] font-black text-gray-900 mb-8">{lang === 'kr' ? '생산가능인구(15~64세) 증발' : 'Working-age Pop (15-64) Evaporation'}</h3>
                         <div className="flex w-full items-center justify-between mt-4">
                             <div className="flex flex-col items-center">
                                 <div className="w-[120px] h-[120px] bg-gray-200 rounded-full flex items-center justify-center border-4 border-gray-400">
-                                    <span className="font-black text-gray-800 text-[24px]">3,738만</span>
+                                    <span className="font-black text-gray-800 text-[24px]">{lang === 'kr' ? '3,738만' : '37.38M'}</span>
                                 </div>
-                                <span className="mt-4 font-bold text-gray-700">2020년</span>
+                                <span className="mt-4 font-bold text-gray-700">{lang === 'kr' ? '2020년' : '2020'}</span>
                             </div>
                             
                             <div className="flex flex-col items-center">
@@ -71,9 +73,9 @@ export default function Section59({ isActive }) {
 
                             <div className="flex flex-col items-center">
                                 <div className="w-[80px] h-[80px] bg-[#1d1d1f] rounded-full flex items-center justify-center shadow-lg">
-                                    <span className="font-black text-white text-[18px]">2,419만</span>
+                                    <span className="font-black text-white text-[18px]">{lang === 'kr' ? '2,419만' : '24.19M'}</span>
                                 </div>
-                                <span className="mt-4 font-black text-[#1d1d1f]">2050년</span>
+                                <span className="mt-4 font-black text-[#1d1d1f]">{lang === 'kr' ? '2050년' : '2050'}</span>
                             </div>
                         </div>
                     </div>
@@ -83,9 +85,9 @@ export default function Section59({ isActive }) {
                 {/* Bottom Text */}
                 <div className={`mt-[10px] max-w-[1100px] text-[16px] md:text-[20px] leading-[1.5] font-bold text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-3 mx-auto">
-                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>65세 이상 고령자 비중은 2025년 20%로 초고령사회 진입 후 2035년 30%를 돌파 전망</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>생산가능인구(15~64세)는 2020년 3,738만 명에서 2050년 2,419만 명으로 약 35% 증발</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-red-600">▪</span><span className="text-red-900">극단적인 부양비 증가와 노동력 부족으로 거시 경제의 잠재성장률 하방 압력 가중</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>{lang === 'kr' ? '65세 이상 고령자 비중은 2025년 20%로 초고령사회 진입 후 2035년 30%를 돌파 전망' : 'Seniors (65+) to hit 20% by 2025, topping 30% by 2035'}</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>{lang === 'kr' ? '생산가능인구(15~64세)는 2020년 3,738만 명에서 2050년 2,419만 명으로 약 35% 증발' : 'Working-age pop drops from 37.38M in 2020 to 24.19M in 2050 (~35% drop)'}</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-red-600">▪</span><span className="text-red-900">{lang === 'kr' ? '극단적인 부양비 증가와 노동력 부족으로 거시 경제의 잠재성장률 하방 압력 가중' : 'Extreme dependency ratio & labor shortage adds downward macro pressure'}</span></li>
                     </ul>
                 </div>
             </div>

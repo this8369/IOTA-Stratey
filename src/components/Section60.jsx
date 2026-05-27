@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Section60({ isActive }) {
+    const { lang } = useLanguage();
     const [step, setStep] = useState(0);
 
     useEffect(() => {
@@ -33,9 +35,9 @@ export default function Section60({ isActive }) {
                     
                     {/* Catalyst */}
                     <div className={`w-full lg:w-[35%] bg-black p-10 flex flex-col items-center justify-center text-white shadow-2xl transition-all duration-1000 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
-                        <div className="text-[20px] font-bold text-gray-400 mb-2">인구 감소의 역설</div>
-                        <h3 className="text-[34px] font-black leading-tight text-center">가계 자산의<br/>대규모 유동화</h3>
-                        <p className="mt-6 text-gray-300 font-medium">부동산 및 금융 자산 처분 가속</p>
+                        <div className="text-[20px] font-bold text-gray-400 mb-2">{lang === 'kr' ? '인구 감소의 역설' : 'Demographic Paradox'}</div>
+                        <h3 className="text-[34px] font-black leading-tight text-center">{lang === 'kr' ? <>가계 자산의<br/>대규모 유동화</> : <>Massive Household<br/>Asset Liquidity</>}</h3>
+                        <p className="mt-6 text-gray-300 font-medium">{lang === 'kr' ? '부동산 및 금융 자산 처분 가속' : 'Accelerated RE & Financial Asset Disposal'}</p>
                     </div>
 
                     {/* Arrow */}
@@ -48,13 +50,13 @@ export default function Section60({ isActive }) {
                     {/* Results */}
                     <div className={`w-full lg:w-[50%] flex flex-col gap-4 transition-all duration-1000 delay-400 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
                         <div className="w-full bg-blue-50 border-l-[8px] border-y-[2px] border-r-[2px] border-l-blue-600 border-y-blue-200 border-r-blue-200 py-6 px-8 flex items-center shadow-sm">
-                            <div className="text-[28px] font-black text-blue-900">자산운용 산업으로의 폭발적 자본 이전</div>
+                            <div className="text-[28px] font-black text-blue-900">{lang === 'kr' ? '자산운용 산업으로의 폭발적 자본 이전' : 'Explosive Capital Transfer to Asset Mgt'}</div>
                         </div>
                         <div className="w-full bg-green-50 border-l-[8px] border-y-[2px] border-r-[2px] border-l-green-600 border-y-green-200 border-r-green-200 py-6 px-8 flex items-center shadow-sm">
-                            <div className="text-[28px] font-black text-green-900">시니어 하우징 및 헬스케어 수요 빅뱅</div>
+                            <div className="text-[28px] font-black text-green-900">{lang === 'kr' ? '시니어 하우징 및 헬스케어 수요 빅뱅' : 'Big Bang in Senior Housing & Healthcare'}</div>
                         </div>
                         <div className="w-full bg-gray-100 border-[2px] border-gray-300 p-4 text-center mt-2">
-                            <span className="font-bold text-gray-600">💡 글로벌 벤치마크: 일본 '잃어버린 30년'의 신규 시장 패턴과 유사</span>
+                            <span className="font-bold text-gray-600">{lang === 'kr' ? '💡 글로벌 벤치마크: 일본 \'잃어버린 30년\'의 신규 시장 패턴과 유사' : '💡 Global Benchmark: Similar to Japan\'s New Market Patterns in Lost 30 Yrs'}</span>
                         </div>
                     </div>
 
@@ -63,9 +65,9 @@ export default function Section60({ isActive }) {
                 {/* Bottom Text */}
                 <div className={`mt-[10px] max-w-[1100px] text-[16px] md:text-[20px] leading-[1.5] font-bold text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-3 mx-auto">
-                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>거시 양면성: 노동력 부족이라는 부정 효과와 시니어 하우징 등 신규 시장 창출 효과 병존</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-blue-600">▪</span><span className="text-blue-900">가계의 부동산·금융 자산 처분이 자산운용 산업으로 이전되며 거대한 자본 대이동 발생</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>일본이 잃어버린 30년에도 자산운용·시니어 케어·인바운드 관광에서 새 시장을 만들어낸 패턴과 유사</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>{lang === 'kr' ? '거시 양면성: 노동력 부족이라는 부정 효과와 시니어 하우징 등 신규 시장 창출 효과 병존' : 'Macro Duality: Negative labor shortage co-exists with new market creation'}</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-blue-600">▪</span><span className="text-blue-900">{lang === 'kr' ? '가계의 부동산·금융 자산 처분이 자산운용 산업으로 이전되며 거대한 자본 대이동 발생' : 'Disposal of household assets shifts to AMC, causing massive capital movement'}</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>{lang === 'kr' ? '일본이 잃어버린 30년에도 자산운용·시니어 케어·인바운드 관광에서 새 시장을 만들어낸 패턴과 유사' : 'Similar to Japan creating new markets in AMC, Senior Care, and Inbound Tourism'}</span></li>
                     </ul>
                 </div>
             </div>
