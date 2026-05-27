@@ -50,7 +50,7 @@ export default function Section40({ isActive }) {
                                 <div className="flex flex-col items-center">
                                     <div className="text-blue-600 font-black text-[18px] mb-1">4배 이상 상승 (글로벌 LP 유입)</div>
                                     {/* Removed animate-bounce */}
-                                    <svg className="w-8 h-8 text-blue-500" fill="none" strokeWidth="3" stroke="currentColor" viewBox="0 0 24 24">
+                                    <svg className="w-8 h-8 text-blue-500 translate-y-[4px]" fill="none" strokeWidth="3" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                                     </svg>
                                 </div>
