@@ -95,7 +95,7 @@ export const menuDataEn = [
                     { label: "Base Scenario", id: "page-45" },
                     { label: "Bull Scenario", id: "page-46" },
                     { label: "Bear Scenario", id: "page-47" },
-                    { label: "시나리오 종합", id: "page-48" }
+                    { label: "Scenario Summary", id: "page-48" }
                 ]
             },
             {

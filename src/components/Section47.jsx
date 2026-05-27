@@ -21,12 +21,12 @@ export default function Section47({ isActive }) {
                 {/* Header */}
                 <div className="text-center mb-12">
                     <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                        <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px]">
-                            미래 시나리오 종합
+                        <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] tracking-[-0.02em] mb-[12px] bg-transparent">
+                            {lang === 'kr' ? '미래 시나리오 종합' : 'Future Scenario Summary'}
                         </span>
                     </div>
                     <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                        한국 GDP 3조 달러 도달 시나리오별 핵심 지표 비교
+                        {lang === 'kr' ? '한국 GDP 3조 달러 도달 시나리오별 핵심 지표 비교' : 'Core Indicators by Scenario for Korea reaching $3T GDP'}
                     </h2>
                 </div>
 
