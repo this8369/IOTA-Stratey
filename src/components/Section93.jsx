@@ -35,7 +35,7 @@ export default function Section93({ isActive }) {
                 <div className="w-full max-w-[1100px] flex flex-col md:flex-row gap-6 mb-10 relative items-stretch">
                     
                     {/* Flow Step 1 */}
-                    <div className={`flex-1 bg-white border-2 border-gray-100 rounded-2xl p-8 shadow-sm flex flex-col items-center justify-center relative transition-all duration-700 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className={`flex-1 bg-white border-4 border-[#1e3a8a] rounded-2xl p-8 shadow-sm flex flex-col items-center justify-center relative transition-all duration-700 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         <div className="bg-blue-600 text-white font-black text-[16px] rounded-full w-10 h-10 flex items-center justify-center mb-5 shadow-md">1</div>
                         <h3 className="font-extrabold text-[22px] text-[#1d1d1f] mb-3 break-keep text-center leading-tight">
                             {lang === 'kr' ? 'First Major Reference' : 'First Major Reference'}
@@ -54,7 +54,7 @@ export default function Section93({ isActive }) {
                     </div>
 
                     {/* Flow Step 2 */}
-                    <div className={`flex-1 bg-white border-2 border-gray-100 rounded-2xl p-8 shadow-sm flex flex-col items-center justify-center relative transition-all duration-700 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className={`flex-1 bg-white border-4 border-[#1e3a8a] rounded-2xl p-8 shadow-sm flex flex-col items-center justify-center relative transition-all duration-700 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         <div className="bg-blue-600 text-white font-black text-[16px] rounded-full w-10 h-10 flex items-center justify-center mb-5 shadow-md">2</div>
                         <h3 className="font-extrabold text-[22px] text-[#1d1d1f] mb-3 break-keep text-center leading-tight">
                             {lang === 'kr' ? 'Series Expansion' : 'Series Expansion'}
@@ -87,10 +87,10 @@ export default function Section93({ isActive }) {
 
                 {/* Bottom Thesis Text */}
                 <div className={`w-full max-w-[1100px] bg-blue-50 border border-blue-100 p-6 rounded-xl shadow-sm transition-all duration-700 ${step >= 6 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    <p className="text-[17px] md:text-[20px] font-bold text-[#1e3a8a] break-keep leading-relaxed">
+                    <p className="text-[17px] md:text-[20px] font-bold text-[#1e3a8a] break-keep leading-relaxed text-center">
                         {lang === 'kr' 
-                            ? 'IOTA라는 앵커 메가 프로젝트를 지렛대 삼아 마곡, 여의도 개발로 무한 연쇄 확장할, 글로벌 LP 전용 특화 패키지 \'이지스 트로피 시리즈\' 상품화 전략이다.'
-                            : 'This is the commercialization strategy for the \'IGIS Trophy Series\', a specialized package for global LPs that will infinitely expand into Magok and Yeouido developments by leveraging the anchor mega-project, IOTA.'
+                            ? <>IOTA라는 앵커 메가 프로젝트를 지렛대 삼아 마곡, 여의도 개발로 무한 연쇄 확장할<br/>글로벌 LP 전용 특화 패키지 '이지스 트로피 시리즈'를 상품화 한다.</>
+                            : <>By leveraging the anchor mega-project IOTA, we commercialize the 'IGIS Trophy Series',<br/>a specialized package for global LPs that infinitely expands into Magok and Yeouido developments.</>
                         }
                     </p>
                 </div>

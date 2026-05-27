@@ -63,7 +63,7 @@ export default function Section91({ isActive }) {
 
                     {/* Right Column: Key Strategies */}
                     <div className={`col-span-1 md:col-span-7 flex flex-col gap-4 transition-all duration-1000 ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
-                        <div className="bg-white border-2 border-gray-100 rounded-2xl p-6 text-left shadow-sm flex items-start gap-4">
+                        <div className="bg-white border-2 border-[#1e3a8a] rounded-2xl p-6 text-left shadow-sm flex items-start gap-4">
                             <div className="bg-blue-100 text-blue-600 font-black text-[18px] rounded-lg w-12 h-12 flex items-center justify-center shrink-0">1</div>
                             <div>
                                 <h3 className="font-extrabold text-[18px] md:text-[20px] text-[#1d1d1f] mb-1 break-keep">
@@ -73,7 +73,7 @@ export default function Section91({ isActive }) {
                             </div>
                         </div>
 
-                        <div className="bg-white border-2 border-gray-100 rounded-2xl p-6 text-left shadow-sm flex items-start gap-4">
+                        <div className="bg-white border-2 border-[#1e3a8a] rounded-2xl p-6 text-left shadow-sm flex items-start gap-4">
                             <div className="bg-blue-100 text-blue-600 font-black text-[18px] rounded-lg w-12 h-12 flex items-center justify-center shrink-0">2</div>
                             <div>
                                 <h3 className="font-extrabold text-[18px] md:text-[20px] text-[#1d1d1f] mb-1 break-keep">
@@ -83,7 +83,7 @@ export default function Section91({ isActive }) {
                             </div>
                         </div>
 
-                        <div className="bg-white border-2 border-gray-100 rounded-2xl p-6 text-left shadow-sm flex items-start gap-4">
+                        <div className="bg-white border-2 border-[#1e3a8a] rounded-2xl p-6 text-left shadow-sm flex items-start gap-4">
                             <div className="bg-blue-100 text-blue-600 font-black text-[18px] rounded-lg w-12 h-12 flex items-center justify-center shrink-0">3</div>
                             <div>
                                 <h3 className="font-extrabold text-[18px] md:text-[20px] text-[#1d1d1f] mb-1 break-keep">
@@ -98,10 +98,10 @@ export default function Section91({ isActive }) {
 
                 {/* Bottom Thesis Text */}
                 <div className={`w-full max-w-[1100px] bg-blue-50 border border-blue-100 p-6 rounded-xl shadow-sm transition-all duration-700 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    <p className="text-[17px] md:text-[20px] font-bold text-[#1e3a8a] break-keep leading-relaxed">
+                    <p className="text-[17px] md:text-[20px] font-bold text-[#1e3a8a] break-keep leading-relaxed text-center">
                         {lang === 'kr' 
-                            ? '북미 13개 포트폴리오를 넘어, 국내 신규 전력 인입 권리와 빅테크 임대 확약을 바탕으로 에퀴닉스에 버금갈 독자 상장형 DC REIT 플랫폼의 분사 로드맵을 띄운다.'
-                            : 'Beyond the 13 NA portfolios, we launch a spin-off roadmap for an independent listed DC REIT platform comparable to Equinix, backed by domestic power intake rights and big tech lease commitments.'
+                            ? <>북미 13개 포트폴리오를 넘어, 국내 신규 전력 인입 권리와 빅테크 임대 확약을 바탕으로<br/>에퀴닉스에 버금갈 독자 상장형 DC REIT 플랫폼의 분사 로드맵을 띄운다.</>
+                            : <>Beyond the 13 NA portfolios, we launch a spin-off roadmap for an independent listed DC REIT platform comparable to Equinix,<br/>backed by domestic power intake rights and big tech lease commitments.</>
                         }
                     </p>
                 </div>

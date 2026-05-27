@@ -107,10 +107,10 @@ export default function Section92({ isActive }) {
 
                 {/* Bottom Thesis Text */}
                 <div className={`w-full max-w-[1100px] bg-blue-50 border border-blue-100 p-6 rounded-xl shadow-sm transition-all duration-700 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    <p className="text-[17px] md:text-[20px] font-bold text-[#1e3a8a] break-keep leading-relaxed">
+                    <p className="text-[17px] md:text-[20px] font-bold text-[#1e3a8a] break-keep leading-relaxed text-center">
                         {lang === 'kr' 
-                            ? 'KB골든라이프 모델을 시작으로, 글로벌 메리어트 운영과 연기금 퇴직자 D2C 마케팅을 결합해 외인 자본(Invesco 등)을 압도할 1위 시니어 하우징 플랫폼의 야심을 드러낸다.'
-                            : 'Starting with the KB Golden Life model, we reveal our ambition for the #1 senior housing platform to overwhelm foreign capital (Invesco, etc.) by combining global Marriott operations and D2C marketing to pension retirees.'
+                            ? <>KB골든라이프 모델을 시작으로, 글로벌 메리어트 운영과 연기금 퇴직자 D2C 마케팅을 결합해<br/>외인 자본(Invesco 등)을 압도할 1위 시니어 하우징 플랫폼을 구축한다.</>
+                            : <>Starting with the KB Golden Life model, we combine global Marriott operations and D2C marketing to pension retirees<br/>to build the #1 senior housing platform that overwhelms foreign capital (Invesco, etc.).</>
                         }
                     </p>
                 </div>
