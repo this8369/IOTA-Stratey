@@ -84,8 +84,9 @@ import Section81 from './Section81';
 import Section82 from './Section82';
 import Section83 from './Section83';
 import Section84 from './Section84';
+import Section85 from './Section85';
 export default function MainLayout({ isNavOpen }) {
-    const slidesLength = 85; // known length
+    const slidesLength = 86; // known length
  const [currentSlide, setCurrentSlide] = useState(() => {
  // Initialize from URL hash if available (persistent reload mapping)
  const hash = window.location.hash;
@@ -98,12 +99,12 @@ export default function MainLayout({ isNavOpen }) {
  return 0;
  });
 
-    const slides = [<Section1 />, <SectionExecutiveSummary />, <Section2 />, <Section3 />, <Section4 />, <Section5 />, <Section6 />, <Section7 />, <Section8 />, <Section9 />, <Section10 />, <Section11 />, <Section12 />, <Section13 />, <Section14 />, <Section15 />, <Section16 />, <Section17 />, <Section18 />, <Section19 />, <Section20 />, <Section21 />, <Section22 />, <Section23 />, <Section24 />, <Section25 />, <Section26 />, <Section27 />, <Section28 />, <Section29 />, <Section30 />, <Section31 />, <Section32 />, <Section33 />, <Section34 />, <Section35 />, <Section36 />, <Section37 />, <Section38 />, <Section39 />, <Section40 />, <Section41 />, <Section42 />, <Section43 />, <Section44 />, <Section45 />, <Section46 />, <Section47 />, <Section48 />, <Section49 />, <Section50 />, <Section51 />, <Section52 />, <Section53 />, <Section54 />, <Section55 />, <Section56 />, <Section57 />, <Section58 />, <Section59 />, <Section60 />, <Section61 />, <Section62 />, <Section63 />, <Section64 />, <Section65 />, <Section66 />, <Section67 />, <Section68 />, <Section69 />, <Section70 />, <Section71 />, <Section72 />, <Section73 />, <Section74 />, <Section75 />, <Section76 />, <Section77 />, <Section78 />, <Section79 />, <Section80 />, <Section81 />, <Section82 />, <Section83 />, <Section84 />];
+    const slides = [<Section1 />, <SectionExecutiveSummary />, <Section2 />, <Section3 />, <Section4 />, <Section5 />, <Section6 />, <Section7 />, <Section8 />, <Section9 />, <Section10 />, <Section11 />, <Section12 />, <Section13 />, <Section14 />, <Section15 />, <Section16 />, <Section17 />, <Section18 />, <Section19 />, <Section20 />, <Section21 />, <Section22 />, <Section23 />, <Section24 />, <Section25 />, <Section26 />, <Section27 />, <Section28 />, <Section29 />, <Section30 />, <Section31 />, <Section32 />, <Section33 />, <Section34 />, <Section35 />, <Section36 />, <Section37 />, <Section38 />, <Section39 />, <Section40 />, <Section41 />, <Section42 />, <Section43 />, <Section44 />, <Section45 />, <Section46 />, <Section47 />, <Section48 />, <Section49 />, <Section50 />, <Section51 />, <Section52 />, <Section53 />, <Section54 />, <Section55 />, <Section56 />, <Section57 />, <Section58 />, <Section59 />, <Section60 />, <Section61 />, <Section62 />, <Section63 />, <Section64 />, <Section65 />, <Section66 />, <Section67 />, <Section68 />, <Section69 />, <Section70 />, <Section71 />, <Section72 />, <Section73 />, <Section74 />, <Section75 />, <Section76 />, <Section77 />, <Section78 />, <Section79 />, <Section80 />, <Section81 />, <Section82 />, <Section83 />, <Section84 />, <Section85 />];
 
     const [isActionDone, setIsActionDone] = useState(false);
 
     // Animation durations mapped closely to each page's visual completion timing
-    const slideAnimationTimes = [1500, 3000, 3600, 4200, 2600, 4200, 2500, 3500, 3000, 3000, 3500, 3500, 3500, 3000, 3500, 3500, 3500, 3500, 3500, 3500, 3500, 3500, 3500, 3500, 3000, 3500, 3500, 3500, 1500, 3500, 3500, 3500, 3500, 3500, 1500, 3500, 3500, 3500, 1500, 3800, 3800, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 1500, 3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000, 1500, 3000, 3000, 3000, 3000, 1500, 3000, 3000, 3000, 3000, 3000, 1500, 3000, 3000, 3000, 3000, 1500, 3500, 3500, 3500, 1500, 3500, 3500, 3500, 3500, 1500, 3500, 3500];
+    const slideAnimationTimes = [1500, 3000, 3600, 4200, 2600, 4200, 2500, 3500, 3000, 3000, 3500, 3500, 3500, 3000, 3500, 3500, 3500, 3500, 3500, 3500, 3500, 3500, 3500, 3500, 3000, 3500, 3500, 3500, 1500, 3500, 3500, 3500, 3500, 3500, 1500, 3500, 3500, 3500, 1500, 3800, 3800, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 1500, 3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000, 1500, 3000, 3000, 3000, 3000, 1500, 3000, 3000, 3000, 3000, 3000, 1500, 3000, 3000, 3000, 3000, 1500, 3500, 3500, 3500, 1500, 3500, 3500, 3500, 3500, 1500, 3500, 3500, 3500];
 
  useEffect(() => {
  setIsActionDone(false);

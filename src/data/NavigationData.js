@@ -174,7 +174,7 @@ export const menuDataEn = [
     },
     { 
         title: "Part 3. Strategic Positioning", 
-        id: "", 
+        id: "page-86", 
         chapters: [] 
     },
     { 
@@ -360,7 +360,7 @@ export const menuDataKr = [
     },
     { 
         title: "Part 3. 전략 포지셔닝", 
-        id: "", 
+        id: "page-86", 
         chapters: [] 
     },
     { 
