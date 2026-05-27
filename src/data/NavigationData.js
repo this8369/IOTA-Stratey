@@ -198,7 +198,8 @@ export const menuDataEn = [
                 title: "Chapter 3. Operating OS : Factorial Builders",
                 id: "page-95",
                 items: [
-                    { label: "Factorial Builders as Operating OS", id: "page-96" }
+                    { label: "Factorial Builders as Operating OS", id: "page-96" },
+                    { label: "Institutional WeWork & Global Benchmark", id: "page-97" }
                 ]
             }
         ] 
@@ -410,7 +411,8 @@ export const menuDataKr = [
                 title: "Chapter 3. 운영 OS : Factorial Builders",
                 id: "page-95",
                 items: [
-                    { label: "Factorial Builders(팩빌)를 운영 OS로", id: "page-96" }
+                    { label: "팩토리얼 빌더스를 운영 OS로", id: "page-96" },
+                    { label: "WeWork의 한계 극복과 글로벌 벤치마크", id: "page-97" }
                 ]
             }
         ] 
