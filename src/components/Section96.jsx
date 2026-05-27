@@ -34,7 +34,7 @@ export default function Section96({ isActive }) {
                 <div className="w-full max-w-[1100px] grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 relative">
                     
                     {/* Left: WeWork vs IGIS (Institutional Version) */}
-                    <div className={`col-span-1 bg-white border-2 border-gray-200 rounded-2xl p-8 h-full shadow-sm flex flex-col gap-5 transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
+                    <div className={`col-span-1 bg-white border-2 border-gray-200 rounded-2xl p-8 h-fit shadow-sm flex flex-col gap-5 transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
                         <div className="flex items-center gap-3 mb-2">
                             <span className="bg-red-600 text-white text-[16px] font-bold px-3 py-1 rounded-md">Limit</span>
                             <h3 className="text-gray-800 font-extrabold text-[20px] break-keep">
@@ -57,14 +57,8 @@ export default function Section96({ isActive }) {
                             <div className="bg-[#1e3a8a] text-white rounded-xl p-4 flex items-center justify-center font-bold text-[18px] shadow-md">
                                 1. Capital (거대 자본력)
                             </div>
-                            <div className="flex justify-center -my-2 text-[#1e3a8a] relative z-10">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
-                            </div>
                             <div className="bg-blue-600 text-white rounded-xl p-4 flex items-center justify-center font-bold text-[18px] shadow-md relative z-0">
                                 2. Real Estate Ownership (실물 자산 보유)
-                            </div>
-                            <div className="flex justify-center -my-2 text-blue-600 relative z-10">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
                             </div>
                             <div className="bg-blue-400 text-white rounded-xl p-4 flex items-center justify-center font-bold text-[18px] shadow-md relative z-0">
                                 3. Operating Layer (공간 운영 OS)
