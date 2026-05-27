@@ -111,7 +111,7 @@ export default function LeftNavigator({ currentPage, isOpen, setIsOpen }) {
  <div key={idx} className="mb-4 last:mb-0">
  <h3 
      onClick={(e) => section.id && handleNavigate(e, { id: section.id })}
-     className={`text-[12px] font-bold mb-2 px-1 uppercase font-guardian transition-colors ${section.id ? 'text-gray-600 hover:text-black cursor-pointer' : 'text-gray-400'}`}
+     className={`text-[13px] font-bold mb-2 px-1 uppercase font-guardian transition-colors ${section.id ? 'text-gray-600 hover:text-black cursor-pointer' : 'text-gray-400'}`}
  >
      {section.title}
  </h3>
