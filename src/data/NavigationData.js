@@ -175,7 +175,17 @@ export const menuDataEn = [
     { 
         title: "Part 3. Strategic Positioning", 
         id: "page-86", 
-        chapters: [] 
+        chapters: [
+            {
+                title: "Chapter 1. Leap Towards a Global AM",
+                id: "page-87",
+                items: [
+                    { label: "IGIS Current Position & Global Comparison", id: "page-88" },
+                    { label: "Essential Conditions for Tier 1 Leap", id: "page-89" },
+                    { label: "Korean Differentiation & Hybrid Model", id: "page-90" }
+                ]
+            }
+        ] 
     },
     { 
         title: "Part 4. IOTA Execution Strategy", 
@@ -361,7 +371,17 @@ export const menuDataKr = [
     { 
         title: "Part 3. 전략 포지셔닝", 
         id: "page-86", 
-        chapters: [] 
+        chapters: [
+            {
+                title: "Chapter 1. 글로벌 운용사로의 도약",
+                id: "page-87",
+                items: [
+                    { label: "이지스의 현재 좌표와 글로벌 비교", id: "page-88" },
+                    { label: "글로벌 1선 운용사 도약의 본질 조건", id: "page-89" },
+                    { label: "이지스만의 한국적 차별점과 결합 모델", id: "page-90" }
+                ]
+            }
+        ] 
     },
     { 
         title: "Part 4. IOTA 실행전략", 
