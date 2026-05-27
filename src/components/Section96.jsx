@@ -34,14 +34,14 @@ export default function Section96({ isActive }) {
                 <div className="w-full max-w-[1100px] grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 relative">
                     
                     {/* Left: WeWork vs IGIS (Institutional Version) */}
-                    <div className={`col-span-1 bg-white border-2 border-gray-200 rounded-2xl p-8 text-left shadow-sm flex flex-col gap-5 transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
+                    <div className={`col-span-1 bg-white border-2 border-gray-200 rounded-2xl p-8 h-full shadow-sm flex flex-col gap-5 transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
                         <div className="flex items-center gap-3 mb-2">
                             <span className="bg-red-600 text-white text-[16px] font-bold px-3 py-1 rounded-md">Limit</span>
                             <h3 className="text-gray-800 font-extrabold text-[20px] break-keep">
                                 {lang === 'kr' ? "WeWork 실패의 본질적 한계" : "Fundamental Limits of WeWork's Failure"}
                             </h3>
                         </div>
-                        <p className="text-red-500 font-bold text-[16px] pl-2 border-l-4 border-red-500 mb-2">
+                        <p className="text-red-500 font-bold text-[18px] pl-2 border-l-4 border-red-500 mb-2">
                             {lang === 'kr' ? '(1) 자기 자본 미보유 & (2) 단기-장기 임대료 미스매치' : '(1) No Own Capital & (2) Short/Long-term Rent Mismatch'}
                         </p>
                         
@@ -73,7 +73,7 @@ export default function Section96({ isActive }) {
                     </div>
 
                     {/* Right: Mori Building Benchmark */}
-                    <div className={`col-span-1 bg-[#1e3a8a] border-2 border-[#1e3a8a] rounded-2xl p-8 text-left shadow-xl flex flex-col gap-6 transition-all duration-1000 ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
+                    <div className={`col-span-1 bg-[#1e3a8a] border-2 border-[#1e3a8a] rounded-2xl p-8 h-full shadow-xl flex flex-col gap-6 transition-all duration-1000 ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
                         <div className="flex items-center justify-between mb-2">
                             <h3 className="text-white font-extrabold text-[24px] break-keep">
                                 {lang === 'kr' ? "글로벌 벤치마크 모델" : "Global Benchmark Model"}
@@ -81,16 +81,16 @@ export default function Section96({ isActive }) {
                             <span className="bg-white text-blue-800 text-[14px] font-black px-3 py-1 rounded-full uppercase tracking-wider">Mori Building</span>
                         </div>
                         
-                        <div className="bg-white/10 rounded-xl p-5 border border-white/20">
-                            <h4 className="text-blue-200 font-bold text-[18px] mb-2">{lang === 'kr' ? '토라노몬 & 아자부다이 힐스 (2023)' : 'Toranomon & Azabudai Hills (2023)'}</h4>
-                            <p className="text-white text-[16px] leading-relaxed break-keep">
+                        <div className="bg-white/10 rounded-xl p-6 border border-white/20 flex-1">
+                            <h4 className="text-blue-200 font-bold text-[18px] mb-3">{lang === 'kr' ? '토라노몬 & 아자부다이 힐스 (2023)' : 'Toranomon & Azabudai Hills (2023)'}</h4>
+                            <p className="text-white text-[17px] leading-relaxed break-keep">
                                 {lang === 'kr' 
-                                    ? '글로벌 비교 시 Mori Building의 운영 모델에 가장 가깝습니다. 압도적 자본력과 실물 자산, 그리고 섬세한 운영 역량을 완벽하게 결합한 성공 사례입니다.' 
+                                    ? '글로벌 비교 시 Mori Building의 운영 모델에 가장 근접. 압도적 자본력과 실물 자산, 그리고 섬세한 운영 역량을 완벽하게 결합한 성공 사례' 
                                     : 'Closest to Mori Building\'s operational model. A successful case that perfectly combines overwhelming capital, physical assets, and delicate operational capabilities.'}
                             </p>
                         </div>
 
-                        <div className="bg-white rounded-xl p-5 flex flex-col items-center justify-center text-center shadow-lg mt-auto">
+                        <div className="bg-white rounded-xl p-6 flex flex-col items-center justify-center text-center shadow-lg mt-auto">
                             <h4 className="text-[#1e3a8a] font-black text-[22px] mb-2">{lang === 'kr' ? '"수직 도시 (Vertical City)" 컨셉 차용' : 'Adopting "Vertical City" Concept'}</h4>
                             <p className="text-gray-700 font-bold text-[16px] break-keep">
                                 {lang === 'kr' 
@@ -106,8 +106,8 @@ export default function Section96({ isActive }) {
                 <div className={`w-full max-w-[1100px] bg-blue-50 border border-blue-100 p-6 rounded-xl shadow-sm transition-all duration-700 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <p className="text-[17px] md:text-[20px] font-bold text-[#1e3a8a] break-keep leading-relaxed text-center">
                         {lang === 'kr' 
-                            ? <>자본력(Capital)과 소유권(Ownership), 그리고 운영(Operating) 역량을 모두 갖춘 이지스만이<br/>WeWork의 실패를 넘어서는 진정한 기관용(Institutional) 공간 운영 플랫폼을 실현할 수 있습니다.</>
-                            : <>Only IGIS, equipped with Capital, Ownership, and Operating capabilities,<br/>can realize a true Institutional spatial platform that overcomes WeWork's failures.</>
+                            ? <>자본력(Capital)과 소유권(Ownership), 그리고 운영(Operating) 역량을 모두 갖춘 이지스가<br/>WeWork의 실패를 넘어서는 기관용(Institutional) 공간 운영 플랫폼 실현 가능</>
+                            : <>IGIS, equipped with Capital, Ownership, and Operating capabilities,<br/>can realize an Institutional spatial platform overcoming WeWork's failures</>
                         }
                     </p>
                 </div>
