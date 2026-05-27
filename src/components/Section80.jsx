@@ -27,7 +27,7 @@ export default function Section80({ isActive }) {
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-gray-500 uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        {lang === 'kr' ? '짙은 디플레이션 그림자와 박스피' : 'Shadow of Deflation & Box-PI'}
+                        {lang === 'kr' ? 'Bear 시나리오: 짙은 디플레이션 그림자와 박스피' : 'Bear Scenario: Shadow of Deflation & Box-PI'}
                     </span>
                 </div>
 
@@ -36,7 +36,7 @@ export default function Section80({ isActive }) {
                 </h2>
 
                 {/* Box-PI Graphic */}
-                <div className="w-full max-w-[1000px] h-[300px] md:h-[350px] flex items-center justify-center relative mb-12 border-y-[8px] border-gray-300 bg-white shadow-inner">
+                <div className="w-full max-w-[1000px] h-[210px] md:h-[240px] flex items-center justify-center relative mb-12 border-y-[8px] border-gray-300 bg-white shadow-inner">
                     
                     {/* The "Box" Label */}
                     <div className="absolute top-4 left-4 text-gray-400 font-black text-[24px] tracking-widest uppercase opacity-40">
@@ -79,7 +79,7 @@ export default function Section80({ isActive }) {
                         <div className="text-red-400 font-bold text-[18px] mb-2 uppercase">{lang === 'kr' ? '리스크 경고' : 'Risk Warning'}</div>
                         <p className="text-[18px] md:text-[20px] font-bold break-keep leading-snug">
                             {lang === 'kr' 
-                                ? '인구 충격과 지정학의 덫에 빠질 경우 KOSPI가 4천~6천 대 긴 박스권에 체류하며 밸류에이션 붕괴와 지독한 디플레 압력을 받을 리스크를 경고한다.'
+                                ? '인구 충격과 지정학의 덫에 빠질 경우 KOSPI가 4천~6천 대 긴 박스권에 체류하며 밸류에이션 붕괴와 지독한 디플레 압력을 받을 리스크 경고'
                                 : 'Warns of the risk where KOSPI stagnates in a long 4,000~6,000 box range, suffering valuation collapse and severe deflationary pressure if trapped by demographic shock and geopolitics.'
                             }
                         </p>

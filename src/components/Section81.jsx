@@ -32,7 +32,7 @@ export default function Section81({ isActive }) {
                 </div>
 
                 <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-white break-keep tracking-[-0.02em] mb-16 transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    {lang === 'kr' ? <>주식 PER 팽창이 트로피 자산의 캡레이트 압축과 가치 급등을 강제하는 연쇄 효과</> : <>Chain Effect: Stock PER Expansion Forcing Trophy Asset Cap Rate Compression & Value Surge</>}
+                    {lang === 'kr' ? <>주식 PER 팽창이 트로피 자산의 캡레이트 압축과<br/>가치 급등을 강제하는 연쇄 효과</> : <>Chain Effect: Stock PER Expansion Forcing Trophy Asset Cap Rate Compression & Value Surge</>}
                 </h2>
 
                 {/* 3-Step Flow Chart */}
