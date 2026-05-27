@@ -28,31 +28,35 @@ export default function Section71({ isActive }) {
                 </h2>
 
                 {/* Custom Infographic: Two Pillars */}
-                <div className="w-full max-w-[1100px] mt-[50px] mb-[40px] flex flex-col md:flex-row gap-8 transition-all duration-1000">
+                <div className="w-full max-w-[1100px] mt-[30px] mb-[30px] flex flex-col md:flex-row gap-8 transition-all duration-1000">
                     
                     {/* Life Science Pillar */}
-                    <div className={`flex-1 bg-white shadow-xl border-t-[10px] border-[#1d1d1f] px-10 py-10 flex flex-col items-center justify-center transition-all duration-1000 delay-100 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-                        <div className="text-[50px] mb-4">🧬</div>
-                        <div className="text-[26px] font-bold text-[#888] mb-6">생명과학 클러스터</div>
-                        <div className="w-full flex justify-center gap-2 mb-6">
+                    <div className={`flex-1 bg-white shadow-xl border-t-[10px] border-[#1d1d1f] px-8 py-6 flex flex-col items-center justify-center transition-all duration-1000 delay-100 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                        <div className="flex items-center gap-3 mb-4">
+                            <div className="text-[40px]">🧬</div>
+                            <div className="text-[26px] font-bold text-[#888]">생명과학 클러스터</div>
+                        </div>
+                        <div className="w-full flex justify-center gap-2 mb-4">
                             <span className="bg-gray-100 px-4 py-2 font-bold text-gray-800 rounded-full">송도</span>
                             <span className="bg-gray-100 px-4 py-2 font-bold text-gray-800 rounded-full">판교</span>
                             <span className="bg-gray-100 px-4 py-2 font-bold text-gray-800 rounded-full">마곡</span>
                         </div>
-                        <div className="text-[24px] font-black text-[#1d1d1f] bg-gray-50 border-[3px] border-gray-300 p-8 w-full shadow-inner">
+                        <div className="text-[24px] font-black text-[#1d1d1f] bg-gray-50 border-[3px] border-gray-300 p-6 w-full shadow-inner">
                             K-바이오 클러스터 특화 부동산이<br/>독립적인 우량 신규 카테고리로 안착
                         </div>
                     </div>
 
                     {/* Cold Chain Pillar */}
-                    <div className={`flex-1 bg-white shadow-xl border-t-[10px] border-blue-600 px-10 py-10 flex flex-col items-center justify-center transition-all duration-1000 delay-300 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-                        <div className="text-[50px] mb-4">❄️</div>
-                        <div className="text-[26px] font-bold text-[#888] mb-6">콜드체인 · 제약 물류</div>
-                        <div className="w-full flex justify-center gap-2 mb-6">
+                    <div className={`flex-1 bg-white shadow-xl border-t-[10px] border-blue-600 px-8 py-6 flex flex-col items-center justify-center transition-all duration-1000 delay-300 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                        <div className="flex items-center gap-3 mb-4">
+                            <div className="text-[40px]">❄️</div>
+                            <div className="text-[26px] font-bold text-[#888]">콜드체인 · 제약 물류</div>
+                        </div>
+                        <div className="w-full flex justify-center gap-2 mb-4">
                             <span className="bg-blue-50 border border-blue-200 px-4 py-2 font-bold text-blue-900 rounded-full">인구 고령화</span>
                             <span className="bg-blue-50 border border-blue-200 px-4 py-2 font-bold text-blue-900 rounded-full">바이오 직배송</span>
                         </div>
-                        <div className="text-[24px] font-black text-[#1d1d1f] bg-gray-50 border-[3px] border-gray-300 p-8 w-full shadow-inner">
+                        <div className="text-[24px] font-black text-[#1d1d1f] bg-gray-50 border-[3px] border-gray-300 p-6 w-full shadow-inner">
                             의약품 수요 증가와 맞물려<br/>특수 온도 제어 물류 수요의 지속적 성장
                         </div>
                     </div>
