@@ -20,7 +20,7 @@ export default function Section50({ isActive }) {
                 {/* Theme */}
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        [미래 핵심 산업 2] 7,350억 달러 국가 이니셔티브, AI 인프라
+                        AI 데이터센터
                     </span>
                 </div>
 

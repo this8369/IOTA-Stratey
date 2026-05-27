@@ -20,12 +20,12 @@ export default function Section49({ isActive }) {
                 {/* Theme */}
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        [미래 핵심 산업 1] HBM과 반도체 슈퍼사이클의 지속
+                        AI 반도체 / 메모리
                     </span>
                 </div>
 
                 {/* Main Title */}
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} dangerouslySetInnerHTML={{ __html: '어떠한 시나리오에서도 한국 매크로를<br/>좌우할 단일 최대 변수' }}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} dangerouslySetInnerHTML={{ __html: '모든 시나리오에서 메모리는 한국 경제의 최대 변수' }}>
                 </h2>
 
                 {/* Middle Infographic (3 Dry Boxes) */}
@@ -35,21 +35,21 @@ export default function Section49({ isActive }) {
                     <div className={`flex-1 bg-white border-[6px] border-gray-400 py-10 px-6 flex flex-col items-center justify-center transition-all duration-[1000ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <span className="text-[20px] font-bold text-gray-500 mb-4 uppercase">Base Scenario</span>
                         <div className="w-full max-w-[100px] h-[4px] bg-gray-200 mb-6"></div>
-                        <p className="text-[24px] md:text-[28px] font-black text-black leading-snug break-keep" dangerouslySetInnerHTML={{ __html: 'HBM 글로벌<br/>점유율 70%+ 유지' }}></p>
+                        <p className="text-[24px] md:text-[28px] font-black text-black leading-snug break-keep" dangerouslySetInnerHTML={{ __html: '모든 시나리오에서 메모리는 한국 경제의 최대 변수' }}></p>
                     </div>
 
                     {/* Bull Box */}
                     <div className={`flex-1 bg-[#f8fbff] border-[6px] border-blue-400 py-10 px-6 flex flex-col items-center justify-center transition-all duration-[1000ms] ease-[cubic-bezier(0.16,1,0.3,1)] delay-200 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <span className="text-[20px] font-bold text-blue-500 mb-4 uppercase">Bull Scenario</span>
                         <div className="w-full max-w-[100px] h-[4px] bg-blue-200 mb-6"></div>
-                        <p className="text-[24px] md:text-[28px] font-black text-[#0055ff] leading-snug break-keep" dangerouslySetInnerHTML={{ __html: '합산 영업이익<br/>300~350조 원 폭증' }}></p>
+                        <p className="text-[24px] md:text-[28px] font-black text-[#0055ff] leading-snug break-keep" dangerouslySetInnerHTML={{ __html: '모든 시나리오에서 메모리는 한국 경제의 최대 변수' }}></p>
                     </div>
 
                     {/* Bear Box */}
                     <div className={`flex-1 bg-[#fff8f8] border-[6px] border-red-400 py-10 px-6 flex flex-col items-center justify-center transition-all duration-[1000ms] ease-[cubic-bezier(0.16,1,0.3,1)] delay-400 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <span className="text-[20px] font-bold text-red-500 mb-4 uppercase">Bear Scenario</span>
                         <div className="w-full max-w-[100px] h-[4px] bg-red-200 mb-6"></div>
-                        <p className="text-[24px] md:text-[28px] font-black text-[#e11d48] leading-snug break-keep" dangerouslySetInnerHTML={{ __html: '경쟁사 추격으로<br/>점유율 50%대 하락' }}></p>
+                        <p className="text-[24px] md:text-[28px] font-black text-[#e11d48] leading-snug break-keep" dangerouslySetInnerHTML={{ __html: '모든 시나리오에서 메모리는 한국 경제의 최대 변수' }}></p>
                     </div>
 
                 </div>

@@ -20,7 +20,7 @@ export default function Section56({ isActive }) {
                 {/* Theme */}
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        [미래 핵심 산업 8] 168조 원 실버 시장의 거대한 개막
+                        시니어 케어 경제
                     </span>
                 </div>
 
@@ -59,7 +59,8 @@ export default function Section56({ isActive }) {
                     <ul className="text-left inline-block space-y-3 mx-auto">
                         <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>한국 시니어 하우징 침투율은 0.6%로 미국(11%), 호주(6%) 대비 극도로 저개발된 블루오션</span></li>
                         <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>전체 시니어 하우징 시장 규모는 2020년 72조 원에서 2030년 168조 원으로 폭발적 성장 전망</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>이지스 등 국내 대형사 및 글로벌 자본(Warburg Pincus 등)의 본격적인 시장 진출 개시</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>이지스 KB골든라이프케어 협력 실버타운 출시(국내 운용사 최초 펀드 통한 실버타운 공급)</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>Warburg Pincus·Invesco 한국 시니어 시장 진입(2026 발표)이 시작점</span></li>
                     </ul>
                 </div>
 
