@@ -52,12 +52,12 @@ export default function Section70({ isActive }) {
                                 <div className="text-[22px] font-black text-[#1d1d1f]">블랙스톤 BREIT</div>
                                 <div className="text-[16px] font-bold text-gray-500">압도적 펀딩·스케일업</div>
                             </div>
-                            <div className="flex justify-center text-[30px] font-black text-gray-400" style={{ marginTop: '-20px', marginBottom: '-20px' }}>+</div>
+                            <div className="flex justify-center text-[30px] font-black text-gray-400" style={{ marginTop: '-4px', marginBottom: '-4px' }}>+</div>
                             <div className="bg-white border-[3px] border-[#1d1d1f] p-4 flex items-center justify-between shadow-sm">
                                 <div className="text-[22px] font-black text-[#1d1d1f]">미국 Welltower 모델</div>
                                 <div className="text-[16px] font-bold text-gray-500">헬스케어·운영 전문성 결합</div>
                             </div>
-                            <div className="flex justify-center text-[30px] font-black text-[#1d1d1f]" style={{ marginTop: '-24px', marginBottom: '-24px' }}>↓</div>
+                            <div className="flex justify-center text-[30px] font-black text-[#1d1d1f]" style={{ marginTop: '-6px', marginBottom: '-6px' }}>↓</div>
                             <div className="bg-[#1d1d1f] p-4 text-center shadow-xl">
                                 <div className="text-[26px] font-black text-white">한국형 압도적 시니어 REIT 모델 진화</div>
                             </div>
