@@ -132,6 +132,16 @@ export const menuDataEn = [
                     { label: "Bear 시나리오 방어력", id: "page-67" },
                     { label: "Flight-to-Quality", id: "page-68" }
                 ]
+            },
+            {
+                title: "Chapter 5. 산업/물류 부동산 2030~2040",
+                id: "page-69",
+                items: [
+                    { label: "데이터센터 분산화", id: "page-70" },
+                    { label: "시니어 하우징 빅뱅", id: "page-71" },
+                    { label: "생명과학/콜드체인", id: "page-72" },
+                    { label: "로봇 친화 창고", id: "page-73" }
+                ]
             }
         ] 
     },
@@ -280,6 +290,16 @@ export const menuDataKr = [
                     { label: "Bull 시나리오 전망", id: "page-66" },
                     { label: "Bear 시나리오 방어력", id: "page-67" },
                     { label: "Flight-to-Quality", id: "page-68" }
+                ]
+            },
+            {
+                title: "Chapter 5. 산업/물류 부동산 2030~2040",
+                id: "page-69",
+                items: [
+                    { label: "데이터센터 분산화", id: "page-70" },
+                    { label: "시니어 하우징 빅뱅", id: "page-71" },
+                    { label: "생명과학/콜드체인", id: "page-72" },
+                    { label: "로봇 친화 창고", id: "page-73" }
                 ]
             }
         ] 

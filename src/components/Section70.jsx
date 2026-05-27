@@ -1,0 +1,79 @@
+import React, { useState, useEffect } from 'react';
+
+export default function Section70({ isActive }) {
+    const [step, setStep] = useState(0);
+
+    useEffect(() => {
+        if (!isActive) { setStep(0); return; }
+        const timers = [
+            setTimeout(() => setStep(1), 300),
+            setTimeout(() => setStep(2), 800),
+            setTimeout(() => setStep(3), 1300),
+            setTimeout(() => setStep(4), 1800),
+        ];
+        return () => timers.forEach(clearTimeout);
+    }, [isActive]);
+
+    return (
+        <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
+            <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
+                
+                <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <span className="inline-block text-[22px] md:text-[26px] font-black text-[#1d1d1f] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
+                        시니어 하우징 메가 트렌드
+                    </span>
+                </div>
+
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    300조 원 거대 시장을 장악할<br/>한국형 시니어 REIT 모델의 탄생
+                </h2>
+
+                {/* Custom Infographic */}
+                <div className="flex flex-col lg:flex-row w-full max-w-[1100px] mt-[40px] mb-[40px] gap-8">
+                    
+                    {/* Market Size */}
+                    <div className={`flex-[1.2] bg-[#1d1d1f] text-white p-10 flex flex-col justify-center items-center shadow-2xl relative transition-all duration-1000 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                        <div className="absolute top-0 right-0 bg-yellow-400 text-black px-4 py-2 font-black">Market Cap</div>
+                        <div className="text-[20px] font-bold text-gray-400 mb-2">2030년 168조 원</div>
+                        <div className="text-[40px] text-gray-500 font-black rotate-90 my-2">→</div>
+                        <div className="text-[24px] font-bold text-white mb-2">2040년 시장 규모</div>
+                        <div className="text-[70px] font-black text-yellow-400 leading-none tracking-tighter">300<span className="text-[40px] text-white">조 원+</span></div>
+                        <div className="w-full border-t-[2px] border-gray-600 mt-6 pt-4">
+                            <div className="text-[20px] font-bold text-gray-300">침투율 0.6% ➔ 3~5% 확장 시<br/><span className="text-white text-[24px]">신규 공급 50만 호 이상 필요</span></div>
+                        </div>
+                    </div>
+
+                    {/* Platform Strategy */}
+                    <div className={`flex-[1.5] bg-gray-50 border-[6px] border-gray-300 p-10 flex flex-col justify-center shadow-lg transition-all duration-1000 delay-300 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
+                        <div className="text-[24px] font-black text-gray-800 mb-6 border-b-[4px] border-gray-300 pb-4 inline-block mx-auto">이지스 시니어 플랫폼의 비전</div>
+                        
+                        <div className="flex flex-col w-full gap-4">
+                            <div className="bg-white border-[3px] border-[#1d1d1f] p-4 flex items-center justify-between shadow-sm">
+                                <div className="text-[22px] font-black text-[#1d1d1f]">블랙스톤 BREIT</div>
+                                <div className="text-[16px] font-bold text-gray-500">압도적 펀딩·스케일업</div>
+                            </div>
+                            <div className="flex justify-center text-[30px] font-black text-gray-400">+</div>
+                            <div className="bg-white border-[3px] border-[#1d1d1f] p-4 flex items-center justify-between shadow-sm">
+                                <div className="text-[22px] font-black text-[#1d1d1f]">미국 Welltower 모델</div>
+                                <div className="text-[16px] font-bold text-gray-500">헬스케어·운영 전문성 결합</div>
+                            </div>
+                            <div className="flex justify-center text-[30px] font-black text-[#1d1d1f] mt-2">↓</div>
+                            <div className="bg-[#1d1d1f] p-6 text-center shadow-xl">
+                                <div className="text-[26px] font-black text-white">한국형 압도적 시니어 REIT 모델 진화</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Bottom Text */}
+                <div className={`mt-[10px] max-w-[1100px] text-[16px] md:text-[20px] leading-[1.5] font-bold text-[#1d1d1f] break-keep text-center transition-all duration-[900ms] ease-out ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <ul className="text-left inline-block space-y-3 mx-auto">
+                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>한국 시니어 하우징 시장은 2030년 168조 원에서 2040년 300조 원 이상으로 폭발적 성장이 확정된 메가 섹터</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>현재 0.6%에 불과한 침투율이 글로벌 평균인 3~5% 수준으로 오를 경우 최소 50만 호의 신규 공급 필요</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-blue-600">▪</span><span className="text-blue-900">이지스는 블랙스톤(BREIT)의 자본력과 웰타워(Welltower)의 운영 전문성을 결합한 거대 시니어 REIT로 시장 장악</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    );
+}
