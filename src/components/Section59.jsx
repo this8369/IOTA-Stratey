@@ -20,7 +20,7 @@ export default function Section59({ isActive }) {
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        인구 구조 2 생산 인구 35% 증발의 충격파
+                        생산 인구 35% 증발의 충격파
                     </span>
                 </div>
 
@@ -54,26 +54,26 @@ export default function Section59({ isActive }) {
                     </div>
 
                     {/* Right: Shrinking Workforce */}
-                    <div className={`flex-1 flex flex-col items-center bg-red-50 border-[4px] border-red-200 p-8 transition-all duration-1000 delay-200 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
-                        <h3 className="text-[24px] font-black text-red-700 mb-8">생산가능인구(15~64세) 증발</h3>
+                    <div className={`flex-1 flex flex-col items-center bg-gray-50 border-[4px] border-gray-300 p-8 transition-all duration-1000 delay-200 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
+                        <h3 className="text-[24px] font-black text-gray-900 mb-8">생산가능인구(15~64세) 증발</h3>
                         <div className="flex w-full items-center justify-between mt-4">
                             <div className="flex flex-col items-center">
-                                <div className="w-[120px] h-[120px] bg-red-200 rounded-full flex items-center justify-center border-4 border-red-400">
-                                    <span className="font-black text-red-800 text-[24px]">3,738만</span>
+                                <div className="w-[120px] h-[120px] bg-gray-200 rounded-full flex items-center justify-center border-4 border-gray-400">
+                                    <span className="font-black text-gray-800 text-[24px]">3,738만</span>
                                 </div>
                                 <span className="mt-4 font-bold text-gray-700">2020년</span>
                             </div>
                             
                             <div className="flex flex-col items-center">
-                                <span className="text-[32px] font-black text-red-600 mb-1">📉 -35%</span>
-                                <div className="h-[4px] w-[60px] bg-red-600"></div>
+                                <span className="text-[32px] font-black text-gray-700 mb-1">📉 -35%</span>
+                                <div className="h-[4px] w-[60px] bg-gray-600"></div>
                             </div>
 
                             <div className="flex flex-col items-center">
-                                <div className="w-[80px] h-[80px] bg-red-600 rounded-full flex items-center justify-center shadow-lg">
+                                <div className="w-[80px] h-[80px] bg-[#1d1d1f] rounded-full flex items-center justify-center shadow-lg">
                                     <span className="font-black text-white text-[18px]">2,419만</span>
                                 </div>
-                                <span className="mt-4 font-black text-red-700">2050년</span>
+                                <span className="mt-4 font-black text-[#1d1d1f]">2050년</span>
                             </div>
                         </div>
                     </div>

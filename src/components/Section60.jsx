@@ -20,7 +20,7 @@ export default function Section60({ isActive }) {
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        인구 구조 3 인구 역설이 창출할 자본의 대이동
+                        인구 역설이 창출할 자본의 대이동
                     </span>
                 </div>
 
@@ -47,13 +47,13 @@ export default function Section60({ isActive }) {
 
                     {/* Results */}
                     <div className={`w-full lg:w-[50%] flex flex-col gap-4 transition-all duration-1000 delay-400 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
-                        <div className="w-full bg-blue-50 border-l-[8px] border-blue-600 p-8 flex items-center shadow-sm">
+                        <div className="w-full bg-blue-50 border-l-[8px] border-y-[2px] border-r-[2px] border-l-blue-600 border-y-blue-200 border-r-blue-200 p-8 flex items-center shadow-sm">
                             <div className="text-[28px] font-black text-blue-900">자산운용 산업으로의 폭발적 자본 이전</div>
                         </div>
-                        <div className="w-full bg-green-50 border-l-[8px] border-green-600 p-8 flex items-center shadow-sm">
+                        <div className="w-full bg-green-50 border-l-[8px] border-y-[2px] border-r-[2px] border-l-green-600 border-y-green-200 border-r-green-200 p-8 flex items-center shadow-sm">
                             <div className="text-[28px] font-black text-green-900">시니어 하우징 및 헬스케어 수요 빅뱅</div>
                         </div>
-                        <div className="w-full bg-gray-100 border border-gray-300 p-4 text-center mt-2">
+                        <div className="w-full bg-gray-100 border-[2px] border-gray-300 p-4 text-center mt-2">
                             <span className="font-bold text-gray-600">💡 글로벌 벤치마크: 일본 '잃어버린 30년'의 신규 시장 패턴과 유사</span>
                         </div>
                     </div>

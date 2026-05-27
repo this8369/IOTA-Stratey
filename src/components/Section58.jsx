@@ -24,7 +24,7 @@ export default function Section58({ isActive }) {
                 {/* Theme */}
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        인구 구조 1 혹독한 인구 다이어트의 시작
+                        혹독한 인구 다이어트의 시작
                     </span>
                 </div>
 
@@ -34,9 +34,9 @@ export default function Section58({ isActive }) {
                 </h2>
 
                 {/* Custom Infographic: Population Drop Bar Chart */}
-                <div className="relative w-full max-w-[1000px] mt-[60px] mb-[40px] h-[320px] flex items-end justify-between px-4 md:px-12 border-b-[4px] border-[#1d1d1f]">
+                <div className="relative w-full max-w-[1000px] mt-[60px] mb-[60px] h-[300px] flex items-end justify-between px-4 md:px-12 border-b-[4px] border-[#1d1d1f]">
                     {/* Y-Axis Label */}
-                    <div className="absolute left-[-20px] top-0 h-full flex flex-col justify-between text-gray-400 font-bold text-[14px]">
+                    <div className="absolute left-[-30px] top-0 h-full flex flex-col justify-between text-gray-400 font-bold text-[14px]">
                         <span>6,000만</span>
                         <span>4,000만</span>
                         <span>2,000만</span>
@@ -44,38 +44,38 @@ export default function Section58({ isActive }) {
                     </div>
 
                     {/* Bar 1: 2024 */}
-                    <div className={`flex flex-col items-center w-[12%] transition-all duration-1000 ease-out ${step >= 2 ? 'opacity-100 h-full' : 'opacity-0 h-0'}`}>
-                        <span className="text-[20px] md:text-[26px] font-black text-black mb-2">5,175만</span>
+                    <div className={`relative flex flex-col justify-end items-center w-[12%] transition-all duration-1000 ease-out h-full ${step >= 2 ? 'opacity-100' : 'opacity-0'}`}>
+                        <div className="absolute bottom-[calc(86%+10px)] text-[20px] md:text-[24px] font-black text-black">5,175만</div>
                         <div className="w-full bg-[#1d1d1f] rounded-t-sm" style={{ height: '86%' }}></div>
-                        <span className="mt-4 font-bold text-[18px] text-black">2024 (정점)</span>
+                        <div className="absolute -bottom-[35px] font-bold text-[16px] text-black">2024 (정점)</div>
                     </div>
 
                     {/* Bar 2: 2040 */}
-                    <div className={`flex flex-col items-center w-[12%] transition-all duration-1000 ease-out ${step >= 3 ? 'opacity-100 h-full' : 'opacity-0 h-0'}`}>
-                        <span className="text-[18px] md:text-[22px] font-bold text-gray-600 mb-2">4,734만</span>
+                    <div className={`relative flex flex-col justify-end items-center w-[12%] transition-all duration-1000 ease-out h-full ${step >= 3 ? 'opacity-100' : 'opacity-0'}`}>
+                        <div className="absolute bottom-[calc(79%+10px)] text-[18px] md:text-[22px] font-bold text-gray-600">4,734만</div>
                         <div className="w-full bg-gray-400 rounded-t-sm" style={{ height: '79%' }}></div>
-                        <span className="mt-4 font-bold text-[16px] text-gray-600">2040</span>
+                        <div className="absolute -bottom-[35px] font-bold text-[16px] text-gray-600">2040</div>
                     </div>
 
                     {/* Bar 3: 2050 */}
-                    <div className={`flex flex-col items-center w-[12%] transition-all duration-1000 ease-out ${step >= 4 ? 'opacity-100 h-full' : 'opacity-0 h-0'}`}>
-                        <span className="text-[18px] md:text-[22px] font-bold text-gray-600 mb-2">4,300만</span>
+                    <div className={`relative flex flex-col justify-end items-center w-[12%] transition-all duration-1000 ease-out h-full ${step >= 4 ? 'opacity-100' : 'opacity-0'}`}>
+                        <div className="absolute bottom-[calc(71%+10px)] text-[18px] md:text-[22px] font-bold text-gray-600">4,300만</div>
                         <div className="w-full bg-gray-400 rounded-t-sm" style={{ height: '71%' }}></div>
-                        <span className="mt-4 font-bold text-[16px] text-gray-600">2050</span>
+                        <div className="absolute -bottom-[35px] font-bold text-[16px] text-gray-600">2050</div>
                     </div>
 
                     {/* Bar 4: 2060 */}
-                    <div className={`flex flex-col items-center w-[12%] transition-all duration-1000 ease-out ${step >= 5 ? 'opacity-100 h-full' : 'opacity-0 h-0'}`}>
-                        <span className="text-[18px] md:text-[22px] font-bold text-gray-600 mb-2">3,664만</span>
+                    <div className={`relative flex flex-col justify-end items-center w-[12%] transition-all duration-1000 ease-out h-full ${step >= 5 ? 'opacity-100' : 'opacity-0'}`}>
+                        <div className="absolute bottom-[calc(61%+10px)] text-[18px] md:text-[22px] font-bold text-gray-600">3,664만</div>
                         <div className="w-full bg-gray-400 rounded-t-sm" style={{ height: '61%' }}></div>
-                        <span className="mt-4 font-bold text-[16px] text-gray-600">2060</span>
+                        <div className="absolute -bottom-[35px] font-bold text-[16px] text-gray-600">2060</div>
                     </div>
 
                     {/* Bar 5: 2100 */}
-                    <div className={`flex flex-col items-center w-[12%] transition-all duration-1000 ease-out ${step >= 6 ? 'opacity-100 h-full' : 'opacity-0 h-0'}`}>
-                        <span className="text-[20px] md:text-[26px] font-black text-red-600 mb-2 whitespace-nowrap -ml-8 -mr-8">1,100~3,000만</span>
+                    <div className={`relative flex flex-col justify-end items-center w-[12%] transition-all duration-1000 ease-out h-full ${step >= 6 ? 'opacity-100' : 'opacity-0'}`}>
+                        <div className="absolute bottom-[calc(35%+10px)] text-[20px] md:text-[24px] font-black text-red-600 whitespace-nowrap">1,100~3,000만</div>
                         <div className="w-full bg-red-600 rounded-t-sm" style={{ height: '35%' }}></div>
-                        <span className="mt-4 font-black text-[18px] text-red-600">2100 (추정)</span>
+                        <div className="absolute -bottom-[35px] font-black text-[16px] text-red-600 whitespace-nowrap">2100 (추정)</div>
                     </div>
                 </div>
 
