@@ -86,7 +86,18 @@ export const menuDataEn = [
     { 
         title: "Part 2. 미래 시나리오", 
         id: "page-42", 
-        chapters: [] 
+        chapters: [
+            {
+                title: "Chapter 1. 3개 시나리오 프레임",
+                id: "page-43",
+                items: [
+                    { label: "Core Variables", id: "page-44" },
+                    { label: "Base Scenario", id: "page-45" },
+                    { label: "Bull Scenario", id: "page-46" },
+                    { label: "Bear Scenario", id: "page-47" }
+                ]
+            }
+        ] 
     },
     { 
         title: "Part 3. 전략 포지셔닝", 
@@ -188,7 +199,18 @@ export const menuDataKr = [
     { 
         title: "Part 2. 미래 시나리오", 
         id: "page-42", 
-        chapters: [] 
+        chapters: [
+            {
+                title: "Chapter 1. 3개 시나리오 프레임",
+                id: "page-43",
+                items: [
+                    { label: "핵심 동인 (Core Variables)", id: "page-44" },
+                    { label: "Base Scenario", id: "page-45" },
+                    { label: "Bull Scenario", id: "page-46" },
+                    { label: "Bear Scenario", id: "page-47" }
+                ]
+            }
+        ] 
     },
     { 
         title: "Part 3. 전략 포지셔닝", 
