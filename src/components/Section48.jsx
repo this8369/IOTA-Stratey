@@ -28,9 +28,7 @@ export default function Section48({ isActive }) {
                     </span>
                 </div>
                 <h2 className={`text-[34px] md:text-[54px] lg:text-[66px] font-bold leading-[calc(1.3em-6px)] break-keep transition-all duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    <span className="gradient-text-ch2">
-                        핵심 산업 모멘텀<br/>시나리오별 전망
-                    </span>
+                    <span className="gradient-text-ch2">{lang === 'kr' ? <>핵심 산업 모멘텀<br/>시나리오별 전망</> : <>Core Industry Momentum<br/>by Scenario</>}</span>
                 </h2>
             </div>
         </section>

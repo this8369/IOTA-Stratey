@@ -17,11 +17,11 @@ export const menuDataEn = [
         ] 
     },
     { 
-        title: "Part 1. 역사적 분석", 
+        title: "Part 1. Historical Analysis", 
         id: "page-9", 
         chapters: [
             {
-                title: "Chapter 1. 거시 좌표의 이동",
+                title: "Chapter 1. Shift in Macro Coordinates",
                 id: "page-10",
                 items: [
                     { label: "Opening of the $1 Trillion Era", id: "page-11" },
@@ -74,7 +74,7 @@ export const menuDataEn = [
                 ]
             },
             {
-                title: "Chapter 6. 트로피 자산의 계보",
+                title: "Chapter 6. Lineage of Trophy Assets",
                 id: "page-39",
                 items: [
                     { label: "Trophy Asset Lineage", id: "page-40" },
@@ -84,11 +84,11 @@ export const menuDataEn = [
         ] 
     },
     { 
-        title: "Part 2. 미래 시나리오", 
+        title: "Part 2. Future Scenarios", 
         id: "page-42", 
         chapters: [
             {
-                title: "Chapter 1. 3개 시나리오 프레임",
+                title: "Chapter 1. 3 Scenario Frameworks",
                 id: "page-43",
                 items: [
                     { label: "Core Variables", id: "page-44" },
@@ -99,59 +99,59 @@ export const menuDataEn = [
                 ]
             },
             {
-                title: "Chapter 2. 핵심 산업 모멘텀 시나리오별 전망",
+                title: "Chapter 2. Industry Momentum by Scenario",
                 id: "page-49",
                 items: [
-                    { label: "AI 반도체 / HBM", id: "page-50" },
-                    { label: "AI 데이터센터", id: "page-51" },
-                    { label: "로봇 / 휴머노이드", id: "page-52" },
-                    { label: "바이오 / 장수의학", id: "page-53" },
-                    { label: "방산·우주", id: "page-54" },
-                    { label: "K-콘텐츠", id: "page-55" },
-                    { label: "양자 / 수소 / 우주", id: "page-56" },
-                    { label: "시니어 케어 경제", id: "page-57" }
+                    { label: "AI Semi / HBM", id: "page-50" },
+                    { label: "AI Data Center", id: "page-51" },
+                    { label: "Robotics / Humanoids", id: "page-52" },
+                    { label: "Bio / Longevity", id: "page-53" },
+                    { label: "Defense & Space", id: "page-54" },
+                    { label: "K-Content", id: "page-55" },
+                    { label: "Quantum / Hydrogen / Space", id: "page-56" },
+                    { label: "Senior Care Economy", id: "page-57" }
                 ]
             },
             {
-                title: "Chapter 3. 인구·구조적 변수",
+                title: "Chapter 3. Demographic & Structural Variables",
                 id: "page-58",
                 items: [
-                    { label: "인구 다이어트", id: "page-59" },
-                    { label: "생산 인구 증발", id: "page-60" },
-                    { label: "자본의 대이동", id: "page-61" },
-                    { label: "거시 연착륙 전략", id: "page-62" }
+                    { label: "Demographic Diet", id: "page-59" },
+                    { label: "Evaporation of Work-age Pop", id: "page-60" },
+                    { label: "Great Capital Shift", id: "page-61" },
+                    { label: "Macro Soft-landing", id: "page-62" }
                 ]
             },
             {
-                title: "Chapter 4. 서울 오피스 시장 2030~2040 전망",
+                title: "Chapter 4. Seoul Office 2030~2040",
                 id: "page-63",
                 items: [
-                    { label: "7축 메가 권역 팽창", id: "page-64" },
-                    { label: "Base 시나리오 전망", id: "page-65" },
-                    { label: "Bull 시나리오 전망", id: "page-66" },
-                    { label: "Bear 시나리오 방어력", id: "page-67" },
+                    { label: "7-Axis Mega District", id: "page-64" },
+                    { label: "Base Scenario Outlook", id: "page-65" },
+                    { label: "Bull Scenario Outlook", id: "page-66" },
+                    { label: "Bear Scenario Defense", id: "page-67" },
                     { label: "Flight-to-Quality", id: "page-68" }
                 ]
             },
             {
-                title: "Chapter 5. 산업/물류 부동산 2030~2040",
+                title: "Chapter 5. Industrial/Logistics 2030~2040",
                 id: "page-69",
                 items: [
-                    { label: "데이터센터 분산화", id: "page-70" },
-                    { label: "시니어 하우징 빅뱅", id: "page-71" },
-                    { label: "생명과학/콜드체인", id: "page-72" },
-                    { label: "로봇 친화 창고", id: "page-73" }
+                    { label: "Data Center Decentralization", id: "page-70" },
+                    { label: "Senior Housing Big Bang", id: "page-71" },
+                    { label: "Life Science / Cold Chain", id: "page-72" },
+                    { label: "Robot-Friendly Warehouse", id: "page-73" }
                 ]
             }
         ] 
     },
     { 
-        title: "Part 3. 전략 포지셔닝", 
+        title: "Part 3. Strategic Positioning", 
         id: "", 
         chapters: [] 
     },
     { 
-        title: "Part 4. IOTA 실행전략", 
+        title: "Part 4. IOTA Execution Strategy", 
         id: "", 
         chapters: [] 
     }

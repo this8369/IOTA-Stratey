@@ -25,9 +25,7 @@ export default function Section58({ isActive }) {
                 
                 {/* Theme */}
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        혹독한 인구 다이어트의 시작
-                    </span>
+                    <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">{lang === 'kr' ? '혹독한 인구 다이어트의 시작' : 'Beginning of a Harsh Demographic Diet'}</span>
                 </div>
 
                 {/* Main Title */}
