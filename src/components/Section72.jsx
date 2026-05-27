@@ -18,17 +18,17 @@ export default function Section72({ isActive }) {
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    <span className="inline-block text-[22px] md:text-[26px] font-black text-[#1d1d1f] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
+                    <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
                         Grade-A 물류센터의 패러다임 전환
                     </span>
                 </div>
 
                 <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    모든 신규 대형 물류센터의 절대적 설계 표준:<br/>로봇·AMR 친화형
+                    모든 신규 대형 물류센터의 절대적 설계 표준<br/>로봇·AMR 친화형
                 </h2>
 
                 {/* Custom Infographic */}
-                <div className="w-full max-w-[1000px] mt-[40px] mb-[40px] flex flex-col items-center transition-all duration-1000">
+                <div className="w-full max-w-[1000px] mt-[20px] mb-[20px] flex flex-col items-center transition-all duration-1000">
                     
                     <div className={`w-full bg-[#1d1d1f] text-white p-6 shadow-2xl relative z-20 transition-all duration-1000 delay-100 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         <div className="text-[18px] font-bold text-gray-400 mb-2 uppercase tracking-widest">Industry Leaders 주도</div>
@@ -40,9 +40,9 @@ export default function Section72({ isActive }) {
                         </div>
                     </div>
 
-                    <div className={`w-[90%] bg-white border-[6px] border-[#1d1d1f] p-10 shadow-lg relative z-10 -mt-2 transition-all duration-1000 delay-300 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                        <div className="text-[36px] font-black text-[#1d1d1f] mb-4">로봇 · AMR 친화 설계 (Robot-Friendly)</div>
-                        <div className="w-full flex flex-col md:flex-row justify-center gap-6 mt-6">
+                    <div className={`w-[90%] bg-white border-[6px] border-[#1d1d1f] py-6 px-10 shadow-lg relative z-10 -mt-2 transition-all duration-1000 delay-300 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                        <div className="text-[36px] font-bold text-[#888] mb-4">로봇 · AMR 친화 설계 (Robot-Friendly)</div>
+                        <div className="w-full flex flex-col md:flex-row justify-center gap-6 mt-4">
                             <div className="flex-1 bg-gray-50 border-[2px] border-gray-200 p-4 font-bold text-gray-800 text-[18px]">초평탄 바닥 구조 및 하중 강화</div>
                             <div className="flex-1 bg-gray-50 border-[2px] border-gray-200 p-4 font-bold text-gray-800 text-[18px]">물류 로봇 전용 동선 최적화</div>
                             <div className="flex-1 bg-gray-50 border-[2px] border-gray-200 p-4 font-bold text-gray-800 text-[18px]">고전력 인입 및 5G 통신망 완비</div>

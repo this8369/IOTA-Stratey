@@ -19,7 +19,7 @@ export default function Section70({ isActive }) {
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    <span className="inline-block text-[22px] md:text-[26px] font-black text-[#1d1d1f] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
+                    <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
                         시니어 하우징 메가 트렌드
                     </span>
                 </div>
@@ -29,15 +29,15 @@ export default function Section70({ isActive }) {
                 </h2>
 
                 {/* Custom Infographic */}
-                <div className="flex flex-col lg:flex-row w-full max-w-[1100px] mt-[40px] mb-[40px] gap-8">
+                <div className="flex flex-col lg:flex-row w-full max-w-[1100px] mx-auto justify-center mt-[40px] mb-[40px] gap-8">
                     
                     {/* Market Size */}
                     <div className={`flex-[1.2] bg-[#1d1d1f] text-white p-10 flex flex-col justify-center items-center shadow-2xl relative transition-all duration-1000 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
                         <div className="absolute top-0 right-0 bg-yellow-400 text-black px-4 py-2 font-black">Market Cap</div>
                         <div className="text-[20px] font-bold text-gray-400 mb-2">2030년 168조 원</div>
-                        <div className="text-[40px] text-gray-500 font-black rotate-90 my-2">→</div>
+                        <div className="text-[40px] text-gray-500 font-black my-2 leading-none">↓</div>
                         <div className="text-[24px] font-bold text-white mb-2">2040년 시장 규모</div>
-                        <div className="text-[70px] font-black text-yellow-400 leading-none tracking-tighter">300<span className="text-[40px] text-white">조 원+</span></div>
+                        <div className="text-[100px] font-black text-yellow-400 leading-none tracking-tighter">300<span className="text-[50px] text-white font-bold ml-1">조 원+</span></div>
                         <div className="w-full border-t-[2px] border-gray-600 mt-6 pt-4">
                             <div className="text-[20px] font-bold text-gray-300">침투율 0.6% ➔ 3~5% 확장 시<br/><span className="text-white text-[24px]">신규 공급 50만 호 이상 필요</span></div>
                         </div>
@@ -49,15 +49,15 @@ export default function Section70({ isActive }) {
                         
                         <div className="flex flex-col w-full gap-4">
                             <div className="bg-white border-[3px] border-[#1d1d1f] p-4 flex items-center justify-between shadow-sm">
-                                <div className="text-[22px] font-black text-[#1d1d1f]">블랙스톤 BREIT</div>
+                                <div className="text-[22px] font-bold text-[#888]">블랙스톤 BREIT</div>
                                 <div className="text-[16px] font-bold text-gray-500">압도적 펀딩·스케일업</div>
                             </div>
                             <div className="flex justify-center text-[30px] font-black text-gray-400">+</div>
                             <div className="bg-white border-[3px] border-[#1d1d1f] p-4 flex items-center justify-between shadow-sm">
-                                <div className="text-[22px] font-black text-[#1d1d1f]">미국 Welltower 모델</div>
+                                <div className="text-[22px] font-bold text-[#888]">미국 Welltower 모델</div>
                                 <div className="text-[16px] font-bold text-gray-500">헬스케어·운영 전문성 결합</div>
                             </div>
-                            <div className="flex justify-center text-[30px] font-black text-[#1d1d1f] mt-2">↓</div>
+                            <div className="flex justify-center text-[30px] font-bold text-[#888] mt-2">↓</div>
                             <div className="bg-[#1d1d1f] p-6 text-center shadow-xl">
                                 <div className="text-[26px] font-black text-white">한국형 압도적 시니어 REIT 모델 진화</div>
                             </div>
