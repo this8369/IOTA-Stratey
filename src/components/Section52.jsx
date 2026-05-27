@@ -6,9 +6,10 @@ export default function Section52({ isActive }) {
     useEffect(() => {
         if (!isActive) { setStep(0); return; }
         const t1 = setTimeout(() => setStep(1), 300);
-        const t2 = setTimeout(() => setStep(2), 700);
+        const t2 = setTimeout(() => setStep(2), 800);
         const t3 = setTimeout(() => setStep(3), 1100);
-        return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); };
+        const t4 = setTimeout(() => setStep(4), 1600);
+        return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); clearTimeout(t4); };
     }, [isActive]);
 
     return (
@@ -17,24 +18,33 @@ export default function Section52({ isActive }) {
                 
                 {/* Theme */}
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[16px]">
+                    <span className="inline-block text-[22px] md:text-[26px] font-extrabold text-[#777] uppercase tracking-[-0.02em] mb-[12px]">
                         [미래 핵심 산업 4] K-바이오 클러스터의 절대적 팽창
                     </span>
                 </div>
 
                 {/* Main Title */}
-                <h2 className={`text-[36px] md:text-[50px] lg:text-[56px] font-extrabold leading-[calc(1.3em-4px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} dangerouslySetInnerHTML={{ __html: '매출 10조 시대를 여는 CDMO 역량이<br/>창출할 거대 부동산 실수요' }}>
+                <h2 className={`text-[34px] md:text-[46px] lg:text-[52px] font-black leading-[calc(1.3em-4px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} dangerouslySetInnerHTML={{ __html: '매출 10조 시대를 여는 CDMO 역량이<br/>창출할 거대 부동산 실수요' }}>
                 </h2>
 
-                {/* Content Box */}
-                <div className={`flex flex-col w-full max-w-[1100px] mt-[48px] bg-white border-[6px] border-[#1d1d1f] p-8 md:p-12 text-left transition-all duration-[1000ms] ease-out ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-                    <h3 className="text-[26px] md:text-[30px] font-extrabold text-[#1e3a8a] mb-6 pb-4 border-b-2 border-gray-100">
-                        2.4 바이오 융합 / 장수의학 / 세포·유전자치료
-                    </h3>
-                    <ul className="text-[20px] md:text-[24px] text-gray-800 leading-[1.6] font-bold space-y-4 break-keep">
-                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a] mt-1">▪</span><span>삼성바이오로직스 매출 2024년 4.6조 원 → 2030년 10조 원+ 컨센서스</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a] mt-1">▪</span><span>셀트리온의 짐펜트라 미국 출시 등 K-바이오 글로벌 확장 가속</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-[#1e3a8a] mt-1">▪</span><span>세포·유전자 치료 CDMO에서 글로벌 두 자릿수 점유율 잠재력</span></li>
+                {/* Infographic Middle Section (Dry & Bold) */}
+                <div className="w-full max-w-[1200px] flex flex-col md:flex-row gap-6 mt-[40px] mb-[40px] justify-center">
+                    <div className={`flex-1 flex flex-col items-center justify-center bg-white border-[6px] border-[#1d1d1f] py-[40px] px-8 transition-all duration-[1000ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                        <p className="text-[18px] md:text-[20px] font-bold text-gray-500 uppercase mb-3 break-keep">삼성바이오 2030년 매출</p>
+                        <p className="text-[36px] md:text-[48px] font-black text-black tracking-tight leading-tight break-keep">10조 원+ 전망</p>
+                    </div>
+                    <div className={`flex-1 flex flex-col items-center justify-center bg-gray-50 border-[6px] border-gray-400 py-[40px] px-8 transition-all duration-[1000ms] ease-out delay-200 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                        <p className="text-[18px] md:text-[20px] font-bold text-gray-500 uppercase mb-3 break-keep">글로벌 CDMO 시장</p>
+                        <p className="text-[36px] md:text-[48px] font-black text-gray-800 tracking-tight leading-tight break-keep">두 자릿수 점유율 달성</p>
+                    </div>
+                </div>
+
+                {/* Bottom Summary */}
+                <div className={`w-full max-w-[1200px] pt-8 border-t-[4px] border-[#1d1d1f] transition-all duration-[900ms] ease-out ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <ul className="text-[18px] md:text-[22px] text-gray-800 leading-[1.6] font-bold space-y-3 break-keep inline-block text-left mx-auto">
+                        <li className="flex items-start"><span className="mr-3 text-black font-extrabold mt-1">▪</span><span>삼성바이오로직스 매출 2024년 4.6조 원에서 2030년 10조 원 이상으로 컨센서스 상향</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-black font-extrabold mt-1">▪</span><span>셀트리온 짐펜트라 미국 출시 등 K-바이오 글로벌 확장 가속화</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-black font-extrabold mt-1">▪</span><span>매출 10조 시대를 여는 역량이 창출할 거대한 연구 및 생산 부동산 실수요</span></li>
                     </ul>
                 </div>
                 

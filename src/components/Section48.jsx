@@ -6,16 +6,30 @@ export default function Section48({ isActive }) {
     useEffect(() => {
         if (!isActive) { setStep(0); return; }
         const t1 = setTimeout(() => setStep(1), 300);
-        return () => clearTimeout(t1);
+        const t2 = setTimeout(() => setStep(2), 900);
+        return () => { clearTimeout(t1); clearTimeout(t2); };
     }, [isActive]);
 
     return (
-        <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
+        <section className="section w-full h-full bg-[#1d1d1f] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
+            <style>{`
+                .gradient-text-ch2 {
+                    background: linear-gradient(90deg, #c1e2dd, #587d94);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            `}</style>
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
-                <h2 className={`text-[48px] md:text-[64px] lg:text-[72px] font-extrabold leading-[calc(1.3em-4px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    핵심 산업 모멘텀 시나리오별 전망
+                <div className={`transition-all duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <span className="inline-block text-[22px] md:text-[26px] font-normal text-white mb-[14px]" style={{ fontFamily: "'Sanomat Wp', 'Sanomat Web', 'Sanomat', sans-serif" }}>
+                        Chapter 2.
+                    </span>
+                </div>
+                <h2 className={`text-[34px] md:text-[54px] lg:text-[66px] font-bold leading-[calc(1.3em-6px)] break-keep transition-all duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <span className="gradient-text-ch2">
+                        핵심 산업 모멘텀<br/>시나리오별 전망
+                    </span>
                 </h2>
-                <div className={`w-24 h-2 bg-[#1e3a8a] mt-12 transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] delay-300 ${step >= 1 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}></div>
             </div>
         </section>
     );
