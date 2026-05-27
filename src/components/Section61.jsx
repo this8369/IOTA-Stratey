@@ -29,13 +29,13 @@ export default function Section61({ isActive }) {
                 </h2>
 
                 {/* Custom Infographic: Two Pillars */}
-                <div className="w-full max-w-[1000px] mt-[34px] mb-[40px] flex flex-col gap-2 transition-all duration-[1000ms]">
+                <div className="w-full max-w-[1000px] mt-[34px] mb-[40px] flex flex-col transition-all duration-[1000ms]">
                     
-                    <div className={`text-[20px] font-bold text-gray-500 mb-2 transition-all duration-1000 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className={`text-[20px] font-bold text-gray-500 mb-0 transition-all duration-1000 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         잠재성장률 하방 압력을 방어하기 위한 2대 핵심 전략
                     </div>
 
-                    <div className="flex flex-col md:flex-row w-full gap-6 mt-2">
+                    <div className="flex flex-col md:flex-row w-full gap-6">
                         {/* Pillar 1 */}
                         <div className={`flex-1 bg-white shadow-xl border-t-[8px] border-indigo-600 px-10 py-8 flex flex-col items-center justify-center transition-all duration-1000 delay-100 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                             <div className="flex items-center gap-3 mb-4">

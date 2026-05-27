@@ -32,7 +32,7 @@ export default function Section59({ isActive }) {
                 <div className="w-full max-w-[1100px] mt-[40px] mb-[30px] flex flex-col md:flex-row gap-8 justify-center">
                     
                     {/* Left: Aging Percentage */}
-                    <div className={`flex-1 flex flex-col items-center bg-gray-50 border-[4px] border-gray-200 p-8 transition-all duration-1000 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                    <div className={`flex-1 flex flex-col items-center bg-gray-50 border-[4px] border-gray-300 p-8 transition-all duration-1000 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
                         <h3 className="text-[24px] font-black text-black mb-8">고령 인구(65세 이상) 비중 급증</h3>
                         <div className="flex w-full items-end justify-center gap-6 h-[180px]">
                             <div className="flex flex-col items-center w-[30%]">

@@ -47,10 +47,10 @@ export default function Section60({ isActive }) {
 
                     {/* Results */}
                     <div className={`w-full lg:w-[50%] flex flex-col gap-4 transition-all duration-1000 delay-400 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
-                        <div className="w-full bg-blue-50 border-l-[8px] border-y-[2px] border-r-[2px] border-l-blue-600 border-y-blue-200 border-r-blue-200 p-8 flex items-center shadow-sm">
+                        <div className="w-full bg-blue-50 border-l-[8px] border-y-[2px] border-r-[2px] border-l-blue-600 border-y-blue-200 border-r-blue-200 py-6 px-8 flex items-center shadow-sm">
                             <div className="text-[28px] font-black text-blue-900">자산운용 산업으로의 폭발적 자본 이전</div>
                         </div>
-                        <div className="w-full bg-green-50 border-l-[8px] border-y-[2px] border-r-[2px] border-l-green-600 border-y-green-200 border-r-green-200 p-8 flex items-center shadow-sm">
+                        <div className="w-full bg-green-50 border-l-[8px] border-y-[2px] border-r-[2px] border-l-green-600 border-y-green-200 border-r-green-200 py-6 px-8 flex items-center shadow-sm">
                             <div className="text-[28px] font-black text-green-900">시니어 하우징 및 헬스케어 수요 빅뱅</div>
                         </div>
                         <div className="w-full bg-gray-100 border-[2px] border-gray-300 p-4 text-center mt-2">
