@@ -31,16 +31,16 @@ export default function Section40({ isActive }) {
                 </div>
 
                 <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    {lang === 'kr' ? '외인 자본을 유치해 4.1조로 퀀텀 점프한 모델을 IOTA로 계승하다' : 'Inheriting the Model that Quantum-Jumped to 4.1T via Foreign Capital'}
+                    {lang === 'kr' ? '외인 자본 유치로 4.1조 퀀텀 점프한 IFC 모델을 재현' : 'Inheriting the Model that Quantum-Jumped to 4.1T via Foreign Capital'}
                 </h2>
 
-                <div className="relative w-full max-w-[1000px] mt-[60px] mb-[40px] flex flex-col md:flex-row items-center justify-center z-10 gap-12">
+                <div className="relative w-full max-w-[1000px] mt-[60px] mb-[40px] flex flex-col md:flex-row items-stretch justify-center z-10 gap-12">
                     
-                    {/* Value Jump Visualization */}
-                    <div className={`relative flex flex-col items-center bg-white border border-gray-200 rounded-[30px] p-10 shadow-xl transition-all duration-1000 w-[450px] ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
-                        <div className="text-gray-500 font-black text-[22px] mb-8">{lang === 'kr' ? 'IFC 서울 자산 가치' : 'IFC Seoul Asset Value'}</div>
+                    {/* Value Jump Visualization (Left Box) */}
+                    <div className={`relative flex flex-col justify-center items-center bg-white border border-gray-200 rounded-[30px] p-8 shadow-xl transition-all duration-1000 w-[450px] ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                        <div className="text-gray-500 font-black text-[22px] mb-6">{lang === 'kr' ? 'IFC 서울 자산 가치' : 'IFC Seoul Asset Value'}</div>
                         
-                        <div className="w-full flex flex-col gap-6">
+                        <div className="w-full flex flex-col gap-4">
                             <div className="flex flex-col items-center">
                                 <span className="text-gray-400 font-bold text-[16px]">{lang === 'kr' ? '2012년 준공 당시' : 'At Completion (2012)'}</span>
                                 <span className="text-gray-800 font-black text-[32px]">약 9,500억 원</span>
@@ -49,7 +49,8 @@ export default function Section40({ isActive }) {
                             <div className={`flex items-center justify-center transition-all duration-1000 delay-300 ${step >= 3 ? 'opacity-100 h-16' : 'opacity-0 h-0 overflow-hidden'}`}>
                                 <div className="flex flex-col items-center">
                                     <div className="text-blue-600 font-black text-[18px] mb-1">4배 이상 상승 (글로벌 LP 유입)</div>
-                                    <svg className="w-8 h-8 text-blue-500 animate-bounce" fill="none" strokeWidth="3" stroke="currentColor" viewBox="0 0 24 24">
+                                    {/* Removed animate-bounce */}
+                                    <svg className="w-8 h-8 text-blue-500" fill="none" strokeWidth="3" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                                     </svg>
                                 </div>
@@ -63,12 +64,12 @@ export default function Section40({ isActive }) {
                     </div>
 
                     {/* Arrow / Connection */}
-                    <div className={`text-[40px] font-black text-gray-300 transition-all duration-1000 ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
+                    <div className={`self-center text-[40px] font-black text-gray-300 transition-all duration-1000 ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
                         →
                     </div>
 
-                    {/* IOTA Inheritance Box */}
-                    <div className={`relative flex flex-col items-center justify-center bg-gradient-to-br from-indigo-900 to-blue-900 border border-blue-700 rounded-[30px] p-10 shadow-2xl transition-all duration-1000 w-[450px] text-white ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
+                    {/* IOTA Inheritance Box (Right Box) */}
+                    <div className={`relative flex flex-col items-center justify-center bg-gradient-to-br from-indigo-900 to-blue-900 border border-blue-700 rounded-[30px] p-8 shadow-2xl transition-all duration-1000 w-[450px] text-white ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
                         <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-6">
                             <svg className="w-8 h-8 text-cyan-400" fill="none" strokeWidth="2.5" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
