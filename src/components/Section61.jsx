@@ -25,14 +25,14 @@ export default function Section61({ isActive }) {
                 </div>
 
                 <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    외국인 10% 비중 확대와 기술적 생산성<br/>상쇄를 통한 거시 연착륙 전략
+                    {lang === 'kr' ? <>외국인 10% 비중 확대와 기술적 생산성<br/>상쇄를 통한 거시 연착륙 전략</> : <>Macro soft-landing strategy via 10% foreign pop<br/>and tech productivity offsets</>}
                 </h2>
 
                 {/* Custom Infographic: Two Pillars */}
                 <div className="w-full max-w-[1000px] mt-[34px] mb-[40px] flex flex-col transition-all duration-[1000ms]">
                     
                     <div className={`text-[20px] font-bold text-gray-500 mb-[10px] transition-all duration-1000 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                        잠재성장률 하방 압력을 방어하기 위한 2대 핵심 전략
+                        {lang === 'kr' ? '잠재성장률 하방 압력을 방어하기 위한 2대 핵심 전략' : '2 Core Strategies to Defend Downward Pressure on Potential Growth'}
                     </div>
 
                     <div className="flex flex-col md:flex-row w-full gap-6">

@@ -24,7 +24,7 @@ export default function Section72({ isActive }) {
                 </div>
 
                 <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    모든 신규 대형 물류센터의 절대적 설계 표준<br/>로봇·AMR 친화형
+                    {lang === 'kr' ? <>모든 신규 대형 물류센터의 절대적 설계 표준<br/>로봇·AMR 친화형</> : <>Absolute Design Standard for All New Mega Logistics Centers:<br/>Robot/AMR Friendly</>}
                 </h2>
 
                 {/* Custom Infographic */}

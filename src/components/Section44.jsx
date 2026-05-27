@@ -19,10 +19,10 @@ export default function Section44({ isActive }) {
                 {/* Left Side: Theme & Title */}
                 <div className={`shrink-0 transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px]">
-                        Base Scenario (확률 50%)
+                        {lang === 'kr' ? 'Base Scenario (확률 50%)' : 'Base Scenario (50% Prob)'}
                     </span>
                     <h2 className="text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em]">
-                        IMF·OECD·KDI<br/>공통 컨센서스 기반<br/>표준 성장 궤도 진입
+                        {lang === 'kr' ? <>IMF·OECD·KDI<br/>공통 컨센서스 기반<br/>표준 성장 궤도 진입</> : <>Standard Growth Trajectory<br/>based on IMF/OECD/KDI Consensus</>}
                     </h2>
                 </div>
 

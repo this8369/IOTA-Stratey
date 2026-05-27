@@ -25,7 +25,7 @@ export default function Section63({ isActive }) {
                 </div>
 
                 <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    YSBD(용산/서울역)와 KBD(삼성/잠실)가<br/>주도하는 권역 지도의 재편
+                    {lang === 'kr' ? <>YSBD(용산/서울역)와 KBD(삼성/잠실)가<br/>주도하는 권역 지도의 재편</> : <>Reorganization of District Map<br/>led by YSBD (Yongsan/Seoul Station) & KBD (Samsung/Jamsil)</>}
                 </h2>
 
                 {/* Custom Infographic: 5 to 7 Hubs */}
@@ -61,8 +61,7 @@ export default function Section63({ isActive }) {
                             </div>
                         </div>
                         <div className="text-[20px] font-bold text-gray-500 flex items-center gap-2">
-                            <span className="text-gray-400">+</span> 기존 5축 권역 병존
-                        </div>
+                            <span className="text-gray-400">+</span>{lang === 'kr' ? '기존 5축 권역 병존' : 'Coexistence of Existing 5-Axis'}</div>
                     </div>
                 </div>
 

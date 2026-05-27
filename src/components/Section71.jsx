@@ -24,7 +24,7 @@ export default function Section71({ isActive }) {
                 </div>
 
                 <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    생명과학 클러스터와 콜드체인 제약 물류가<br/>결합하는 신규 거점의 안착
+                    {lang === 'kr' ? <>생명과학 클러스터와 콜드체인 제약 물류가<br/>결합하는 신규 거점의 안착</> : <>Establishment of New Hubs Combining<br/>Life Science Clusters & Cold-chain Pharma Logistics</>}
                 </h2>
 
                 {/* Custom Infographic: Two Pillars */}
@@ -42,7 +42,7 @@ export default function Section71({ isActive }) {
                             <span className="bg-gray-100 px-4 py-2 font-bold text-gray-800 rounded-full">{lang === 'kr' ? '마곡' : 'Magok'}</span>
                         </div>
                         <div className="text-[24px] font-black text-[#1d1d1f] bg-gray-50 border-[3px] border-gray-300 p-6 w-full shadow-inner">
-                            K-바이오 클러스터 특화 부동산이<br/>독립적인 우량 신규 카테고리로 안착
+                            {lang === 'kr' ? <>K-바이오 클러스터 특화 부동산이<br/>독립적인 우량 신규 카테고리로 안착</> : <>K-Bio Cluster Specialized Real Estate<br/>Established as an Independent Blue-chip Category</>}
                         </div>
                     </div>
 
@@ -57,7 +57,7 @@ export default function Section71({ isActive }) {
                             <span className="bg-blue-50 border border-blue-200 px-4 py-2 font-bold text-blue-900 rounded-full">{lang === 'kr' ? '바이오 직배송' : 'Bio Direct Delivery'}</span>
                         </div>
                         <div className="text-[24px] font-black text-[#1d1d1f] bg-gray-50 border-[3px] border-gray-300 p-6 w-full shadow-inner">
-                            의약품 수요 증가와 맞물려<br/>특수 온도 제어 물류 수요의 지속적 성장
+                            {lang === 'kr' ? <>의약품 수요 증가와 맞물려<br/>특수 온도 제어 물류 수요의 지속적 성장</> : <>Continuous Growth of Temp-controlled Logistics<br/>Coupled with Increasing Pharma Demand</>}
                         </div>
                     </div>
 

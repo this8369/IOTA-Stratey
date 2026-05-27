@@ -25,7 +25,7 @@ export default function Section60({ isActive }) {
                 </div>
 
                 <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    가계 자산의 유동화가 열어젖힐<br/>자산운용 및 시니어 하우징 수요의 빅뱅
+                    {lang === 'kr' ? <>가계 자산의 유동화가 열어젖힐<br/>자산운용 및 시니어 하우징 수요의 빅뱅</> : <>Big bang in AM & Senior Housing demand<br/>unlocked by household asset securitization</>}
                 </h2>
 
                 {/* Custom Infographic: Capital Flow Diagram */}

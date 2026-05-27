@@ -19,10 +19,10 @@ export default function Section45({ isActive }) {
                 {/* Left Side: Theme & Title */}
                 <div className={`shrink-0 transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#0055ff] uppercase tracking-[-0.02em] mb-[12px]">
-                        Bull Scenario (확률 30%)
+                        {lang === 'kr' ? 'Bull Scenario (확률 30%)' : 'Bull Scenario (30% Prob)'}
                     </span>
                     <h2 className="text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em]">
-                        고급제조 + 콘텐츠 + 금융<br/>"동아시아 스위스" 모델<br/>재포지셔닝
+                        {lang === 'kr' ? <>고급제조 + 콘텐츠 + 금융<br/>"동아시아 스위스" 모델<br/>재포지셔닝</> : <>High-end Mfg + Content + Finance<br/>Repositioning to "East Asian Swiss" Model</>}
                     </h2>
                 </div>
 

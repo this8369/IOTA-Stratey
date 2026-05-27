@@ -24,7 +24,7 @@ export default function Section66({ isActive }) {
                 </div>
 
                 <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    Bear 국면에서도 프리미엄을 사수할<br/>신규 랜드마크의 탁월한 자산 방어력
+                    {lang === 'kr' ? <>Bear 국면에서도 프리미엄을 사수할<br/>신규 랜드마크의 탁월한 자산 방어력</> : <>Excellent Asset Defense of New Landmarks<br/>Safeguarding Premium even in Bear Phase</>}
                 </h2>
 
                 {/* Custom Infographic: Polarization / Shield */}
@@ -32,7 +32,7 @@ export default function Section66({ isActive }) {
                     
                     <div className={`flex w-full justify-center transition-all duration-1000 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         <div className="bg-gray-800 text-white px-10 py-3 font-bold text-[20px] uppercase tracking-widest shadow-md">
-                            2030년 정점 이후 인구·기업 통폐합 쇼크 (Bear Scenario)
+                            {lang === 'kr' ? '2030년 정점 이후 인구·기업 통폐합 쇼크 (Bear Scenario)' : 'Pop/Corporate Consolidation Shock Post-2030 Peak (Bear Scenario)'}
                         </div>
                     </div>
 
@@ -56,7 +56,7 @@ export default function Section66({ isActive }) {
                             
                             <div className="text-[22px] font-black text-[#1d1d1f] mt-2">{lang === 'kr' ? 'IOTA · GBC 신규 트로피 자산' : 'IOTA/GBC New Trophy Assets'}</div>
                             <div className="text-[18px] font-bold text-gray-700 mt-4 px-4">
-                                거시 하방 충격에도 GBD·삼성동 코어 수요 집중으로 견고한 가격 유지
+                                {lang === 'kr' ? '거시 하방 충격에도 GBD·삼성동 코어 수요 집중으로 견고한 가격 유지' : 'Solid Pricing Maintained via Core Demand in GBD/Samsung-dong despite Macro Shock'}
                             </div>
                         </div>
                     </div>

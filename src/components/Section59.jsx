@@ -25,7 +25,7 @@ export default function Section59({ isActive }) {
                 </div>
 
                 <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    2035년 고령 비중 30% 돌파가 몰고 올<br/>잠재성장률 하방 압력
+                    {lang === 'kr' ? <>2035년 고령 비중 30% 돌파가 몰고 올<br/>잠재성장률 하방 압력</> : <>Downward pressure on potential growth<br/>driven by elderly pop exceeding 30% in 2035</>}
                 </h2>
 
                 {/* Custom Infographic: Dual Insight */}

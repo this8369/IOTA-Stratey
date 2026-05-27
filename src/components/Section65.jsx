@@ -24,7 +24,7 @@ export default function Section65({ isActive }) {
                 </div>
 
                 <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    평당 50만 원 시대, 글로벌 1선 도시의<br/>핵심부와 어깨를 나란히 하다
+                    {lang === 'kr' ? <>평당 50만 원 시대, 글로벌 1선 도시의<br/>핵심부와 어깨를 나란히 하다</> : <>Era of 500K KRW/py,<br/>Standing shoulder to shoulder with Global Tier 1 Core</>}
                 </h2>
 
                 {/* Custom Infographic: Bull Scenario High Impact */}
@@ -39,7 +39,7 @@ export default function Section65({ isActive }) {
                         </div>
                         <div className="text-[18px] font-bold text-gray-500 mt-2">{lang === 'kr' ? '/ 평·월' : '/ py·mo'}</div>
                         <div className="w-full bg-gray-100 mt-8 p-4 font-bold text-gray-800 text-[22px] border-l-[6px] border-[#1d1d1f]">
-                            환산 시 USD 200/sqft 돌파
+                            {lang === 'kr' ? '환산 시 USD 200/sqft 돌파' : 'Exceeding USD 200/sqft upon conversion'}
                         </div>
                     </div>
 
@@ -53,11 +53,11 @@ export default function Section65({ isActive }) {
                         <div className="absolute -top-4 bg-yellow-500 text-black px-6 py-1 font-black text-[16px] uppercase tracking-wider">Global Benchmark</div>
                         <div className="text-[24px] font-bold text-gray-400 mb-2 mt-4">{lang === 'kr' ? '글로벌 최고 수준 핵심 권역' : 'Global Top-Tier Core'}</div>
                         <div className="text-[54px] font-black text-white leading-tight mt-4 text-center">
-                            도쿄<br/>마루노우치
+                            {lang === 'kr' ? <>도쿄<br/>마루노우치</> : <>Tokyo<br/>Marunouchi</>}
                         </div>
                         <div className="w-full border-t border-gray-700 mt-8 pt-6">
                             <div className="text-gray-300 font-bold text-[20px] text-center leading-snug">
-                                글로벌 1선 도시 코어 오피스와의<br/>임대료 디커플링(Decoupling) 완전 해소
+                                {lang === 'kr' ? <>글로벌 1선 도시 코어 오피스와의<br/>임대료 디커플링(Decoupling) 완전 해소</> : <>Complete Resolution of Rent Decoupling<br/>with Global Tier 1 Core Offices</>}
                             </div>
                         </div>
                     </div>

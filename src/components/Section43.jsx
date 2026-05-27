@@ -24,11 +24,11 @@ export default function Section43({ isActive }) {
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px]">
-                        시나리오 핵심 변수
+                        {lang === 'kr' ? '시나리오 핵심 변수' : 'Core Scenario Variables'}
                     </span>
                 </div>
                 <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-16 transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    한국 GDP 3조 달러 달성을 좌우하는 4대 프레임
+                    {lang === 'kr' ? '한국 GDP 3조 달러 달성을 좌우하는 4대 프레임' : '4 Core Frameworks determining Korea\'s $3T GDP'}
                 </h2>
                 
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-[1200px]">
