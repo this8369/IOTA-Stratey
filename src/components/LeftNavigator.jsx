@@ -117,7 +117,10 @@ export default function LeftNavigator({ currentPage, isOpen, setIsOpen }) {
  </h3>
  {section.chapters?.map((chapter, chapIdx) => (
  <div key={chapIdx} className="mb-3 last:mb-0">
- {chapter.title && <h4 className="text-[11px] font-bold text-gray-500 mb-1 px-1">{chapter.title}</h4>}
+ {chapter.title && <h4 
+ onClick={(e) => chapter.id && handleNavigate(e, { id: chapter.id })}
+ className={`text-[11px] font-bold mb-1 px-1 transition-colors ${chapter.id ? 'text-gray-600 hover:text-black cursor-pointer' : 'text-gray-500'}`}
+ >{chapter.title}</h4>}
  <div className="flex flex-col gap-0">
  {chapter.items.map((item, itemIdx) => {
  const isActive = activeHash === `#${item.id}`;

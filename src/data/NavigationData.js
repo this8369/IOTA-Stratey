@@ -21,18 +21,18 @@ export const menuDataEn = [
         id: "page-9", 
         chapters: [
             {
-                title: "Chapter 1",
+                title: "Chapter 1. 1조 달러에서 2조 달러로...",
+                id: "page-10",
                 items: [
-                    { label: "1조 달러에서 2조 달러로...", id: "page-10" },
                     { label: "Opening of the $1 Trillion Era", id: "page-11" },
                     { label: "Reaching the $2 Trillion Milestone", id: "page-12" },
                     { label: "Dual Engine of Top 10 Industries", id: "page-13" }
                 ]
             },
             {
-                title: "Chapter 2",
+                title: "Chapter 2. Industrial Momentum",
+                id: "page-14",
                 items: [
-                    { label: "Industrial Momentum", id: "page-14" },
                     { label: "[Semi] AI Supercycle", id: "page-15" },
                     { label: "[Auto] Beyond Mobility", id: "page-16" },
                     { label: "[Ship] MASGA Resurgence", id: "page-17" },
@@ -46,18 +46,18 @@ export const menuDataEn = [
                 ]
             },
             {
-                title: "Chapter 3",
+                title: "Chapter 3. Capital Market Structural Changes",
+                id: "page-25",
                 items: [
-                    { label: "Capital Market Structural Changes", id: "page-25" },
                     { label: "[Market 1] Breaking Boxpi", id: "page-26" },
                     { label: "[Market 2] Global IB Optimism", id: "page-27" },
                     { label: "[Market 3] End of Korea Discount", id: "page-28" }
                 ]
             },
             {
-                title: "Chapter 4",
+                title: "Chapter 4. Evolution of Seoul Office Market",
+                id: "page-29",
                 items: [
-                    { label: "Evolution of Seoul Office Market", id: "page-29" },
                     { label: "[Office 1] 3 Core Districts", id: "page-30" },
                     { label: "[Office 2] Rise of MBD & BBD", id: "page-31" },
                     { label: "[Office 3] Breaking Natural Vacancy", id: "page-32" },
@@ -66,17 +66,17 @@ export const menuDataEn = [
                 ]
             },
             {
-                title: "Chapter 5",
+                title: "Chapter 5. Industrial/Logistics Real Estate",
+                id: "page-35",
                 items: [
-                    { label: "Industrial/Logistics Real Estate", id: "page-35" },
                     { label: "[Logistics 1] Coupang Effect", id: "page-36" },
                     { label: "[Logistics 2] Supply Normalization", id: "page-37" },                    { label: "[Infra 3] Data Center Scarcity", id: "page-38" }
                 ]
             },
             {
-                title: "Chapter 6",
+                title: "Chapter 6. Lineage of Trophy Assets 2007~2026",
+                id: "page-39",
                 items: [
-                    { label: "Lineage of Trophy Assets 2007~2026", id: "page-39" },
                     { label: "Trophy Asset Lineage", id: "page-40" },
                     { label: "Legacy of Global Capital Inflow by IFC", id: "page-41" }
                 ]
@@ -123,18 +123,18 @@ export const menuDataKr = [
         id: "page-9", 
         chapters: [
             {
-                title: "Chapter 1",
+                title: "Chapter 1. 1조 달러에서 2조 달러로 거시 좌표의 이동",
+                id: "page-10",
                 items: [
-                    { label: "1조 달러에서 2조 달러로 거시 좌표의 이동", id: "page-10" },
                     { label: "1조 달러 시대의 개막과 담금질", id: "page-11" },
                     { label: "마침내 도달할 GDP 2조 달러 고지", id: "page-12" },
                     { label: "10대 산업 듀얼 엔진의 위력과 양면성", id: "page-13" }
                 ]
             },
             {
-                title: "Chapter 2",
+                title: "Chapter 2. 산업별 모멘텀",
+                id: "page-14",
                 items: [
-                    { label: "산업별 모멘텀", id: "page-14" },
                     { label: "[반도체] AI 슈퍼사이클", id: "page-15" },
                     { label: "[자동차] 모빌리티 진화", id: "page-16" },
                     { label: "[조선업] 패권 경쟁과 부활", id: "page-17" },
@@ -148,18 +148,18 @@ export const menuDataKr = [
                 ]
             },
             {
-                title: "Chapter 3",
+                title: "Chapter 3. 자본시장 구조의 변화",
+                id: "page-25",
                 items: [
-                    { label: "자본시장 구조의 변화", id: "page-25" },
                     { label: "[자본 1] 박스피 뚫어낸 랠리", id: "page-26" },
                     { label: "[자본 2] 글로벌 IB 6,000 낙관론", id: "page-27" },
                     { label: "[자본 3] 디스카운트 구조적 종언", id: "page-28" }
                 ]
             },
             {
-                title: "Chapter 4",
+                title: "Chapter 4. 서울 오피스 시장 진화",
+                id: "page-29",
                 items: [
-                    { label: "서울 오피스 시장 진화", id: "page-29" },
                     { label: "[오피스 1] 3대 핵심 권역 골격", id: "page-30" },
                     { label: "[오피스 2] MBD와 BBD 급부상", id: "page-31" },
                     { label: "[오피스 3] 완전 임차 도달", id: "page-32" },
@@ -168,17 +168,17 @@ export const menuDataKr = [
                 ]
             },
             {
-                title: "Chapter 5",
+                title: "Chapter 5. 산업/물류 부동산 진화",
+                id: "page-35",
                 items: [
-                    { label: "산업/물류 부동산 진화", id: "page-35" },
                     { label: "[물류 인프라 1] 단일 임차인이 창조한 쿠팡 이펙트", id: "page-36" },
                     { label: "[물류 인프라 2] 물류센터 공급 과잉의 소화와 정상화", id: "page-37" },                    { label: "[인프라 자산 3] 전력 병목이 낳은 데이터센터의 희소성", id: "page-38" }
                 ]
             },
             {
-                title: "Chapter 6",
+                title: "Chapter 6. 2007~2026 트로피 자산의 계보",
+                id: "page-39",
                 items: [
-                    { label: "2007~2026 트로피 자산의 계보", id: "page-39" },
                     { label: "트로피 자산 계보", id: "page-40" },
                     { label: "IFC 서울이 남긴 글로벌 자본 유입의 유산", id: "page-41" }
                 ]

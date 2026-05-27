@@ -351,7 +351,15 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
  <div className="flex flex-col gap-6 mt-2">
  {col.chapters?.map((chapter, chapIdx) => (
  <div key={chapIdx}>
- {chapter.title && <h5 className="text-[14px] font-bold text-gray-500 mb-2">{chapter.title}</h5>}
+ {chapter.title && <h5 
+ className={`text-[14px] font-bold mb-2 transition-colors ${chapter.id ? 'text-gray-700 hover:text-black cursor-pointer' : 'text-gray-500'}`}
+ onClick={(e) => {
+ if (chapter.id) {
+ setIsMegaMenuOpen(false);
+ handleScrollTo(e, chapter.id);
+ }
+ }}
+ >{chapter.title}</h5>}
  <ul className="flex flex-col space-y-3">
  {chapter.items.map((item, itemIdx) => {
  const isNews = item.type === 'news';
@@ -465,7 +473,15 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
  <div className="flex flex-col gap-6 mt-2">
  {col.chapters?.map((chapter, chapIdx) => (
  <div key={chapIdx}>
- {chapter.title && <h5 className="text-[14px] font-bold text-gray-500 mb-2">{chapter.title}</h5>}
+ {chapter.title && <h5 
+ className={`text-[14px] font-bold mb-2 transition-colors ${chapter.id ? 'text-gray-700 hover:text-black cursor-pointer' : 'text-gray-500'}`}
+ onClick={(e) => {
+ if (chapter.id) {
+ setMobileMenuOpen(false);
+ handleScrollTo(e, chapter.id);
+ }
+ }}
+ >{chapter.title}</h5>}
  <div className="flex flex-col space-y-3">
  {chapter.items.map((item, itemIdx) => {
  if (item.type === 'news') {
