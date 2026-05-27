@@ -27,24 +27,24 @@ export default function Section83({ isActive }) {
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        {lang === 'kr' ? '여전히 턱없이 싼 서울 프라임 오피스' : 'Seoul Prime Office Still Ridiculously Cheap'}
+                        {lang === 'kr' ? '여전히 싼 서울 프라임 오피스' : 'Seoul Prime Office Still Cheap'}
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-12 transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    {lang === 'kr' ? <>런던, 도쿄 대비 절반 이하에 머무는 글로벌 1선 도시 자산의 치명적 역설</> : <>Fatal Paradox of Tier 1 Global Asset Remaining Below Half of London and Tokyo</>}
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-5 transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    {lang === 'kr' ? <>서울은 글로벌 1선 도시 중 가장 낮은 프라임 임대료를 유지 중</> : <>Seoul Maintains Lowest Prime Rent Among Tier 1 Global Cities</>}
                 </h2>
 
                 {/* Horizontal Bar Chart */}
-                <div className="w-full max-w-[1000px] flex flex-col gap-5 mb-10 relative">
+                <div className="w-full max-w-[1000px] flex flex-col gap-2 mb-10 relative">
                     
                     {/* Header Label */}
-                    <div className={`text-right text-[14px] md:text-[16px] font-bold text-gray-400 mb-2 transition-all duration-700 ${step >= 2 ? 'opacity-100' : 'opacity-0'}`}>
+                    <div className={`text-right text-[14px] md:text-[16px] font-bold text-gray-400 mb-0 transition-all duration-700 ${step >= 2 ? 'opacity-100' : 'opacity-0'}`}>
                         {lang === 'kr' ? '2026년 5월 기준 프라임 오피스 임대료 (USD/sqft/yr, 점유 비용 기준)' : 'Prime Office Rent as of May 2026 (USD/sqft/yr, Occupancy Cost Basis)'}
                     </div>
 
                     {/* Chart Container */}
-                    <div className="flex flex-col gap-4 border-l-[3px] border-gray-300 pl-4 py-2">
+                    <div className="flex flex-col gap-3 border-l-[3px] border-gray-300 pl-4 pt-0 pb-2">
                         
                         {/* 1. Hong Kong */}
                         <div className="flex items-center w-full">
@@ -52,7 +52,7 @@ export default function Section83({ isActive }) {
                                 {lang === 'kr' ? '홍콩 센트럴' : 'Hong Kong Central'}
                             </div>
                             <div className="w-[80%] flex items-center">
-                                <div className={`h-[40px] md:h-[50px] bg-gray-200 rounded-r-md transition-all duration-1000 ease-out flex items-center justify-end pr-4 ${step >= 3 ? 'w-[100%]' : 'w-0'}`}>
+                                <div className={`h-[32px] md:h-[40px] bg-gray-200 rounded-r-md transition-all duration-1000 ease-out flex items-center justify-end pr-4 ${step >= 3 ? 'w-[100%]' : 'w-0'}`}>
                                     <span className={`font-black text-gray-600 text-[18px] md:text-[22px] ${step >= 3 ? 'opacity-100' : 'opacity-0'} transition-opacity delay-500`}>250~280</span>
                                 </div>
                             </div>
@@ -64,7 +64,7 @@ export default function Section83({ isActive }) {
                                 {lang === 'kr' ? '런던 웨스트엔드' : 'London West End'}
                             </div>
                             <div className="w-[80%] flex items-center">
-                                <div className={`h-[40px] md:h-[50px] bg-gray-200 rounded-r-md transition-all duration-1000 ease-out flex items-center justify-end pr-4 ${step >= 4 ? 'w-[78%]' : 'w-0'}`}>
+                                <div className={`h-[32px] md:h-[40px] bg-gray-200 rounded-r-md transition-all duration-1000 ease-out flex items-center justify-end pr-4 ${step >= 4 ? 'w-[78%]' : 'w-0'}`}>
                                     <span className={`font-black text-gray-600 text-[18px] md:text-[22px] ${step >= 4 ? 'opacity-100' : 'opacity-0'} transition-opacity delay-500`}>200~220</span>
                                 </div>
                             </div>
@@ -76,7 +76,7 @@ export default function Section83({ isActive }) {
                                 {lang === 'kr' ? '도쿄 마루노우치' : 'Tokyo Marunouchi'}
                             </div>
                             <div className="w-[80%] flex items-center">
-                                <div className={`h-[40px] md:h-[50px] bg-gray-200 rounded-r-md transition-all duration-1000 ease-out flex items-center justify-end pr-4 ${step >= 5 ? 'w-[75%]' : 'w-0'}`}>
+                                <div className={`h-[32px] md:h-[40px] bg-gray-200 rounded-r-md transition-all duration-1000 ease-out flex items-center justify-end pr-4 ${step >= 5 ? 'w-[75%]' : 'w-0'}`}>
                                     <span className={`font-black text-gray-600 text-[18px] md:text-[22px] ${step >= 5 ? 'opacity-100' : 'opacity-0'} transition-opacity delay-500`}>190~210</span>
                                 </div>
                             </div>
@@ -88,7 +88,7 @@ export default function Section83({ isActive }) {
                                 {lang === 'kr' ? '뉴욕 미드타운' : 'NY Midtown'}
                             </div>
                             <div className="w-[80%] flex items-center">
-                                <div className={`h-[40px] md:h-[50px] bg-gray-200 rounded-r-md transition-all duration-1000 ease-out flex items-center justify-end pr-4 ${step >= 6 ? 'w-[71%]' : 'w-0'}`}>
+                                <div className={`h-[32px] md:h-[40px] bg-gray-200 rounded-r-md transition-all duration-1000 ease-out flex items-center justify-end pr-4 ${step >= 6 ? 'w-[71%]' : 'w-0'}`}>
                                     <span className={`font-black text-gray-600 text-[18px] md:text-[22px] ${step >= 6 ? 'opacity-100' : 'opacity-0'} transition-opacity delay-500`}>180~200</span>
                                 </div>
                             </div>
@@ -100,7 +100,7 @@ export default function Section83({ isActive }) {
                                 {lang === 'kr' ? '싱가포르 라플즈' : 'Singapore Raffles'}
                             </div>
                             <div className="w-[80%] flex items-center">
-                                <div className={`h-[40px] md:h-[50px] bg-gray-200 rounded-r-md transition-all duration-1000 ease-out flex items-center justify-end pr-4 ${step >= 7 ? 'w-[53%]' : 'w-0'}`}>
+                                <div className={`h-[32px] md:h-[40px] bg-gray-200 rounded-r-md transition-all duration-1000 ease-out flex items-center justify-end pr-4 ${step >= 7 ? 'w-[53%]' : 'w-0'}`}>
                                     <span className={`font-black text-gray-600 text-[18px] md:text-[22px] ${step >= 7 ? 'opacity-100' : 'opacity-0'} transition-opacity delay-500`}>130~150</span>
                                 </div>
                             </div>
@@ -112,7 +112,7 @@ export default function Section83({ isActive }) {
                                 {lang === 'kr' ? '서울 GBD 프라임' : 'Seoul GBD Prime'}
                             </div>
                             <div className="w-[80%] flex items-center relative">
-                                <div className={`h-[48px] md:h-[60px] bg-gradient-to-r from-blue-600 to-[#1e3a8a] rounded-r-md shadow-lg transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] flex items-center justify-end pr-4 relative z-10 ${step >= 8 ? 'w-[32%]' : 'w-0'}`}>
+                                <div className={`h-[40px] md:h-[50px] bg-gradient-to-r from-blue-600 to-[#1e3a8a] rounded-r-md shadow-lg transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] flex items-center justify-end pr-4 relative z-10 ${step >= 8 ? 'w-[32%]' : 'w-0'}`}>
                                     <span className={`font-black text-white text-[20px] md:text-[26px] ${step >= 8 ? 'opacity-100' : 'opacity-0'} transition-opacity delay-500`}>80~90</span>
                                 </div>
                                 <div className={`absolute top-0 left-0 w-[100%] h-full flex items-center pl-[34%] transition-opacity duration-1000 delay-[1200ms] ${step >= 8 ? 'opacity-100' : 'opacity-0'}`}>
@@ -130,8 +130,8 @@ export default function Section83({ isActive }) {
                 <div className={`max-w-[1000px] bg-blue-50 border border-blue-100 p-6 rounded-xl shadow-sm transition-all duration-700 ${step >= 9 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <p className="text-[18px] md:text-[20px] font-bold text-[#1e3a8a] break-keep leading-relaxed">
                         {lang === 'kr' 
-                            ? '싱가포르보다 낮고 홍콩 센트럴 대비 3분의 1 수준에 불과한 서울 프라임 임대료의 참혹한 저평가 현실 고발'
-                            : 'Exposing the severely undervalued reality of Seoul Prime rent, lower than Singapore and only one-third of Hong Kong Central.'
+                            ? '싱가포르보다 낮고 홍콩 센트럴 대비 3분의 1 수준의 서울 프라임 임대료'
+                            : 'Seoul Prime rent, lower than Singapore and only one-third of Hong Kong Central.'
                         }
                     </p>
                 </div>

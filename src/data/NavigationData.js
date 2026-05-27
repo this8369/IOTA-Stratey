@@ -161,13 +161,7 @@ export const menuDataEn = [
                     { label: "Bear Scenario", id: "page-81" },
                     { label: "Real Estate Rerating", id: "page-82" }
                 ]
-            }
-        ] 
-    },
-    { 
-        title: "Part 3. Strategic Positioning", 
-        id: "", 
-        chapters: [
+            },
             {
                 title: "Chapter 8. Prime Office Rent Global Comparison",
                 id: "page-83",
@@ -177,6 +171,11 @@ export const menuDataEn = [
                 ]
             }
         ] 
+    },
+    { 
+        title: "Part 3. Strategic Positioning", 
+        id: "", 
+        chapters: [] 
     },
     { 
         title: "Part 4. IOTA Execution Strategy", 
@@ -348,13 +347,7 @@ export const menuDataKr = [
                     { label: "Bear 시나리오", id: "page-81" },
                     { label: "부동산 리레이팅", id: "page-82" }
                 ]
-            }
-        ] 
-    },
-    { 
-        title: "Part 3. 전략 포지셔닝", 
-        id: "", 
-        chapters: [
+            },
             {
                 title: "Chapter 8. 프라임 오피스 임대료 국제 비교",
                 id: "page-83",
@@ -364,6 +357,11 @@ export const menuDataKr = [
                 ]
             }
         ] 
+    },
+    { 
+        title: "Part 3. 전략 포지셔닝", 
+        id: "", 
+        chapters: [] 
     },
     { 
         title: "Part 4. IOTA 실행전략", 
