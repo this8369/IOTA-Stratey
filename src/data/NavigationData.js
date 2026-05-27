@@ -193,6 +193,13 @@ export const menuDataEn = [
                     { label: "IGIS Senior REIT Market Conquest", id: "page-93" },
                     { label: "Prime Mixed-Use Trophy Serialization", id: "page-94" }
                 ]
+            },
+            {
+                title: "Chapter 3. Operating OS : Factorial Builders",
+                id: "page-95",
+                items: [
+                    { label: "Factorial Builders as Operating OS", id: "page-96" }
+                ]
             }
         ] 
     },
@@ -397,6 +404,13 @@ export const menuDataKr = [
                     { label: "IGIS DC REIT 상장 마스터플랜", id: "page-92" },
                     { label: "IGIS Senior REIT 시장 점령전", id: "page-93" },
                     { label: "Prime Mixed-Use 트로피 시리즈화", id: "page-94" }
+                ]
+            },
+            {
+                title: "Chapter 3. 운영 OS : Factorial Builders",
+                id: "page-95",
+                items: [
+                    { label: "Factorial Builders(팩빌)를 운영 OS로", id: "page-96" }
                 ]
             }
         ] 
