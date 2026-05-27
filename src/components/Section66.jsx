@@ -38,7 +38,7 @@ export default function Section66({ isActive }) {
 
                     <div className="flex flex-col md:flex-row w-full items-stretch gap-6 mt-6">
                         {/* Losers */}
-                        <div className={`flex-1 border-[4px] border-gray-300 bg-gray-50 p-10 flex flex-col items-center text-center transition-all duration-1000 delay-100 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                        <div className={`flex-1 border-[4px] border-gray-300 bg-gray-50 py-6 px-10 flex flex-col items-center text-center transition-all duration-1000 delay-100 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
                             <div className="text-[60px] mb-6 grayscale opacity-80">📉</div>
                             <div className="text-[28px] font-black text-gray-700 mb-4">가치 약세 및 횡보</div>
                             <div className="w-[60%] border-t-[3px] border-gray-300 my-4"></div>
@@ -47,7 +47,7 @@ export default function Section66({ isActive }) {
                         </div>
 
                         {/* Winners (Shield) */}
-                        <div className={`flex-1 border-[6px] border-[#1d1d1f] bg-white p-10 flex flex-col items-center text-center shadow-2xl relative transition-all duration-1000 delay-300 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
+                        <div className={`flex-1 border-[6px] border-[#1d1d1f] bg-white py-6 px-10 flex flex-col items-center text-center shadow-2xl relative transition-all duration-1000 delay-300 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
                             <div className="absolute -top-5 bg-[#1d1d1f] text-white px-6 py-2 font-black text-[18px] uppercase tracking-wider">
                                 Safe Haven
                             </div>

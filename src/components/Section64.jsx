@@ -19,8 +19,8 @@ export default function Section64({ isActive }) {
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        Base 시나리오 하의 임대료 수직 상승
+                    <span className="inline-block text-[22px] md:text-[26px] font-black text-[#1d1d1f] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
+                        Base 시나리오 임대료 전망
                     </span>
                 </div>
 
@@ -29,31 +29,42 @@ export default function Section64({ isActive }) {
                 </h2>
 
                 {/* Custom Infographic: Rent Forecast Grid */}
-                <div className="w-full max-w-[1100px] mt-[50px] mb-[40px] transition-all duration-1000 flex flex-col">
-                    <div className="grid grid-cols-4 gap-4 w-full">
+                <div className="w-full max-w-[1200px] mt-[40px] mb-[30px] transition-all duration-1000 flex flex-col">
+                    <div className="grid grid-cols-5 gap-3 w-full text-[15px] lg:text-[18px]">
                         {/* Headers */}
                         <div className="col-span-1 bg-transparent"></div>
-                        <div className={`text-center font-black text-[22px] border-b-[4px] border-gray-300 pb-2 transition-all duration-1000 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>2030년</div>
-                        <div className={`text-center font-black text-[22px] border-b-[4px] border-gray-300 pb-2 transition-all duration-1000 delay-100 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>2035년</div>
-                        <div className={`text-center font-black text-[24px] border-b-[4px] border-[#1d1d1f] pb-2 text-[#1d1d1f] transition-all duration-1000 delay-200 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>2040년</div>
+                        <div className={`text-center font-black border-b-[4px] border-gray-300 pb-2 transition-all duration-1000 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>2025년</div>
+                        <div className={`text-center font-black border-b-[4px] border-gray-300 pb-2 transition-all duration-1000 delay-100 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>2030년</div>
+                        <div className={`text-center font-black border-b-[4px] border-gray-300 pb-2 transition-all duration-1000 delay-200 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>2035년</div>
+                        <div className={`text-center font-black border-b-[4px] border-[#1d1d1f] pb-2 text-[#1d1d1f] transition-all duration-1000 delay-300 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>2040년</div>
                         
                         {/* Row 1: CBD */}
-                        <div className={`bg-gray-100 border-l-[6px] border-gray-400 p-4 font-black flex items-center justify-center text-center text-[18px] text-gray-700 transition-all duration-700 delay-300 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>CBD 프라임 평균</div>
-                        <div className={`bg-gray-50 border-[2px] border-gray-200 p-4 flex flex-col items-center justify-center font-black text-[24px] transition-all duration-700 delay-400 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>17~18<span className="text-[16px] font-bold text-gray-500">만 원</span></div>
-                        <div className={`bg-gray-50 border-[2px] border-gray-200 p-4 flex flex-col items-center justify-center font-black text-[24px] transition-all duration-700 delay-500 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>21~23<span className="text-[16px] font-bold text-gray-500">만 원</span></div>
-                        <div className={`bg-gray-100 border-[2px] border-gray-300 p-4 flex flex-col items-center justify-center font-black text-[28px] text-gray-800 transition-all duration-700 delay-600 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>25~28<span className="text-[16px] font-bold text-gray-500">만 원</span></div>
+                        <div className={`bg-gray-100 border-l-[6px] border-gray-400 p-2 lg:p-3 font-black flex items-center justify-center text-center text-gray-800 transition-all duration-700 delay-300 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>CBD 프라임 평균</div>
+                        <div className={`bg-gray-50 border-[2px] border-gray-200 p-2 lg:p-3 flex items-center justify-center font-black transition-all duration-700 delay-400 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>약 14<span className="font-bold text-gray-800 ml-1">만 원</span></div>
+                        <div className={`bg-gray-50 border-[2px] border-gray-200 p-2 lg:p-3 flex items-center justify-center font-black transition-all duration-700 delay-500 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>17~18<span className="font-bold text-gray-800 ml-1">만 원</span></div>
+                        <div className={`bg-gray-50 border-[2px] border-gray-200 p-2 lg:p-3 flex items-center justify-center font-black transition-all duration-700 delay-600 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>21~23<span className="font-bold text-gray-800 ml-1">만 원</span></div>
+                        <div className={`bg-gray-100 border-[2px] border-gray-300 p-2 lg:p-3 flex items-center justify-center font-black text-gray-900 transition-all duration-700 delay-700 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>25~28<span className="font-bold text-gray-800 ml-1">만 원</span></div>
 
                         {/* Row 2: GBD */}
-                        <div className={`bg-blue-50 border-l-[6px] border-blue-500 p-4 font-black flex items-center justify-center text-center text-[18px] text-blue-900 mt-2 transition-all duration-700 delay-400 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>GBD 프라임 평균</div>
-                        <div className={`bg-blue-50/50 border-[2px] border-blue-100 p-4 flex flex-col items-center justify-center font-black text-[24px] mt-2 transition-all duration-700 delay-500 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>18~20<span className="text-[16px] font-bold text-gray-500">만 원</span></div>
-                        <div className={`bg-blue-50/50 border-[2px] border-blue-100 p-4 flex flex-col items-center justify-center font-black text-[24px] mt-2 transition-all duration-700 delay-600 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>24~27<span className="text-[16px] font-bold text-gray-500">만 원</span></div>
-                        <div className={`bg-blue-100 border-[2px] border-blue-300 p-4 flex flex-col items-center justify-center font-black text-[30px] text-blue-900 mt-2 transition-all duration-700 delay-700 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>30~34<span className="text-[16px] font-bold text-blue-700">만 원</span></div>
+                        <div className={`bg-blue-50 border-l-[6px] border-blue-500 p-2 lg:p-3 font-black flex items-center justify-center text-center text-blue-900 mt-1 transition-all duration-700 delay-400 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>GBD 프라임 평균</div>
+                        <div className={`bg-blue-50/50 border-[2px] border-blue-100 p-2 lg:p-3 flex items-center justify-center font-black mt-1 transition-all duration-700 delay-500 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>약 14.5<span className="font-bold text-gray-800 ml-1">만 원</span></div>
+                        <div className={`bg-blue-50/50 border-[2px] border-blue-100 p-2 lg:p-3 flex items-center justify-center font-black mt-1 transition-all duration-700 delay-600 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>18~20<span className="font-bold text-gray-800 ml-1">만 원</span></div>
+                        <div className={`bg-blue-50/50 border-[2px] border-blue-100 p-2 lg:p-3 flex items-center justify-center font-black mt-1 transition-all duration-700 delay-700 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>24~27<span className="font-bold text-gray-800 ml-1">만 원</span></div>
+                        <div className={`bg-blue-100 border-[2px] border-blue-300 p-2 lg:p-3 flex items-center justify-center font-black text-blue-900 mt-1 transition-all duration-700 delay-800 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>30~34<span className="font-bold text-blue-800 ml-1">만 원</span></div>
 
-                        {/* Row 3: Trophy */}
-                        <div className={`bg-[#1d1d1f] text-white p-4 font-black flex flex-col items-center justify-center text-center text-[20px] mt-2 shadow-lg transition-all duration-700 delay-500 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>IOTA·GBC<br/><span className="text-[14px] font-bold text-gray-400">신규 트로피 자산</span></div>
-                        <div className={`bg-white border-[4px] border-[#1d1d1f] p-4 flex flex-col items-center justify-center font-black text-[28px] mt-2 shadow-sm transition-all duration-700 delay-600 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>22~26<span className="text-[16px] font-bold text-gray-500">만 원</span></div>
-                        <div className={`bg-white border-[4px] border-[#1d1d1f] p-4 flex flex-col items-center justify-center font-black text-[28px] mt-2 shadow-sm transition-all duration-700 delay-700 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>USD 130~160<span className="text-[16px] font-bold text-gray-500">/sqft/yr</span></div>
-                        <div className={`bg-[#1d1d1f] text-white p-4 flex flex-col items-center justify-center font-black text-[24px] mt-2 shadow-lg transition-all duration-700 delay-800 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>도쿄 수준의<br/><span className="text-[28px] text-yellow-400 leading-none mt-1">65~80%</span></div>
+                        {/* Row 3: GBC */}
+                        <div className={`bg-gray-100 border-l-[6px] border-[#1d1d1f] p-2 lg:p-3 font-black flex items-center justify-center text-center text-[#1d1d1f] mt-1 transition-all duration-700 delay-500 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>삼성동 트로피 (GBC)</div>
+                        <div className={`bg-gray-50 border-[2px] border-gray-200 p-2 lg:p-3 flex items-center justify-center font-bold text-gray-400 mt-1 transition-all duration-700 delay-600 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>-</div>
+                        <div className={`bg-gray-50 border-[2px] border-gray-200 p-2 lg:p-3 flex flex-col items-center justify-center font-black mt-1 transition-all duration-700 delay-700 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>22~25<span className="font-bold text-gray-800">만 원</span></div>
+                        <div className={`bg-gray-50 border-[2px] border-gray-200 p-2 lg:p-3 flex items-center justify-center font-bold text-gray-400 mt-1 transition-all duration-700 delay-800 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>-</div>
+                        <div className={`bg-gray-50 border-[2px] border-gray-200 p-2 lg:p-3 flex items-center justify-center font-bold text-gray-400 mt-1 transition-all duration-700 delay-900 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>-</div>
+
+                        {/* Row 4: IOTA */}
+                        <div className={`bg-[#1d1d1f] text-white p-2 lg:p-3 font-black flex items-center justify-center text-center shadow-lg mt-1 transition-all duration-700 delay-600 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>IOTA 서울 트로피 오피스</div>
+                        <div className={`bg-white border-[3px] border-[#1d1d1f] p-2 lg:p-3 flex items-center justify-center font-bold text-gray-400 mt-1 shadow-sm transition-all duration-700 delay-700 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>-</div>
+                        <div className={`bg-white border-[3px] border-[#1d1d1f] p-2 lg:p-3 flex flex-col items-center justify-center font-black mt-1 shadow-sm transition-all duration-700 delay-800 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>23~26<span className="font-bold text-gray-800">만 원</span></div>
+                        <div className={`bg-white border-[3px] border-[#1d1d1f] p-2 lg:p-3 flex flex-col items-center justify-center font-black mt-1 shadow-sm transition-all duration-700 delay-900 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>USD 130~160<span className="text-[12px] font-bold text-gray-600">/sqft/yr</span></div>
+                        <div className={`bg-[#1d1d1f] text-white p-2 lg:p-3 flex flex-col items-center justify-center font-black mt-1 shadow-lg transition-all duration-700 delay-1000 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>도쿄 수준의<span className="text-yellow-400 leading-none">65~80%</span></div>
                     </div>
                 </div>
 

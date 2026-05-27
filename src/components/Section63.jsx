@@ -48,14 +48,14 @@ export default function Section63({ isActive }) {
                     <div className={`text-[60px] text-blue-600 font-black transition-all duration-1000 delay-200 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>→</div>
 
                     {/* 7 Hubs */}
-                    <div className={`flex flex-col items-center bg-blue-50 border-[6px] border-blue-600 p-10 w-full lg:w-[50%] shadow-2xl transition-all duration-1000 delay-400 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
+                    <div className={`flex flex-col items-center bg-blue-50 border-[6px] border-blue-600 py-7 px-10 w-full lg:w-[50%] shadow-2xl transition-all duration-1000 delay-400 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
                         <div className="text-[24px] font-black text-blue-900 mb-6 uppercase tracking-widest">진화된 7축 메가 권역</div>
                         <div className="w-full bg-white border-2 border-blue-200 p-6 flex flex-col items-center mb-4 shadow-sm relative">
                             <div className="absolute -top-3 bg-blue-600 text-white px-4 py-1 text-[14px] font-bold uppercase">신규 메가 거점 편입</div>
                             <div className="text-[36px] font-black text-[#1d1d1f] leading-tight text-center mt-2">
                                 YSBD <span className="text-[20px] text-gray-500 font-bold">(용산·서울역)</span>
                             </div>
-                            <div className="text-blue-500 font-black text-[24px] my-1">+</div>
+                            <div className="text-blue-500 font-black text-[24px] -my-1">+</div>
                             <div className="text-[36px] font-black text-[#1d1d1f] leading-tight text-center">
                                 KBD <span className="text-[20px] text-gray-500 font-bold">(삼성·잠실)</span>
                             </div>
