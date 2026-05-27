@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useLanguage } from '../context/LanguageContext';
 
 export default function Section43({ isActive }) {
-    const { lang } = useLanguage();
     const [step, setStep] = useState(0);
 
     useEffect(() => {
@@ -20,26 +18,25 @@ export default function Section43({ isActive }) {
     ];
 
     return (
-        <section className="section w-full h-full bg-white flex flex-col items-center justify-center px-6 md:px-16 overflow-hidden relative">
-            <div className="w-full max-w-[1200px] mx-auto">
-                <div className={`text-center transition-all duration-[1000ms] ease-out ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    <h3 className="text-[#0055ff] font-bold text-[14px] md:text-[16px] mb-4 uppercase tracking-widest">
-                        Core Variables
-                    </h3>
-                    <h2 className="text-[28px] md:text-[44px] lg:text-[52px] font-bold text-black leading-[1.4] break-keep mb-16 tracking-[-0.02em]">
-                        2조에서 3조 달러로 가는 경로는 단순 직선 외삽이 아닙니다.<br/>
-                        <span className="text-gray-400">4대 변수가 미래의 시나리오를 결정짓습니다.</span>
-                    </h2>
+        <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center px-6 md:px-16 overflow-hidden relative">
+            <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
+                <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px]">
+                        시나리오 핵심 변수
+                    </span>
                 </div>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-16 transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    한국 GDP 3조 달러 달성을 좌우하는 4대 프레임
+                </h2>
                 
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-[1200px]">
                     {variables.map((item, idx) => (
-                        <div key={idx} className={`bg-gray-50 rounded-[24px] p-6 md:p-8 border border-gray-100 flex flex-col items-center text-center transition-all duration-[1000ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: `${idx * 150}ms` }}>
-                            <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center text-white font-bold mb-6 text-[18px]">
+                        <div key={idx} className={`bg-gray-50 rounded-none p-10 border border-gray-200 flex flex-col items-center text-center transition-all duration-[1000ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: `${idx * 150}ms` }}>
+                            <div className="w-12 h-12 bg-[#1d1d1f] flex items-center justify-center text-white font-bold mb-6 text-[18px]">
                                 {idx + 1}
                             </div>
-                            <h4 className="text-[20px] md:text-[24px] font-bold text-black mb-1">{item.title}</h4>
-                            <p className="text-gray-400 text-[13px] md:text-[15px] font-medium uppercase tracking-wider">{item.sub}</p>
+                            <h4 className="text-[22px] md:text-[26px] font-bold text-black mb-2">{item.title}</h4>
+                            <p className="text-gray-400 text-[14px] md:text-[16px] font-bold uppercase tracking-wider">{item.sub}</p>
                         </div>
                     ))}
                 </div>

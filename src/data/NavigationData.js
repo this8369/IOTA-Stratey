@@ -94,7 +94,8 @@ export const menuDataEn = [
                     { label: "Core Variables", id: "page-44" },
                     { label: "Base Scenario", id: "page-45" },
                     { label: "Bull Scenario", id: "page-46" },
-                    { label: "Bear Scenario", id: "page-47" }
+                    { label: "Bear Scenario", id: "page-47" },
+                    { label: "시나리오 종합", id: "page-48" }
                 ]
             }
         ] 
@@ -207,7 +208,8 @@ export const menuDataKr = [
                     { label: "핵심 동인 (Core Variables)", id: "page-44" },
                     { label: "Base Scenario", id: "page-45" },
                     { label: "Bull Scenario", id: "page-46" },
-                    { label: "Bear Scenario", id: "page-47" }
+                    { label: "Bear Scenario", id: "page-47" },
+                    { label: "시나리오 종합", id: "page-48" }
                 ]
             }
         ] 
