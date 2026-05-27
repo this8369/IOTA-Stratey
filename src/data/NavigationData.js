@@ -184,6 +184,15 @@ export const menuDataEn = [
                     { label: "Essential Conditions for Tier 1 Leap", id: "page-89" },
                     { label: "Korean Differentiation & Hybrid Model", id: "page-90" }
                 ]
+            },
+            {
+                title: "Chapter 2. 3 Major Platforms Execution Roadmap",
+                id: "page-91",
+                items: [
+                    { label: "IGIS DC REIT Listing Master Plan", id: "page-92" },
+                    { label: "IGIS Senior REIT Market Conquest", id: "page-93" },
+                    { label: "Prime Mixed-Use Trophy Serialization", id: "page-94" }
+                ]
             }
         ] 
     },
@@ -379,6 +388,15 @@ export const menuDataKr = [
                     { label: "이지스의 현재 좌표와 글로벌 비교", id: "page-88" },
                     { label: "글로벌 1선 운용사 도약의 본질 조건", id: "page-89" },
                     { label: "이지스만의 한국적 차별점과 결합 모델", id: "page-90" }
+                ]
+            },
+            {
+                title: "Chapter 2. 3대 플랫폼 실행 로드맵",
+                id: "page-91",
+                items: [
+                    { label: "IGIS DC REIT 상장 마스터플랜", id: "page-92" },
+                    { label: "IGIS Senior REIT 시장 점령전", id: "page-93" },
+                    { label: "Prime Mixed-Use 트로피 시리즈화", id: "page-94" }
                 ]
             }
         ] 
