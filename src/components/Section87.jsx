@@ -31,7 +31,7 @@ export default function Section87({ isActive }) {
                 </div>
 
                 <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-5 transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    {lang === 'kr' ? <>글로벌 Top 운용사 대비 1/9 수준, AUM 73조 원의 현 주소</> : <>Current Status of AUM 73T KRW, 1/9 Level of Top Global AMs</>}
+                    {lang === 'kr' ? <>AUM 73조 원의 압도적 국내 1위, 그러나 글로벌 TOP 대비 9분의 1 수준</> : <>Overwhelming #1 in Korea with 73T KRW AUM, yet 1/9 of Global Top</>}
                 </h2>
 
                 {/* Horizontal Bar Chart */}
@@ -47,10 +47,10 @@ export default function Section87({ isActive }) {
                         
                         {/* 1. Blackstone */}
                         <div className="flex items-center w-full">
-                            <div className={`w-[25%] text-left text-[16px] md:text-[20px] font-bold text-gray-700 transition-all duration-500 ${step >= 3 ? 'opacity-100' : 'opacity-0'}`}>
+                            <div className={`w-[140px] md:w-[160px] shrink-0 text-left text-[16px] md:text-[20px] font-bold text-gray-700 transition-all duration-500 ${step >= 3 ? 'opacity-100' : 'opacity-0'}`}>
                                 Blackstone RE
                             </div>
-                            <div className="w-[75%] flex items-center">
+                            <div className="w-full flex items-center">
                                 <div className={`h-[32px] md:h-[40px] bg-gray-200 rounded-r-md transition-all duration-1000 ease-out flex items-center justify-end pr-4 ${step >= 3 ? 'w-[100%]' : 'w-0'}`}>
                                     <span className={`font-black text-gray-600 text-[18px] md:text-[22px] ${step >= 3 ? 'opacity-100' : 'opacity-0'} transition-opacity delay-500`}>3,360</span>
                                 </div>
@@ -59,10 +59,10 @@ export default function Section87({ isActive }) {
 
                         {/* 2. Brookfield */}
                         <div className="flex items-center w-full">
-                            <div className={`w-[25%] text-left text-[16px] md:text-[20px] font-bold text-gray-700 transition-all duration-500 ${step >= 4 ? 'opacity-100' : 'opacity-0'}`}>
+                            <div className={`w-[140px] md:w-[160px] shrink-0 text-left text-[16px] md:text-[20px] font-bold text-gray-700 transition-all duration-500 ${step >= 4 ? 'opacity-100' : 'opacity-0'}`}>
                                 Brookfield RE
                             </div>
-                            <div className="w-[75%] flex items-center">
+                            <div className="w-full flex items-center">
                                 <div className={`h-[32px] md:h-[40px] bg-gray-200 rounded-r-md transition-all duration-1000 ease-out flex items-center justify-end pr-4 ${step >= 4 ? 'w-[82%]' : 'w-0'}`}>
                                     <span className={`font-black text-gray-600 text-[18px] md:text-[22px] ${step >= 4 ? 'opacity-100' : 'opacity-0'} transition-opacity delay-500`}>2,750</span>
                                 </div>
@@ -71,10 +71,10 @@ export default function Section87({ isActive }) {
 
                         {/* 3. PGIM */}
                         <div className="flex items-center w-full">
-                            <div className={`w-[25%] text-left text-[16px] md:text-[20px] font-bold text-gray-700 transition-all duration-500 ${step >= 5 ? 'opacity-100' : 'opacity-0'}`}>
+                            <div className={`w-[140px] md:w-[160px] shrink-0 text-left text-[16px] md:text-[20px] font-bold text-gray-700 transition-all duration-500 ${step >= 5 ? 'opacity-100' : 'opacity-0'}`}>
                                 PGIM RE
                             </div>
-                            <div className="w-[75%] flex items-center">
+                            <div className="w-full flex items-center">
                                 <div className={`h-[32px] md:h-[40px] bg-gray-200 rounded-r-md transition-all duration-1000 ease-out flex items-center justify-end pr-4 ${step >= 5 ? 'w-[62.5%]' : 'w-0'}`}>
                                     <span className={`font-black text-gray-600 text-[18px] md:text-[22px] ${step >= 5 ? 'opacity-100' : 'opacity-0'} transition-opacity delay-500`}>2,100</span>
                                 </div>
@@ -83,10 +83,10 @@ export default function Section87({ isActive }) {
 
                         {/* 4. Hines */}
                         <div className="flex items-center w-full">
-                            <div className={`w-[25%] text-left text-[16px] md:text-[20px] font-bold text-gray-700 transition-all duration-500 ${step >= 6 ? 'opacity-100' : 'opacity-0'}`}>
+                            <div className={`w-[140px] md:w-[160px] shrink-0 text-left text-[16px] md:text-[20px] font-bold text-gray-700 transition-all duration-500 ${step >= 6 ? 'opacity-100' : 'opacity-0'}`}>
                                 Hines
                             </div>
-                            <div className="w-[75%] flex items-center">
+                            <div className="w-full flex items-center">
                                 <div className={`h-[32px] md:h-[40px] bg-gray-200 rounded-r-md transition-all duration-1000 ease-out flex items-center justify-end pr-4 ${step >= 6 ? 'w-[28%]' : 'w-0'}`}>
                                     <span className={`font-black text-gray-600 text-[18px] md:text-[22px] ${step >= 6 ? 'opacity-100' : 'opacity-0'} transition-opacity delay-500`}>950</span>
                                 </div>
@@ -95,10 +95,10 @@ export default function Section87({ isActive }) {
 
                         {/* 5. IGIS (Highlight) */}
                         <div className="flex items-center w-full mt-2">
-                            <div className={`w-[25%] text-left text-[18px] md:text-[22px] font-black text-[#1e3a8a] transition-all duration-500 ${step >= 7 ? 'opacity-100' : 'opacity-0'}`}>
-                                IGIS (이지스자산운용)
+                            <div className={`w-[140px] md:w-[160px] shrink-0 text-left text-[18px] md:text-[22px] font-black text-[#1e3a8a] transition-all duration-500 ${step >= 7 ? 'opacity-100' : 'opacity-0'}`}>
+                                IGIS
                             </div>
-                            <div className="w-[75%] flex items-center relative">
+                            <div className="w-full flex items-center relative">
                                 <div className={`h-[40px] md:h-[50px] bg-gradient-to-r from-blue-600 to-[#1e3a8a] rounded-r-md shadow-lg transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] flex items-center justify-end pr-4 relative z-10 ${step >= 7 ? 'w-[16%]' : 'w-0'}`}>
                                     <span className={`font-black text-white text-[20px] md:text-[26px] ${step >= 7 ? 'opacity-100' : 'opacity-0'} transition-opacity delay-500`}>530</span>
                                 </div>

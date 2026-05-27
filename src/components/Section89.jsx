@@ -34,34 +34,34 @@ export default function Section89({ isActive }) {
                 {/* 3 Pillars */}
                 <div className="w-full max-w-[1000px] grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 relative">
                     {/* Pillar 1 */}
-                    <div className={`bg-white border border-gray-200 rounded-2xl p-6 shadow-sm flex flex-col items-center justify-start transition-all duration-[800ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                        <div className="w-14 h-14 bg-gray-50 border-2 border-gray-200 rounded-full flex items-center justify-center text-blue-800 font-bold text-[22px] mb-4">1</div>
-                        <h3 className="font-extrabold text-[20px] text-gray-800 mb-3 break-keep">
+                    <div className={`bg-white border-2 border-[#1e3a8a] rounded-lg p-6 shadow-sm flex flex-col items-start justify-start transition-all duration-[800ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} min-h-[180px]`}>
+                        <div className="text-[#1e3a8a] font-black text-[15px] mb-2 opacity-80">01</div>
+                        <h3 className="font-extrabold text-[22px] text-[#1e3a8a] mb-3 break-keep leading-snug">
                             {lang === 'kr' ? '서울 프라임 압도적 지배력' : 'Overwhelming Dominance in Seoul Prime'}
                         </h3>
-                        <p className="text-gray-600 font-medium text-[15px] leading-relaxed break-keep">
+                        <p className="text-gray-700 font-medium text-[16px] leading-relaxed break-keep">
                             {lang === 'kr' ? '단일 도시 프라임 자산에 대한 독보적인 인사이트와 막강한 딜 소싱(Deal Sourcing) 네트워크 보유' : 'Exclusive insights and powerful deal sourcing networks for prime assets in a single megacity'}
                         </p>
                     </div>
 
                     {/* Pillar 2 */}
-                    <div className={`bg-white border border-gray-200 rounded-2xl p-6 shadow-sm flex flex-col items-center justify-start transition-all duration-[800ms] delay-[150ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                        <div className="w-14 h-14 bg-gray-50 border-2 border-gray-200 rounded-full flex items-center justify-center text-blue-800 font-bold text-[22px] mb-4">2</div>
-                        <h3 className="font-extrabold text-[20px] text-gray-800 mb-3 break-keep">
+                    <div className={`bg-white border-2 border-[#1e3a8a] rounded-lg p-6 shadow-sm flex flex-col items-start justify-start transition-all duration-[800ms] delay-[150ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} min-h-[180px]`}>
+                        <div className="text-[#1e3a8a] font-black text-[15px] mb-2 opacity-80">02</div>
+                        <h3 className="font-extrabold text-[22px] text-[#1e3a8a] mb-3 break-keep leading-snug">
                             {lang === 'kr' ? '국내 기관 LP 신뢰 자본' : 'Trusted Capital from Domestic Inst. LPs'}
                         </h3>
-                        <p className="text-gray-600 font-medium text-[15px] leading-relaxed break-keep">
+                        <p className="text-gray-700 font-medium text-[16px] leading-relaxed break-keep">
                             {lang === 'kr' ? 'NPS, 교직원공제회, 우정사업본부 등 핵심 기관투자자들과 오랜 기간 쌓아온 두터운 파트너십과 신뢰' : 'Deep partnerships and trust built over long periods with core institutional investors like NPS'}
                         </p>
                     </div>
 
                     {/* Pillar 3 */}
-                    <div className={`bg-blue-50 border-2 border-blue-200 rounded-2xl p-6 shadow-md flex flex-col items-center justify-start transition-all duration-[800ms] delay-[300ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                        <div className="w-14 h-14 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-[22px] mb-4 shadow-sm">3</div>
-                        <h3 className="font-extrabold text-[20px] text-blue-900 mb-3 break-keep">
+                    <div className={`bg-white border-2 border-[#1e3a8a] rounded-lg p-6 shadow-sm flex flex-col items-start justify-start transition-all duration-[800ms] delay-[300ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} min-h-[180px]`}>
+                        <div className="text-[#1e3a8a] font-black text-[15px] mb-2 opacity-80">03</div>
+                        <h3 className="font-extrabold text-[22px] text-[#1e3a8a] mb-3 break-keep leading-snug">
                             {lang === 'kr' ? 'In-house Vertical Integration' : 'In-house Vertical Integration'}
                         </h3>
-                        <p className="text-blue-800/80 font-medium text-[15px] leading-relaxed break-keep">
+                        <p className="text-gray-700 font-medium text-[16px] leading-relaxed break-keep">
                             {lang === 'kr' ? '개발-구조화-운영의 내재화 (Factorial Builders, IGIS[X], 이지스네오밸류 등)' : 'Internalization of Develop-Structure-Operate (Factorial Builders, IGIS[X], etc.)'}
                         </p>
                     </div>
@@ -73,11 +73,11 @@ export default function Section89({ isActive }) {
                         {lang === 'kr' ? '단순 자산 매입·매각 중심의 블랙스톤 모델을 넘어선 최적의 결합 모델' : 'Optimal Hybrid Model Beyond Blackstone\'s Simple Buy-Sell Approach'}
                     </div>
                     <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-4 w-full">
-                        <div className="bg-white/10 text-white font-bold text-[18px] md:text-[22px] px-5 py-3 rounded-xl break-keep text-center w-full md:w-auto">
+                        <div className="bg-blue-600 text-white font-bold text-[18px] md:text-[22px] px-5 py-3 rounded-xl shadow-[0_0_15px_rgba(37,99,235,0.5)] break-keep text-center w-full md:w-auto">
                             {lang === 'kr' ? '모리빌딩 (도쿄)' : 'Mori Building (Tokyo)'}
                         </div>
                         <div className="text-white font-black text-[24px]">+</div>
-                        <div className="bg-white/10 text-white font-bold text-[18px] md:text-[22px] px-5 py-3 rounded-xl break-keep text-center w-full md:w-auto">
+                        <div className="bg-blue-600 text-white font-bold text-[18px] md:text-[22px] px-5 py-3 rounded-xl shadow-[0_0_15px_rgba(37,99,235,0.5)] break-keep text-center w-full md:w-auto">
                             {lang === 'kr' ? 'Hong Kong Land (센트럴)' : 'Hong Kong Land (Central)'}
                         </div>
                         <div className="text-white font-black text-[24px]">+</div>
