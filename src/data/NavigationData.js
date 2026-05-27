@@ -77,7 +77,7 @@ export const menuDataEn = [
                 title: "Chapter 6",
                 items: [
                     { label: "Lineage of Trophy Assets 2007~2026", id: "page-39" },
-                    { label: "Trajectory of Absolute Coordinates", id: "page-40" },
+                    { label: "Trophy Asset Lineage", id: "page-40" },
                     { label: "Legacy of Global Capital Inflow by IFC", id: "page-41" }
                 ]
             }
@@ -179,7 +179,7 @@ export const menuDataKr = [
                 title: "Chapter 6",
                 items: [
                     { label: "2007~2026 트로피 자산의 계보", id: "page-39" },
-                    { label: "스카이라인을 바꾼 절대 좌표의 궤적", id: "page-40" },
+                    { label: "트로피 자산 계보", id: "page-40" },
                     { label: "IFC 서울이 남긴 글로벌 자본 유입의 유산", id: "page-41" }
                 ]
             }

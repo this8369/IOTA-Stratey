@@ -25,30 +25,46 @@ export default function Section39({ isActive }) {
         {
             period: '2001~2002',
             title: lang === 'kr' ? '원조 트로피' : 'Original Trophies',
-            assets: 'SFC (CBD) / GFC (GBD)',
-            color: 'from-blue-500 to-blue-600',
-            bg: 'bg-[#f0f7ff] text-[#1e3a8a] border-2 border-[#93c5fd]'
+            assets: 'SFC (CBD)\nGFC (GBD)',
+            color: 'from-blue-600 to-blue-800',
+            bg: 'bg-blue-900 border-[6px] border-blue-950',
+            divider: 'bg-blue-800',
+            textTitle: 'text-white',
+            textPeriod: 'text-blue-300',
+            textAssets: 'text-white'
         },
         {
             period: '2012~2018',
-            title: lang === 'kr' ? '게임체인저 & 랜드마크 확산' : 'Game Changers & Expansion',
-            assets: 'IFC 서울 / 그랑서울 / 롯데월드타워 / 센트로폴리스',
-            color: 'from-blue-500 to-blue-600',
-            bg: 'bg-[#f0f7ff] text-[#1e3a8a] border-2 border-[#93c5fd]'
+            title: lang === 'kr' ? '게임체인저 & 랜드마크' : 'Game Changers & Expansion',
+            assets: 'IFC 서울\n그랑서울\n롯데월드타워\n센트로폴리스',
+            color: 'from-blue-700 to-blue-900',
+            bg: 'bg-blue-950 border-[6px] border-blue-900',
+            divider: 'bg-blue-800',
+            textTitle: 'text-white',
+            textPeriod: 'text-blue-300',
+            textAssets: 'text-white'
         },
         {
             period: '2020~2022',
-            title: lang === 'kr' ? '대규모 복합/프라임 자산' : 'Mega Complex & Prime',
-            assets: '파크원 / 알파돔시티 / K-Square Citi / Tower 8',
-            color: 'from-blue-500 to-blue-600',
-            bg: 'bg-[#f0f7ff] text-[#1e3a8a] border-2 border-[#93c5fd]'
+            title: lang === 'kr' ? '대규모 복합/프라임' : 'Mega Complex & Prime',
+            assets: '파크원\n알파돔시티\nK-Square Citi\nTower 8',
+            color: 'from-indigo-600 to-blue-800',
+            bg: 'bg-blue-800 border-[6px] border-blue-900',
+            divider: 'bg-blue-700',
+            textTitle: 'text-white',
+            textPeriod: 'text-blue-300',
+            textAssets: 'text-white'
         },
         {
             period: '2025~2031',
             title: lang === 'kr' ? '차세대 랜드마크' : 'Next-Gen Landmarks',
-            assets: 'ONE CENTINEL (2025) / IOTA Seoul (2032)',
-            color: 'from-blue-500 to-blue-600',
-            bg: 'bg-[#f0f7ff] text-[#1e3a8a] border-2 border-[#93c5fd]'
+            assets: 'ONE CENTINEL (2025)\nIOTA Seoul (2032)',
+            color: 'from-blue-800 to-indigo-900',
+            bg: 'bg-[#0f172a] border-[6px] border-[#1e293b]',
+            divider: 'bg-[#334155]',
+            textTitle: 'text-white',
+            textPeriod: 'text-blue-300',
+            textAssets: 'text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300'
         }
     ];
 
@@ -66,23 +82,26 @@ export default function Section39({ isActive }) {
                     {lang === 'kr' ? '2002년 SFC에서 2032년 IOTA 서울에 이르기까지의 트로피 시계열' : 'Trophy Time Series from SFC (2002) to IOTA Seoul (2032)'}
                 </h2>
 
-                <div className="relative w-full max-w-[1200px] mt-[60px] mb-[40px] flex flex-col items-center justify-center z-10">
+                <div className="relative w-full max-w-[1200px] mt-[50px] mb-[30px] flex flex-col items-center justify-center z-10">
                     
                     {/* Horizontal Timeline Line */}
-                    <div className="absolute top-[65%] left-0 w-full h-1.5 bg-blue-100 rounded-full">
-                        <div className={`h-full bg-blue-500 rounded-full transition-all duration-[2000ms] ease-in-out`} style={{ width: step >= 2 ? '100%' : '0%' }}></div>
+                    <div className="absolute top-[50%] left-0 w-full h-1.5 bg-gray-200 rounded-full">
+                        <div className={`h-full bg-blue-600 rounded-full transition-all duration-[2000ms] ease-in-out`} style={{ width: step >= 2 ? '100%' : '0%' }}></div>
                     </div>
 
                     <div className="w-full grid grid-cols-4 gap-6 relative z-10">
                         {timelineData.map((item, idx) => (
-                            <div key={idx} className={`flex flex-col items-center transition-all duration-1000 ${step >= idx + 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-                                <div className={`w-12 h-12 rounded-full bg-gradient-to-br ${item.color} flex items-center justify-center text-white font-black shadow-lg mb-6 border-4 border-white`}>
+                            <div key={idx} className={`flex flex-col items-center transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= idx + 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                                <div className={`w-12 h-12 rounded-full bg-gradient-to-br ${item.color} flex items-center justify-center text-white font-black shadow-lg mb-6 border-4 border-white z-20`}>
                                     {idx + 1}
                                 </div>
-                                <div className={`w-full flex flex-col items-center p-6 rounded-2xl ${item.bg} shadow-sm h-full`}>
-                                    <span className="font-black text-[24px] mb-2">{item.period}</span>
-                                    <span className="font-bold text-[18px] opacity-80 mb-4">{item.title}</span>
-                                    <p className="font-bold text-[20px] leading-snug break-keep">{item.assets}</p>
+                                <div className={`w-full flex flex-col items-center p-6 rounded-[30px] ${item.bg} shadow-xl h-[280px] justify-center`}>
+                                    <div className={`text-[24px] font-black ${item.textTitle} mb-2 break-keep`}>{item.title}</div>
+                                    <div className={`text-[16px] font-bold ${item.textPeriod} mb-4`}>{item.period}</div>
+                                    <div className={`w-full h-[1px] ${item.divider} mb-5`}></div>
+                                    <p className={`font-black text-[22px] leading-[1.4] break-keep ${item.textAssets} whitespace-pre-line`}>
+                                        {item.assets}
+                                    </p>
                                 </div>
                             </div>
                         ))}
@@ -90,19 +109,19 @@ export default function Section39({ isActive }) {
                 </div>
 
                 {/* Summarized Bottom Text */}
-                <div className={`mt-[20px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 6 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 6 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-blue-500">▪</span><span><strong>1조→2조 달러 구간의 역사</strong>: 서울의 주요 거점을 중심으로 글로벌 자본을 유입시킨 트로피 랜드마크들이 시계열적으로 등장</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-blue-500">▪</span><span><strong>권역별 거점 구축</strong>: 2000년대 초반 원조 트로피(SFC/GFC)에서 시작해 IFC, 롯데월드타워, 파크원 등 메가 콤플렉스로 진화</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-blue-500">▪</span><span><strong>차세대 트로피 공급</strong>: 2025년 이후 ONE CENTINEL 및 IOTA Seoul(2032) 등 신규 랜드마크 공급 예정</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span><strong>1조→2조 달러 구간의 역사</strong>: 서울의 주요 거점을 중심으로 글로벌 자본을 유입시킨 트로피 랜드마크들이 시계열적으로 등장</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span><strong>권역별 거점 구축</strong>: 2000년대 초반 원조 트로피(SFC/GFC)에서 시작해 IFC, 롯데월드타워, 파크원 등 메가 콤플렉스로 진화</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span><strong>차세대 트로피 공급</strong>: 2025년 이후 ONE CENTINEL 및 IOTA Seoul(2032) 등 신규 랜드마크 공급 예정</span></li>
                             </>
                         ) : (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-blue-500">▪</span><span><strong>$1T to $2T Era</strong>: Trophy landmarks attracting global capital emerged sequentially across Seoul's major hubs.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-blue-500">▪</span><span><strong>Evolution of Core Landmarks</strong>: Starting from original trophies (SFC/GFC) in the 2000s, evolving into mega complexes like IFC and Parc.1.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-blue-500">▪</span><span><strong>Next-Gen Trophies</strong>: Introduction of new landmarks including ONE CENTINEL (2025) and IOTA Seoul (2032).</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span><strong>$1T to $2T Era</strong>: Trophy landmarks attracting global capital emerged sequentially across Seoul's major hubs.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span><strong>Evolution of Core Landmarks</strong>: Starting from original trophies (SFC/GFC) in the 2000s, evolving into mega complexes like IFC and Parc.1.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span><strong>Next-Gen Trophies</strong>: Introduction of new landmarks including ONE CENTINEL (2025) and IOTA Seoul (2032).</span></li>
                             </>
                         )}
                     </ul>
