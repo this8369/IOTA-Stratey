@@ -30,13 +30,13 @@ export default function Section72({ isActive }) {
                 {/* Custom Infographic */}
                 <div className="w-full max-w-[1000px] mt-[20px] mb-[20px] flex flex-col items-center transition-all duration-1000">
                     
-                    <div className={`w-full bg-[#1d1d1f] text-white p-6 shadow-2xl relative z-20 transition-all duration-1000 delay-100 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                        <div className="text-[18px] font-bold text-gray-400 mb-2 uppercase tracking-widest">Industry Leaders 주도</div>
-                        <div className="flex flex-wrap justify-center gap-6 mt-4">
-                            <span className="text-[28px] font-black">쿠팡</span>
-                            <span className="text-[28px] font-black">CJ대한통운</span>
-                            <span className="text-[28px] font-black">네이버</span>
-                            <span className="text-[28px] font-black">LG CNS</span>
+                    <div className={`w-full bg-[#1d1d1f] text-white py-4 px-6 shadow-2xl relative z-20 transition-all duration-1000 delay-100 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                        <div className="text-[18px] font-bold text-gray-400 uppercase tracking-widest">Industry Leaders 주도</div>
+                        <div className="flex flex-wrap justify-center gap-6 mt-2">
+                            <span className="text-[28px] font-black leading-none">쿠팡</span>
+                            <span className="text-[28px] font-black leading-none">CJ대한통운</span>
+                            <span className="text-[28px] font-black leading-none">네이버</span>
+                            <span className="text-[28px] font-black leading-none">LG CNS</span>
                         </div>
                     </div>
 
