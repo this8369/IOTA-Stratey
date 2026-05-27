@@ -37,28 +37,28 @@ export default function Section70({ isActive }) {
                         <div className="text-[20px] font-bold text-gray-400 mb-2">2030년 168조 원</div>
                         <div className="text-[40px] text-gray-500 font-black my-2 leading-none">↓</div>
                         <div className="text-[24px] font-bold text-white mb-2">2040년 시장 규모</div>
-                        <div className="text-[100px] font-black text-yellow-400 leading-none tracking-tighter">300<span className="text-[50px] text-white font-bold ml-1">조 원+</span></div>
+                        <div className="font-black text-yellow-400 leading-none tracking-tighter" style={{ fontSize: '120px' }}>300<span className="text-white font-bold ml-1" style={{ fontSize: '50px' }}>조 원+</span></div>
                         <div className="w-full border-t-[2px] border-gray-600 mt-6 pt-4">
                             <div className="text-[20px] font-bold text-gray-300">침투율 0.6% ➔ 3~5% 확장 시<br/><span className="text-white text-[24px]">신규 공급 50만 호 이상 필요</span></div>
                         </div>
                     </div>
 
                     {/* Platform Strategy */}
-                    <div className={`flex-[1.5] bg-gray-50 border-[6px] border-gray-300 p-10 flex flex-col justify-center shadow-lg transition-all duration-1000 delay-300 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
-                        <div className="text-[24px] font-black text-gray-800 mb-6 border-b-[4px] border-gray-300 pb-4 inline-block mx-auto">이지스 시니어 플랫폼의 비전</div>
+                    <div className={`flex-[1.5] bg-gray-50 border-[6px] border-gray-300 py-4 px-10 flex flex-col justify-center shadow-lg transition-all duration-1000 delay-300 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
+                        <div className="text-[24px] font-black text-gray-800 mb-2 inline-block mx-auto">이지스 시니어 플랫폼의 비전</div>
                         
-                        <div className="flex flex-col w-full gap-4">
+                        <div className="flex flex-col w-full gap-2">
                             <div className="bg-white border-[3px] border-[#1d1d1f] p-4 flex items-center justify-between shadow-sm">
-                                <div className="text-[22px] font-bold text-[#888]">블랙스톤 BREIT</div>
+                                <div className="text-[22px] font-black text-[#1d1d1f]">블랙스톤 BREIT</div>
                                 <div className="text-[16px] font-bold text-gray-500">압도적 펀딩·스케일업</div>
                             </div>
-                            <div className="flex justify-center text-[30px] font-black text-gray-400">+</div>
+                            <div className="flex justify-center text-[30px] font-black text-gray-400 -my-1">+</div>
                             <div className="bg-white border-[3px] border-[#1d1d1f] p-4 flex items-center justify-between shadow-sm">
-                                <div className="text-[22px] font-bold text-[#888]">미국 Welltower 모델</div>
+                                <div className="text-[22px] font-black text-[#1d1d1f]">미국 Welltower 모델</div>
                                 <div className="text-[16px] font-bold text-gray-500">헬스케어·운영 전문성 결합</div>
                             </div>
-                            <div className="flex justify-center text-[30px] font-bold text-[#888] mt-2">↓</div>
-                            <div className="bg-[#1d1d1f] p-6 text-center shadow-xl">
+                            <div className="flex justify-center text-[30px] font-black text-[#1d1d1f] -my-2">↓</div>
+                            <div className="bg-[#1d1d1f] p-4 text-center shadow-xl">
                                 <div className="text-[26px] font-black text-white">한국형 압도적 시니어 REIT 모델 진화</div>
                             </div>
                         </div>
