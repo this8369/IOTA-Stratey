@@ -20,12 +20,12 @@ export default function Section46({ isActive }) {
                         Bear Scenario (확률 20%)
                     </span>
                     <h2 className="text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em]">
-                        지정학적 갈등 및 구조적 모순 심화에 따른<br/>일본식 "잃어버린 10년" 진입
+                        지정학적 갈등 및 구조적 모순<br/>심화에 따른<br/>일본식 "잃어버린 10년" 진입
                     </h2>
                 </div>
 
                 {/* Right Side: Stats & Assumptions (Sharp Box, Large Text) */}
-                <div className={`flex-[0.8] w-full max-w-[550px] bg-[#fff8f8] rounded-none p-8 md:p-12 border-[6px] border-red-200 lg:-translate-x-[40px] transition-all duration-[1000ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                <div className={`flex-[0.8] w-full max-w-[590px] bg-[#fff8f8] rounded-none p-8 md:p-12 border-[6px] border-red-200 lg:-translate-x-[40px] transition-all duration-[1000ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                     <div className="space-y-8">
                         <div>
                             <p className="text-red-500 text-[16px] md:text-[17px] font-bold mb-2 uppercase">2030년 예상 GDP</p>

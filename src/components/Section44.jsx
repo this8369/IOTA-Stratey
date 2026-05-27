@@ -25,7 +25,7 @@ export default function Section44({ isActive }) {
                 </div>
 
                 {/* Right Side: Stats & Assumptions (Sharp Box, Large Text) */}
-                <div className={`flex-[0.8] w-full max-w-[550px] bg-gray-50 rounded-none p-8 md:p-12 border-[6px] border-gray-200 lg:-translate-x-[40px] transition-all duration-[1000ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                <div className={`flex-[0.8] w-full max-w-[590px] bg-gray-50 rounded-none p-8 md:p-12 border-[6px] border-gray-200 lg:-translate-x-[40px] transition-all duration-[1000ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                     <div className="space-y-8">
                         <div>
                             <p className="text-gray-400 text-[16px] md:text-[17px] font-bold mb-2 uppercase">2030년 예상 GDP</p>
