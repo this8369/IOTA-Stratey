@@ -12,10 +12,10 @@ export default function Section46({ isActive }) {
 
     return (
         <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
-            <div className="w-full max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-12 lg:gap-24 items-center">
+            <div className="w-full max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-10 lg:gap-[40px] items-center justify-center">
                 
                 {/* Left Side: Theme & Title */}
-                <div className={`flex-1 transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                <div className={`shrink-0 transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#e11d48] uppercase tracking-[-0.02em] mb-[12px]">
                         Bear Scenario (확률 20%)
                     </span>
@@ -25,7 +25,7 @@ export default function Section46({ isActive }) {
                 </div>
 
                 {/* Right Side: Stats & Assumptions (Sharp Box, Large Text) */}
-                <div className={`flex-[0.8] w-full max-w-[590px] bg-[#fff8f8] rounded-none p-8 md:py-8 md:px-12 border-[6px] border-red-200 lg:-translate-x-[90px] transition-all duration-[1000ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                <div className={`shrink-0 w-full max-w-[590px] bg-[#fff8f8] rounded-none p-8 md:py-8 md:px-12 border-[6px] border-red-200 transition-all duration-[1000ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                     <div className="space-y-6">
                         <div>
                             <p className="text-red-500 text-[16px] md:text-[17px] font-bold mb-2 uppercase">2030년 예상 GDP</p>
