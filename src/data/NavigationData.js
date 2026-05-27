@@ -21,7 +21,7 @@ export const menuDataEn = [
         id: "page-9", 
         chapters: [
             {
-                title: "Chapter 1. 1조 달러에서 2조 달러로...",
+                title: "Chapter 1. 거시 좌표의 이동",
                 id: "page-10",
                 items: [
                     { label: "Opening of the $1 Trillion Era", id: "page-11" },
@@ -74,7 +74,7 @@ export const menuDataEn = [
                 ]
             },
             {
-                title: "Chapter 6. Lineage of Trophy Assets 2007~2026",
+                title: "Chapter 6. 트로피 자산의 계보",
                 id: "page-39",
                 items: [
                     { label: "Trophy Asset Lineage", id: "page-40" },
@@ -123,7 +123,7 @@ export const menuDataKr = [
         id: "page-9", 
         chapters: [
             {
-                title: "Chapter 1. 1조 달러에서 2조 달러로 거시 좌표의 이동",
+                title: "Chapter 1. 거시 좌표의 이동",
                 id: "page-10",
                 items: [
                     { label: "1조 달러 시대의 개막과 담금질", id: "page-11" },
@@ -176,7 +176,7 @@ export const menuDataKr = [
                 ]
             },
             {
-                title: "Chapter 6. 2007~2026 트로피 자산의 계보",
+                title: "Chapter 6. 트로피 자산의 계보",
                 id: "page-39",
                 items: [
                     { label: "트로피 자산 계보", id: "page-40" },
