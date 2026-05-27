@@ -167,7 +167,16 @@ export const menuDataEn = [
     { 
         title: "Part 3. Strategic Positioning", 
         id: "", 
-        chapters: [] 
+        chapters: [
+            {
+                title: "Chapter 8. Prime Office Rent Global Comparison",
+                id: "page-83",
+                items: [
+                    { label: "Global Rent Comparison", id: "page-84" },
+                    { label: "Convergence Trade", id: "page-85" }
+                ]
+            }
+        ] 
     },
     { 
         title: "Part 4. IOTA Execution Strategy", 
@@ -345,7 +354,16 @@ export const menuDataKr = [
     { 
         title: "Part 3. 전략 포지셔닝", 
         id: "", 
-        chapters: [] 
+        chapters: [
+            {
+                title: "Chapter 8. 프라임 오피스 임대료 국제 비교",
+                id: "page-83",
+                items: [
+                    { label: "턱없이 싼 서울 임대료", id: "page-84" },
+                    { label: "Convergence Trade", id: "page-85" }
+                ]
+            }
+        ] 
     },
     { 
         title: "Part 4. IOTA 실행전략", 
