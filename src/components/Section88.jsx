@@ -44,28 +44,28 @@ export default function Section88({ isActive }) {
                     <div className={`bg-[#1e3a8a] rounded-lg p-6 shadow-md flex flex-col items-center justify-center relative transition-all duration-[800ms] delay-[100ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} min-h-[160px]`}>
                         <div className="absolute top-4 left-4 text-blue-300 font-black text-[14px] opacity-80">02</div>
                         <h3 className="font-extrabold text-[22px] md:text-[24px] text-white break-keep leading-tight text-center">
-                            {lang === 'kr' ? <>운용 수수료 마진 구조<br/>개선</> : <>Improving Fee Margin<br/>Structure</>}
+                            {lang === 'kr' ? <>운용수수료 마진<br/>구조 개선</> : <>Improving Fee Margin<br/>Structure</>}
                         </h3>
                     </div>
                     {/* Req 3 */}
                     <div className={`bg-[#1e3a8a] rounded-lg p-6 shadow-md flex flex-col items-center justify-center relative transition-all duration-[800ms] delay-[200ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} min-h-[160px]`}>
                         <div className="absolute top-4 left-4 text-blue-300 font-black text-[14px] opacity-80">03</div>
                         <h3 className="font-extrabold text-[22px] md:text-[24px] text-white break-keep leading-tight text-center">
-                            {lang === 'kr' ? <>영구 자본<br/>(Permanent Capital) 확대</> : <>Expanding<br/>Permanent Capital</>}
+                            {lang === 'kr' ? <>영구 자본<br/>확대</> : <>Expanding<br/>Permanent Capital</>}
                         </h3>
                     </div>
                     {/* Req 4 */}
                     <div className={`bg-[#1e3a8a] rounded-lg p-6 shadow-md flex flex-col items-center justify-center relative transition-all duration-[800ms] delay-[300ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} min-h-[160px]`}>
                         <div className="absolute top-4 left-4 text-blue-300 font-black text-[14px] opacity-80">04</div>
                         <h3 className="font-extrabold text-[22px] md:text-[24px] text-white break-keep leading-tight text-center">
-                            {lang === 'kr' ? <>다전략(Multi-strategy)<br/>플랫폼화</> : <>Multi-strategy<br/>Platformization</>}
+                            {lang === 'kr' ? <>Multi-strategy<br/>플랫폼화</> : <>Multi-strategy<br/>Platformization</>}
                         </h3>
                     </div>
                 </div>
 
                 {/* Blackstone Timeline */}
-                <div className={`w-full max-w-[1000px] bg-gray-50 border border-gray-200 rounded-2xl p-8 md:p-12 mb-10 transition-all duration-1000 ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
-                    <h4 className="font-bold text-gray-500 mb-10 text-[18px] md:text-[20px]">
+                <div className={`w-full max-w-[1000px] bg-gray-50 border border-gray-200 rounded-2xl py-6 px-8 md:py-8 md:px-12 mb-8 transition-all duration-1000 ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
+                    <h4 className="font-bold text-gray-500 mb-6 text-[18px] md:text-[20px]">
                         {lang === 'kr' ? 'Reference: 블랙스톤의 40년 진화 패턴 (한국 압축 버전 목표)' : 'Reference: Blackstone\'s 40-year Evolution Pattern (Goal: Korean Compressed Version)'}
                     </h4>
                     
