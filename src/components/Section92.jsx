@@ -28,7 +28,7 @@ export default function Section92({ isActive }) {
                 </div>
 
                 <h2 className={`text-[32px] md:text-[42px] lg:text-[48px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-12 transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    {lang === 'kr' ? <>공적 연금 가입자 다이렉트 마케팅과 헬스케어 솔루션이 결합된 방어막 제로의 블루오션</> : <>A Defenseless Blue Ocean Combining Public Pension D2C Marketing & Healthcare Solutions</>}
+                    {lang === 'kr' ? <>연기금 D2C와 헬스케어를 결합한 시니어 하우징 블루오션</> : <>Senior Housing Blue Ocean Combining Pension D2C & Healthcare</>}
                 </h2>
 
                 <div className="w-full max-w-[1100px] grid grid-cols-1 md:grid-cols-12 gap-6 mb-8 relative">

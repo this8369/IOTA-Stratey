@@ -28,7 +28,7 @@ export default function Section91({ isActive }) {
                 </div>
 
                 <h2 className={`text-[32px] md:text-[42px] lg:text-[48px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-12 transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    {lang === 'kr' ? <>수도권 전력망을 선점하고 하이퍼스케일러를 묶어세울 독자적 데이터센터 비히클</> : <>Independent Data Center Vehicle Securing Metropolitan Power Grids & Hyperscalers</>}
+                    {lang === 'kr' ? <>전력망 선점과 빅테크 록인, 독자 상장형 DC REIT</> : <>Independent Listed DC REIT via Power Grid Preemption & Big Tech Lock-in</>}
                 </h2>
 
                 <div className="w-full max-w-[1100px] grid grid-cols-1 md:grid-cols-12 gap-6 mb-8 relative">
