@@ -92,10 +92,10 @@ export default function Section39({ isActive }) {
                     <div className="w-full grid grid-cols-4 gap-6 relative z-10">
                         {timelineData.map((item, idx) => (
                             <div key={idx} className={`flex flex-col items-center transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= idx + 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-                                <div className={`w-12 h-12 rounded-full bg-gradient-to-br ${item.color} flex items-center justify-center text-white font-black shadow-lg mb-6 border-4 border-white z-20`}>
+                                <div className={`w-12 h-12 rounded-full bg-gradient-to-br ${item.color} flex items-center justify-center text-white font-black mb-6 z-20 translate-y-[6px]`}>
                                     {idx + 1}
                                 </div>
-                                <div className={`w-full flex flex-col items-center p-6 rounded-[30px] ${item.bg} shadow-xl h-[280px] justify-center`}>
+                                <div className={`w-full flex flex-col items-center pt-8 px-6 pb-6 rounded-[30px] ${item.bg} shadow-xl h-[290px] justify-start`}>
                                     <div className={`text-[24px] font-black ${item.textTitle} mb-2 break-keep`}>{item.title}</div>
                                     <div className={`text-[16px] font-bold ${item.textPeriod} mb-4`}>{item.period}</div>
                                     <div className={`w-full h-[1px] ${item.divider} mb-5`}></div>
