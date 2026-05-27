@@ -56,7 +56,7 @@ export default function MainLayout({ isNavOpen }) {
  return 0;
  });
 
-    const slides = [<Section1 />, <SectionExecutiveSummary />, <Section2 />, <Section3 />, <Section4 />, <Section5 />, <Section6 />, <Section7 />, <Section8 />, <Section9 />, <Section10 />, <Section11 />, <Section12 />, <Section13 />, <Section14 />, <Section15 />, <Section16 />, <Section17 />, <Section18 />, <Section19 />, <Section20 />, <Section21 />, <Section22 />, <Section23 />, <Section24 />, <Section25 />, <Section26 />, <Section27 />, <Section28 />, <Section29 />, <Section30 />, <Section31 />, <Section32 />, <Section33 />, <Section34 />, <Section35 />, <Section36 />, <Section37 />, <Section38 />, <Section39 />, <Section40 />];
+    const slides = [<Section1 />, <SectionExecutiveSummary />, <Section2 />, <Section3 />, <Section4 />, <Section5 />, <Section6 />, <Section7 />, <Section8 />, <Section9 />, <Section10 />, <Section11 />, <Section12 />, <Section13 />, <Section14 />, <Section15 />, <Section16 />, <Section17 />, <Section18 />, <Section19 />, <Section20 />, <Section21 />, <Section22 />, <Section23 />, <Section24 />, <Section25 />, <Section26 />, <Section27 />, <Section28 />, <Section29 />, <Section30 />, <Section31 />, <Section32 />, <Section33 />, <Section34 />, <Section35 />, <Section36 />, <Section37 />, <Section38 />, <Section39 />, <Section40 />, <Section41 />];
 
     const [isActionDone, setIsActionDone] = useState(false);
 
