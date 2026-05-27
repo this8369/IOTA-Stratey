@@ -37,7 +37,7 @@ export default function Section76({ isActive }) {
                         <div className="absolute -top-5 bg-gray-300 text-gray-800 px-6 py-2 font-black text-[18px] uppercase tracking-wider">
                             1996~2000
                         </div>
-                        <h3 className="text-[28px] font-black text-gray-700 mt-4 mb-2">{lang === 'kr' ? 'IMF 외환위기 시대' : 'IMF Crisis Era'}</h3>
+                        <h3 className="text-[36px] md:text-[42px] font-black text-gray-700 mt-4 mb-4 leading-tight">{lang === 'kr' ? 'IMF 외환위기 시대' : 'IMF Crisis Era'}</h3>
                         <div className="text-[20px] font-bold text-gray-500 mb-6">{lang === 'kr' ? '자산 헐값 매각 (Fire Sale)' : 'Fire Sale of Assets'}</div>
                         <p className="text-[18px] font-medium text-gray-600 break-keep">
                             {lang === 'kr' ? '거시 경제의 붕괴로 인해 생존을 위해 알짜 자산과 빌딩들을 외국계 자본에 헐값으로 넘겨야 했던 시기' : 'A period of handing over prime assets to foreign capital at rock-bottom prices for survival due to macro collapse'}
@@ -53,12 +53,12 @@ export default function Section76({ isActive }) {
                     </div>
 
                     {/* Present/Future (Premium) */}
-                    <div className={`flex-1 w-full bg-white border-[6px] border-[#1d1d1f] p-10 flex flex-col items-center text-center shadow-2xl relative transition-all duration-1000 delay-300 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
-                        <div className="absolute -top-5 bg-[#1d1d1f] text-white px-6 py-2 font-black text-[18px] uppercase tracking-wider">
+                    <div className={`flex-1 w-full bg-white border-[6px] border-[#1e3a8a] p-10 flex flex-col items-center text-center shadow-2xl relative transition-all duration-1000 delay-300 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
+                        <div className="absolute -top-5 bg-[#1e3a8a] text-white px-6 py-2 font-black text-[18px] uppercase tracking-wider">
                             2025~2030 (Now)
                         </div>
-                        <h3 className="text-[28px] font-black text-[#1d1d1f] mt-4 mb-2">{lang === 'kr' ? '첫 프리미엄 매입 사이클' : 'First Premium Acquisition Cycle'}</h3>
-                        <div className="text-[20px] font-bold text-[#1d1d1f] mb-6">{lang === 'kr' ? '글로벌 자본의 핵심 트렌드' : 'Core Trend of Global Capital'}</div>
+                        <h3 className="text-[36px] md:text-[42px] font-black text-[#1e3a8a] mt-4 mb-4 leading-tight">{lang === 'kr' ? '첫 프리미엄 매입 사이클' : 'First Premium Acquisition Cycle'}</h3>
+                        <div className="text-[20px] font-bold text-[#1e3a8a] mb-6">{lang === 'kr' ? '글로벌 자본의 핵심 트렌드' : 'Core Trend of Global Capital'}</div>
                         <p className="text-[18px] font-medium text-gray-800 break-keep">
                             {lang === 'kr' ? '과거와 정반대로, 이제는 프리미엄 가격을 지불하고서라도 한국의 트로피 자산을 매입하려는 글로벌 펀드들의 본격 진입기' : 'Conversely, global funds are now fully entering to acquire Korea\'s trophy assets even if paying a premium price'}
                         </p>

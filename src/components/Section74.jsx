@@ -37,13 +37,13 @@ export default function Section74({ isActive }) {
                         <div className="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center mb-6">
                             <span className="text-[32px]">🏛️</span>
                         </div>
-                        <h3 className="text-[28px] font-black text-[#1d1d1f] mb-2">{lang === 'kr' ? '6.1 IOTA 서울' : '6.1 IOTA Seoul'}</h3>
-                        <div className="text-[18px] font-bold text-gray-500 mb-6">{lang === 'kr' ? '(2029~2031 준공 예정)' : '(Est. Completion: 2029~2031)'}</div>
+                        <h3 className="text-[28px] font-black text-[#1d1d1f] mb-2">{lang === 'kr' ? 'IOTA 서울' : 'IOTA Seoul'}</h3>
+                        <div className="text-[18px] font-bold text-gray-500 mb-6">{lang === 'kr' ? '(2032 준공예정)' : '(Est. Completion: 2032)'}</div>
                         
                         <div className="w-full h-[1px] bg-gray-200 mb-6"></div>
                         
                         <p className="text-[20px] font-bold text-gray-700 break-keep leading-snug px-4">
-                            {lang === 'kr' ? '본 보고서의 핵심 대상이자, 강남권역(GBD) 트로피 자산의 새로운 기준점' : 'The core subject of this report, establishing a new benchmark for Trophy Assets in GBD'}
+                            {lang === 'kr' ? '본 보고서의 핵심 대상이자, 트로피 자산의 새로운 기준점' : 'The core subject of this report, establishing a new benchmark for Trophy Assets'}
                         </p>
                     </div>
 
@@ -52,7 +52,7 @@ export default function Section74({ isActive }) {
                         <div className="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mb-6">
                             <span className="text-[32px]">🏗️</span>
                         </div>
-                        <h3 className="text-[28px] font-black text-[#1d1d1f] mb-2">{lang === 'kr' ? '6.2 현대차 GBC' : '6.2 Hyundai GBC'}</h3>
+                        <h3 className="text-[28px] font-black text-[#1d1d1f] mb-2">{lang === 'kr' ? '현대차 GBC' : 'Hyundai GBC'}</h3>
                         <div className="text-[18px] font-bold text-gray-500 mb-6">{lang === 'kr' ? '(삼성동, 2029~2030 준공 예정)' : '(Samsung-dong, Est. Completion: 2029~2030)'}</div>
                         
                         <div className="w-full h-[1px] bg-gray-200 mb-6"></div>

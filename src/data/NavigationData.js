@@ -144,7 +144,7 @@ export const menuDataEn = [
                 ]
             },
             {
-                title: "Chapter 6. Trophy Asset 2027~2040 Pipeline",
+                title: "Chapter 6. Trophy Asset Pipeline",
                 id: "page-74",
                 items: [
                     { label: "IOTA Seoul & GBC", id: "page-75" },
@@ -312,7 +312,7 @@ export const menuDataKr = [
                 ]
             },
             {
-                title: "Chapter 6. 트로피 자산 2027~2040 파이프라인",
+                title: "Chapter 6. 트로피자산 파이프라인",
                 id: "page-74",
                 items: [
                     { label: "IOTA 서울 & GBC", id: "page-75" },

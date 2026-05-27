@@ -16,7 +16,7 @@ export default function Section73({ isActive }) {
         <section className="section w-full h-full bg-[#1d1d1f] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <style>{`
                 .gradient-text-ch6 {
-                    background: linear-gradient(90deg, #fcd34d, #f59e0b);
+                    background: linear-gradient(90deg, #c1e2dd, #587d94);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
@@ -28,7 +28,7 @@ export default function Section73({ isActive }) {
                     </span>
                 </div>
                 <h2 className={`text-[34px] md:text-[54px] lg:text-[66px] font-bold leading-[calc(1.3em-6px)] break-keep transition-all duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    <span className="gradient-text-ch6">{lang === 'kr' ? '트로피 자산 2027~2040 파이프라인' : 'Trophy Asset 2027~2040 Pipeline'}</span>
+                    <span className="gradient-text-ch6">{lang === 'kr' ? '트로피자산 파이프라인' : 'Trophy Asset Pipeline'}</span>
                 </h2>
             </div>
         </section>

@@ -27,7 +27,7 @@ export default function Section75({ isActive }) {
                 </div>
 
                 <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-12 transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    {lang === 'kr' ? <>도심 전역에서 동시다발적으로 전개되는 차세대 트로피 공급망</> : <>Next-gen Trophy Supply Chain unfolding simultaneously across Seoul</>}
+                    {lang === 'kr' ? <>주요 도심에서 전개되는 차세대 트로피 공급망</> : <>Next-gen Trophy Supply Chain unfolding across major urban cores</>}
                 </h2>
 
                 {/* 3-Box Layout */}
@@ -35,12 +35,11 @@ export default function Section75({ isActive }) {
                     
                     {/* Box 1: YIBD */}
                     <div className={`flex-1 bg-white border border-gray-200 shadow-lg hover:shadow-2xl transition-all duration-500 rounded-xl overflow-hidden flex flex-col ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-                        <div className="h-32 bg-gray-900 flex items-center justify-center relative overflow-hidden">
-                            <div className="absolute inset-0 bg-black/40 z-10"></div>
-                            <div className="z-20 text-[40px]">🚆</div>
-                        </div>
                         <div className="p-8 flex flex-col flex-1">
-                            <h3 className="text-[24px] font-black text-[#1d1d1f] mb-3">{lang === 'kr' ? '6.3 용산국제업무지구 (YIBD)' : '6.3 Yongsan Int\'l Business Dist. (YIBD)'}</h3>
+                            <div className="flex items-center gap-4 mb-4">
+                                <div className="text-[40px]">🚆</div>
+                                <h3 className="text-[22px] md:text-[24px] font-black text-[#1d1d1f] text-left leading-tight">{lang === 'kr' ? '용산국제업무지구 (YIBD)' : 'Yongsan Int\'l Business Dist. (YIBD)'}</h3>
+                            </div>
                             <div className="w-12 h-1 bg-gray-900 mb-6"></div>
                             <ul className="text-left space-y-3 flex-1">
                                 <li className="flex items-start">
@@ -61,12 +60,11 @@ export default function Section75({ isActive }) {
 
                     {/* Box 2: Yeouido */}
                     <div className={`flex-1 bg-white border border-gray-200 shadow-lg hover:shadow-2xl transition-all duration-500 rounded-xl overflow-hidden flex flex-col delay-150 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-                        <div className="h-32 bg-blue-900 flex items-center justify-center relative overflow-hidden">
-                            <div className="absolute inset-0 bg-blue-900/60 z-10"></div>
-                            <div className="z-20 text-[40px]">🏦</div>
-                        </div>
                         <div className="p-8 flex flex-col flex-1">
-                            <h3 className="text-[24px] font-black text-[#1d1d1f] mb-3">{lang === 'kr' ? '6.4 여의도 재개발' : '6.4 Yeouido Redevelopment'}</h3>
+                            <div className="flex items-center gap-4 mb-4">
+                                <div className="text-[40px]">🏦</div>
+                                <h3 className="text-[22px] md:text-[24px] font-black text-[#1d1d1f] text-left leading-tight">{lang === 'kr' ? '여의도 재개발' : 'Yeouido Redevelopment'}</h3>
+                            </div>
                             <div className="w-12 h-1 bg-blue-900 mb-6"></div>
                             <ul className="text-left space-y-3 flex-1">
                                 <li className="flex items-start">
@@ -87,12 +85,11 @@ export default function Section75({ isActive }) {
 
                     {/* Box 3: Jamsil MICE */}
                     <div className={`flex-1 bg-white border border-gray-200 shadow-lg hover:shadow-2xl transition-all duration-500 rounded-xl overflow-hidden flex flex-col delay-300 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-                        <div className="h-32 bg-purple-900 flex items-center justify-center relative overflow-hidden">
-                            <div className="absolute inset-0 bg-purple-900/60 z-10"></div>
-                            <div className="z-20 text-[40px]">🏟️</div>
-                        </div>
                         <div className="p-8 flex flex-col flex-1">
-                            <h3 className="text-[24px] font-black text-[#1d1d1f] mb-3">{lang === 'kr' ? '6.5 잠실 MICE' : '6.5 Jamsil MICE'}</h3>
+                            <div className="flex items-center gap-4 mb-4">
+                                <div className="text-[40px]">🏟️</div>
+                                <h3 className="text-[22px] md:text-[24px] font-black text-[#1d1d1f] text-left leading-tight">{lang === 'kr' ? '잠실 MICE' : 'Jamsil MICE'}</h3>
+                            </div>
                             <div className="w-12 h-1 bg-purple-900 mb-6"></div>
                             <ul className="text-left space-y-3 flex-1">
                                 <li className="flex items-start">
