@@ -29,7 +29,7 @@ export default function Section93({ isActive }) {
                 </div>
 
                 <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-[40px] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    {lang === 'kr' ? <>IOTA를 쇼케이스로 한 글로벌 LP 전용 특화 패키지, '이지스 트로피 시리즈'</> : <>'IGIS Trophy Series': Global LP Specialized Package Showcased by IOTA</>}
+                    {lang === 'kr' ? <>IOTA 기반 글로벌 LP 전용 패키지, '이지스 트로피 시리즈'</> : <>'IGIS Trophy Series': Global LP Package Based on IOTA</>}
                 </h2>
 
                 <div className="w-full max-w-[1100px] flex flex-col md:flex-row gap-6 mb-10 relative items-stretch">
