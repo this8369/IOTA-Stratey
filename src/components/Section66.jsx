@@ -38,22 +38,22 @@ export default function Section66({ isActive }) {
 
                     <div className="flex flex-col md:flex-row w-full items-stretch gap-6 mt-6">
                         {/* Losers */}
-                        <div className={`flex-1 border-[4px] border-gray-300 bg-gray-50 py-6 px-10 flex flex-col items-center text-center transition-all duration-1000 delay-100 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
-                            <div className="text-[60px] mb-6 grayscale opacity-80">📉</div>
-                            <div className="text-[28px] font-black text-gray-700 mb-4">가치 약세 및 횡보</div>
-                            <div className="w-[60%] border-t-[3px] border-gray-300 my-4"></div>
+                        <div className={`flex-1 border-[4px] border-gray-300 bg-gray-50 py-4 px-10 flex flex-col items-center text-center transition-all duration-1000 delay-100 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                            <div className="text-[60px] mb-2 grayscale opacity-80">📉</div>
+                            <div className="text-[28px] font-black text-gray-700 mb-1">가치 약세 및 횡보</div>
+                            
                             <div className="text-[20px] font-bold text-gray-600 mt-2">일반 등급 클래스(Class B) 공실 누적</div>
                             <div className="text-[20px] font-bold text-gray-600 mt-2">CBD 일부 노후 자산 임대료 약세</div>
                         </div>
 
                         {/* Winners (Shield) */}
-                        <div className={`flex-1 border-[6px] border-[#1d1d1f] bg-white py-6 px-10 flex flex-col items-center text-center shadow-2xl relative transition-all duration-1000 delay-300 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
+                        <div className={`flex-1 border-[6px] border-[#1d1d1f] bg-white py-4 px-10 flex flex-col items-center text-center shadow-2xl relative transition-all duration-1000 delay-300 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
                             <div className="absolute -top-5 bg-[#1d1d1f] text-white px-6 py-2 font-black text-[18px] uppercase tracking-wider">
                                 Safe Haven
                             </div>
-                            <div className="text-[60px] mb-6">🛡️</div>
-                            <div className="text-[28px] font-black text-[#1d1d1f] mb-4">절대적 방어력 (프리미엄 사수)</div>
-                            <div className="w-[60%] border-t-[3px] border-[#1d1d1f] my-4"></div>
+                            <div className="text-[60px] mb-2">🛡️</div>
+                            <div className="text-[28px] font-black text-[#1d1d1f] mb-1">절대적 방어력 (프리미엄 사수)</div>
+                            
                             <div className="text-[22px] font-black text-[#1d1d1f] mt-2">IOTA · GBC 신규 트로피 자산</div>
                             <div className="text-[18px] font-bold text-gray-700 mt-4 px-4">
                                 거시 하방 충격에도 GBD·삼성동 코어 수요 집중으로 견고한 가격 유지
