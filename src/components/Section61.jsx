@@ -31,7 +31,7 @@ export default function Section61({ isActive }) {
                 {/* Custom Infographic: Two Pillars */}
                 <div className="w-full max-w-[1000px] mt-[34px] mb-[40px] flex flex-col transition-all duration-[1000ms]">
                     
-                    <div className={`text-[20px] font-bold text-gray-500 mb-0 transition-all duration-1000 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className={`text-[20px] font-bold text-gray-500 mb-[10px] transition-all duration-1000 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         잠재성장률 하방 압력을 방어하기 위한 2대 핵심 전략
                     </div>
 
