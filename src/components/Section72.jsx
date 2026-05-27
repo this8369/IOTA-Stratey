@@ -40,12 +40,12 @@ export default function Section72({ isActive }) {
                         </div>
                     </div>
 
-                    <div className={`w-[90%] bg-white border-[6px] border-[#1d1d1f] py-6 px-10 shadow-lg relative z-10 -mt-2 transition-all duration-1000 delay-300 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                        <div className="text-[36px] font-bold text-[#888] mb-4">로봇 · AMR 친화 설계 (Robot-Friendly)</div>
-                        <div className="w-full flex flex-col md:flex-row justify-center gap-6 mt-4">
-                            <div className="flex-1 bg-gray-50 border-[2px] border-gray-200 p-4 font-bold text-gray-800 text-[18px]">초평탄 바닥 구조 및 하중 강화</div>
-                            <div className="flex-1 bg-gray-50 border-[2px] border-gray-200 p-4 font-bold text-gray-800 text-[18px]">물류 로봇 전용 동선 최적화</div>
-                            <div className="flex-1 bg-gray-50 border-[2px] border-gray-200 p-4 font-bold text-gray-800 text-[18px]">고전력 인입 및 5G 통신망 완비</div>
+                    <div className={`w-[90%] bg-white border-[6px] border-[#1d1d1f] py-4 px-8 shadow-lg relative z-10 -mt-2 transition-all duration-1000 delay-300 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                        <div className="text-[36px] font-bold text-[#888] mb-2">로봇 · AMR 친화 설계 (Robot-Friendly)</div>
+                        <div className="w-full flex flex-col md:flex-row justify-center gap-4 mt-2">
+                            <div className="flex-1 bg-gray-50 border-[2px] border-gray-200 py-3 px-2 font-bold text-gray-800 text-[17px] break-keep flex items-center justify-center text-center">초평탄 바닥 구조 및 하중 강화</div>
+                            <div className="flex-1 bg-gray-50 border-[2px] border-gray-200 py-3 px-2 font-bold text-gray-800 text-[17px] break-keep flex items-center justify-center text-center">물류 로봇 전용 동선 최적화</div>
+                            <div className="flex-1 bg-gray-50 border-[2px] border-gray-200 py-3 px-2 font-bold text-gray-800 text-[17px] break-keep flex items-center justify-center text-center">고전력 인입 및 5G 통신망 완비</div>
                         </div>
                     </div>
 
