@@ -27,12 +27,12 @@ export default function Section84({ isActive }) {
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-16 transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-[54px] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? <>신규 트로피가 도쿄 수렴점인 USD 150 이상으로<br/>도달할 것이라는 강력한 세일즈 논리</> : <>Powerful Sales Logic: New Trophies Reaching Tokyo Convergence Point of USD 150+</>}
                 </h2>
 
                 {/* Convergence Flow Infographic */}
-                <div className="w-full max-w-[1000px] flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 mb-16 relative">
+                <div className="w-full max-w-[1000px] flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 mb-[54px] relative">
                     
                     {/* Current State (2026) */}
                     <div className={`flex flex-col items-center justify-center w-[280px] h-[200px] bg-gray-50 border-2 border-gray-200 rounded-2xl shadow-sm transition-all duration-700 ${step >= 2 ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}>
