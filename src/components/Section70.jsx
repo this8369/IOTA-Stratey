@@ -37,7 +37,7 @@ export default function Section70({ isActive }) {
                         <div className="text-[20px] font-bold text-gray-400 mb-2">2030년 168조 원</div>
                         <div className="text-[40px] text-gray-500 font-black my-2 leading-none">↓</div>
                         <div className="text-[24px] font-bold text-white mb-2">2040년 시장 규모</div>
-                        <div className="font-black text-yellow-400 leading-none tracking-tighter" style={{ fontSize: '120px' }}>300<span className="text-white font-bold ml-1" style={{ fontSize: '50px' }}>조 원+</span></div>
+                        <div className="font-black text-yellow-400 leading-none tracking-tighter" style={{ fontSize: '90px' }}>300<span className="text-white font-bold ml-1" style={{ fontSize: '50px' }}>조 원+</span></div>
                         <div className="w-full border-t-[2px] border-gray-600 mt-6 pt-4">
                             <div className="text-[20px] font-bold text-gray-300">침투율 0.6% ➔ 3~5% 확장 시<br/><span className="text-white text-[24px]">신규 공급 50만 호 이상 필요</span></div>
                         </div>
