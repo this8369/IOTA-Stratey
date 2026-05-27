@@ -142,6 +142,15 @@ export const menuDataEn = [
                     { label: "Life Science / Cold Chain", id: "page-72" },
                     { label: "Robot-Friendly Warehouse", id: "page-73" }
                 ]
+            },
+            {
+                title: "Chapter 6. Trophy Asset 2027~2040 Pipeline",
+                id: "page-74",
+                items: [
+                    { label: "IOTA Seoul & GBC", id: "page-75" },
+                    { label: "Seoul Mega Projects", id: "page-76" },
+                    { label: "Foreign Capital Reversal", id: "page-77" }
+                ]
             }
         ] 
     },
@@ -300,6 +309,15 @@ export const menuDataKr = [
                     { label: "시니어 하우징 빅뱅", id: "page-71" },
                     { label: "생명과학/콜드체인", id: "page-72" },
                     { label: "로봇 친화 창고", id: "page-73" }
+                ]
+            },
+            {
+                title: "Chapter 6. 트로피 자산 2027~2040 파이프라인",
+                id: "page-74",
+                items: [
+                    { label: "IOTA 서울 & GBC", id: "page-75" },
+                    { label: "서울 메가 프로젝트", id: "page-76" },
+                    { label: "외국인 자본 Reversal", id: "page-77" }
                 ]
             }
         ] 
