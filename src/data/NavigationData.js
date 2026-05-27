@@ -121,6 +121,17 @@ export const menuDataEn = [
                     { label: "자본의 대이동", id: "page-61" },
                     { label: "거시 연착륙 전략", id: "page-62" }
                 ]
+            },
+            {
+                title: "Chapter 4. 서울 오피스 시장 2030~2040 전망",
+                id: "page-63",
+                items: [
+                    { label: "7축 메가 권역 팽창", id: "page-64" },
+                    { label: "Base 시나리오 전망", id: "page-65" },
+                    { label: "Bull 시나리오 전망", id: "page-66" },
+                    { label: "Bear 시나리오 방어력", id: "page-67" },
+                    { label: "Flight-to-Quality", id: "page-68" }
+                ]
             }
         ] 
     },
@@ -258,6 +269,17 @@ export const menuDataKr = [
                     { label: "생산 인구 증발", id: "page-60" },
                     { label: "자본의 대이동", id: "page-61" },
                     { label: "거시 연착륙 전략", id: "page-62" }
+                ]
+            },
+            {
+                title: "Chapter 4. 서울 오피스 시장 2030~2040 전망",
+                id: "page-63",
+                items: [
+                    { label: "7축 메가 권역 팽창", id: "page-64" },
+                    { label: "Base 시나리오 전망", id: "page-65" },
+                    { label: "Bull 시나리오 전망", id: "page-66" },
+                    { label: "Bear 시나리오 방어력", id: "page-67" },
+                    { label: "Flight-to-Quality", id: "page-68" }
                 ]
             }
         ] 

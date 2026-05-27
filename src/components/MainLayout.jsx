@@ -61,6 +61,12 @@ import Section58 from './Section58';
 import Section59 from './Section59';
 import Section60 from './Section60';
 import Section61 from './Section61';
+import Section62 from './Section62';
+import Section63 from './Section63';
+import Section64 from './Section64';
+import Section65 from './Section65';
+import Section66 from './Section66';
+import Section67 from './Section67';
 
 export default function MainLayout({ isNavOpen }) {
     const slidesLength = 62; // known length
