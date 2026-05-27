@@ -42,7 +42,7 @@ export default function Section95({ isActive }) {
                         </div>
                         
                         {/* Arrow Down */}
-                        <div className="flex justify-center text-[#1e3a8a] my-[-10px] relative z-10">
+                        <div className="flex justify-center text-[#1e3a8a] my-[-10px] translate-y-[10px] relative z-10">
                             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="bg-[#fdfdfd]">
                                 <path d="M12 5v14M19 12l-7 7-7-7"/>
                             </svg>
