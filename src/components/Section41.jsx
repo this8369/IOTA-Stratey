@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export default function Section8({ isActive }) {
+export default function Section41({ isActive }) {
     const [step, setStep] = useState(0);
 
     useEffect(() => {
@@ -32,15 +32,15 @@ export default function Section8({ isActive }) {
                 {/* Top Small Text */}
                 <div className={`transition-all duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-normal text-white mb-[14px] tracking-[-0.02em]" style={{ fontFamily: "'Sanomat Wp', 'Sanomat Web', 'Sanomat', sans-serif" }}>
-                        Part 1.
+                        Part 2.
                     </span>
                 </div>
 
                 {/* Main Flowing Text */}
                 <h2 className={`text-[40px] md:text-[60px] lg:text-[72px] font-bold leading-[calc(1.3em-6px)] break-keep tracking-[-0.02em] transition-all duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="gradient-text">
-                        한국 GDP 1조 → 2조 달러 시대<br/>
-                        역사적 분석
+                        한국 GDP 2조 → 3조 달러<br/>
+                        2027 → 2040 시나리오
                     </span>
                 </h2>
 

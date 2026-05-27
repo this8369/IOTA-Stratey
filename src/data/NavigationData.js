@@ -85,7 +85,7 @@ export const menuDataEn = [
     },
     { 
         title: "Part 2. 미래 시나리오", 
-        id: "", 
+        id: "page-42", 
         chapters: [] 
     },
     { 
@@ -187,7 +187,7 @@ export const menuDataKr = [
     },
     { 
         title: "Part 2. 미래 시나리오", 
-        id: "", 
+        id: "page-42", 
         chapters: [] 
     },
     { 

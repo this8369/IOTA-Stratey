@@ -40,9 +40,10 @@ import Section37 from './Section37';
 import Section38 from './Section38';
 import Section39 from './Section39';
 import Section40 from './Section40';
+import Section41 from './Section41';
 
 export default function MainLayout({ isNavOpen }) {
-    const slidesLength = 41; // known length
+    const slidesLength = 42; // known length
  const [currentSlide, setCurrentSlide] = useState(() => {
  // Initialize from URL hash if available (persistent reload mapping)
  const hash = window.location.hash;
@@ -60,7 +61,7 @@ export default function MainLayout({ isNavOpen }) {
     const [isActionDone, setIsActionDone] = useState(false);
 
     // Animation durations mapped closely to each page's visual completion timing
-    const slideAnimationTimes = [1500, 3000, 3600, 4200, 2600, 4200, 2500, 3500, 3000, 3000, 3500, 3500, 3500, 3000, 3500, 3500, 3500, 3500, 3500, 3500, 3500, 3500, 3500, 3500, 3000, 3500, 3500, 3500, 1500, 3500, 3500, 3500, 3500, 3500, 1500, 3500, 3500, 3500, 1500, 3800, 3800];
+    const slideAnimationTimes = [1500, 3000, 3600, 4200, 2600, 4200, 2500, 3500, 3000, 3000, 3500, 3500, 3500, 3000, 3500, 3500, 3500, 3500, 3500, 3500, 3500, 3500, 3500, 3500, 3000, 3500, 3500, 3500, 1500, 3500, 3500, 3500, 3500, 3500, 1500, 3500, 3500, 3500, 1500, 3800, 3800, 3000];
 
  useEffect(() => {
  setIsActionDone(false);
