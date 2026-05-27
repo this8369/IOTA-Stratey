@@ -111,6 +111,16 @@ export const menuDataEn = [
                     { label: "양자 / 수소 / 우주", id: "page-56" },
                     { label: "시니어 케어 경제", id: "page-57" }
                 ]
+            },
+            {
+                title: "Chapter 3. 인구·구조적 변수",
+                id: "page-58",
+                items: [
+                    { label: "인구 다이어트", id: "page-59" },
+                    { label: "생산 인구 증발", id: "page-60" },
+                    { label: "자본의 대이동", id: "page-61" },
+                    { label: "거시 연착륙 전략", id: "page-62" }
+                ]
             }
         ] 
     },
@@ -238,6 +248,16 @@ export const menuDataKr = [
                     { label: "K-콘텐츠", id: "page-55" },
                     { label: "양자 / 수소 / 우주", id: "page-56" },
                     { label: "시니어 케어 경제", id: "page-57" }
+                ]
+            },
+            {
+                title: "Chapter 3. 인구·구조적 변수",
+                id: "page-58",
+                items: [
+                    { label: "인구 다이어트", id: "page-59" },
+                    { label: "생산 인구 증발", id: "page-60" },
+                    { label: "자본의 대이동", id: "page-61" },
+                    { label: "거시 연착륙 전략", id: "page-62" }
                 ]
             }
         ] 

@@ -56,9 +56,14 @@ import Section53 from './Section53';
 import Section54 from './Section54';
 import Section55 from './Section55';
 import Section56 from './Section56';
+import Section57 from './Section57';
+import Section58 from './Section58';
+import Section59 from './Section59';
+import Section60 from './Section60';
+import Section61 from './Section61';
 
 export default function MainLayout({ isNavOpen }) {
-    const slidesLength = 57; // known length
+    const slidesLength = 62; // known length
  const [currentSlide, setCurrentSlide] = useState(() => {
  // Initialize from URL hash if available (persistent reload mapping)
  const hash = window.location.hash;
@@ -71,12 +76,12 @@ export default function MainLayout({ isNavOpen }) {
  return 0;
  });
 
-    const slides = [<Section1 />, <SectionExecutiveSummary />, <Section2 />, <Section3 />, <Section4 />, <Section5 />, <Section6 />, <Section7 />, <Section8 />, <Section9 />, <Section10 />, <Section11 />, <Section12 />, <Section13 />, <Section14 />, <Section15 />, <Section16 />, <Section17 />, <Section18 />, <Section19 />, <Section20 />, <Section21 />, <Section22 />, <Section23 />, <Section24 />, <Section25 />, <Section26 />, <Section27 />, <Section28 />, <Section29 />, <Section30 />, <Section31 />, <Section32 />, <Section33 />, <Section34 />, <Section35 />, <Section36 />, <Section37 />, <Section38 />, <Section39 />, <Section40 />, <Section41 />, <Section42 />, <Section43 />, <Section44 />, <Section45 />, <Section46 />, <Section47 />, <Section48 />, <Section49 />, <Section50 />, <Section51 />, <Section52 />, <Section53 />, <Section54 />, <Section55 />, <Section56 />];
+    const slides = [<Section1 />, <SectionExecutiveSummary />, <Section2 />, <Section3 />, <Section4 />, <Section5 />, <Section6 />, <Section7 />, <Section8 />, <Section9 />, <Section10 />, <Section11 />, <Section12 />, <Section13 />, <Section14 />, <Section15 />, <Section16 />, <Section17 />, <Section18 />, <Section19 />, <Section20 />, <Section21 />, <Section22 />, <Section23 />, <Section24 />, <Section25 />, <Section26 />, <Section27 />, <Section28 />, <Section29 />, <Section30 />, <Section31 />, <Section32 />, <Section33 />, <Section34 />, <Section35 />, <Section36 />, <Section37 />, <Section38 />, <Section39 />, <Section40 />, <Section41 />, <Section42 />, <Section43 />, <Section44 />, <Section45 />, <Section46 />, <Section47 />, <Section48 />, <Section49 />, <Section50 />, <Section51 />, <Section52 />, <Section53 />, <Section54 />, <Section55 />, <Section56 />, <Section57 />, <Section58 />, <Section59 />, <Section60 />, <Section61 />];
 
     const [isActionDone, setIsActionDone] = useState(false);
 
     // Animation durations mapped closely to each page's visual completion timing
-    const slideAnimationTimes = [1500, 3000, 3600, 4200, 2600, 4200, 2500, 3500, 3000, 3000, 3500, 3500, 3500, 3000, 3500, 3500, 3500, 3500, 3500, 3500, 3500, 3500, 3500, 3500, 3000, 3500, 3500, 3500, 1500, 3500, 3500, 3500, 3500, 3500, 1500, 3500, 3500, 3500, 1500, 3800, 3800, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 1500, 3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000];
+    const slideAnimationTimes = [1500, 3000, 3600, 4200, 2600, 4200, 2500, 3500, 3000, 3000, 3500, 3500, 3500, 3000, 3500, 3500, 3500, 3500, 3500, 3500, 3500, 3500, 3500, 3500, 3000, 3500, 3500, 3500, 1500, 3500, 3500, 3500, 3500, 3500, 1500, 3500, 3500, 3500, 1500, 3800, 3800, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 1500, 3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000, 1500, 3000, 3000, 3000, 3000];
 
  useEffect(() => {
  setIsActionDone(false);
