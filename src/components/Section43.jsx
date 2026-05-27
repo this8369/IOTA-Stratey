@@ -31,7 +31,7 @@ export default function Section43({ isActive }) {
                 
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-[1200px]">
                     {variables.map((item, idx) => (
-                        <div key={idx} className={`bg-gray-50 rounded-none p-10 border-[6px] border-gray-200 flex flex-col items-center text-center transition-all duration-[1000ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: `${idx * 150}ms` }}>
+                        <div key={idx} className={`bg-gray-50 rounded-none p-10 border-[6px] border-[#1e3a8a] flex flex-col items-center text-center transition-all duration-[1000ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: `${idx * 150}ms` }}>
                             <div className="w-12 h-12 bg-[#1d1d1f] flex items-center justify-center text-white font-bold mb-6 text-[18px]">
                                 {idx + 1}
                             </div>
