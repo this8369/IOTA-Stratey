@@ -277,7 +277,7 @@ export default function MainLayout({ isNavOpen }) {
  return (
  <div 
  key={index} 
- className="absolute inset-0 w-full h-full transition-transform duration-[250ms]"
+ className="absolute inset-0 w-full h-full transition-transform duration-[200ms]"
  style={{ 
  transform: transformStyle,
  transitionTimingFunction: "cubic-bezier(0.83, 0, 0.17, 1)" // Fast, crisp book-like slide
