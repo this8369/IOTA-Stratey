@@ -373,7 +373,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
  }
  }}
  >{chapter.title}</h5>}
- <ul className="flex flex-col space-y-2">
+ <ul className="flex flex-col space-y-[6px]">
  {chapter.items.map((item, itemIdx) => {
  const isNews = item.type === 'news';
  const isLease = item.type === 'lease';
