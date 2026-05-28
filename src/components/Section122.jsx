@@ -92,8 +92,8 @@ export default function Section122({ isActive }) {
                 <div className={`w-full text-center mt-2 transition-all duration-[612ms] delay-[122ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                     <div className="inline-block bg-[#1e3a8a] text-white px-8 py-5 text-[20px] md:text-[22px] font-bold shadow-lg break-keep">
                         {lang === 'kr' ? 
-                            '2026년 4월 현 시점, YD816 PFV 2조 1,964억원 규모 리파이낸싱 완료' : 
-                            'As of April 2026, YD816 PFV 2.196T KRW Refinancing Completed'}
+                            '2026년 4월 현 시점, YD816 PFV 약 1조원 규모 리파이낸싱 완료' : 
+                            'As of April 2026, YD816 PFV approx 1T KRW Refinancing Completed'}
                     </div>
                 </div>
             </div>
