@@ -37,18 +37,25 @@ export default function Section107({ isActive }) {
                     
                     {/* Left: 3 Pillars */}
                     <div className={`flex-[0.8] bg-white border-4 border-[#1e3a8a] rounded-none p-8 flex flex-col items-center justify-center shadow-sm transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'}`}>
-                        <div className="w-full flex justify-between gap-4 h-[160px] items-end border-b-4 border-[#1e3a8a] pb-4">
+                        <div className="text-left w-full mb-4">
+                            <div className="font-black text-[#1e3a8a] text-[22px]">자산군 통합 운영 (Integration)</div>
+                            <div className="font-bold text-gray-700 text-[16px] mt-2">부동산, 인프라, PE를 하나로 결합하여<br/>융복합 시너지 및 초과 수익(Alpha) 창출</div>
+                        </div>
+                        <div className="w-full flex justify-between gap-4 h-[120px] items-end border-b-4 border-[#1e3a8a] pb-4">
                             <div className="flex-1 bg-gray-200 h-[60%] flex items-center justify-center font-black text-[#1e3a8a] text-[18px] md:text-[22px]">RE</div>
                             <div className="flex-1 bg-gray-300 h-[80%] flex items-center justify-center font-black text-[#1e3a8a] text-[18px] md:text-[22px]">Infra</div>
                             <div className="flex-1 bg-gray-400 h-[50%] flex items-center justify-center font-black text-[#1e3a8a] text-[18px] md:text-[22px]">PE</div>
                         </div>
-                        <div className="font-bold text-[#1e3a8a] text-[20px] mt-6 tracking-widest uppercase">Integration</div>
+                        <div className="mt-5 bg-[#1e3a8a] text-white p-3 font-bold text-[15px] w-full text-left break-keep">
+                            {lang === 'kr' ? '💡 벤치마크: 블랙스톤(Blackstone)이 2014년 인프라 펀드 출시 후 AUM을 2배 도약시킨 패턴을 적용' : '💡 Benchmark: Applying Blackstone’s pattern of doubling AUM after launching its infra fund in 2014'}
+                        </div>
                     </div>
 
                     {/* Middle: Arrow/Transition */}
-                    <div className={`flex items-center justify-center transition-all duration-700 ${step >= 4 ? 'opacity-100' : 'opacity-0'}`}>
-                        <div className="w-12 h-1 bg-[#1e3a8a]"></div>
-                        <div className="w-4 h-4 border-t-4 border-r-4 border-[#1e3a8a] rotate-45 -ml-2"></div>
+                    <div className={`flex items-center justify-center px-4 transition-all duration-700 ${step >= 4 ? 'opacity-100' : 'opacity-0'}`}>
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
                     </div>
 
                     {/* Right: Cross-over Targets */}

@@ -36,50 +36,54 @@ export default function Section109({ isActive }) {
                     
                     {/* Left: Emerging Family Office */}
                     <div className={`flex-[1] bg-white border-4 border-[#1d1d1f] rounded-none p-8 flex flex-col justify-between shadow-sm transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                        <div className="text-left">
-                            <div className="text-[#1d1d1f] font-black text-[24px] md:text-[28px] mb-2 uppercase">
-                                Emerging Family Office
-                            </div>
-                            <div className="text-gray-500 font-bold text-[16px] mb-6">
-                                {lang === 'kr' ? '한국 신흥 패밀리오피스 자본' : 'Korea\'s Emerging Tech Wealth'}
+                        <div className="text-left flex flex-col h-full">
+                            <div>
+                                <div className="text-[#1d1d1f] font-black text-[24px] md:text-[28px] mb-2 uppercase">
+                                    Emerging Family Office
+                                </div>
+                                <div className="text-gray-500 font-bold text-[18px] mb-6">
+                                    {lang === 'kr' ? '한국 신흥 패밀리오피스 자본' : 'Korea\'s Emerging Tech Wealth'}
+                                </div>
                             </div>
                             
-                            <div className="grid grid-cols-2 gap-3 mb-6">
-                                <div className="bg-gray-100 border border-gray-300 p-3 font-bold text-[#1d1d1f] text-center">Coupang</div>
-                                <div className="bg-gray-100 border border-gray-300 p-3 font-bold text-[#1d1d1f] text-center">HYBE</div>
-                                <div className="bg-gray-100 border border-gray-300 p-3 font-bold text-[#1d1d1f] text-center">Celltrion</div>
-                                <div className="bg-gray-100 border border-gray-300 p-3 font-bold text-[#1d1d1f] text-center">Kakao</div>
+                            <div className="grid grid-cols-2 gap-4 flex-1 mb-6 min-h-[160px]">
+                                <div className="bg-gray-100 border border-gray-300 flex items-center justify-center font-black text-[#1d1d1f] text-[20px] md:text-[22px]">Coupang</div>
+                                <div className="bg-gray-100 border border-gray-300 flex items-center justify-center font-black text-[#1d1d1f] text-[20px] md:text-[22px]">HYBE</div>
+                                <div className="bg-gray-100 border border-gray-300 flex items-center justify-center font-black text-[#1d1d1f] text-[20px] md:text-[22px]">Celltrion</div>
+                                <div className="bg-gray-100 border border-gray-300 flex items-center justify-center font-black text-[#1d1d1f] text-[20px] md:text-[22px]">Kakao</div>
                             </div>
                         </div>
-                        <div className="bg-[#1d1d1f] text-white p-4 font-bold text-[16px] md:text-[18px]">
+                        <div className="bg-[#1d1d1f] text-white p-4 font-bold text-[18px] md:text-[20px]">
                             {lang === 'kr' ? '향후 5년, 테크 창업자 자본의 거대한 신규 위탁 풀 형성' : 'Massive new capital pool from tech founders over the next 5 years'}
                         </div>
                     </div>
 
                     {/* Right: Public Pension Funds */}
                     <div className={`flex-[1.2] bg-[#1e3a8a] border-4 border-[#1e3a8a] rounded-none p-8 flex flex-col justify-between shadow-md transition-all duration-1000 delay-200 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                        <div className="text-left">
-                            <div className="text-white font-black text-[24px] md:text-[28px] mb-2 uppercase">
-                                Mega Public Pensions
-                            </div>
-                            <div className="text-[#93c5fd] font-bold text-[16px] mb-6">
-                                {lang === 'kr' ? '국가 주도 초거대 연기금' : 'Sovereign-backed Mega Pensions'}
+                        <div className="text-left flex flex-col h-full">
+                            <div>
+                                <div className="text-white font-black text-[24px] md:text-[28px] mb-2 uppercase">
+                                    Mega Public Pensions
+                                </div>
+                                <div className="text-[#93c5fd] font-bold text-[18px] mb-6">
+                                    {lang === 'kr' ? '국가 주도 초거대 연기금' : 'Sovereign-backed Mega Pensions'}
+                                </div>
                             </div>
                             
-                            <div className="flex flex-col gap-3 mb-6">
-                                <div className="bg-white/10 border border-white/20 p-4 font-black text-white flex justify-between items-center text-[20px]">
+                            <div className="flex flex-col gap-4 flex-1 mb-6">
+                                <div className="flex-1 bg-white/10 border border-white/20 p-4 font-black text-white flex justify-between items-center text-[22px]">
                                     <span>NPS (국민연금)</span>
                                     <span className="text-[#93c5fd]">2026 AUM ~1,200T KRW</span>
                                 </div>
-                                <div className="grid grid-cols-2 gap-3">
-                                    <div className="bg-white/5 border border-white/10 p-3 font-bold text-white text-center text-[15px]">교직원공제회</div>
-                                    <div className="bg-white/5 border border-white/10 p-3 font-bold text-white text-center text-[15px]">행정공제회</div>
-                                    <div className="bg-white/5 border border-white/10 p-3 font-bold text-white text-center text-[15px]">우정사업본부</div>
-                                    <div className="bg-white/5 border border-white/10 p-3 font-bold text-white text-center text-[15px]">새마을금고</div>
+                                <div className="grid grid-cols-2 gap-4 flex-[1.5]">
+                                    <div className="bg-white/5 border border-white/10 flex items-center justify-center font-bold text-white text-center text-[17px]">교직원공제회</div>
+                                    <div className="bg-white/5 border border-white/10 flex items-center justify-center font-bold text-white text-center text-[17px]">행정공제회</div>
+                                    <div className="bg-white/5 border border-white/10 flex items-center justify-center font-bold text-white text-center text-[17px]">우정사업본부</div>
+                                    <div className="bg-white/5 border border-white/10 flex items-center justify-center font-bold text-white text-center text-[17px]">새마을금고</div>
                                 </div>
                             </div>
                         </div>
-                        <div className="bg-white text-[#1e3a8a] p-4 font-black text-[16px] md:text-[18px]">
+                        <div className="bg-white text-[#1e3a8a] p-4 font-black text-[18px] md:text-[20px]">
                             {lang === 'kr' ? 'NPS 해외 부동산 확대 정책 ↔ 이지스 글로벌 펀드의 완벽한 얼라인먼트' : 'Perfect alignment: NPS overseas expansion ↔ IGIS Global Funds'}
                         </div>
                     </div>

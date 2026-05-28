@@ -33,7 +33,7 @@ export default function Section108({ isActive }) {
                 </h2>
 
                 {/* Infographic Area */}
-                <div className="w-full max-w-[1200px] mt-[30px] mb-[46px] flex flex-col md:flex-row items-center gap-6 justify-center relative">
+                <div className="w-full max-w-[1200px] mt-[30px] mb-[46px] flex flex-col md:flex-row items-center gap-10 justify-center relative">
                     
                     {/* Background Flow Line */}
                     <div className="absolute top-1/2 left-[30%] right-[30%] h-[4px] bg-gray-200 z-0 -translate-y-1/2 overflow-hidden">
@@ -50,21 +50,20 @@ export default function Section108({ isActive }) {
                             </div>
                         </div>
                         {/* Insurance */}
-                        <div className="bg-white border-4 border-[#1e3a8a] rounded-none p-6 text-left shadow-sm">
-                            <div className="text-[#1e3a8a] font-black text-[22px] md:text-[26px] mb-2">글로벌 & 국내 보험사</div>
-                            <div className="text-gray-800 font-bold text-[16px] leading-relaxed mb-3">
-                                {lang === 'kr' ? '국내: 삼성생명 · 교보생명 · 한화생명' : 'Domestic: Samsung Life · Kyobo · Hanwha'}
-                                <br />
-                                {lang === 'kr' ? '글로벌: Allianz · AXA · MetLife' : 'Global: Allianz · AXA · MetLife'}
+                        <div className="bg-white border-4 border-[#1e3a8a] rounded-none p-5 text-left shadow-sm flex items-center justify-between">
+                            <div>
+                                <div className="text-[#1e3a8a] font-black text-[22px] md:text-[26px] mb-1">글로벌 & 국내 보험사</div>
+                                <div className="text-gray-800 font-bold text-[15px] leading-relaxed">
+                                    {lang === 'kr' ? '국내: 삼성생명 · 교보생명 · 한화생명' : 'Domestic: Samsung Life · Kyobo · Hanwha'}
+                                    <br />
+                                    {lang === 'kr' ? '글로벌: Allianz · AXA · MetLife' : 'Global: Allianz · AXA · MetLife'}
+                                </div>
                             </div>
-                            <div className="inline-block bg-gray-100 border border-gray-300 text-gray-700 font-bold px-3 py-1 text-[14px]">
-                                Long-Duration Capital
+                            <div className="bg-gray-100 border border-gray-300 text-gray-700 font-bold px-3 py-2 text-[14px] text-center ml-4 whitespace-nowrap">
+                                Long-Duration<br/>Capital
                             </div>
                         </div>
                     </div>
-
-                    {/* Middle: Gap for Flow */}
-                    <div className="flex-[0.2] hidden md:block"></div>
 
                     {/* Right: Trophy Assets */}
                     <div className={`flex-[1] relative z-10 transition-all duration-1000 ${step >= 5 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
