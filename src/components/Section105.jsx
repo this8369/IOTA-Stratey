@@ -19,16 +19,14 @@ export default function Section105({ isActive }) {
         
         // fake slider automation
         const sliderInterval = setInterval(() => {
-            if (step >= 4) {
-                setSliderValue(prev => (prev > 80 ? 20 : prev + 15));
-            }
+            setSliderValue(prev => (prev > 80 ? 20 : prev + 15));
         }, 1500);
 
         return () => {
             timers.forEach(clearTimeout);
             clearInterval(sliderInterval);
         };
-    }, [isActive, step]);
+    }, [isActive]);
 
     return (
         <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
@@ -36,7 +34,7 @@ export default function Section105({ isActive }) {
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[20px] md:text-[24px] font-bold text-purple-600 tracking-[-0.02em] mb-[12px]">
-                        6.4 IPR Project REIT Structuring
+                        IPR Project REIT Structuring
                     </span>
                 </div>
 

@@ -24,7 +24,7 @@ export default function Section104({ isActive }) {
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[20px] md:text-[24px] font-bold text-teal-600 tracking-[-0.02em] mb-[12px]">
-                        6.3 LP Reporting
+                        LP Reporting
                     </span>
                 </div>
 
@@ -34,11 +34,6 @@ export default function Section104({ isActive }) {
 
                 {/* Infographic Area: Translation Funnel */}
                 <div className="w-full max-w-[1000px] mt-12 mb-16 flex items-center justify-center relative">
-                    
-                    {/* Connecting Lines Behind */}
-                    <div className="absolute top-1/2 left-[20%] right-[20%] h-[4px] -translate-y-1/2 bg-gray-200 z-0 rounded-full">
-                        <div className={`h-full bg-teal-400 transition-all duration-[1500ms] ease-in-out ${step >= 4 ? 'w-full opacity-100' : 'w-0 opacity-0'}`}></div>
-                    </div>
 
                     {/* Left: Input Data */}
                     <div className="flex-1 flex flex-col gap-5 items-end pr-8 md:pr-16 relative z-10">

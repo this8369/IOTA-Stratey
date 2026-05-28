@@ -24,7 +24,7 @@ export default function Section102({ isActive }) {
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[20px] md:text-[24px] font-bold text-blue-600 tracking-[-0.02em] mb-[12px]">
-                        6.1 Acquisition Underwriting
+                        Acquisition Underwriting
                     </span>
                 </div>
 
@@ -39,7 +39,7 @@ export default function Section102({ isActive }) {
                         <div className={`h-full bg-gradient-to-r from-transparent via-blue-400 to-indigo-600 transition-all duration-[2000ms] ease-in-out ${step >= 4 ? 'translate-x-0 w-full opacity-100' : '-translate-x-full w-0 opacity-0'}`}></div>
                     </div>
 
-                    <div className="flex w-full justify-between items-center relative z-10">
+                    <div className="flex w-full justify-between items-center relative z-10 px-[28px]">
                         {/* Node 1: Raw Data */}
                         <div className={`w-[260px] bg-white border-2 border-gray-200 rounded-2xl p-5 shadow-lg transition-all duration-700 ${step >= 3 ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 -translate-x-12 scale-95'}`}>
                             <h4 className="font-bold text-gray-800 text-[18px] mb-4">{lang === 'kr' ? '원천 데이터 수집' : 'Raw Data Input'}</h4>
@@ -55,7 +55,7 @@ export default function Section102({ isActive }) {
                                 {/* Pulse ring */}
                                 <div className="absolute inset-0 rounded-full border-4 border-indigo-400 animate-ping opacity-20"></div>
                                 <span className="text-white font-black text-[28px] tracking-tight">Claude</span>
-                                <span className="text-white/80 font-bold text-[18px]">/ GPT-4</span>
+                                <span className="text-white/80 font-bold text-[18px]">/ GPT</span>
                             </div>
                             <div className="mt-6 bg-[#1d1d1f] text-white px-5 py-2 rounded-full font-bold text-[16px] shadow-md">
                                 {lang === 'kr' ? '시장 비교 및 시나리오 연산' : 'Market Comp & Scenario Compute'}

@@ -24,7 +24,7 @@ export default function Section103({ isActive }) {
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[20px] md:text-[24px] font-bold text-indigo-600 tracking-[-0.02em] mb-[12px]">
-                        6.2 Asset Management & CF Protection
+                        Asset Management & CF Protection
                     </span>
                 </div>
 
@@ -83,14 +83,14 @@ export default function Section103({ isActive }) {
                             <h4 className="text-gray-400 font-bold text-[18px] md:text-[22px] mb-2">
                                 {lang === 'kr' ? '운용 효율 개선 효과' : 'Operational Efficiency Gain'}
                             </h4>
-                            <div className="font-black text-[100px] md:text-[130px] leading-none mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 tracking-tighter">
-                                30<span className="text-[50px] md:text-[70px]">%</span>
+                            <div className="font-black text-[50px] md:text-[65px] leading-none mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 tracking-tighter">
+                                30<span className="text-[25px] md:text-[35px]">%</span>
                             </div>
                             <div className="w-12 h-1 bg-gray-500 mb-6"></div>
-                            <div className="text-gray-300 text-[16px] md:text-[18px] font-bold leading-relaxed break-keep">
+                            <div className="text-gray-300 text-[18px] md:text-[20px] font-bold leading-relaxed break-keep">
                                 {lang === 'kr' 
-                                    ? '이지스 73조 원 AUM 전체에 적용 시 캐시플로우 보호 및 막대한 비용 절감 기대' 
-                                    : 'Expecting massive cost savings and cash flow protection across IGIS 73T KRW AUM'}
+                                    ? <>이지스 73조 원 AUM 전체에 적용 시<br/>캐시플로우 보호 및 막대한 비용 절감 기대</> 
+                                    : <>Expecting massive cost savings and cash flow protection<br/>across IGIS 73T KRW AUM</>}
                             </div>
                         </div>
                     </div>

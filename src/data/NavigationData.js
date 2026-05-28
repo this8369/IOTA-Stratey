@@ -448,10 +448,10 @@ export const menuDataKr = [
                 title: "Chapter 5. AI 도입 워크플로우",
                 id: "page-102",
                 items: [
-                    { label: "6.1 인수 검토 (Acquisition)", id: "page-103" },
-                    { label: "6.2 자산 운용 (Asset Management)", id: "page-104" },
-                    { label: "6.3 LP 리포팅 (Reporting)", id: "page-105" },
-                    { label: "6.4 IPR Project REIT", id: "page-106" }
+                    { label: "인수 검토", id: "page-103" },
+                    { label: "자산 운용", id: "page-104" },
+                    { label: "LP 리포팅", id: "page-105" },
+                    { label: "IPR Project REIT", id: "page-106" }
                 ]
             }
         ] 
