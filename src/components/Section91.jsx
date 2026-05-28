@@ -40,7 +40,7 @@ export default function Section91({ isActive }) {
                             <h3 className="text-gray-500 font-bold text-[16px] mb-2">{lang === 'kr' ? '현재 자산 기반' : 'Current Asset Base'}</h3>
                             <p className="text-[#1d1d1f] font-extrabold text-[18px] md:text-[20px] leading-snug break-keep">
                                 {lang === 'kr' 
-                                    ? '이지스밸류플러스리츠 內 분당 Hostway IDC + 북미 13개 DC 포트폴리오(187MW)'
+                                    ? (lang === 'kr' ? '이지스밸류플러스리츠 內 분당 Hostway IDC + 북미 13개 DC 포트폴리오(187MW)' : 'Bundang Hostway IDC + 13 North American DC Portfolios (187MW) within IGIS Value Plus REIT.')
                                     : 'Bundang Hostway IDC within IGIS Value Plus REIT + 13 North American DC Portfolios (187MW)'}
                             </p>
                         </div>
@@ -50,12 +50,12 @@ export default function Section91({ isActive }) {
                             <h3 className="text-blue-300 font-bold text-[16px] mb-2 relative z-10">{lang === 'kr' ? '분사 목표' : 'Spin-off Goal'}</h3>
                             <p className="font-extrabold text-[18px] md:text-[20px] leading-snug break-keep mb-3 relative z-10">
                                 {lang === 'kr' 
-                                    ? '향후 5년 내 독립 상장 DC REIT 분사 (2028~2030년)'
+                                    ? (lang === 'kr' ? '향후 5년 내 독립 상장 DC REIT 분사 (2028~2030년)' : 'Spin-off of an independently listed DC REIT within 5 years (2028-2030).')
                                     : 'Independent listed DC REIT spin-off within 5 years (2028-2030)'}
                             </p>
                             <p className="text-blue-100 font-medium text-[15px] leading-relaxed break-keep relative z-10">
                                 {lang === 'kr' 
-                                    ? '미국 Digital Realty(시총 약 USD 500억), Equinix(약 USD 800억) 수준의 globalish DC REIT 빌드업'
+                                    ? (lang === 'kr' ? '미국 Digital Realty(시총 약 USD 500억), Equinix(약 USD 800억) 수준의 globalish DC REIT 빌드업' : 'Building a globalish DC REIT on par with US Digital Realty (~$50B) and Equinix (~$80B).')
                                     : 'Build-up to a globalish DC REIT on par with US Digital Realty (approx $50B) & Equinix ($80B)'}
                             </p>
                         </div>
@@ -100,7 +100,7 @@ export default function Section91({ isActive }) {
                 <div className={`w-full max-w-[1100px] bg-blue-50 border border-blue-100 p-6 rounded-xl shadow-sm transition-all duration-[540ms] ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <p className="text-[17px] md:text-[20px] font-bold text-[#1e3a8a] break-keep leading-relaxed text-center">
                         {lang === 'kr' 
-                            ? <>북미 13개 포트폴리오를 넘어, 국내 신규 전력 인입 권리와 빅테크 임대 확약을 바탕으로<br/>에퀴닉스에 버금갈 독자 상장형 DC REIT 플랫폼의 분사 로드맵을 띄운다.</>
+                            ? (lang === 'kr' ? <>북미 13개 포트폴리오를 넘어, 국내 신규 전력 인입 권리와 빅테크 임대 확약을 바탕으로<br/>에퀴닉스에 버금갈 독자 상장형 DC REIT 플랫폼의 분사 로드맵을 띄운다.</> : <>Beyond the 13 NA portfolios, launching a spin-off roadmap for an independently listed DC REIT platform rivaling Equinix,<br/>based on domestic new power connection rights and Big Tech lease commitments.</>)
                             : <>Beyond the 13 NA portfolios, we launch a spin-off roadmap for an independent listed DC REIT platform comparable to Equinix,<br/>backed by domestic power intake rights and big tech lease commitments.</>
                         }
                     </p>

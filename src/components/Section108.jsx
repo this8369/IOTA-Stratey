@@ -24,7 +24,7 @@ export default function Section108({ isActive }) {
                 
                 <div className={`transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[20px] md:text-[24px] font-bold text-[#1e3a8a] tracking-[-0.02em] mb-[12px]">
-                        SWF 파트너십 & 보험사 자본
+                        {lang === 'kr' ? 'SWF 파트너십 & 보험사 자본' : 'SWF Partnership & Insurer Capital'}
                     </span>
                 </div>
 
@@ -39,7 +39,7 @@ export default function Section108({ isActive }) {
                     <div className={`flex-[1] flex flex-col gap-6 relative z-10 transition-all duration-[765ms] ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
                         {/* SWF */}
                         <div className="bg-white border-4 border-[#1e3a8a] rounded-none p-6 text-left shadow-sm">
-                            <div className="text-[#1e3a8a] font-black text-[22px] md:text-[26px] mb-2">국부펀드 (SWF)</div>
+                            <div className="text-[#1e3a8a] font-black text-[22px] md:text-[26px] mb-2">{lang === 'kr' ? '국부펀드 (SWF)' : 'Sovereign Wealth Funds (SWF)'}</div>
                             <div className="text-gray-600 font-bold text-[16px] leading-relaxed">
                                 {lang === 'kr' ? '중동(ADIA, PIF) 및 싱가포르(GIC) 등 막대한 자금력을 갖춘 최상위 기관과의 파트너십 구축' : 'Partnerships with top-tier institutions holding massive capital (ADIA, PIF, GIC)'}
                             </div>
@@ -47,7 +47,7 @@ export default function Section108({ isActive }) {
                         {/* Insurance */}
                         <div className="bg-white border-4 border-[#1e3a8a] rounded-none p-5 text-left shadow-sm flex items-center justify-between">
                             <div>
-                                <div className="text-[#1e3a8a] font-black text-[22px] md:text-[26px] mb-1">글로벌 & 국내 보험사</div>
+                                <div className="text-[#1e3a8a] font-black text-[22px] md:text-[26px] mb-1">{lang === 'kr' ? '글로벌 & 국내 보험사' : 'Global & Domestic Insurers'}</div>
                                 <div className="text-gray-800 font-bold text-[15px] leading-relaxed">
                                     {lang === 'kr' ? '국내: 삼성생명 · 교보생명 · 한화생명' : 'Domestic: Samsung Life · Kyobo · Hanwha'}
                                     <br />

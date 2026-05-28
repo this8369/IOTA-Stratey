@@ -84,10 +84,10 @@ export default function Section15({ isActive }) {
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-[#047857]">▪</span><span>2007년 글로벌 판매 약 400만 대에서 <strong>2024년 약 723만 대</strong>로 도요타·폭스바겐에 이은 <strong>글로벌 3위 그룹</strong>으로 확립.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-[#047857]">▪</span><span>전기차 전환에서 아이오닉·EV9 라인업으로 테슬라·BYD 다음 그룹에 안정적으로 안착함.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-[#047857]">▪</span><span>보스턴 다이내믹스 인수(2021) 및 슈퍼널(UAM) 설립으로 모빌리티의 경계를 허묾.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-[#047857]">▪</span><span>NVIDIA 협력 AI 데이터센터 건립을 통해 <strong>자동차 ➔ 로봇 ➔ AI 인프라</strong>까지 비즈니스 영역을 전면 확장 중.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#047857]">▪</span><span>{lang === 'kr' ? <>2007년 글로벌 판매 약 400만 대에서 <strong>2024년 약 723만 대</strong>로 도요타·폭스바겐에 이은 <strong>글로벌 3위 그룹</strong>으로 확립.</> : <>Established as the <strong>global 3rd largest group</strong> following Toyota and Volkswagen, from ~4M units in 2007 to <strong>~7.23M units in 2024</strong>.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#047857]">▪</span><span>{lang === 'kr' ? '전기차 전환에서 아이오닉·EV9 라인업으로 테슬라·BYD 다음 그룹에 안정적으로 안착함.' : 'Stably positioned in the group following Tesla and BYD with IONIQ and EV9 lineups in the EV transition.'}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#047857]">▪</span><span>{lang === 'kr' ? '보스턴 다이내믹스 인수(2021) 및 슈퍼널(UAM) 설립으로 모빌리티의 경계를 허묾.' : 'Breaking mobility boundaries by acquiring Boston Dynamics (2021) and establishing Supernal (UAM).'}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#047857]">▪</span><span>{lang === 'kr' ? <>NVIDIA 협력 AI 데이터센터 건립을 통해 <strong>자동차 ➔ 로봇 ➔ AI 인프라</strong>까지 비즈니스 영역을 전면 확장 중.</> : <>Fully expanding business scope from <strong>Automobiles ➔ Robotics ➔ AI Infrastructure</strong> through NVIDIA-partnered AI data centers.</>}</span></li>
                             </>
                         ) : (
                             <>

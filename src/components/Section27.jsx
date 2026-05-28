@@ -120,9 +120,9 @@ export default function Section27({ isActive }) {
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-purple-700">▪</span><span>핵심 상승 동력은 <strong>HBM 부족 현상 지속, 외국인 자금 회귀, 강력한 밸류업 정책 및 자본시장법 개정</strong>.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-purple-700">▪</span><span>무엇보다 KOSPI가 <strong>글로벌 AI 밸류체인의 핵심 수혜 시장</strong>이라는 외국인 투자자의 확고한 인식이 결정적 작용.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-purple-700">▪</span><span>PER 13.2배로 상승했으나 아시아 평균 대비 여전히 저평가 상태. <strong>향후 5년 내 "코리아 디스카운트"의 완전한 해소 전망</strong>.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-purple-700">▪</span><span>{lang === 'kr' ? <>핵심 상승 동력은 <strong>HBM 부족 현상 지속, 외국인 자금 회귀, 강력한 밸류업 정책 및 자본시장법 개정</strong>.</> : <>Core drivers include <strong>persistent HBM shortage, return of foreign capital, strong Value-up policies, and Capital Markets Act revisions</strong>.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-purple-700">▪</span><span>{lang === 'kr' ? <>무엇보다 KOSPI가 <strong>글로벌 AI 밸류체인의 핵심 수혜 시장</strong>이라는 외국인 투자자의 확고한 인식이 결정적 작용.</> : <>Above all, foreign investors' firm perception that KOSPI is the <strong>core beneficiary market of the global AI value chain</strong> played a decisive role.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-purple-700">▪</span><span>{lang === 'kr' ? <>PER 13.2배로 상승했으나 아시아 평균 대비 여전히 저평가 상태. <strong>향후 5년 내 "코리아 디스카운트"의 완전한 해소 전망</strong>.</> : <>PER rose to 13.2x but remains undervalued compared to Asian averages. <strong>Expect complete resolution of the "Korea Discount" within 5 years</strong>.</>}</span></li>
                             </>
                         ) : (
                             <>

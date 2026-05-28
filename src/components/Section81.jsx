@@ -82,7 +82,7 @@ export default function Section81({ isActive }) {
                     <div className="text-[24px] md:text-[32px] font-black text-white tracking-wide">
                         {lang === 'kr' ? (
                             <>
-                                <span className="text-[#fcd34d]">주가 상승</span> = 코리아 프리미엄 = <span className="text-[#fcd34d]">캡레이트 하락</span>
+                                {lang === 'kr' ? <><span className="text-[#fcd34d]">주가 상승</span> = 코리아 프리미엄 = <span className="text-[#fcd34d]">캡레이트 하락</span></> : <><span className="text-[#fcd34d]">Stock Rise</span> = Korea Premium = <span className="text-[#fcd34d]">Cap Rate Drop</span></>}
                             </>
                         ) : (
                             <>

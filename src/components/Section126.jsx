@@ -60,7 +60,7 @@ export default function Section126({ isActive }) {
                             </h3>
                             <p className="text-[16px] text-gray-700 font-bold leading-relaxed break-keep mb-4">
                                 {lang === 'kr' ? (
-                                    <>[PFV + 부동산펀드 + 리츠 + LP]가 완벽하게 결합된 통합 자본 구조 구축 및 브랜드화.<br/>향후 YIBD, 잠실 등 신규 트로피 에셋의 템플릿으로 확장.</>
+<>[PFV + 부동산펀드 + 리츠 + LP]가 완벽하게 결합된 통합 자본 구조 구축 및 브랜드화.<br/>향후 YIBD, 잠실 등 신규 트로피 에셋의 템플릿으로 확장.</>
                                 ) : (
                                     <>Branding a seamlessly unified capital structure of [PFV + RE Fund + REIT + LP].<br/>This success model will expand as a template for future trophy assets like YIBD and Jamsil.</>
                                 )}
@@ -82,7 +82,7 @@ export default function Section126({ isActive }) {
                                     <div className="text-[#60a5fa] font-black text-[13px] tracking-widest mb-0.5">EXIT / SECURITIZATION</div>
                                     <div className="font-extrabold text-[22px]">IOTA Office REIT</div>
                                 </div>
-                                <div className="bg-[#1e3a8a] px-4 py-2 rounded font-bold text-[16px]">상장 및 유동화</div>
+                                <div className="bg-[#1e3a8a] px-4 py-2 rounded font-bold text-[16px]">{lang === 'kr' ? '상장 및 유동화' : 'Listing & Liquidation'}</div>
                             </div>
 
                             {/* Layer 3: Fund */}
@@ -91,7 +91,7 @@ export default function Section126({ isActive }) {
                                     <div className="text-blue-300 font-black text-[13px] tracking-widest mb-0.5">STABILIZED HOLDING</div>
                                     <div className="font-extrabold text-[22px]">IGIS RE Fund</div>
                                 </div>
-                                <div className="bg-[#0f172a] px-4 py-2 rounded font-bold text-[16px]">안정화 보유</div>
+                                <div className="bg-[#0f172a] px-4 py-2 rounded font-bold text-[16px]">{lang === 'kr' ? '안정화 보유' : 'Stabilized Holding'}</div>
                             </div>
 
                             {/* Layer 2: PFV */}
@@ -100,7 +100,7 @@ export default function Section126({ isActive }) {
                                     <div className="text-blue-100 font-black text-[13px] tracking-widest mb-0.5">DEVELOPMENT PHASE</div>
                                     <div className="font-extrabold text-[22px]">Project PFV</div>
                                 </div>
-                                <div className="bg-[#1e3a8a] px-4 py-2 rounded font-bold text-[16px]">개발 및 시공</div>
+                                <div className="bg-[#1e3a8a] px-4 py-2 rounded font-bold text-[16px]">{lang === 'kr' ? '개발 및 시공' : 'Development & Construction'}</div>
                             </div>
 
                             {/* Layer 1: LP */}
@@ -109,7 +109,7 @@ export default function Section126({ isActive }) {
                                     <div className="text-gray-500 font-black text-[13px] tracking-widest mb-0.5">CAPITAL BASE</div>
                                     <div className="text-[#1d1d1f] font-extrabold text-[22px]">Global LP</div>
                                 </div>
-                                <div className="bg-gray-300 text-gray-800 px-4 py-2 rounded font-bold text-[16px]">기초 자본</div>
+                                <div className="bg-gray-300 text-gray-800 px-4 py-2 rounded font-bold text-[16px]">{lang === 'kr' ? '기초 자본' : 'Base Capital'}</div>
                             </div>
                         </div>
                     </div>

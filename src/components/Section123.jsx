@@ -72,7 +72,7 @@ export default function Section123({ isActive }) {
                 <div className={`w-full text-center mt-2 transition-all duration-[612ms] delay-[122ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                     <div className="inline-block bg-[#1d1d1f] text-white px-8 py-5 text-[20px] md:text-[22px] font-bold shadow-lg break-keep">
                         {lang === 'kr' ? 
-                            '[2026.12 클로징 타겟] 성공 시 이지스의 글로벌 LP 확장 최강 레퍼런스, 실패 시 Brand Impairment 위험' : 
+                            (lang === 'kr' ? '[2026.12 클로징 타겟] 성공 시 이지스의 글로벌 LP 확장 최강 레퍼런스, 실패 시 Brand Impairment 위험' : '[Dec 2026 Closing Target] If successful, IGIS\'s strongest reference for global LP expansion; if failed, risk of Brand Impairment') : 
                             '[2026.12 Target] Success: Ultimate reference for Global LP expansion. Failure: Brand Impairment risk.'}
                     </div>
                 </div>

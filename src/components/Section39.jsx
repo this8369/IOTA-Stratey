@@ -113,9 +113,9 @@ export default function Section39({ isActive }) {
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span><strong>1조→2조 달러 구간의 역사</strong>: 서울의 주요 거점을 중심으로 글로벌 자본을 유입시킨 트로피 랜드마크들이 시계열적으로 등장</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span><strong>권역별 거점 구축</strong>: 2000년대 초반 원조 트로피(SFC/GFC)에서 시작해 IFC, 롯데월드타워, 파크원 등 메가 콤플렉스로 진화</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span><strong>차세대 트로피 공급</strong>: 2025년 이후 ONE CENTINEL 및 IOTA Seoul(2032) 등 신규 랜드마크 공급 예정</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span>{lang === 'kr' ? <><strong>1조→2조 달러 구간의 역사</strong>: 서울의 주요 거점을 중심으로 글로벌 자본을 유입시킨 트로피 랜드마크들이 시계열적으로 등장</> : <><strong>History of $1T to $2T Period</strong>: Trophy landmarks that attracted global capital emerged chronologically across Seoul's major hubs.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span>{lang === 'kr' ? <><strong>권역별 거점 구축</strong>: 2000년대 초반 원조 트로피(SFC/GFC)에서 시작해 IFC, 롯데월드타워, 파크원 등 메가 콤플렉스로 진화</> : <><strong>Regional Hub Construction</strong>: Evolved from early 2000s original trophies (SFC/GFC) to mega complexes like IFC, Lotte World Tower, and Parc1.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span>{lang === 'kr' ? <><strong>차세대 트로피 공급</strong>: 2025년 이후 ONE CENTINEL 및 IOTA Seoul(2032) 등 신규 랜드마크 공급 예정</> : <><strong>Next-Gen Trophy Supply</strong>: New landmarks like ONE CENTINEL and IOTA Seoul (2032) scheduled for supply after 2025.</>}</span></li>
                             </>
                         ) : (
                             <>

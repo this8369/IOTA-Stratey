@@ -35,7 +35,7 @@ export default function Section12({ isActive }) {
                 {/* Main Title */}
                 <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? (
-                        <>중후장대와 신성장 산업의 결합,<br/>그리고 심화된 단일 종목 종속성</>
+<>중후장대와 신성장 산업의 결합,<br/>그리고 심화된 단일 종목 종속성</>
                     ) : (
                         <>Combination of Heavy & New Growth Industries,<br/>And the Deepened Reliance on a Single Sector</>
                     )}
@@ -104,10 +104,10 @@ export default function Section12({ isActive }) {
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>1조 → 2조 달러 20년 구간의 본질은 <strong>"수출 제조업 슈퍼 사이클 + 신규 엔진 장착"</strong>임</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span><strong>5대 중후장대</strong>(반도체·자동차·조선 등)와 <strong>5대 신성장</strong>(콘텐츠·바이오 등)의 10대 산업 듀얼 엔진으로 확장됨</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>단일 동력원에 의존하지 않아 높은 <strong>회복탄력성(Resilience)</strong>을 입증함</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>반대로 <strong>반도체 단일 종목에 대한 의존도 심화</strong>라는 거시적 양면성도 함께 가짐</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>{lang === 'kr' ? <>1조 → 2조 달러 20년 구간의 본질은 <strong>"수출 제조업 슈퍼 사이클 + 신규 엔진 장착"</strong>임</> : <>The essence of the 20-year $1T to $2T period is <strong>"Export Manufacturing Super Cycle + New Engines"</strong></>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>{lang === 'kr' ? <><strong>5대 중후장대</strong>(반도체·자동차·조선 등)와 <strong>5대 신성장</strong>(콘텐츠·바이오 등)의 10대 산업 듀얼 엔진으로 확장됨</> : <>Expanded into a 10-industry dual engine of <strong>5 Heavy Industries</strong> (Semiconductors, Auto, Shipbuilding) and <strong>5 New Growth Industries</strong> (Content, Bio, etc.)</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>{lang === 'kr' ? <>단일 동력원에 의존하지 않아 높은 <strong>회복탄력성(Resilience)</strong>을 입증함</> : <>Proven high <strong>Resilience</strong> by not relying on a single power source</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>{lang === 'kr' ? <>반대로 <strong>반도체 단일 종목에 대한 의존도 심화</strong>라는 거시적 양면성도 함께 가짐</> : <>Conversely, accompanied by the macroeconomic duality of <strong>deepened dependency on a single semiconductor sector</strong></>}</span></li>
                             </>
                         ) : (
                             <>

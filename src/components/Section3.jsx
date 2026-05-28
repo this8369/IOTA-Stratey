@@ -26,7 +26,7 @@ export default function Section3({ isActive }) {
  {/* Theme */}
  <div className={`transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
  <span className="inline-block text-[24px] md:text-[28px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[14px] bg-transparent">
- 3조 달러 시대, 이지스자산운용의 전략적 좌표
+ {lang === 'kr' ? '3조 달러 시대, 이지스자산운용의 전략적 좌표' : 'The $3 Trillion Era, IGIS Asset Management\'s Strategic Coordinates'}
  </span>
  </div>
 

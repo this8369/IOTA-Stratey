@@ -93,7 +93,7 @@ export default function Section88({ isActive }) {
                 <div className={`max-w-[1000px] bg-blue-50 border border-blue-100 p-6 rounded-xl shadow-sm transition-all duration-[540ms] ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <p className="text-[18px] md:text-[20px] font-bold text-[#1e3a8a] break-keep leading-relaxed">
                         {lang === 'kr' 
-                            ? '단순한 규모 확장을 넘어 질적 체질 개선을 동반한 블랙스톤 압축 진화 모델'
+                            ? (lang === 'kr' ? '단순한 규모 확장을 넘어 질적 체질 개선을 동반한 블랙스톤 압축 진화 모델' : 'A Blackstone compressed evolution model accompanied by qualitative improvement beyond simple scale expansion.')
                             : 'A compressed Blackstone evolution model accompanied by qualitative structural improvement beyond simple scale expansion.'
                         }
                     </p>

@@ -41,9 +41,9 @@ export default function Section117({ isActive }) {
                         </div>
                         <ul className="text-[18px] text-gray-600 font-medium leading-relaxed space-y-2">
                             <li>▪ KTX · SRT</li>
-                            <li>▪ 1호선 · 4호선 · 공항철도</li>
-                            <li>▪ GTX-A (2024 개통)</li>
-                            <li>▪ GTX-B (2030 개통 예정)</li>
+                            <li>▪ {lang === 'kr' ? '1호선 · 4호선 · 공항철도' : 'Line 1, 4, AREX'}</li>
+                            <li>▪ {lang === 'kr' ? 'GTX-A (2024 개통)' : 'GTX-A (Opened 2024)'}</li>
+                            <li>▪ {lang === 'kr' ? 'GTX-B (2030 개통 예정)' : 'GTX-B (Expected 2030)'}</li>
                         </ul>
                     </div>
 
@@ -54,10 +54,10 @@ export default function Section117({ isActive }) {
                             {lang === 'kr' ? '보행 및 지하철 연결성' : 'Pedestrian & Subway Access'}
                         </div>
                         <ul className="text-[18px] text-gray-600 font-medium leading-relaxed space-y-2">
-                            <li>▪ 남산 (자연 녹지)</li>
-                            <li>▪ 도심 (전통적 CBD)</li>
-                            <li>▪ 용산국제업무지구 (예정)</li>
-                            <li>▪ 마포 · 여의도 접근성</li>
+                            <li>▪ {lang === 'kr' ? '남산 (자연 녹지)' : 'Namsan (Nature/Greenery)'}</li>
+                            <li>▪ {lang === 'kr' ? '도심 (전통적 CBD)' : 'Downtown (Traditional CBD)'}</li>
+                            <li>▪ {lang === 'kr' ? '용산국제업무지구 (예정)' : 'Yongsan IBD (Planned)'}</li>
+                            <li>▪ {lang === 'kr' ? '마포 · 여의도 접근성' : 'Mapo/Yeouido Accessibility'}</li>
                         </ul>
                     </div>
 
@@ -70,9 +70,9 @@ export default function Section117({ isActive }) {
                         <p className="text-[20px] text-blue-50 font-medium leading-relaxed">
                             {lang === 'kr' ? (
                                 <>
-                                    인천국제공항과 공항철도로 직결되어<br/>
-                                    서울 진입 시 가장 먼저 마주하는 관문<br/>
-                                    (약 30분 소요)
+                                    {lang === 'kr' ? '인천국제공항과 공항철도로 직결되어' : 'Directly connected to Incheon Int\'l Airport via AREX,'}<br/>
+                                    {lang === 'kr' ? '서울 진입 시 가장 먼저 마주하는 관문' : 'the first gateway upon entering Seoul'}<br/>
+                                    {lang === 'kr' ? '(약 30분 소요)' : '(approx. 30 mins)'}
                                 </>
                             ) : (
                                 'Directly connected to Incheon International Airport via AREX, serving as the first gateway upon entering Seoul (approx. 30 min).'

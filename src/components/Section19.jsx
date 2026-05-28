@@ -50,19 +50,19 @@ export default function Section19({ isActive }) {
                         <div className={`absolute flex items-center justify-center w-full h-full transition-all duration-[1148ms] ease-out ${step >= 3 ? 'opacity-100' : 'opacity-0 scale-50'}`}>
                             {/* HYBE / Big 4 */}
                             <div className="absolute top-[36px] left-[5%] ml-[26px] bg-white border-[4px] border-fuchsia-100 shadow-xl rounded-2xl px-6 py-4 flex flex-col items-center z-30">
-                                <span className="text-[28px] font-black text-[#d946ef] mb-1">4대 엔터</span>
+                                <span className="text-[28px] font-black text-[#d946ef] mb-1">{lang === 'kr' ? '4대 엔터' : 'Big 4 Enter'}</span>
                                 <span className="text-[16px] text-gray-600 font-bold">HYBE(BTS)·SM·JYP·YG</span>
                             </div>
                             
                             {/* CJ ENM */}
                             <div className="absolute bottom-[20px] left-[15%] bg-white border-[4px] border-purple-100 shadow-xl rounded-2xl px-6 py-4 flex flex-col items-center z-30">
                                 <span className="text-[28px] font-black text-[#86198f] mb-1">CJ ENM</span>
-                                <span className="text-[16px] text-gray-600 font-bold">기생충 · 오징어 게임</span>
+                                <span className="text-[16px] text-gray-600 font-bold">{lang === 'kr' ? '기생충 · 오징어 게임' : 'Parasite · Squid Game'}</span>
                             </div>
 
                             {/* Netflix */}
                             <div className="absolute top-[40px] right-[5%] mr-[20px] bg-white border-[4px] border-rose-100 shadow-xl rounded-2xl px-6 py-4 flex flex-col items-center z-30">
-                                <span className="text-[28px] font-black text-[#e11d48] mb-1">Netflix 투자</span>
+                                <span className="text-[28px] font-black text-[#e11d48] mb-1">{lang === 'kr' ? 'Netflix 투자' : 'Netflix Investment'}</span>
                                 <span className="text-[16px] text-gray-600 font-bold">$2.5B+ (2016~2025)</span>
                             </div>
                         </div>
@@ -74,10 +74,10 @@ export default function Section19({ isActive }) {
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-[#d946ef]">▪</span><span>K-콘텐츠는 1조 ➔ 2조 달러 구간의 숨겨진 진주. HYBE 등 <strong>4대 엔터와 CJ ENM</strong>이 글로벌 흥행을 주도함.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-[#d946ef]">▪</span><span>넷플릭스의 한국 콘텐츠 누적 투자(2016~2025)가 <strong>25억 달러 이상</strong>을 기록하며 산업 파이를 키움.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-[#d946ef]">▪</span><span>명목 GDP 기여도는 1~2%대지만, 국가 브랜드 <strong>코리아 프리미엄(Korea Premium)</strong>의 핵심 동력으로 작용함.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-[#d946ef]">▪</span><span>과거 1980년대 일본 버블기 소니·세가가 구축한 <strong>J-Brand 프리미엄</strong>과 유사한 거대한 무형 자산임.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#d946ef]">▪</span><span>{lang === 'kr' ? <>K-콘텐츠는 1조 ➔ 2조 달러 구간의 숨겨진 진주. HYBE 등 <strong>4대 엔터와 CJ ENM</strong>이 글로벌 흥행을 주도함.</> : <>K-Content is the hidden gem of the $1T to $2T period. <strong>Big 4 agencies (e.g. HYBE) and CJ ENM</strong> lead global hits.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#d946ef]">▪</span><span>{lang === 'kr' ? <>넷플릭스의 한국 콘텐츠 누적 투자(2016~2025)가 <strong>25억 달러 이상</strong>을 기록하며 산업 파이를 키움.</> : <>Netflix's cumulative investment in Korean content (2016-2025) recorded <strong>over $2.5B</strong>, growing the industry pie.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#d946ef]">▪</span><span>{lang === 'kr' ? <>명목 GDP 기여도는 1~2%대지만, 국가 브랜드 <strong>코리아 프리미엄(Korea Premium)</strong>의 핵심 동력으로 작용함.</> : <>Nominal GDP contribution is ~1-2%, but acts as the core driver of the national brand <strong>Korea Premium</strong>.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#d946ef]">▪</span><span>{lang === 'kr' ? <>과거 1980년대 일본 버블기 소니·세가가 구축한 <strong>J-Brand 프리미엄</strong>과 유사한 거대한 무형 자산임.</> : <>A massive intangible asset similar to the <strong>J-Brand Premium</strong> built by Sony/Sega in the 1980s Japan bubble era.</>}</span></li>
                             </>
                         ) : (
                             <>

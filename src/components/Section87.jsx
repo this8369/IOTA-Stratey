@@ -117,7 +117,7 @@ export default function Section87({ isActive }) {
                 <div className={`max-w-[1000px] bg-blue-50 border border-blue-100 p-6 rounded-xl shadow-sm transition-all duration-[540ms] ${step >= 8 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <p className="text-[18px] md:text-[20px] font-bold text-[#1e3a8a] break-keep leading-relaxed">
                         {lang === 'kr' 
-                            ? '국내 부동산 펀드·리츠 1위를 넘어 글로벌 무대에서의 객관적 위치 인식'
+                            ? (lang === 'kr' ? '국내 부동산 펀드·리츠 1위를 넘어 글로벌 무대에서의 객관적 위치 인식' : 'Recognizing our objective position on the global stage, beyond being #1 in domestic real estate funds/REITs.')
                             : 'Moving beyond #1 in domestic RE funds/REITs to objectively recognize our position on the global stage.'
                         }
                     </p>

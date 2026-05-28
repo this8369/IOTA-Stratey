@@ -41,7 +41,7 @@ export default function Section9({ isActive }) {
                 <h2 className={`text-[34px] md:text-[54px] lg:text-[66px] font-bold leading-[calc(1.3em-6px)] break-keep transition-all duration-[918ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="gradient-text-ch1">
                         {lang === 'kr' ? (
-                            <>1조 달러에서 2조 달러로<br/>거시 좌표의 이동</>
+<>1조 달러에서 2조 달러로<br/>거시 좌표의 이동</>
                         ) : (
                             <>From $1 Trillion to $2 Trillion<br/>A Shift in Macro Coordinates</>
                         )}

@@ -36,8 +36,8 @@ export default function Section84({ isActive }) {
                     
                     {/* Current State (2026) */}
                     <div className={`flex flex-col items-center justify-center w-[280px] h-[200px] bg-gray-50 border-2 border-gray-200 rounded-2xl shadow-sm transition-all duration-[540ms] ${step >= 2 ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}>
-                        <div className="text-gray-500 font-bold text-[18px] mb-2">2026 (현재)</div>
-                        <div className="text-[#1d1d1f] font-black text-[36px] leading-none mb-1">USD 80<span className="text-[20px] text-gray-500">대</span></div>
+                        <div className="text-gray-500 font-bold text-[18px] mb-2">{lang === 'kr' ? '2026 (현재)' : '2026 (Current)'}</div>
+                        <div className="text-[#1d1d1f] font-black text-[36px] leading-none mb-1">USD 80<span className="text-[20px] text-gray-500">{lang === 'kr' ? '대' : 's'}</span></div>
                         <div className="text-blue-600 font-bold text-[16px] mt-2 bg-blue-50 px-3 py-1 rounded-full">
                             {lang === 'kr' ? '터무니없는 저평가 현실' : 'Ridiculously Undervalued'}
                         </div>
@@ -63,7 +63,7 @@ export default function Section84({ isActive }) {
 
                     {/* Future State (2040) */}
                     <div className={`flex flex-col items-center justify-center w-[320px] h-[240px] bg-[#1e3a8a] border-4 border-blue-200 rounded-2xl shadow-2xl relative transition-all duration-[765ms] ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}>
-                        <div className="text-blue-200 font-bold text-[20px] mb-2">2040 (Tokyo Marunouchi 수준)</div>
+                        <div className="text-blue-200 font-bold text-[20px] mb-2">{lang === 'kr' ? '2040 (Tokyo Marunouchi 수준)' : '2040 (Tokyo Marunouchi level)'}</div>
                         <div className="text-white font-black text-[42px] leading-none mb-1">USD 150<span className="text-[24px] text-blue-300">~180</span></div>
                     </div>
 
@@ -73,7 +73,7 @@ export default function Section84({ isActive }) {
                 <div className={`max-w-[1000px] bg-blue-50 border border-blue-100 p-6 rounded-xl shadow-sm transition-all duration-[540ms] ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <p className="text-[18px] md:text-[20px] font-bold text-[#1e3a8a] break-keep leading-relaxed">
                         {lang === 'kr' 
-                            ? <>현재의 터무니없는 저평가가 역으로 IOTA를 글로벌 LP에게<br/>"향후 15년간 가격이 2배로 수렴 가능하다고 세일즈할 수 있는 단일 최강 Thesis"</>
+                            ? (lang === 'kr' ? <>현재의 터무니없는 저평가가 역으로 IOTA를 글로벌 LP에게<br/>"향후 15년간 가격이 2배로 수렴 가능하다고 세일즈할 수 있는 단일 최강 Thesis"</> : <>Current absurd undervaluation paradoxically provides the single strongest thesis to sell IOTA to global LPs:<br/>"Prices can converge to double over the next 15 years."</>)
                             : <>This absurd undervaluation paradoxically acts as the single strongest thesis to sell IOTA to global LPs:<br/>"Prices have the potential to converge to 2x over the next 15 years."</>
                         }
                     </p>

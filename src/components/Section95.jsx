@@ -116,7 +116,7 @@ export default function Section95({ isActive }) {
                 <div className={`w-full max-w-[1100px] bg-blue-50 border border-blue-100 p-6 rounded-xl shadow-sm transition-all duration-[540ms] ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <p className="text-[17px] md:text-[20px] font-bold text-[#1e3a8a] break-keep leading-relaxed text-center">
                         {lang === 'kr' 
-                            ? <>하드웨어(테크 레디)와 소프트웨어(AaaS)를 결합하여,<br/>부동산을 기업에게 '서비스'로서 제공하는 진정한 공간 운영 OS 플랫폼</>
+                            ? (lang === 'kr' ? <>하드웨어(테크 레디)와 소프트웨어(AaaS)를 결합하여,<br/>부동산을 기업에게 '서비스'로서 제공하는 진정한 공간 운영 OS 플랫폼</> : <>A true spatial operations OS platform providing real estate as a 'service' to enterprises<br/>by combining hardware (Tech-Ready) and software (AaaS).</>)
                             : <>A true spatial operating OS platform that combines hardware (Tech-Ready) and software (AaaS)<br/>to provide real estate to corporations as a 'service'</>
                         }
                     </p>

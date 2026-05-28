@@ -130,7 +130,7 @@ export default function Section83({ isActive }) {
                 <div className={`max-w-[1000px] bg-blue-50 border border-blue-100 p-6 rounded-xl shadow-sm transition-all duration-[540ms] ${step >= 9 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <p className="text-[18px] md:text-[20px] font-bold text-[#1e3a8a] break-keep leading-relaxed">
                         {lang === 'kr' 
-                            ? '싱가포르보다 낮고 홍콩 센트럴 대비 3분의 1 수준의 서울 프라임 임대료'
+                            ? (lang === 'kr' ? '싱가포르보다 낮고 홍콩 센트럴 대비 3분의 1 수준의 서울 프라임 임대료' : 'Seoul prime rents lower than Singapore and at 1/3 the level of Hong Kong Central.')
                             : 'Seoul Prime rent, lower than Singapore and only one-third of Hong Kong Central.'
                         }
                     </p>

@@ -142,9 +142,9 @@ export default function Section31({ isActive }) {
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-gray-500">▪</span><span>2007~2010년 글로벌 금융위기로 8~10%대, 2013~2015년 대형 공급(IFC 등)으로 YBD 일시 18%까지 상승.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-gray-500">▪</span><span>2020~2021년 코로나 시기 일시 상승 후 2022년부터 급락, <strong>2025년 서울 Grade-A 공실률은 3.1%</strong> 기록.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-gray-500">▪</span><span>1조→2조 달러 구간 종료 시점, 서울 프라임 오피스는 사실상 <strong>자연 공실률을 하회하는 완전 임차 상태</strong> 도달.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-gray-500">▪</span><span>{lang === 'kr' ? <>2007~2010년 글로벌 금융위기로 8~10%대, 2013~2015년 대형 공급(IFC 등)으로 YBD 일시 18%까지 상승.</> : <>Rose to 8-10% during the 07-10 Global Financial Crisis, and YBD temporarily spiked to 18% due to large supplies (e.g. IFC) during 13-15.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-gray-500">▪</span><span>{lang === 'kr' ? <>2020~2021년 코로나 시기 일시 상승 후 2022년부터 급락, <strong>2025년 서울 Grade-A 공실률은 3.1%</strong> 기록.</> : <>After a temporary rise during the 20-21 COVID period, plummeted since 2022, recording a <strong>3.1% Grade-A vacancy rate in Seoul in 2025</strong>.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-gray-500">▪</span><span>{lang === 'kr' ? <>1조→2조 달러 구간 종료 시점, 서울 프라임 오피스는 사실상 <strong>자연 공실률을 하회하는 완전 임차 상태</strong> 도달.</> : <>At the end of the $1T to $2T period, Seoul prime offices practically reached a <strong>fully leased state below the natural vacancy rate</strong>.</>}</span></li>
                             </>
                         ) : (
                             <>

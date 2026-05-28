@@ -71,9 +71,9 @@ export default function Section18({ isActive }) {
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-[#7c3aed]">▪</span><span>철강(POSCO)은 1조 달러 시대 초입 <strong>한국 경제의 상징</strong>이었으나, 중국의 과잉 공급으로 마진 압박에 직면함.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-[#7c3aed]">▪</span><span>이러한 위기를 타개하기 위해 <strong>2차전지 소재(양극재·리튬 등) 밸류체인</strong>으로 과감한 피벗팅(Pivoting)을 단행함.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-[#7c3aed]">▪</span><span>POSCO홀딩스의 진화는 1조 ➔ 2조 달러 구간에서 일어난 가장 <strong>대표적인 산업 전환 케이스</strong>임.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#7c3aed]">▪</span><span>{lang === 'kr' ? <>철강(POSCO)은 1조 달러 시대 초입 <strong>한국 경제의 상징</strong>이었으나, 중국의 과잉 공급으로 마진 압박에 직면함.</> : <>Steel (POSCO) was a <strong>symbol of the Korean economy</strong> in the early $1T era, but faced margin pressure from China's oversupply.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#7c3aed]">▪</span><span>{lang === 'kr' ? <>이러한 위기를 타개하기 위해 <strong>2차전지 소재(양극재·리튬 등) 밸류체인</strong>으로 과감한 피벗팅(Pivoting)을 단행함.</> : <>To overcome this, executed a bold pivot to the <strong>secondary battery material (cathode, lithium, etc.) value chain</strong>.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#7c3aed]">▪</span><span>{lang === 'kr' ? <>POSCO홀딩스의 진화는 1조 ➔ 2조 달러 구간에서 일어난 가장 <strong>대표적인 산업 전환 케이스</strong>임.</> : <>The evolution of POSCO Holdings is the most <strong>representative industrial transition case</strong> in the $1T to $2T period.</>}</span></li>
                             </>
                         ) : (
                             <>

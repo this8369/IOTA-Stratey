@@ -55,13 +55,13 @@ export default function Section96({ isActive }) {
                         </div>
                         <div className="grid grid-cols-1 gap-3">
                             <div className="bg-[#1e3a8a] text-white rounded-xl p-4 flex items-center justify-center font-bold text-[18px] shadow-md">
-                                1. Capital (거대 자본력)
+                                1. {lang === 'kr' ? 'Capital (거대 자본력)' : 'Capital (Massive Capital Power)'}
                             </div>
                             <div className="bg-blue-600 text-white rounded-xl p-4 flex items-center justify-center font-bold text-[18px] shadow-md relative z-0">
-                                2. Real Estate Ownership (실물 자산 보유)
+                                2. {lang === 'kr' ? 'Real Estate Ownership (실물 자산 보유)' : 'Real Estate Ownership'}
                             </div>
                             <div className="bg-blue-400 text-white rounded-xl p-4 flex items-center justify-center font-bold text-[18px] shadow-md relative z-0">
-                                3. Operating Layer (공간 운영 OS)
+                                3. {lang === 'kr' ? 'Operating Layer (공간 운영 OS)' : 'Operating Layer (Spatial Operations OS)'}
                             </div>
                         </div>
                     </div>
@@ -79,7 +79,7 @@ export default function Section96({ isActive }) {
                             <h4 className="text-blue-200 font-bold text-[20px] mb-3">{lang === 'kr' ? '모리빌딩, 토라노몬 & 아자부다이 힐스 (2023)' : 'Mori Building, Toranomon & Azabudai Hills (2023)'}</h4>
                             <p className="text-white text-[17px] leading-relaxed break-keep">
                                 {lang === 'kr' 
-                                    ? <>글로벌 비교 시 모리빌딩의 운영 모델에 가장 근접.<br/>압도적 자본력과 실물 자산, 그리고 섬세한 운영 역량을<br/>완벽하게 결합한 성공 사례</> 
+                                    ? (lang === 'kr' ? <>글로벌 비교 시 모리빌딩의 운영 모델에 가장 근접.<br/>압도적 자본력과 실물 자산, 그리고 섬세한 운영 역량을<br/>완벽하게 결합한 성공 사례</> : <>Closest to Mori Building's operating model in global comparison.<br/>A successful case perfectly combining overwhelming capital, physical assets, and delicate operational capabilities.</>) 
                                     : 'Closest to Mori Building\'s operational model. A successful case that perfectly combines overwhelming capital, physical assets, and delicate operational capabilities.'}
                             </p>
                         </div>
@@ -88,7 +88,7 @@ export default function Section96({ isActive }) {
                             <h4 className="text-[#1e3a8a] font-black text-[22px] mb-2">{lang === 'kr' ? '"수직 도시 (Vertical City)" 컨셉 차용' : 'Adopting "Vertical City" Concept'}</h4>
                             <p className="text-gray-700 font-bold text-[16px] break-keep">
                                 {lang === 'kr' 
-                                    ? '임차 · 주거 · 문화 · F&B를 하나로 묶어 통합 운영하는 Mori의 모델을 IOTA에 직접 적용' 
+                                    ? (lang === 'kr' ? '임차 · 주거 · 문화 · F&B를 하나로 묶어 통합 운영하는 Mori의 모델을 IOTA에 직접 적용' : 'Directly applying Mori\'s model of integrating leasing, residential, culture, and F&B into unified operations to IOTA.') 
                                     : 'Directly applying Mori\'s model of integrated operation of office, residential, culture, and F&B into IOTA'}
                             </p>
                         </div>
@@ -100,7 +100,7 @@ export default function Section96({ isActive }) {
                 <div className={`w-full max-w-[1100px] bg-blue-50 border border-blue-100 p-6 rounded-xl shadow-sm transition-all duration-[540ms] ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <p className="text-[17px] md:text-[20px] font-bold text-[#1e3a8a] break-keep leading-relaxed text-center">
                         {lang === 'kr' 
-                            ? <>자본력(Capital)과 소유권(Ownership), 그리고 운영(Operating) 역량을 모두 갖춘 이지스가<br/>WeWork의 실패를 넘어서는 기관용(Institutional) 공간 운영 플랫폼 실현 가능</>
+                            ? (lang === 'kr' ? <>자본력(Capital)과 소유권(Ownership), 그리고 운영(Operating) 역량을 모두 갖춘 이지스가<br/>WeWork의 실패를 넘어서는 기관용(Institutional) 공간 운영 플랫폼 실현 가능</> : <>IGIS, equipped with Capital, Ownership, and Operating capabilities, can realize an Institutional spatial operations platform transcending WeWork's failure.</>)
                             : <>IGIS, equipped with Capital, Ownership, and Operating capabilities,<br/>can realize an Institutional spatial platform overcoming WeWork's failures</>
                         }
                     </p>

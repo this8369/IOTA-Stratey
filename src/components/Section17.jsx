@@ -74,8 +74,8 @@ export default function Section17({ isActive }) {
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-red-500">▪</span><span>2007년에는 <strong>SK이노베이션·GS칼텍스·에쓰오일·현대오일뱅크 4강</strong>이 명확히 시장을 주도함.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-red-500">▪</span><span>그러나 2020년대 중반 들어 <strong>중국의 자급률 상승</strong>으로 인해 구조적 다운사이클에 진입함.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-red-500">▪</span><span>{lang === 'kr' ? <>2007년에는 <strong>SK이노베이션·GS칼텍스·에쓰오일·현대오일뱅크 4강</strong>이 명확히 시장을 주도함.</> : <>In 2007, the <strong>Big 4 (SK Innovation, GS Caltex, S-Oil, Hyundai Oilbank)</strong> clearly dominated the market.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-red-500">▪</span><span>{lang === 'kr' ? <>그러나 2020년대 중반 들어 <strong>중국의 자급률 상승</strong>으로 인해 구조적 다운사이클에 진입함.</> : <>However, entered a structural downcycle in the mid-2020s due to <strong>China's rising self-sufficiency</strong>.</>}</span></li>
                                 <li className="flex items-start"><span className="mr-3 text-red-500">▪</span><span>결과적으로 1조 ➔ 2조 달러 구간 후반부에는 <strong>상대적 둔화 섹터</strong>로 분류해야 하는 상황임.</span></li>
                             </>
                         ) : (

@@ -41,7 +41,7 @@ export default function Section28({ isActive }) {
                 <h2 className={`text-[34px] md:text-[54px] lg:text-[66px] font-bold leading-[calc(1.3em-6px)] break-keep transition-all duration-[918ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="gradient-text-ch4">
                         {lang === 'kr' ? (
-                            <>서울 오피스 시장 진화<br/>CBD·GBD·YBD 3축에서 +MBD·BBD 5축으로</>
+<>서울 오피스 시장 진화<br/>CBD·GBD·YBD 3축에서 +MBD·BBD 5축으로</>
                         ) : (
                             <>Evolution of Seoul Office Market<br/>From 3 Axes (CBD/GBD/YBD) to 5 Axes (+MBD/BBD)</>
                         )}

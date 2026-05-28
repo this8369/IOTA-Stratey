@@ -76,9 +76,9 @@ export default function Section25({ isActive }) {
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-amber-600">▪</span><span>금융위기 이후 <strong>2017~2020년 장기 박스피(1,800~2,400)</strong>에 갇히며 '코리아 디스카운트'가 고착화됨.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-amber-600">▪</span><span>2021년 3,000선 돌파 후 다시 박스권에 머물렀으나, <strong>2025년 하반기 약 75.6% 폭등</strong>하며 글로벌 지수 상승률 1위 기록.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-amber-600">▪</span><span>랠리가 지속되며 <strong>2026년 1월 22일, 역사상 최초로 KOSPI 5,000선</strong>을 돌파하는 기념비적 성과 달성.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-amber-600">▪</span><span>{lang === 'kr' ? <>금융위기 이후 <strong>2017~2020년 장기 박스피(1,800~2,400)</strong>에 갇히며 '코리아 디스카운트'가 고착화됨.</> : <>Entrenched 'Korea Discount' trapped in a <strong>long-term Boxpi (1,800-2,400) from 2017-2020</strong> after the financial crisis.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-amber-600">▪</span><span>{lang === 'kr' ? <>2021년 3,000선 돌파 후 다시 박스권에 머물렀으나, <strong>2025년 하반기 약 75.6% 폭등</strong>하며 글로벌 지수 상승률 1위 기록.</> : <>After breaking 3,000 in 2021, returned to a box range, but <strong>surged ~75.6% in 2H 2025</strong>, ranking 1st in global index growth.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-amber-600">▪</span><span>{lang === 'kr' ? <>랠리가 지속되며 <strong>2026년 1월 22일, 역사상 최초로 KOSPI 5,000선</strong>을 돌파하는 기념비적 성과 달성.</> : <>As the rally continued, achieved a monumental milestone of <strong>breaking KOSPI 5,000 for the first time in history on Jan 22, 2026</strong>.</>}</span></li>
                             </>
                         ) : (
                             <>

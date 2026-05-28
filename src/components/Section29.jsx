@@ -43,8 +43,8 @@ export default function Section29({ isActive }) {
                         <p className="text-[18px] font-bold text-gray-500 mb-6">{lang === 'kr' ? '광화문·시청·종로' : 'Gwanghwamun·Jongno'}</p>
                         <div className="w-full flex flex-col gap-3">
                             <div className="bg-white px-4 py-3 rounded-xl border border-gray-300 font-bold text-gray-700 shadow-sm">SFC (2002)</div>
-                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-300 font-bold text-gray-700 shadow-sm">종로타워 / 그랑서울 (2014)</div>
-                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-300 font-bold text-gray-700 shadow-sm">D타워 (2017) / 센트로폴리스 (2018)</div>
+                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-300 font-bold text-gray-700 shadow-sm">{lang === 'kr' ? '종로타워 / 그랑서울 (2014)' : 'Jongno Tower / Gran Seoul (2014)'}</div>
+                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-300 font-bold text-gray-700 shadow-sm">{lang === 'kr' ? 'D타워 (2017) / 센트로폴리스 (2018)' : 'D Tower (2017) / Centropolis (2018)'}</div>
                         </div>
                     </div>
 
@@ -55,8 +55,8 @@ export default function Section29({ isActive }) {
                         <p className="text-[18px] font-bold text-gray-500 mb-6">{lang === 'kr' ? '테헤란로 라인 핵심' : 'Teheran-ro Core'}</p>
                         <div className="w-full flex flex-col gap-3">
                             <div className="bg-white px-4 py-3 rounded-xl border border-gray-300 font-bold text-gray-700 shadow-sm">GFC (2001)</div>
-                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-300 font-bold text-gray-700 shadow-sm">파르나스타워 (2016)</div>
-                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-300 font-bold text-gray-700 shadow-sm">캐피탈타워 (1998)</div>
+                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-300 font-bold text-gray-700 shadow-sm">{lang === 'kr' ? '파르나스타워 (2016)' : 'Parnas Tower (2016)'}</div>
+                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-300 font-bold text-gray-700 shadow-sm">{lang === 'kr' ? '캐피탈타워 (1998)' : 'Capital Tower (1998)'}</div>
                         </div>
                     </div>
 
@@ -66,8 +66,8 @@ export default function Section29({ isActive }) {
                         <h3 className="text-[26px] font-extrabold text-gray-900 mb-2">{lang === 'kr' ? '여의도권역' : 'Yeouido'}</h3>
                         <p className="text-[18px] font-bold text-gray-500 mb-6">{lang === 'kr' ? '두 번의 거대한 변곡점' : 'Two Major Turning Points'}</p>
                         <div className="w-full flex flex-col gap-3">
-                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-300 font-bold text-gray-700 shadow-sm">IFC 서울 (2012)</div>
-                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-300 font-bold text-gray-700 shadow-sm">파크원 Parc1 (2020)</div>
+                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-300 font-bold text-gray-700 shadow-sm">{lang === 'kr' ? 'IFC 서울 (2012)' : 'IFC Seoul (2012)'}</div>
+                            <div className="bg-white px-4 py-3 rounded-xl border border-gray-300 font-bold text-gray-700 shadow-sm">{lang === 'kr' ? '파크원 Parc1 (2020)' : 'Parc1 (2020)'}</div>
                             <div className="bg-transparent px-4 py-3"></div>
                         </div>
                     </div>
@@ -78,8 +78,8 @@ export default function Section29({ isActive }) {
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-blue-600">▪</span><span>2007년 서울 오피스 시장은 <strong>CBD(광화문·시청·종로)</strong> 중심이었으며, SFC부터 센트로폴리스까지 핵심 랜드마크가 골격을 형성.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-blue-600">▪</span><span><strong>GBD(강남)</strong>는 GFC와 파르나스타워 등 테헤란로 중심, <strong>YBD(여의도)</strong>는 IFC와 파크원으로 거대한 변곡점을 맞이함.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-600">▪</span><span>{lang === 'kr' ? <>2007년 서울 오피스 시장은 <strong>CBD(광화문·시청·종로)</strong> 중심이었으며, SFC부터 센트로폴리스까지 핵심 랜드마크가 골격을 형성.</> : <>In 2007, Seoul's office market was centered around <strong>CBD (Gwanghwamun/City Hall/Jongno)</strong>, with core landmarks from SFC to Centropolis forming the framework.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-600">▪</span><span>{lang === 'kr' ? <><strong>GBD(강남)</strong>는 GFC와 파르나스타워 등 테헤란로 중심, <strong>YBD(여의도)</strong>는 IFC와 파크원으로 거대한 변곡점을 맞이함.</> : <><strong>GBD (Gangnam)</strong> centered around Teheran-ro with GFC and Parnas Tower, while <strong>YBD (Yeouido)</strong> reached massive inflection points with IFC and Parc1.</>}</span></li>
                             </>
                         ) : (
                             <>

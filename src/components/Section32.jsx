@@ -42,11 +42,11 @@ export default function Section32({ isActive }) {
                         <div className="flex flex-col items-start w-[45%]">
                             <div className="bg-blue-100 text-blue-700 font-bold px-4 py-2 rounded-full mb-4">Seoul Prime</div>
                             <div className="text-[20px] font-bold text-gray-500 mb-1">{lang === 'kr' ? '2025년 3분기 평균 명목임대료' : 'Q3 2025 Avg. Face Rent'}</div>
-                            <div className="text-[48px] font-black text-gray-900 leading-none mb-4">13.2<span className="text-[24px]">만 원</span><span className="text-[16px] text-gray-400 font-bold ml-2">/평·월</span></div>
+                            <div className="text-[48px] font-black text-gray-900 leading-none mb-4">13.2<span className="text-[24px]">{lang === 'kr' ? '만 원' : '0K KRW'}</span><span className="text-[16px] text-gray-400 font-bold ml-2">{lang === 'kr' ? '/평·월' : '/pyeong·month'}</span></div>
                             
                             <div className="w-full flex items-center gap-2">
                                 <div className="h-6 w-1/2 bg-blue-300 rounded-l-full relative">
-                                    <div className="absolute top-8 left-0 text-[14px] font-bold text-gray-400">2007: 9만 원</div>
+                                    <div className="absolute top-8 left-0 text-[14px] font-bold text-gray-400">{lang === 'kr' ? '2007: 9만 원' : '2007: 90K KRW'}</div>
                                 </div>
                                 <div className="h-6 w-1/2 bg-blue-600 rounded-r-full relative flex items-center">
                                     <div className="absolute -top-10 right-0 bg-blue-600 text-white font-bold px-3 py-1 rounded-lg shadow-sm">
@@ -87,9 +87,9 @@ export default function Section32({ isActive }) {
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-red-500">▪</span><span>서울 프라임 명목임대료는 2007년 9만 원에서 <strong>2025년 3분기 13.2만 원</strong>으로 18년간 누적 50% 상승.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-red-500">▪</span><span>그러나 도쿄 마루노우치 프라임 임대료는 약 200달러대까지 상승하며 <strong>서울의 약 2배 수준을 여전히 유지</strong>.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-red-500">▪</span><span>이는 글로벌 갭(gap-to-Tokyo)이 여전히 50% 이상 남아있음을 의미하며, 향후 <strong>트로피 자산의 Rent Re-pricing 정량적 근거</strong>가 됨.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-red-500">▪</span><span>{lang === 'kr' ? <>서울 프라임 명목임대료는 2007년 9만 원에서 <strong>2025년 3분기 13.2만 원</strong>으로 18년간 누적 50% 상승.</> : <>Seoul prime nominal rent rose from 90K KRW in 2007 to <strong>132K KRW in Q3 2025</strong>, a cumulative 50% increase over 18 years.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-red-500">▪</span><span>{lang === 'kr' ? <>그러나 도쿄 마루노우치 프라임 임대료는 약 200달러대까지 상승하며 <strong>서울의 약 2배 수준을 여전히 유지</strong>.</> : <>However, Tokyo Marunouchi prime rents rose to the $200 range, <strong>still maintaining roughly double the level of Seoul</strong>.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-red-500">▪</span><span>{lang === 'kr' ? <>이는 글로벌 갭(gap-to-Tokyo)이 여전히 50% 이상 남아있음을 의미하며, 향후 <strong>트로피 자산의 Rent Re-pricing 정량적 근거</strong>가 됨.</> : <>This means the global gap (gap-to-Tokyo) remains over 50%, serving as the <strong>quantitative basis for future Rent Re-pricing of trophy assets</strong>.</>}</span></li>
                             </>
                         ) : (
                             <>

@@ -93,7 +93,7 @@ export default function Section128({ isActive }) {
                 <div className={`w-full text-center mt-2 transition-all duration-[612ms] delay-[122ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                     <div className="inline-block bg-[#1d1d1f] text-white px-8 py-5 text-[20px] md:text-[22px] font-bold shadow-lg break-keep">
                         {lang === 'kr' ? 
-                            '매크로 불확실성에 대응하는 철저한 금리/원가 통제 및 펀딩 구조 다각화' : 
+                            (lang === 'kr' ? '매크로 불확실성에 대응하는 철저한 금리/원가 통제 및 펀딩 구조 다각화' : 'Thorough interest rate/cost control and funding structure diversification responding to macro uncertainties') : 
                             'Thorough control of interest rates/costs and diversification of funding to counter macro uncertainties'}
                     </div>
                 </div>

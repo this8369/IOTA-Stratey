@@ -23,7 +23,7 @@ export default function Section111({ isActive }) {
                 
                 <div className={`transition-all duration-[551ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[20px] md:text-[24px] font-bold text-[#1e3a8a] tracking-[-0.02em] mb-[12px]">
-                        지배구조 전환 (Ownership Transition)
+                        {lang === 'kr' ? '지배구조 전환 (Ownership Transition)' : 'Ownership Transition'}
                     </span>
                 </div>
 

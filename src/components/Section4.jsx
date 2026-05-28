@@ -26,7 +26,7 @@ export default function Section4({ isActive }) {
  {/* Theme */}
  <div className={`transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
  <span className="inline-block text-[24px] md:text-[28px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[14px] bg-transparent">
- 글로벌 운용사로의 도약 분기점
+ {lang === 'kr' ? '글로벌 운용사로의 도약 분기점' : 'Inflection Point for Global AM Leap'}
  </span>
  </div>
 

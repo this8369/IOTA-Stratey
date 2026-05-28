@@ -89,7 +89,7 @@ export default function Section93({ isActive }) {
                 <div className={`w-full max-w-[1100px] bg-blue-50 border border-blue-100 p-6 rounded-xl shadow-sm transition-all duration-[540ms] ${step >= 6 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <p className="text-[17px] md:text-[20px] font-bold text-[#1e3a8a] break-keep leading-relaxed text-center">
                         {lang === 'kr' 
-                            ? <>IOTA라는 앵커 메가 프로젝트를 지렛대 삼아 마곡, 여의도 개발로 무한 연쇄 확장할<br/>글로벌 LP 전용 특화 패키지 '이지스 트로피 시리즈'를 상품화 한다.</>
+                            ? (lang === 'kr' ? <>IOTA라는 앵커 메가 프로젝트를 지렛대 삼아 마곡, 여의도 개발로 무한 연쇄 확장할<br/>글로벌 LP 전용 특화 패키지 '이지스 트로피 시리즈'를 상품화 한다.</> : <>Commercializing the 'IGIS Trophy Series', a specialized package exclusive to global LPs, for infinite chain expansion into Magok and Yeouido developments,<br/>leveraging the anchor mega-project IOTA.</>)
                             : <>By leveraging the anchor mega-project IOTA, we commercialize the 'IGIS Trophy Series',<br/>a specialized package for global LPs that infinitely expands into Magok and Yeouido developments.</>
                         }
                     </p>

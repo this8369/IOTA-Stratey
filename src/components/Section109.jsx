@@ -23,7 +23,7 @@ export default function Section109({ isActive }) {
                 
                 <div className={`transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[20px] md:text-[24px] font-bold text-[#1e3a8a] tracking-[-0.02em] mb-[12px]">
-                        패밀리오피스 & 연기금 파트너십
+                        {lang === 'kr' ? '패밀리오피스 & 연기금 파트너십' : 'Family Office & Pension Fund Partnerships'}
                     </span>
                 </div>
 
@@ -72,14 +72,14 @@ export default function Section109({ isActive }) {
                             
                             <div className="flex flex-col gap-4 flex-1 mb-6">
                                 <div className="flex-1 bg-white/10 border border-white/20 p-4 font-black text-white flex justify-between items-center text-[22px]">
-                                    <span>NPS (국민연금)</span>
+                                    <span>{lang === 'kr' ? 'NPS (국민연금)' : 'NPS (National Pension Service)'}</span>
                                     <span className="text-[#93c5fd]">2026 AUM ~1,200T KRW</span>
                                 </div>
                                 <div className="grid grid-cols-2 gap-4 flex-[1.5]">
-                                    <div className="bg-white/5 border border-white/10 flex items-center justify-center font-bold text-white text-center text-[17px]">교직원공제회</div>
-                                    <div className="bg-white/5 border border-white/10 flex items-center justify-center font-bold text-white text-center text-[17px]">행정공제회</div>
-                                    <div className="bg-white/5 border border-white/10 flex items-center justify-center font-bold text-white text-center text-[17px]">우정사업본부</div>
-                                    <div className="bg-white/5 border border-white/10 flex items-center justify-center font-bold text-white text-center text-[17px]">새마을금고</div>
+                                    <div className="bg-white/5 border border-white/10 flex items-center justify-center font-bold text-white text-center text-[17px]">{lang === 'kr' ? '교직원공제회' : 'KTCU'}</div>
+                                    <div className="bg-white/5 border border-white/10 flex items-center justify-center font-bold text-white text-center text-[17px]">{lang === 'kr' ? '행정공제회' : 'POBA'}</div>
+                                    <div className="bg-white/5 border border-white/10 flex items-center justify-center font-bold text-white text-center text-[17px]">{lang === 'kr' ? '우정사업본부' : 'Korea Post'}</div>
+                                    <div className="bg-white/5 border border-white/10 flex items-center justify-center font-bold text-white text-center text-[17px]">{lang === 'kr' ? '새마을금고' : 'KFCC'}</div>
                                 </div>
                             </div>
                         </div>

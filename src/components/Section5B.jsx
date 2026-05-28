@@ -42,45 +42,45 @@ export default function Section6({ isActive }) {
  
  {/* Part 1 */}
  <div className={`flex items-start bg-white border-[3px] border-[#1d1d1f] p-8 shadow-sm transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
- <div className="text-[40px] font-black text-[#888] w-20 shrink-0 font-serif leading-none mt-1">1부</div>
+ <div className="text-[40px] font-black text-[#888] w-20 shrink-0 font-serif leading-none mt-1">{lang === 'kr' ? '1부' : 'Part 1'}</div>
  <div className="flex flex-col">
  <h3 className="text-[28px] font-black text-[#1d1d1f] mb-2 break-keep">
- 한국 1조 → 2조 달러 산업·자본·부동산 역사
+ {lang === 'kr' ? '한국 1조 → 2조 달러 산업·자본·부동산 역사' : 'Korea $1T → $2T Industry·Capital·Real Estate History'}
  </h3>
- <p className="text-[20px] text-[#555] leading-snug">거시적 관점에서의 과거 양적 팽창기 분석 및 부동산 시장의 구조적 변화 추적</p>
+ <p className="text-[20px] text-[#555] leading-snug">{lang === 'kr' ? '거시적 관점에서의 과거 양적 팽창기 분석 및 부동산 시장의 구조적 변화 추적' : 'Macro analysis of past quantitative expansion & structural changes in real estate'}</p>
  </div>
  </div>
 
  {/* Part 2 */}
  <div className={`flex items-start bg-white border-[3px] border-[#1d1d1f] p-8 shadow-sm transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
- <div className="text-[40px] font-black text-[#888] w-20 shrink-0 font-serif leading-none mt-1">2부</div>
+ <div className="text-[40px] font-black text-[#888] w-20 shrink-0 font-serif leading-none mt-1">{lang === 'kr' ? '2부' : 'Part 2'}</div>
  <div className="flex flex-col">
  <h3 className="text-[28px] font-black text-[#1d1d1f] mb-2 break-keep">
- 2조 → 3조 달러 시나리오 분석 <span className="text-[#888] font-bold text-[24px]">(Base / Bull / Bear)</span>
+ {lang === 'kr' ? '2조 → 3조 달러 시나리오 분석' : '$2T → $3T Scenario Analysis'} <span className="text-[#888] font-bold text-[24px]">(Base / Bull / Bear)</span>
  </h3>
- <p className="text-[20px] text-[#555] leading-snug">미래 패권 경쟁 및 거시 경제 변수(금리, 성장률)를 기반으로 한 방향성 도출</p>
+ <p className="text-[20px] text-[#555] leading-snug">{lang === 'kr' ? '미래 패권 경쟁 및 거시 경제 변수(금리, 성장률)를 기반으로 한 방향성 도출' : 'Deriving direction based on future hegemony competition & macro variables'}</p>
  </div>
  </div>
 
  {/* Part 3 */}
  <div className={`flex items-start bg-white border-[3px] border-[#1d1d1f] p-8 shadow-sm transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
- <div className="text-[40px] font-black text-[#888] w-20 shrink-0 font-serif leading-none mt-1">3부</div>
+ <div className="text-[40px] font-black text-[#888] w-20 shrink-0 font-serif leading-none mt-1">{lang === 'kr' ? '3부' : 'Part 3'}</div>
  <div className="flex flex-col">
  <h3 className="text-[28px] font-black text-[#1d1d1f] mb-2 break-keep">
- 이지스 전략 포지셔닝
+ {lang === 'kr' ? '이지스 전략 포지셔닝' : 'IGIS Strategic Positioning'}
  </h3>
- <p className="text-[20px] text-[#555] leading-snug">시나리오에 대응하는 이지스자산운용의 전사적 리스크 관리 및 밸류애드 전략 타겟</p>
+ <p className="text-[20px] text-[#555] leading-snug">{lang === 'kr' ? '시나리오에 대응하는 이지스자산운용의 전사적 리스크 관리 및 밸류애드 전략 타겟' : 'Enterprise risk management & value-add strategy targets corresponding to scenarios'}</p>
  </div>
  </div>
 
  {/* Part 4 */}
  <div className={`flex items-start bg-[#1d1d1f] text-white border-[3px] border-[#1d1d1f] p-8 shadow-lg transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 5 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
- <div className="text-[40px] font-black text-[#555] w-20 shrink-0 font-serif leading-none mt-1">4부</div>
+ <div className="text-[40px] font-black text-[#555] w-20 shrink-0 font-serif leading-none mt-1">{lang === 'kr' ? '4부' : 'Part 4'}</div>
  <div className="flex flex-col">
  <h3 className="text-[28px] font-black text-white mb-2 break-keep">
- IOTA 서울의 역할과 실행 변수
+ {lang === 'kr' ? 'IOTA 서울의 역할과 실행 변수' : 'Role & Execution Variables of IOTA Seoul'}
  </h3>
- <p className="text-[20px] text-[#aaa] leading-snug">단일 최대 PF 프로젝트가 글로벌 운용사 도약에 미치는 상징성과 세부 실행 프레임워크</p>
+ <p className="text-[20px] text-[#aaa] leading-snug">{lang === 'kr' ? '단일 최대 PF 프로젝트가 글로벌 운용사 도약에 미치는 상징성과 세부 실행 프레임워크' : 'Significance of the largest PF project for global AM leap & execution framework'}</p>
  </div>
  </div>
 
@@ -89,7 +89,7 @@ export default function Section6({ isActive }) {
  {/* Disclaimer */}
  <div className={`mt-8 w-full border-t border-[#ddd] pt-6 transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 6 ? 'opacity-100' : 'opacity-0'}`}>
  <p className="text-[18px] text-[#666] leading-relaxed text-center">
- <strong className="text-[#333]">[문체 일러두기]</strong> 본 분석은 객관성 유지를 위해 <strong>'음슴체'</strong>를 적용하며, 직접 호명에 한해 <strong>'존댓말'</strong>을 제한적으로 사용함.
+ {lang === 'kr' ? <><strong className="text-[#333]">[문체 일러두기]</strong> 본 분석은 객관성 유지를 위해 <strong>'음슴체'</strong>를 적용하며, 직접 호명에 한해 <strong>'존댓말'</strong>을 제한적으로 사용함.</> : <><strong className="text-[#333]">[Note on Style]</strong> The Korean version uses noun-ending objective style for clarity.</>}
  </p>
  </div>
 

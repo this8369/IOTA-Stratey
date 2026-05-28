@@ -27,7 +27,7 @@ export default function Section7({ isActive }) {
  {/* Theme */}
  <div className={`transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
  <span className="inline-block text-[24px] md:text-[28px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[14px] bg-transparent">
- 시대의 리듬과 이지스의 결단
+ {lang === 'kr' ? '시대의 리듬과 이지스의 결단' : 'Rhythm of the Era & IGIS\'s Decision'}
  </span>
  </div>
 
@@ -48,16 +48,16 @@ export default function Section7({ isActive }) {
  <div className="flex flex-col md:flex-row w-full max-w-[1220px] justify-center gap-8 mt-12">
  {/* Mori Building Box */}
  <div className={`w-full md:w-1/2 bg-white border-[3px] border-[#e0e0e0] p-10 flex flex-col items-center transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
- <span className="text-[20px] font-bold text-[#777] mb-[2px] uppercase">도쿄의 심장 재창조</span>
- <h3 className="text-[30px] md:text-[34px] font-extrabold text-[#1d1d1f]">모리 빌딩 (Mori Building)</h3>
- <p className="mt-[6px] text-[20px] text-[#555] font-bold">수직 도시 (Vertical City) 모델</p>
+ <span className="text-[20px] font-bold text-[#777] mb-[2px] uppercase">{lang === 'kr' ? '도쿄의 심장 재창조' : 'Recreating the Heart of Tokyo'}</span>
+ <h3 className="text-[30px] md:text-[34px] font-extrabold text-[#1d1d1f]">{lang === 'kr' ? '모리 빌딩 (Mori Building)' : 'Mori Building'}</h3>
+ <p className="mt-[6px] text-[20px] text-[#555] font-bold">{lang === 'kr' ? '수직 도시 (Vertical City) 모델' : 'Vertical City Model'}</p>
  </div>
 
  {/* IOTA Box */}
  <div className={`w-full md:w-1/2 bg-[#1e3a8a] border-[3px] border-[#1e3a8a] p-10 flex flex-col items-center transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
- <span className="text-[20px] font-bold text-[#aaa] mb-[2px] uppercase">서울 YSBD의 재창조</span>
- <h3 className="text-[30px] md:text-[34px] font-extrabold text-white">이지스자산운용 (IGIS)</h3>
- <p className="mt-[6px] text-[20px] text-[#ccc] font-bold">마스터 디벨로퍼 (Master Developer)</p>
+ <span className="text-[20px] font-bold text-[#aaa] mb-[2px] uppercase">{lang === 'kr' ? '서울 YSBD의 재창조' : 'Recreating Seoul YSBD'}</span>
+ <h3 className="text-[30px] md:text-[34px] font-extrabold text-white">{lang === 'kr' ? '이지스자산운용 (IGIS)' : 'IGIS Asset Management'}</h3>
+ <p className="mt-[6px] text-[20px] text-[#ccc] font-bold">{lang === 'kr' ? '마스터 디벨로퍼 (Master Developer)' : 'Master Developer'}</p>
  </div>
  </div>
 

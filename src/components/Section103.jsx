@@ -87,7 +87,7 @@ export default function Section103({ isActive }) {
                             <div className="w-12 h-1 bg-gray-500 mb-6"></div>
                             <div className="text-gray-300 text-[18px] md:text-[20px] font-bold leading-relaxed break-keep">
                                 {lang === 'kr' 
-                                    ? <>이지스 73조 원 AUM 전체에 적용 시<br/>캐시플로우 보호 및 막대한 비용 절감 기대</> 
+                                    ? (lang === 'kr' ? <>이지스 73조 원 AUM 전체에 적용 시<br/>캐시플로우 보호 및 막대한 비용 절감 기대</> : <>When applied across IGIS's entire 73T KRW AUM,<br/>expected to protect cash flows and massively reduce costs.</>) 
                                     : <>Expecting massive cost savings and cash flow protection<br/>across IGIS 73T KRW AUM</>}
                             </div>
                         </div>

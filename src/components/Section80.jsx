@@ -79,7 +79,7 @@ export default function Section80({ isActive }) {
                         <div className="text-red-400 font-bold text-[18px] mb-2 uppercase">{lang === 'kr' ? '리스크 경고' : 'Risk Warning'}</div>
                         <p className="text-[18px] md:text-[20px] font-bold break-keep leading-snug">
                             {lang === 'kr' 
-                                ? '인구 충격과 지정학의 덫에 빠질 경우 KOSPI가 4천~6천 대 긴 박스권에 체류하며 밸류에이션 붕괴와 지독한 디플레 압력을 받을 리스크 경고'
+                                ? (lang === 'kr' ? '인구 충격과 지정학의 덫에 빠질 경우 KOSPI가 4천~6천 대 긴 박스권에 체류하며 밸류에이션 붕괴와 지독한 디플레 압력을 받을 리스크 경고' : 'Warning of risks where KOSPI stays in a long 4,000-6,000 box range, suffering valuation collapse and severe deflationary pressure if caught in demographic shocks and geopolitical traps.')
                                 : 'Warns of the risk where KOSPI stagnates in a long 4,000~6,000 box range, suffering valuation collapse and severe deflationary pressure if trapped by demographic shock and geopolitics.'
                             }
                         </p>

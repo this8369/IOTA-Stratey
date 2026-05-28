@@ -23,7 +23,7 @@ export default function Section113({ isActive }) {
                 
                 <div className={`transition-all duration-[551ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[20px] md:text-[24px] font-bold text-[#1e3a8a] tracking-[-0.02em] mb-[12px]">
-                        인수자 선정의 정치적 변수 (Political & Security Risks)
+                        {lang === 'kr' ? '인수자 선정의 정치적 변수 (Political & Security Risks)' : 'Political Variables in Buyer Selection (Political & Security Risks)'}
                     </span>
                 </div>
 

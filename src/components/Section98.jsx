@@ -77,7 +77,7 @@ export default function Section98({ isActive }) {
                 <div className={`w-full max-w-[1100px] bg-blue-50 border border-blue-100 p-6 rounded-xl shadow-sm transition-all duration-[540ms] ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <p className="text-[17px] md:text-[20px] font-bold text-[#1e3a8a] break-keep leading-relaxed text-center">
                         {lang === 'kr' 
-                            ? <>현재 국내 LP 비중이 압도적인 구조에서 탈피,<br/>향후 5년 내 코밍글드 펀드 조성을 기점으로 양방향 플랫폼 도약</>
+                            ? (lang === 'kr' ? <>현재 국내 LP 비중이 압도적인 구조에서 탈피,<br/>향후 5년 내 코밍글드 펀드 조성을 기점으로 양방향 플랫폼 도약</> : <>Breaking away from the current structure overwhelmingly weighted towards domestic LPs,<br/>leaping into a two-way platform starting with commingled fund creation within 5 years.</>)
                             : <>Breaking away from the current domestic LP-dominated structure,<br/>leaping into a bidirectional platform within 5 years via commingled fund</>
                         }
                     </p>

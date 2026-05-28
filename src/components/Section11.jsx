@@ -35,7 +35,7 @@ export default function Section11({ isActive }) {
                 {/* Main Title */}
                 <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? (
-                        <>1조에서 2조 달러로 2배 성장,<br/>대한민국의 20년 도약</>
+<>1조에서 2조 달러로 2배 성장,<br/>대한민국의 20년 도약</>
                     ) : (
                         <>Doubling from $1T to $2T,<br/>Korea's 20-Year Leap</>
                     )}
@@ -92,9 +92,9 @@ export default function Section11({ isActive }) {
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>2007년 1조 달러를 처음 돌파한 이후, <strong>약 20년 만에 2조 달러 고지 달성</strong>이 가시화됨.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>글로벌 경제의 변동성 속에서도 국가 경제 규모가 <strong>2배로 성장하는 거대한 사이클</strong>을 완성함.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>단순한 양적 성장을 넘어, 산업 구조의 다변화와 글로벌 경쟁력 강화를 동반한 질적 도약의 시기였음.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>{lang === 'kr' ? <>2007년 1조 달러를 처음 돌파한 이후, <strong>약 20년 만에 2조 달러 고지 달성</strong>이 가시화됨.</> : <>After surpassing $1T in 2007, <strong>reaching the $2T mark in about 20 years</strong> is now visible.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>{lang === 'kr' ? <>글로벌 경제의 변동성 속에서도 국가 경제 규모가 <strong>2배로 성장하는 거대한 사이클</strong>을 완성함.</> : <>Completed a <strong>massive cycle of doubling the national economy</strong> despite global economic volatility.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>{lang === 'kr' ? '단순한 양적 성장을 넘어, 산업 구조의 다변화와 글로벌 경쟁력 강화를 동반한 질적 도약의 시기였음.' : 'Beyond quantitative growth, a period of qualitative leap accompanied by industrial diversification and global competitiveness enhancement.'}</span></li>
                             </>
                         ) : (
                             <>

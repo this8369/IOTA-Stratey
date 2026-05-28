@@ -71,7 +71,7 @@ export default function Section116({ isActive }) {
                 <div className={`w-full text-center mt-2 transition-all duration-[612ms] delay-[122ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                     <div className="inline-block bg-[#1e3a8a] text-white px-8 py-5 text-[20px] md:text-[22px] font-bold shadow-lg">
                         {lang === 'kr' ? 
-                            'IOTA 서울의 본질: 서울이 글로벌 도시 위계상 한 단계 도약하는 분기점이자 Transit-Oriented Vertical City의 한국판 적용' : 
+                            (lang === 'kr' ? 'IOTA 서울의 본질: 서울이 글로벌 도시 위계상 한 단계 도약하는 분기점이자 Transit-Oriented Vertical City의 한국판 적용' : 'The Essence of IOTA Seoul: A turning point for Seoul to leap forward in the global city hierarchy and the Korean application of a Transit-Oriented Vertical City') : 
                             'IOTA Seoul: A turning point for Seoul’s global hierarchy and the Korean application of a Transit-Oriented Vertical City'}
                     </div>
                 </div>

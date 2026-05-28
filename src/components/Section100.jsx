@@ -83,7 +83,7 @@ export default function Section100({ isActive }) {
                 <div className={`w-full max-w-[1000px] bg-blue-50 border border-blue-100 p-6 rounded-xl shadow-sm transition-all duration-[540ms] ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <p className="text-[17px] md:text-[20px] font-bold text-[#1e3a8a] break-keep leading-relaxed text-center">
                         {lang === 'kr' 
-                            ? <>글로벌 최상위 IB 네트워크를 십분 활용하여,<br/>IOTA 프로젝트를 국제적 자본 유치의 핵심 동력으로 격상</>
+                            ? (lang === 'kr' ? <>글로벌 최상위 IB 네트워크를 십분 활용하여,<br/>IOTA 프로젝트를 국제적 자본 유치의 핵심 동력으로 격상</> : <>Fully leveraging top-tier global IB networks,<br/>elevating the IOTA project to the core driver of international capital attraction.</>)
                             : <>By fully leveraging the top-tier global IB network,<br/>IOTA project is elevated to the core engine of international capital attraction</>
                         }
                     </p>

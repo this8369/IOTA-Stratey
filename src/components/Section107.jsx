@@ -24,7 +24,7 @@ export default function Section107({ isActive }) {
                 
                 <div className={`transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[20px] md:text-[24px] font-bold text-[#1e3a8a] tracking-[-0.02em] mb-[12px]">
-                        Cross-over 전략
+                        {lang === 'kr' ? 'Cross-over 전략' : 'Cross-over Strategy'}
                     </span>
                 </div>
 
@@ -38,8 +38,8 @@ export default function Section107({ isActive }) {
                     {/* Left: 3 Pillars */}
                     <div className={`flex-[0.8] bg-white border-4 border-[#1e3a8a] rounded-none p-8 flex flex-col items-center justify-center shadow-sm transition-all duration-[765ms] ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'}`}>
                         <div className="text-left w-full mb-4">
-                            <div className="font-black text-[#1e3a8a] text-[22px]">자산군 통합 운영 (Integration)</div>
-                            <div className="font-bold text-gray-700 text-[16px] mt-2">부동산, 인프라, PE를 하나로 결합하여<br/>융복합 시너지 및 초과 수익(Alpha) 창출</div>
+                            <div className="font-black text-[#1e3a8a] text-[22px]">{lang === 'kr' ? '자산군 통합 운영 (Integration)' : 'Asset Class Integration'}</div>
+                            <div className="font-bold text-gray-700 text-[16px] mt-2">{lang === 'kr' ? <>부동산, 인프라, PE를 하나로 결합하여<br/>융복합 시너지 및 초과 수익(Alpha) 창출</> : <>Combining Real Estate, Infra, and PE into one<br/>to create convergence synergy and Alpha.</>}</div>
                         </div>
                         <div className="w-full flex justify-between gap-4 h-[120px] items-end border-b-4 border-[#1e3a8a] pb-4">
                             <div className="flex-1 bg-gray-200 h-[60%] flex items-center justify-center font-black text-[#1e3a8a] text-[18px] md:text-[22px]">RE</div>

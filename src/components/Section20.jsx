@@ -66,9 +66,9 @@ export default function Section20({ isActive }) {
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-[#0ea5e9]">▪</span><span>바이오/제약 산업은 1조 달러 시대 초입(2007년 경)에는 <strong>글로벌 존재감이 거의 없었던 새로운 산업</strong>임.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-[#0ea5e9]">▪</span><span>현재 삼성바이오로직스는 <strong>CDMO(위탁개발생산) 분야 글로벌 1위</strong>(매출 4조 원+, 시총 50조 원+)로 등극함.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-[#0ea5e9]">▪</span><span>셀트리온의 바이오시밀러 글로벌 진출 등과 맞물려 <strong>K-바이오 클러스터</strong>가 한국 경제의 신성장 동력으로 안착함.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#0ea5e9]">▪</span><span>{lang === 'kr' ? <>바이오/제약 산업은 1조 달러 시대 초입(2007년 경)에는 <strong>글로벌 존재감이 거의 없었던 새로운 산업</strong>임.</> : <>Bio/Pharma was a <strong>new industry with almost no global presence</strong> in the early $1T era (around 2007).</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#0ea5e9]">▪</span><span>{lang === 'kr' ? <>현재 삼성바이오로직스는 <strong>CDMO(위탁개발생산) 분야 글로벌 1위</strong>(매출 4조 원+, 시총 50조 원+)로 등극함.</> : <>Samsung Biologics is now <strong>Global #1 in CDMO</strong> (Revenue 4T KRW+, Market Cap 50T KRW+).</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#0ea5e9]">▪</span><span>{lang === 'kr' ? <>셀트리온의 바이오시밀러 글로벌 진출 등과 맞물려 <strong>K-바이오 클러스터</strong>가 한국 경제의 신성장 동력으로 안착함.</> : <>Coupled with Celltrion's global biosimilar expansion, the <strong>K-Bio Cluster</strong> settled as Korea's new growth engine.</>}</span></li>
                             </>
                         ) : (
                             <>

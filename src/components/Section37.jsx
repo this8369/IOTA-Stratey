@@ -80,9 +80,9 @@ export default function Section37({ isActive }) {
                         <p className="text-[15px] font-bold text-gray-500 mb-6">{lang === 'kr' ? '병목을 뚫은 압도적 자산 확보' : 'Secured Assets Ahead of Bottleneck'}</p>
                         
                         <div className="w-full flex flex-col gap-3">
-                            <div className="bg-white px-4 py-3 rounded-xl border border-blue-100 font-bold text-gray-800 shadow-sm text-center text-[16px]">분당 Hostway IDC</div>
-                            <div className="bg-white px-4 py-3 rounded-xl border border-blue-100 font-bold text-gray-800 shadow-sm text-center text-[16px]">북미 13개 IDC 포트폴리오</div>
-                            <div className="mt-2 bg-blue-600 px-4 py-4 rounded-xl border border-blue-700 font-black text-white shadow-sm text-center text-[22px]">총 187MW 확보</div>
+                            <div className="bg-white px-4 py-3 rounded-xl border border-blue-100 font-bold text-gray-800 shadow-sm text-center text-[16px]">{lang === 'kr' ? '분당 Hostway IDC' : 'Bundang Hostway IDC'}</div>
+                            <div className="bg-white px-4 py-3 rounded-xl border border-blue-100 font-bold text-gray-800 shadow-sm text-center text-[16px]">{lang === 'kr' ? '북미 13개 IDC 포트폴리오' : '13 North American IDC Portfolio'}</div>
+                            <div className="mt-2 bg-blue-600 px-4 py-4 rounded-xl border border-blue-700 font-black text-white shadow-sm text-center text-[22px]">{lang === 'kr' ? '총 187MW 확보' : 'Total 187MW Secured'}</div>
                         </div>
                     </div>
 
@@ -93,9 +93,9 @@ export default function Section37({ isActive }) {
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-indigo-500">▪</span><span><strong>폭발적 수요 성장</strong>: 한국 IT 용량은 2030년까지 연평균 26.3% 고성장 전망</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-indigo-500">▪</span><span><strong>구조적 공급 병목</strong>: 서울/판교 공실률 6% 미만, 전력 인입 5년 대기로 신규 공급이 막힌 상태</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-indigo-500">▪</span><span><strong>압도적 선점 효과</strong>: 187MW 규모의 우량 데이터센터를 선제 편입하여 공급 병목의 최대 수혜자로 등극</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-indigo-500">▪</span><span>{lang === 'kr' ? <><strong>폭발적 수요 성장</strong>: 한국 IT 용량은 2030년까지 연평균 26.3% 고성장 전망</> : <><strong>Explosive Demand Growth</strong>: Korea's IT capacity is projected to grow at a high 26.3% CAGR until 2030.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-indigo-500">▪</span><span>{lang === 'kr' ? <><strong>구조적 공급 병목</strong>: 서울/판교 공실률 6% 미만, 전력 인입 5년 대기로 신규 공급이 막힌 상태</> : <><strong>Structural Supply Bottleneck</strong>: Seoul/Pangyo vacancy under 6%, new supply blocked by 5-year wait for power connection.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-indigo-500">▪</span><span>{lang === 'kr' ? <><strong>압도적 선점 효과</strong>: 187MW 규모의 우량 데이터센터를 선제 편입하여 공급 병목의 최대 수혜자로 등극</> : <><strong>Overwhelming Preemption Effect</strong>: Preemptively incorporated 187MW of prime data centers, becoming the biggest beneficiary of the supply bottleneck.</>}</span></li>
                             </>
                         ) : (
                             <>

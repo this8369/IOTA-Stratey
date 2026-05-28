@@ -75,9 +75,9 @@ export default function Section21({ isActive }) {
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-emerald-600">▪</span><span>2차전지(LG엔솔·삼성SDI·SK온)는 <strong>2020년 국내 IPO 붐</strong>을 만든 핵심 엔진임.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-emerald-600">▪</span><span>K-배터리 3사는 합계 <strong>글로벌 EV 배터리 점유율 20% 내외</strong>를 안정적으로 확보함.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-emerald-600">▪</span><span>다만 2024~2026년 사이 중국과 미국의 정책 변동 및 전기차 수요 둔화로 인해 <strong>사이클 조정기(숨고르기)</strong>에 진입함.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-emerald-600">▪</span><span>{lang === 'kr' ? <>2차전지(LG엔솔·삼성SDI·SK온)는 <strong>2020년 국내 IPO 붐</strong>을 만든 핵심 엔진임.</> : <>Secondary batteries (LG Energy Solution, Samsung SDI, SK On) were the core engines driving the <strong>2020 domestic IPO boom</strong>.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-emerald-600">▪</span><span>{lang === 'kr' ? <>K-배터리 3사는 합계 <strong>글로벌 EV 배터리 점유율 20% 내외</strong>를 안정적으로 확보함.</> : <>The Big 3 K-Battery makers stably secure a combined <strong>~20% global EV battery market share</strong>.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-emerald-600">▪</span><span>{lang === 'kr' ? <>다만 2024~2026년 사이 중국과 미국의 정책 변동 및 전기차 수요 둔화로 인해 <strong>사이클 조정기(숨고르기)</strong>에 진입함.</> : <>However, entered a <strong>cycle adjustment phase (breather)</strong> due to US-China policy shifts and EV demand slowdown between 2024-2026.</>}</span></li>
                             </>
                         ) : (
                             <>

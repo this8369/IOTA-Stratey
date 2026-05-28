@@ -85,7 +85,7 @@ export default function Section79({ isActive }) {
                 <div className={`max-w-[1100px] bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm transition-all duration-[540ms] ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <p className="text-[18px] md:text-[20px] font-bold text-gray-800 break-keep leading-relaxed">
                         {lang === 'kr' 
-                            ? '삼성전자 2천 조 원 시대 도래와 함께 1만 5천~1만 8천 선까지 폭주, 전체 시장 시총이 GDP 대비 200%에 달하는 폭발적 딥 마켓(Deep Market) 구축 전망'
+                            ? (lang === 'kr' ? '삼성전자 2천 조 원 시대 도래와 함께 1만 5천~1만 8천 선까지 폭주, 전체 시장 시총이 GDP 대비 200%에 달하는 폭발적 딥 마켓(Deep Market) 구축 전망' : 'Surge to 15,000-18,000 with the advent of the 2,000T KRW Samsung Electronics era, building an explosive Deep Market where total market cap reaches 200% of GDP.')
                             : 'Forecasting a surge to 15,000~18,000 alongside the 2,000T KRW Samsung Electronics era, building an explosive Deep Market where total market cap reaches 200% of GDP.'
                         }
                     </p>

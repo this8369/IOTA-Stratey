@@ -40,7 +40,7 @@ export default function Section92({ isActive }) {
                             <h3 className="text-gray-500 font-bold text-[16px] mb-2">{lang === 'kr' ? '가장 확실한 메가 트렌드' : 'The Most Certain Mega Trend'}</h3>
                             <p className="text-[#1d1d1f] font-extrabold text-[18px] md:text-[20px] leading-snug break-keep">
                                 {lang === 'kr' 
-                                    ? '침투율 0.6% → 5% 갭의 구조적 미충족 수요가 향후 15년을 지배'
+                                    ? (lang === 'kr' ? '침투율 0.6% → 5% 갭의 구조적 미충족 수요가 향후 15년을 지배' : 'Structural unmet demand from the 0.6% → 5% penetration rate gap will dominate the next 15 years.')
                                     : 'Structural unmet demand in the 0.6% → 5% penetration gap will dominate the next 15 years'}
                             </p>
                         </div>
@@ -49,12 +49,12 @@ export default function Section92({ isActive }) {
                             <h3 className="text-blue-300 font-bold text-[16px] mb-2 relative z-10">{lang === 'kr' ? '시장 패러다임의 진화' : 'Evolution of Market Paradigm'}</h3>
                             <p className="font-extrabold text-[18px] md:text-[20px] leading-snug break-keep mb-3 relative z-10">
                                 {lang === 'kr' 
-                                    ? '물류(쿠팡 효과) → 시니어 케어(주거) 효과로 대체'
+                                    ? (lang === 'kr' ? '물류(쿠팡 효과) → 시니어 케어(주거) 효과로 대체' : 'Replacing Logistics (Coupang Effect) → Senior Care (Housing) Effect.')
                                     : 'Logistics (Coupang Effect) → Replaced by Senior Care (Housing) Effect'}
                             </p>
                             <p className="text-blue-100 font-medium text-[15px] leading-relaxed break-keep relative z-10">
                                 {lang === 'kr' 
-                                    ? '1조→2조 달러 구간의 성장 동력이었던 물류가, 2조→3조 달러 구간에서는 시니어 하우징으로 완벽히 전환됨'
+                                    ? (lang === 'kr' ? '1조→2조 달러 구간의 성장 동력이었던 물류가, 2조→3조 달러 구간에서는 시니어 하우징으로 완벽히 전환됨' : 'Logistics, the growth engine of the $1T-$2T period, completely transitions to senior housing in the $2T-$3T period.')
                                     : 'Logistics, the growth engine for the $1T→$2T phase, perfectly transitions to senior housing for the $2T→$3T phase'}
                             </p>
                         </div>
@@ -109,7 +109,7 @@ export default function Section92({ isActive }) {
                 <div className={`w-full max-w-[1100px] bg-blue-50 border border-blue-100 p-6 rounded-xl shadow-sm transition-all duration-[540ms] ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <p className="text-[17px] md:text-[20px] font-bold text-[#1e3a8a] break-keep leading-relaxed text-center">
                         {lang === 'kr' 
-                            ? <>KB골든라이프 모델을 시작으로, 글로벌 메리어트 운영과 연기금 퇴직자 D2C 마케팅을 결합해<br/>외인 자본(Invesco 등)을 압도할 1위 시니어 하우징 플랫폼을 구축한다.</>
+                            ? (lang === 'kr' ? <>KB골든라이프 모델을 시작으로, 글로벌 메리어트 운영과 연기금 퇴직자 D2C 마케팅을 결합해<br/>외인 자본(Invesco 등)을 압도할 1위 시니어 하우징 플랫폼을 구축한다.</> : <>Starting with the KB Golden Life model, building the #1 senior housing platform to overwhelm foreign capital (e.g. Invesco)<br/>by combining global Marriott operations and D2C marketing to pension fund retirees.</>)
                             : <>Starting with the KB Golden Life model, we combine global Marriott operations and D2C marketing to pension retirees<br/>to build the #1 senior housing platform that overwhelms foreign capital (Invesco, etc.).</>
                         }
                     </p>

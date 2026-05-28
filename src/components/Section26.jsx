@@ -69,9 +69,9 @@ export default function Section26({ isActive }) {
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span><strong>JP모건, 맥쿼리 등 글로벌 IB</strong>, 메모리 슈퍼사이클을 근거로 2026년 KOSPI 목표를 <strong>최고 6,000선(Full Bull)</strong>으로 상향 제시.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span>NH투자·HMC증권 등 국내 주요 증권사 역시 <strong>5,500선을 목표치</strong>로 상향 조정하며 강세장에 힘을 실음.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span>현 정부의 <strong>'임기 내 KOSPI 5,000' 공약이 폭발적 랠리로 조기 달성</strong>되며 자본시장의 새로운 국면 진입.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span>{lang === 'kr' ? <><strong>JP모건, 맥쿼리 등 글로벌 IB</strong>, 메모리 슈퍼사이클을 근거로 2026년 KOSPI 목표를 <strong>최고 6,000선(Full Bull)</strong>으로 상향 제시.</> : <><strong>Global IBs like JP Morgan and Macquarie</strong> raised 2026 KOSPI targets up to <strong>6,000 (Full Bull)</strong> citing the memory super cycle.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span>{lang === 'kr' ? <>NH투자·HMC증권 등 국내 주요 증권사 역시 <strong>5,500선을 목표치</strong>로 상향 조정하며 강세장에 힘을 실음.</> : <>Major domestic securities firms like NH Investment and HMC Securities also raised targets to <strong>5,500</strong>, supporting the bull market.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-700">▪</span><span>{lang === 'kr' ? <>현 정부의 <strong>'임기 내 KOSPI 5,000' 공약이 폭발적 랠리로 조기 달성</strong>되며 자본시장의 새로운 국면 진입.</> : <>The current government's pledge of <strong>'KOSPI 5,000 within term' was achieved early through an explosive rally</strong>, entering a new phase for capital markets.</>}</span></li>
                             </>
                         ) : (
                             <>

@@ -41,7 +41,10 @@ export default function Section1({ isActive }) {
  <span className="mt-[10px]">이지스의 글로벌 도약과 IOTA 프로젝트 마스터플랜</span>
  </div>
  ) : (
- "The Era of $3 Trillion GDP: IGIS's Global Leap & IOTA Project Masterplan"
+ <div className="flex flex-col items-center">
+ <span>The $3 Trillion Era</span>
+ <span className="mt-[10px]">IGIS's Global Leap and IOTA Project Master Plan</span>
+ </div>
  )}
  </div>
 

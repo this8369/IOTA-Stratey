@@ -75,7 +75,7 @@ export default function Section130({ isActive }) {
                 <div className={`w-full text-center mt-2 transition-all duration-[612ms] delay-[122ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                     <div className="inline-block bg-[#1d1d1f] text-white px-8 py-5 text-[20px] md:text-[22px] font-bold shadow-lg break-keep">
                         {lang === 'kr' ? 
-                            '글로벌 자본 유치와 안정적 거버넌스 확립을 통한 IPR 클로징 완성' : 
+                            (lang === 'kr' ? '글로벌 자본 유치와 안정적 거버넌스 확립을 통한 IPR 클로징 완성' : 'Completing IPR closing through global capital attraction and establishment of stable governance') : 
                             'Completing IPR closing through global capital attraction and stable governance'}
                     </div>
                 </div>

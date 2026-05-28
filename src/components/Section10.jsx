@@ -67,10 +67,10 @@ export default function Section10({ isActive }) {
                             <ul className="text-[14px] text-gray-600 space-y-2">
                                 {lang === 'kr' ? (
                                     <>
-                                        <li>• 명목 GDP: <span className="font-bold text-black">1.12조 달러</span></li>
-                                        <li>• 1인당 GDP: <span className="font-bold text-black">2.4만 달러</span></li>
-                                        <li>• KOSPI: <span className="font-bold text-black">최초 2,000선 돌파</span></li>
-                                        <li>• OECD 평균 소득의 <span className="font-bold text-black">70% 달성</span></li>
+                                        <li>• {lang === 'kr' ? '명목 GDP' : 'Nominal GDP'}: <span className="font-bold text-black">{lang === 'kr' ? '1.12조 달러' : '$1.12T'}</span></li>
+                                        <li>• {lang === 'kr' ? '1인당 GDP' : 'GDP per capita'}: <span className="font-bold text-black">{lang === 'kr' ? '2.4만 달러' : '$24K'}</span></li>
+                                        <li>• KOSPI: <span className="font-bold text-black">{lang === 'kr' ? '최초 2,000선 돌파' : 'Surpassed 2,000 pts'}</span></li>
+                                        <li>• {lang === 'kr' ? <>OECD 평균 소득의 <span className="font-bold text-black">70% 달성</span></> : <>Reached <span className="font-bold text-black">70%</span> of OECD average income</>}</li>
                                     </>
                                 ) : (
                                     <>
@@ -93,7 +93,7 @@ export default function Section10({ isActive }) {
                         <div className="w-[24px] h-[24px] rounded-full bg-white border-[6px] border-[#e11d48] shadow-lg"></div>
                         <div className="mt-6 bg-[#fff0f5] border border-[#fbcfe8] rounded-xl p-5 text-center w-[220px]">
                             {lang === 'kr' ? (
-                                <p className="text-[15px] font-bold text-[#be185d]">GDP 1조 달러 아래로 후퇴<br/>(약 0.94조 달러)</p>
+                                <p className="text-[15px] font-bold text-[#be185d]">{lang === 'kr' ? <>GDP 1조 달러 아래로 후퇴<br/>(약 0.94조 달러)</> : <>GDP fell below $1T<br/>(approx. $0.94T)</>}</p>
                             ) : (
                                 <p className="text-[15px] font-bold text-[#be185d]">GDP retreated below $1T<br/>(Approx. $0.94T)</p>
                             )}
@@ -110,8 +110,8 @@ export default function Section10({ isActive }) {
                         <div className="mt-6 bg-[#f0f9ff] border border-[#bae6fd] shadow-lg rounded-xl p-5 text-center w-[240px]">
                             {lang === 'kr' ? (
                                 <>
-                                    <p className="text-[16px] font-bold text-[#0369a1] mb-2">안정적인 1조 달러 경제 정착</p>
-                                    <p className="text-[14px] font-medium text-gray-700">명목 GDP: <span className="font-bold text-black">약 1.14조 달러</span></p>
+                                    <p className="text-[16px] font-bold text-[#0369a1] mb-2">{lang === 'kr' ? '안정적인 1조 달러 경제 정착' : 'Stable $1T Economy Settled'}</p>
+                                    <p className="text-[14px] font-medium text-gray-700">{lang === 'kr' ? '명목 GDP' : 'Nominal GDP'}: <span className="font-bold text-black">{lang === 'kr' ? '약 1.14조 달러' : 'approx. $1.14T'}</span></p>
                                 </>
                             ) : (
                                 <>

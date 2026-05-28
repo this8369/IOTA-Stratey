@@ -27,7 +27,7 @@ export default function Section5({ isActive }) {
  {/* Theme */}
  <div className={`transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
  <span className="inline-block text-[24px] md:text-[28px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[14px] bg-transparent">
- IOTA 서울 프로젝트의 문명사적 의미
+ {lang === 'kr' ? 'IOTA 서울 프로젝트의 문명사적 의미' : 'Civilizational Significance of IOTA Seoul Project'}
  </span>
  </div>
 
@@ -50,14 +50,14 @@ export default function Section5({ isActive }) {
  <div className="flex flex-col md:flex-row w-full justify-center gap-6 mt-12">
  {/* IFC Box */}
  <div className={`w-full md:w-1/2 max-w-[450px] bg-[#333] border-[3px] border-[#555] p-10 flex flex-col items-center transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
- <span className="text-[20px] font-bold text-[#aaa] mb-[2px] uppercase">1조 달러 시대의 상징</span>
- <h3 className="text-[36px] font-extrabold text-white">IFC 서울</h3>
+ <span className="text-[20px] font-bold text-[#aaa] mb-[2px] uppercase">{lang === 'kr' ? '1조 달러 시대의 상징' : 'Symbol of the $1T Era'}</span>
+ <h3 className="text-[36px] font-extrabold text-white">{lang === 'kr' ? 'IFC 서울' : 'IFC Seoul'}</h3>
  </div>
 
  {/* IOTA Box */}
  <div className={`w-full md:w-1/2 max-w-[450px] bg-[#1d4ed8] border-[3px] border-white p-10 flex flex-col items-center transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
- <span className="text-[20px] font-bold text-[#bfdbfe] mb-[2px] uppercase">3조 달러 시대를 정의할 절대 좌표</span>
- <h3 className="text-[36px] font-extrabold text-white">IOTA 서울</h3>
+ <span className="text-[20px] font-bold text-[#bfdbfe] mb-[2px] uppercase">{lang === 'kr' ? '3조 달러 시대를 정의할 절대 좌표' : 'Absolute Coordinates Defining the $3T Era'}</span>
+ <h3 className="text-[36px] font-extrabold text-white">{lang === 'kr' ? 'IOTA 서울' : 'IOTA Seoul'}</h3>
  </div>
  </div>
 

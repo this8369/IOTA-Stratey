@@ -79,7 +79,7 @@ export default function Section129({ isActive }) {
                 <div className={`w-full text-center mt-2 transition-all duration-[612ms] delay-[122ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                     <div className="inline-block bg-[#1d1d1f] text-white px-8 py-5 text-[20px] md:text-[22px] font-bold shadow-lg break-keep">
                         {lang === 'kr' ? 
-                            '정권·정책 변화에 유연하게 대응하고, 글로벌 앵커 테넌트로 자산 가치 극대화' : 
+                            (lang === 'kr' ? '정권·정책 변화에 유연하게 대응하고, 글로벌 앵커 테넌트로 자산 가치 극대화' : 'Flexibly responding to regime/policy changes and maximizing asset value with global anchor tenants') : 
                             'Flexibly respond to political shifts and maximize asset value with global anchor tenants'}
                     </div>
                 </div>

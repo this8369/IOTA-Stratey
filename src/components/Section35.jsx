@@ -43,14 +43,14 @@ export default function Section35({ isActive }) {
                         <div className="w-full flex justify-between items-end mt-4 mb-4 px-2">
                             <div className="flex flex-col items-center">
                                 <span className="text-gray-500 font-bold text-[16px]">2014</span>
-                                <span className="text-white font-black text-[42px]">1조</span>
+                                <span className="text-white font-black text-[42px]">{lang === 'kr' ? '1조' : '1T'}</span>
                             </div>
                             <div className="flex flex-col items-center mb-2">
-                                <span className="text-yellow-400 font-black text-[36px]">40배 🚀</span>
+                                <span className="text-yellow-400 font-black text-[36px]">{lang === 'kr' ? '40배 🚀' : '40X 🚀'}</span>
                             </div>
                             <div className="flex flex-col items-center">
                                 <span className="text-yellow-500 font-bold text-[16px]">2024</span>
-                                <span className="text-yellow-400 font-black text-[42px]">42조</span>
+                                <span className="text-yellow-400 font-black text-[42px]">{lang === 'kr' ? '42조' : '42T'}</span>
                             </div>
                         </div>
 
@@ -66,9 +66,9 @@ export default function Section35({ isActive }) {
                         <div className="w-full flex flex-col items-center">
                             {/* Tags */}
                             <div className="flex gap-3 mb-8">
-                                <span className="px-4 py-2 bg-blue-50 text-blue-700 font-bold rounded-full border border-blue-200">콜드체인</span>
-                                <span className="px-4 py-2 bg-orange-50 text-orange-700 font-bold rounded-full border border-orange-200">라스트마일</span>
-                                <span className="px-4 py-2 bg-purple-50 text-purple-700 font-bold rounded-full border border-purple-200">풀필먼트</span>
+                                <span className="px-4 py-2 bg-blue-50 text-blue-700 font-bold rounded-full border border-blue-200">{lang === 'kr' ? '콜드체인' : 'Cold Chain'}</span>
+                                <span className="px-4 py-2 bg-orange-50 text-orange-700 font-bold rounded-full border border-orange-200">{lang === 'kr' ? '라스트마일' : 'Last Mile'}</span>
+                                <span className="px-4 py-2 bg-purple-50 text-purple-700 font-bold rounded-full border border-purple-200">{lang === 'kr' ? '풀필먼트' : 'Fulfillment'}</span>
                             </div>
 
                             {/* Timeline Network */}
@@ -76,12 +76,12 @@ export default function Section35({ isActive }) {
                                 <div className="absolute top-1/2 left-0 w-full h-2 bg-gray-200 -translate-y-1/2 rounded-full"></div>
                                 <div className={`absolute top-1/2 left-0 h-2 bg-gradient-to-r from-orange-400 to-red-500 -translate-y-1/2 rounded-full transition-all duration-[1148ms] delay-[383ms]`} style={{ width: step >= 4 ? '100%' : '0%' }}></div>
                                 
-                                {['용인', '이천', '안성', '평택'].map((city, idx) => (
+                                {['용인', '이천', '안성', '평택'].map((city, idx) => { const cityEn = ['Yongin', 'Icheon', 'Anseong', 'Pyeongtaek'][idx]; return (
                                     <div key={city} className={`relative z-10 flex flex-col items-center transition-all duration-[383ms]`} style={{ transitionDelay: `${500 + (idx * 200)}ms`, opacity: step >= 4 ? 1 : 0, transform: step >= 4 ? 'scale(1)' : 'scale(0.5)' }}>
                                         <div className="w-6 h-6 bg-white border-4 border-red-500 rounded-full shadow-md"></div>
-                                        <span className="absolute top-8 font-black text-[22px] text-gray-800 whitespace-nowrap">{city}</span>
+                                        <span className="absolute top-8 font-black text-[22px] text-gray-800 whitespace-nowrap">{lang === 'kr' ? city : cityEn}</span>
                                     </div>
-                                ))}
+                                )})}
                             </div>
                         </div>
                     </div>
@@ -93,9 +93,9 @@ export default function Section35({ isActive }) {
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-orange-500">▪</span><span><strong>압도적 매출 폭증(40배)</strong>: 1조→2조 달러 구간의 가장 극적인 신규 섹터 탄생</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-orange-500">▪</span><span><strong>단일 임차인 파워</strong>: 쿠팡이 창출한 최초의 국가급 물류 수요 사례</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-orange-500">▪</span><span><strong>허브 벨트 구축</strong>: 용인·이천·안성·평택을 잇는 거대한 풀필먼트·콜드체인 인프라 완성</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-orange-500">▪</span><span>{lang === 'kr' ? <><strong>압도적 매출 폭증(40배)</strong>: 1조→2조 달러 구간의 가장 극적인 신규 섹터 탄생</> : <><strong>Overwhelming Revenue Surge (40x)</strong>: The most dramatic new sector birth in the $1T to $2T period.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-orange-500">▪</span><span>{lang === 'kr' ? <><strong>단일 임차인 파워</strong>: 쿠팡이 창출한 최초의 국가급 물류 수요 사례</> : <><strong>Single Tenant Power</strong>: First nation-scale logistics demand created by Coupang.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-orange-500">▪</span><span>{lang === 'kr' ? <><strong>허브 벨트 구축</strong>: 용인·이천·안성·평택을 잇는 거대한 풀필먼트·콜드체인 인프라 완성</> : <><strong>Hub Belt Construction</strong>: Completion of massive fulfillment/cold chain infra linking Yongin, Icheon, Anseong, and Pyeongtaek.</>}</span></li>
                             </>
                         ) : (
                             <>

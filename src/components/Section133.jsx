@@ -131,7 +131,7 @@ export default function Section133({ isActive }) {
                 <div className={`w-full text-center transition-all duration-[612ms] delay-[122ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                     <div className="inline-block bg-[#1e3a8a] text-white px-6 py-3 rounded-md border border-blue-900 text-[18px] md:text-[20px] font-bold shadow-lg break-keep">
                         {lang === 'kr' ? 
-                            '단일 최대 리츠 상장 가능성과 글로벌 자본의 초우량 엑시트 옵션 확보' : 
+                            (lang === 'kr' ? '단일 최대 리츠 상장 가능성과 글로벌 자본의 초우량 엑시트 옵션 확보' : 'Possibility of listing the single largest REIT and securing prime exit options for global capital') : 
                             'Securing the potential for the largest single REIT listing and prime exit options for global capital'}
                     </div>
                 </div>

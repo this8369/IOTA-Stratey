@@ -23,7 +23,7 @@ export default function Section112({ isActive }) {
                 
                 <div className={`transition-all duration-[551ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[20px] md:text-[24px] font-bold text-[#1e3a8a] tracking-[-0.02em] mb-[12px]">
-                        핵심 리스크 및 대응 (Retention & Dual-Management)
+                        {lang === 'kr' ? '핵심 리스크 및 대응 (Retention & Dual-Management)' : 'Core Risks & Responses (Retention & Dual-Management)'}
                     </span>
                 </div>
 

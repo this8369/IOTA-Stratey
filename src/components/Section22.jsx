@@ -77,9 +77,9 @@ export default function Section22({ isActive }) {
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-indigo-600">▪</span><span>네이버, 카카오, 쿠팡 등 <strong>IT 플랫폼 빅테크</strong>들은 각각 시총 30조 원 이상을 기록하며 거대 기업으로 성장함.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-indigo-600">▪</span><span>네이버의 일본 LINE 야후 통합, 쿠팡의 로켓배송 전국화 등이 <strong>물류 지형을 근본적으로 재편</strong>함.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-indigo-600">▪</span><span>플랫폼이 촉발한 이커머스 혁명은 국내 <strong>물류 부동산 수요 폭발의 가장 큰 단일 변수</strong>로 작용함.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-indigo-600">▪</span><span>{lang === 'kr' ? <>네이버, 카카오, 쿠팡 등 <strong>IT 플랫폼 빅테크</strong>들은 각각 시총 30조 원 이상을 기록하며 거대 기업으로 성장함.</> : <><strong>IT Platform Big Techs</strong> like Naver, Kakao, and Coupang grew into giant corporations, each exceeding 30T KRW in market cap.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-indigo-600">▪</span><span>{lang === 'kr' ? <>네이버의 일본 LINE 야후 통합, 쿠팡의 로켓배송 전국화 등이 <strong>물류 지형을 근본적으로 재편</strong>함.</> : <>Naver's integration with LINE Yahoo in Japan and Coupang's nationwide Rocket Delivery <strong>fundamentally reshaped the logistics landscape</strong>.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-indigo-600">▪</span><span>{lang === 'kr' ? <>플랫폼이 촉발한 이커머스 혁명은 국내 <strong>물류 부동산 수요 폭발의 가장 큰 단일 변수</strong>로 작용함.</> : <>The e-commerce revolution triggered by platforms acted as the <strong>largest single variable for the explosion in domestic logistics real estate demand</strong>.</>}</span></li>
                             </>
                         ) : (
                             <>

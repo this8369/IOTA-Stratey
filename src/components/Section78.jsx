@@ -68,7 +68,7 @@ export default function Section78({ isActive }) {
                 <div className={`max-w-[1000px] bg-indigo-50 border border-indigo-100 p-6 rounded-xl shadow-sm transition-all duration-[540ms] ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <p className="text-[18px] md:text-[20px] font-bold text-[#1e3a8a] break-keep leading-relaxed mb-4">
                         {lang === 'kr' 
-                            ? 'PER 13배 디스카운트 해소 및 2040년 KOSPI 9,000~11,000 도달. 코리아 프리미엄 진입을 위한 안정적 Base 성장 모델'
+                            ? (lang === 'kr' ? 'PER 13배 디스카운트 해소 및 2040년 KOSPI 9,000~11,000 도달. 코리아 프리미엄 진입을 위한 안정적 Base 성장 모델' : 'Resolution of PER 13x discount and reaching KOSPI 9,000-11,000 by 2040. Stable Base growth model for entering Korea Premium.')
                             : 'Stable Base growth model for Korea Premium entry, resolving PER 13x discount to reach KOSPI 9,000~11,000 by 2040.'
                         }
                     </p>

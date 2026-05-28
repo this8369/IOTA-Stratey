@@ -77,10 +77,10 @@ export default function Section23({ isActive }) {
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-[#65a30d]">▪</span><span>지정학적 위기 고조로 <strong>폴란드·UAE·호주·중동</strong> 등에서 글로벌 방산 수출이 폭발함.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-[#65a30d]">▪</span><span>2022년 한국 방산 수출은 <strong>173억 달러(약 23조 원)로 사상 최고치</strong>를 기록함.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-[#65a30d]">▪</span><span>한화, LIG넥스원, KAI, 현대로템의 <strong>K2 전차·K9 자주포·FA-50·천궁</strong>이 수출을 견인하는 핵심 라인업임.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-[#65a30d]">▪</span><span>1조 ➔ 2조 달러 구간 후반부에 급부상한 명실상부한 <strong>대한민국 산업의 신데렐라 섹터</strong>임.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#65a30d]">▪</span><span>{lang === 'kr' ? <>지정학적 위기 고조로 <strong>폴란드·UAE·호주·중동</strong> 등에서 글로벌 방산 수출이 폭발함.</> : <>Heightened geopolitical crises triggered explosive global defense exports to <strong>Poland, UAE, Australia, and the Middle East</strong>.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#65a30d]">▪</span><span>{lang === 'kr' ? <>2022년 한국 방산 수출은 <strong>173억 달러(약 23조 원)로 사상 최고치</strong>를 기록함.</> : <>Korea's defense exports recorded an <strong>all-time high of $17.3B (~23T KRW)</strong> in 2022.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#65a30d]">▪</span><span>{lang === 'kr' ? <>한화, LIG넥스원, KAI, 현대로템의 <strong>K2 전차·K9 자주포·FA-50·천궁</strong>이 수출을 견인하는 핵심 라인업임.</> : <><strong>K2 Tanks, K9 Howitzers, FA-50s, and Cheongung</strong> from Hanwha, LIG Nex1, KAI, and Hyundai Rotem are the core lineups driving exports.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#65a30d]">▪</span><span>{lang === 'kr' ? <>1조 ➔ 2조 달러 구간 후반부에 급부상한 명실상부한 <strong>대한민국 산업의 신데렐라 섹터</strong>임.</> : <>The undisputed <strong>Cinderella sector of Korean industry</strong> that rapidly emerged in the latter half of the $1T to $2T period.</>}</span></li>
                             </>
                         ) : (
                             <>

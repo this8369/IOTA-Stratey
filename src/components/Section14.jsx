@@ -92,10 +92,10 @@ export default function Section14({ isActive }) {
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>가장 결정적 엔진임. <strong>삼성전자 매출은 2007년 약 100조 원에서 2025년 약 333조 원</strong>으로 3배 이상 확대.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span><strong>SK하이닉스는 2025년 사상 처음 분기 영업이익 10조 원</strong>을 돌파하며 AI 슈퍼사이클의 가장 큰 수혜자가 됨.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>Bloomberg는 2024년 삼성전자 단독으로 한국 GDP 성장의 약 절반을 설명한다고 분석함.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>삼성그룹 매출의 GDP 비중이 <strong>2007년 15%에서 2022년 22.4%</strong>까지 상승하여 단일 그룹 매크로 종속성이 오히려 심화됨.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>{lang === 'kr' ? <>가장 결정적 엔진임. <strong>삼성전자 매출은 2007년 약 100조 원에서 2025년 약 333조 원</strong>으로 3배 이상 확대.</> : <>The most crucial engine. <strong>Samsung Electronics revenue expanded over 3x from ~$100T KRW in 2007 to ~$333T KRW in 2025.</strong></>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>{lang === 'kr' ? <><strong>SK하이닉스는 2025년 사상 처음 분기 영업이익 10조 원</strong>을 돌파하며 AI 슈퍼사이클의 가장 큰 수혜자가 됨.</> : <><strong>SK Hynix surpassed 10T KRW in quarterly operating profit for the first time in 2025</strong>, becoming the biggest beneficiary of the AI super cycle.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>{lang === 'kr' ? 'Bloomberg는 2024년 삼성전자 단독으로 한국 GDP 성장의 약 절반을 설명한다고 분석함.' : 'Bloomberg analyzed that Samsung Electronics alone accounted for about half of Korea\'s GDP growth in 2024.'}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span>{lang === 'kr' ? <>삼성그룹 매출의 GDP 비중이 <strong>2007년 15%에서 2022년 22.4%</strong>까지 상승하여 단일 그룹 매크로 종속성이 오히려 심화됨.</> : <>Samsung Group revenue to GDP ratio rose from <strong>15% in 2007 to 22.4% in 2022</strong>, deepening macroeconomic dependency on a single group.</>}</span></li>
                             </>
                         ) : (
                             <>

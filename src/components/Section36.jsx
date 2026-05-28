@@ -44,12 +44,12 @@ export default function Section36({ isActive }) {
                         
                         <div className="w-full flex justify-between items-end mt-6 mb-8 px-4">
                             <div className="flex flex-col items-center">
-                                <span className="text-gray-400 font-bold text-[14px]">23~24 (과잉공급)</span>
+                                <span className="text-gray-400 font-bold text-[14px]">{lang === 'kr' ? '23~24 (과잉공급)' : '23~24 (Oversupply)'}</span>
                                 <span className="text-red-500 font-black text-[38px]">23%</span>
                             </div>
                             <div className="text-gray-300 font-black text-[32px] mb-2">→</div>
                             <div className="flex flex-col items-center">
-                                <span className="text-gray-400 font-bold text-[14px]">2025 (공급 68%↓)</span>
+                                <span className="text-gray-400 font-bold text-[14px]">{lang === 'kr' ? '2025 (공급 68%↓)' : '2025 (Supply 68%↓)'}</span>
                                 <span className="text-blue-600 font-black text-[38px]">19~20%</span>
                             </div>
                         </div>
@@ -89,9 +89,9 @@ export default function Section36({ isActive }) {
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-blue-500">▪</span><span><strong>공실률 피크아웃</strong>: 과잉 공급으로 23%까지 치솟았던 공실률이 19~20%대로 하향 안정화 진행</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-blue-500">▪</span><span><strong>신규 공급 급감</strong>: 2025년 예정된 신규 공급이 전년 대비 약 68% 감소하며 시장 정상화 가속</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-blue-500">▪</span><span><strong>지형도 재편</strong>: 안성이 3대 핵심 물류권역으로 도약했으며, 이천·용인은 콜드체인 거점 굳히기 돌입</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-500">▪</span><span>{lang === 'kr' ? <><strong>공실률 피크아웃</strong>: 과잉 공급으로 23%까지 치솟았던 공실률이 19~20%대로 하향 안정화 진행</> : <><strong>Vacancy Rate Peak-out</strong>: Vacancy rates that spiked to 23% due to oversupply are stabilizing downwards to 19-20%.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-500">▪</span><span>{lang === 'kr' ? <><strong>신규 공급 급감</strong>: 2025년 예정된 신규 공급이 전년 대비 약 68% 감소하며 시장 정상화 가속</> : <><strong>New Supply Plunge</strong>: Planned new supply in 2025 dropped ~68% YoY, accelerating market normalization.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-500">▪</span><span>{lang === 'kr' ? <><strong>지형도 재편</strong>: 안성이 3대 핵심 물류권역으로 도약했으며, 이천·용인은 콜드체인 거점 굳히기 돌입</> : <><strong>Landscape Reshaping</strong>: Anseong leaped into the Top 3 logistics regions, while Icheon/Yongin solidified as cold chain hubs.</>}</span></li>
                             </>
                         ) : (
                             <>

@@ -41,11 +41,11 @@ export default function Section120({ isActive }) {
                             {lang === 'kr' ? 'IOTA 1 · 호텔 (힐튼 부지)' : 'IOTA 1 · Hotel (Hilton Site)'}
                         </div>
                         <ul className="text-[18px] text-gray-600 font-medium leading-relaxed space-y-3">
-                            <li>▪ <strong className="text-gray-800">시공:</strong> 현대건설</li>
-                            <li>▪ <strong className="text-gray-800">사업규모:</strong> 총 사업비 약 6조 원</li>
-                            <li>▪ <strong className="text-gray-800">조달현황:</strong> 1차 본PF 2.2조 원 완료 (2025.5) <br/><span className="ml-4 text-gray-500">→ 2차 본PF 4.5조 원 예정 (2027.5)</span></li>
-                            <li>▪ <strong className="text-gray-800">용도:</strong> 리츠칼튼 호텔 + 오피스</li>
-                            <li>▪ <strong className="text-gray-800">준공목표:</strong> 2031년 3월</li>
+                            <li>▪ <strong className="text-gray-800">{lang === 'kr' ? '시공:' : 'Builder:'}</strong> {lang === 'kr' ? '현대건설' : 'Hyundai E&C'}</li>
+                            <li>▪ <strong className="text-gray-800">{lang === 'kr' ? '사업규모:' : 'Project Scale:'}</strong> {lang === 'kr' ? '총 사업비 약 6조 원' : 'Total cost approx. 6T KRW'}</li>
+                            <li>▪ <strong className="text-gray-800">{lang === 'kr' ? '조달현황:' : 'Funding Status:'}</strong> {lang === 'kr' ? '1차 본PF 2.2조 원 완료 (2025.5)' : '1st Main PF 2.2T KRW completed (May 2025)'} <br/><span className="ml-4 text-gray-500">→ {lang === 'kr' ? '2차 본PF 4.5조 원 예정 (2027.5)' : '2nd Main PF 4.5T KRW expected (May 2027)'}</span></li>
+                            <li>▪ <strong className="text-gray-800">{lang === 'kr' ? '용도:' : 'Usage:'}</strong> {lang === 'kr' ? '리츠칼튼 호텔 + 오피스' : 'Ritz-Carlton Hotel + Office'}</li>
+                            <li>▪ <strong className="text-gray-800">{lang === 'kr' ? '준공목표:' : 'Target Completion:'}</strong> {lang === 'kr' ? '2031년 3월' : 'March 2031'}</li>
                         </ul>
                     </div>
 
@@ -56,11 +56,11 @@ export default function Section120({ isActive }) {
                             {lang === 'kr' ? 'IOTA 2 · 오피스 (메트로/서울로타워)' : 'IOTA 2 · Office (Metro/Seoullo Tower)'}
                         </div>
                         <ul className="text-[18px] text-gray-600 font-medium leading-relaxed space-y-3">
-                            <li>▪ <strong className="text-gray-800">시공:</strong> 삼성물산</li>
-                            <li>▪ <strong className="text-gray-800">사업규모:</strong> 총 사업비 약 2조 1,963억 원</li>
-                            <li>▪ <strong className="text-gray-800">인센티브:</strong> 용적률 1,100% 확보</li>
-                            <li>▪ <strong className="text-gray-800">규모:</strong> 지하 9층 ~ 지상 34층</li>
-                            <li>▪ <strong className="text-gray-800">운용:</strong> 이지스일반사모부동산투자신탁421호</li>
+                            <li>▪ <strong className="text-gray-800">{lang === 'kr' ? '시공:' : 'Builder:'}</strong> {lang === 'kr' ? '삼성물산' : 'Samsung C&T'}</li>
+                            <li>▪ <strong className="text-gray-800">{lang === 'kr' ? '사업규모:' : 'Project Scale:'}</strong> {lang === 'kr' ? '총 사업비 약 2조 1,963억 원' : 'Total cost approx. 2.19T KRW'}</li>
+                            <li>▪ <strong className="text-gray-800">{lang === 'kr' ? '인센티브:' : 'Incentive:'}</strong> {lang === 'kr' ? '용적률 1,100% 확보' : 'Secured 1,100% FAR'}</li>
+                            <li>▪ <strong className="text-gray-800">{lang === 'kr' ? '규모:' : 'Scale:'}</strong> {lang === 'kr' ? '지하 9층 ~ 지상 34층' : 'B9 to 34F'}</li>
+                            <li>▪ <strong className="text-gray-800">{lang === 'kr' ? '운용:' : 'Management:'}</strong> {lang === 'kr' ? '이지스일반사모부동산투자신탁421호' : 'IGIS General Private Real Estate Investment Trust No. 421'}</li>
                         </ul>
                     </div>
                 </div>
@@ -69,7 +69,7 @@ export default function Section120({ isActive }) {
                 <div className={`w-full text-center mt-2 transition-all duration-[612ms] delay-[122ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                     <div className="inline-block bg-[#1e3a8a] text-white px-8 py-5 text-[20px] md:text-[22px] font-bold shadow-lg break-keep">
                         {lang === 'kr' ? 
-                            '한국 부동산 개발 역사상 최대 규모인 약 8조 원 규모의 거대한 통합 PF 프로젝트' : 
+                            (lang === 'kr' ? '한국 부동산 개발 역사상 최대 규모인 약 8조 원 규모의 거대한 통합 PF 프로젝트' : 'A massive integrated PF project worth approx. 8T KRW, the largest in the history of Korean real estate development') : 
                             'A massive unified PF project worth approx 8 trillion KRW, the largest in Korean real estate history.'}
                     </div>
                 </div>

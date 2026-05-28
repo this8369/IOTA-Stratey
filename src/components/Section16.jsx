@@ -81,10 +81,10 @@ export default function Section16({ isActive }) {
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-[#ea580c]">▪</span><span>HD현대중공업·삼성중공업·한화오션의 <strong>압도적 빅3 체제</strong>.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-[#ea580c]">▪</span><span>2025년 한국 조선 수출은 <strong>전년 대비 24.9% 증가</strong>하며, 반도체(+22.2%)와 함께 두 자릿수 성장을 기록한 유일한 업종임.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-[#ea580c]">▪</span><span>LNG 운반선·암모니아 운반선·해양플랜트 등 고부가가치 선박에서 <strong>글로벌 점유율 60% 이상</strong>을 차지함.</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-[#ea580c]">▪</span><span>미·중 패권 경쟁이 촉발한 <strong>MASGA(Make American Shipbuilding Great Again)</strong> 흐름의 직접적 수혜 산업.</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#ea580c]">▪</span><span>{lang === 'kr' ? <>HD현대중공업·삼성중공업·한화오션의 <strong>압도적 빅3 체제</strong>.</> : <><strong>Overwhelming Big 3 system</strong> of HD Hyundai Heavy Industries, Samsung Heavy Industries, and Hanwha Ocean.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#ea580c]">▪</span><span>{lang === 'kr' ? <>2025년 한국 조선 수출은 <strong>전년 대비 24.9% 증가</strong>하며, 반도체(+22.2%)와 함께 두 자릿수 성장을 기록한 유일한 업종임.</> : <>Korea\'s shipbuilding exports in 2025 <strong>increased 24.9% YoY</strong>, the only sector along with semiconductors (+22.2%) to record double-digit growth.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#ea580c]">▪</span><span>{lang === 'kr' ? <>LNG 운반선·암모니아 운반선·해양플랜트 등 고부가가치 선박에서 <strong>글로벌 점유율 60% 이상</strong>을 차지함.</> : <>Occupies <strong>over 60% global market share</strong> in high value-added vessels like LNG/Ammonia carriers and offshore plants.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-[#ea580c]">▪</span><span>{lang === 'kr' ? <>미·중 패권 경쟁이 촉발한 <strong>MASGA(Make American Shipbuilding Great Again)</strong> 흐름의 직접적 수혜 산업.</> : <>Direct beneficiary of the <strong>MASGA (Make American Shipbuilding Great Again)</strong> trend triggered by US-China hegemony competition.</>}</span></li>
                             </>
                         ) : (
                             <>

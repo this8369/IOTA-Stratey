@@ -82,7 +82,7 @@ export default function Section118({ isActive }) {
                 <div className={`w-full text-center mt-2 transition-all duration-[612ms] delay-[122ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                     <div className="inline-block bg-[#1e3a8a] text-white px-8 py-5 text-[20px] md:text-[22px] font-bold shadow-lg break-keep">
                         {lang === 'kr' ? 
-                            '단순 부동산 개발이 아닌 도시 형성(city-making) 행위. 롯데월드타워 + 아자부다이힐스 + 허드슨야드의 결합 모델' : 
+                            (lang === 'kr' ? '단순 부동산 개발이 아닌 도시 형성(city-making) 행위. 롯데월드타워 + 아자부다이힐스 + 허드슨야드의 결합 모델' : 'Not simple real estate development, but an act of city-making. A combined model of Lotte World Tower + Azabudai Hills + Hudson Yards') : 
                             'A city-making act beyond simple development. A combined model of Lotte World Tower, Azabudai Hills, and Hudson Yards.'}
                     </div>
                 </div>

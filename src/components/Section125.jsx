@@ -79,7 +79,7 @@ export default function Section125({ isActive }) {
                 <div className={`w-full text-center mt-2 transition-all duration-[612ms] delay-[122ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                     <div className="inline-block bg-[#1e3a8a] text-white px-8 py-5 text-[20px] md:text-[22px] font-bold shadow-lg break-keep">
                         {lang === 'kr' ? 
-                            '단순한 딜(Deal)을 넘어선 글로벌 스탠다드 운용사(GP) 도약의 지렛대' : 
+                            (lang === 'kr' ? '단순한 딜(Deal)을 넘어선 글로벌 스탠다드 운용사(GP) 도약의 지렛대' : 'A lever to leap forward as a global standard General Partner (GP) beyond a simple Deal') : 
                             'A lever to leap into a global standard GP, beyond a simple deal'}
                     </div>
                 </div>

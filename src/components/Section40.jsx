@@ -43,12 +43,12 @@ export default function Section40({ isActive }) {
                         <div className="w-full flex flex-col gap-4">
                             <div className="flex flex-col items-center">
                                 <span className="text-gray-400 font-bold text-[16px]">{lang === 'kr' ? '2012년 준공 당시' : 'At Completion (2012)'}</span>
-                                <span className="text-gray-800 font-black text-[32px]">약 9,500억 원</span>
+                                <span className="text-gray-800 font-black text-[32px]">{lang === 'kr' ? '약 9,500억 원' : '~950B KRW'}</span>
                             </div>
                             
                             <div className={`flex items-center justify-center transition-all duration-[765ms] delay-[230ms] ${step >= 3 ? 'opacity-100 h-16' : 'opacity-0 h-0 overflow-hidden'}`}>
                                 <div className="flex flex-col items-center">
-                                    <div className="text-blue-600 font-black text-[18px] mb-1">4배 이상 상승 (글로벌 LP 유입)</div>
+                                    <div className="text-blue-600 font-black text-[18px] mb-1">{lang === 'kr' ? '4배 이상 상승 (글로벌 LP 유입)' : 'Up over 4x (Global LP Inflow)'}</div>
                                     {/* Removed animate-bounce */}
                                     <svg className="w-8 h-8 text-blue-500 translate-y-[4px]" fill="none" strokeWidth="3" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
@@ -58,7 +58,7 @@ export default function Section40({ isActive }) {
                             
                             <div className={`flex flex-col items-center transition-all duration-[765ms] delay-[383ms] ${step >= 3 ? 'opacity-100' : 'opacity-0'}`}>
                                 <span className="text-gray-400 font-bold text-[16px]">{lang === 'kr' ? '2022년 매각 시 (브룩필드)' : 'At Sale (2022)'}</span>
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 font-black text-[46px] leading-tight">약 4.1조 원</span>
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 font-black text-[46px] leading-tight">{lang === 'kr' ? '약 4.1조 원' : '~4.1T KRW'}</span>
                             </div>
                         </div>
                     </div>
@@ -90,8 +90,8 @@ export default function Section40({ isActive }) {
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>
-                                <li className="flex items-start"><span className="mr-3 text-blue-500">▪</span><span><strong>상징적 가치 점프</strong>: IFC 서울은 글로벌 LP 자본을 한국으로 유입시키며 가치가 4배 이상 폭발적으로 성장한 대표적 성공 모델</span></li>
-                                <li className="flex items-start"><span className="mr-3 text-blue-500">▪</span><span><strong>트로피 계승의 선언</strong>: 이지스자산운용은 IOTA Seoul을 통해 이 거대한 IFC 모델을 두 번째이자 더욱 압도적인 규모로 재현하고자 함</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-500">▪</span><span>{lang === 'kr' ? <><strong>상징적 가치 점프</strong>: IFC 서울은 글로벌 LP 자본을 한국으로 유입시키며 가치가 4배 이상 폭발적으로 성장한 대표적 성공 모델</> : <><strong>Symbolic Value Jump</strong>: IFC Seoul is a prime success model where value exploded over 4x by bringing global LP capital into Korea.</>}</span></li>
+                                <li className="flex items-start"><span className="mr-3 text-blue-500">▪</span><span>{lang === 'kr' ? <><strong>트로피 계승의 선언</strong>: 이지스자산운용은 IOTA Seoul을 통해 이 거대한 IFC 모델을 두 번째이자 더욱 압도적인 규모로 재현하고자 함</> : <><strong>Declaration of Trophy Succession</strong>: IGIS Asset Management aims to recreate this massive IFC model on a second, even more overwhelming scale through IOTA Seoul.</>}</span></li>
                             </>
                         ) : (
                             <>
