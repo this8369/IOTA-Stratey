@@ -41,7 +41,7 @@ export default function Section85({ isActive }) {
                 {/* Main Flowing Text */}
                 <h2 className={`text-[40px] md:text-[60px] lg:text-[72px] font-bold leading-[calc(1.3em-6px)] break-keep tracking-[-0.02em] transition-all duration-[918ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="gradient-text">
-                        {lang === 'kr' ? <>이지스자산운용 전략 포지셔닝<br/>글로벌 운용사로의 도약</> : <>IGIS Asset Management Strategic Positioning<br/>Leap Towards a Global AM</>}
+                        {lang === 'kr' ? '이지스자산운용 전략 포지셔닝' : 'IGIS Asset Management Strategic Positioning'}
                     </span>
                 </h2>
 
