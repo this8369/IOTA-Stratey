@@ -318,7 +318,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
 
  {/* Dropdown Mega Menu */}
  <div
- className={`absolute left-0 !ml-0 top-[100%] w-full bg-white transition-all duration-300 overflow-y-auto relative ${isMegaMenuOpen ? 'h-[calc(100vh-46px)] opacity-100 shadow-[0_10px_30px_rgba(0,0,0,0.05)] border-t border-gray-100' : 'h-0 opacity-0'}`}
+ className={`absolute left-0 !ml-0 top-[100%] w-full bg-white transition-all duration-300 overflow-y-auto ${isMegaMenuOpen ? 'h-[calc(100vh-46px)] opacity-100 shadow-[0_10px_30px_rgba(0,0,0,0.05)] border-t border-gray-100' : 'h-0 opacity-0'}`}
  style={{ zIndex: 40 }}
  >
  {isMegaMenuOpen && (
