@@ -35,10 +35,10 @@ export default function Section133({ isActive }) {
                 </div>
 
                 {/* Main Content: Left Bar Chart, Right Tree Diagram */}
-                <div className="w-full max-w-[1400px] grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-8">
+                <div className="w-full max-w-[1400px] grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch mb-8">
                     
                     {/* Left: Bar Chart (40%) */}
-                    <div className={`lg:col-span-5 bg-white rounded-xl shadow-lg border border-gray-200 p-8 flex flex-col h-[400px] transition-all duration-700 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                    <div className={`lg:col-span-5 bg-white rounded-xl shadow-lg border border-gray-200 p-8 flex flex-col transition-all duration-700 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
                         <div className="mb-6">
                             <div className="text-[#1e3a8a] font-black text-[16px] tracking-widest uppercase mb-1">4.3 ASSET PREMIUM</div>
                             <h3 className="text-[#1d1d1f] font-bold text-[24px] leading-tight break-keep">
@@ -77,7 +77,7 @@ export default function Section133({ isActive }) {
                     </div>
 
                     {/* Right: Exit Options (Clean Blocks instead of SVG Tree) */}
-                    <div className={`lg:col-span-7 bg-[#1d1d1f] rounded-xl shadow-lg border border-gray-700 p-8 flex flex-col h-[400px] transition-all duration-700 delay-200 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
+                    <div className={`lg:col-span-7 bg-[#1d1d1f] rounded-xl shadow-lg border border-gray-700 p-8 flex flex-col transition-all duration-700 delay-200 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
                         <div className="mb-6">
                             <div className="text-gray-400 font-black text-[16px] tracking-widest uppercase mb-1">4.4 & 4.5 EXIT OPTIONALITY</div>
                             <h3 className="text-white font-bold text-[24px] leading-tight break-keep">
