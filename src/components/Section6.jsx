@@ -48,10 +48,26 @@ export default function Section6({ isActive }) {
  {/* Content: 4-part Roadmap */}
  <div className={`flex flex-col w-full max-w-[840px] mt-[38px] bg-white border-[8px] border-[#1e3a8a] transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
  {[
- { num: '1', title: '1조 → 2조 달러 역사적 분석', subtitle: '한국 자본·산업·부동산 성장의 궤적' },
- { num: '2', title: '2조 → 3조 달러 시나리오 전망', subtitle: '미래 거시 경제와 프라임 공간의 구조적 변화' },
- { num: '3', title: '이지스 글로벌 도약 전략 포지셔닝', subtitle: '3대 플랫폼 베팅과 다전략 아키텍처 구축' },
- { num: '4', title: 'IOTA 서울의 역할과 실행 변수', subtitle: '단일 최대 트로피 자산의 Re-rating 메커니즘' }
+ { 
+ num: '1', 
+ titleKr: '1조 → 2조 달러 역사적 분석', titleEn: 'Historical Analysis of $1T to $2T', 
+ subtitleKr: '한국 자본·산업·부동산 성장의 궤적', subtitleEn: 'Trajectory of Korean Capital, Industry, and Real Estate Growth' 
+ },
+ { 
+ num: '2', 
+ titleKr: '2조 → 3조 달러 시나리오 전망', titleEn: 'Scenario Outlook for $2T to $3T', 
+ subtitleKr: '미래 거시 경제와 프라임 공간의 구조적 변화', subtitleEn: 'Structural Changes in Future Macroeconomy and Prime Space' 
+ },
+ { 
+ num: '3', 
+ titleKr: '이지스 글로벌 도약 전략 포지셔닝', titleEn: 'Strategic Positioning for IGIS Global Leap', 
+ subtitleKr: '3대 플랫폼 베팅과 다전략 아키텍처 구축', subtitleEn: 'Betting on 3 Platforms and Building Multi-Strategy Architecture' 
+ },
+ { 
+ num: '4', 
+ titleKr: 'IOTA 서울의 역할과 실행 변수', titleEn: 'Role and Execution Variables of IOTA Seoul', 
+ subtitleKr: '단일 최대 트로피 자산의 Re-rating 메커니즘', subtitleEn: 'Re-rating Mechanism of the Single Largest Trophy Asset' 
+ }
  ].map((item, index) => (
  <div 
  key={index}
@@ -60,8 +76,8 @@ export default function Section6({ isActive }) {
  >
  <span className="text-[40px] font-extrabold text-[#888] w-16 mb-2 md:mb-0 shrink-0 flex items-center justify-center md:justify-start">{item.num}</span>
  <div className="flex flex-col">
- <h4 className="text-[26px] md:text-[30px] font-extrabold text-[#1d1d1f]">{item.title}</h4>
- <p className="text-[20px] md:text-[22px] font-bold text-[#555] -mt-1">{item.subtitle}</p>
+ <h4 className="text-[26px] md:text-[30px] font-extrabold text-[#1d1d1f]">{lang === 'kr' ? item.titleKr : item.titleEn}</h4>
+ <p className="text-[20px] md:text-[22px] font-bold text-[#555] -mt-1">{lang === 'kr' ? item.subtitleKr : item.subtitleEn}</p>
  </div>
  </div>
  ))}
