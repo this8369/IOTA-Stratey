@@ -39,9 +39,9 @@ export default function Section114({ isActive }) {
                 </div>
 
                 {/* Main Flowing Text */}
-                <h2 className={`text-[40px] md:text-[60px] lg:text-[72px] font-bold leading-[calc(1.3em-6px)] break-keep tracking-[-0.02em] transition-all duration-[734ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[46px] md:text-[72px] lg:text-[88px] font-bold leading-[1.1em] break-keep transition-all duration-1000 ease-out delay-500 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                     <span className="gradient-text-p4">
-                        {lang === 'kr' ? <>IOTA Seoul<br/>역할과 포지셔닝</> : <>IOTA Seoul<br/>Role & Positioning</>}
+                        {lang === 'kr' ? <>IOTA Seoul의<br/>역할</> : <>Role of<br/>IOTA Seoul</>}
                     </span>
                 </h2>
 
