@@ -9,8 +9,8 @@ export default function Section47({ isActive }) {
         if (!isActive) { setStep(0); return; }
         const t1 = setTimeout(() => setStep(1), 230);
         const t2 = setTimeout(() => setStep(2), 536);
-        const t3 = setTimeout(() => setStep(3), 842);
-        const t4 = setTimeout(() => setStep(4), 1148);
+        const t3 = setTimeout(() => setStep(3), 781);
+        const t4 = setTimeout(() => setStep(4), 1087);
         return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); clearTimeout(t4); };
     }, [isActive]);
 

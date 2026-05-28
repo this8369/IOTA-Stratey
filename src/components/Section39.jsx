@@ -13,10 +13,10 @@ export default function Section39({ isActive }) {
         const timers = [
             setTimeout(() => setStep(1), 230),
             setTimeout(() => setStep(2), 689),
-            setTimeout(() => setStep(3), 1148),
-            setTimeout(() => setStep(4), 1607),
-            setTimeout(() => setStep(5), 2066),
-            setTimeout(() => setStep(6), 2525)
+            setTimeout(() => setStep(3), 1056),
+            setTimeout(() => setStep(4), 1515),
+            setTimeout(() => setStep(5), 1974),
+            setTimeout(() => setStep(6), 2433)
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);

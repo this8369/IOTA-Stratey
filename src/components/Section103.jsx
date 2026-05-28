@@ -10,10 +10,10 @@ export default function Section103({ isActive }) {
         const timers = [
             setTimeout(() => setStep(1), 230),
             setTimeout(() => setStep(2), 612),
-            setTimeout(() => setStep(3), 918), // Left Panel
-            setTimeout(() => setStep(4), 1224), // Right Panel
-            setTimeout(() => setStep(5), 1530), // Alert Pulse
-            setTimeout(() => setStep(6), 1989), // Bottom text
+            setTimeout(() => setStep(3), 857), // Left Panel
+            setTimeout(() => setStep(4), 1163), // Right Panel
+            setTimeout(() => setStep(5), 1469), // Alert Pulse
+            setTimeout(() => setStep(6), 1928), // Bottom text
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);

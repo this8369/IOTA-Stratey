@@ -10,13 +10,13 @@ export default function Section83({ isActive }) {
         const timers = [
             setTimeout(() => setStep(1), 230),
             setTimeout(() => setStep(2), 612),
-            setTimeout(() => setStep(3), 918), // HK
-            setTimeout(() => setStep(4), 1071), // London
-            setTimeout(() => setStep(5), 1224), // Tokyo
-            setTimeout(() => setStep(6), 1377), // NY
-            setTimeout(() => setStep(7), 1530), // SG
-            setTimeout(() => setStep(8), 1836), // Seoul
-            setTimeout(() => setStep(9), 2295)  // Bottom Text
+            setTimeout(() => setStep(3), 857), // HK
+            setTimeout(() => setStep(4), 1010), // London
+            setTimeout(() => setStep(5), 1163), // Tokyo
+            setTimeout(() => setStep(6), 1316), // NY
+            setTimeout(() => setStep(7), 1469), // SG
+            setTimeout(() => setStep(8), 1775), // Seoul
+            setTimeout(() => setStep(9), 2234)  // Bottom Text
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);

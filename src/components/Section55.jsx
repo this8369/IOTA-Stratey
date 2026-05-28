@@ -9,9 +9,9 @@ export default function Section55({ isActive }) {
         if (!isActive) { setStep(0); return; }
         const t1 = setTimeout(() => setStep(1), 230);
         const t2 = setTimeout(() => setStep(2), 689);
-        const t3 = setTimeout(() => setStep(3), 918);
-        const t4 = setTimeout(() => setStep(4), 1148);
-        const t5 = setTimeout(() => setStep(5), 1530);
+        const t3 = setTimeout(() => setStep(3), 872);
+        const t4 = setTimeout(() => setStep(4), 1102);
+        const t5 = setTimeout(() => setStep(5), 1484);
         return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); clearTimeout(t4); clearTimeout(t5); };
     }, [isActive]);
 

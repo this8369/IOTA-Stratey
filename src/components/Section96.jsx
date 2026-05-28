@@ -10,9 +10,9 @@ export default function Section96({ isActive }) {
         const timers = [
             setTimeout(() => setStep(1), 230),
             setTimeout(() => setStep(2), 612),
-            setTimeout(() => setStep(3), 995), // Left: WeWork vs IGIS
-            setTimeout(() => setStep(4), 1377), // Right: Mori Building
-            setTimeout(() => setStep(5), 1989)  // Bottom
+            setTimeout(() => setStep(3), 918), // Left: WeWork vs IGIS
+            setTimeout(() => setStep(4), 1300), // Right: Mori Building
+            setTimeout(() => setStep(5), 1912)  // Bottom
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);

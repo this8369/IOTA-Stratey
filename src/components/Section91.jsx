@@ -10,9 +10,9 @@ export default function Section91({ isActive }) {
         const timers = [
             setTimeout(() => setStep(1), 230),
             setTimeout(() => setStep(2), 612),
-            setTimeout(() => setStep(3), 995), // Left column (Basis/Goal)
-            setTimeout(() => setStep(4), 1377), // Right column (Key 1,2,3)
-            setTimeout(() => setStep(5), 1989)  // Bottom thesis
+            setTimeout(() => setStep(3), 918), // Left column (Basis/Goal)
+            setTimeout(() => setStep(4), 1300), // Right column (Key 1,2,3)
+            setTimeout(() => setStep(5), 1912)  // Bottom thesis
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);

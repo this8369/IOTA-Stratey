@@ -10,8 +10,8 @@ export default function Section64({ isActive }) {
         const timers = [
             setTimeout(() => setStep(1), 230),
             setTimeout(() => setStep(2), 612),
-            setTimeout(() => setStep(3), 995),
-            setTimeout(() => setStep(4), 1377),
+            setTimeout(() => setStep(3), 918),
+            setTimeout(() => setStep(4), 1300),
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);

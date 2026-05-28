@@ -13,9 +13,9 @@ export default function Section40({ isActive }) {
         const timers = [
             setTimeout(() => setStep(1), 230),
             setTimeout(() => setStep(2), 765),
-            setTimeout(() => setStep(3), 1377),
-            setTimeout(() => setStep(4), 1989),
-            setTimeout(() => setStep(5), 2448)
+            setTimeout(() => setStep(3), 1255),
+            setTimeout(() => setStep(4), 1867),
+            setTimeout(() => setStep(5), 2326)
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);

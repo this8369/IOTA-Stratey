@@ -13,7 +13,7 @@ export default function Section3({ isActive }) {
  
  const t1 = setTimeout(() => setStep(1), 207); // Theme
  const t2 = setTimeout(() => setStep(2), 551); // Main Text
- const t3 = setTimeout(() => setStep(3), 1033); // Content Text
+ const t3 = setTimeout(() => setStep(3), 937); // Content Text
  
  return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); };
  }, [isActive]);

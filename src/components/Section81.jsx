@@ -10,9 +10,9 @@ export default function Section81({ isActive }) {
         const timers = [
             setTimeout(() => setStep(1), 230),
             setTimeout(() => setStep(2), 612),
-            setTimeout(() => setStep(3), 1071),
-            setTimeout(() => setStep(4), 1530),
-            setTimeout(() => setStep(5), 2142)
+            setTimeout(() => setStep(3), 979),
+            setTimeout(() => setStep(4), 1438),
+            setTimeout(() => setStep(5), 2050)
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);

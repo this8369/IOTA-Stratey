@@ -10,9 +10,9 @@ export default function Section88({ isActive }) {
         const timers = [
             setTimeout(() => setStep(1), 230),
             setTimeout(() => setStep(2), 612),
-            setTimeout(() => setStep(3), 995), // Requirements
-            setTimeout(() => setStep(4), 1683), // Timeline
-            setTimeout(() => setStep(5), 2295)  // Bottom text
+            setTimeout(() => setStep(3), 918), // Requirements
+            setTimeout(() => setStep(4), 1606), // Timeline
+            setTimeout(() => setStep(5), 2218)  // Bottom text
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);

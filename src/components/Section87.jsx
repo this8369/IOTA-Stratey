@@ -10,12 +10,12 @@ export default function Section87({ isActive }) {
         const timers = [
             setTimeout(() => setStep(1), 230),
             setTimeout(() => setStep(2), 612),
-            setTimeout(() => setStep(3), 918), // Blackstone
-            setTimeout(() => setStep(4), 1071), // Brookfield
-            setTimeout(() => setStep(5), 1224), // PGIM
-            setTimeout(() => setStep(6), 1377), // Hines
-            setTimeout(() => setStep(7), 1836), // IGIS
-            setTimeout(() => setStep(8), 2295)  // Bottom Text
+            setTimeout(() => setStep(3), 857), // Blackstone
+            setTimeout(() => setStep(4), 1010), // Brookfield
+            setTimeout(() => setStep(5), 1163), // PGIM
+            setTimeout(() => setStep(6), 1316), // Hines
+            setTimeout(() => setStep(7), 1775), // IGIS
+            setTimeout(() => setStep(8), 2234)  // Bottom Text
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);

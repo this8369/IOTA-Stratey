@@ -13,8 +13,8 @@ export default function Section6({ isActive }) {
  
  const t1 = setTimeout(() => setStep(1), 207); // Theme
  const t2 = setTimeout(() => setStep(2), 551); // Main Text
- const t3 = setTimeout(() => setStep(3), 1033); // Roadmap container
- const t4 = setTimeout(() => setStep(4), 1301); // Roadmap items
+ const t3 = setTimeout(() => setStep(3), 937); // Roadmap container
+ const t4 = setTimeout(() => setStep(4), 1205); // Roadmap items
  
  return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); clearTimeout(t4); };
  }, [isActive]);

@@ -13,9 +13,9 @@ export default function Section14({ isActive }) {
         const timers = [
             setTimeout(() => setStep(1), 230), // Theme & Title
             setTimeout(() => setStep(2), 765), // Infographic Base
-            setTimeout(() => setStep(3), 1224), // Infographic Details
-            setTimeout(() => setStep(4), 1683), // More Details
-            setTimeout(() => setStep(5), 2142)  // Description Text
+            setTimeout(() => setStep(3), 1132), // Infographic Details
+            setTimeout(() => setStep(4), 1591), // More Details
+            setTimeout(() => setStep(5), 2050)  // Description Text
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);

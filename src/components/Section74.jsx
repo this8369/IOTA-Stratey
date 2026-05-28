@@ -10,7 +10,7 @@ export default function Section74({ isActive }) {
         const timers = [
             setTimeout(() => setStep(1), 230),
             setTimeout(() => setStep(2), 612),
-            setTimeout(() => setStep(3), 1071)
+            setTimeout(() => setStep(3), 979)
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);

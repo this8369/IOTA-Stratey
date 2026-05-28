@@ -10,9 +10,9 @@ export default function Section109({ isActive }) {
         const timers = [
             setTimeout(() => setStep(1), 230),
             setTimeout(() => setStep(2), 612),
-            setTimeout(() => setStep(3), 918), // Left Box
-            setTimeout(() => setStep(4), 1224), // Right Box
-            setTimeout(() => setStep(5), 1683), // Bottom Text
+            setTimeout(() => setStep(3), 857), // Left Box
+            setTimeout(() => setStep(4), 1163), // Right Box
+            setTimeout(() => setStep(5), 1622), // Bottom Text
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);

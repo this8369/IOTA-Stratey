@@ -11,10 +11,10 @@ export default function Section105({ isActive }) {
         const timers = [
             setTimeout(() => setStep(1), 230),
             setTimeout(() => setStep(2), 612),
-            setTimeout(() => setStep(3), 918), // Left PF Stack
-            setTimeout(() => setStep(4), 1224), // Right Sliders
-            setTimeout(() => setStep(5), 1530), // Chart drawing
-            setTimeout(() => setStep(6), 2142), // Bottom Text
+            setTimeout(() => setStep(3), 857), // Left PF Stack
+            setTimeout(() => setStep(4), 1163), // Right Sliders
+            setTimeout(() => setStep(5), 1469), // Chart drawing
+            setTimeout(() => setStep(6), 2081), // Bottom Text
         ];
         
         // fake slider automation

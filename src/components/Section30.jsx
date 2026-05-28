@@ -13,9 +13,9 @@ export default function Section30({ isActive }) {
         const timers = [
             setTimeout(() => setStep(1), 230),
             setTimeout(() => setStep(2), 765),
-            setTimeout(() => setStep(3), 1224),
-            setTimeout(() => setStep(4), 1683),
-            setTimeout(() => setStep(5), 2142)
+            setTimeout(() => setStep(3), 1132),
+            setTimeout(() => setStep(4), 1591),
+            setTimeout(() => setStep(5), 2050)
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);

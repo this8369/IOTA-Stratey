@@ -10,9 +10,9 @@ export default function Section84({ isActive }) {
         const timers = [
             setTimeout(() => setStep(1), 230),
             setTimeout(() => setStep(2), 612),  // 2026 Box
-            setTimeout(() => setStep(3), 1148), // Arrow
-            setTimeout(() => setStep(4), 1683), // 2040 Box
-            setTimeout(() => setStep(5), 2219)  // Bottom Text
+            setTimeout(() => setStep(3), 1041), // Arrow
+            setTimeout(() => setStep(4), 1576), // 2040 Box
+            setTimeout(() => setStep(5), 2112)  // Bottom Text
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);

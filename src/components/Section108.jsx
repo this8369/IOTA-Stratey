@@ -10,10 +10,10 @@ export default function Section108({ isActive }) {
         const timers = [
             setTimeout(() => setStep(1), 230),
             setTimeout(() => setStep(2), 612),
-            setTimeout(() => setStep(3), 918), // Left Input
-            setTimeout(() => setStep(4), 1224), // Flow line
-            setTimeout(() => setStep(5), 1530), // Right Target
-            setTimeout(() => setStep(6), 1989), // Bottom Text
+            setTimeout(() => setStep(3), 857), // Left Input
+            setTimeout(() => setStep(4), 1163), // Flow line
+            setTimeout(() => setStep(5), 1469), // Right Target
+            setTimeout(() => setStep(6), 1928), // Bottom Text
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);

@@ -10,10 +10,10 @@ export default function Section99({ isActive }) {
         const timers = [
             setTimeout(() => setStep(1), 230),
             setTimeout(() => setStep(2), 612),
-            setTimeout(() => setStep(3), 995), // Row 1
-            setTimeout(() => setStep(4), 1377), // Row 2
-            setTimeout(() => setStep(5), 1760), // Row 3
-            setTimeout(() => setStep(6), 2295)  // Bottom
+            setTimeout(() => setStep(3), 918), // Row 1
+            setTimeout(() => setStep(4), 1300), // Row 2
+            setTimeout(() => setStep(5), 1683), // Row 3
+            setTimeout(() => setStep(6), 2218)  // Bottom
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);

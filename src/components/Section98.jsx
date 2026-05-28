@@ -10,9 +10,9 @@ export default function Section98({ isActive }) {
         const timers = [
             setTimeout(() => setStep(1), 230),
             setTimeout(() => setStep(2), 612),
-            setTimeout(() => setStep(3), 995), // Center Fund
-            setTimeout(() => setStep(4), 1377), // Left / Right Directions
-            setTimeout(() => setStep(5), 1989)  // Bottom
+            setTimeout(() => setStep(3), 918), // Center Fund
+            setTimeout(() => setStep(4), 1300), // Left / Right Directions
+            setTimeout(() => setStep(5), 1912)  // Bottom
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);

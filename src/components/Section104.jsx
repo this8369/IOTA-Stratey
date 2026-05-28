@@ -10,10 +10,10 @@ export default function Section104({ isActive }) {
         const timers = [
             setTimeout(() => setStep(1), 230),
             setTimeout(() => setStep(2), 612),
-            setTimeout(() => setStep(3), 918), // Raw Data
-            setTimeout(() => setStep(4), 1377), // AI Engine
-            setTimeout(() => setStep(5), 1836), // Language outputs
-            setTimeout(() => setStep(6), 2295), // Bottom text
+            setTimeout(() => setStep(3), 857), // Raw Data
+            setTimeout(() => setStep(4), 1316), // AI Engine
+            setTimeout(() => setStep(5), 1775), // Language outputs
+            setTimeout(() => setStep(6), 2234), // Bottom text
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);

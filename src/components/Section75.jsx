@@ -10,8 +10,8 @@ export default function Section75({ isActive }) {
         const timers = [
             setTimeout(() => setStep(1), 230),
             setTimeout(() => setStep(2), 612),
-            setTimeout(() => setStep(3), 918),
-            setTimeout(() => setStep(4), 1224)
+            setTimeout(() => setStep(3), 857),
+            setTimeout(() => setStep(4), 1163)
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);

@@ -13,10 +13,10 @@ export default function Section6({ isActive }) {
  
  const t1 = setTimeout(() => setStep(1), 230); // Title
  const t2 = setTimeout(() => setStep(2), 612); // Part 1
- const t3 = setTimeout(() => setStep(3), 918); // Part 2
- const t4 = setTimeout(() => setStep(4), 1224); // Part 3
- const t5 = setTimeout(() => setStep(5), 1530); // Part 4
- const t6 = setTimeout(() => setStep(6), 1989); // Disclaimer
+ const t3 = setTimeout(() => setStep(3), 857); // Part 2
+ const t4 = setTimeout(() => setStep(4), 1163); // Part 3
+ const t5 = setTimeout(() => setStep(5), 1469); // Part 4
+ const t6 = setTimeout(() => setStep(6), 1928); // Disclaimer
 
  return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); clearTimeout(t4); clearTimeout(t5); clearTimeout(t6); };
  }, [isActive]);

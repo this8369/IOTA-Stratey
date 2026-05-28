@@ -10,9 +10,9 @@ export default function Section89({ isActive }) {
         const timers = [
             setTimeout(() => setStep(1), 230),
             setTimeout(() => setStep(2), 612),
-            setTimeout(() => setStep(3), 995), // Pillars
-            setTimeout(() => setStep(4), 1683), // Formula
-            setTimeout(() => setStep(5), 2295)  // Bottom text
+            setTimeout(() => setStep(3), 918), // Pillars
+            setTimeout(() => setStep(4), 1606), // Formula
+            setTimeout(() => setStep(5), 2218)  // Bottom text
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);

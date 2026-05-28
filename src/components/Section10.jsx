@@ -13,9 +13,9 @@ export default function Section10({ isActive }) {
         
         const t1 = setTimeout(() => setStep(1), 230); // Theme & Title
         const t2 = setTimeout(() => setStep(2), 765); // Node 1
-        const t3 = setTimeout(() => setStep(3), 1224); // Node 2
-        const t4 = setTimeout(() => setStep(4), 1683); // Node 3
-        const t5 = setTimeout(() => setStep(5), 2142); // Intro Text
+        const t3 = setTimeout(() => setStep(3), 1132); // Node 2
+        const t4 = setTimeout(() => setStep(4), 1591); // Node 3
+        const t5 = setTimeout(() => setStep(5), 2050); // Intro Text
         
         return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); clearTimeout(t4); clearTimeout(t5); };
     }, [isActive]);

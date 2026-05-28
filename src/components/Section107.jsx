@@ -10,10 +10,10 @@ export default function Section107({ isActive }) {
         const timers = [
             setTimeout(() => setStep(1), 230),
             setTimeout(() => setStep(2), 612),
-            setTimeout(() => setStep(3), 918), // Pillars
-            setTimeout(() => setStep(4), 1224), // Arrow
-            setTimeout(() => setStep(5), 1530), // Right Targets
-            setTimeout(() => setStep(6), 1989), // Bottom text
+            setTimeout(() => setStep(3), 857), // Pillars
+            setTimeout(() => setStep(4), 1163), // Arrow
+            setTimeout(() => setStep(5), 1469), // Right Targets
+            setTimeout(() => setStep(6), 1928), // Bottom text
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);

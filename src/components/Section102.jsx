@@ -10,10 +10,10 @@ export default function Section102({ isActive }) {
         const timers = [
             setTimeout(() => setStep(1), 230),
             setTimeout(() => setStep(2), 689),
-            setTimeout(() => setStep(3), 1071),
-            setTimeout(() => setStep(4), 1377),
-            setTimeout(() => setStep(5), 1683),
-            setTimeout(() => setStep(6), 1989),
+            setTimeout(() => setStep(3), 995),
+            setTimeout(() => setStep(4), 1301),
+            setTimeout(() => setStep(5), 1607),
+            setTimeout(() => setStep(6), 1913),
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
