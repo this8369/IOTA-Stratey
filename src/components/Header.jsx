@@ -10,6 +10,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
  const [activeSection, setActiveSection] = useState('');
  const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
  const [hoveredIndex, setHoveredIndex] = useState(null);
+ const [isHeaderHovered, setIsHeaderHovered] = useState(false);
  const [modalType, setModalType] = useState(null);
  const initialTransform = React.useRef('translateY(0)');
 
@@ -271,7 +272,9 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
  return (
  <>
  <header id="main-header"
- className={`fixed top-0 left-0 w-full bg-white text-black z-50 py-[5px] md:py-[15px] transition-all duration-[800ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${isNavOpen ? 'lg:pl-[240px]' : 'pl-0'}`}
+ onMouseEnter={() => setIsHeaderHovered(true)}
+ onMouseLeave={() => setIsHeaderHovered(false)}
+ className={`fixed top-0 left-0 w-full z-50 pt-[12px] pb-[10px] transition-all duration-[500ms] ease-out ${isNavOpen ? 'lg:pl-[240px]' : 'pl-0'} ${(isHeaderHovered || isMegaMenuOpen) ? 'bg-white opacity-100' : 'bg-white/40 opacity-40'} text-black`}
  style={{ transform: initialTransform.current }}>
  <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex justify-between items-center transition-all duration-300">
  <a href="#page-1"
@@ -315,7 +318,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
 
  {/* Dropdown Mega Menu */}
  <div
- className={`absolute left-0 !ml-0 top-[100%] w-full bg-white transition-all duration-300 overflow-hidden ${isMegaMenuOpen ? 'max-h-[600px] opacity-100 shadow-[0_10px_30px_rgba(0,0,0,0.05)] border-t border-gray-100' : 'max-h-0 opacity-0'}`}
+ className={`absolute left-0 !ml-0 top-[100%] w-full bg-white transition-all duration-300 overflow-y-auto ${isMegaMenuOpen ? 'h-[calc(100vh-46px)] opacity-100 shadow-[0_10px_30px_rgba(0,0,0,0.05)] border-t border-gray-100' : 'h-0 opacity-0'}`}
  style={{ zIndex: 40 }}
  >
  <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto pt-10 pb-[40px] flex justify-start gap-[120px]">
@@ -326,7 +329,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
  onMouseEnter={() => setHoveredIndex(idx)}
  >
  <h4
- className="text-[16px] xl:text-[18px] font-medium mb-5 text-black w-fit cursor-pointer font-guardian"
+ className="text-[14px] xl:text-[16px] font-medium mb-4 text-black w-fit cursor-pointer font-guardian"
  onClick={(e) => {
  setIsMegaMenuOpen(false);
  if (col.type === 'news') {
@@ -348,11 +351,11 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
  {col.title}
  </span>
  </h4>
- <div className="flex flex-col gap-6 mt-2">
+ <div className="flex flex-col gap-[22px] mt-2">
  {col.chapters?.map((chapter, chapIdx) => (
  <div key={chapIdx}>
  {chapter.title && <h5 
- className={`text-[14px] font-bold mb-2 transition-colors ${chapter.id ? 'text-gray-700 hover:text-black cursor-pointer' : 'text-gray-500'}`}
+ className={`text-[12px] font-bold mb-1.5 transition-colors ${chapter.id ? 'text-gray-700 hover:text-black cursor-pointer' : 'text-gray-500'}`}
  onClick={(e) => {
  if (chapter.id) {
  setIsMegaMenuOpen(false);
@@ -360,7 +363,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
  }
  }}
  >{chapter.title}</h5>}
- <ul className="flex flex-col space-y-3">
+ <ul className="flex flex-col space-y-2.5">
  {chapter.items.map((item, itemIdx) => {
  const isNews = item.type === 'news';
  const isLease = item.type === 'lease';
@@ -402,7 +405,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
  href={isNews ? "#news" : isLease ? "#lease" : isPartnership ? "#partnership" : isAlert ? "#" : isDownload ? item.url : isSystemCore ? `${import.meta.env.BASE_URL}system-core` : `#${item.id}`}
  target={isDownload ? "_blank" : undefined}
  onClick={clickHandler}
- className="text-[13px] xl:text-[15px] text-gray-700 font-light ] group/sub inline-block w-fit"
+ className="text-[11px] xl:text-[13px] text-gray-700 font-light group/sub inline-block w-fit"
  >
  <span className="relative pb-0 after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-[1px] after:-bottom-[-1px] after:left-0 after:bg-black after:origin-bottom-left after:transition-transform after:duration-300 group-hover/sub:after:scale-x-100 group-hover/sub:text-black transition-colors">
  {item.label}
