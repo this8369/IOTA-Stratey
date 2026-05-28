@@ -31,7 +31,7 @@ export default function Section117({ isActive }) {
                 </div>
 
                 {/* Content: 3 Cards */}
-                <div className={`w-full max-w-[1200px] mx-auto mt-[20px] mb-[36px] grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-[612ms] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`w-full max-w-[1200px] mx-auto mt-[10px] mb-[36px] grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-[612ms] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     
                     {/* Card 1: Network */}
                     <div className="bg-white border-[6px] border-[#1e3a8a] p-8 flex flex-col shadow-sm">
@@ -79,6 +79,14 @@ export default function Section117({ isActive }) {
                         <li className="flex items-start">
                             <span className="mr-3 text-[#1d1d1f]">▪</span>
                             <span className="text-[#1d1d1f]">{lang === 'kr' ? '도쿄역(JR 라인 + 신칸센)에 비견되는 국가 인프라급 중심지' : 'A national infrastructure-level hub comparable to Tokyo Station'}</span>
+                        </li>
+                        <li className="flex items-start">
+                            <span className="mr-3 text-[#1d1d1f]">▪</span>
+                            <span className="text-[#1d1d1f]">{lang === 'kr' ? '남산(녹지) + 도심(CBD) + 용산국제업무지구(예정) + 마포·여의도와의 보행/지하철 연결성' : 'Pedestrian and subway connectivity to Namsan (greenery) + CBD + Yongsan IBD + Mapo/Yeouido'}</span>
+                        </li>
+                        <li className="flex items-start">
+                            <span className="mr-3 text-[#1d1d1f]">▪</span>
+                            <span className="text-[#1d1d1f]">{lang === 'kr' ? '외국인 비즈니스 관광 진입점 (인천공항 직결, 30분)' : 'Entry point for foreign business tourism (Directly connected to Incheon Airport, 30 min)'}</span>
                         </li>
                     </ul>
                 </div>

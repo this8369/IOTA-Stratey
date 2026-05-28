@@ -31,7 +31,7 @@ export default function Section116({ isActive }) {
                 </div>
 
                 {/* Content: 3 Cards */}
-                <div className={`w-full max-w-[1200px] mx-auto mt-[20px] mb-[36px] grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-[612ms] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`w-full max-w-[1200px] mx-auto mt-[10px] mb-[36px] grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-[612ms] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     
                     {/* Card 1: Tokyo */}
                     <div className="bg-white border-[6px] border-[#1e3a8a] p-8 flex flex-col shadow-sm">

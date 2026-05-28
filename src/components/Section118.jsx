@@ -31,7 +31,7 @@ export default function Section118({ isActive }) {
                 </div>
 
                 {/* Content: 4 Cards (2x2 grid) */}
-                <div className={`w-full max-w-[1200px] mx-auto mt-[20px] mb-[36px] grid grid-cols-1 md:grid-cols-2 gap-6 transition-all duration-[612ms] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`w-full max-w-[1200px] mx-auto mt-[10px] mb-[36px] grid grid-cols-1 md:grid-cols-2 gap-6 transition-all duration-[612ms] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     
                     {/* Card 1 */}
                     <div className="bg-white border-[6px] border-[#1e3a8a] p-8 flex flex-col shadow-sm">
@@ -45,8 +45,8 @@ export default function Section118({ isActive }) {
                     </div>
 
                     {/* Card 2 */}
-                    <div className="bg-white border-[6px] border-[#1d1d1f] p-8 flex flex-col shadow-sm">
-                        <div className="text-[#1d1d1f] font-black text-[24px] md:text-[28px] mb-2 uppercase">Green Space</div>
+                    <div className="bg-white border-[6px] border-[#1e3a8a] p-8 flex flex-col shadow-sm">
+                        <div className="text-[#1e3a8a] font-black text-[24px] md:text-[28px] mb-2 uppercase">Green Space</div>
                         <div className="text-gray-700 font-bold text-[20px] mb-4">
                             {lang === 'kr' ? '7,000m² 대규모 공개 녹지' : '7,000m² Public Greenery'}
                         </div>
@@ -56,19 +56,19 @@ export default function Section118({ isActive }) {
                     </div>
 
                     {/* Card 3 */}
-                    <div className="bg-[#1e3a8a] border-[6px] border-[#1e3a8a] p-8 flex flex-col shadow-sm">
-                        <div className="text-white font-black text-[24px] md:text-[28px] mb-2 uppercase">Public Flow</div>
-                        <div className="text-[#93c5fd] font-bold text-[20px] mb-4">
+                    <div className="bg-white border-[6px] border-[#1e3a8a] p-8 flex flex-col shadow-sm">
+                        <div className="text-[#1e3a8a] font-black text-[24px] md:text-[28px] mb-2 uppercase">Public Flow</div>
+                        <div className="text-gray-700 font-bold text-[20px] mb-4">
                             {lang === 'kr' ? '보행로 및 공공청사 기부채납' : 'Pedestrian Path & Public Office'}
                         </div>
-                        <p className="text-[17px] text-blue-50 font-medium leading-relaxed">
+                        <p className="text-[17px] text-gray-600 font-medium leading-relaxed">
                             {lang === 'kr' ? '서울역 8번 출구에서 남산 백범공원으로 이어지는 에스컬레이터형 보행로 구축 및 공공청사 무상귀속' : 'Establishing an escalator pedestrian path from Seoul Station Exit 8 to Namsan Park, and dedicating public offices.'}
                         </p>
                     </div>
 
                     {/* Card 4 */}
-                    <div className="bg-white border-[6px] border-blue-900 p-8 flex flex-col shadow-sm">
-                        <div className="text-blue-900 font-black text-[24px] md:text-[28px] mb-2 uppercase">Trophy Asset</div>
+                    <div className="bg-white border-[6px] border-[#1e3a8a] p-8 flex flex-col shadow-sm">
+                        <div className="text-[#1e3a8a] font-black text-[24px] md:text-[28px] mb-2 uppercase">Trophy Asset</div>
                         <div className="text-gray-700 font-bold text-[20px] mb-4">
                             {lang === 'kr' ? '글로벌 럭셔리 호텔 유치' : 'Global Luxury Hotel'}
                         </div>
@@ -79,25 +79,12 @@ export default function Section118({ isActive }) {
                 </div>
 
                 {/* Bottom text */}
-                <div className={`w-full max-w-[1200px] mx-auto mt-2 text-[16px] md:text-[20px] leading-[1.5] font-bold text-gray-700 break-keep text-center transition-all duration-[612ms] delay-[122ms] ease-out ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    <ul className="text-left inline-block space-y-3 mx-auto">
-                        <li className="flex items-start">
-                            <span className="mr-3 text-[#1d1d1f]">▪</span>
-                            <span className="text-[#1d1d1f]">
-                                {lang === 'kr' ? 
-                                    '단순 부동산 개발이 아닌 도시 형성(city-making) 행위이며, IFC의 단일 자산 모델을 넘어섬' : 
-                                    'A city-making act beyond simple development, surpassing the single-asset model of IFC.'}
-                            </span>
-                        </li>
-                        <li className="flex items-start">
-                            <span className="mr-3 text-[#1e3a8a]">▪</span>
-                            <span className="text-[#1e3a8a]">
-                                {lang === 'kr' ? 
-                                    '롯데월드타워(단일 랜드마크) + 아자부다이힐스(도심 vertical city) + 허드슨야드(mega project)의 결합 모델' : 
-                                    'A combined model of Lotte World Tower + Azabudai Hills + Hudson Yards'}
-                            </span>
-                        </li>
-                    </ul>
+                <div className={`w-full text-center mt-2 transition-all duration-[612ms] delay-[122ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                    <div className="inline-block bg-[#1e3a8a] text-white px-8 py-5 text-[20px] md:text-[22px] font-bold shadow-lg break-keep">
+                        {lang === 'kr' ? 
+                            '단순 부동산 개발이 아닌 도시 형성(city-making) 행위. 롯데월드타워 + 아자부다이힐스 + 허드슨야드의 결합 모델' : 
+                            'A city-making act beyond simple development. A combined model of Lotte World Tower, Azabudai Hills, and Hudson Yards.'}
+                    </div>
                 </div>
             </div>
         </section>
