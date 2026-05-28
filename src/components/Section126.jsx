@@ -80,7 +80,6 @@ export default function Section126({ isActive }) {
                                 </div>
                                 <div className="bg-[#1e3a8a] px-4 py-2 rounded font-bold text-[16px]">상장 및 유동화</div>
                             </div>
-                            <div className="flex justify-center text-[#60a5fa] text-xl">▼</div>
 
                             {/* Layer 3: Fund */}
                             <div className="bg-[#1e3a8a] border-l-8 border-blue-400 rounded-lg p-5 shadow-xl flex justify-between items-center text-white">
@@ -90,7 +89,6 @@ export default function Section126({ isActive }) {
                                 </div>
                                 <div className="bg-[#0f172a] px-4 py-2 rounded font-bold text-[16px]">안정화 보유</div>
                             </div>
-                            <div className="flex justify-center text-blue-400 text-xl">▼</div>
 
                             {/* Layer 2: PFV */}
                             <div className="bg-[#3b82f6] border-l-8 border-blue-200 rounded-lg p-5 shadow-xl flex justify-between items-center text-white">
@@ -100,7 +98,6 @@ export default function Section126({ isActive }) {
                                 </div>
                                 <div className="bg-[#1e3a8a] px-4 py-2 rounded font-bold text-[16px]">개발 및 시공</div>
                             </div>
-                            <div className="flex justify-center text-blue-200 text-xl">▼</div>
 
                             {/* Layer 1: LP */}
                             <div className="bg-[#e2e8f0] border-l-8 border-gray-500 rounded-lg p-5 shadow-xl flex justify-between items-center">

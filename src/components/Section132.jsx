@@ -35,11 +35,11 @@ export default function Section132({ isActive }) {
                 </div>
 
                 {/* Main Content: 2 Charts */}
-                <div className="w-full max-w-[1400px] grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-8">
+                <div className="w-full max-w-[1400px] grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center mb-6">
                     
                     {/* Left: Land Value Trend Chart */}
-                    <div className={`bg-white rounded-xl shadow-lg border border-gray-200 p-8 flex flex-col transition-all duration-700 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-                        <div className="flex justify-between items-start mb-6">
+                    <div className={`bg-white rounded-xl shadow-lg border border-gray-200 p-6 flex flex-col transition-all duration-700 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                        <div className="flex justify-between items-start mb-4">
                             <div>
                                 <div className="text-[#1e3a8a] font-black text-[16px] tracking-widest uppercase mb-1">4.1 VALUE DRIVER</div>
                                 <h3 className="text-[#1d1d1f] font-bold text-[24px] leading-tight break-keep">
@@ -52,16 +52,16 @@ export default function Section132({ isActive }) {
                         </div>
 
                         {/* SVG Line Chart */}
-                        <div className="relative w-full h-[240px] mt-4 border-l-2 border-b-2 border-gray-300">
+                        <div className="relative w-full h-[180px] mt-2 border-l-2 border-b-2 border-gray-300">
                             {/* Y-axis labels */}
                             <div className="absolute -left-[40px] bottom-0 text-xs text-gray-500 font-bold">100</div>
-                            <div className="absolute -left-[40px] bottom-[100px] text-xs text-gray-500 font-bold">150</div>
+                            <div className="absolute -left-[40px] bottom-[70px] text-xs text-gray-500 font-bold">150</div>
                             <div className="absolute -left-[40px] top-0 text-xs text-gray-500 font-bold">200+</div>
 
                             {/* X-axis labels */}
-                            <div className="absolute left-0 -bottom-[25px] text-xs text-gray-500 font-bold">2024 (Now)</div>
-                            <div className="absolute left-[45%] -bottom-[25px] text-xs text-gray-500 font-bold">2028 (GTX-A)</div>
-                            <div className="absolute right-0 -bottom-[25px] text-xs text-gray-500 font-bold">2031 (GTX-B)</div>
+                            <div className="absolute left-0 -bottom-[20px] text-xs text-gray-500 font-bold">2024 (Now)</div>
+                            <div className="absolute left-[45%] -bottom-[20px] text-xs text-gray-500 font-bold">2028 (GTX-A)</div>
+                            <div className="absolute right-0 -bottom-[20px] text-xs text-gray-500 font-bold">2031 (GTX-B)</div>
 
                             {/* Line SVG */}
                             <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -104,19 +104,19 @@ export default function Section132({ isActive }) {
                             </svg>
 
                             {/* Chart Annotations */}
-                            <div className={`absolute top-[100px] left-[38%] bg-white/90 px-2 py-1 border border-red-200 rounded text-xs font-bold text-red-600 shadow-sm transition-all duration-500 delay-300 ${step >= 5 ? 'opacity-100' : 'opacity-0'}`}>
+                            <div className={`absolute top-[60px] left-[38%] bg-white/90 px-2 py-1 border border-red-200 rounded text-xs font-bold text-red-600 shadow-sm transition-all duration-500 delay-300 ${step >= 5 ? 'opacity-100' : 'opacity-0'}`}>
                                 {lang === 'kr' ? '서울역-인천공항 연결 효과' : 'Seoul Stn - Incheon Airport'}
                             </div>
                         </div>
 
-                        <p className="text-[20px] text-gray-700 mt-10 font-bold break-keep bg-gray-100 p-4 rounded-lg">
+                        <p className="text-[18px] text-gray-700 mt-6 font-bold break-keep bg-gray-100 p-3 rounded-md">
                             {lang === 'kr' ? 'GTX-A/B 교차 입지의 프리미엄이 본격 반영되며 향후 5~10년간 구조적 우상향 전망' : 'Premium of GTX-A/B intersection fully reflects, forming a structural uptrend over the next 5-10 years.'}
                         </p>
                     </div>
 
                     {/* Right: Waterfall Chart */}
-                    <div className={`bg-[#1d1d1f] rounded-xl shadow-lg border border-gray-700 p-8 flex flex-col transition-all duration-700 delay-200 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-                        <div className="flex justify-between items-start mb-6">
+                    <div className={`bg-[#1d1d1f] rounded-xl shadow-lg border border-gray-700 p-6 flex flex-col transition-all duration-700 delay-200 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                        <div className="flex justify-between items-start mb-4">
                             <div>
                                 <div className="text-gray-400 font-black text-[16px] tracking-widest uppercase mb-1">4.2 STABILIZATION</div>
                                 <h3 className="text-white font-bold text-[24px] leading-tight break-keep">
@@ -126,7 +126,7 @@ export default function Section132({ isActive }) {
                         </div>
 
                         {/* Waterfall Diagram (Flex based) */}
-                        <div className="relative w-full h-[240px] mt-4 flex items-end justify-between px-2 gap-2">
+                        <div className="relative w-full h-[180px] mt-2 flex items-end justify-between px-2 gap-2">
                             {/* Base Construction */}
                             <div className={`relative w-full bg-gray-600 rounded-t-sm flex flex-col items-center justify-start pt-2 transition-all duration-1000 ${step >= 4 ? 'h-[20%]' : 'h-0'}`}>
                                 <span className="text-sm text-white font-bold mt-[-25px] absolute">2026</span>
@@ -144,20 +144,20 @@ export default function Section132({ isActive }) {
 
                             {/* Asset Value (Cap Rate 4%) */}
                             <div className={`relative w-[120%] bg-gradient-to-t from-blue-400 to-cyan-300 rounded-t-sm shadow-[0_0_20px_rgba(34,211,238,0.3)] flex flex-col items-center justify-start pt-2 transition-all duration-1000 delay-500 ${step >= 6 ? 'h-[100%]' : 'h-0'}`}>
-                                <span className="text-[26px] text-white font-black mt-[-40px] absolute whitespace-nowrap drop-shadow-md">
+                                <span className="text-[22px] text-white font-black mt-[-30px] absolute whitespace-nowrap drop-shadow-md">
                                     {lang === 'kr' ? '6조 ~ 10조 원' : '6T ~ 10T KRW'}
                                 </span>
-                                <div className="text-blue-900 font-bold text-lg mt-4 text-center leading-tight">
+                                <div className="text-blue-900 font-bold text-sm mt-3 text-center leading-tight">
                                     Target<br/>Asset Value
                                 </div>
                             </div>
                         </div>
 
-                        <div className="mt-10 flex gap-4 items-center bg-gray-800/80 p-4 rounded-lg">
-                            <div className="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center shrink-0">
-                                <span className="text-blue-400 font-bold text-xl">%</span>
+                        <div className="mt-6 flex gap-3 items-center bg-gray-800/80 p-3 rounded-md">
+                            <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center shrink-0">
+                                <span className="text-blue-400 font-bold text-lg">%</span>
                             </div>
-                            <p className="text-[18px] text-gray-200 font-bold break-keep">
+                            <p className="text-[15px] text-gray-200 font-bold break-keep">
                                 {lang === 'kr' ? '준공 후 연면적 30만m² 기준, 평당 25만~35만 원 임대료 가정 시 캡레이트 4%대 자산 가치 도달' : 'Value achievable post-completion (300K sqm) at 4% cap rate, assuming 250K-350K KRW/pyeong rent.'}
                             </p>
                         </div>
@@ -166,8 +166,8 @@ export default function Section132({ isActive }) {
                 </div>
 
                 {/* Bottom text */}
-                <div className={`w-full text-center mt-2 transition-all duration-[612ms] delay-[122ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-                    <div className="inline-block bg-[#1e3a8a] text-white px-8 py-4 rounded-full text-[18px] md:text-[20px] font-bold shadow-xl break-keep">
+                <div className={`w-full text-center transition-all duration-[612ms] delay-[122ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                    <div className="inline-block bg-[#1e3a8a] text-white px-6 py-3 rounded-md border border-blue-900 text-[18px] md:text-[20px] font-bold shadow-lg break-keep">
                         {lang === 'kr' ? 
                             '압도적 입지와 규모가 만들어내는 견고한 Cash Flow 및 Value Add 잠재력' : 
                             'Solid Cash Flow and Value Add potential generated by overwhelming location and scale'}
