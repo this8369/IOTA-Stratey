@@ -11,12 +11,12 @@ export default function Section6({ isActive }) {
  return;
  }
  
- const t1 = setTimeout(() => setStep(1), 300); // Title
- const t2 = setTimeout(() => setStep(2), 800); // Part 1
- const t3 = setTimeout(() => setStep(3), 1200); // Part 2
- const t4 = setTimeout(() => setStep(4), 1600); // Part 3
- const t5 = setTimeout(() => setStep(5), 2000); // Part 4
- const t6 = setTimeout(() => setStep(6), 2600); // Disclaimer
+ const t1 = setTimeout(() => setStep(1), 255); // Title
+ const t2 = setTimeout(() => setStep(2), 680); // Part 1
+ const t3 = setTimeout(() => setStep(3), 1020); // Part 2
+ const t4 = setTimeout(() => setStep(4), 1360); // Part 3
+ const t5 = setTimeout(() => setStep(5), 1700); // Part 4
+ const t6 = setTimeout(() => setStep(6), 2210); // Disclaimer
 
  return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); clearTimeout(t4); clearTimeout(t5); clearTimeout(t6); };
  }, [isActive]);
@@ -27,7 +27,7 @@ export default function Section6({ isActive }) {
  <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center gap-10 py-20">
  
  {/* Title Section - Centered, Dry, Clear */}
- <div className={`flex flex-col items-center text-center transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+ <div className={`flex flex-col items-center text-center transition-all duration-[850ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
  <span className="text-[20px] md:text-[24px] font-bold text-[#555] mb-4 break-keep">
  IOTA 서울 프로젝트(IPR)의 다층적 분석을 위한 CEO 레벨 전략 구성
  </span>
@@ -41,7 +41,7 @@ export default function Section6({ isActive }) {
  <div className="flex flex-col w-full gap-4 mt-8">
  
  {/* Part 1 */}
- <div className={`flex items-start bg-white border-[3px] border-[#1d1d1f] p-8 shadow-sm transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
+ <div className={`flex items-start bg-white border-[3px] border-[#1d1d1f] p-8 shadow-sm transition-all duration-[850ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
  <div className="text-[40px] font-black text-[#888] w-20 shrink-0 font-serif leading-none mt-1">1부</div>
  <div className="flex flex-col">
  <h3 className="text-[28px] font-black text-[#1d1d1f] mb-2 break-keep">
@@ -52,7 +52,7 @@ export default function Section6({ isActive }) {
  </div>
 
  {/* Part 2 */}
- <div className={`flex items-start bg-white border-[3px] border-[#1d1d1f] p-8 shadow-sm transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
+ <div className={`flex items-start bg-white border-[3px] border-[#1d1d1f] p-8 shadow-sm transition-all duration-[850ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
  <div className="text-[40px] font-black text-[#888] w-20 shrink-0 font-serif leading-none mt-1">2부</div>
  <div className="flex flex-col">
  <h3 className="text-[28px] font-black text-[#1d1d1f] mb-2 break-keep">
@@ -63,7 +63,7 @@ export default function Section6({ isActive }) {
  </div>
 
  {/* Part 3 */}
- <div className={`flex items-start bg-white border-[3px] border-[#1d1d1f] p-8 shadow-sm transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
+ <div className={`flex items-start bg-white border-[3px] border-[#1d1d1f] p-8 shadow-sm transition-all duration-[850ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
  <div className="text-[40px] font-black text-[#888] w-20 shrink-0 font-serif leading-none mt-1">3부</div>
  <div className="flex flex-col">
  <h3 className="text-[28px] font-black text-[#1d1d1f] mb-2 break-keep">
@@ -74,7 +74,7 @@ export default function Section6({ isActive }) {
  </div>
 
  {/* Part 4 */}
- <div className={`flex items-start bg-[#1d1d1f] text-white border-[3px] border-[#1d1d1f] p-8 shadow-lg transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 5 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
+ <div className={`flex items-start bg-[#1d1d1f] text-white border-[3px] border-[#1d1d1f] p-8 shadow-lg transition-all duration-[850ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 5 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
  <div className="text-[40px] font-black text-[#555] w-20 shrink-0 font-serif leading-none mt-1">4부</div>
  <div className="flex flex-col">
  <h3 className="text-[28px] font-black text-white mb-2 break-keep">
@@ -87,7 +87,7 @@ export default function Section6({ isActive }) {
  </div>
 
  {/* Disclaimer */}
- <div className={`mt-8 w-full border-t border-[#ddd] pt-6 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 6 ? 'opacity-100' : 'opacity-0'}`}>
+ <div className={`mt-8 w-full border-t border-[#ddd] pt-6 transition-all duration-[850ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 6 ? 'opacity-100' : 'opacity-0'}`}>
  <p className="text-[18px] text-[#666] leading-relaxed text-center">
  <strong className="text-[#333]">[문체 일러두기]</strong> 본 분석은 객관성 유지를 위해 <strong>'음슴체'</strong>를 적용하며, 직접 호명에 한해 <strong>'존댓말'</strong>을 제한적으로 사용함.
  </p>

@@ -8,11 +8,11 @@ export default function Section96({ isActive }) {
     useEffect(() => {
         if (!isActive) { setStep(0); return; }
         const timers = [
-            setTimeout(() => setStep(1), 300),
-            setTimeout(() => setStep(2), 800),
-            setTimeout(() => setStep(3), 1300), // Left: WeWork vs IGIS
-            setTimeout(() => setStep(4), 1800), // Right: Mori Building
-            setTimeout(() => setStep(5), 2600)  // Bottom
+            setTimeout(() => setStep(1), 255),
+            setTimeout(() => setStep(2), 680),
+            setTimeout(() => setStep(3), 1105), // Left: WeWork vs IGIS
+            setTimeout(() => setStep(4), 1530), // Right: Mori Building
+            setTimeout(() => setStep(5), 2210)  // Bottom
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -21,20 +21,20 @@ export default function Section96({ isActive }) {
         <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
-                <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
                         {lang === 'kr' ? 'WeWork의 Institutional Version' : 'Institutional Version of WeWork'}
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-[40px] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-[40px] transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? <>WeWork의 구조적 한계 극복과 글로벌 벤치마크 '수직 도시'</> : <>Overcoming WeWork's Structural Limits & Global Benchmark 'Vertical City'</>}
                 </h2>
 
                 <div className="w-full max-w-[1100px] grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 relative">
                     
                     {/* Left: WeWork vs IGIS (Institutional Version) */}
-                    <div className={`col-span-1 bg-white border-2 border-gray-200 rounded-2xl p-8 h-fit shadow-sm flex flex-col gap-5 transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
+                    <div className={`col-span-1 bg-white border-2 border-gray-200 rounded-2xl p-8 h-fit shadow-sm flex flex-col gap-5 transition-all duration-[850ms] ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
                         <div className="flex items-center gap-3 mb-2">
                             <span className="bg-red-600 text-white text-[16px] font-bold px-3 py-1 rounded-md">Limit</span>
                             <h3 className="text-gray-800 font-extrabold text-[20px] break-keep">
@@ -67,7 +67,7 @@ export default function Section96({ isActive }) {
                     </div>
 
                     {/* Right: Mori Building Benchmark */}
-                    <div className={`col-span-1 bg-[#1e3a8a] border-2 border-[#1e3a8a] rounded-2xl p-8 h-full shadow-xl flex flex-col gap-6 transition-all duration-1000 ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
+                    <div className={`col-span-1 bg-[#1e3a8a] border-2 border-[#1e3a8a] rounded-2xl p-8 h-full shadow-xl flex flex-col gap-6 transition-all duration-[850ms] ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
                         <div className="flex items-center justify-between mb-2">
                             <h3 className="text-white font-extrabold text-[24px] break-keep">
                                 {lang === 'kr' ? "글로벌 벤치마크 모델" : "Global Benchmark Model"}
@@ -97,7 +97,7 @@ export default function Section96({ isActive }) {
                 </div>
 
                 {/* Bottom Thesis Text */}
-                <div className={`w-full max-w-[1100px] bg-blue-50 border border-blue-100 p-6 rounded-xl shadow-sm transition-all duration-700 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`w-full max-w-[1100px] bg-blue-50 border border-blue-100 p-6 rounded-xl shadow-sm transition-all duration-[600ms] ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <p className="text-[17px] md:text-[20px] font-bold text-[#1e3a8a] break-keep leading-relaxed text-center">
                         {lang === 'kr' 
                             ? <>자본력(Capital)과 소유권(Ownership), 그리고 운영(Operating) 역량을 모두 갖춘 이지스가<br/>WeWork의 실패를 넘어서는 기관용(Institutional) 공간 운영 플랫폼 실현 가능</>

@@ -11,11 +11,11 @@ export default function Section29({ isActive }) {
             return;
         }
         const timers = [
-            setTimeout(() => setStep(1), 300),
-            setTimeout(() => setStep(2), 1000),
-            setTimeout(() => setStep(3), 1600),
-            setTimeout(() => setStep(4), 2200),
-            setTimeout(() => setStep(5), 2800)
+            setTimeout(() => setStep(1), 255),
+            setTimeout(() => setStep(2), 850),
+            setTimeout(() => setStep(3), 1360),
+            setTimeout(() => setStep(4), 1870),
+            setTimeout(() => setStep(5), 2380)
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -24,20 +24,20 @@ export default function Section29({ isActive }) {
         <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
-                <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
                         {lang === 'kr' ? '3대 핵심 권역(CBD/GBD/YBD)의 골격' : 'Foundation of 3 Core Districts'}
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? 'SFC부터 파크원까지 트로피 자산이 주도한 권역별 랜드마크 진화' : 'Trophy Assets like SFC to Parc1 Driving District Evolution'}
                 </h2>
 
                 <div className="relative w-full max-w-[1200px] mt-[40px] mb-[30px] h-auto flex flex-col md:flex-row items-stretch justify-center z-10 gap-6 md:gap-8">
                     
                     {/* CBD */}
-                    <div className={`flex-1 flex flex-col items-center bg-gray-50 border border-gray-300 rounded-[24px] p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:-translate-y-2 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className={`flex-1 flex flex-col items-center bg-gray-50 border border-gray-300 rounded-[24px] p-8 shadow-lg hover:shadow-2xl transition-all duration-[600ms] hover:-translate-y-2 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <div className="w-20 h-20 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center font-black text-[32px] mb-6 shadow-sm">CBD</div>
                         <h3 className="text-[26px] font-extrabold text-gray-900 mb-2">{lang === 'kr' ? '도심권역' : 'Central'}</h3>
                         <p className="text-[18px] font-bold text-gray-500 mb-6">{lang === 'kr' ? '광화문·시청·종로' : 'Gwanghwamun·Jongno'}</p>
@@ -49,7 +49,7 @@ export default function Section29({ isActive }) {
                     </div>
 
                     {/* GBD */}
-                    <div className={`flex-1 flex flex-col items-center bg-gray-50 border border-gray-300 rounded-[24px] p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:-translate-y-2 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className={`flex-1 flex flex-col items-center bg-gray-50 border border-gray-300 rounded-[24px] p-8 shadow-lg hover:shadow-2xl transition-all duration-[600ms] hover:-translate-y-2 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <div className="w-20 h-20 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center font-black text-[32px] mb-6 shadow-sm">GBD</div>
                         <h3 className="text-[26px] font-extrabold text-gray-900 mb-2">{lang === 'kr' ? '강남권역' : 'Gangnam'}</h3>
                         <p className="text-[18px] font-bold text-gray-500 mb-6">{lang === 'kr' ? '테헤란로 라인 핵심' : 'Teheran-ro Core'}</p>
@@ -61,7 +61,7 @@ export default function Section29({ isActive }) {
                     </div>
 
                     {/* YBD */}
-                    <div className={`flex-1 flex flex-col items-center bg-gray-50 border border-gray-300 rounded-[24px] p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:-translate-y-2 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className={`flex-1 flex flex-col items-center bg-gray-50 border border-gray-300 rounded-[24px] p-8 shadow-lg hover:shadow-2xl transition-all duration-[600ms] hover:-translate-y-2 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <div className="w-20 h-20 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center font-black text-[32px] mb-6 shadow-sm">YBD</div>
                         <h3 className="text-[26px] font-extrabold text-gray-900 mb-2">{lang === 'kr' ? '여의도권역' : 'Yeouido'}</h3>
                         <p className="text-[18px] font-bold text-gray-500 mb-6">{lang === 'kr' ? '두 번의 거대한 변곡점' : 'Two Major Turning Points'}</p>
@@ -74,7 +74,7 @@ export default function Section29({ isActive }) {
 
                 </div>
 
-                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[765ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>

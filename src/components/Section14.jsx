@@ -11,11 +11,11 @@ export default function Section14({ isActive }) {
             return;
         }
         const timers = [
-            setTimeout(() => setStep(1), 300), // Theme & Title
-            setTimeout(() => setStep(2), 1000), // Infographic Base
-            setTimeout(() => setStep(3), 1600), // Infographic Details
-            setTimeout(() => setStep(4), 2200), // More Details
-            setTimeout(() => setStep(5), 2800)  // Description Text
+            setTimeout(() => setStep(1), 255), // Theme & Title
+            setTimeout(() => setStep(2), 850), // Infographic Base
+            setTimeout(() => setStep(3), 1360), // Infographic Details
+            setTimeout(() => setStep(4), 1870), // More Details
+            setTimeout(() => setStep(5), 2380)  // Description Text
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -25,21 +25,21 @@ export default function Section14({ isActive }) {
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
                 {/* Theme */}
-                <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
                         {lang === 'kr' ? 'AI 슈퍼사이클과 반도체의 독주' : 'AI Supercycle & Semiconductor Monopoly'}
                     </span>
                 </div>
 
                 {/* Main Title */}
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? '삼성·SK 하이닉스가 주도하는 GDP 성장의 절대적 중추' : 'Absolute Pillar of GDP Growth Led by Samsung & SK Hynix'}
                 </h2>
 
                 {/* Infographic */}
                 <div className="relative w-full max-w-[900px] -mt-[8px] h-[360px] flex flex-col md:flex-row items-center justify-center gap-8 z-10">
                     {/* Left Box */}
-                    <div className={`relative w-[280px] bg-gradient-to-br from-[#0f172a] to-[#1e3a8a] rounded-2xl shadow-2xl p-6 text-left transition-all duration-[1000ms] ease-out ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                    <div className={`relative w-[280px] bg-gradient-to-br from-[#0f172a] to-[#1e3a8a] rounded-2xl shadow-2xl p-6 text-left transition-all duration-[850ms] ease-out ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
                         <div className="absolute -top-4 -right-4 w-[60px] h-[60px] bg-[#3b82f6] rounded-full flex items-center justify-center shadow-lg border-4 border-white">
                             <span className="text-white font-black text-[20px]">AI</span>
                         </div>
@@ -57,7 +57,7 @@ export default function Section14({ isActive }) {
                     </div>
 
                     {/* Center Core */}
-                    <div className={`relative flex flex-col items-center transition-all duration-[1200ms] ease-out ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
+                    <div className={`relative flex flex-col items-center transition-all duration-[1020ms] ease-out ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
                         <div className="w-[180px] h-[180px] rounded-full border-[8px] border-[#eff6ff] bg-white shadow-[0_0_40px_rgba(59,130,246,0.3)] flex flex-col items-center justify-center z-20">
                             <span className="text-[14px] font-bold text-gray-500 mb-1">GDP Share</span>
                             <span className="text-[36px] font-black text-[#1e3a8a] leading-none mb-1">22.4%</span>
@@ -69,7 +69,7 @@ export default function Section14({ isActive }) {
                     </div>
 
                     {/* Right Box */}
-                    <div className={`relative w-[280px] bg-gradient-to-br from-[#4c0519] to-[#be185d] rounded-2xl shadow-2xl p-6 text-left transition-all duration-[1000ms] ease-out ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
+                    <div className={`relative w-[280px] bg-gradient-to-br from-[#4c0519] to-[#be185d] rounded-2xl shadow-2xl p-6 text-left transition-all duration-[850ms] ease-out ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
                         <div className="absolute -top-4 -left-4 w-[60px] h-[60px] bg-[#fb7185] rounded-full flex items-center justify-center shadow-lg border-4 border-white">
                             <span className="text-white font-black text-[16px]">HBM</span>
                         </div>
@@ -88,7 +88,7 @@ export default function Section14({ isActive }) {
                 </div>
 
                 {/* Description Text */}
-                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[765ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>

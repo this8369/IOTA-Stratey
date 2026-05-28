@@ -8,11 +8,11 @@ export default function Section81({ isActive }) {
     useEffect(() => {
         if (!isActive) { setStep(0); return; }
         const timers = [
-            setTimeout(() => setStep(1), 300),
-            setTimeout(() => setStep(2), 800),
-            setTimeout(() => setStep(3), 1400),
-            setTimeout(() => setStep(4), 2000),
-            setTimeout(() => setStep(5), 2800)
+            setTimeout(() => setStep(1), 255),
+            setTimeout(() => setStep(2), 680),
+            setTimeout(() => setStep(3), 1190),
+            setTimeout(() => setStep(4), 1700),
+            setTimeout(() => setStep(5), 2380)
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -25,13 +25,13 @@ export default function Section81({ isActive }) {
 
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center relative z-10">
                 
-                <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#fcd34d] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
                         {lang === 'kr' ? 'KOSPI 상승이 촉발할 부동산 리레이팅' : 'Real Estate Rerating Triggered by KOSPI Surge'}
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-white break-keep tracking-[-0.02em] mb-16 transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-white break-keep tracking-[-0.02em] mb-16 transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? <>주식 PER 팽창이 트로피 자산의 캡레이트 압축과<br/>가치 급등을 강제하는 연쇄 효과</> : <>Chain Effect: Stock PER Expansion Forcing Trophy Asset Cap Rate Compression & Value Surge</>}
                 </h2>
 
@@ -39,7 +39,7 @@ export default function Section81({ isActive }) {
                 <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 w-full max-w-[1200px] mb-16">
                     
                     {/* Step 1 */}
-                    <div className={`flex flex-col items-center justify-center w-full md:w-[30%] bg-white/10 border border-white/20 p-8 rounded-2xl backdrop-blur-md transition-all duration-1000 ${step >= 2 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-95'}`}>
+                    <div className={`flex flex-col items-center justify-center w-full md:w-[30%] bg-white/10 border border-white/20 p-8 rounded-2xl backdrop-blur-md transition-all duration-[850ms] ${step >= 2 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-95'}`}>
                         <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-6 text-white text-[28px]">📈</div>
                         <h3 className="text-white font-black text-[24px] md:text-[28px] mb-3 leading-tight">{lang === 'kr' ? '주식 PER 상승' : 'Stock PER Expansion'}</h3>
                         <p className="text-gray-400 font-medium text-[16px] md:text-[18px]">
@@ -48,12 +48,12 @@ export default function Section81({ isActive }) {
                     </div>
 
                     {/* Arrow 1 */}
-                    <div className={`text-[#fcd34d] text-[40px] md:text-[50px] transform rotate-90 md:rotate-0 transition-all duration-500 ${step >= 3 ? 'opacity-100' : 'opacity-0'}`}>
+                    <div className={`text-[#fcd34d] text-[40px] md:text-[50px] transform rotate-90 md:rotate-0 transition-all duration-[425ms] ${step >= 3 ? 'opacity-100' : 'opacity-0'}`}>
                         ➔
                     </div>
 
                     {/* Step 2 */}
-                    <div className={`flex flex-col items-center justify-center w-full md:w-[30%] bg-white/10 border border-white/20 p-8 rounded-2xl backdrop-blur-md transition-all duration-1000 delay-150 ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-95'}`}>
+                    <div className={`flex flex-col items-center justify-center w-full md:w-[30%] bg-white/10 border border-white/20 p-8 rounded-2xl backdrop-blur-md transition-all duration-[850ms] delay-[130ms] ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-95'}`}>
                         <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mb-6 text-white text-[28px]">⏬</div>
                         <h3 className="text-white font-black text-[24px] md:text-[28px] mb-3 leading-tight">{lang === 'kr' ? '부동산 캡레이트 압축' : 'Real Estate Cap Rate Compression'}</h3>
                         <p className="text-gray-400 font-medium text-[16px] md:text-[18px]">
@@ -62,12 +62,12 @@ export default function Section81({ isActive }) {
                     </div>
 
                     {/* Arrow 2 */}
-                    <div className={`text-[#fcd34d] text-[40px] md:text-[50px] transform rotate-90 md:rotate-0 transition-all duration-500 ${step >= 4 ? 'opacity-100' : 'opacity-0'}`}>
+                    <div className={`text-[#fcd34d] text-[40px] md:text-[50px] transform rotate-90 md:rotate-0 transition-all duration-[425ms] ${step >= 4 ? 'opacity-100' : 'opacity-0'}`}>
                         ➔
                     </div>
 
                     {/* Step 3 */}
-                    <div className={`flex flex-col items-center justify-center w-full md:w-[30%] bg-gradient-to-br from-[#fcd34d] to-[#f59e0b] border-2 border-yellow-300 p-8 rounded-2xl shadow-[0_0_30px_rgba(245,158,11,0.4)] transition-all duration-1000 delay-300 ${step >= 4 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-95'}`}>
+                    <div className={`flex flex-col items-center justify-center w-full md:w-[30%] bg-gradient-to-br from-[#fcd34d] to-[#f59e0b] border-2 border-yellow-300 p-8 rounded-2xl shadow-[0_0_30px_rgba(245,158,11,0.4)] transition-all duration-[850ms] delay-[255ms] ${step >= 4 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-95'}`}>
                         <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 text-[#f59e0b] text-[28px]">🏆</div>
                         <h3 className="text-[#1d1d1f] font-black text-[24px] md:text-[28px] mb-3 leading-tight">{lang === 'kr' ? '트로피 자산 가치 상승' : 'Trophy Asset Value Surge'}</h3>
                         <p className="text-[#1d1d1f] opacity-80 font-bold text-[16px] md:text-[18px]">
@@ -78,7 +78,7 @@ export default function Section81({ isActive }) {
                 </div>
 
                 {/* Bottom Thesis Text */}
-                <div className={`max-w-[1000px] border-t border-white/20 pt-8 transition-all duration-1000 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`max-w-[1000px] border-t border-white/20 pt-8 transition-all duration-[850ms] ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <div className="text-[24px] md:text-[32px] font-black text-white tracking-wide">
                         {lang === 'kr' ? (
                             <>

@@ -11,11 +11,11 @@ export default function Section36({ isActive }) {
             return;
         }
         const timers = [
-            setTimeout(() => setStep(1), 300),
-            setTimeout(() => setStep(2), 1000),
-            setTimeout(() => setStep(3), 1600),
-            setTimeout(() => setStep(4), 2200),
-            setTimeout(() => setStep(5), 2800)
+            setTimeout(() => setStep(1), 255),
+            setTimeout(() => setStep(2), 850),
+            setTimeout(() => setStep(3), 1360),
+            setTimeout(() => setStep(4), 1870),
+            setTimeout(() => setStep(5), 2380)
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -24,20 +24,20 @@ export default function Section36({ isActive }) {
         <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
-                <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
                         {lang === 'kr' ? '물류센터 공급 과잉의 소화와 정상화' : 'Normalization of Logistics Oversupply'}
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? '신규공급 감소되며 정상화 진행중, 안성의 신규 부상' : 'Normalization Amid Supply Drop, Rise of Anseong'}
                 </h2>
 
                 <div className="relative w-full max-w-[1100px] mt-[50px] mb-[40px] h-auto flex flex-col md:flex-row items-center justify-center z-10 gap-10">
                     
                     {/* Vacancy Trend */}
-                    <div className={`relative w-[450px] flex flex-col items-center bg-white border border-gray-300 rounded-[30px] p-10 shadow-xl transition-all duration-1000 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                    <div className={`relative w-[450px] flex flex-col items-center bg-white border border-gray-300 rounded-[30px] p-10 shadow-xl transition-all duration-[850ms] ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
                         <div className="absolute -top-6 bg-gradient-to-r from-red-500 to-rose-600 text-white font-black text-[22px] px-6 py-2 rounded-full shadow-md">
                             {lang === 'kr' ? '수도권 Grade-A 공실률' : 'Grade-A Vacancy Rate'}
                         </div>
@@ -59,12 +59,12 @@ export default function Section36({ isActive }) {
                         </div>
                     </div>
 
-                    <div className={`text-[40px] font-black text-gray-300 transition-all duration-1000 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
+                    <div className={`text-[40px] font-black text-gray-300 transition-all duration-[850ms] ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
                         &
                     </div>
 
                     {/* Regional Shift */}
-                    <div className={`relative w-[450px] flex flex-col items-center bg-white border border-gray-300 rounded-[30px] p-8 shadow-xl transition-all duration-1000 delay-200 ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
+                    <div className={`relative w-[450px] flex flex-col items-center bg-white border border-gray-300 rounded-[30px] p-8 shadow-xl transition-all duration-[850ms] delay-[170ms] ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
                         <div className="absolute -top-6 bg-gradient-to-r from-teal-500 to-emerald-600 text-white font-black text-[22px] px-6 py-2 rounded-full shadow-md">
                             {lang === 'kr' ? '권역별 지형도 변화' : 'Regional Dynamics'}
                         </div>
@@ -85,7 +85,7 @@ export default function Section36({ isActive }) {
                 </div>
 
                 {/* Summarized Bottom Text */}
-                <div className={`mt-[20px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`mt-[20px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[765ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>

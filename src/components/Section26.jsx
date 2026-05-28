@@ -11,11 +11,11 @@ export default function Section26({ isActive }) {
             return;
         }
         const timers = [
-            setTimeout(() => setStep(1), 300),
-            setTimeout(() => setStep(2), 1000),
-            setTimeout(() => setStep(3), 1600),
-            setTimeout(() => setStep(4), 2200),
-            setTimeout(() => setStep(5), 2800)
+            setTimeout(() => setStep(1), 255),
+            setTimeout(() => setStep(2), 850),
+            setTimeout(() => setStep(3), 1360),
+            setTimeout(() => setStep(4), 1870),
+            setTimeout(() => setStep(5), 2380)
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -24,20 +24,20 @@ export default function Section26({ isActive }) {
         <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
-                <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
                         {lang === 'kr' ? '글로벌 IB들의 KOSPI 6,000 낙관론' : 'Global IBs\' Optimism on KOSPI 6,000'}
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? '메모리 슈퍼사이클과 조기 달성된 5,000 시대 공약' : 'Memory Supercycle and Early Achievement of 5,000 Era Pledge'}
                 </h2>
 
                 <div className="relative w-full max-w-[1100px] mt-[22px] mb-[20px] h-auto py-4 flex flex-col md:flex-row items-center justify-center z-10 gap-8">
                     
                     {/* JP Morgan */}
-                    <div className={`relative w-[320px] h-[280px] bg-blue-900 rounded-[30px] shadow-xl flex flex-col items-center justify-center p-6 border-[6px] border-blue-950 transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className={`relative w-[320px] h-[280px] bg-blue-900 rounded-[30px] shadow-xl flex flex-col items-center justify-center p-6 border-[6px] border-blue-950 transition-all duration-[850ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <div className="text-[26px] font-black text-white mb-2">JP Morgan</div>
                         <div className="text-[16px] font-bold text-blue-300 italic mb-4">'Kospi 5000 on the Cards'</div>
                         <div className="w-full h-[1px] bg-blue-800 mb-4"></div>
@@ -46,7 +46,7 @@ export default function Section26({ isActive }) {
                     </div>
 
                     {/* Macquarie */}
-                    <div className={`relative w-[320px] h-[280px] bg-blue-950 rounded-[30px] shadow-xl flex flex-col items-center justify-center p-6 border-[6px] border-blue-900 transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-200 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className={`relative w-[320px] h-[280px] bg-blue-950 rounded-[30px] shadow-xl flex flex-col items-center justify-center p-6 border-[6px] border-blue-900 transition-all duration-[850ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-[170ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <div className="text-[26px] font-black text-white mb-2">Macquarie</div>
                         <div className="text-[16px] font-bold text-blue-300 italic mb-4">2026 Target</div>
                         <div className="w-full h-[1px] bg-blue-800 mb-4"></div>
@@ -55,7 +55,7 @@ export default function Section26({ isActive }) {
                     </div>
 
                     {/* Domestic */}
-                    <div className={`relative w-[320px] h-[280px] bg-blue-800 rounded-[30px] shadow-xl flex flex-col items-center justify-center p-6 border-[6px] border-blue-900 transition-all duration-1000 ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-400 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className={`relative w-[320px] h-[280px] bg-blue-800 rounded-[30px] shadow-xl flex flex-col items-center justify-center p-6 border-[6px] border-blue-900 transition-all duration-[850ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-400 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <div className="text-[26px] font-black text-white mb-2">NH & HMC</div>
                         <div className="text-[16px] font-bold text-blue-300 italic mb-4">2026 Domestic Target</div>
                         <div className="w-full h-[1px] bg-blue-700 mb-4"></div>
@@ -65,7 +65,7 @@ export default function Section26({ isActive }) {
 
                 </div>
 
-                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[765ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>

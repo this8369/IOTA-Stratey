@@ -8,10 +8,10 @@ export default function Section69({ isActive }) {
     useEffect(() => {
         if (!isActive) { setStep(0); return; }
         const timers = [
-            setTimeout(() => setStep(1), 300),
-            setTimeout(() => setStep(2), 800),
-            setTimeout(() => setStep(3), 1300),
-            setTimeout(() => setStep(4), 1800),
+            setTimeout(() => setStep(1), 255),
+            setTimeout(() => setStep(2), 680),
+            setTimeout(() => setStep(3), 1105),
+            setTimeout(() => setStep(4), 1530),
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -20,11 +20,11 @@ export default function Section69({ isActive }) {
         <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
-                <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">{lang === 'kr' ? '데이터센터 수요 폭발과 분산화' : 'Data Center Demand Explosion & Decentralization'}</span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? <>전력인입 제약으로 지방 분산가속,<br/>단일 부동산 카테고리로 향후 15년간 가장 큰 자본 흡수 예상</> : <>Acceleration of Provincial Dispersal due to Power Constraints,<br/>Expected to Absorb Most Capital over Next 15 Years as a Single Asset Class</>}
                 </h2>
 
@@ -32,7 +32,7 @@ export default function Section69({ isActive }) {
                 <div className="w-full max-w-[1100px] mt-[40px] mb-[40px] flex flex-col gap-6">
                     
                     {/* Capacity Growth Timeline */}
-                    <div className="flex w-full items-end justify-between bg-gray-50 border-[4px] border-gray-300 p-8 h-[220px] relative transition-all duration-1000 delay-100 ${step >= 2 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}">
+                    <div className="flex w-full items-end justify-between bg-gray-50 border-[4px] border-gray-300 p-8 h-[220px] relative transition-all duration-[850ms] delay-100 ${step >= 2 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}">
                         <div className="absolute top-4 left-6 text-[20px] font-black text-gray-500 uppercase">{lang === 'kr' ? '한국 데이터센터 전력 수요 전망' : 'Korea Data Center Power Demand Outlook'}</div>
                         
                         <div className="flex flex-col items-center w-[30%] relative z-10">
@@ -55,7 +55,7 @@ export default function Section69({ isActive }) {
                     </div>
 
                     {/* Geography Shift */}
-                    <div className={`flex flex-col md:flex-row w-full gap-4 transition-all duration-1000 delay-300 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className={`flex flex-col md:flex-row w-full gap-4 transition-all duration-[850ms] delay-[255ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <div className="flex-1 bg-red-50 border-[4px] border-red-300 p-6 flex flex-col justify-center items-center">
                             <div className="text-[22px] font-black text-red-800 mb-2">{lang === 'kr' ? '수도권 전력 인입 제약' : 'Greater Seoul Power Constraints'}</div>
                             <div className="text-[18px] font-bold text-red-600">{lang === 'kr' ? '성장의 구조적 병목 (Bottleneck) 발생' : 'Structural Growth Bottleneck'}</div>
@@ -69,7 +69,7 @@ export default function Section69({ isActive }) {
                 </div>
 
                 {/* Bottom Text */}
-                <div className={`mt-[10px] max-w-[1100px] text-[16px] md:text-[20px] leading-[1.5] font-bold text-[#1d1d1f] break-keep text-center transition-all duration-[900ms] ease-out ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`mt-[10px] max-w-[1100px] text-[16px] md:text-[20px] leading-[1.5] font-bold text-[#1d1d1f] break-keep text-center transition-all duration-[765ms] ease-out ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-3 mx-auto">
                         <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>{lang === 'kr' ? '한국 데이터센터 수요는 2030년 6.3GW에서 2040년 최대 22GW까지 3.5배 이상 폭발적 성장 전망' : 'Korea Data Center demand to grow 3.5x from 6.3GW in 2030 to max 22GW in 2040'}</span></li>
                         <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>{lang === 'kr' ? '수도권 전력망 한계가 구조적 제약으로 작용하며, 풍부한 전력 확보가 가능한 지방으로의 입지 분산 필연적' : 'Greater Seoul power grid limits necessitate dispersion to power-rich regional locations'}</span></li>

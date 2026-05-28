@@ -8,12 +8,12 @@ export default function Section103({ isActive }) {
     useEffect(() => {
         if (!isActive) { setStep(0); return; }
         const timers = [
-            setTimeout(() => setStep(1), 300),
-            setTimeout(() => setStep(2), 800),
-            setTimeout(() => setStep(3), 1200), // Left Panel
-            setTimeout(() => setStep(4), 1600), // Right Panel
-            setTimeout(() => setStep(5), 2000), // Alert Pulse
-            setTimeout(() => setStep(6), 2600), // Bottom text
+            setTimeout(() => setStep(1), 255),
+            setTimeout(() => setStep(2), 680),
+            setTimeout(() => setStep(3), 1020), // Left Panel
+            setTimeout(() => setStep(4), 1360), // Right Panel
+            setTimeout(() => setStep(5), 1700), // Alert Pulse
+            setTimeout(() => setStep(6), 2210), // Bottom text
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -22,13 +22,13 @@ export default function Section103({ isActive }) {
         <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
-                <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[20px] md:text-[24px] font-bold text-[#1e3a8a] tracking-[-0.02em] mb-[12px]">
                         Asset Management & CF Protection
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-4 transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-4 transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? <>선제적 위험 관리 및 운용 대시보드</> : <>Proactive Risk Management & Operation Dashboard</>}
                 </h2>
 
@@ -36,7 +36,7 @@ export default function Section103({ isActive }) {
                 <div className="w-full max-w-[1100px] mt-[20px] mb-[36px] flex flex-col lg:flex-row gap-6 justify-center">
                     
                     {/* Left Panel: UI Mockup */}
-                    <div className={`flex-[1.2] bg-white border-4 border-[#1e3a8a] rounded-none p-8 shadow-sm flex flex-col transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'}`}>
+                    <div className={`flex-[1.2] bg-white border-4 border-[#1e3a8a] rounded-none p-8 shadow-sm flex flex-col transition-all duration-[850ms] ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'}`}>
                          
                          {/* Top: Warning Alert */}
                          <div className="bg-gray-50 border border-gray-200 rounded-sm p-5 flex items-center gap-5 mb-6 relative overflow-hidden">
@@ -76,7 +76,7 @@ export default function Section103({ isActive }) {
                     </div>
 
                     {/* Right Panel: Impact Impact */}
-                    <div className={`flex-[0.8] bg-[#1d1d1f] border-4 border-[#1e3a8a] rounded-none p-10 flex flex-col justify-center relative overflow-hidden transition-all duration-1000 ${step >= 4 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'}`}>
+                    <div className={`flex-[0.8] bg-[#1d1d1f] border-4 border-[#1e3a8a] rounded-none p-10 flex flex-col justify-center relative overflow-hidden transition-all duration-[850ms] ${step >= 4 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'}`}>
                         <div className="relative z-10 text-left">
                             <h4 className="text-gray-400 font-bold text-[18px] md:text-[22px] mb-2">
                                 {lang === 'kr' ? '운용 효율 개선 효과' : 'Operational Efficiency Gain'}
@@ -96,7 +96,7 @@ export default function Section103({ isActive }) {
                 </div>
 
                 {/* Bottom Text (Style from 59~62p) */}
-                <div className={`max-w-[1200px] mt-2 text-[16px] md:text-[20px] leading-[1.5] font-bold text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 6 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`max-w-[1200px] mt-2 text-[16px] md:text-[20px] leading-[1.5] font-bold text-gray-700 break-keep text-center transition-all duration-[765ms] ease-out ${step >= 6 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-3 mx-auto">
                         <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>{lang === 'kr' ? '사람의 직관에 의존하던 임차인 리스크 관리를 데이터 기반의 조기 경보 시스템으로 대체' : 'Replacing human intuition with data-driven early warning systems for tenant risk management'}</span></li>
                         <li className="flex items-start"><span className="mr-3 text-indigo-600">▪</span><span className="text-indigo-900">{lang === 'kr' ? '임대료 연체 예측 및 CAPEX 최적화를 통해 거대 펀드의 누수 비용을 원천 차단' : 'Preventing leakage costs of massive funds through rent arrears prediction & CAPEX optimization'}</span></li>

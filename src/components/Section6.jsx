@@ -11,10 +11,10 @@ export default function Section6({ isActive }) {
  return;
  }
  
- const t1 = setTimeout(() => setStep(1), 270); // Theme
- const t2 = setTimeout(() => setStep(2), 720); // Main Text
- const t3 = setTimeout(() => setStep(3), 1350); // Roadmap container
- const t4 = setTimeout(() => setStep(4), 1700); // Roadmap items
+ const t1 = setTimeout(() => setStep(1), 230); // Theme
+ const t2 = setTimeout(() => setStep(2), 612); // Main Text
+ const t3 = setTimeout(() => setStep(3), 1148); // Roadmap container
+ const t4 = setTimeout(() => setStep(4), 1445); // Roadmap items
  
  return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); clearTimeout(t4); };
  }, [isActive]);
@@ -25,14 +25,14 @@ export default function Section6({ isActive }) {
  <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
  
  {/* Theme */}
- <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+ <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
  <span className="inline-block text-[24px] md:text-[28px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[14px] bg-transparent">
  이지스 2030 마스터플랜의 4대 핵심 축
  </span>
  </div>
 
  {/* Main Text */}
- <h2 className={`text-[36px] md:text-[52px] lg:text-[56px] font-extrabold leading-[calc(1.3em-2px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+ <h2 className={`text-[36px] md:text-[52px] lg:text-[56px] font-extrabold leading-[calc(1.3em-2px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
  {lang === 'kr' ? (
  <>
  거시 경제, 산업 모멘텀, 자본 구조 혁신,<br/>
@@ -46,7 +46,7 @@ export default function Section6({ isActive }) {
  </h2>
 
  {/* Content: 4-part Roadmap */}
- <div className={`flex flex-col w-full max-w-[840px] mt-[38px] bg-white border-[8px] border-[#1e3a8a] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+ <div className={`flex flex-col w-full max-w-[840px] mt-[38px] bg-white border-[8px] border-[#1e3a8a] transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
  {[
  { num: '1', title: '1조 → 2조 달러 역사적 분석', subtitle: '한국 자본·산업·부동산 성장의 궤적' },
  { num: '2', title: '2조 → 3조 달러 시나리오 전망', subtitle: '미래 거시 경제와 프라임 공간의 구조적 변화' },
@@ -55,7 +55,7 @@ export default function Section6({ isActive }) {
  ].map((item, index) => (
  <div 
  key={index}
- className={`flex flex-col md:flex-row items-center text-center md:text-left py-[19px] pr-6 pl-[34px] transition-all duration-[700ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'} ${index !== 0 ? 'border-t-[1px] border-[#1e3a8a]' : ''}`}
+ className={`flex flex-col md:flex-row items-center text-center md:text-left py-[19px] pr-6 pl-[34px] transition-all duration-[595ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'} ${index !== 0 ? 'border-t-[1px] border-[#1e3a8a]' : ''}`}
  style={{ transitionDelay: `${index * 150}ms` }}
  >
  <span className="text-[40px] font-extrabold text-[#888] w-16 mb-2 md:mb-0 shrink-0 flex items-center justify-center md:justify-start">{item.num}</span>

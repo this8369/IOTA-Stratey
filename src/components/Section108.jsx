@@ -8,12 +8,12 @@ export default function Section108({ isActive }) {
     useEffect(() => {
         if (!isActive) { setStep(0); return; }
         const timers = [
-            setTimeout(() => setStep(1), 300),
-            setTimeout(() => setStep(2), 800),
-            setTimeout(() => setStep(3), 1200), // Left Input
-            setTimeout(() => setStep(4), 1600), // Flow line
-            setTimeout(() => setStep(5), 2000), // Right Target
-            setTimeout(() => setStep(6), 2600), // Bottom Text
+            setTimeout(() => setStep(1), 255),
+            setTimeout(() => setStep(2), 680),
+            setTimeout(() => setStep(3), 1020), // Left Input
+            setTimeout(() => setStep(4), 1360), // Flow line
+            setTimeout(() => setStep(5), 1700), // Right Target
+            setTimeout(() => setStep(6), 2210), // Bottom Text
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -22,13 +22,13 @@ export default function Section108({ isActive }) {
         <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
-                <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[20px] md:text-[24px] font-bold text-[#1e3a8a] tracking-[-0.02em] mb-[12px]">
                         SWF 파트너십 & 보험사 자본
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-4 transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-4 transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? <>초장기 자본(Long-Duration Capital)의 트로피 자산 매칭</> : <>Matching Long-Duration Capital with Trophy Assets</>}
                 </h2>
 
@@ -36,7 +36,7 @@ export default function Section108({ isActive }) {
                 <div className="w-full max-w-[1100px] mt-[30px] mb-[46px] flex flex-col md:flex-row items-center gap-10 justify-center relative">
 
                     {/* Left: Capital Sources */}
-                    <div className={`flex-[1] flex flex-col gap-6 relative z-10 transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
+                    <div className={`flex-[1] flex flex-col gap-6 relative z-10 transition-all duration-[850ms] ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
                         {/* SWF */}
                         <div className="bg-white border-4 border-[#1e3a8a] rounded-none p-6 text-left shadow-sm">
                             <div className="text-[#1e3a8a] font-black text-[22px] md:text-[26px] mb-2">국부펀드 (SWF)</div>
@@ -61,7 +61,7 @@ export default function Section108({ isActive }) {
                     </div>
 
                     {/* Right: Trophy Assets */}
-                    <div className={`flex-[1] relative z-10 transition-all duration-1000 ${step >= 5 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
+                    <div className={`flex-[1] relative z-10 transition-all duration-[850ms] ${step >= 5 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
                         <div className="bg-[#1e3a8a] border-[8px] border-white outline outline-4 outline-[#1e3a8a] p-8 text-center shadow-lg">
                             <div className="text-white/80 font-bold text-[18px] uppercase tracking-widest mb-2">Target Destination</div>
                             <div className="text-white font-black text-[32px] md:text-[40px] mb-6">Trophy Assets</div>
@@ -82,7 +82,7 @@ export default function Section108({ isActive }) {
                 </div>
 
                 {/* Bottom Text */}
-                <div className={`max-w-[1200px] mt-2 text-[16px] md:text-[20px] leading-[1.5] font-bold text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 6 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`max-w-[1200px] mt-2 text-[16px] md:text-[20px] leading-[1.5] font-bold text-gray-700 break-keep text-center transition-all duration-[765ms] ease-out ${step >= 6 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-3 mx-auto">
                         <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>{lang === 'kr' ? '긴 듀레이션(Long-Duration)을 필요로 하는 보험사 자본의 특성을 정확히 공략' : 'Accurately targeting the long-duration needs characteristic of insurance capital'}</span></li>
                         <li className="flex items-start"><span className="mr-3 text-[#1e3a8a]">▪</span><span className="text-[#1e3a8a]">{lang === 'kr' ? '안정적 배당과 자본 보호가 확실한 핵심 도심 트로피 자산의 선순위 대출 및 코어 에쿼티에 최적화' : 'Optimized for senior debt and core equity of urban trophy assets ensuring stable dividends and capital protection'}</span></li>

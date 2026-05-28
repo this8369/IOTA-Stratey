@@ -11,11 +11,11 @@ export default function Section19({ isActive }) {
             return;
         }
         const timers = [
-            setTimeout(() => setStep(1), 300),
-            setTimeout(() => setStep(2), 1000),
-            setTimeout(() => setStep(3), 1600),
-            setTimeout(() => setStep(4), 2200),
-            setTimeout(() => setStep(5), 2800)
+            setTimeout(() => setStep(1), 255),
+            setTimeout(() => setStep(2), 850),
+            setTimeout(() => setStep(3), 1360),
+            setTimeout(() => setStep(4), 1870),
+            setTimeout(() => setStep(5), 2380)
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -24,13 +24,13 @@ export default function Section19({ isActive }) {
         <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
-                <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
                         {lang === 'kr' ? '코리아 프리미엄을 낳은 K-콘텐츠' : 'K-Content Creating the Korea Premium'}
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? '하이브, CJ ENM 등이 구축한 자본시장 리레이팅의 무형 자산' : 'Intangible Assets for Capital Market Re-rating Built by HYBE, CJ ENM'}
                 </h2>
 
@@ -38,16 +38,16 @@ export default function Section19({ isActive }) {
                     <div className="w-full h-full relative flex items-center justify-center">
                         
                         {/* Glow Background */}
-                        <div className={`absolute w-[480px] h-[480px] bg-fuchsia-500/20 blur-[80px] rounded-full transition-all duration-1000 ${step >= 2 ? 'opacity-100' : 'opacity-0'}`}></div>
+                        <div className={`absolute w-[480px] h-[480px] bg-fuchsia-500/20 blur-[80px] rounded-full transition-all duration-[850ms] ${step >= 2 ? 'opacity-100' : 'opacity-0'}`}></div>
 
                         {/* Central Core: Korea Premium */}
-                        <div className={`relative z-20 w-[260px] h-[260px] rounded-full bg-gradient-to-br from-[#d946ef] to-[#86198f] shadow-[0_0_60px_rgba(217,70,239,0.5)] flex flex-col items-center justify-center border-[6px] border-white transition-all duration-[1000ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 4 ? 'scale-100' : 'scale-0'}`}>
+                        <div className={`relative z-20 w-[260px] h-[260px] rounded-full bg-gradient-to-br from-[#d946ef] to-[#86198f] shadow-[0_0_60px_rgba(217,70,239,0.5)] flex flex-col items-center justify-center border-[6px] border-white transition-all duration-[850ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 4 ? 'scale-100' : 'scale-0'}`}>
                             <span className="text-[20px] font-bold text-fuchsia-200 mb-1">{lang === 'kr' ? '자본시장 리레이팅' : 'Market Re-rating'}</span>
                             <span className="text-[36px] font-black text-white leading-tight text-center">Korea<br/>Premium</span>
                         </div>
 
                         {/* Orbiting Elements */}
-                        <div className={`absolute flex items-center justify-center w-full h-full transition-all duration-[1500ms] ease-out ${step >= 3 ? 'opacity-100' : 'opacity-0 scale-50'}`}>
+                        <div className={`absolute flex items-center justify-center w-full h-full transition-all duration-[1275ms] ease-out ${step >= 3 ? 'opacity-100' : 'opacity-0 scale-50'}`}>
                             {/* HYBE / Big 4 */}
                             <div className="absolute top-[36px] left-[5%] ml-[26px] bg-white border-[4px] border-fuchsia-100 shadow-xl rounded-2xl px-6 py-4 flex flex-col items-center z-30">
                                 <span className="text-[28px] font-black text-[#d946ef] mb-1">4대 엔터</span>
@@ -70,7 +70,7 @@ export default function Section19({ isActive }) {
                     </div>
                 </div>
 
-                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[765ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>

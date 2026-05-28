@@ -7,10 +7,10 @@ export default function Section47({ isActive }) {
 
     useEffect(() => {
         if (!isActive) { setStep(0); return; }
-        const t1 = setTimeout(() => setStep(1), 300);
-        const t2 = setTimeout(() => setStep(2), 700);
-        const t3 = setTimeout(() => setStep(3), 1100);
-        const t4 = setTimeout(() => setStep(4), 1500);
+        const t1 = setTimeout(() => setStep(1), 255);
+        const t2 = setTimeout(() => setStep(2), 595);
+        const t3 = setTimeout(() => setStep(3), 935);
+        const t4 = setTimeout(() => setStep(4), 1275);
         return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); clearTimeout(t4); };
     }, [isActive]);
 
@@ -20,12 +20,12 @@ export default function Section47({ isActive }) {
                 
                 {/* Header */}
                 <div className="text-center mb-12">
-                    <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] tracking-[-0.02em] mb-[12px] bg-transparent">
                             {lang === 'kr' ? '미래 시나리오 종합' : 'Future Scenario Summary'}
                         </span>
                     </div>
-                    <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         {lang === 'kr' ? '한국 GDP 3조 달러 도달 시나리오별 핵심 지표 비교' : 'Core Indicators by Scenario for Korea reaching $3T GDP'}
                     </h2>
                 </div>
@@ -34,7 +34,7 @@ export default function Section47({ isActive }) {
                 <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
                     
                     {/* Base */}
-                    <div className={`flex flex-col bg-gray-50 rounded-none border-[6px] border-gray-400 px-8 py-5 md:px-10 md:py-[18px] transition-all duration-[1000ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className={`flex flex-col bg-gray-50 rounded-none border-[6px] border-gray-400 px-8 py-5 md:px-10 md:py-[18px] transition-all duration-[850ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <h3 className="text-[28px] font-extrabold text-black mb-2 tracking-tight">Base Scenario</h3>
                         <p className="text-[18px] font-bold text-gray-500 mb-5 border-b border-gray-300 pb-4">{lang === 'kr' ? '확률 50%' : '50% Prob'}</p>
                         
@@ -57,7 +57,7 @@ export default function Section47({ isActive }) {
                     </div>
 
                     {/* Bull */}
-                    <div className={`flex flex-col bg-[#f8fbff] rounded-none border-[6px] border-blue-400 px-8 py-5 md:px-10 md:py-[18px] transition-all duration-[1000ms] ease-out ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className={`flex flex-col bg-[#f8fbff] rounded-none border-[6px] border-blue-400 px-8 py-5 md:px-10 md:py-[18px] transition-all duration-[850ms] ease-out ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <h3 className="text-[28px] font-extrabold text-[#0055ff] mb-2 tracking-tight">Bull Scenario</h3>
                         <p className="text-[18px] font-bold text-gray-500 mb-5 border-b border-blue-200 pb-4">{lang === 'kr' ? '확률 30%' : '30% Prob'}</p>
                         
@@ -80,7 +80,7 @@ export default function Section47({ isActive }) {
                     </div>
 
                     {/* Bear */}
-                    <div className={`flex flex-col bg-[#fff8f8] rounded-none border-[6px] border-red-400 px-8 py-5 md:px-10 md:py-[18px] transition-all duration-[1000ms] ease-out ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className={`flex flex-col bg-[#fff8f8] rounded-none border-[6px] border-red-400 px-8 py-5 md:px-10 md:py-[18px] transition-all duration-[850ms] ease-out ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <h3 className="text-[28px] font-extrabold text-[#e11d48] mb-2 tracking-tight">Bear Scenario</h3>
                         <p className="text-[18px] font-bold text-gray-500 mb-5 border-b border-red-200 pb-4">{lang === 'kr' ? '확률 20%' : '20% Prob'}</p>
                         

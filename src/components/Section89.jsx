@@ -8,11 +8,11 @@ export default function Section89({ isActive }) {
     useEffect(() => {
         if (!isActive) { setStep(0); return; }
         const timers = [
-            setTimeout(() => setStep(1), 300),
-            setTimeout(() => setStep(2), 800),
-            setTimeout(() => setStep(3), 1300), // Pillars
-            setTimeout(() => setStep(4), 2200), // Formula
-            setTimeout(() => setStep(5), 3000)  // Bottom text
+            setTimeout(() => setStep(1), 255),
+            setTimeout(() => setStep(2), 680),
+            setTimeout(() => setStep(3), 1105), // Pillars
+            setTimeout(() => setStep(4), 1870), // Formula
+            setTimeout(() => setStep(5), 2550)  // Bottom text
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -21,20 +21,20 @@ export default function Section89({ isActive }) {
         <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
-                <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-blue-600 uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
                         {lang === 'kr' ? '이지스만의 한국적 차별점과 결합 모델' : 'IGIS\'s Korean Differentiation & Hybrid Model'}
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-[38px] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-[38px] transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? <>블랙스톤을 넘어선 In-house Vertical Integration의 완성</> : <>Completion of In-house Vertical Integration Beyond Blackstone</>}
                 </h2>
 
                 {/* 3 Pillars */}
                 <div className="w-full max-w-[1000px] grid grid-cols-1 md:grid-cols-3 gap-6 mb-[30px] relative">
                     {/* Pillar 1 */}
-                    <div className={`bg-white border-4 border-[#1e3a8a] rounded-lg p-6 shadow-sm flex flex-col items-center justify-center relative transition-all duration-[800ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} min-h-[220px]`}>
+                    <div className={`bg-white border-4 border-[#1e3a8a] rounded-lg p-6 shadow-sm flex flex-col items-center justify-center relative transition-all duration-[680ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} min-h-[220px]`}>
                         <div className="absolute top-4 left-5 text-[#1e3a8a] font-black text-[14px] opacity-80">01</div>
                         <h3 className="font-extrabold text-[24px] text-[#1e3a8a] mb-3 break-keep leading-snug text-center">
                             {lang === 'kr' ? '서울 프라임 압도적 지배력' : 'Overwhelming Dominance in Seoul Prime'}
@@ -45,7 +45,7 @@ export default function Section89({ isActive }) {
                     </div>
 
                     {/* Pillar 2 */}
-                    <div className={`bg-white border-4 border-[#1e3a8a] rounded-lg p-6 shadow-sm flex flex-col items-center justify-center relative transition-all duration-[800ms] delay-[150ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} min-h-[220px]`}>
+                    <div className={`bg-white border-4 border-[#1e3a8a] rounded-lg p-6 shadow-sm flex flex-col items-center justify-center relative transition-all duration-[680ms] delay-[128ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} min-h-[220px]`}>
                         <div className="absolute top-4 left-5 text-[#1e3a8a] font-black text-[14px] opacity-80">02</div>
                         <h3 className="font-extrabold text-[24px] text-[#1e3a8a] mb-3 break-keep leading-snug text-center">
                             {lang === 'kr' ? '국내 기관 LP 신뢰 자본' : 'Trusted Capital from Domestic Inst. LPs'}
@@ -56,7 +56,7 @@ export default function Section89({ isActive }) {
                     </div>
 
                     {/* Pillar 3 */}
-                    <div className={`bg-white border-4 border-[#1e3a8a] rounded-lg p-6 shadow-sm flex flex-col items-center justify-center relative transition-all duration-[800ms] delay-[300ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} min-h-[220px]`}>
+                    <div className={`bg-white border-4 border-[#1e3a8a] rounded-lg p-6 shadow-sm flex flex-col items-center justify-center relative transition-all duration-[680ms] delay-[255ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'} min-h-[220px]`}>
                         <div className="absolute top-4 left-5 text-[#1e3a8a] font-black text-[14px] opacity-80">03</div>
                         <h3 className="font-extrabold text-[24px] text-[#1e3a8a] mb-3 break-keep leading-snug text-center">
                             {lang === 'kr' ? 'In-house Vertical Integration' : 'In-house Vertical Integration'}
@@ -68,7 +68,7 @@ export default function Section89({ isActive }) {
                 </div>
 
                 {/* Hybrid Model Formula */}
-                <div className={`w-full max-w-[1000px] flex flex-col items-center justify-center bg-gray-800 rounded-2xl py-[16px] px-6 md:py-[22px] md:px-8 mb-[30px] transition-all duration-1000 ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
+                <div className={`w-full max-w-[1000px] flex flex-col items-center justify-center bg-gray-800 rounded-2xl py-[16px] px-6 md:py-[22px] md:px-8 mb-[30px] transition-all duration-[850ms] ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
                     <div className="text-gray-400 font-bold text-[17px] mb-3">
                         {lang === 'kr' ? '단순 자산 매입·매각 중심의 블랙스톤 모델을 넘어선 최적의 결합 모델' : 'Optimal Hybrid Model Beyond Blackstone\'s Simple Buy-Sell Approach'}
                     </div>
@@ -88,7 +88,7 @@ export default function Section89({ isActive }) {
                 </div>
 
                 {/* Bottom Thesis Text */}
-                <div className={`max-w-[1000px] bg-blue-50 border border-blue-100 p-6 rounded-xl shadow-sm transition-all duration-700 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`max-w-[1000px] bg-blue-50 border border-blue-100 p-6 rounded-xl shadow-sm transition-all duration-[600ms] ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <p className="text-[18px] md:text-[20px] font-bold text-[#1e3a8a] break-keep leading-relaxed">
                         {lang === 'kr' 
                             ? '단순 자산 매입·매각 모델을 넘어선 아시아 최고 수준의 부동산 가치 창출 플랫폼'

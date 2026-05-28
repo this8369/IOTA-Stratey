@@ -8,11 +8,11 @@ export default function Section80({ isActive }) {
     useEffect(() => {
         if (!isActive) { setStep(0); return; }
         const timers = [
-            setTimeout(() => setStep(1), 300),
-            setTimeout(() => setStep(2), 800),
-            setTimeout(() => setStep(3), 1300),
-            setTimeout(() => setStep(4), 1800),
-            setTimeout(() => setStep(5), 2300)
+            setTimeout(() => setStep(1), 255),
+            setTimeout(() => setStep(2), 680),
+            setTimeout(() => setStep(3), 1105),
+            setTimeout(() => setStep(4), 1530),
+            setTimeout(() => setStep(5), 1955)
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -25,13 +25,13 @@ export default function Section80({ isActive }) {
 
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center relative z-10">
                 
-                <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-gray-500 uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
                         {lang === 'kr' ? 'Bear 시나리오: 짙은 디플레이션 그림자와 박스피' : 'Bear Scenario: Shadow of Deflation & Box-PI'}
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-14 transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-14 transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? <>일본식 박스피에 짓눌린 인구 절벽 늪에서의 자본 이탈 리스크</> : <>Capital Flight Risk in Demographic Cliff suppressed by Japan-style Box-PI</>}
                 </h2>
 
@@ -46,15 +46,15 @@ export default function Section80({ isActive }) {
                     <div className="flex w-full h-full px-10 items-center justify-between">
                         
                         {/* 2030 */}
-                        <div className={`flex flex-col items-center justify-center transition-all duration-1000 ${step >= 2 ? 'opacity-100 translate-y-0 grayscale-0' : 'opacity-0 translate-y-8 grayscale'}`}>
+                        <div className={`flex flex-col items-center justify-center transition-all duration-[850ms] ${step >= 2 ? 'opacity-100 translate-y-0 grayscale-0' : 'opacity-0 translate-y-8 grayscale'}`}>
                             <div className="text-gray-500 font-bold text-[20px] mb-2">2030</div>
                             <div className="text-gray-800 font-black text-[32px] md:text-[42px] leading-none">4,500<br/><span className="text-gray-400 text-[24px]">~5,200</span></div>
                         </div>
 
-                        <div className={`w-16 md:w-32 h-[2px] bg-gray-300 transition-all duration-700 ${step >= 3 ? 'opacity-100 w-16 md:w-32' : 'opacity-0 w-0'}`}></div>
+                        <div className={`w-16 md:w-32 h-[2px] bg-gray-300 transition-all duration-[600ms] ${step >= 3 ? 'opacity-100 w-16 md:w-32' : 'opacity-0 w-0'}`}></div>
 
                         {/* 2035 (Boxed) */}
-                        <div className={`flex flex-col items-center justify-center transition-all duration-1000 delay-200 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}>
+                        <div className={`flex flex-col items-center justify-center transition-all duration-[850ms] delay-[170ms] ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}>
                             <div className="text-red-700 font-bold text-[20px] mb-2">2035</div>
                             <div className="border-[4px] border-red-700 bg-red-50 py-4 px-6 relative">
                                 <div className="absolute -top-4 -right-4 bg-red-700 text-white text-[14px] font-black px-2 py-1 uppercase transform rotate-12">Trap</div>
@@ -62,10 +62,10 @@ export default function Section80({ isActive }) {
                             </div>
                         </div>
 
-                        <div className={`w-16 md:w-32 h-[2px] bg-gray-300 transition-all duration-700 ${step >= 4 ? 'opacity-100 w-16 md:w-32' : 'opacity-0 w-0'}`}></div>
+                        <div className={`w-16 md:w-32 h-[2px] bg-gray-300 transition-all duration-[600ms] ${step >= 4 ? 'opacity-100 w-16 md:w-32' : 'opacity-0 w-0'}`}></div>
 
                         {/* 2040 */}
-                        <div className={`flex flex-col items-center justify-center transition-all duration-1000 delay-400 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                        <div className={`flex flex-col items-center justify-center transition-all duration-[850ms] delay-400 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                             <div className="text-gray-500 font-bold text-[20px] mb-2">2040</div>
                             <div className="text-gray-800 font-black text-[32px] md:text-[42px] leading-none">5,500<br/><span className="text-gray-400 text-[24px]">~7,000</span></div>
                         </div>
@@ -74,7 +74,7 @@ export default function Section80({ isActive }) {
                 </div>
 
                 {/* Bottom Thesis Text */}
-                <div className={`max-w-[1100px] flex flex-col md:flex-row items-center gap-6 transition-all duration-700 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`max-w-[1100px] flex flex-col md:flex-row items-center gap-6 transition-all duration-[600ms] ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <div className="bg-[#1d1d1f] text-white py-6 px-8 rounded-xl shadow-lg flex-1 text-left">
                         <div className="text-red-400 font-bold text-[18px] mb-2 uppercase">{lang === 'kr' ? '리스크 경고' : 'Risk Warning'}</div>
                         <p className="text-[18px] md:text-[20px] font-bold break-keep leading-snug">

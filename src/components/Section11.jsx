@@ -11,11 +11,11 @@ export default function Section11({ isActive }) {
             return;
         }
         
-        const t1 = setTimeout(() => setStep(1), 300); // Theme & Title
-        const t2 = setTimeout(() => setStep(2), 1000); // Node 1
-        const t3 = setTimeout(() => setStep(3), 1600); // Node 2
-        const t4 = setTimeout(() => setStep(4), 2200); // Node 3
-        const t5 = setTimeout(() => setStep(5), 2800); // Intro Text
+        const t1 = setTimeout(() => setStep(1), 255); // Theme & Title
+        const t2 = setTimeout(() => setStep(2), 850); // Node 1
+        const t3 = setTimeout(() => setStep(3), 1360); // Node 2
+        const t4 = setTimeout(() => setStep(4), 1870); // Node 3
+        const t5 = setTimeout(() => setStep(5), 2380); // Intro Text
         
         return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); clearTimeout(t4); clearTimeout(t5); };
     }, [isActive]);
@@ -26,14 +26,14 @@ export default function Section11({ isActive }) {
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
                 {/* Theme */}
-                <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
                         {lang === 'kr' ? '마침내 도달할 GDP 2조 달러 고지' : 'Reaching the $2 Trillion GDP Milestone'}
                     </span>
                 </div>
 
                 {/* Main Title */}
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? (
                         <>1조에서 2조 달러로 2배 성장,<br/>대한민국의 20년 도약</>
                     ) : (
@@ -45,7 +45,7 @@ export default function Section11({ isActive }) {
                 <div className="relative w-full max-w-[900px] -mt-[8px] h-[360px] flex items-center justify-between">
                     
                     {/* Small Box (2007) */}
-                    <div className={`relative flex flex-col items-center justify-end transition-all duration-[1000ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-50 translate-y-20'}`}>
+                    <div className={`relative flex flex-col items-center justify-end transition-all duration-[850ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-50 translate-y-20'}`}>
                         <div className="text-center mb-1">
                             <span className="block text-[24px] font-black text-gray-400">2007</span>
                             <span className="block text-[14px] font-bold text-gray-500">{lang === 'kr' ? '1조 달러 돌파' : 'Passed $1 Trillion'}</span>
@@ -56,7 +56,7 @@ export default function Section11({ isActive }) {
                     </div>
 
                     {/* Center Arrow & Multiplier */}
-                    <div className={`flex flex-col items-center justify-center mb-[40px] transition-all duration-[800ms] ease-out ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                    <div className={`flex flex-col items-center justify-center mb-[40px] transition-all duration-[680ms] ease-out ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
                         <div className="text-[32px] font-black text-[#e11d48] italic tracking-tighter mb-2">
                             {lang === 'kr' ? 'X 2.0 배' : 'X 2.0 Times'}
                         </div>
@@ -70,7 +70,7 @@ export default function Section11({ isActive }) {
                     </div>
 
                     {/* Large Box (2025-2027) */}
-                    <div className={`relative flex flex-col items-center justify-end transition-all duration-[1200ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 4 ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-50 translate-y-32'}`}>
+                    <div className={`relative flex flex-col items-center justify-end transition-all duration-[1020ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 4 ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-50 translate-y-32'}`}>
                         <div className="text-center mb-1">
                             <span className="block text-[32px] font-black text-[#1e3a8a]">2025~2027</span>
                             <span className="block text-[16px] font-bold text-[#e11d48]">{lang === 'kr' ? '2조 달러 달성 예상' : 'Expected to Hit $2 Trillion'}</span>
@@ -88,7 +88,7 @@ export default function Section11({ isActive }) {
             
 
                 {/* Description Text */}
-                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[765ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>

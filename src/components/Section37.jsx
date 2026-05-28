@@ -11,11 +11,11 @@ export default function Section37({ isActive }) {
             return;
         }
         const timers = [
-            setTimeout(() => setStep(1), 300),
-            setTimeout(() => setStep(2), 1000),
-            setTimeout(() => setStep(3), 1600),
-            setTimeout(() => setStep(4), 2200),
-            setTimeout(() => setStep(5), 2800)
+            setTimeout(() => setStep(1), 255),
+            setTimeout(() => setStep(2), 850),
+            setTimeout(() => setStep(3), 1360),
+            setTimeout(() => setStep(4), 1870),
+            setTimeout(() => setStep(5), 2380)
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -24,20 +24,20 @@ export default function Section37({ isActive }) {
         <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center relative">
                 
-                <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
                         {lang === 'kr' ? '전력 병목이 낳은 데이터센터의 희소성' : 'Data Center Scarcity'}
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? 'DC는 급격한 성장이 예상되지만 수도권 병목이 구조적 문제' : 'Rapid DC Growth Expected, but Metropolitan Bottlenecks Persist'}
                 </h2>
 
                 <div className="relative w-full max-w-[1200px] mt-[50px] mb-[40px] h-auto flex flex-col md:flex-row items-stretch justify-center z-10 gap-6">
                     
                     {/* Growth Box */}
-                    <div className={`flex-1 flex flex-col items-center justify-center bg-gray-900 border border-gray-700 rounded-[24px] p-8 shadow-xl transition-all duration-1000 ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className={`flex-1 flex flex-col items-center justify-center bg-gray-900 border border-gray-700 rounded-[24px] p-8 shadow-xl transition-all duration-[850ms] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <div className="text-gray-400 font-bold text-[20px] mb-2">{lang === 'kr' ? '한국 데이터센터 IT 용량 전망' : 'Korea DC IT Capacity Forecast'}</div>
                         
                         <div className="my-8 flex flex-col items-center w-full">
@@ -59,7 +59,7 @@ export default function Section37({ isActive }) {
                     </div>
 
                     {/* Bottleneck Box */}
-                    <div className={`flex-1 flex flex-col items-center justify-center bg-white border border-gray-300 rounded-[24px] p-8 shadow-xl transition-all duration-1000 delay-200 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className={`flex-1 flex flex-col items-center justify-center bg-white border border-gray-300 rounded-[24px] p-8 shadow-xl transition-all duration-[850ms] delay-[170ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <div className="text-red-600 font-black text-[24px] mb-6">{lang === 'kr' ? '극심한 신규 공급 병목' : 'Severe Supply Bottleneck'}</div>
                         
                         <div className="w-full flex flex-col gap-4">
@@ -75,7 +75,7 @@ export default function Section37({ isActive }) {
                     </div>
 
                     {/* IGIS Portfolio Box */}
-                    <div className={`flex-1 flex flex-col items-center justify-center bg-blue-50 border border-blue-200 rounded-[24px] p-8 shadow-xl transition-all duration-1000 delay-400 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className={`flex-1 flex flex-col items-center justify-center bg-blue-50 border border-blue-200 rounded-[24px] p-8 shadow-xl transition-all duration-[850ms] delay-400 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <div className="text-blue-700 font-black text-[24px] mb-2">{lang === 'kr' ? '이지스 선제적 포지셔닝' : 'IGIS Preemptive Positioning'}</div>
                         <p className="text-[15px] font-bold text-gray-500 mb-6">{lang === 'kr' ? '병목을 뚫은 압도적 자산 확보' : 'Secured Assets Ahead of Bottleneck'}</p>
                         
@@ -89,7 +89,7 @@ export default function Section37({ isActive }) {
                 </div>
 
                 {/* Summarized Bottom Text */}
-                <div className={`mt-[20px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`mt-[20px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[765ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>

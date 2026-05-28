@@ -8,10 +8,10 @@ export default function Section70({ isActive }) {
     useEffect(() => {
         if (!isActive) { setStep(0); return; }
         const timers = [
-            setTimeout(() => setStep(1), 300),
-            setTimeout(() => setStep(2), 800),
-            setTimeout(() => setStep(3), 1300),
-            setTimeout(() => setStep(4), 1800),
+            setTimeout(() => setStep(1), 255),
+            setTimeout(() => setStep(2), 680),
+            setTimeout(() => setStep(3), 1105),
+            setTimeout(() => setStep(4), 1530),
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -20,11 +20,11 @@ export default function Section70({ isActive }) {
         <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
-                <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">{lang === 'kr' ? '시니어 하우징 메가 트렌드' : 'Senior Housing Mega Trend'}</span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? <>300조 원 거대 시장을 장악할<br/>한국형 시니어 REIT 모델의 탄생</> : <>Birth of Korean-style Senior REIT Model<br/>to Dominate the 300 Trillion KRW Market</>}
                 </h2>
 
@@ -32,7 +32,7 @@ export default function Section70({ isActive }) {
                 <div className="flex flex-col lg:flex-row w-full max-w-[1100px] mx-auto justify-center mt-[40px] mb-[40px] gap-8">
                     
                     {/* Market Size */}
-                    <div className={`flex-[1.2] bg-[#1d1d1f] text-white p-10 flex flex-col justify-center items-center shadow-2xl relative transition-all duration-1000 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                    <div className={`flex-[1.2] bg-[#1d1d1f] text-white p-10 flex flex-col justify-center items-center shadow-2xl relative transition-all duration-[850ms] ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
                         <div className="absolute top-0 right-0 bg-yellow-400 text-black px-4 py-2 font-black">Market Cap</div>
                         <div className="text-[20px] font-bold text-gray-400 mb-2">{lang === 'kr' ? '2030년 168조 원' : '2030: 168T Won'}</div>
                         <div className="text-[40px] text-gray-500 font-black my-2 leading-none">↓</div>
@@ -44,7 +44,7 @@ export default function Section70({ isActive }) {
                     </div>
 
                     {/* Platform Strategy */}
-                    <div className={`flex-[1.5] bg-gray-50 border-[6px] border-gray-300 py-4 px-10 flex flex-col justify-center shadow-lg transition-all duration-1000 delay-300 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
+                    <div className={`flex-[1.5] bg-gray-50 border-[6px] border-gray-300 py-4 px-10 flex flex-col justify-center shadow-lg transition-all duration-[850ms] delay-[255ms] ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
                         <div className="text-[24px] font-black text-gray-800 mb-2 inline-block mx-auto">{lang === 'kr' ? '이지스 시니어 플랫폼의 비전' : 'IGIS Senior Platform Vision'}</div>
                         
                         <div className="flex flex-col w-full gap-2">
@@ -66,7 +66,7 @@ export default function Section70({ isActive }) {
                 </div>
 
                 {/* Bottom Text */}
-                <div className={`mt-[10px] max-w-[1100px] text-[16px] md:text-[20px] leading-[1.5] font-bold text-[#1d1d1f] break-keep text-center transition-all duration-[900ms] ease-out ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`mt-[10px] max-w-[1100px] text-[16px] md:text-[20px] leading-[1.5] font-bold text-[#1d1d1f] break-keep text-center transition-all duration-[765ms] ease-out ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-3 mx-auto">
                         <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>{lang === 'kr' ? '한국 시니어 하우징 시장은 2030년 168조 원에서 2040년 300조 원 이상으로 폭발적 성장이 확정된 메가 섹터' : 'Korea Senior Housing to explode from 168T (2030) to 300T+ (2040), a guaranteed mega sector'}</span></li>
                         <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>{lang === 'kr' ? '현재 0.6%에 불과한 침투율이 글로벌 평균인 3~5% 수준으로 오를 경우 최소 50만 호의 신규 공급 필요' : 'Rising from 0.6% to 3-5% global average requires at least 500,000 new units'}</span></li>
