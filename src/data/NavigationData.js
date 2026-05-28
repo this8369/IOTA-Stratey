@@ -201,6 +201,15 @@ export const menuDataEn = [
                     { label: "Factorial Builders as Operating OS", id: "page-96" },
                     { label: "Institutional WeWork & Global Benchmark", id: "page-97" }
                 ]
+            },
+            {
+                title: "Chapter 4. Building Global LP Relationships",
+                id: "page-98",
+                items: [
+                    { label: "Global Commingled Fund", id: "page-99" },
+                    { label: "Priority Target LPs", id: "page-100" },
+                    { label: "Global IB Channels", id: "page-101" }
+                ]
             }
         ] 
     },
@@ -413,6 +422,15 @@ export const menuDataKr = [
                 items: [
                     { label: "팩토리얼 빌더스를 운영 OS로", id: "page-96" },
                     { label: "WeWork의 한계 극복과 글로벌 벤치마크", id: "page-97" }
+                ]
+            },
+            {
+                title: "Chapter 4. 국제 LP 관계 구축",
+                id: "page-98",
+                items: [
+                    { label: "1호 글로벌 코밍글드 펀드", id: "page-99" },
+                    { label: "전략적 우선 타겟 LP", id: "page-100" },
+                    { label: "글로벌 IB 협력 채널", id: "page-101" }
                 ]
             }
         ] 
