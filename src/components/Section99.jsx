@@ -32,10 +32,10 @@ export default function Section99({ isActive }) {
                     {lang === 'kr' ? <>글로벌 자본 지형도와 타겟팅 전략</> : <>Global Capital Landscape & Targeting Strategy</>}
                 </h2>
 
-                <div className="w-full max-w-[1100px] grid grid-cols-1 md:grid-cols-2 gap-5 mb-10 relative">
+                <div className="w-full max-w-[1100px] grid grid-cols-1 md:grid-cols-2 gap-5 mb-[30px] relative">
                     
                     {/* Row 1 */}
-                    <div className={`col-span-1 bg-white border-4 border-[#1e3a8a] rounded-none p-6 flex flex-col text-left shadow-sm transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className={`col-span-1 bg-white border-4 border-[#1e3a8a] rounded-none py-5 px-6 flex flex-col text-left shadow-sm transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         <div className="flex items-center gap-3 mb-2">
                             <span className="w-8 h-8 rounded-full bg-blue-100 text-[#1e3a8a] flex items-center justify-center font-bold">1</span>
                             <h3 className="text-[#1e3a8a] font-extrabold text-[22px]">GIC, Temasek (싱가포르)</h3>
@@ -45,7 +45,7 @@ export default function Section99({ isActive }) {
                         </p>
                     </div>
 
-                    <div className={`col-span-1 bg-white border-4 border-[#1e3a8a] rounded-none p-6 flex flex-col text-left shadow-sm transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className={`col-span-1 bg-white border-4 border-[#1e3a8a] rounded-none py-5 px-6 flex flex-col text-left shadow-sm transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         <div className="flex items-center gap-3 mb-2">
                             <span className="w-8 h-8 rounded-full bg-blue-100 text-[#1e3a8a] flex items-center justify-center font-bold">2</span>
                             <h3 className="text-[#1e3a8a] font-extrabold text-[22px]">CPPIB (캐나다 연금)</h3>
@@ -56,7 +56,7 @@ export default function Section99({ isActive }) {
                     </div>
 
                     {/* Row 2 */}
-                    <div className={`col-span-1 bg-white border-4 border-[#1e3a8a] rounded-none p-6 flex flex-col text-left shadow-sm transition-all duration-1000 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className={`col-span-1 bg-white border-4 border-[#1e3a8a] rounded-none py-5 px-6 flex flex-col text-left shadow-sm transition-all duration-1000 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         <div className="flex items-center gap-3 mb-2">
                             <span className="w-8 h-8 rounded-full bg-blue-100 text-[#1e3a8a] flex items-center justify-center font-bold">3</span>
                             <h3 className="text-[#1e3a8a] font-extrabold text-[22px]">ADIA, Mubadala, QIA (중동)</h3>
@@ -66,7 +66,7 @@ export default function Section99({ isActive }) {
                         </p>
                     </div>
 
-                    <div className={`col-span-1 bg-white border-4 border-[#1e3a8a] rounded-none p-6 flex flex-col text-left shadow-sm transition-all duration-1000 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className={`col-span-1 bg-white border-4 border-[#1e3a8a] rounded-none py-5 px-6 flex flex-col text-left shadow-sm transition-all duration-1000 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         <div className="flex items-center gap-3 mb-2">
                             <span className="w-8 h-8 rounded-full bg-blue-100 text-[#1e3a8a] flex items-center justify-center font-bold">4</span>
                             <h3 className="text-[#1e3a8a] font-extrabold text-[22px]">NBIM (노르웨이)</h3>
@@ -77,7 +77,7 @@ export default function Section99({ isActive }) {
                     </div>
 
                     {/* Row 3 */}
-                    <div className={`col-span-1 bg-white border-4 border-[#1e3a8a] rounded-none p-6 flex flex-col text-left shadow-sm transition-all duration-1000 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className={`col-span-1 bg-white border-4 border-[#1e3a8a] rounded-none py-5 px-6 flex flex-col text-left shadow-sm transition-all duration-1000 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         <div className="flex items-center gap-3 mb-2">
                             <span className="w-8 h-8 rounded-full bg-blue-100 text-[#1e3a8a] flex items-center justify-center font-bold">5</span>
                             <h3 className="text-[#1e3a8a] font-extrabold text-[20px] md:text-[22px]">AustralianSuper, CalPERS, ABP</h3>
@@ -87,7 +87,7 @@ export default function Section99({ isActive }) {
                         </p>
                     </div>
 
-                    <div className={`col-span-1 bg-white border-4 border-[#1e3a8a] rounded-none p-6 flex flex-col text-left shadow-sm transition-all duration-1000 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className={`col-span-1 bg-white border-4 border-[#1e3a8a] rounded-none py-5 px-6 flex flex-col text-left shadow-sm transition-all duration-1000 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         <div className="flex items-center gap-3 mb-2">
                             <span className="w-8 h-8 rounded-full bg-blue-100 text-[#1e3a8a] flex items-center justify-center font-bold">6</span>
                             <h3 className="text-[#1e3a8a] font-extrabold text-[20px] md:text-[22px]">Mitsubishi, Mitsui, Sumitomo (일본)</h3>

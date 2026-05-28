@@ -50,7 +50,7 @@ export default function Section100({ isActive }) {
                     </div>
 
                     {/* Bottom: Anchor Case Core */}
-                    <div className={`w-full max-w-[1100px] bg-[#1e3a8a] rounded-2xl p-8 border-4 border-blue-900 shadow-2xl relative overflow-hidden transition-all duration-1000 ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
+                    <div className={`w-full max-w-[1000px] bg-[#1e3a8a] rounded-2xl p-8 border-4 border-blue-900 shadow-2xl relative overflow-hidden transition-all duration-1000 ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
                         {/* Background pattern */}
                         <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '24px 24px' }}></div>
                         

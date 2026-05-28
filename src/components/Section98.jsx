@@ -45,7 +45,7 @@ export default function Section98({ isActive }) {
                     </div>
 
                     {/* Arrows & Directions */}
-                    <div className={`w-full flex flex-col md:flex-row justify-between items-center md:items-stretch gap-6 -mt-10 pt-[54px] px-4 transition-all duration-1000 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className={`w-full flex flex-col md:flex-row justify-between items-center md:items-stretch gap-6 -mt-[26px] pt-[54px] px-4 transition-all duration-1000 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         
                         {/* Left: Outbound / Globalizing Domestic Assets */}
                         <div className="flex-1 bg-white border-4 border-[#1e3a8a] rounded-2xl p-8 flex flex-col items-center text-center shadow-sm relative w-full">
