@@ -274,7 +274,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
  <header id="main-header"
  onMouseEnter={() => setIsHeaderHovered(true)}
  onMouseLeave={() => setIsHeaderHovered(false)}
- className={`fixed top-0 left-0 w-full z-50 pt-[8px] pb-[4px] transition-all duration-[500ms] ease-out ${isNavOpen ? 'lg:pl-[240px]' : 'pl-0'} ${(isHeaderHovered || isMegaMenuOpen) ? 'bg-white opacity-100' : 'bg-white/20 opacity-20'} text-black`}
+ className={`fixed top-0 left-0 w-full ${isMegaMenuOpen ? 'z-[10000]' : 'z-50'} pt-[8px] pb-[4px] transition-all duration-[500ms] ease-out ${isNavOpen ? 'lg:pl-[240px]' : 'pl-0'} ${(isHeaderHovered || isMegaMenuOpen) ? 'bg-white opacity-100' : 'bg-white/20 opacity-20'} text-black`}
  style={{ transform: initialTransform.current }}>
  <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex justify-between items-center transition-all duration-300">
  <a href="#page-1"
