@@ -524,6 +524,14 @@ export const menuDataKr = [
                     { label: "본PF 전환 리스크", id: "page-123" },
                     { label: "핵심 액션 아이템", id: "page-124" }
                 ]
+            },
+            {
+                title: "Chapter 3. 이지스 2030 전략 內 위치",
+                id: "page-125",
+                items: [
+                    { label: "전략적 앵커 자산", id: "page-126" },
+                    { label: "미래 청사진 (Trophy Stack)", id: "page-127" }
+                ]
             }
         ] 
     }
