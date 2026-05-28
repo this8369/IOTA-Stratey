@@ -24,7 +24,8 @@ export default function App() {
      if (saved !== null) {
          return JSON.parse(saved);
      }
-     return false; // Default closed
+     // Default open on desktop, closed on mobile
+     return window.innerWidth >= 1024;
  });
 
  React.useEffect(() => {
