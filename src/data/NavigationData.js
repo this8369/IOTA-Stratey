@@ -514,6 +514,16 @@ export const menuDataKr = [
                     { label: "교통 인프라 결절점", id: "page-118" },
                     { label: "도시 형성 (City-making)", id: "page-119" }
                 ]
+            },
+            {
+                title: "Chapter 2. 자본 구조와 실행 변수",
+                id: "page-120",
+                items: [
+                    { label: "두 PFV 구조", id: "page-121" },
+                    { label: "자본 구조 효율성", id: "page-122" },
+                    { label: "본PF 전환 리스크", id: "page-123" },
+                    { label: "핵심 액션 아이템", id: "page-124" }
+                ]
             }
         ] 
     }
