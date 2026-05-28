@@ -31,7 +31,7 @@ export default function Section100({ isActive }) {
                     {lang === 'kr' ? <>최상위 글로벌 IB와의 Deeper Integration</> : <>Deeper Integration with Top-tier Global IBs</>}
                 </h2>
 
-                <div className="w-full max-w-[1100px] flex flex-col items-center mb-10 relative">
+                <div className="w-full max-w-[1100px] flex flex-col items-center mb-[30px] relative">
                     
                     {/* Top: 6 Global IBs */}
                     <div className={`w-full flex flex-wrap justify-center gap-4 transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
@@ -43,7 +43,7 @@ export default function Section100({ isActive }) {
                     </div>
 
                     {/* Connecting Arrow */}
-                    <div className={`my-3 text-blue-400 transition-all duration-1000 delay-300 ${step >= 4 ? 'opacity-100 h-8' : 'opacity-0 h-0'} overflow-hidden flex flex-col items-center justify-center`}>
+                    <div className={`my-[6px] text-blue-400 transition-all duration-1000 delay-300 ${step >= 4 ? 'opacity-100 h-8' : 'opacity-0 h-0'} overflow-hidden flex flex-col items-center justify-center`}>
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M12 21l-7-7h4V3h6v11h4z"/>
                         </svg>
