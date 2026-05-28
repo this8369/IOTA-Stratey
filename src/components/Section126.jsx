@@ -69,46 +69,46 @@ export default function Section126({ isActive }) {
                     </div>
 
                     {/* Right: 2D Stack Diagram (Clear & Readable) */}
-                    <div className="lg:col-span-7 flex justify-center items-center h-[500px]">
-                        <div className={`w-full max-w-[500px] flex flex-col gap-3 transition-all duration-1000 delay-300 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className="lg:col-span-7 flex justify-center items-center py-4">
+                        <div className={`w-full max-w-[500px] flex flex-col gap-2 transition-all duration-1000 delay-300 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                             
                             {/* Layer 4: REIT */}
-                            <div className="bg-[#0f172a] border-l-8 border-[#60a5fa] rounded-lg p-6 shadow-xl flex justify-between items-center text-white">
+                            <div className="bg-[#0f172a] border-l-8 border-[#60a5fa] rounded-lg p-5 shadow-xl flex justify-between items-center text-white">
                                 <div className="text-left">
-                                    <div className="text-[#60a5fa] font-black text-sm tracking-widest mb-1">EXIT / SECURITIZATION</div>
-                                    <div className="font-extrabold text-[26px]">IOTA Office REIT</div>
+                                    <div className="text-[#60a5fa] font-black text-[13px] tracking-widest mb-0.5">EXIT / SECURITIZATION</div>
+                                    <div className="font-extrabold text-[22px]">IOTA Office REIT</div>
                                 </div>
-                                <div className="bg-[#1e3a8a] px-4 py-2 rounded font-bold text-[18px]">상장 및 유동화</div>
+                                <div className="bg-[#1e3a8a] px-4 py-2 rounded font-bold text-[16px]">상장 및 유동화</div>
                             </div>
-                            <div className="flex justify-center text-[#60a5fa] text-2xl">▼</div>
+                            <div className="flex justify-center text-[#60a5fa] text-xl">▼</div>
 
                             {/* Layer 3: Fund */}
-                            <div className="bg-[#1e3a8a] border-l-8 border-blue-400 rounded-lg p-6 shadow-xl flex justify-between items-center text-white">
+                            <div className="bg-[#1e3a8a] border-l-8 border-blue-400 rounded-lg p-5 shadow-xl flex justify-between items-center text-white">
                                 <div className="text-left">
-                                    <div className="text-blue-300 font-black text-sm tracking-widest mb-1">STABILIZED HOLDING</div>
-                                    <div className="font-extrabold text-[26px]">IGIS RE Fund</div>
+                                    <div className="text-blue-300 font-black text-[13px] tracking-widest mb-0.5">STABILIZED HOLDING</div>
+                                    <div className="font-extrabold text-[22px]">IGIS RE Fund</div>
                                 </div>
-                                <div className="bg-[#0f172a] px-4 py-2 rounded font-bold text-[18px]">안정화 보유</div>
+                                <div className="bg-[#0f172a] px-4 py-2 rounded font-bold text-[16px]">안정화 보유</div>
                             </div>
-                            <div className="flex justify-center text-blue-400 text-2xl">▼</div>
+                            <div className="flex justify-center text-blue-400 text-xl">▼</div>
 
                             {/* Layer 2: PFV */}
-                            <div className="bg-[#3b82f6] border-l-8 border-blue-200 rounded-lg p-6 shadow-xl flex justify-between items-center text-white">
+                            <div className="bg-[#3b82f6] border-l-8 border-blue-200 rounded-lg p-5 shadow-xl flex justify-between items-center text-white">
                                 <div className="text-left">
-                                    <div className="text-blue-100 font-black text-sm tracking-widest mb-1">DEVELOPMENT PHASE</div>
-                                    <div className="font-extrabold text-[26px]">Project PFV</div>
+                                    <div className="text-blue-100 font-black text-[13px] tracking-widest mb-0.5">DEVELOPMENT PHASE</div>
+                                    <div className="font-extrabold text-[22px]">Project PFV</div>
                                 </div>
-                                <div className="bg-[#1e3a8a] px-4 py-2 rounded font-bold text-[18px]">개발 및 시공</div>
+                                <div className="bg-[#1e3a8a] px-4 py-2 rounded font-bold text-[16px]">개발 및 시공</div>
                             </div>
-                            <div className="flex justify-center text-blue-200 text-2xl">▼</div>
+                            <div className="flex justify-center text-blue-200 text-xl">▼</div>
 
                             {/* Layer 1: LP */}
-                            <div className="bg-[#e2e8f0] border-l-8 border-gray-500 rounded-lg p-6 shadow-xl flex justify-between items-center">
+                            <div className="bg-[#e2e8f0] border-l-8 border-gray-500 rounded-lg p-5 shadow-xl flex justify-between items-center">
                                 <div className="text-left">
-                                    <div className="text-gray-500 font-black text-sm tracking-widest mb-1">CAPITAL BASE</div>
-                                    <div className="text-[#1d1d1f] font-extrabold text-[26px]">Global LP</div>
+                                    <div className="text-gray-500 font-black text-[13px] tracking-widest mb-0.5">CAPITAL BASE</div>
+                                    <div className="text-[#1d1d1f] font-extrabold text-[22px]">Global LP</div>
                                 </div>
-                                <div className="bg-gray-300 text-gray-800 px-4 py-2 rounded font-bold text-[18px]">기초 자본</div>
+                                <div className="bg-gray-300 text-gray-800 px-4 py-2 rounded font-bold text-[16px]">기초 자본</div>
                             </div>
                         </div>
                     </div>
