@@ -43,7 +43,7 @@ export default function Section105({ isActive }) {
                 </h2>
 
                 {/* Infographic Area: Simulator UI */}
-                <div className="w-full max-w-[1100px] mt-10 mb-14 flex flex-col md:flex-row gap-6 justify-center">
+                <div className="w-full max-w-[1100px] mt-[30px] mb-[46px] flex flex-col md:flex-row gap-6 justify-center">
                     
                     {/* Left: PF Tranche Stack */}
                     <div className={`flex-[0.8] bg-white border-4 border-[#1e3a8a] rounded-none p-8 shadow-sm transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'}`}>

@@ -33,13 +33,13 @@ export default function Section103({ isActive }) {
                 </h2>
 
                 {/* Infographic Area: Dashboard UI */}
-                <div className="w-full max-w-[1100px] mt-10 mb-14 flex flex-col lg:flex-row gap-6 justify-center">
+                <div className="w-full max-w-[1100px] mt-[20px] mb-[36px] flex flex-col lg:flex-row gap-6 justify-center">
                     
                     {/* Left Panel: UI Mockup */}
                     <div className={`flex-[1.2] bg-white border-4 border-[#1e3a8a] rounded-none p-8 shadow-sm flex flex-col transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'}`}>
                          
                          {/* Top: Warning Alert */}
-                         <div className="bg-white border-4 border-[#1e3a8a] rounded-none p-5 flex items-center gap-5 mb-6 relative overflow-hidden">
+                         <div className="bg-gray-50 border border-gray-200 rounded-sm p-5 flex items-center gap-5 mb-6 relative overflow-hidden">
                              <div className={`absolute left-0 top-0 bottom-0 w-2 bg-red-600 transition-opacity ${step >= 5 ? 'animate-pulse' : ''}`}></div>
                              <div className={`bg-red-600 text-white font-black px-4 py-2 text-[18px] tracking-widest ${step >= 5 ? 'animate-pulse' : ''}`}>
                                 ALERT
@@ -57,7 +57,7 @@ export default function Section103({ isActive }) {
                          {/* Bottom: 2 Modules */}
                          <div className="flex flex-col md:flex-row gap-4">
                              {/* Module 1 */}
-                             <div className="flex-1 bg-white border-4 border-[#1e3a8a] rounded-none p-6 flex flex-col items-center justify-center">
+                             <div className="flex-1 bg-gray-50 border border-gray-300 rounded-sm p-6 flex flex-col items-center justify-center">
                                  <div className="w-full h-4 bg-gray-200 mb-4 overflow-hidden relative">
                                     <div className="h-full bg-red-600 w-[85%] absolute left-0 top-0"></div>
                                  </div>
@@ -65,7 +65,7 @@ export default function Section103({ isActive }) {
                                  <div className="text-red-600 font-black text-[22px]">High Risk</div>
                              </div>
                              {/* Module 2 */}
-                             <div className="flex-1 bg-white border-4 border-[#1e3a8a] rounded-none p-6 flex flex-col items-center justify-center">
+                             <div className="flex-1 bg-gray-50 border border-gray-300 rounded-sm p-6 flex flex-col items-center justify-center">
                                  <div className="w-full h-4 bg-gray-200 mb-4 overflow-hidden relative">
                                     <div className="h-full bg-green-500 w-[20%] absolute left-0 top-0"></div>
                                  </div>

@@ -39,7 +39,7 @@ export default function Section102({ isActive }) {
                         <div className={`h-full bg-[#1e3a8a] transition-all duration-[2000ms] ease-in-out ${step >= 4 ? 'translate-x-0 w-full opacity-100' : '-translate-x-full w-0 opacity-0'}`}></div>
                     </div>
 
-                    <div className="flex w-full justify-between items-center relative z-10 px-[28px]">
+                    <div className="flex w-full justify-between items-center relative z-10 px-[56px]">
                         {/* Node 1: Raw Data */}
                         <div className={`w-[260px] bg-white border-4 border-[#1e3a8a] rounded-none p-5 shadow-sm transition-all duration-700 ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'}`}>
                             <h4 className="font-bold text-[#1e3a8a] text-[18px] mb-4 border-b-2 border-[#1e3a8a] pb-2">{lang === 'kr' ? '원천 데이터 수집' : 'Raw Data Input'}</h4>
