@@ -37,14 +37,14 @@ export default function Section126({ isActive }) {
                 <div className="w-full max-w-[1300px] grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
                     
                     {/* Left: Text Content */}
-                    <div className={`lg:col-span-5 flex flex-col gap-8 transition-all duration-700 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                    <div className={`lg:col-span-6 flex flex-col gap-8 transition-all duration-700 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
                         
                         <div className={`relative pl-6 border-l-[4px] border-[#1e3a8a] transition-all duration-700 delay-500 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                             <div className="text-[#1e3a8a] font-black text-[16px] tracking-widest uppercase mb-2">Blueprint 01</div>
                             <h3 className="text-[#1d1d1f] font-bold text-[28px] mb-3 leading-tight break-keep">
                                 {lang === 'kr' ? 'Factorial Builders 운영 모델' : 'Factorial Builders Operating Model'}
                             </h3>
-                            <p className="text-[15px] text-gray-700 font-bold leading-relaxed break-keep tracking-tighter">
+                            <p className="text-[16px] text-gray-700 font-bold leading-relaxed break-keep tracking-tight">
                                 {lang === 'kr' ? (
                                     <>'Asset as a Service' 모델 적용, AI, 로봇, IoT가 통합된 독자적 빌딩 OS 구축<br/>글로벌 스탠다드 대비 확고한 초격차 운영 경쟁력 확보</>
                                 ) : (
@@ -58,7 +58,7 @@ export default function Section126({ isActive }) {
                             <h3 className="text-[#1d1d1f] font-bold text-[28px] mb-3 leading-tight break-keep">
                                 {lang === 'kr' ? 'Trophy Stack 자본 템플릿' : 'Trophy Stack Capital Template'}
                             </h3>
-                            <p className="text-[15px] text-gray-700 font-bold leading-relaxed break-keep tracking-tighter mb-4">
+                            <p className="text-[16px] text-gray-700 font-bold leading-relaxed break-keep tracking-tight mb-4">
                                 {lang === 'kr' ? (
 <>[PFV + 부동산펀드 + 리츠 + LP]가 완벽하게 결합된 통합 자본 구조 구축 및 브랜드화<br/>향후 YIBD, 잠실 등 신규 트로피 에셋의 템플릿으로 확장</>
                                 ) : (
@@ -73,7 +73,7 @@ export default function Section126({ isActive }) {
                     </div>
 
                     {/* Right: 2D Stack Diagram (Clear & Readable) */}
-                    <div className="lg:col-span-7 flex justify-center items-center py-4">
+                    <div className="lg:col-span-6 flex justify-center items-center py-4">
                         <div className={`w-full max-w-[500px] flex flex-col gap-2 transition-all duration-1000 delay-300 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                             
                             {/* Layer 4: REIT */}
