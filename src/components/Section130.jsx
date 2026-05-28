@@ -35,32 +35,32 @@ export default function Section130({ isActive }) {
                 <div className={`w-full max-w-[1200px] mx-auto mt-[10px] mb-[36px] grid grid-cols-1 md:grid-cols-2 gap-[20px] transition-all duration-[612ms] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     
                     {/* Card 1 */}
-                    <div className="bg-white border-[6px] border-[#1e3a8a] px-8 py-[28px] flex flex-col shadow-sm">
-                        <div className="text-[#1e3a8a] font-black text-[24px] md:text-[28px] mb-[6px] uppercase">Risk 5.6</div>
-                        <div className="text-gray-700 font-bold text-[22px] mb-[14px] border-b-2 border-gray-100 pb-4">
+                    <div className="bg-white border-[6px] border-[#1d1d1f] px-8 py-[28px] flex flex-col shadow-sm">
+                        <div className="text-[#1d1d1f] font-bold text-[22px] mb-[6px]">6</div>
+                        <div className="text-[#1d1d1f] font-bold text-[22px] mb-[14px] border-b-2 border-gray-100 pb-4">
                             {lang === 'kr' ? '외국인 자본 참여' : 'Foreign Capital Participation'}
                         </div>
                         <ul className="text-[18px] text-gray-600 font-medium leading-relaxed space-y-4">
                             <li className="flex items-start">
-                                <span className="text-[#1e3a8a] mr-2">▪</span>
+                                <span className="text-[#1d1d1f] mr-2">▪</span>
                                 <span>{lang === 'kr' ? 'IPR Equity에 글로벌 LP가 명시적으로 들어와야 Trophy 의미가 완성됨.' : 'Trophy significance is complete only with explicit participation of global LPs in IPR Equity.'}</span>
                             </li>
                             <li className="flex flex-col bg-gray-50 p-4 rounded-lg mt-2 border border-gray-200">
-                                <span className="font-bold text-[#1e3a8a] mb-1">{lang === 'kr' ? '전략적 마일스톤 (Strategic Milestone)' : 'Strategic Milestone'}</span>
+                                <span className="font-bold text-[#1d1d1f] mb-1">{lang === 'kr' ? '전략적 마일스톤 (Strategic Milestone)' : 'Strategic Milestone'}</span>
                                 <span className="text-[17px] text-gray-800 font-bold">{lang === 'kr' ? '2026년 12월 클로징 시점까지 최소 1~2개 글로벌 SWF/연기금 LP 확보' : 'Secure at least 1-2 global SWF/Pension LPs by closing in Dec 2026.'}</span>
                             </li>
                         </ul>
                     </div>
 
                     {/* Card 2 */}
-                    <div className="bg-white border-[6px] border-[#1e3a8a] px-8 py-[28px] flex flex-col shadow-sm">
-                        <div className="text-[#1e3a8a] font-black text-[24px] md:text-[28px] mb-[6px] uppercase">Risk 5.7</div>
-                        <div className="text-gray-700 font-bold text-[22px] mb-[14px] border-b-2 border-gray-100 pb-4">
+                    <div className="bg-white border-[6px] border-[#1d1d1f] px-8 py-[28px] flex flex-col shadow-sm">
+                        <div className="text-[#1d1d1f] font-bold text-[22px] mb-[6px]">7</div>
+                        <div className="text-[#1d1d1f] font-bold text-[22px] mb-[14px] border-b-2 border-gray-100 pb-4">
                             {lang === 'kr' ? '거버넌스 리스크' : 'Governance Risks'}
                         </div>
                         <ul className="text-[18px] text-gray-600 font-medium leading-relaxed space-y-4">
                             <li className="flex items-start">
-                                <span className="text-[#1e3a8a] mr-2">▪</span>
+                                <span className="text-[#1d1d1f] mr-2">▪</span>
                                 <span>{lang === 'kr' ? '이지스 지배지분 매각 진행 중. 새 대주주의 IOTA 프로젝트에 대한 Commitment 확약이 LP 신뢰에 결정적 역할.' : 'IGIS controlling stake sale in progress. Commitment from the new major shareholder to the IOTA project is crucial for LP trust.'}</span>
                             </li>
                             <li className="flex items-start">
@@ -73,7 +73,7 @@ export default function Section130({ isActive }) {
 
                 {/* Bottom text */}
                 <div className={`w-full text-center mt-2 transition-all duration-[612ms] delay-[122ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-                    <div className="inline-block bg-[#1e3a8a] text-white px-8 py-5 text-[20px] md:text-[22px] font-bold shadow-lg break-keep">
+                    <div className="inline-block bg-[#1d1d1f] text-white px-8 py-5 text-[20px] md:text-[22px] font-bold shadow-lg break-keep">
                         {lang === 'kr' ? 
                             '글로벌 자본 유치와 안정적 거버넌스 확립을 통한 IPR 클로징 완성' : 
                             'Completing IPR closing through global capital attraction and stable governance'}

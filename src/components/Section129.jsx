@@ -35,14 +35,14 @@ export default function Section129({ isActive }) {
                 <div className={`w-full max-w-[1200px] mx-auto mt-[10px] mb-[36px] grid grid-cols-1 md:grid-cols-2 gap-[20px] transition-all duration-[612ms] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     
                     {/* Card 1 */}
-                    <div className="bg-white border-[6px] border-[#1e3a8a] px-8 py-[28px] flex flex-col shadow-sm">
-                        <div className="text-[#1e3a8a] font-black text-[24px] md:text-[28px] mb-[6px] uppercase">Risk 5.4</div>
-                        <div className="text-gray-700 font-bold text-[22px] mb-[14px] border-b-2 border-gray-100 pb-4">
+                    <div className="bg-white border-[6px] border-[#1d1d1f] px-8 py-[28px] flex flex-col shadow-sm">
+                        <div className="text-[#1d1d1f] font-bold text-[22px] mb-[6px]">4</div>
+                        <div className="text-[#1d1d1f] font-bold text-[22px] mb-[14px] border-b-2 border-gray-100 pb-4">
                             {lang === 'kr' ? '규제 및 정치 변수' : 'Regulatory & Political Variables'}
                         </div>
                         <ul className="text-[18px] text-gray-600 font-medium leading-relaxed space-y-4">
                             <li className="flex items-start">
-                                <span className="text-[#1e3a8a] mr-2">▪</span>
+                                <span className="text-[#1d1d1f] mr-2">▪</span>
                                 <span>{lang === 'kr' ? '서울시 도시계획위원회 정비계획안 승인은 확보(2023.11). 그러나 향후 인허가·환경·교통영향평가·문화재 단계 잔여.' : 'Secured urban planning approval, but permits and various impact assessments remain.'}</span>
                             </li>
                             <li className="flex items-start">
@@ -57,18 +57,18 @@ export default function Section129({ isActive }) {
                     </div>
 
                     {/* Card 2 */}
-                    <div className="bg-white border-[6px] border-[#1e3a8a] px-8 py-[28px] flex flex-col shadow-sm">
-                        <div className="text-[#1e3a8a] font-black text-[24px] md:text-[28px] mb-[6px] uppercase">Risk 5.5</div>
-                        <div className="text-gray-700 font-bold text-[22px] mb-[14px] border-b-2 border-gray-100 pb-4">
+                    <div className="bg-white border-[6px] border-[#1d1d1f] px-8 py-[28px] flex flex-col shadow-sm">
+                        <div className="text-[#1d1d1f] font-bold text-[22px] mb-[6px]">5</div>
+                        <div className="text-[#1d1d1f] font-bold text-[22px] mb-[14px] border-b-2 border-gray-100 pb-4">
                             {lang === 'kr' ? '앵커 임차인 확보' : 'Securing Anchor Tenants'}
                         </div>
                         <ul className="text-[18px] text-gray-600 font-medium leading-relaxed space-y-4">
                             <li className="flex items-start">
-                                <span className="text-[#1e3a8a] mr-2">▪</span>
+                                <span className="text-[#1d1d1f] mr-2">▪</span>
                                 <span>{lang === 'kr' ? '삼성물산 마스터리스 75% 확약 및 리츠칼튼 호텔 운영 협약은 큰 진전이나, 삼성물산 확약 연장 협상이 본PF 전환의 변수.' : 'Samsung C&T master lease (75%) and Ritz-Carlton agreement are progress, but lease extension negotiation is a variable for Main PF.'}</span>
                             </li>
                             <li className="flex flex-col bg-gray-50 p-4 rounded-lg mt-2">
-                                <span className="font-bold text-[#1e3a8a] mb-1">{lang === 'kr' ? 'Trophy Positioning의 핵심' : 'Core of Trophy Positioning'}</span>
+                                <span className="font-bold text-[#1d1d1f] mb-1">{lang === 'kr' ? 'Trophy Positioning의 핵심' : 'Core of Trophy Positioning'}</span>
                                 <span className="text-[17px]">{lang === 'kr' ? '오피스 잔여 25% 이상 공간에 대한 글로벌 다국적 본사(Google Korea, Microsoft Korea, Amazon Korea 등) 유치.' : 'Attracting global HQs (Google, MS, Amazon, etc.) for the remaining 25% office space.'}</span>
                             </li>
                         </ul>
@@ -77,7 +77,7 @@ export default function Section129({ isActive }) {
 
                 {/* Bottom text */}
                 <div className={`w-full text-center mt-2 transition-all duration-[612ms] delay-[122ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-                    <div className="inline-block bg-[#1e3a8a] text-white px-8 py-5 text-[20px] md:text-[22px] font-bold shadow-lg break-keep">
+                    <div className="inline-block bg-[#1d1d1f] text-white px-8 py-5 text-[20px] md:text-[22px] font-bold shadow-lg break-keep">
                         {lang === 'kr' ? 
                             '정권·정책 변화에 유연하게 대응하고, 글로벌 앵커 테넌트로 자산 가치 극대화' : 
                             'Flexibly respond to political shifts and maximize asset value with global anchor tenants'}
