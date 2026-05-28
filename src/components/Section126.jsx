@@ -73,7 +73,7 @@ export default function Section126({ isActive }) {
                     </div>
 
                     {/* Right: 2D Stack Diagram (Clear & Readable) */}
-                    <div className="lg:col-span-6 flex justify-center items-center py-4">
+                    <div className="lg:col-span-6 flex justify-center lg:justify-start items-center py-4">
                         <div className={`w-full max-w-[500px] flex flex-col gap-2 transition-all duration-1000 delay-300 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                             
                             {/* Layer 4: REIT */}
