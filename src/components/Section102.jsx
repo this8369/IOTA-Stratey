@@ -9,12 +9,11 @@ export default function Section102({ isActive }) {
         if (!isActive) { setStep(0); return; }
         const timers = [
             setTimeout(() => setStep(1), 300),
-            setTimeout(() => setStep(2), 800),
-            setTimeout(() => setStep(3), 1200),
-            setTimeout(() => setStep(4), 1400),
-            setTimeout(() => setStep(5), 1600),
-            setTimeout(() => setStep(6), 1800),
-            setTimeout(() => setStep(7), 2400)
+            setTimeout(() => setStep(2), 900),
+            setTimeout(() => setStep(3), 1400),
+            setTimeout(() => setStep(4), 1800),
+            setTimeout(() => setStep(5), 2200),
+            setTimeout(() => setStep(6), 2600),
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -24,77 +23,67 @@ export default function Section102({ isActive }) {
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        {lang === 'kr' ? 'AI 도입 워크플로우' : 'AI Adoption Workflow'}
+                    <span className="inline-block text-[20px] md:text-[24px] font-bold text-blue-600 tracking-[-0.02em] mb-[12px]">
+                        6.1 Acquisition Underwriting
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-12 transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    {lang === 'kr' ? <>전 밸류체인의 AI 인프라 고도화 및 운용 효율 극대화</> : <>AI Infrastructure Enhancement & Operation Efficiency across Value Chain</>}
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-4 transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    {lang === 'kr' ? <>AI 기반 딜 소싱 및 투자심의 자동화</> : <>AI-Driven Deal Sourcing & IC Automation</>}
                 </h2>
 
-                {/* 2x2 Grid for Workflows */}
-                <div className="w-full max-w-[1200px] grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-                    
-                    {/* 1. Acquisition Underwriting */}
-                    <div className={`flex flex-col text-left bg-white border border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm transition-all duration-700 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                        <div className="flex items-center gap-4 mb-5">
-                            <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-black text-2xl">1</div>
-                            <h3 className="text-[20px] md:text-[24px] font-bold text-gray-900">6.1 Acquisition Underwriting</h3>
-                        </div>
-                        <p className="text-[16px] md:text-[18px] text-gray-600 leading-relaxed font-medium break-keep">
-                            {lang === 'kr' 
-                                ? 'Claude/GPT 기반 자동화 LOI 작성, 시장 비교 분석, Cap rate 시나리오 산출, IC 메모 초안 자동 생성. Goldman과 Blackstone이 이미 도입한 워크플로우의 한국 적용.'
-                                : 'Claude/GPT-based automated LOI drafting, market comp analysis, Cap rate scenarios, and IC memo drafts. Applying Goldman & Blackstone workflows to Korea.'}
-                        </p>
+                {/* Infographic Area */}
+                <div className="w-full max-w-[1100px] mt-12 mb-16 relative">
+                    {/* Animated Flow Line */}
+                    <div className="absolute top-1/2 left-[15%] right-[15%] h-[6px] bg-gray-100 rounded-full z-0 -translate-y-1/2 overflow-hidden">
+                        <div className={`h-full bg-gradient-to-r from-transparent via-blue-400 to-indigo-600 transition-all duration-[2000ms] ease-in-out ${step >= 4 ? 'translate-x-0 w-full opacity-100' : '-translate-x-full w-0 opacity-0'}`}></div>
                     </div>
 
-                    {/* 2. Asset Management */}
-                    <div className={`flex flex-col text-left bg-white border border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm transition-all duration-700 delay-100 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                        <div className="flex items-center gap-4 mb-5">
-                            <div className="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center font-black text-2xl">2</div>
-                            <h3 className="text-[20px] md:text-[24px] font-bold text-gray-900 break-keep">6.2 Asset Management / CF Protection</h3>
+                    <div className="flex w-full justify-between items-center relative z-10">
+                        {/* Node 1: Raw Data */}
+                        <div className={`w-[260px] bg-white border-2 border-gray-200 rounded-2xl p-5 shadow-lg transition-all duration-700 ${step >= 3 ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 -translate-x-12 scale-95'}`}>
+                            <h4 className="font-bold text-gray-800 text-[18px] mb-4">{lang === 'kr' ? '원천 데이터 수집' : 'Raw Data Input'}</h4>
+                            <div className="flex flex-col gap-3">
+                                <div className="bg-gray-50 border border-gray-100 p-3 rounded-lg text-[15px] font-bold text-gray-600 flex items-center justify-center gap-2">📊 {lang === 'kr' ? '시장 보고서 / 매물 텍스트' : 'Market Reports & Teasers'}</div>
+                                <div className="bg-gray-50 border border-gray-100 p-3 rounded-lg text-[15px] font-bold text-gray-600 flex items-center justify-center gap-2">📈 {lang === 'kr' ? '실거래가 및 Cap Rate' : 'Transaction & Cap Rate'}</div>
+                            </div>
                         </div>
-                        <p className="text-[16px] md:text-[18px] text-gray-600 leading-relaxed font-medium break-keep">
-                            {lang === 'kr' 
-                                ? '임차인 모니터링, 임대료 연체 예측, 공실 위험 조기 경보, 캡엑스(CAPEX) 최적화. 이지스 73조 원 AUM 전체에 적용 시 운용 효율 20~30% 개선 기대.'
-                                : 'Tenant monitoring, rent arrears prediction, early vacancy warning, and CAPEX optimization. Expect 20-30% efficiency gain across IGIS 73T KRW AUM.'}
-                        </p>
-                    </div>
 
-                    {/* 3. LP Reporting */}
-                    <div className={`flex flex-col text-left bg-white border border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm transition-all duration-700 delay-200 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                        <div className="flex items-center gap-4 mb-5">
-                            <div className="w-12 h-12 bg-teal-100 text-teal-600 rounded-xl flex items-center justify-center font-black text-2xl">3</div>
-                            <h3 className="text-[20px] md:text-[24px] font-bold text-gray-900">6.3 LP Reporting</h3>
+                        {/* Node 2: AI Core */}
+                        <div className={`flex flex-col items-center transition-all duration-1000 ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
+                            <div className="w-[160px] h-[160px] rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex flex-col items-center justify-center shadow-[0_0_40px_rgba(79,70,229,0.4)] relative">
+                                {/* Pulse ring */}
+                                <div className="absolute inset-0 rounded-full border-4 border-indigo-400 animate-ping opacity-20"></div>
+                                <span className="text-white font-black text-[28px] tracking-tight">Claude</span>
+                                <span className="text-white/80 font-bold text-[18px]">/ GPT-4</span>
+                            </div>
+                            <div className="mt-6 bg-[#1d1d1f] text-white px-5 py-2 rounded-full font-bold text-[16px] shadow-md">
+                                {lang === 'kr' ? '시장 비교 및 시나리오 연산' : 'Market Comp & Scenario Compute'}
+                            </div>
                         </div>
-                        <p className="text-[16px] md:text-[18px] text-gray-600 leading-relaxed font-medium break-keep">
-                            {lang === 'kr' 
-                                ? '분기 LP 리포트 자동 생성, 한·영·중·일 동시 출력, ESG 데이터 통합. 글로벌 LP 베이스 확장 시 필수적인 커뮤니케이션 인프라 구축.'
-                                : 'Automated quarterly LP reports with simultaneous EN/KR/CN/JP output and ESG data integration. Essential infra for global LP base expansion.'}
-                        </p>
-                    </div>
 
-                    {/* 4. IPR Project REIT */}
-                    <div className={`flex flex-col text-left bg-white border border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm transition-all duration-700 delay-300 ${step >= 6 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                        <div className="flex items-center gap-4 mb-5">
-                            <div className="w-12 h-12 bg-blue-100 text-blue-800 rounded-xl flex items-center justify-center font-black text-2xl">4</div>
-                            <h3 className="text-[20px] md:text-[24px] font-bold text-gray-900">6.4 IPR Project REIT 구조화</h3>
+                        {/* Node 3: Output Documents */}
+                        <div className={`w-[260px] bg-gradient-to-b from-blue-50 to-white border-2 border-blue-200 rounded-2xl p-5 shadow-xl transition-all duration-1000 ${step >= 5 ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 translate-x-12 scale-95'}`}>
+                            <h4 className="font-bold text-blue-800 text-[18px] mb-4">{lang === 'kr' ? '초안 자동 생성' : 'Auto Draft Generation'}</h4>
+                            <div className="flex flex-col gap-3">
+                                <div className="bg-white border-2 border-blue-100 p-4 rounded-xl shadow-sm text-center flex flex-col items-center justify-center">
+                                    <span className="text-[28px] mb-1">📝</span>
+                                    <span className="font-black text-blue-900 text-[18px]">LOI (의향서)</span>
+                                </div>
+                                <div className="bg-white border-2 border-blue-100 p-4 rounded-xl shadow-sm text-center flex flex-col items-center justify-center">
+                                    <span className="text-[28px] mb-1">📑</span>
+                                    <span className="font-black text-blue-900 text-[18px]">IC Memo (투자심의)</span>
+                                </div>
+                            </div>
                         </div>
-                        <p className="text-[16px] md:text-[18px] text-gray-600 leading-relaxed font-medium break-keep">
-                            {lang === 'kr' 
-                                ? '7조 원 PF의 시나리오 분석, 트랜치별 캐시플로우 시뮬레이션, 금리·공실·임대료 민감도, IPO/매각 시나리오의 자동화.'
-                                : 'Scenario analysis for 7T KRW PF, tranche-level cash flow simulation, interest/vacancy/rent sensitivity, and automated IPO/exit scenarios.'}
-                        </p>
                     </div>
-
                 </div>
 
                 {/* Bottom Text (Style from 59~62p) */}
-                <div className={`max-w-[1200px] text-[16px] md:text-[20px] leading-[1.5] font-bold text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 7 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`max-w-[1200px] mt-2 text-[16px] md:text-[20px] leading-[1.5] font-bold text-gray-700 break-keep text-center transition-all duration-[900ms] ease-out ${step >= 6 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-3 mx-auto">
-                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>{lang === 'kr' ? '투자 검토부터 자산 운용, 펀드 리포팅까지 부동산 밸류체인 전반에 AI 자동화 인프라 도입' : 'AI automation infrastructure across the entire real estate value chain from investment review to fund reporting'}</span></li>
-                        <li className="flex items-start"><span className="mr-3 text-blue-600">▪</span><span className="text-blue-900">{lang === 'kr' ? '이지스의 방대한 AUM 운용 효율성을 20~30% 획기적으로 개선하며 글로벌 확장의 코어 인프라로 작용' : 'Dramatically improves efficiency of massive AUM by 20-30%, serving as core infra for global expansion'}</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>{lang === 'kr' ? '단순 텍스트 매물 정보와 시장 데이터를 AI가 즉각적으로 파싱하여 재무 시나리오(Cap Rate)를 도출' : 'AI instantly parses raw property info & market data to compute financial scenarios (Cap Rate)'}</span></li>
+                        <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>{lang === 'kr' ? 'Goldman Sachs, Blackstone 등 글로벌 Top-tier 운용사들이 이미 도입한 업무 혁신 워크플로우를 한국 시장에 적용' : 'Applying the operational innovation workflow already adopted by global top-tiers like Goldman & Blackstone to Korea'}</span></li>
                     </ul>
                 </div>
 
