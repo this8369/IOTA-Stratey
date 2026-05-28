@@ -44,7 +44,7 @@ export default function Section126({ isActive }) {
                             <h3 className="text-[#1d1d1f] font-bold text-[28px] mb-3 leading-tight break-keep">
                                 {lang === 'kr' ? 'Factorial Builders 운영 모델' : 'Factorial Builders Operating Model'}
                             </h3>
-                            <p className="text-[16px] text-gray-700 font-bold leading-relaxed break-keep tracking-tight">
+                            <p className="text-[15px] text-gray-700 font-bold leading-relaxed break-keep tracking-tighter">
                                 {lang === 'kr' ? (
                                     <>'Asset as a Service' 모델 적용, AI, 로봇, IoT가 통합된 독자적 빌딩 OS 구축<br/>글로벌 스탠다드 대비 확고한 초격차 운영 경쟁력 확보</>
                                 ) : (
@@ -58,9 +58,9 @@ export default function Section126({ isActive }) {
                             <h3 className="text-[#1d1d1f] font-bold text-[28px] mb-3 leading-tight break-keep">
                                 {lang === 'kr' ? 'Trophy Stack 자본 템플릿' : 'Trophy Stack Capital Template'}
                             </h3>
-                            <p className="text-[16px] text-gray-700 font-bold leading-relaxed break-keep tracking-tight mb-4">
+                            <p className="text-[15px] text-gray-700 font-bold leading-relaxed break-keep tracking-tighter mb-4">
                                 {lang === 'kr' ? (
-<>[PFV + 부동산펀드 + 리츠 + LP]가 완벽하게 결합된 통합 자본 구조 <span className="whitespace-nowrap">구축 및 브랜드화</span><br/>향후 YIBD, 잠실 등 신규 트로피 에셋의 템플릿으로 확장</>
+<>[PFV + 부동산펀드 + 리츠 + LP]가 완벽하게 결합된 통합 자본 구조 구축 및 브랜드화<br/>향후 YIBD, 잠실 등 신규 트로피 에셋의 템플릿으로 확장</>
                                 ) : (
                                     <>Branding a seamlessly unified capital structure of [PFV + RE Fund + REIT + LP]<br/>This success model will expand as a template for future trophy assets like YIBD and Jamsil</>
                                 )}
