@@ -10,7 +10,9 @@ export default function Section126({ isActive }) {
         const timers = [
             setTimeout(() => setStep(1), 184),
             setTimeout(() => setStep(2), 551),
-            setTimeout(() => setStep(3), 918)
+            setTimeout(() => setStep(3), 918),
+            setTimeout(() => setStep(4), 1285),
+            setTimeout(() => setStep(5), 1652)
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -26,67 +28,95 @@ export default function Section126({ isActive }) {
                             {lang === 'kr' ? 'IOTA가 제시하는 미래 청사진' : 'Future Blueprint Presented by IOTA'}
                         </span>
                     </div>
-                    <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[612ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[612ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         {lang === 'kr' ? '혁신 운영 쇼케이스와 트로피 시리즈 템플릿' : 'Innovative Operation Showcase & Trophy Template'}
                     </h2>
                 </div>
 
-                {/* Content: 2 Cards (1x2 grid) */}
-                <div className={`w-full max-w-[1200px] mx-auto mt-[10px] mb-[36px] grid grid-cols-1 md:grid-cols-2 gap-[20px] transition-all duration-[612ms] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                {/* Main Content: Left Text, Right 3D Diagram */}
+                <div className="w-full max-w-[1300px] grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
                     
-                    {/* Card 1 */}
-                    <div className="bg-white border-[6px] border-[#1e3a8a] px-8 py-[28px] flex flex-col shadow-sm">
-                        <div className="text-[#1e3a8a] font-black text-[24px] md:text-[28px] mb-[6px] uppercase">Blueprint 01</div>
-                        <div className="text-gray-700 font-bold text-[22px] mb-[14px] border-b-2 border-gray-100 pb-4">
-                            {lang === 'kr' ? 'Factorial Builders 운영 모델 쇼케이스' : 'Factorial Builders Operation Showcase'}
+                    {/* Left: Text Content */}
+                    <div className={`lg:col-span-5 flex flex-col gap-8 transition-all duration-700 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                        
+                        <div className="relative pl-6 border-l-[4px] border-[#1e3a8a]">
+                            <div className="text-[#1e3a8a] font-black text-[20px] tracking-widest uppercase mb-2">Blueprint 01</div>
+                            <h3 className="text-[#1d1d1f] font-bold text-[26px] mb-3 leading-tight break-keep">
+                                {lang === 'kr' ? 'Factorial Builders 운영 모델' : 'Factorial Builders Operating Model'}
+                            </h3>
+                            <p className="text-[17px] text-gray-600 font-medium leading-relaxed break-keep">
+                                {lang === 'kr' ? 
+                                    "'Asset as a Service' 모델을 적용하여 AI, 로봇, IoT가 통합된 독자적 빌딩 OS를 구현. 글로벌 스탠다드 대비 확고한 초격차 운영 경쟁력을 확보합니다." : 
+                                    "Implementing a proprietary building OS integrated with AI, robotics, and IoT under the 'Asset as a Service' model, securing an ultra-gap operational edge over global standards."}
+                            </p>
                         </div>
-                        <ul className="text-[18px] text-gray-600 font-medium leading-relaxed space-y-4">
-                            <li className="flex items-start">
-                                <span className="text-[#1e3a8a] mr-2">▪</span>
-                                <span>{lang === 'kr' ? "IOTA 오피스 입주사에게 'Asset as a Service' 표준 모델 적용." : "Applying 'Asset as a Service' standard model to IOTA office tenants."}</span>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="text-[#1e3a8a] mr-2">▪</span>
-                                <span>{lang === 'kr' ? 'AI · 로봇 · IoT 통합 빌딩 OS 구현.' : 'Implementation of AI, Robot, and IoT integrated Building OS.'}</span>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="text-[#1e3a8a] mr-2">▪</span>
-                                <span>{lang === 'kr' ? '글로벌 Standard 대비 확고한 차별점 확보.' : 'Securing distinct differentiation against global standards.'}</span>
-                            </li>
-                        </ul>
+
+                        <div className="relative pl-6 border-l-[4px] border-[#1d1d1f]">
+                            <div className="text-[#1d1d1f] font-black text-[20px] tracking-widest uppercase mb-2">Blueprint 02</div>
+                            <h3 className="text-[#1d1d1f] font-bold text-[26px] mb-3 leading-tight break-keep">
+                                {lang === 'kr' ? 'Trophy Stack 자본 템플릿' : 'Trophy Stack Capital Template'}
+                            </h3>
+                            <p className="text-[17px] text-gray-600 font-medium leading-relaxed break-keep mb-4">
+                                {lang === 'kr' ? 
+                                    "[PFV + 부동산펀드 + 리츠 + LP]가 완벽하게 결합된 통합 자본 구조를 브랜드화합니다. 이 성공 모델은 향후 YIBD, 잠실 등 신규 트로피 에셋의 템플릿으로 확장됩니다." : 
+                                    "Branding a seamlessly unified capital structure of [PFV + RE Fund + REIT + LP]. This success model will expand as a template for future trophy assets like YIBD and Jamsil."}
+                            </p>
+                            <div className="inline-flex items-center justify-center bg-[#1d1d1f] text-white px-5 py-2 rounded-full text-sm font-bold shadow-md">
+                                {lang === 'kr' ? '미래 10년의 확장형 DNA 이식' : 'Implanting Scalable DNA for the Next 10 Years'}
+                            </div>
+                        </div>
+
                     </div>
 
-                    {/* Card 2 */}
-                    <div className="bg-white border-[6px] border-[#1d1d1f] px-8 py-[28px] flex flex-col shadow-sm">
-                        <div className="text-[#1d1d1f] font-black text-[24px] md:text-[28px] mb-[6px] uppercase">Blueprint 02</div>
-                        <div className="text-gray-700 font-bold text-[22px] mb-[14px] border-b-2 border-gray-100 pb-4">
-                            {lang === 'kr' ? '향후 트로피 시리즈 템플릿' : 'Future Trophy Series Template'}
-                        </div>
-                        <ul className="text-[18px] text-gray-600 font-medium leading-relaxed space-y-4">
-                            <li className="flex items-start">
-                                <span className="text-[#1d1d1f] mr-2">▪</span>
-                                <span>{lang === 'kr' ? 'IOTA 성공 시 YIBD, 잠실, 여의도, 마곡 등 신규 트로피의 표준 구조.' : 'Upon IOTA success, acts as a standard structure for new trophies in YIBD, Jamsil, Yeouido, Magok.'}</span>
-                            </li>
-                            <li className="flex items-center justify-center bg-gray-50 p-4 rounded-lg mt-4 border border-gray-200">
-                                <span className="font-bold text-[#1e3a8a] text-[19px] text-center">
-                                    {lang === 'kr' ? '[PFV + 부동산펀드 + 리츠 + LP 통합]' : '[PFV + RE Fund + REIT + LP Unified]'}
-                                </span>
-                            </li>
-                            <li className="text-center mt-2">
-                                <span className="text-[18px] font-bold text-gray-800">
-                                    {lang === 'kr' ? '통합 자본 구조를 이지스 Trophy Stack으로 브랜드화' : 'Branding the unified capital structure as IGIS Trophy Stack'}
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                    {/* Right: 3D Stack Diagram */}
+                    <div className="lg:col-span-7 flex justify-center items-center h-[450px]">
+                        <div className="relative w-full max-w-[400px] h-[400px] flex items-center justify-center" style={{ perspective: '1200px' }}>
+                            <div className="relative w-[280px] h-[280px]" style={{ transformStyle: 'preserve-3d', transform: 'rotateX(60deg) rotateZ(-45deg)' }}>
+                                
+                                {/* Layer 4: REIT (Top) */}
+                                <div className="absolute inset-0 bg-[#0f172a]/95 border border-white/20 flex flex-col items-center justify-center shadow-[30px_30px_50px_rgba(0,0,0,0.4)] transition-all duration-[1000ms] ease-out backdrop-blur-sm" 
+                                     style={{ transform: step >= 5 ? 'translateZ(180px)' : 'translateZ(0px)', opacity: step >= 5 ? 1 : 0 }}>
+                                     <div style={{ transform: 'rotateZ(45deg) rotateX(-60deg)', textAlign: 'center' }}>
+                                        <div className="text-[#60a5fa] font-bold text-sm tracking-widest mb-1">EXIT / SECURITIZATION</div>
+                                        <div className="text-white font-extrabold text-2xl">IOTA Office REIT</div>
+                                     </div>
+                                </div>
 
-                {/* Bottom text */}
-                <div className={`w-full text-center mt-2 transition-all duration-[612ms] delay-[122ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-                    <div className="inline-block bg-[#1d1d1f] text-white px-8 py-5 text-[20px] md:text-[22px] font-bold shadow-lg break-keep">
-                        {lang === 'kr' ? 
-                            '단일 프로젝트 성공을 넘어 이지스 미래 10년의 확장형 DNA (Trophy Stack) 이식' : 
-                            'Beyond a single project success: Implanting scalable DNA (Trophy Stack) for IGIS next 10 years'}
+                                {/* Layer 3: Fund */}
+                                <div className="absolute inset-0 bg-[#1e3a8a]/95 border border-white/20 flex flex-col items-center justify-center shadow-[30px_30px_50px_rgba(0,0,0,0.3)] transition-all duration-[1000ms] ease-out backdrop-blur-sm" 
+                                     style={{ transform: step >= 4 ? 'translateZ(120px)' : 'translateZ(0px)', opacity: step >= 4 ? 1 : 0 }}>
+                                     <div style={{ transform: 'rotateZ(45deg) rotateX(-60deg)', textAlign: 'center' }}>
+                                        <div className="text-blue-300 font-bold text-sm tracking-widest mb-1">STABILIZED HOLDING</div>
+                                        <div className="text-white font-extrabold text-2xl">IGIS RE Fund</div>
+                                     </div>
+                                </div>
+
+                                {/* Layer 2: PFV */}
+                                <div className="absolute inset-0 bg-[#3b82f6]/95 border border-white/20 flex flex-col items-center justify-center shadow-[30px_30px_50px_rgba(0,0,0,0.2)] transition-all duration-[1000ms] ease-out backdrop-blur-sm" 
+                                     style={{ transform: step >= 3 ? 'translateZ(60px)' : 'translateZ(0px)', opacity: step >= 3 ? 1 : 0 }}>
+                                     <div style={{ transform: 'rotateZ(45deg) rotateX(-60deg)', textAlign: 'center' }}>
+                                        <div className="text-blue-100 font-bold text-sm tracking-widest mb-1">DEVELOPMENT PHASE</div>
+                                        <div className="text-white font-extrabold text-2xl">Project PFV</div>
+                                     </div>
+                                </div>
+
+                                {/* Layer 1: LP (Bottom) */}
+                                <div className="absolute inset-0 bg-[#e2e8f0]/95 border border-gray-300 flex flex-col items-center justify-center shadow-[20px_20px_30px_rgba(0,0,0,0.1)] transition-all duration-[1000ms] ease-out" 
+                                     style={{ transform: step >= 2 ? 'translateZ(0px)' : 'translateZ(-40px)', opacity: step >= 2 ? 1 : 0 }}>
+                                     <div style={{ transform: 'rotateZ(45deg) rotateX(-60deg)', textAlign: 'center' }}>
+                                        <div className="text-gray-500 font-bold text-sm tracking-widest mb-1">CAPITAL BASE</div>
+                                        <div className="text-[#1d1d1f] font-extrabold text-2xl">Global LP</div>
+                                     </div>
+                                </div>
+
+                                {/* Dotted connection lines */}
+                                <div className={`absolute left-0 top-0 w-full h-full border-l-2 border-b-2 border-dashed border-[#1e3a8a]/30 transition-all duration-1000 ${step >= 5 ? 'opacity-100' : 'opacity-0'}`} style={{ transform: 'translateZ(0px) scale(1.1) translate(-5%, 5%)' }}></div>
+                                <div className={`absolute right-[-60px] top-[140px] transition-all duration-700 delay-500 ${step >= 5 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`} style={{ transform: 'rotateZ(45deg) rotateX(-60deg)' }}>
+                                    <div className="bg-[#1e3a8a] text-white text-xs font-bold px-3 py-1 rounded shadow-lg whitespace-nowrap mb-2 animate-bounce">Expand to YIBD</div>
+                                    <div className="bg-[#1e3a8a] text-white text-xs font-bold px-3 py-1 rounded shadow-lg whitespace-nowrap animate-bounce" style={{ animationDelay: '0.2s' }}>Expand to Jamsil</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
