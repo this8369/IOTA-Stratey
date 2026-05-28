@@ -532,6 +532,15 @@ export const menuDataKr = [
                     { label: "전략적 앵커 자산", id: "page-126" },
                     { label: "미래 청사진 (Trophy Stack)", id: "page-127" }
                 ]
+            },
+            {
+                title: "Chapter 4. 리스크 분석",
+                id: "page-128",
+                items: [
+                    { label: "매크로 및 시장 리스크", id: "page-129" },
+                    { label: "규제 및 임차 리스크", id: "page-130" },
+                    { label: "자본 및 거버넌스 리스크", id: "page-131" }
+                ]
             }
         ] 
     }
