@@ -18,19 +18,20 @@ export default function Section116({ isActive }) {
     return (
         <section className="section w-full h-full bg-[#f4f4f5] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <div className="w-full max-w-[1400px] mx-auto flex flex-col justify-center h-full">
-                
                 {/* Header */}
-                <div className={`transition-all duration-[612ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    <span className="inline-block text-[20px] md:text-[24px] font-bold text-[#1e3a8a] tracking-[-0.02em] mb-[12px]">
-                        {lang === 'kr' ? '글로벌 도시 위계 상승의 분기점' : 'Turning Point for Global Urban Hierarchy'}
-                    </span>
+                <div className="w-full flex flex-col items-center text-center mb-[36px]">
+                    <div className={`transition-all duration-[612ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                        <span className="inline-block text-[20px] md:text-[24px] font-bold text-[#1e3a8a] tracking-[-0.02em] mb-[12px]">
+                            {lang === 'kr' ? '글로벌 도시 위계 상승의 분기점' : 'Turning Point for Global Urban Hierarchy'}
+                        </span>
+                    </div>
+                    <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[612ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                        {lang === 'kr' ? '글로벌 거점 도시들의 재개발 패턴 한국판 적용' : 'Korean Application of Global Hub Redevelopment Patterns'}
+                    </h2>
                 </div>
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-4 transition-all duration-[612ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    {lang === 'kr' ? '글로벌 거점 도시들의 재개발 패턴 한국판 적용' : 'Korean Application of Global Hub Redevelopment Patterns'}
-                </h2>
 
                 {/* Content: 3 Cards */}
-                <div className={`w-full max-w-[1200px] mt-[20px] mb-[36px] grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-[612ms] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`w-full max-w-[1200px] mx-auto mt-[20px] mb-[36px] grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-[612ms] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     
                     {/* Card 1: Tokyo */}
                     <div className="bg-white border-[6px] border-[#1e3a8a] p-8 flex flex-col shadow-sm">
@@ -67,7 +68,7 @@ export default function Section116({ isActive }) {
                 </div>
 
                 {/* Bottom text */}
-                <div className={`mt-2 text-center transition-all duration-[612ms] delay-[122ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                <div className={`w-full text-center mt-2 transition-all duration-[612ms] delay-[122ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                     <div className="inline-block bg-[#1e3a8a] text-white px-8 py-5 text-[20px] md:text-[22px] font-bold shadow-lg">
                         {lang === 'kr' ? 
                             'IOTA 서울의 본질: 서울이 글로벌 도시 위계상 한 단계 도약하는 분기점이자 Transit-Oriented Vertical City의 한국판 적용' : 

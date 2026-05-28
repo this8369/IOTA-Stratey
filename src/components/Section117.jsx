@@ -18,19 +18,20 @@ export default function Section117({ isActive }) {
     return (
         <section className="section w-full h-full bg-[#f4f4f5] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <div className="w-full max-w-[1400px] mx-auto flex flex-col justify-center h-full">
-                
                 {/* Header */}
-                <div className={`transition-all duration-[612ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    <span className="inline-block text-[20px] md:text-[24px] font-bold text-[#1e3a8a] tracking-[-0.02em] mb-[12px]">
-                        {lang === 'kr' ? '국가 인프라급 교통 결절점' : 'Core Location Value'}
-                    </span>
+                <div className="w-full flex flex-col items-center text-center mb-[36px]">
+                    <div className={`transition-all duration-[612ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                        <span className="inline-block text-[20px] md:text-[24px] font-bold text-[#1e3a8a] tracking-[-0.02em] mb-[12px]">
+                            {lang === 'kr' ? '국가 인프라급 교통 결절점' : 'Core Location Value'}
+                        </span>
+                    </div>
+                    <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[612ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                        {lang === 'kr' ? '압도적인 광역 교통망과 도심 연결성' : 'Overwhelming Transit Network & CBD Connectivity'}
+                    </h2>
                 </div>
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-4 transition-all duration-[612ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    {lang === 'kr' ? '압도적인 광역 교통망과 도심 연결성' : 'Overwhelming Transit Network & CBD Connectivity'}
-                </h2>
 
                 {/* Content: 3 Cards */}
-                <div className={`w-full max-w-[1200px] mt-[20px] mb-[36px] grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-[612ms] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`w-full max-w-[1200px] mx-auto mt-[20px] mb-[36px] grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-[612ms] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     
                     {/* Card 1: Network */}
                     <div className="bg-white border-[6px] border-[#1e3a8a] p-8 flex flex-col shadow-sm">
@@ -73,7 +74,7 @@ export default function Section117({ isActive }) {
                 </div>
 
                 {/* Bottom text */}
-                <div className={`max-w-[1200px] mt-2 text-[16px] md:text-[20px] leading-[1.5] font-bold text-gray-700 break-keep text-center transition-all duration-[612ms] delay-[122ms] ease-out ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`w-full max-w-[1200px] mx-auto mt-2 text-[16px] md:text-[20px] leading-[1.5] font-bold text-gray-700 break-keep text-center transition-all duration-[612ms] delay-[122ms] ease-out ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-3 mx-auto">
                         <li className="flex items-start">
                             <span className="mr-3 text-[#1d1d1f]">▪</span>
