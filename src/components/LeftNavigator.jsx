@@ -74,8 +74,8 @@ export default function LeftNavigator({ currentPage, isOpen, setIsOpen }) {
  {/* Toggle Button */}
  <button 
  onClick={() => setIsOpen(!isOpen)}
- className={`fixed top-1/2 -translate-y-1/2 z-[101] bg-white border border-gray-200 p-1 transition-all duration-300 ease-in-out hover:bg-gray-50 flex items-center justify-center rounded-r-md
- ${isOpen ? 'left-[240px] border-l-0' : 'left-0'}`}
+ className={`fixed top-1/2 -translate-y-1/2 z-[101] bg-white opacity-40 hover:opacity-100 border border-gray-200 p-1 transition-all duration-300 ease-in-out hover:bg-gray-50 flex items-center justify-center rounded-r-md
+ ${isOpen ? 'left-[240px] border-l-0 opacity-100' : 'left-0'}`}
  style={{ width: '24px', height: '40px' }}
  aria-label="Toggle Navigator"
  >
