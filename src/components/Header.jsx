@@ -274,7 +274,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
  <header id="main-header"
  onMouseEnter={() => setIsHeaderHovered(true)}
  onMouseLeave={() => setIsHeaderHovered(false)}
- className={`fixed top-0 left-0 w-full z-50 pt-[12px] pb-[10px] transition-all duration-[500ms] ease-out ${isNavOpen ? 'lg:pl-[240px]' : 'pl-0'} ${(isHeaderHovered || isMegaMenuOpen) ? 'bg-white opacity-100' : 'bg-white/40 opacity-40'} text-black`}
+ className={`fixed top-0 left-0 w-full z-50 py-[6px] transition-all duration-[500ms] ease-out ${isNavOpen ? 'lg:pl-[240px]' : 'pl-0'} ${(isHeaderHovered || isMegaMenuOpen) ? 'bg-white opacity-100' : 'bg-white/20 opacity-20'} text-black`}
  style={{ transform: initialTransform.current }}>
  <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto flex justify-between items-center transition-all duration-300">
  <a href="#page-1"
@@ -318,9 +318,19 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
 
  {/* Dropdown Mega Menu */}
  <div
- className={`absolute left-0 !ml-0 top-[100%] w-full bg-white transition-all duration-300 overflow-y-auto ${isMegaMenuOpen ? 'h-[calc(100vh-46px)] opacity-100 shadow-[0_10px_30px_rgba(0,0,0,0.05)] border-t border-gray-100' : 'h-0 opacity-0'}`}
+ className={`absolute left-0 !ml-0 top-[100%] w-full bg-white transition-all duration-300 overflow-y-auto relative ${isMegaMenuOpen ? 'h-[calc(100vh-46px)] opacity-100 shadow-[0_10px_30px_rgba(0,0,0,0.05)] border-t border-gray-100' : 'h-0 opacity-0'}`}
  style={{ zIndex: 40 }}
  >
+ {isMegaMenuOpen && (
+ <button 
+ onClick={(e) => { e.stopPropagation(); setIsMegaMenuOpen(false); setHoveredIndex(null); }}
+ className="absolute top-6 right-8 text-black cursor-pointer hover:text-gray-500 z-50 p-2"
+ >
+ <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+ <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+ </svg>
+ </button>
+ )}
  <div className="w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1600px] mx-auto pt-10 pb-[40px] flex justify-start gap-[120px]">
  {currentMenuData.map((col, idx) => (
  <div
@@ -351,7 +361,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
  {col.title}
  </span>
  </h4>
- <div className="flex flex-col gap-[22px] mt-2">
+ <div className="flex flex-col gap-5 mt-2">
  {col.chapters?.map((chapter, chapIdx) => (
  <div key={chapIdx}>
  {chapter.title && <h5 
@@ -363,7 +373,7 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
  }
  }}
  >{chapter.title}</h5>}
- <ul className="flex flex-col space-y-2.5">
+ <ul className="flex flex-col space-y-2">
  {chapter.items.map((item, itemIdx) => {
  const isNews = item.type === 'news';
  const isLease = item.type === 'lease';
@@ -436,15 +446,17 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
  </div>
  <div className="w-px h-4 bg-gray-300"></div>
  <div className="relative group text-[14px]">
- <button className="flex items-center space-x-1 font-bold text-gray-800 hover:text-gray-500 focus:outline-none pb-2 -mb-2 relative -top-[1px]">
+ <button className="flex items-center space-x-1 font-bold text-gray-800 hover:text-gray-500 focus:outline-none pb-2 -mb-2 relative -top-[1px] cursor-pointer">
  <span className={lang === 'kr' ? 'relative top-[1px]' : ''}>{lang.toUpperCase()}</span>
  <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
  </svg>
  </button>
- <div className="absolute right-0 mt-2 w-16 bg-white border border-gray-100 shadow-lg hidden group-hover:block py-1 z-50 rounded-sm">
- <button className="block w-full text-left px-3 py-1 hover:bg-gray-50 text-gray-600" onClick={() => switchLang('en')}>EN</button>
- <button className="block w-full text-left px-3 py-1 hover:bg-gray-50 text-gray-600" onClick={() => switchLang('kr')}><span className="relative top-[1px]">KR</span></button>
+ <div className="absolute right-0 top-full pt-2 w-16 hidden group-hover:block z-50">
+ <div className="bg-white border border-gray-100 shadow-lg py-1 rounded-sm">
+ <button className="block w-full text-left px-3 py-1 hover:bg-gray-50 text-gray-600 cursor-pointer" onClick={() => switchLang('en')}>EN</button>
+ <button className="block w-full text-left px-3 py-1 hover:bg-gray-50 text-gray-600 cursor-pointer" onClick={() => switchLang('kr')}><span className="relative top-[1px]">KR</span></button>
+ </div>
  </div>
  </div>
  </div>
@@ -614,27 +626,27 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
  <div className="font-sans text-[13px] md:text-[14px] leading-relaxed font-light break-keep">
  <h3 className="text-[18px] md:text-[20px] font-bold mb-6 font-inter ">[면책공고 / Disclaimer]</h3>
  <p className="mb-6">
- 본 <strong>IFPDP (IGIS Fund Production Data Platform) 플랫폼 전략 기획안</strong>은 이지스자산운용 주식회사(이하 “회사”)가 사내 펀드 생산성 향상 및 데이터 아키텍처에 대한 이해를 돕기 위해 관련 정보와 개념적 모델을 근거로 제작한 것이며, 이용 시 다음과 같은 주의사항을 고지합니다.
+ 본 <strong>3조 달러 시대 이지스의 전략 기획안</strong>은 이지스자산운용 주식회사(이하 “회사”)가 향후 글로벌 전략 및 IOTA 프로젝트에 대한 이해를 돕기 위해 관련 정보와 개념적 모델을 근거로 제작한 것이며, 이용 시 다음과 같은 주의사항을 고지합니다.
  </p>
 
  <ol className="list-decimal pl-5 space-y-5">
  <li className="pl-1">
  <strong className="block font-bold mb-1">정보의 목적 및 성격</strong>
- 본 기획안은 정식 시스템 매뉴얼, 투자설명서, 상품설명서 또는 정식 IM(Information Memorandum) 자료가 아니며, 당사가 지향하는 데이터 통합 플랫폼에 대한 구상과 전략적 방향성을 공유하기 위한 내부 참고용 프레젠테이션입니다.<br />
- 본 자료에 포함된 데이터 프레임워크나 텍스트는 어떠한 경우에도 외부 투자 권유 또는 법적 구속력이 있는 시스템 청사진으로 이용될 수 없습니다.
+ 본 기획안은 정식 투자설명서, 상품설명서 또는 정식 IM(Information Memorandum) 자료가 아니며, 당사가 지향하는 전략적 방향성과 공간 구상을 공유하기 위한 내부 참고용 프레젠테이션입니다.<br />
+ 본 자료에 포함된 모델이나 텍스트는 어떠한 경우에도 외부 투자 권유 또는 법적 구속력이 있는 사업 청사진으로 이용될 수 없습니다.
  </li>
  <li className="pl-1">
  <strong className="block font-bold mb-1">정보의 정확성 및 완전성</strong>
- 본 자료에 게재된 아키텍처 도식, 수치, 애니메이션 구현 방식 등은 현재의 전략을 바탕으로 작성된 예시이며, 실제 IFPDP 시스템 개발 및 적용 과정에서 별도의 고지 없이 수시로 조정되거나 변경될 수 있습니다.<br />
- 회사는 본 자료에 포함된 모델링 정보의 기술적 완전성, 적절성에 대하여 명시적 또는 묵시적으로 어떠한 보증을 하지 않습니다.
+ 본 자료에 게재된 도식, 수치, 시나리오 등은 현재의 전략을 바탕으로 작성된 예시이며, 실제 프로젝트 추진 과정에서 별도의 고지 없이 수시로 조정되거나 변경될 수 있습니다.<br />
+ 회사는 본 자료에 포함된 정보의 기술적 완전성, 적절성에 대하여 명시적 또는 묵시적으로 어떠한 보증을 하지 않습니다.
  </li>
  <li className="pl-1">
  <strong className="block font-bold mb-1">이용자의 책임</strong>
  이용자는 본 자료의 정보를 평가함에 있어 각자의 업무 책임하에 참고 목적으로만 활용해야 하며, 본 자료의 내용에 의존하여 진행한 실무적 의사결정에 대하여 회사와 그 임직원은 여하한 법률적 책임을 부담하지 않습니다.
  </li>
  <li className="pl-1">
- <strong className="block font-bold mb-1">플랫폼 추진 권리</strong>
- 회사는 개발 로드맵 및 사업 환경 변화에 따라 본 플랫폼의 구조, 일정 등을 언제든지 변경, 취소 또는 중단할 수 있는 권리를 가집니다.
+ <strong className="block font-bold mb-1">프로젝트 추진 권리</strong>
+ 회사는 사업 환경 변화에 따라 본 프로젝트의 구조, 일정 등을 언제든지 변경, 취소 또는 중단할 수 있는 권리를 가집니다.
  </li>
  </ol>
  </div>
@@ -642,27 +654,27 @@ export default function Header({ onNavigateToNews, onNavigateToHome, onNavigateT
  <div className="font-sans text-[13px] md:text-[14px] leading-relaxed font-light break-keep">
  <h3 className="text-[18px] md:text-[20px] font-bold mb-6 font-inter ">[Disclaimer]</h3>
  <p className="mb-6">
- This <strong>IFPDP (IGIS Fund Production Data Platform) Platform Strategy Proposal</strong> has been produced by IGIS Asset Management Co., Ltd. (the "Company") based on conceptual models to facilitate an understanding of our data architecture and fund productivity enhancement strategies. Please be advised of the following precautions:
+ This <strong>Strategy Proposal for IGIS in the $3 Trillion Era</strong> has been produced by IGIS Asset Management Co., Ltd. (the "Company") based on conceptual models to facilitate an understanding of our global strategy and the IOTA project. Please be advised of the following precautions:
  </p>
 
  <ol className="list-decimal pl-5 space-y-5">
  <li className="pl-1">
  <strong className="block font-bold mb-1">Purpose and Nature of Information</strong>
- This proposal is an internal reference presentation intended to share the vision and strategic direction of our data integration platform. It is not an official system manual, prospectus, or Information Memorandum (IM).<br />
- Data frameworks or strings included herein shall not be used under any circumstances as external investment solicitations or legally binding system blueprints.
+ This proposal is an internal reference presentation intended to share the vision and strategic direction of our platform. It is not a prospectus, or Information Memorandum (IM).<br />
+ Frameworks or text included herein shall not be used under any circumstances as external investment solicitations or legally binding blueprints.
  </li>
  <li className="pl-1">
  <strong className="block font-bold mb-1">Accuracy and Completeness of Information</strong>
- The architectural diagrams, numerical data, and animation implementations presented are illustrative examples based on current strategies and are subject to adjustment without prior notice during actual IFPDP system development.<br />
- The Company makes no express or implied representations or warranties regarding the technical completeness or suitability of the modeling information contained herein.
+ The diagrams, numerical data, and scenarios presented are illustrative examples based on current strategies and are subject to adjustment without prior notice during actual project implementation.<br />
+ The Company makes no express or implied representations or warranties regarding the technical completeness or suitability of the information contained herein.
  </li>
  <li className="pl-1">
  <strong className="block font-bold mb-1">User's Responsibility</strong>
  Users must utilize this information solely for reference under their own professional responsibility. The Company and its employees shall assume no legal liability whatsoever for any practical decisions made relying on this content.
  </li>
  <li className="pl-1">
- <strong className="block font-bold mb-1">Platform Development Rights</strong>
- The Company reserves the right to modify, cancel, or suspend the structure and schedule of this platform at any time depending on development roadmaps and business environment changes.
+ <strong className="block font-bold mb-1">Project Development Rights</strong>
+ The Company reserves the right to modify, cancel, or suspend the structure and schedule of this project at any time depending on business environment changes.
  </li>
  </ol>
  </div>
