@@ -90,10 +90,10 @@ export default function Section122({ isActive }) {
 
                 {/* Bottom text */}
                 <div className={`w-full text-center mt-2 transition-all duration-[612ms] delay-[122ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-                    <div className="inline-block border-2 border-red-700 text-red-700 bg-red-50 px-8 py-5 text-[20px] md:text-[22px] font-bold shadow-sm break-keep">
+                    <div className="inline-block bg-[#1e3a8a] text-white px-8 py-5 text-[20px] md:text-[22px] font-bold shadow-lg break-keep">
                         {lang === 'kr' ? 
-                            '현 시점(2026년 초) 가장 중대한 리스크: 데드라인 내 공매 회피 및 본PF 클로징' : 
-                            'Most critical risk at present: Avoiding short sale and closing Main PF within deadline.'}
+                            '2026년 4월 2조 1,964억 규모 리파이낸싱 완료' : 
+                            'Completed 2.196T KRW Refinancing in April 2026'}
                     </div>
                 </div>
             </div>

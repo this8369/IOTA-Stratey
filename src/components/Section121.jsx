@@ -82,8 +82,8 @@ export default function Section121({ isActive }) {
                                     {lang === 'kr' ? '한투리얼·HDC현산의 트랜치 B 우선매수권. IPR의 신규 자본 유치 시 Dilution 위험으로 작용.' : 'Pre-emptive rights of Tranche B cause dilution risk during new IPR capital raises.'}
                                 </p>
                             </div>
-                            <div className="bg-gray-50 p-4 border-l-4 border-gray-800">
-                                <p className="text-[16px] text-gray-700 font-bold">
+                            <div className="bg-[#1e3a8a]/10 p-5 rounded-lg border border-[#1e3a8a]/20 shadow-sm mt-4">
+                                <p className="text-[18px] text-[#1e3a8a] font-bold leading-relaxed">
                                     {lang === 'kr' ? '대응 방안: 일부 매입·정리(buyback) 및 행사 조건 명확화를 통해 자본 구조 사전 정리 필요' : 'Action: Clarify conditions and perform buybacks to clean up capital structure.'}
                                 </p>
                             </div>
