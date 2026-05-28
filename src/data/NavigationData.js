@@ -535,19 +535,19 @@ export const menuDataKr = [
             },
             {
                 title: "Chapter 4. Value Creation Thesis",
-                id: "page-127",
+                id: "page-128",
                 items: [
-                    { label: "근원적 자산 가치", id: "page-128" },
-                    { label: "프라임 프리미엄과 엑시트 전략", id: "page-129" }
+                    { label: "근원적 자산 가치", id: "page-129" },
+                    { label: "프라임 프리미엄과 엑시트 전략", id: "page-130" }
                 ]
             },
             {
                 title: "Chapter 5. 리스크 분석",
-                id: "page-130",
+                id: "page-131",
                 items: [
-                    { label: "매크로 및 시장 리스크", id: "page-131" },
-                    { label: "규제 및 임차 리스크", id: "page-132" },
-                    { label: "자본 및 거버넌스 리스크", id: "page-133" }
+                    { label: "매크로 및 시장 리스크", id: "page-132" },
+                    { label: "규제 및 임차 리스크", id: "page-133" },
+                    { label: "자본 및 거버넌스 리스크", id: "page-134" }
                 ]
             }
         ] 
