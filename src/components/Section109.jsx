@@ -59,7 +59,7 @@ export default function Section109({ isActive }) {
                     </div>
 
                     {/* Right: Public Pension Funds */}
-                    <div className={`flex-[1.2] bg-[#1e3a8a] border-4 border-[#1e3a8a] rounded-none p-8 flex flex-col justify-between shadow-md transition-all duration-1000 delay-200 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className={`flex-[1] bg-[#1e3a8a] border-4 border-[#1e3a8a] rounded-none p-8 flex flex-col justify-between shadow-md transition-all duration-1000 delay-200 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         <div className="text-left flex flex-col h-full">
                             <div>
                                 <div className="text-white font-black text-[24px] md:text-[28px] mb-2 uppercase">
@@ -84,7 +84,7 @@ export default function Section109({ isActive }) {
                             </div>
                         </div>
                         <div className="bg-white text-[#1e3a8a] p-4 font-black text-[18px] md:text-[20px]">
-                            {lang === 'kr' ? 'NPS 해외 부동산 확대 정책 ↔ 이지스 글로벌 펀드의 완벽한 얼라인먼트' : 'Perfect alignment: NPS overseas expansion ↔ IGIS Global Funds'}
+                            {lang === 'kr' ? <>NPS 해외 부동산 확대 정책 ↔ 이지스 글로벌 펀드의<br/>완벽한 얼라인먼트</> : <>Perfect alignment: NPS overseas expansion ↔ IGIS Global Funds</>}
                         </div>
                     </div>
 
