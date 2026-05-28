@@ -76,10 +76,10 @@ export default function Section96({ isActive }) {
                         </div>
                         
                         <div className="bg-white/10 rounded-xl p-6 border border-white/20 flex-1">
-                            <h4 className="text-blue-200 font-bold text-[18px] mb-3">{lang === 'kr' ? '토라노몬 & 아자부다이 힐스 (2023)' : 'Toranomon & Azabudai Hills (2023)'}</h4>
+                            <h4 className="text-blue-200 font-bold text-[20px] mb-3">{lang === 'kr' ? '모리빌딩, 토라노몬 & 아자부다이 힐스 (2023)' : 'Mori Building, Toranomon & Azabudai Hills (2023)'}</h4>
                             <p className="text-white text-[17px] leading-relaxed break-keep">
                                 {lang === 'kr' 
-                                    ? '글로벌 비교 시 Mori Building의 운영 모델에 가장 근접. 압도적 자본력과 실물 자산, 그리고 섬세한 운영 역량을 완벽하게 결합한 성공 사례' 
+                                    ? <>글로벌 비교 시 모리빌딩의 운영 모델에 가장 근접.<br/>압도적 자본력과 실물 자산, 그리고 섬세한 운영 역량을<br/>완벽하게 결합한 성공 사례</> 
                                     : 'Closest to Mori Building\'s operational model. A successful case that perfectly combines overwhelming capital, physical assets, and delicate operational capabilities.'}
                             </p>
                         </div>
