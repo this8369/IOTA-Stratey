@@ -40,28 +40,28 @@ export default function SectionExecutiveSummary({ isActive }) {
 
                     <div className="space-y-8 mb-16">
                         <div className="mb-6">
-                            <h2 className="text-xl font-bold mb-3 text-black">Part 1 역사적 분석</h2>
+                            <h2 className="text-xl font-bold mb-3 text-black">{lang === 'kr' ? 'Part 1 역사적 분석' : 'Part 1. Historical Analysis'}</h2>
                             <div className="text-[15px] md:text-[17px] leading-[1.7] font-medium whitespace-pre-wrap text-gray-800 break-keep">
                                 {lang === 'kr' ? "한국 경제가 1조 달러에서 2조 달러로 팽창하는 지난 20년간의 산업·자본시장 진화와 서울 프라임 오피스의 구조적 가치 상승을 데이터로 입증합니다." : "We prove with data the structural value appreciation of Seoul prime offices and the evolution of the industrial/capital markets over the past 20 years, during which the Korean economy expanded from 1 trillion to 2 trillion dollars."}
                             </div>
                         </div>
 
                         <div className="mb-6" style={{ marginTop: '42px' }}>
-                            <h2 className="text-xl font-bold mb-3 text-black">Part 2 미래 시나리오</h2>
+                            <h2 className="text-xl font-bold mb-3 text-black">{lang === 'kr' ? 'Part 2 미래 시나리오' : 'Part 2. Future Scenarios'}</h2>
                             <div className="text-[15px] md:text-[17px] leading-[1.7] font-medium whitespace-pre-wrap text-gray-800 break-keep">
                                 {lang === 'kr' ? "3조 달러 시대로 진입하는 향후 15년(2027~2040)의 거시경제, 인구 구조, 신성장 산업의 지형도를 예측하고 프라임 부동산의 임대료 수렴(Convergence) 논리를 도출합니다." : "Predicting the topography of macroeconomics, demographics, and new growth industries over the next 15 years (2027-2040) as we enter the 3 trillion dollar era, we derive the rental convergence logic for prime real estate."}
                             </div>
                         </div>
 
                         <div className="mb-6" style={{ marginTop: '42px' }}>
-                            <h2 className="text-xl font-bold mb-3 text-black">Part 3 이지스 전략 포지셔닝</h2>
+                            <h2 className="text-xl font-bold mb-3 text-black">{lang === 'kr' ? 'Part 3 이지스 전략 포지셔닝' : 'Part 3. Strategic Positioning'}</h2>
                             <div className="text-[15px] md:text-[17px] leading-[1.7] font-medium whitespace-pre-wrap text-gray-800 break-keep">
                                 {lang === 'kr' ? "데이터센터, 시니어 하우징, 프라임 융복합 개발이라는 3대 플랫폼에 AI 워크플로우를 접목하여 100조 AUM을 달성하기 위한 구체적 자본 및 운영 체계를 설계합니다." : "We design a specific capital and operational framework to achieve 100 trillion AUM by integrating AI workflows into three major platforms: Data Centers, Senior Housing, and Prime Mixed-Use Development."}
                             </div>
                         </div>
 
                         <div className="mb-6" style={{ marginTop: '42px' }}>
-                            <h2 className="text-xl font-bold mb-3 text-black">Part 4 IOTA 서울 실행</h2>
+                            <h2 className="text-xl font-bold mb-3 text-black">{lang === 'kr' ? 'Part 4 IOTA 서울 실행' : 'Part 4. IOTA Seoul Execution'}</h2>
                             <div className="text-[15px] md:text-[17px] leading-[1.7] font-medium whitespace-pre-wrap text-gray-800 break-keep">
                                 {lang === 'kr' ? "전략의 실체인 IOTA 서울의 투자가치, 거버넌스 리스크, 자본 조달, 그리고 위기 상황 돌파를 위한 비상 대응책(Contingency Plan)을 제시하며, 당면한 핵심 과제를 12개월 타임라인으로 환산하여 즉각적인 행동을 촉구합니다." : "Presenting the investment value, governance risks, capital raising, and contingency plans for overcoming crises for IOTA Seoul—the core execution of the strategy—we translate imminent key tasks into a 12-month timeline to urge immediate action."}
                             </div>
