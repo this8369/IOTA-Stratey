@@ -39,27 +39,31 @@ export default function Section126({ isActive }) {
                     {/* Left: Text Content */}
                     <div className={`lg:col-span-5 flex flex-col gap-8 transition-all duration-700 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
                         
-                        <div className="relative pl-6 border-l-[4px] border-[#1e3a8a]">
-                            <div className="text-[#1e3a8a] font-black text-[20px] tracking-widest uppercase mb-2">Blueprint 01</div>
+                        <div className={`relative pl-6 border-l-[4px] border-[#1e3a8a] transition-all duration-700 delay-500 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                            <div className="text-[#1e3a8a] font-black text-[16px] tracking-widest uppercase mb-2">Blueprint 01</div>
                             <h3 className="text-[#1d1d1f] font-bold text-[28px] mb-3 leading-tight break-keep">
                                 {lang === 'kr' ? 'Factorial Builders 운영 모델' : 'Factorial Builders Operating Model'}
                             </h3>
-                            <p className="text-[20px] text-gray-700 font-bold leading-relaxed break-keep">
-                                {lang === 'kr' ? 
-                                    "'Asset as a Service' 모델 적용. AI, 로봇, IoT가 통합된 독자적 빌딩 OS 구축. 글로벌 스탠다드 대비 확고한 초격차 운영 경쟁력 확보." : 
-                                    "Implementing a proprietary building OS integrated with AI, robotics, and IoT under the 'Asset as a Service' model, securing an ultra-gap operational edge over global standards."}
+                            <p className="text-[16px] text-gray-700 font-bold leading-relaxed break-keep">
+                                {lang === 'kr' ? (
+                                    <>'Asset as a Service' 모델 적용. AI, 로봇, IoT가 통합된 독자적 빌딩 OS 구축.<br/>글로벌 스탠다드 대비 확고한 초격차 운영 경쟁력 확보.</>
+                                ) : (
+                                    <>Implementing a proprietary building OS integrated with AI, robotics, and IoT under the 'Asset as a Service' model.<br/>Securing an ultra-gap operational edge over global standards.</>
+                                )}
                             </p>
                         </div>
 
-                        <div className="relative pl-6 border-l-[4px] border-[#1d1d1f]">
-                            <div className="text-[#1d1d1f] font-black text-[20px] tracking-widest uppercase mb-2">Blueprint 02</div>
+                        <div className={`relative pl-6 border-l-[4px] border-[#1d1d1f] transition-all duration-700 delay-700 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                            <div className="text-[#1d1d1f] font-black text-[16px] tracking-widest uppercase mb-2">Blueprint 02</div>
                             <h3 className="text-[#1d1d1f] font-bold text-[28px] mb-3 leading-tight break-keep">
                                 {lang === 'kr' ? 'Trophy Stack 자본 템플릿' : 'Trophy Stack Capital Template'}
                             </h3>
-                            <p className="text-[20px] text-gray-700 font-bold leading-relaxed break-keep mb-4">
-                                {lang === 'kr' ? 
-                                    "[PFV + 부동산펀드 + 리츠 + LP]가 완벽하게 결합된 통합 자본 구조 구축 및 브랜드화. 향후 YIBD, 잠실 등 신규 트로피 에셋의 템플릿으로 확장." : 
-                                    "Branding a seamlessly unified capital structure of [PFV + RE Fund + REIT + LP]. This success model will expand as a template for future trophy assets like YIBD and Jamsil."}
+                            <p className="text-[16px] text-gray-700 font-bold leading-relaxed break-keep mb-4">
+                                {lang === 'kr' ? (
+                                    <>[PFV + 부동산펀드 + 리츠 + LP]가 완벽하게 결합된 통합 자본 구조 구축 및 브랜드화.<br/>향후 YIBD, 잠실 등 신규 트로피 에셋의 템플릿으로 확장.</>
+                                ) : (
+                                    <>Branding a seamlessly unified capital structure of [PFV + RE Fund + REIT + LP].<br/>This success model will expand as a template for future trophy assets like YIBD and Jamsil.</>
+                                )}
                             </p>
                             <div className="inline-flex items-center justify-center bg-[#1d1d1f] text-white px-5 py-2 rounded-full text-lg font-bold shadow-md">
                                 {lang === 'kr' ? '미래 10년의 확장형 DNA 이식' : 'Implanting Scalable DNA for the Next 10 Years'}
