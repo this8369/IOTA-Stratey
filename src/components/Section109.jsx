@@ -32,7 +32,7 @@ export default function Section109({ isActive }) {
                 </h2>
 
                 {/* Infographic Area */}
-                <div className="w-full max-w-[1200px] mt-[30px] mb-[46px] flex flex-col md:flex-row gap-8 justify-center items-stretch">
+                <div className="w-full max-w-[1200px] mt-[20px] mb-[36px] flex flex-col md:flex-row gap-8 justify-center items-stretch">
                     
                     {/* Left: Emerging Family Office */}
                     <div className={`flex-[1] bg-white border-4 border-[#1d1d1f] rounded-none p-8 flex flex-col justify-between shadow-sm transition-all duration-[765ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
