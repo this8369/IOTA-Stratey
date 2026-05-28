@@ -242,8 +242,8 @@ export const menuDataEn = [
         ] 
     },
     { 
-        title: "Part 4. IOTA Execution Strategy", 
-        id: "", 
+        title: "Part 4. IOTA Seoul Role & Positioning", 
+        id: "page-115", 
         chapters: [] 
     }
 ];
@@ -493,8 +493,8 @@ export const menuDataKr = [
         ] 
     },
     { 
-        title: "Part 4. IOTA 실행전략", 
-        id: "", 
+        title: "Part 4. IOTA Seoul 역할과 포지셔닝", 
+        id: "page-115", 
         chapters: [] 
     }
 ];
