@@ -35,39 +35,39 @@ export default function Section113({ isActive }) {
                 <div className="w-full max-w-[1200px] mt-[20px] mb-[36px] flex flex-col md:flex-row gap-8 justify-center items-stretch">
                     
                     {/* Left: High Risk */}
-                    <div className={`flex-[1] bg-white border-4 border-red-800 rounded-none p-8 flex flex-col justify-between shadow-sm transition-all duration-[612ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className={`flex-[1] bg-white border-[6px] border-red-800 rounded-none p-8 flex flex-col justify-between shadow-sm transition-all duration-[612ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         <div className="text-left flex flex-col h-full">
                             <div>
-                                <div className="text-red-800 font-black text-[24px] md:text-[28px] mb-2 uppercase">
+                                <div className="text-red-800 font-black text-[26px] md:text-[30px] mb-2 uppercase">
                                     High Political Risk
                                 </div>
-                                <div className="text-gray-700 font-bold text-[20px] mb-6">
+                                <div className="text-gray-700 font-bold text-[22px] mb-6">
                                     {lang === 'kr' ? '중국계 자본 (Hillhouse 등)' : 'Chinese Capital (e.g., Hillhouse)'}
                                 </div>
                             </div>
                             <div className="flex-1 flex items-center mb-6">
                                 <p className="text-[18px] text-gray-600 font-medium leading-relaxed">
-                                    {lang === 'kr' ? '데이터센터, 물류 등 Critical Infrastructure 운용사라는 점에서 해외/중국계 자본의 인수는 상당한 정치 및 국가 안보 리스크를 야기할 가능성이 높습니다.' : 'Given the nature of critical infrastructure like data centers and logistics, acquisition by foreign/Chinese capital presents high political and national security risks.'}
+                                    {lang === 'kr' ? '데이터센터, 물류 등 Critical Infrastructure 운용사라는 점에서 해외/중국계 자본의 인수는 상당한 정치 및 국가 안보 리스크 야기 가능성' : 'Given the nature of critical infrastructure like data centers and logistics, acquisition by foreign/Chinese capital presents high political and national security risks.'}
                                 </p>
                             </div>
                         </div>
                     </div>
 
                     {/* Right: Stable */}
-                    <div className={`flex-[1] bg-[#1e3a8a] border-4 border-[#1e3a8a] rounded-none p-8 flex flex-col justify-between shadow-md transition-all duration-[612ms] delay-[122ms] ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className={`flex-[1] bg-[#1e3a8a] border-[6px] border-[#1e3a8a] rounded-none p-8 flex flex-col justify-between shadow-md transition-all duration-[612ms] delay-[122ms] ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         <div className="text-left flex flex-col h-full">
                             <div>
-                                <div className="text-white font-black text-[24px] md:text-[28px] mb-2 uppercase flex items-center">
+                                <div className="text-white font-black text-[26px] md:text-[30px] mb-2 uppercase flex items-center">
                                     Politically Stable
                                     <svg className="w-6 h-6 md:w-8 md:h-8 ml-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
                                 </div>
-                                <div className="text-[#93c5fd] font-bold text-[20px] mb-6">
+                                <div className="text-[#93c5fd] font-bold text-[22px] mb-6">
                                     {lang === 'kr' ? '국내 산업자본 및 다국적 기관' : 'Domestic Industrial & Multi-national Institutions'}
                                 </div>
                             </div>
                             <div className="flex-1 flex items-center mb-6">
                                 <p className="text-[18px] text-blue-50 font-medium leading-relaxed">
-                                    {lang === 'kr' ? '결과적으로 태광, 한화 등 국내 산업자본이나 GIC, Brookfield 등 다국적 Institutional 자본 쪽이 정치적으로 안정적인(Stable) 대안입니다.' : 'Consequently, domestic industrial capital like Taekwang and Hanwha, or multinational institutional capital like GIC and Brookfield, are politically stable alternatives.'}
+                                    {lang === 'kr' ? '결과적으로 태광, 한화 등 국내 산업자본이나 GIC, Brookfield 등 다국적 Institutional 자본이 정치적으로 안정적인(Stable) 대안' : 'Consequently, domestic industrial capital like Taekwang and Hanwha, or multinational institutional capital like GIC and Brookfield, are politically stable alternatives.'}
                                 </p>
                             </div>
                         </div>
@@ -80,7 +80,7 @@ export default function Section113({ isActive }) {
                     <ul className="text-left inline-block space-y-3 mx-auto">
                         <li className="flex items-start">
                             <span className="mr-3 text-[#1e3a8a]">▪</span>
-                            <span>{lang === 'kr' ? '이지스의 포트폴리오가 지닌 국가 안보적 중요성을 고려할 때, 인수자 선정의 핵심 변수로 작용할 전망입니다.' : 'Given the national security importance of IGIS\'s portfolio, this will act as a key variable in acquirer selection.'}</span>
+                            <span>{lang === 'kr' ? '이지스의 포트폴리오가 지닌 국가 안보적 중요성을 고려할 때, 인수자 선정의 핵심 변수로 작용할 전망' : 'Given the national security importance of IGIS\'s portfolio, this will act as a key variable in acquirer selection.'}</span>
                         </li>
                     </ul>
                 </div>

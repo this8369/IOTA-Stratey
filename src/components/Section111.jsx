@@ -40,14 +40,13 @@ export default function Section111({ isActive }) {
                             Family Ownership
                         </div>
                         <div className="text-gray-600 font-bold text-[18px] md:text-[20px] break-keep text-center">
-                            {lang === 'kr' ? '창업자 김대영 회장 사후 상속 지분(12.4%) 등 가족 중심 운영' : 'Founder legacy & family-centric operation (12.4% inherited stake)'}
+                            {lang === 'kr' ? <>창업자 김대영 회장 사후 상속 지분(12.4%) 등<br/>가족 중심 운영</> : <>Founder legacy & family-centric operation<br/>(12.4% inherited stake)</>}
                         </div>
                     </div>
 
                     {/* Center Arrow */}
-                    <div className={`hidden md:flex flex-col justify-center items-center transition-all duration-[612ms] delay-[122ms] ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
-                        <div className="w-16 h-1 bg-[#1e3a8a]"></div>
-                        <div className="w-0 h-0 border-t-[12px] border-t-transparent border-l-[16px] border-l-[#1e3a8a] border-b-[12px] border-b-transparent mt-[-10px] ml-16"></div>
+                    <div className={`hidden md:flex flex-col justify-center items-center -mx-[10px] z-10 transition-all duration-[612ms] delay-[122ms] ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
+                        <svg className="w-16 h-16 text-[#1e3a8a]" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </div>
 
                     {/* Right: Institutional Ownership */}
@@ -56,7 +55,7 @@ export default function Section111({ isActive }) {
                             Institutional Ownership
                         </div>
                         <div className="text-[#93c5fd] font-bold text-[18px] md:text-[20px] break-keep text-center">
-                            {lang === 'kr' ? '태광그룹, 다이신, 한화 등 본입찰 참여를 통한 기관 소유 체제 확립' : 'Establishment of institutional structure via Taekwang, Hanwha bids'}
+                            {lang === 'kr' ? <>태광그룹, 다이신, 한화 등 본입찰 참여를 통한<br/>기관 소유 체제 확립</> : <>Establishment of institutional structure<br/>via Taekwang, Hanwha bids</>}
                         </div>
                     </div>
 
