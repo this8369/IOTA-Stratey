@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { menuDataEn, menuDataKr } from '../data/NavigationData';
 
@@ -10,6 +10,20 @@ export default function LeftNavigator({ currentPage, isOpen, setIsOpen }) {
  const { lang } = useLanguage();
  const [activeHash, setActiveHash] = useState(window.location.hash || '#page-1');
  const menuData = lang === 'kr' ? menuDataKr : menuDataEn;
+ const scrollContainerRef = useRef(null);
+
+ useEffect(() => {
+     if (scrollContainerRef.current) {
+         const savedScroll = sessionStorage.getItem('navigatorScrollPos');
+         if (savedScroll) {
+             scrollContainerRef.current.scrollTop = parseInt(savedScroll, 10);
+         }
+     }
+ }, []);
+
+ const handleScroll = (e) => {
+     sessionStorage.setItem('navigatorScrollPos', e.target.scrollTop);
+ };
 
  useEffect(() => {
  const handleHashChange = () => setActiveHash(window.location.hash || '#page-1');
@@ -106,7 +120,11 @@ export default function LeftNavigator({ currentPage, isOpen, setIsOpen }) {
  </h2>
  </div>
 
- <div className="flex-1 overflow-y-auto px-3 py-6 scroll-smooth">
+ <div 
+     ref={scrollContainerRef}
+     onScroll={handleScroll}
+     className="flex-1 overflow-y-auto px-3 py-6 scroll-smooth"
+ >
  {menuData.map((section, idx) => (
  <div key={idx} className="mb-4 last:mb-0">
  {idx > 0 && <div className="w-full h-[1px] bg-gray-200 mb-4 mt-2"></div>}
