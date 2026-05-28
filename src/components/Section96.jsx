@@ -47,7 +47,7 @@ export default function Section96({ isActive }) {
                         
                         <div className="h-[1px] w-full bg-gray-200 my-2"></div>
 
-                        <div className="flex items-center gap-3 mb-2">
+                        <div className="flex items-center gap-3">
                             <span className="bg-[#1e3a8a] text-white text-[16px] font-bold px-3 py-1 rounded-md">Solution</span>
                             <h3 className="text-[#1e3a8a] font-extrabold text-[20px] break-keep">
                                 {lang === 'kr' ? "IGIS의 Institutional Version" : "IGIS's Institutional Version"}
