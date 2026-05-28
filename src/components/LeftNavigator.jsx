@@ -180,6 +180,7 @@ export default function LeftNavigator({ currentPage, isOpen, setIsOpen }) {
  ))}
  </div>
  ))}
+ <div className="w-full h-[80px] shrink-0" />
  </div>
  </div>
  </>
