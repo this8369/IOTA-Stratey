@@ -79,7 +79,7 @@ export default function Section112({ isActive }) {
                     <ul className="text-left inline-block space-y-3 mx-auto">
                         <li className="flex items-start">
                             <span className="mr-3 text-[#1d1d1f]">▪</span>
-                            <span>{lang === 'kr' ? 'CEO 이철승 체제에서는 인재 보호를 위한 Dual-Management 구조 확보가 필수적' : 'Under CEO Lee Chul-seung, securing a Dual-Management structure for talent retention is essential.'}</span>
+                            <span>{lang === 'kr' ? '인재 보호를 위한 Dual-Management 구조 확보가 필수적' : 'Securing a Dual-Management structure for talent retention is essential.'}</span>
                         </li>
                     </ul>
                 </div>
