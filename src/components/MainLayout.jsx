@@ -111,7 +111,7 @@ import Section108 from './Section108';
 import Section109 from './Section109';
 
 export default function MainLayout({ isNavOpen }) {
-    const slidesLength = 106; // known length
+    const slidesLength = 110; // known length
  const [currentSlide, setCurrentSlide] = useState(() => {
  // Initialize from URL hash if available (persistent reload mapping)
  const hash = window.location.hash;
