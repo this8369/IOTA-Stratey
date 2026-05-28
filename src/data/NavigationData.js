@@ -210,6 +210,13 @@ export const menuDataEn = [
                     { label: "Priority Target LPs", id: "page-100" },
                     { label: "Global IB Channels", id: "page-101" }
                 ]
+            },
+            {
+                title: "Chapter 5. AI Adoption Workflow",
+                id: "page-102",
+                items: [
+                    { label: "AI Infrastructure across Value Chain", id: "page-103" }
+                ]
             }
         ] 
     },
@@ -432,6 +439,13 @@ export const menuDataKr = [
                     { label: "1호 글로벌 코밍글드 펀드", id: "page-99" },
                     { label: "전략적 우선 타겟 LP", id: "page-100" },
                     { label: "글로벌 IB 협력 채널", id: "page-101" }
+                ]
+            },
+            {
+                title: "Chapter 5. AI 도입 워크플로우",
+                id: "page-102",
+                items: [
+                    { label: "전 밸류체인의 AI 인프라 고도화", id: "page-103" }
                 ]
             }
         ] 
