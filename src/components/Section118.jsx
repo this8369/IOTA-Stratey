@@ -34,20 +34,20 @@ export default function Section118({ isActive }) {
                 <div className={`w-full max-w-[1160px] mx-auto mt-[0px] mb-[36px] grid grid-cols-1 md:grid-cols-2 gap-[20px] transition-all duration-[612ms] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     
                     {/* Card 1 */}
-                    <div className="bg-white border-[6px] border-[#1e3a8a] p-8 flex flex-col shadow-sm">
-                        <div className="text-[#1e3a8a] font-black text-[24px] md:text-[28px] mb-2 uppercase">Heritage</div>
-                        <div className="text-gray-700 font-bold text-[22px] mb-4">
+                    <div className="bg-white border-[6px] border-[#1e3a8a] px-8 py-[28px] flex flex-col shadow-sm">
+                        <div className="text-[#1e3a8a] font-black text-[24px] md:text-[28px] mb-[6px] uppercase">Heritage</div>
+                        <div className="text-gray-700 font-bold text-[23px] mb-[14px]">
                             {lang === 'kr' ? '힐튼 아트리움 보존' : 'Hilton Atrium Preservation'}
                         </div>
-                        <p className="text-[19px] text-gray-600 font-medium leading-relaxed">
+                        <p className="text-[20px] text-gray-600 font-medium leading-relaxed">
                             {lang === 'kr' ? 'SOM, Foster+Partners, DA그룹 등 세계적 설계사 참여 하에 힐튼 아트리움을 3D 디지털로 보존하여 역사적 가치 계승' : 'Preserving the historic Hilton Atrium in 3D digital format with world-class architects like SOM and Foster+Partners.'}
                         </p>
                     </div>
 
                     {/* Card 2 */}
-                    <div className="bg-white border-[6px] border-[#1e3a8a] p-8 flex flex-col shadow-sm">
-                        <div className="text-[#1e3a8a] font-black text-[24px] md:text-[28px] mb-2 uppercase">Green Space</div>
-                        <div className="text-gray-700 font-bold text-[20px] mb-4">
+                    <div className="bg-white border-[6px] border-[#1e3a8a] px-8 py-[28px] flex flex-col shadow-sm">
+                        <div className="text-[#1e3a8a] font-black text-[24px] md:text-[28px] mb-[6px] uppercase">Green Space</div>
+                        <div className="text-gray-700 font-bold text-[20px] mb-[14px]">
                             {lang === 'kr' ? '7,000m² 대규모 공개 녹지' : '7,000m² Public Greenery'}
                         </div>
                         <p className="text-[17px] text-gray-600 font-medium leading-relaxed">
@@ -56,9 +56,9 @@ export default function Section118({ isActive }) {
                     </div>
 
                     {/* Card 3 */}
-                    <div className="bg-white border-[6px] border-[#1e3a8a] p-8 flex flex-col shadow-sm">
-                        <div className="text-[#1e3a8a] font-black text-[24px] md:text-[28px] mb-2 uppercase">Public Flow</div>
-                        <div className="text-gray-700 font-bold text-[20px] mb-4">
+                    <div className="bg-white border-[6px] border-[#1e3a8a] px-8 py-[28px] flex flex-col shadow-sm">
+                        <div className="text-[#1e3a8a] font-black text-[24px] md:text-[28px] mb-[6px] uppercase">Public Flow</div>
+                        <div className="text-gray-700 font-bold text-[20px] mb-[14px]">
                             {lang === 'kr' ? '보행로 및 공공청사 기부채납' : 'Pedestrian Path & Public Office'}
                         </div>
                         <p className="text-[17px] text-gray-600 font-medium leading-relaxed">
@@ -67,9 +67,9 @@ export default function Section118({ isActive }) {
                     </div>
 
                     {/* Card 4 */}
-                    <div className="bg-white border-[6px] border-[#1e3a8a] p-8 flex flex-col shadow-sm">
-                        <div className="text-[#1e3a8a] font-black text-[24px] md:text-[28px] mb-2 uppercase">Trophy Asset</div>
-                        <div className="text-gray-700 font-bold text-[20px] mb-4">
+                    <div className="bg-white border-[6px] border-[#1e3a8a] px-8 py-[28px] flex flex-col shadow-sm">
+                        <div className="text-[#1e3a8a] font-black text-[24px] md:text-[28px] mb-[6px] uppercase">Trophy Asset</div>
+                        <div className="text-gray-700 font-bold text-[20px] mb-[14px]">
                             {lang === 'kr' ? '글로벌 럭셔리 호텔 유치' : 'Global Luxury Hotel'}
                         </div>
                         <p className="text-[17px] text-gray-600 font-medium leading-relaxed">
