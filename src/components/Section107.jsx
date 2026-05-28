@@ -33,7 +33,7 @@ export default function Section107({ isActive }) {
                 </h2>
 
                 {/* Infographic Area */}
-                <div className="w-full max-w-[1200px] mt-[20px] mb-[36px] flex flex-col md:flex-row items-stretch gap-6 justify-center">
+                <div className="w-full max-w-[1060px] mt-[20px] mb-[36px] flex flex-col md:flex-row items-stretch gap-4 justify-center">
                     
                     {/* Left: 3 Pillars */}
                     <div className={`flex-[0.8] bg-white border-4 border-[#1e3a8a] rounded-none p-8 flex flex-col items-center justify-center shadow-sm transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'}`}>
@@ -61,24 +61,24 @@ export default function Section107({ isActive }) {
                     {/* Right: Cross-over Targets */}
                     <div className={`flex-[1.2] flex flex-col gap-4 transition-all duration-1000 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         {/* Target 1 */}
-                        <div className="bg-white border-4 border-[#1e3a8a] rounded-none p-5 flex items-center shadow-sm">
-                            <div className="w-[60px] h-[60px] bg-[#1e3a8a] text-white flex items-center justify-center font-black text-[24px]">1</div>
+                        <div className="flex-1 bg-white border-4 border-[#1e3a8a] rounded-none p-4 flex items-center shadow-sm">
+                            <div className="w-[60px] h-[60px] shrink-0 bg-[#1e3a8a] text-white flex items-center justify-center font-black text-[24px]">1</div>
                             <div className="ml-5 text-left">
                                 <div className="font-black text-[#1d1d1f] text-[20px] md:text-[22px]">{lang === 'kr' ? '데이터센터 (Data Center)' : 'Data Center'}</div>
                                 <div className="text-gray-600 font-bold mt-1">{lang === 'kr' ? '부동산과 통신 인프라의 완벽한 융합' : 'Perfect fusion of real estate and telecom infra'}</div>
                             </div>
                         </div>
                         {/* Target 2 */}
-                        <div className="bg-white border-4 border-[#1e3a8a] rounded-none p-5 flex items-center shadow-sm">
-                            <div className="w-[60px] h-[60px] bg-[#1e3a8a] text-white flex items-center justify-center font-black text-[24px]">2</div>
+                        <div className="flex-1 bg-white border-4 border-[#1e3a8a] rounded-none p-4 flex items-center shadow-sm">
+                            <div className="w-[60px] h-[60px] shrink-0 bg-[#1e3a8a] text-white flex items-center justify-center font-black text-[24px]">2</div>
                             <div className="ml-5 text-left">
                                 <div className="font-black text-[#1d1d1f] text-[20px] md:text-[22px]">{lang === 'kr' ? '신재생 인프라 (Renewable)' : 'Renewable Infra'}</div>
                                 <div className="text-gray-600 font-bold mt-1">{lang === 'kr' ? '수소 연료전지 및 ESS 블라인드펀드' : 'Hydrogen fuel cell & ESS blind funds'}</div>
                             </div>
                         </div>
                         {/* Target 3 */}
-                        <div className="bg-white border-4 border-[#1e3a8a] rounded-none p-5 flex items-center shadow-sm">
-                            <div className="w-[60px] h-[60px] bg-[#1e3a8a] text-white flex items-center justify-center font-black text-[24px]">3</div>
+                        <div className="flex-1 bg-white border-4 border-[#1e3a8a] rounded-none p-4 flex items-center shadow-sm">
+                            <div className="w-[60px] h-[60px] shrink-0 bg-[#1e3a8a] text-white flex items-center justify-center font-black text-[24px]">3</div>
                             <div className="ml-5 text-left">
                                 <div className="font-black text-[#1d1d1f] text-[20px] md:text-[22px]">{lang === 'kr' ? '시니어/헬스케어 (Healthcare)' : 'Senior/Healthcare'}</div>
                                 <div className="text-gray-600 font-bold mt-1">{lang === 'kr' ? '부동산 공간과 오퍼레이션(PE)의 결합' : 'Combining real estate space with operations (PE)'}</div>

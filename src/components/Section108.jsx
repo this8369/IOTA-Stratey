@@ -33,12 +33,7 @@ export default function Section108({ isActive }) {
                 </h2>
 
                 {/* Infographic Area */}
-                <div className="w-full max-w-[1200px] mt-[30px] mb-[46px] flex flex-col md:flex-row items-center gap-10 justify-center relative">
-                    
-                    {/* Background Flow Line */}
-                    <div className="absolute top-1/2 left-[30%] right-[30%] h-[4px] bg-gray-200 z-0 -translate-y-1/2 overflow-hidden">
-                        <div className={`h-full bg-[#1e3a8a] transition-all duration-[1500ms] ease-in-out ${step >= 4 ? 'translate-x-0 w-full opacity-100' : '-translate-x-full w-0 opacity-0'}`}></div>
-                    </div>
+                <div className="w-full max-w-[1100px] mt-[30px] mb-[46px] flex flex-col md:flex-row items-center gap-10 justify-center relative">
 
                     {/* Left: Capital Sources */}
                     <div className={`flex-[1] flex flex-col gap-6 relative z-10 transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
