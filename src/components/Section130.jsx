@@ -10,10 +10,7 @@ export default function Section130({ isActive }) {
         const timers = [
             setTimeout(() => setStep(1), 184),
             setTimeout(() => setStep(2), 551),
-            setTimeout(() => setStep(3), 918),
-            setTimeout(() => setStep(4), 1300),
-            setTimeout(() => setStep(5), 1700),
-            setTimeout(() => setStep(6), 2100)
+            setTimeout(() => setStep(3), 918)
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -34,88 +31,49 @@ export default function Section130({ isActive }) {
                     </h2>
                 </div>
 
-                {/* Main Content: Time Alignment Infographic */}
-                <div className="w-full max-w-[1300px] grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center mb-8">
+                {/* Content: 2 Cards (1x2 grid) */}
+                <div className={`w-full max-w-[1200px] mx-auto mt-[10px] mb-[36px] grid grid-cols-1 md:grid-cols-2 gap-[20px] transition-all duration-[612ms] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     
-                    {/* Left: Two interlocked gears (Infographic) */}
-                    <div className={`lg:col-span-7 h-[420px] flex items-center justify-center relative transition-all duration-1000 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}>
-                        
-                        <div className="relative w-full h-full max-w-[600px] flex items-center justify-center">
-                            
-                            {/* Left Gear (Risk 6) */}
-                            <div className="absolute left-[10%] flex flex-col items-center">
-                                <div className={`w-[220px] h-[220px] rounded-full border-[15px] border-dashed border-[#1e3a8a] flex items-center justify-center bg-white shadow-[0_0_30px_rgba(30,58,138,0.2)] z-10 transition-transform duration-[10000ms] ease-linear ${step >= 4 ? 'rotate-[360deg]' : 'rotate-0'}`}>
-                                    <div className="text-center w-full transform -rotate-[360deg]" style={{ animation: step >= 4 ? 'spin-reverse 10s linear infinite' : 'none' }}>
-                                        <div className="text-[#1e3a8a] font-black text-xl mb-1">RISK 6</div>
-                                        <div className="text-[#1d1d1f] font-bold text-sm px-4">
-                                            {lang === 'kr' ? '글로벌 자본 참여' : 'Global Capital Participation'}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className={`mt-6 bg-[#1e3a8a] text-white px-4 py-2 rounded-lg text-center shadow-lg transition-all duration-500 delay-500 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-                                    <div className="text-xs font-bold opacity-80">Strategic Milestone</div>
-                                    <div className="text-sm font-bold">2026.12 (Closing)</div>
-                                </div>
-                            </div>
-
-                            {/* Right Gear (Risk 7) */}
-                            <div className="absolute right-[10%] top-[40px] flex flex-col items-center">
-                                <div className={`mt-6 bg-[#1d1d1f] text-white px-4 py-2 rounded-lg text-center shadow-lg transition-all duration-500 delay-700 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'} mb-6 z-20`}>
-                                    <div className="text-xs font-bold opacity-80">Strategic Milestone</div>
-                                    <div className="text-sm font-bold">Acquirer Selection</div>
-                                </div>
-                                <div className={`w-[220px] h-[220px] rounded-full border-[15px] border-dashed border-[#1d1d1f] flex items-center justify-center bg-white shadow-[0_0_30px_rgba(29,29,31,0.2)] z-10 transition-transform duration-[10000ms] ease-linear ${step >= 5 ? '-rotate-[360deg]' : 'rotate-0'}`}>
-                                    <div className="text-center w-full transform rotate-[360deg]" style={{ animation: step >= 5 ? 'spin-normal 10s linear infinite' : 'none' }}>
-                                        <div className="text-[#1d1d1f] font-black text-xl mb-1">RISK 7</div>
-                                        <div className="text-[#1d1d1f] font-bold text-sm px-4">
-                                            {lang === 'kr' ? '거버넌스 안정성' : 'Governance Stability'}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Intersection / Alignment Point */}
-                            <div className={`absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-gradient-to-br from-yellow-400 to-orange-500 text-white rounded-full w-[110px] h-[110px] flex items-center justify-center shadow-[0_0_40px_rgba(245,158,11,0.6)] border-4 border-white transition-all duration-700 delay-[1200ms] ${step >= 6 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
-                                <div className="text-center">
-                                    <div className="font-black text-[16px] leading-tight">PERFECT</div>
-                                    <div className="font-bold text-[12px] leading-tight">TIME<br/>ALIGNMENT</div>
-                                </div>
-                            </div>
-
-                            <style dangerouslySetInnerHTML={{__html: `
-                                @keyframes spin-reverse { 100% { transform: rotate(-360deg); } }
-                                @keyframes spin-normal { 100% { transform: rotate(360deg); } }
-                            `}} />
+                    {/* Card 1 */}
+                    <div className="bg-white border-[6px] border-[#1d1d1f] px-8 py-[28px] flex flex-col shadow-sm">
+                        <div className="text-[#1d1d1f] font-bold text-[22px] mb-[6px]">RISK 6</div>
+                        <div className="text-[#1d1d1f] font-bold text-[22px] mb-[14px] border-b-2 border-gray-100 pb-4">
+                            {lang === 'kr' ? '외국인 자본 참여' : 'Foreign Capital Participation'}
                         </div>
+                        <ul className="text-[18px] text-gray-600 font-medium leading-relaxed space-y-4">
+                            <li className="flex items-start">
+                                <span className="text-[#1d1d1f] mr-2">▪</span>
+                                <span>{lang === 'kr' ? 'IPR Equity에 글로벌 LP가 명시적으로 들어와야 Trophy 의미가 완성됨.' : 'Trophy significance is complete only with explicit participation of global LPs in IPR Equity.'}</span>
+                            </li>
+                            <li className="flex flex-col bg-gray-50 p-4 rounded-lg mt-2 border border-gray-200">
+                                <span className="font-bold text-[#1d1d1f] mb-1">{lang === 'kr' ? '전략적 마일스톤 (Strategic Milestone)' : 'Strategic Milestone'}</span>
+                                <span className="text-[17px] text-gray-800 font-bold">{lang === 'kr' ? '2026년 12월 클로징 시점까지 최소 1~2개 글로벌 SWF/연기금 LP 확보' : 'Secure at least 1-2 global SWF/Pension LPs by closing in Dec 2026.'}</span>
+                            </li>
+                        </ul>
                     </div>
 
-                    {/* Right: Text explanations */}
-                    <div className="lg:col-span-5 flex flex-col gap-6 justify-center">
-                        
-                        <div className={`bg-white border-l-4 border-[#1e3a8a] p-6 shadow-md transition-all duration-700 delay-300 ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
-                            <h3 className="text-[#1e3a8a] font-bold text-xl mb-2">
-                                {lang === 'kr' ? '글로벌 LP 유치 필수' : 'Global LP Participation is Essential'}
-                            </h3>
-                            <p className="text-gray-600 font-medium text-[15px] leading-relaxed break-keep">
-                                {lang === 'kr' ? 'IPR Equity에 글로벌 SWF/연기금이 명시적으로 들어와야 진정한 Trophy 의미가 완성됩니다. 2026년 12월 클로징 시점까지 최소 1~2개 기관 확보가 목표입니다.' : 'Trophy significance is complete only with explicit participation of global LPs. Securing 1-2 SWFs/Pensions by Dec 2026 is the goal.'}
-                            </p>
+                    {/* Card 2 */}
+                    <div className="bg-white border-[6px] border-[#1d1d1f] px-8 py-[28px] flex flex-col shadow-sm">
+                        <div className="text-[#1d1d1f] font-bold text-[22px] mb-[6px]">RISK 7</div>
+                        <div className="text-[#1d1d1f] font-bold text-[22px] mb-[14px] border-b-2 border-gray-100 pb-4">
+                            {lang === 'kr' ? '거버넌스 리스크' : 'Governance Risks'}
                         </div>
-
-                        <div className={`bg-white border-l-4 border-[#1d1d1f] p-6 shadow-md transition-all duration-700 delay-500 ${step >= 5 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
-                            <h3 className="text-[#1d1d1f] font-bold text-xl mb-2">
-                                {lang === 'kr' ? '새 대주주의 Commitment' : 'Commitment from New Major Shareholder'}
-                            </h3>
-                            <p className="text-gray-600 font-medium text-[15px] leading-relaxed break-keep">
-                                {lang === 'kr' ? '이지스 지배지분 매각이 진행 중인 가운데, 인수자 선정 일정과 IPR 클로징 일정 간의 완벽한 시간적 Alignment가 매우 중요합니다. 새 대주주의 확약이 LP 신뢰의 핵심입니다.' : 'With the controlling stake sale ongoing, perfect time alignment between acquirer selection and IPR closing is crucial for LP trust.'}
-                            </p>
-                        </div>
-
+                        <ul className="text-[18px] text-gray-600 font-medium leading-relaxed space-y-4">
+                            <li className="flex items-start">
+                                <span className="text-[#1d1d1f] mr-2">▪</span>
+                                <span>{lang === 'kr' ? '이지스 지배지분 매각 진행 중. 새 대주주의 IOTA 프로젝트에 대한 Commitment 확약이 LP 신뢰에 결정적 역할.' : 'IGIS controlling stake sale in progress. Commitment from the new major shareholder to the IOTA project is crucial for LP trust.'}</span>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="text-red-600 mr-2">▪</span>
+                                <span>{lang === 'kr' ? '인수자 선정 일정과 IPR 클로징 일정 간의 완벽한 시간적 Alignment가 매우 중요.' : 'Perfect time alignment between the acquirer selection schedule and IPR closing schedule is essential.'}</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
                 {/* Bottom text */}
-                <div className={`w-full text-center transition-all duration-[612ms] delay-[122ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-                    <div className="inline-block bg-[#1d1d1f] text-white px-8 py-4 rounded-full text-[18px] md:text-[20px] font-bold shadow-xl break-keep">
+                <div className={`w-full text-center mt-2 transition-all duration-[612ms] delay-[122ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                    <div className="inline-block bg-[#1d1d1f] text-white px-8 py-5 text-[20px] md:text-[22px] font-bold shadow-lg break-keep">
                         {lang === 'kr' ? 
                             '글로벌 자본 유치와 안정적 거버넌스 확립을 통한 IPR 클로징 완성' : 
                             'Completing IPR closing through global capital attraction and stable governance'}

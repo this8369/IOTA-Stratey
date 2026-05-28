@@ -41,80 +41,74 @@ export default function Section126({ isActive }) {
                         
                         <div className="relative pl-6 border-l-[4px] border-[#1e3a8a]">
                             <div className="text-[#1e3a8a] font-black text-[20px] tracking-widest uppercase mb-2">Blueprint 01</div>
-                            <h3 className="text-[#1d1d1f] font-bold text-[26px] mb-3 leading-tight break-keep">
+                            <h3 className="text-[#1d1d1f] font-bold text-[28px] mb-3 leading-tight break-keep">
                                 {lang === 'kr' ? 'Factorial Builders 운영 모델' : 'Factorial Builders Operating Model'}
                             </h3>
-                            <p className="text-[17px] text-gray-600 font-medium leading-relaxed break-keep">
+                            <p className="text-[20px] text-gray-700 font-bold leading-relaxed break-keep">
                                 {lang === 'kr' ? 
-                                    "'Asset as a Service' 모델을 적용하여 AI, 로봇, IoT가 통합된 독자적 빌딩 OS를 구현. 글로벌 스탠다드 대비 확고한 초격차 운영 경쟁력을 확보합니다." : 
+                                    "'Asset as a Service' 모델 적용. AI, 로봇, IoT가 통합된 독자적 빌딩 OS 구축. 글로벌 스탠다드 대비 확고한 초격차 운영 경쟁력 확보." : 
                                     "Implementing a proprietary building OS integrated with AI, robotics, and IoT under the 'Asset as a Service' model, securing an ultra-gap operational edge over global standards."}
                             </p>
                         </div>
 
                         <div className="relative pl-6 border-l-[4px] border-[#1d1d1f]">
                             <div className="text-[#1d1d1f] font-black text-[20px] tracking-widest uppercase mb-2">Blueprint 02</div>
-                            <h3 className="text-[#1d1d1f] font-bold text-[26px] mb-3 leading-tight break-keep">
+                            <h3 className="text-[#1d1d1f] font-bold text-[28px] mb-3 leading-tight break-keep">
                                 {lang === 'kr' ? 'Trophy Stack 자본 템플릿' : 'Trophy Stack Capital Template'}
                             </h3>
-                            <p className="text-[17px] text-gray-600 font-medium leading-relaxed break-keep mb-4">
+                            <p className="text-[20px] text-gray-700 font-bold leading-relaxed break-keep mb-4">
                                 {lang === 'kr' ? 
-                                    "[PFV + 부동산펀드 + 리츠 + LP]가 완벽하게 결합된 통합 자본 구조를 브랜드화합니다. 이 성공 모델은 향후 YIBD, 잠실 등 신규 트로피 에셋의 템플릿으로 확장됩니다." : 
+                                    "[PFV + 부동산펀드 + 리츠 + LP]가 완벽하게 결합된 통합 자본 구조 구축 및 브랜드화. 향후 YIBD, 잠실 등 신규 트로피 에셋의 템플릿으로 확장." : 
                                     "Branding a seamlessly unified capital structure of [PFV + RE Fund + REIT + LP]. This success model will expand as a template for future trophy assets like YIBD and Jamsil."}
                             </p>
-                            <div className="inline-flex items-center justify-center bg-[#1d1d1f] text-white px-5 py-2 rounded-full text-sm font-bold shadow-md">
+                            <div className="inline-flex items-center justify-center bg-[#1d1d1f] text-white px-5 py-2 rounded-full text-lg font-bold shadow-md">
                                 {lang === 'kr' ? '미래 10년의 확장형 DNA 이식' : 'Implanting Scalable DNA for the Next 10 Years'}
                             </div>
                         </div>
 
                     </div>
 
-                    {/* Right: 3D Stack Diagram */}
-                    <div className="lg:col-span-7 flex justify-center items-center h-[450px]">
-                        <div className="relative w-full max-w-[400px] h-[400px] flex items-center justify-center" style={{ perspective: '1200px' }}>
-                            <div className="relative w-[280px] h-[280px]" style={{ transformStyle: 'preserve-3d', transform: 'rotateX(60deg) rotateZ(-45deg)' }}>
-                                
-                                {/* Layer 4: REIT (Top) */}
-                                <div className="absolute inset-0 bg-[#0f172a]/95 border border-white/20 flex flex-col items-center justify-center shadow-[30px_30px_50px_rgba(0,0,0,0.4)] transition-all duration-[1000ms] ease-out backdrop-blur-sm" 
-                                     style={{ transform: step >= 5 ? 'translateZ(180px)' : 'translateZ(0px)', opacity: step >= 5 ? 1 : 0 }}>
-                                     <div style={{ transform: 'rotateZ(45deg) rotateX(-60deg)', textAlign: 'center' }}>
-                                        <div className="text-[#60a5fa] font-bold text-sm tracking-widest mb-1">EXIT / SECURITIZATION</div>
-                                        <div className="text-white font-extrabold text-2xl">IOTA Office REIT</div>
-                                     </div>
+                    {/* Right: 2D Stack Diagram (Clear & Readable) */}
+                    <div className="lg:col-span-7 flex justify-center items-center h-[500px]">
+                        <div className={`w-full max-w-[500px] flex flex-col gap-3 transition-all duration-1000 delay-300 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                            
+                            {/* Layer 4: REIT */}
+                            <div className="bg-[#0f172a] border-l-8 border-[#60a5fa] rounded-lg p-6 shadow-xl flex justify-between items-center text-white">
+                                <div className="text-left">
+                                    <div className="text-[#60a5fa] font-black text-sm tracking-widest mb-1">EXIT / SECURITIZATION</div>
+                                    <div className="font-extrabold text-[26px]">IOTA Office REIT</div>
                                 </div>
+                                <div className="bg-[#1e3a8a] px-4 py-2 rounded font-bold text-[18px]">상장 및 유동화</div>
+                            </div>
+                            <div className="flex justify-center text-[#60a5fa] text-2xl">▼</div>
 
-                                {/* Layer 3: Fund */}
-                                <div className="absolute inset-0 bg-[#1e3a8a]/95 border border-white/20 flex flex-col items-center justify-center shadow-[30px_30px_50px_rgba(0,0,0,0.3)] transition-all duration-[1000ms] ease-out backdrop-blur-sm" 
-                                     style={{ transform: step >= 4 ? 'translateZ(120px)' : 'translateZ(0px)', opacity: step >= 4 ? 1 : 0 }}>
-                                     <div style={{ transform: 'rotateZ(45deg) rotateX(-60deg)', textAlign: 'center' }}>
-                                        <div className="text-blue-300 font-bold text-sm tracking-widest mb-1">STABILIZED HOLDING</div>
-                                        <div className="text-white font-extrabold text-2xl">IGIS RE Fund</div>
-                                     </div>
+                            {/* Layer 3: Fund */}
+                            <div className="bg-[#1e3a8a] border-l-8 border-blue-400 rounded-lg p-6 shadow-xl flex justify-between items-center text-white">
+                                <div className="text-left">
+                                    <div className="text-blue-300 font-black text-sm tracking-widest mb-1">STABILIZED HOLDING</div>
+                                    <div className="font-extrabold text-[26px]">IGIS RE Fund</div>
                                 </div>
+                                <div className="bg-[#0f172a] px-4 py-2 rounded font-bold text-[18px]">안정화 보유</div>
+                            </div>
+                            <div className="flex justify-center text-blue-400 text-2xl">▼</div>
 
-                                {/* Layer 2: PFV */}
-                                <div className="absolute inset-0 bg-[#3b82f6]/95 border border-white/20 flex flex-col items-center justify-center shadow-[30px_30px_50px_rgba(0,0,0,0.2)] transition-all duration-[1000ms] ease-out backdrop-blur-sm" 
-                                     style={{ transform: step >= 3 ? 'translateZ(60px)' : 'translateZ(0px)', opacity: step >= 3 ? 1 : 0 }}>
-                                     <div style={{ transform: 'rotateZ(45deg) rotateX(-60deg)', textAlign: 'center' }}>
-                                        <div className="text-blue-100 font-bold text-sm tracking-widest mb-1">DEVELOPMENT PHASE</div>
-                                        <div className="text-white font-extrabold text-2xl">Project PFV</div>
-                                     </div>
+                            {/* Layer 2: PFV */}
+                            <div className="bg-[#3b82f6] border-l-8 border-blue-200 rounded-lg p-6 shadow-xl flex justify-between items-center text-white">
+                                <div className="text-left">
+                                    <div className="text-blue-100 font-black text-sm tracking-widest mb-1">DEVELOPMENT PHASE</div>
+                                    <div className="font-extrabold text-[26px]">Project PFV</div>
                                 </div>
+                                <div className="bg-[#1e3a8a] px-4 py-2 rounded font-bold text-[18px]">개발 및 시공</div>
+                            </div>
+                            <div className="flex justify-center text-blue-200 text-2xl">▼</div>
 
-                                {/* Layer 1: LP (Bottom) */}
-                                <div className="absolute inset-0 bg-[#e2e8f0]/95 border border-gray-300 flex flex-col items-center justify-center shadow-[20px_20px_30px_rgba(0,0,0,0.1)] transition-all duration-[1000ms] ease-out" 
-                                     style={{ transform: step >= 2 ? 'translateZ(0px)' : 'translateZ(-40px)', opacity: step >= 2 ? 1 : 0 }}>
-                                     <div style={{ transform: 'rotateZ(45deg) rotateX(-60deg)', textAlign: 'center' }}>
-                                        <div className="text-gray-500 font-bold text-sm tracking-widest mb-1">CAPITAL BASE</div>
-                                        <div className="text-[#1d1d1f] font-extrabold text-2xl">Global LP</div>
-                                     </div>
+                            {/* Layer 1: LP */}
+                            <div className="bg-[#e2e8f0] border-l-8 border-gray-500 rounded-lg p-6 shadow-xl flex justify-between items-center">
+                                <div className="text-left">
+                                    <div className="text-gray-500 font-black text-sm tracking-widest mb-1">CAPITAL BASE</div>
+                                    <div className="text-[#1d1d1f] font-extrabold text-[26px]">Global LP</div>
                                 </div>
-
-                                {/* Dotted connection lines */}
-                                <div className={`absolute left-0 top-0 w-full h-full border-l-2 border-b-2 border-dashed border-[#1e3a8a]/30 transition-all duration-1000 ${step >= 5 ? 'opacity-100' : 'opacity-0'}`} style={{ transform: 'translateZ(0px) scale(1.1) translate(-5%, 5%)' }}></div>
-                                <div className={`absolute right-[-60px] top-[140px] transition-all duration-700 delay-500 ${step >= 5 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`} style={{ transform: 'rotateZ(45deg) rotateX(-60deg)' }}>
-                                    <div className="bg-[#1e3a8a] text-white text-xs font-bold px-3 py-1 rounded shadow-lg whitespace-nowrap mb-2 animate-bounce">Expand to YIBD</div>
-                                    <div className="bg-[#1e3a8a] text-white text-xs font-bold px-3 py-1 rounded shadow-lg whitespace-nowrap animate-bounce" style={{ animationDelay: '0.2s' }}>Expand to Jamsil</div>
-                                </div>
+                                <div className="bg-gray-300 text-gray-800 px-4 py-2 rounded font-bold text-[18px]">기초 자본</div>
                             </div>
                         </div>
                     </div>

@@ -109,8 +109,8 @@ export default function Section132({ isActive }) {
                             </div>
                         </div>
 
-                        <p className="text-[15px] text-gray-600 mt-10 font-medium break-keep">
-                            {lang === 'kr' ? 'GTX-A/B 교차 입지의 프리미엄이 본격 반영되며 향후 5~10년간 구조적 우상향을 그립니다.' : 'Premium of GTX-A/B intersection fully reflects, forming a structural uptrend over the next 5-10 years.'}
+                        <p className="text-[20px] text-gray-700 mt-10 font-bold break-keep bg-gray-100 p-4 rounded-lg">
+                            {lang === 'kr' ? 'GTX-A/B 교차 입지의 프리미엄이 본격 반영되며 향후 5~10년간 구조적 우상향 전망' : 'Premium of GTX-A/B intersection fully reflects, forming a structural uptrend over the next 5-10 years.'}
                         </p>
                     </div>
 
@@ -129,36 +129,36 @@ export default function Section132({ isActive }) {
                         <div className="relative w-full h-[240px] mt-4 flex items-end justify-between px-2 gap-2">
                             {/* Base Construction */}
                             <div className={`relative w-full bg-gray-600 rounded-t-sm flex flex-col items-center justify-start pt-2 transition-all duration-1000 ${step >= 4 ? 'h-[20%]' : 'h-0'}`}>
-                                <span className="text-xs text-white font-bold mt-[-25px] absolute">2026</span>
+                                <span className="text-sm text-white font-bold mt-[-25px] absolute">2026</span>
                             </div>
                             
                             {/* Completion NOI (Base) */}
                             <div className={`relative w-full bg-blue-600 rounded-t-sm flex flex-col items-center justify-start pt-2 transition-all duration-1000 delay-200 ${step >= 5 ? 'h-[50%]' : 'h-0'}`}>
-                                <span className="text-xs text-blue-200 font-bold mt-[-25px] absolute text-center w-full">NOI<br/>~3K억</span>
+                                <span className="text-sm text-blue-200 font-bold mt-[-25px] absolute text-center w-full">NOI<br/>~3K억</span>
                             </div>
 
                             {/* Completion NOI (Bull) */}
                             <div className={`relative w-full bg-blue-500 rounded-t-sm flex flex-col items-center justify-start pt-2 transition-all duration-1000 delay-300 ${step >= 5 ? 'h-[70%]' : 'h-0'}`}>
-                                <span className="text-xs text-white font-bold mt-[-25px] absolute text-center w-full whitespace-nowrap">Bull Scenario<br/>~4.5K억</span>
+                                <span className="text-sm text-white font-bold mt-[-25px] absolute text-center w-full whitespace-nowrap">Bull Scenario<br/>~4.5K억</span>
                             </div>
 
                             {/* Asset Value (Cap Rate 4%) */}
                             <div className={`relative w-[120%] bg-gradient-to-t from-blue-400 to-cyan-300 rounded-t-sm shadow-[0_0_20px_rgba(34,211,238,0.3)] flex flex-col items-center justify-start pt-2 transition-all duration-1000 delay-500 ${step >= 6 ? 'h-[100%]' : 'h-0'}`}>
-                                <span className="text-[22px] text-white font-black mt-[-35px] absolute whitespace-nowrap drop-shadow-md">
+                                <span className="text-[26px] text-white font-black mt-[-40px] absolute whitespace-nowrap drop-shadow-md">
                                     {lang === 'kr' ? '6조 ~ 10조 원' : '6T ~ 10T KRW'}
                                 </span>
-                                <div className="text-blue-900 font-bold text-sm mt-4 text-center leading-tight">
+                                <div className="text-blue-900 font-bold text-lg mt-4 text-center leading-tight">
                                     Target<br/>Asset Value
                                 </div>
                             </div>
                         </div>
 
-                        <div className="mt-10 flex gap-4 items-center bg-gray-800/50 p-3 rounded-lg">
-                            <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center shrink-0">
-                                <span className="text-blue-400 font-bold text-lg">%</span>
+                        <div className="mt-10 flex gap-4 items-center bg-gray-800/80 p-4 rounded-lg">
+                            <div className="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center shrink-0">
+                                <span className="text-blue-400 font-bold text-xl">%</span>
                             </div>
-                            <p className="text-[14px] text-gray-300 font-medium break-keep">
-                                {lang === 'kr' ? '준공 후 연면적 30만m² 기준, 평당 25만~35만 원 가정 하에 캡레이트 4% 적용 시 달성 가능한 가치입니다.' : 'Value achievable post-completion (300K sqm) at 4% cap rate, assuming 250K-350K KRW/pyeong rent.'}
+                            <p className="text-[18px] text-gray-200 font-bold break-keep">
+                                {lang === 'kr' ? '준공 후 연면적 30만m² 기준, 평당 25만~35만 원 임대료 가정 시 캡레이트 4%대 자산 가치 도달' : 'Value achievable post-completion (300K sqm) at 4% cap rate, assuming 250K-350K KRW/pyeong rent.'}
                             </p>
                         </div>
                     </div>

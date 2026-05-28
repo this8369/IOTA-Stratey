@@ -71,63 +71,57 @@ export default function Section133({ isActive }) {
                             </div>
                         </div>
 
-                        <p className="text-[14px] text-gray-600 mt-8 font-medium break-keep">
-                            {lang === 'kr' ? 'GTX 교차, 럭셔리 복합시설 결합으로 도쿄 마루노우치 수준의 초격차 프리미엄을 기대합니다.' : 'Expect an ultra-gap premium comparable to Tokyo Marunouchi, driven by GTX and luxury mixed-use integration.'}
+                        <p className="text-[18px] text-gray-700 mt-8 font-bold break-keep bg-gray-100 p-4 rounded-lg">
+                            {lang === 'kr' ? 'GTX 교차 및 럭셔리 복합시설 결합으로 도쿄 마루노우치 수준의 초격차 프리미엄 실현' : 'Expect an ultra-gap premium comparable to Tokyo Marunouchi, driven by GTX and luxury mixed-use integration.'}
                         </p>
                     </div>
 
-                    {/* Right: Exit Tree Diagram (60%) */}
+                    {/* Right: Exit Options (Clean Blocks instead of SVG Tree) */}
                     <div className={`lg:col-span-7 bg-[#1d1d1f] rounded-xl shadow-lg border border-gray-700 p-8 flex flex-col h-[400px] transition-all duration-700 delay-200 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
-                        <div className="mb-2">
+                        <div className="mb-6">
                             <div className="text-gray-400 font-black text-[16px] tracking-widest uppercase mb-1">4.4 & 4.5 EXIT OPTIONALITY</div>
                             <h3 className="text-white font-bold text-[24px] leading-tight break-keep">
-                                {lang === 'kr' ? '안정화 이후 분기형 플로우' : 'Post-Stabilization Flow'}
+                                {lang === 'kr' ? '안정화 이후 자본 회수 옵션' : 'Post-Stabilization Exit Options'}
                             </h3>
                         </div>
 
-                        {/* Tree Diagram SVG & HTML */}
-                        <div className="relative flex-1 w-full flex items-center justify-between mt-4">
+                        {/* Clean Blocks vertically aligned */}
+                        <div className="flex-1 w-full flex flex-col justify-center gap-4">
                             
-                            {/* Root Node */}
-                            <div className="z-10 bg-gray-800 border-2 border-gray-500 rounded-lg p-4 w-[160px] flex items-center justify-center shadow-lg">
-                                <span className="text-white font-bold text-center">
-                                    {lang === 'kr' ? '준공 및 안정화\n(Stabilization)' : 'Completion &\nStabilization'}
-                                </span>
-                            </div>
-
-                            {/* Connecting SVG lines */}
-                            <svg className="absolute left-[160px] top-0 w-[calc(100%-320px)] h-full" preserveAspectRatio="none">
-                                <path d="M 0 50% C 50% 50%, 50% 15%, 100% 15%" fill="none" stroke="#4b5563" strokeWidth="3" className={`transition-all duration-1000 delay-300`} strokeDasharray="300" strokeDashoffset={step >= 4 ? 0 : 300} />
-                                <path d="M 0 50% C 50% 50%, 50% 50%, 100% 50%" fill="none" stroke="#4b5563" strokeWidth="3" className={`transition-all duration-1000 delay-400`} strokeDasharray="300" strokeDashoffset={step >= 5 ? 0 : 300} />
-                                <path d="M 0 50% C 50% 50%, 50% 85%, 100% 85%" fill="none" stroke="#4b5563" strokeWidth="3" className={`transition-all duration-1000 delay-500`} strokeDasharray="300" strokeDashoffset={step >= 6 ? 0 : 300} />
-                            </svg>
-
-                            {/* Branch Nodes */}
-                            <div className="z-10 flex flex-col justify-between h-[90%] w-[180px]">
-                                {/* Branch 1 */}
-                                <div className={`bg-blue-900 border-2 border-blue-400 rounded-lg p-3 shadow-[0_0_15px_rgba(59,130,246,0.2)] transition-all duration-500 delay-700 ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
-                                    <div className="text-blue-200 text-xs font-bold mb-1">Option A</div>
-                                    <div className="text-white font-bold text-sm leading-snug">
-                                        {lang === 'kr' ? '글로벌 코어 펀드 매각\n(GIC, Allianz 등)' : 'Global Core Fund Sale\n(GIC, Allianz, etc.)'}
+                            {/* Option 1 */}
+                            <div className={`w-full bg-blue-900 border-l-8 border-blue-400 rounded-lg p-5 shadow-[0_0_15px_rgba(59,130,246,0.2)] flex items-center justify-between transition-all duration-500 delay-500 ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
+                                <div className="text-white">
+                                    <div className="text-blue-200 text-sm font-bold mb-1">OPTION A</div>
+                                    <div className="font-extrabold text-[22px]">
+                                        {lang === 'kr' ? '글로벌 코어 펀드 매각' : 'Global Core Fund Sale'}
                                     </div>
-                                </div>
-                                
-                                {/* Branch 2 */}
-                                <div className={`bg-gray-700 border-2 border-gray-400 rounded-lg p-3 shadow-lg transition-all duration-500 delay-800 ${step >= 5 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
-                                    <div className="text-gray-300 text-xs font-bold mb-1">Option B</div>
-                                    <div className="text-white font-bold text-sm leading-snug">
-                                        {lang === 'kr' ? '영구 보유 (Trophy)\n도쿄역 GranSta 모델' : 'Permanent Hold\nTokyo GranSta Model'}
-                                    </div>
-                                </div>
-
-                                {/* Branch 3 */}
-                                <div className={`bg-gradient-to-r from-blue-600 to-cyan-500 border-2 border-cyan-200 rounded-lg p-3 shadow-[0_0_20px_rgba(6,182,212,0.4)] transition-all duration-500 delay-900 ${step >= 6 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
-                                    <div className="text-cyan-100 text-xs font-bold mb-1">Option C (Base Case)</div>
-                                    <div className="text-white font-extrabold text-sm leading-snug">
-                                        {lang === 'kr' ? 'IOTA Office REIT IPO\n(5~7조 원 규모)' : 'IOTA Office REIT IPO\n(5~7T KRW Scale)'}
-                                    </div>
+                                    <div className="text-blue-100 mt-1">{lang === 'kr' ? 'GIC, Allianz 등 우량 기관 대상' : 'To blue-chip institutions (GIC, Allianz)'}</div>
                                 </div>
                             </div>
+                            
+                            {/* Option 2 */}
+                            <div className={`w-full bg-gray-700 border-l-8 border-gray-400 rounded-lg p-5 shadow-lg flex items-center justify-between transition-all duration-500 delay-700 ${step >= 5 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
+                                <div className="text-white">
+                                    <div className="text-gray-300 text-sm font-bold mb-1">OPTION B</div>
+                                    <div className="font-extrabold text-[22px]">
+                                        {lang === 'kr' ? '영구 보유 (Permanent Hold)' : 'Permanent Hold'}
+                                    </div>
+                                    <div className="text-gray-200 mt-1">{lang === 'kr' ? '도쿄역 GranSta 모델 (Trophy Asset 유지)' : 'Tokyo GranSta Model (Maintain Trophy)'}</div>
+                                </div>
+                            </div>
+
+                            {/* Option 3 */}
+                            <div className={`w-full bg-gradient-to-r from-blue-700 to-cyan-600 border-l-8 border-cyan-300 rounded-lg p-5 shadow-[0_0_20px_rgba(6,182,212,0.4)] flex items-center justify-between transition-all duration-500 delay-900 ${step >= 6 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
+                                <div className="text-white">
+                                    <div className="text-cyan-100 text-sm font-bold mb-1">OPTION C (BASE CASE)</div>
+                                    <div className="font-black text-[24px]">
+                                        {lang === 'kr' ? 'IOTA Office REIT IPO 분사' : 'IOTA Office REIT IPO'}
+                                    </div>
+                                    <div className="text-white font-bold mt-1">{lang === 'kr' ? '5~7조 원 규모의 단일 최대 리츠 상장' : '5-7T KRW Scale single largest REIT'}</div>
+                                </div>
+                                <div className="bg-white text-blue-900 px-3 py-1 rounded-full font-bold text-sm">Best Scenario</div>
+                            </div>
+
                         </div>
                     </div>
 
