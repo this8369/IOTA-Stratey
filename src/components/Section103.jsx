@@ -23,7 +23,7 @@ export default function Section103({ isActive }) {
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    <span className="inline-block text-[20px] md:text-[24px] font-bold text-indigo-600 tracking-[-0.02em] mb-[12px]">
+                    <span className="inline-block text-[20px] md:text-[24px] font-bold text-[#1e3a8a] tracking-[-0.02em] mb-[12px]">
                         Asset Management & CF Protection
                     </span>
                 </div>
@@ -36,16 +36,16 @@ export default function Section103({ isActive }) {
                 <div className="w-full max-w-[1100px] mt-10 mb-14 flex flex-col lg:flex-row gap-6 justify-center">
                     
                     {/* Left Panel: UI Mockup */}
-                    <div className={`flex-[1.2] bg-white border-2 border-gray-200 rounded-3xl p-8 shadow-xl flex flex-col transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 -translate-x-12 scale-95'}`}>
+                    <div className={`flex-[1.2] bg-white border-4 border-[#1e3a8a] rounded-none p-8 shadow-sm flex flex-col transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'}`}>
                          
                          {/* Top: Warning Alert */}
-                         <div className="bg-red-50 border border-red-200 rounded-2xl p-5 flex items-center gap-5 mb-6 shadow-sm relative overflow-hidden">
-                             <div className={`absolute left-0 top-0 bottom-0 w-1 bg-red-500 transition-opacity ${step >= 5 ? 'animate-pulse' : ''}`}></div>
-                             <div className={`w-14 h-14 bg-red-100 text-red-600 rounded-full flex items-center justify-center text-[28px] ${step >= 5 ? 'animate-pulse' : ''}`}>
-                                ⚠️
+                         <div className="bg-white border-4 border-[#1e3a8a] rounded-none p-5 flex items-center gap-5 mb-6 relative overflow-hidden">
+                             <div className={`absolute left-0 top-0 bottom-0 w-2 bg-red-600 transition-opacity ${step >= 5 ? 'animate-pulse' : ''}`}></div>
+                             <div className={`bg-red-600 text-white font-black px-4 py-2 text-[18px] tracking-widest ${step >= 5 ? 'animate-pulse' : ''}`}>
+                                ALERT
                              </div>
                              <div className="text-left">
-                                 <div className="font-black text-red-900 text-[18px] md:text-[20px] mb-1">
+                                 <div className="font-black text-[#1e3a8a] text-[18px] md:text-[20px] mb-1">
                                     {lang === 'kr' ? '공실 위험 조기 경보' : 'Early Vacancy Warning'}
                                  </div>
                                  <div className="text-red-600 font-bold text-[15px]">
@@ -57,33 +57,31 @@ export default function Section103({ isActive }) {
                          {/* Bottom: 2 Modules */}
                          <div className="flex flex-col md:flex-row gap-4">
                              {/* Module 1 */}
-                             <div className="flex-1 bg-gray-50 border border-gray-100 rounded-2xl p-6 flex flex-col items-center justify-center">
-                                 {/* Fake Donut Chart CSS */}
-                                 <div className="w-[100px] h-[100px] rounded-full border-[12px] border-indigo-500 border-r-gray-200 rotate-45 mb-4 shadow-inner"></div>
+                             <div className="flex-1 bg-white border-4 border-[#1e3a8a] rounded-none p-6 flex flex-col items-center justify-center">
+                                 <div className="w-full h-4 bg-gray-200 mb-4 overflow-hidden relative">
+                                    <div className="h-full bg-red-600 w-[85%] absolute left-0 top-0"></div>
+                                 </div>
                                  <div className="font-bold text-gray-800 text-[16px] mb-1">{lang === 'kr' ? '임대료 연체 예측' : 'Arrears Prediction'}</div>
-                                 <div className="text-indigo-600 font-black text-[22px]">High Risk</div>
+                                 <div className="text-red-600 font-black text-[22px]">High Risk</div>
                              </div>
                              {/* Module 2 */}
-                             <div className="flex-1 bg-gray-50 border border-gray-100 rounded-2xl p-6 flex flex-col items-center justify-center">
-                                 {/* Fake Donut Chart CSS */}
-                                 <div className="w-[100px] h-[100px] rounded-full border-[12px] border-green-500 border-t-gray-200 rotate-12 mb-4 shadow-inner"></div>
+                             <div className="flex-1 bg-white border-4 border-[#1e3a8a] rounded-none p-6 flex flex-col items-center justify-center">
+                                 <div className="w-full h-4 bg-gray-200 mb-4 overflow-hidden relative">
+                                    <div className="h-full bg-green-500 w-[20%] absolute left-0 top-0"></div>
+                                 </div>
                                  <div className="font-bold text-gray-800 text-[16px] mb-1">{lang === 'kr' ? '캡엑스(CAPEX) 최적화' : 'CAPEX Optimization'}</div>
-                                 <div className="text-green-600 font-black text-[22px]">Optimal</div>
+                                 <div className="text-[#1e3a8a] font-black text-[22px]">Optimal</div>
                              </div>
                          </div>
                     </div>
 
                     {/* Right Panel: Impact Impact */}
-                    <div className={`flex-[0.8] bg-[#1d1d1f] rounded-3xl p-10 flex flex-col justify-center relative overflow-hidden transition-all duration-1000 ${step >= 4 ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 translate-x-12 scale-95'}`}>
-                        {/* Glow effect */}
-                        <div className="absolute top-0 right-0 w-72 h-72 bg-indigo-600 rounded-full blur-[100px] opacity-30"></div>
-                        <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-600 rounded-full blur-[100px] opacity-20"></div>
-                        
+                    <div className={`flex-[0.8] bg-[#1d1d1f] border-4 border-[#1e3a8a] rounded-none p-10 flex flex-col justify-center relative overflow-hidden transition-all duration-1000 ${step >= 4 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'}`}>
                         <div className="relative z-10 text-left">
                             <h4 className="text-gray-400 font-bold text-[18px] md:text-[22px] mb-2">
                                 {lang === 'kr' ? '운용 효율 개선 효과' : 'Operational Efficiency Gain'}
                             </h4>
-                            <div className="font-black text-[50px] md:text-[65px] leading-none mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 tracking-tighter">
+                            <div className="font-black text-[50px] md:text-[65px] leading-none mb-4 text-white tracking-tighter">
                                 30<span className="text-[25px] md:text-[35px]">%</span>
                             </div>
                             <div className="w-12 h-1 bg-gray-500 mb-6"></div>

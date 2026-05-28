@@ -23,7 +23,7 @@ export default function Section102({ isActive }) {
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    <span className="inline-block text-[20px] md:text-[24px] font-bold text-blue-600 tracking-[-0.02em] mb-[12px]">
+                    <span className="inline-block text-[20px] md:text-[24px] font-bold text-[#1e3a8a] tracking-[-0.02em] mb-[12px]">
                         Acquisition Underwriting
                     </span>
                 </div>
@@ -35,44 +35,48 @@ export default function Section102({ isActive }) {
                 {/* Infographic Area */}
                 <div className="w-full max-w-[1100px] mt-12 mb-16 relative">
                     {/* Animated Flow Line */}
-                    <div className="absolute top-1/2 left-[15%] right-[15%] h-[6px] bg-gray-100 rounded-full z-0 -translate-y-1/2 overflow-hidden">
-                        <div className={`h-full bg-gradient-to-r from-transparent via-blue-400 to-indigo-600 transition-all duration-[2000ms] ease-in-out ${step >= 4 ? 'translate-x-0 w-full opacity-100' : '-translate-x-full w-0 opacity-0'}`}></div>
+                    <div className="absolute top-1/2 left-[15%] right-[15%] h-[4px] bg-gray-200 z-0 -translate-y-1/2 overflow-hidden">
+                        <div className={`h-full bg-[#1e3a8a] transition-all duration-[2000ms] ease-in-out ${step >= 4 ? 'translate-x-0 w-full opacity-100' : '-translate-x-full w-0 opacity-0'}`}></div>
                     </div>
 
                     <div className="flex w-full justify-between items-center relative z-10 px-[28px]">
                         {/* Node 1: Raw Data */}
-                        <div className={`w-[260px] bg-white border-2 border-gray-200 rounded-2xl p-5 shadow-lg transition-all duration-700 ${step >= 3 ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 -translate-x-12 scale-95'}`}>
-                            <h4 className="font-bold text-gray-800 text-[18px] mb-4">{lang === 'kr' ? '원천 데이터 수집' : 'Raw Data Input'}</h4>
+                        <div className={`w-[260px] bg-white border-4 border-[#1e3a8a] rounded-none p-5 shadow-sm transition-all duration-700 ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'}`}>
+                            <h4 className="font-bold text-[#1e3a8a] text-[18px] mb-4 border-b-2 border-[#1e3a8a] pb-2">{lang === 'kr' ? '원천 데이터 수집' : 'Raw Data Input'}</h4>
                             <div className="flex flex-col gap-3">
-                                <div className="bg-gray-50 border border-gray-100 p-3 rounded-lg text-[15px] font-bold text-gray-600 flex items-center justify-center gap-2">📊 {lang === 'kr' ? '시장 보고서 / 매물 텍스트' : 'Market Reports & Teasers'}</div>
-                                <div className="bg-gray-50 border border-gray-100 p-3 rounded-lg text-[15px] font-bold text-gray-600 flex items-center justify-center gap-2">📈 {lang === 'kr' ? '실거래가 및 Cap Rate' : 'Transaction & Cap Rate'}</div>
+                                <div className="bg-gray-50 border border-gray-200 p-3 text-[15px] font-bold text-gray-700 flex items-center gap-2">
+                                    <div className="w-2 h-2 bg-[#1e3a8a]"></div>
+                                    {lang === 'kr' ? '시장 보고서 / 매물 텍스트' : 'Market Reports & Teasers'}
+                                </div>
+                                <div className="bg-gray-50 border border-gray-200 p-3 text-[15px] font-bold text-gray-700 flex items-center gap-2">
+                                    <div className="w-2 h-2 bg-[#1e3a8a]"></div>
+                                    {lang === 'kr' ? '실거래가 및 Cap Rate' : 'Transaction & Cap Rate'}
+                                </div>
                             </div>
                         </div>
 
                         {/* Node 2: AI Core */}
-                        <div className={`flex flex-col items-center transition-all duration-1000 ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
-                            <div className="w-[160px] h-[160px] rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex flex-col items-center justify-center shadow-[0_0_40px_rgba(79,70,229,0.4)] relative">
-                                {/* Pulse ring */}
-                                <div className="absolute inset-0 rounded-full border-4 border-indigo-400 animate-ping opacity-20"></div>
+                        <div className={`flex flex-col items-center transition-all duration-1000 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                            <div className="w-[160px] h-[160px] bg-[#1e3a8a] flex flex-col items-center justify-center shadow-md border-[6px] border-gray-100 outline outline-1 outline-gray-300 relative">
                                 <span className="text-white font-black text-[28px] tracking-tight">Claude</span>
                                 <span className="text-white/80 font-bold text-[18px]">/ GPT</span>
                             </div>
-                            <div className="mt-6 bg-[#1d1d1f] text-white px-5 py-2 rounded-full font-bold text-[16px] shadow-md">
+                            <div className="mt-6 bg-[#1d1d1f] text-white px-5 py-2 font-bold text-[16px] shadow-sm">
                                 {lang === 'kr' ? '시장 비교 및 시나리오 연산' : 'Market Comp & Scenario Compute'}
                             </div>
                         </div>
 
                         {/* Node 3: Output Documents */}
-                        <div className={`w-[260px] bg-gradient-to-b from-blue-50 to-white border-2 border-blue-200 rounded-2xl p-5 shadow-xl transition-all duration-1000 ${step >= 5 ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 translate-x-12 scale-95'}`}>
-                            <h4 className="font-bold text-blue-800 text-[18px] mb-4">{lang === 'kr' ? '초안 자동 생성' : 'Auto Draft Generation'}</h4>
+                        <div className={`w-[260px] bg-white border-4 border-[#1e3a8a] rounded-none p-5 shadow-sm transition-all duration-1000 ${step >= 5 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'}`}>
+                            <h4 className="font-bold text-[#1e3a8a] text-[18px] mb-4 border-b-2 border-[#1e3a8a] pb-2">{lang === 'kr' ? '초안 자동 생성' : 'Auto Draft Generation'}</h4>
                             <div className="flex flex-col gap-3">
-                                <div className="bg-white border-2 border-blue-100 p-4 rounded-xl shadow-sm text-center flex flex-col items-center justify-center">
-                                    <span className="text-[28px] mb-1">📝</span>
-                                    <span className="font-black text-blue-900 text-[18px]">LOI (의향서)</span>
+                                <div className="bg-white border-2 border-[#1e3a8a] p-4 shadow-sm text-center flex flex-col items-center justify-center">
+                                    <span className="font-black text-[#1d1d1f] text-[18px]">LOI</span>
+                                    <span className="font-bold text-gray-500 text-[13px]">{lang === 'kr' ? '의향서' : 'Letter of Intent'}</span>
                                 </div>
-                                <div className="bg-white border-2 border-blue-100 p-4 rounded-xl shadow-sm text-center flex flex-col items-center justify-center">
-                                    <span className="text-[28px] mb-1">📑</span>
-                                    <span className="font-black text-blue-900 text-[18px]">IC Memo (투자심의)</span>
+                                <div className="bg-white border-2 border-[#1e3a8a] p-4 shadow-sm text-center flex flex-col items-center justify-center">
+                                    <span className="font-black text-[#1d1d1f] text-[18px]">IC Memo</span>
+                                    <span className="font-bold text-gray-500 text-[13px]">{lang === 'kr' ? '투자심의메모' : 'Investment Memo'}</span>
                                 </div>
                             </div>
                         </div>

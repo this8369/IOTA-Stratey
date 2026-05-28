@@ -33,7 +33,7 @@ export default function Section105({ isActive }) {
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                    <span className="inline-block text-[20px] md:text-[24px] font-bold text-purple-600 tracking-[-0.02em] mb-[12px]">
+                    <span className="inline-block text-[20px] md:text-[24px] font-bold text-[#1e3a8a] tracking-[-0.02em] mb-[12px]">
                         IPR Project REIT Structuring
                     </span>
                 </div>
@@ -46,68 +46,68 @@ export default function Section105({ isActive }) {
                 <div className="w-full max-w-[1100px] mt-10 mb-14 flex flex-col md:flex-row gap-6 justify-center">
                     
                     {/* Left: PF Tranche Stack */}
-                    <div className={`flex-[0.8] bg-white border-2 border-gray-200 rounded-3xl p-8 shadow-md transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
-                        <h4 className="font-bold text-gray-800 text-[18px] md:text-[20px] mb-6 text-left border-b pb-3">
+                    <div className={`flex-[0.8] bg-white border-4 border-[#1e3a8a] rounded-none p-8 shadow-sm transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'}`}>
+                        <h4 className="font-bold text-[#1e3a8a] text-[18px] md:text-[20px] mb-6 text-left border-b-2 border-[#1e3a8a] pb-3">
                             {lang === 'kr' ? '7조 원 PF 캐시플로우 트랜치' : '7T KRW PF Cash Flow Tranche'}
                         </h4>
                         
                         <div className="flex flex-col gap-2 relative">
                             {/* Equity */}
-                            <div className="w-full h-12 bg-purple-100 border-2 border-purple-300 rounded-lg flex items-center justify-between px-4 hover:-translate-y-1 transition-transform cursor-pointer">
-                                <span className="font-bold text-purple-900">Equity (Common/Pref)</span>
-                                <span className="font-black text-purple-700">20%</span>
+                            <div className="w-full h-12 bg-white border-2 border-[#1e3a8a] rounded-none flex items-center justify-between px-4 hover:-translate-y-1 transition-transform cursor-pointer">
+                                <span className="font-bold text-[#1e3a8a]">Equity (Common/Pref)</span>
+                                <span className="font-black text-[#1e3a8a]">20%</span>
                             </div>
                             {/* Mezzanine */}
-                            <div className="w-full h-14 bg-blue-100 border-2 border-blue-300 rounded-lg flex items-center justify-between px-4 hover:-translate-y-1 transition-transform cursor-pointer">
-                                <span className="font-bold text-blue-900">Mezzanine Loan</span>
-                                <span className="font-black text-blue-700">30%</span>
+                            <div className="w-full h-14 bg-gray-50 border-2 border-[#1e3a8a] rounded-none flex items-center justify-between px-4 hover:-translate-y-1 transition-transform cursor-pointer">
+                                <span className="font-bold text-[#1e3a8a]">Mezzanine Loan</span>
+                                <span className="font-black text-[#1e3a8a]">30%</span>
                             </div>
                             {/* Senior */}
-                            <div className="w-full h-20 bg-gray-100 border-2 border-gray-300 rounded-lg flex items-center justify-between px-4 hover:-translate-y-1 transition-transform cursor-pointer">
+                            <div className="w-full h-20 bg-gray-100 border-2 border-[#1e3a8a] rounded-none flex items-center justify-between px-4 hover:-translate-y-1 transition-transform cursor-pointer">
                                 <span className="font-bold text-gray-700">Senior Loan</span>
                                 <span className="font-black text-gray-600">50%</span>
                             </div>
 
                             {/* Automation Arrow Overlay */}
-                            <div className={`absolute -right-12 top-1/2 -translate-y-1/2 w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center text-white shadow-lg transition-all duration-700 ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
-                                ⚡️
+                            <div className={`absolute -right-12 top-1/2 -translate-y-1/2 w-10 h-10 bg-[#1e3a8a] rounded-none flex items-center justify-center text-white shadow-sm transition-all duration-700 ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                             </div>
                         </div>
                     </div>
 
                     {/* Right: Dynamic Simulator UI */}
-                    <div className={`flex-[1.2] bg-[#1d1d1f] rounded-3xl p-8 shadow-xl flex flex-col transition-all duration-1000 ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
+                    <div className={`flex-[1.2] bg-[#1d1d1f] border-4 border-[#1e3a8a] rounded-none p-8 shadow-sm flex flex-col transition-all duration-1000 ${step >= 4 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'}`}>
                         <div className="flex items-center justify-between mb-6">
                             <h4 className="font-bold text-gray-200 text-[18px] md:text-[20px]">
                                 {lang === 'kr' ? 'AI 민감도 분석 시뮬레이터' : 'AI Sensitivity Simulator'}
                             </h4>
-                            <span className="bg-purple-600/30 text-purple-300 px-3 py-1 rounded-full text-[12px] font-bold">Auto-Sync</span>
+                            <span className="bg-[#1e3a8a] text-white px-3 py-1 rounded-none border border-[#1e3a8a] text-[12px] font-bold">Auto-Sync</span>
                         </div>
 
                         {/* Sliders */}
                         <div className="flex gap-4 mb-8">
-                            <div className="flex-1 bg-white/5 rounded-xl p-3">
+                            <div className="flex-1 bg-white/5 border border-white/10 rounded-none p-3">
                                 <div className="text-gray-400 text-[12px] font-bold mb-2">{lang === 'kr' ? '금리 (Interest Rate)' : 'Interest Rate'}</div>
-                                <div className="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
-                                    <div className="h-full bg-purple-400 transition-all duration-500" style={{ width: `${sliderValue}%` }}></div>
+                                <div className="w-full h-2 bg-gray-700 rounded-none overflow-hidden">
+                                    <div className="h-full bg-[#1e3a8a] transition-all duration-500" style={{ width: `${sliderValue}%` }}></div>
                                 </div>
                             </div>
-                            <div className="flex-1 bg-white/5 rounded-xl p-3">
+                            <div className="flex-1 bg-white/5 border border-white/10 rounded-none p-3">
                                 <div className="text-gray-400 text-[12px] font-bold mb-2">{lang === 'kr' ? '공실률 (Vacancy)' : 'Vacancy Rate'}</div>
-                                <div className="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
-                                    <div className="h-full bg-blue-400 transition-all duration-500" style={{ width: `${100 - sliderValue}%` }}></div>
+                                <div className="w-full h-2 bg-gray-700 rounded-none overflow-hidden">
+                                    <div className="h-full bg-[#60a5fa] transition-all duration-500" style={{ width: `${100 - sliderValue}%` }}></div>
                                 </div>
                             </div>
-                            <div className="flex-1 bg-white/5 rounded-xl p-3">
+                            <div className="flex-1 bg-white/5 border border-white/10 rounded-none p-3">
                                 <div className="text-gray-400 text-[12px] font-bold mb-2">{lang === 'kr' ? '임대료 (Rent)' : 'Rent'}</div>
-                                <div className="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
-                                    <div className="h-full bg-teal-400 transition-all duration-500" style={{ width: `${(sliderValue + 30) % 100}%` }}></div>
+                                <div className="w-full h-2 bg-gray-700 rounded-none overflow-hidden">
+                                    <div className="h-full bg-white transition-all duration-500" style={{ width: `${(sliderValue + 30) % 100}%` }}></div>
                                 </div>
                             </div>
                         </div>
 
                         {/* Chart Area */}
-                        <div className="flex-1 bg-black/40 rounded-xl border border-gray-700 p-4 relative overflow-hidden flex flex-col justify-end">
+                        <div className="flex-1 bg-black/40 rounded-none border border-gray-700 p-4 relative overflow-hidden flex flex-col justify-end">
                             <div className="absolute top-4 left-4 text-gray-400 font-bold text-[14px]">
                                 {lang === 'kr' ? 'IPO / 매각 시나리오 가치 평가' : 'IPO / Exit Scenario Valuation'}
                             </div>
@@ -129,7 +129,7 @@ export default function Section105({ isActive }) {
                                 {/* Dynamic Simulated Line (moves with slider) */}
                                 <path 
                                     d={`M 0,80 C 30,${100 - sliderValue} 70,${sliderValue} 100,${sliderValue / 2}`} 
-                                    fill="none" stroke="#a855f7" strokeWidth="3" 
+                                    fill="none" stroke="#60a5fa" strokeWidth="3" 
                                     className={`transition-all duration-500 ${step >= 5 ? 'opacity-100' : 'opacity-0'}`}
                                 />
                             </svg>
