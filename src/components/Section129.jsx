@@ -36,7 +36,7 @@ export default function Section129({ isActive }) {
                     
                     {/* Card 1 */}
                     <div className="bg-white border-[6px] border-[#1d1d1f] px-8 py-[28px] flex flex-col shadow-sm">
-                        <div className="text-[#1d1d1f] font-bold text-[22px] mb-[6px]">4</div>
+                        <div className="text-[#1d1d1f] font-bold text-[22px] mb-[6px]">RISK 4</div>
                         <div className="text-[#1d1d1f] font-bold text-[22px] mb-[14px] border-b-2 border-gray-100 pb-4">
                             {lang === 'kr' ? '규제 및 정치 변수' : 'Regulatory & Political Variables'}
                         </div>
@@ -58,7 +58,7 @@ export default function Section129({ isActive }) {
 
                     {/* Card 2 */}
                     <div className="bg-white border-[6px] border-[#1d1d1f] px-8 py-[28px] flex flex-col shadow-sm">
-                        <div className="text-[#1d1d1f] font-bold text-[22px] mb-[6px]">5</div>
+                        <div className="text-[#1d1d1f] font-bold text-[22px] mb-[6px]">RISK 5</div>
                         <div className="text-[#1d1d1f] font-bold text-[22px] mb-[14px] border-b-2 border-gray-100 pb-4">
                             {lang === 'kr' ? '앵커 임차인 확보' : 'Securing Anchor Tenants'}
                         </div>

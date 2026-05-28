@@ -36,7 +36,7 @@ export default function Section128({ isActive }) {
                     
                     {/* Card 1 */}
                     <div className="bg-white border-[6px] border-[#1d1d1f] px-8 py-[28px] flex flex-col shadow-sm">
-                        <div className="text-[#1d1d1f] font-bold text-[22px] mb-[6px]">1</div>
+                        <div className="text-[#1d1d1f] font-bold text-[22px] mb-[6px]">RISK 1</div>
                         <div className="text-[#1d1d1f] font-bold text-[22px] mb-[14px] border-b-2 border-gray-100 pb-4">
                             {lang === 'kr' ? '금리 환경' : 'Interest Rate Environment'}
                         </div>
@@ -54,7 +54,7 @@ export default function Section128({ isActive }) {
 
                     {/* Card 2 */}
                     <div className="bg-white border-[6px] border-[#1d1d1f] px-8 py-[28px] flex flex-col shadow-sm">
-                        <div className="text-[#1d1d1f] font-bold text-[22px] mb-[6px]">2</div>
+                        <div className="text-[#1d1d1f] font-bold text-[22px] mb-[6px]">RISK 2</div>
                         <div className="text-[#1d1d1f] font-bold text-[22px] mb-[14px] border-b-2 border-gray-100 pb-4">
                             {lang === 'kr' ? '공사비 인플레이션' : 'Construction Cost Inflation'}
                         </div>
@@ -72,7 +72,7 @@ export default function Section128({ isActive }) {
 
                     {/* Card 3 */}
                     <div className="bg-white border-[6px] border-[#1d1d1f] px-8 py-[28px] flex flex-col shadow-sm">
-                        <div className="text-[#1d1d1f] font-bold text-[22px] mb-[6px]">3</div>
+                        <div className="text-[#1d1d1f] font-bold text-[22px] mb-[6px]">RISK 3</div>
                         <div className="text-[#1d1d1f] font-bold text-[22px] mb-[14px] border-b-2 border-gray-100 pb-4">
                             {lang === 'kr' ? 'PF 시장 유동성' : 'PF Market Liquidity'}
                         </div>

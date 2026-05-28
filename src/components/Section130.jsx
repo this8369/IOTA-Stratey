@@ -36,7 +36,7 @@ export default function Section130({ isActive }) {
                     
                     {/* Card 1 */}
                     <div className="bg-white border-[6px] border-[#1d1d1f] px-8 py-[28px] flex flex-col shadow-sm">
-                        <div className="text-[#1d1d1f] font-bold text-[22px] mb-[6px]">6</div>
+                        <div className="text-[#1d1d1f] font-bold text-[22px] mb-[6px]">RISK 6</div>
                         <div className="text-[#1d1d1f] font-bold text-[22px] mb-[14px] border-b-2 border-gray-100 pb-4">
                             {lang === 'kr' ? '외국인 자본 참여' : 'Foreign Capital Participation'}
                         </div>
@@ -54,7 +54,7 @@ export default function Section130({ isActive }) {
 
                     {/* Card 2 */}
                     <div className="bg-white border-[6px] border-[#1d1d1f] px-8 py-[28px] flex flex-col shadow-sm">
-                        <div className="text-[#1d1d1f] font-bold text-[22px] mb-[6px]">7</div>
+                        <div className="text-[#1d1d1f] font-bold text-[22px] mb-[6px]">RISK 7</div>
                         <div className="text-[#1d1d1f] font-bold text-[22px] mb-[14px] border-b-2 border-gray-100 pb-4">
                             {lang === 'kr' ? '거버넌스 리스크' : 'Governance Risks'}
                         </div>
