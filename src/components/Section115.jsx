@@ -29,7 +29,7 @@ export default function Section115({ isActive }) {
                 </div>
                 <h2 className={`text-[34px] md:text-[54px] lg:text-[66px] font-bold leading-[calc(1.3em-6px)] break-keep transition-all duration-[734ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="gradient-text-p4c1">
-                        {lang === 'kr' ? '거시·도시적 포지셔닝' : 'Macro & Urban Positioning'}
+                        {lang === 'kr' ? 'IOTA Seoul의 역할' : 'Role of IOTA Seoul'}
                     </span>
                 </h2>
             </div>

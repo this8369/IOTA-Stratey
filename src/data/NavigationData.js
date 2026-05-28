@@ -246,7 +246,7 @@ export const menuDataEn = [
         id: "page-115", 
         chapters: [
             {
-                title: "Chapter 1. Macro & Urban Positioning",
+                title: "Chapter 1. Role of IOTA Seoul",
                 id: "page-116",
                 items: [
                     { label: "Global Redevelopment Pattern", id: "page-117" },
@@ -507,7 +507,7 @@ export const menuDataKr = [
         id: "page-115", 
         chapters: [
             {
-                title: "Chapter 1. 거시·도시적 포지셔닝",
+                title: "Chapter 1. IOTA Seoul의 역할",
                 id: "page-116",
                 items: [
                     { label: "글로벌 재개발 패턴", id: "page-117" },
