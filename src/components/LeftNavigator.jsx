@@ -74,14 +74,14 @@ export default function LeftNavigator({ currentPage, isOpen, setIsOpen }) {
  {/* Toggle Button */}
  <button 
  onClick={() => setIsOpen(!isOpen)}
- className={`fixed top-1/2 -translate-y-1/2 z-[101] bg-white opacity-40 hover:opacity-100 border border-gray-200 p-1 transition-all duration-300 ease-in-out hover:bg-gray-50 flex items-center justify-center rounded-r-md
- ${isOpen ? 'left-[240px] border-l-0 opacity-100' : 'left-0'}`}
+ className={`fixed top-1/2 -translate-y-1/2 z-[101] p-1 transition-all duration-300 ease-in-out flex items-center justify-center rounded-r-md border group backdrop-blur-sm
+ ${isOpen ? 'left-[240px] border-l-0 bg-white border-gray-200' : 'left-0 bg-white/20 border-gray-200/30 hover:bg-white hover:border-gray-200'}`}
  style={{ width: '24px', height: '40px' }}
  aria-label="Toggle Navigator"
  >
  <svg 
- className={`w-5 h-5 text-gray-600 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} 
- fill="none" strokeWidth="2" stroke="currentColor" viewBox="0 0 24 24"
+ className={`w-5 h-5 transition-transform transition-colors duration-300 ${isOpen ? 'rotate-180 text-gray-600' : 'text-gray-800 drop-shadow-sm group-hover:text-gray-600'}`} 
+ fill="none" strokeWidth="2.5" stroke="currentColor" viewBox="0 0 24 24"
  >
  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
  </svg>
