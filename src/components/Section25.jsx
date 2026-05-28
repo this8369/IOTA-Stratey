@@ -11,11 +11,11 @@ export default function Section25({ isActive }) {
             return;
         }
         const timers = [
-            setTimeout(() => setStep(1), 255),
-            setTimeout(() => setStep(2), 850),
-            setTimeout(() => setStep(3), 1360),
-            setTimeout(() => setStep(4), 1870),
-            setTimeout(() => setStep(5), 2380)
+            setTimeout(() => setStep(1), 230),
+            setTimeout(() => setStep(2), 765),
+            setTimeout(() => setStep(3), 1224),
+            setTimeout(() => setStep(4), 1683),
+            setTimeout(() => setStep(5), 2142)
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -24,20 +24,20 @@ export default function Section25({ isActive }) {
         <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
-                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
                         {lang === 'kr' ? '박스피(Boxpi)를 뚫어낸 역사적 랠리' : 'Historic Rally Breaking Through Boxpi'}
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? '2007년 2,000선 돌파 이후 마침내 열린 KOSPI 5,000 시대' : 'KOSPI 5,000 Era Finally Opens After Breaking 2,000 in 2007'}
                 </h2>
 
                 <div className="relative w-full max-w-[1100px] mt-[22px] mb-[20px] h-auto py-4 flex flex-col md:flex-row items-center justify-center z-10 gap-8 md:gap-16">
                     
                     {/* The Past: Boxpi */}
-                    <div className={`relative flex flex-col items-center transition-all duration-[850ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 scale-100 translate-x-0' : 'opacity-0 scale-50 -translate-x-12'}`}>
+                    <div className={`relative flex flex-col items-center transition-all duration-[765ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 scale-100 translate-x-0' : 'opacity-0 scale-50 -translate-x-12'}`}>
                         <div className="w-[240px] h-[240px] bg-stone-200 rounded-[30px] shadow-lg flex flex-col items-center justify-center border-[4px] border-stone-300 mb-6 p-4">
                             <span className="text-[18px] font-bold text-stone-500 mb-1">2017 ~ 2024</span>
                             <span className="text-[42px] font-black text-stone-800 leading-none tracking-tighter">BOXPI</span>
@@ -49,7 +49,7 @@ export default function Section25({ isActive }) {
                     </div>
 
                     {/* Arrow */}
-                    <div className={`flex flex-col items-center transition-all duration-[850ms] ${step >= 3 ? 'opacity-100' : 'opacity-0'}`}>
+                    <div className={`flex flex-col items-center transition-all duration-[765ms] ${step >= 3 ? 'opacity-100' : 'opacity-0'}`}>
                         <div className="text-[20px] font-black text-[#d97706] mb-2">2025.07 ~ 12</div>
                         <div className="w-[120px] h-[6px] bg-gradient-to-r from-stone-400 to-[#d97706] relative rounded-full">
                             <div className="absolute right-[-6px] top-1/2 -translate-y-1/2 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent border-l-[16px] border-l-[#d97706]"></div>
@@ -58,7 +58,7 @@ export default function Section25({ isActive }) {
                     </div>
 
                     {/* The Present: 5000 Era */}
-                    <div className={`relative flex flex-col items-center transition-all duration-[850ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-[170ms] ${step >= 4 ? 'opacity-100 scale-100 translate-x-0' : 'opacity-0 scale-50 translate-x-12'}`}>
+                    <div className={`relative flex flex-col items-center transition-all duration-[765ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-[153ms] ${step >= 4 ? 'opacity-100 scale-100 translate-x-0' : 'opacity-0 scale-50 translate-x-12'}`}>
                         <div className="w-[300px] h-[300px] bg-gradient-to-br from-amber-400 to-amber-600 rounded-[40px] shadow-[0_20px_50px_rgba(217,119,6,0.4)] flex flex-col items-center justify-center border-[6px] border-white mb-6 p-6">
                             <span className="text-[20px] font-bold text-amber-900 mb-1">2026.01.22</span>
                             <span className="text-[22px] font-bold text-white mb-2">{lang === 'kr' ? '사상 처음 돌파' : 'First Time Ever'}</span>
@@ -72,7 +72,7 @@ export default function Section25({ isActive }) {
 
                 </div>
 
-                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[765ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[689ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>

@@ -7,8 +7,8 @@ export default function Section44({ isActive }) {
 
     useEffect(() => {
         if (!isActive) { setStep(0); return; }
-        const t1 = setTimeout(() => setStep(1), 255);
-        const t2 = setTimeout(() => setStep(2), 595);
+        const t1 = setTimeout(() => setStep(1), 230);
+        const t2 = setTimeout(() => setStep(2), 536);
         return () => { clearTimeout(t1); clearTimeout(t2); };
     }, [isActive]);
 
@@ -17,7 +17,7 @@ export default function Section44({ isActive }) {
             <div className="w-full max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-10 lg:gap-[70px] items-center justify-center">
                 
                 {/* Left Side: Theme & Title */}
-                <div className={`shrink-0 transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                <div className={`shrink-0 transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px]">
                         {lang === 'kr' ? 'Base Scenario (확률 50%)' : 'Base Scenario (50% Prob)'}
                     </span>
@@ -27,7 +27,7 @@ export default function Section44({ isActive }) {
                 </div>
 
                 {/* Right Side: Stats & Assumptions (Sharp Box, Large Text) */}
-                <div className={`shrink-0 w-full max-w-[590px] bg-gray-50 rounded-none px-8 py-7 md:py-[28px] md:px-12 border-[6px] border-gray-400 transition-all duration-[850ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                <div className={`shrink-0 w-full max-w-[590px] bg-gray-50 rounded-none px-8 py-7 md:py-[28px] md:px-12 border-[6px] border-gray-400 transition-all duration-[765ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                     <div className="space-y-4">
                         <div>
                             <p className="text-gray-400 text-[16px] md:text-[17px] font-bold mb-2 uppercase">{lang === 'kr' ? '2030년 예상 GDP' : '2030 Expected GDP'}</p>

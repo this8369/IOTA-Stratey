@@ -11,9 +11,9 @@ export default function Section3({ isActive }) {
  return;
  }
  
- const t1 = setTimeout(() => setStep(1), 230); // Theme
- const t2 = setTimeout(() => setStep(2), 612); // Main Text
- const t3 = setTimeout(() => setStep(3), 1148); // Content Text
+ const t1 = setTimeout(() => setStep(1), 207); // Theme
+ const t2 = setTimeout(() => setStep(2), 551); // Main Text
+ const t3 = setTimeout(() => setStep(3), 1033); // Content Text
  
  return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); };
  }, [isActive]);
@@ -24,14 +24,14 @@ export default function Section3({ isActive }) {
  <div className="inline-block w-auto max-w-full mx-auto flex flex-col items-center text-center">
  
  {/* Theme */}
- <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+ <div className={`transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
  <span className="inline-block text-[24px] md:text-[28px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[14px] bg-transparent">
  3조 달러 시대, 이지스자산운용의 전략적 좌표
  </span>
  </div>
 
  {/* Main Text */}
- <h2 className={`text-[36px] md:text-[52px] lg:text-[60px] font-extrabold leading-[calc(1.3em-2px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+ <h2 className={`text-[36px] md:text-[52px] lg:text-[60px] font-extrabold leading-[calc(1.3em-2px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
  {lang === 'kr' ? (
  <>
  한국 경제 1조 → 2조 → 3조 달러 궤적,<br/>
@@ -46,7 +46,7 @@ export default function Section3({ isActive }) {
  </h2>
 
  {/* Content */}
- <div className={`inline-block w-auto max-w-full bg-transparent rounded-none border-[8px] border-[#1e3a8a] px-[50px] py-8 mt-12 transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+ <div className={`inline-block w-auto max-w-full bg-transparent rounded-none border-[8px] border-[#1e3a8a] px-[50px] py-8 mt-12 transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
  {lang === 'kr' ? (
  <ul className="text-[22px] md:text-[26px] text-black leading-[1.7] font-bold text-left inline-block space-y-4">
  <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>한국 명목 GDP 1조 달러 돌파(2007년) 이후, 2조 달러 안착(2026~2027년)을 앞둔 거시적 변곡점</span></li>

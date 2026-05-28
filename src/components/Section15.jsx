@@ -11,11 +11,11 @@ export default function Section15({ isActive }) {
             return;
         }
         const timers = [
-            setTimeout(() => setStep(1), 255),
-            setTimeout(() => setStep(2), 850),
-            setTimeout(() => setStep(3), 1360),
-            setTimeout(() => setStep(4), 1870),
-            setTimeout(() => setStep(5), 2380)
+            setTimeout(() => setStep(1), 230),
+            setTimeout(() => setStep(2), 765),
+            setTimeout(() => setStep(3), 1224),
+            setTimeout(() => setStep(4), 1683),
+            setTimeout(() => setStep(5), 2142)
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -24,13 +24,13 @@ export default function Section15({ isActive }) {
         <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
-                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
                         {lang === 'kr' ? '모빌리티를 넘어선 자동차 산업의 진화' : 'Evolution of Automobiles Beyond Mobility'}
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? '로봇과 AI 인프라로 비즈니스 영토를 전면 확장하는 현대차그룹' : 'Hyundai Motor Group Radically Expanding Business Territory with Robotics & AI'}
                 </h2>
 
@@ -39,10 +39,10 @@ export default function Section15({ isActive }) {
                         
                         {/* Connecting Line */}
                         <div className="absolute top-1/2 left-[10%] w-[80%] h-[4px] bg-gray-200 -translate-y-1/2 -z-10"></div>
-                        <div className={`absolute top-1/2 left-[10%] h-[4px] bg-gradient-to-r from-[#047857] to-[#10b981] -translate-y-1/2 -z-10 transition-all duration-[1275ms] ease-out`} style={{ width: step >= 4 ? '80%' : step >= 3 ? '40%' : '0%' }}></div>
+                        <div className={`absolute top-1/2 left-[10%] h-[4px] bg-gradient-to-r from-[#047857] to-[#10b981] -translate-y-1/2 -z-10 transition-all duration-[1148ms] ease-out`} style={{ width: step >= 4 ? '80%' : step >= 3 ? '40%' : '0%' }}></div>
 
                         {/* Pillar 1: Auto */}
-                        <div className={`relative flex flex-col items-center transition-all duration-[680ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-90'}`}>
+                        <div className={`relative flex flex-col items-center transition-all duration-[612ms] ease-out ${step >= 2 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-90'}`}>
                             <div className="w-[160px] h-[140px] rounded-2xl bg-white border-4 border-[#047857] shadow-xl flex flex-col items-center justify-center z-20">
                                 <span className="text-[36px] font-black text-[#047857]">Auto</span>
                                 <span className="text-[16px] font-bold text-gray-500 mt-1">Global Top 3</span>
@@ -54,7 +54,7 @@ export default function Section15({ isActive }) {
                         </div>
 
                         {/* Pillar 2: Robotics */}
-                        <div className={`relative flex flex-col items-center transition-all duration-[680ms] ease-out ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-90'}`}>
+                        <div className={`relative flex flex-col items-center transition-all duration-[612ms] ease-out ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-90'}`}>
                             <div className="w-[160px] h-[140px] rounded-2xl bg-white border-4 border-[#10b981] shadow-xl flex flex-col items-center justify-center z-20">
                                 <span className="text-[36px] font-black text-[#10b981]">Robotics</span>
                                 <span className="text-[16px] font-bold text-gray-500 mt-1">UAM & Droids</span>
@@ -66,7 +66,7 @@ export default function Section15({ isActive }) {
                         </div>
 
                         {/* Pillar 3: AI Infra */}
-                        <div className={`relative flex flex-col items-center transition-all duration-[680ms] ease-out ${step >= 4 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-90'}`}>
+                        <div className={`relative flex flex-col items-center transition-all duration-[612ms] ease-out ${step >= 4 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-90'}`}>
                             <div className="w-[160px] h-[140px] rounded-2xl bg-gradient-to-br from-[#0f172a] to-[#047857] shadow-2xl flex flex-col items-center justify-center z-20 border-4 border-white">
                                 <span className="text-[36px] font-black text-white">AI Infra</span>
                                 <span className="text-[16px] font-bold text-emerald-200 mt-1">Data Center</span>
@@ -80,7 +80,7 @@ export default function Section15({ isActive }) {
                     </div>
                 </div>
 
-                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[765ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[689ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>

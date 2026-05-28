@@ -8,9 +8,9 @@ export default function Section74({ isActive }) {
     useEffect(() => {
         if (!isActive) { setStep(0); return; }
         const timers = [
-            setTimeout(() => setStep(1), 255),
-            setTimeout(() => setStep(2), 680),
-            setTimeout(() => setStep(3), 1190)
+            setTimeout(() => setStep(1), 230),
+            setTimeout(() => setStep(2), 612),
+            setTimeout(() => setStep(3), 1071)
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -19,13 +19,13 @@ export default function Section74({ isActive }) {
         <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
-                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
                         {lang === 'kr' ? 'GBD의 신규 절대 좌표' : 'New Absolute Coordinates of GBD'}
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? <>IOTA 서울 & 현대차 GBC 파이프라인</> : <>IOTA Seoul & Hyundai GBC Pipeline</>}
                 </h2>
 
@@ -33,7 +33,7 @@ export default function Section74({ isActive }) {
                 <div className="flex flex-col md:flex-row w-full max-w-[1200px] mt-[50px] mb-[40px] gap-6 lg:gap-10">
                     
                     {/* Left Pillar: IOTA */}
-                    <div className={`flex-1 bg-white border-t-[8px] border-[#1d1d1f] shadow-xl p-10 flex flex-col items-center text-center transition-all duration-[850ms] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className={`flex-1 bg-white border-t-[8px] border-[#1d1d1f] shadow-xl p-10 flex flex-col items-center text-center transition-all duration-[765ms] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <div className="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center mb-6">
                             <span className="text-[32px]">🏛️</span>
                         </div>
@@ -48,7 +48,7 @@ export default function Section74({ isActive }) {
                     </div>
 
                     {/* Right Pillar: GBC */}
-                    <div className={`flex-1 bg-white border-t-[8px] border-blue-600 shadow-xl p-10 flex flex-col items-center text-center transition-all duration-[850ms] delay-[170ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className={`flex-1 bg-white border-t-[8px] border-blue-600 shadow-xl p-10 flex flex-col items-center text-center transition-all duration-[765ms] delay-[153ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <div className="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mb-6">
                             <span className="text-[32px]">🏗️</span>
                         </div>

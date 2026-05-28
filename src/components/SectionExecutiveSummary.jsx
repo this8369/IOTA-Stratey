@@ -18,16 +18,16 @@ export default function SectionExecutiveSummary({ isActive }) {
     }, [isActive]);
 
     return (
-        <div className={`w-full h-full bg-white font-sans text-black flex flex-col items-center overflow-hidden transition-opacity duration-[850ms] ${isActive ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
+        <div className={`w-full h-full bg-white font-sans text-black flex flex-col items-center overflow-hidden transition-opacity duration-[765ms] ${isActive ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
             
-            <div className={`w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1000px] mt-24 md:mt-32 shrink-0 transition-all duration-[850ms] transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+            <div className={`w-[calc(100%-48px)] md:w-[calc(100%-100px)] max-w-[1000px] mt-24 md:mt-32 shrink-0 transition-all duration-[765ms] transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
                 <h1 className="text-[28px] md:text-[36px] font-extrabold mb-8 font-inter tracking-[-0.02em]">
                     Executive Summary
                 </h1>
             </div>
 
             {/* Scrollable Content Area */}
-            <div ref={contentRef} className={`w-full flex-1 overflow-y-auto pb-[150px] relative px-[24px] md:px-[50px] flex flex-col items-center transition-all duration-[850ms] delay-[255ms] transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+            <div ref={contentRef} className={`w-full flex-1 overflow-y-auto pb-[150px] relative px-[24px] md:px-[50px] flex flex-col items-center transition-all duration-[765ms] delay-[230ms] transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
                 <div className="w-full max-w-[1000px] block">
                     
                     <div className="text-[15px] md:text-[17px] leading-[1.7] font-medium text-gray-800 break-keep mb-12">

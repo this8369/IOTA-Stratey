@@ -11,11 +11,11 @@ export default function Section31({ isActive }) {
             return;
         }
         const timers = [
-            setTimeout(() => setStep(1), 255),
-            setTimeout(() => setStep(2), 850),
-            setTimeout(() => setStep(3), 1360),
-            setTimeout(() => setStep(4), 1870),
-            setTimeout(() => setStep(5), 2380)
+            setTimeout(() => setStep(1), 230),
+            setTimeout(() => setStep(2), 765),
+            setTimeout(() => setStep(3), 1224),
+            setTimeout(() => setStep(4), 1683),
+            setTimeout(() => setStep(5), 2142)
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -24,20 +24,20 @@ export default function Section31({ isActive }) {
         <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
-                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
                         {lang === 'kr' ? '자연 공실률 하한선 돌파' : 'Breaking Natural Vacancy Floor'}
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? '코로나 이후의 급반등, 사실상 완전 임차에 도달하다' : 'Rapid Rebound Post-COVID, Reaching Full Occupancy'}
                 </h2>
 
                 <div className="relative w-full max-w-[1100px] mt-[40px] mb-[20px] h-auto flex flex-col items-center justify-center z-10 gap-4">
                     
                     {/* Timeline Graph */}
-                    <div className={`w-full h-[150px] relative mb-2 transition-all duration-[850ms] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className={`w-full h-[150px] relative mb-2 transition-all duration-[765ms] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         {/* SVG Line */}
                         <svg className="absolute top-[50px] left-0 w-full h-[50px] z-0 overflow-visible" preserveAspectRatio="none" viewBox="0 0 100 100">
                             <path 
@@ -102,7 +102,7 @@ export default function Section31({ isActive }) {
                     </div>
 
                     {/* Vacancy Highlight Box (Height reduced by 30px using py-[25px] instead of p-10) */}
-                    <div className={`-mt-[6px] relative w-full flex flex-col md:flex-row items-center justify-between bg-gradient-to-br from-gray-900 to-black rounded-[24px] px-10 py-[25px] shadow-2xl transition-all duration-[850ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-95'}`}>
+                    <div className={`-mt-[6px] relative w-full flex flex-col md:flex-row items-center justify-between bg-gradient-to-br from-gray-900 to-black rounded-[24px] px-10 py-[25px] shadow-2xl transition-all duration-[765ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-95'}`}>
                         
                         <div className="flex-1 text-left flex flex-col gap-1">
                             <div className="text-gray-400 font-bold text-[18px]">{lang === 'kr' ? 'CBRE 2025년 3분기 기준' : 'CBRE Q3 2025'}</div>
@@ -111,7 +111,7 @@ export default function Section31({ isActive }) {
                             </div>
                         </div>
 
-                        <div className={`flex flex-col items-center justify-center px-8 py-4 bg-white/10 rounded-[18px] backdrop-blur-sm border border-white/20 transition-all duration-[850ms] delay-[255ms] ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
+                        <div className={`flex flex-col items-center justify-center px-8 py-4 bg-white/10 rounded-[18px] backdrop-blur-sm border border-white/20 transition-all duration-[765ms] delay-[230ms] ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
                             <div className="text-blue-400 font-black text-[64px] leading-none mb-1">
                                 3.1<span className="text-[36px]">%</span>
                             </div>
@@ -122,15 +122,15 @@ export default function Section31({ isActive }) {
 
                     {/* Breakdown Cards */}
                     <div className="w-full flex justify-center gap-6 mt-2">
-                        <div className={`flex-1 bg-white border border-gray-200 rounded-[20px] py-4 px-6 shadow-sm transition-all duration-[600ms] hover:-translate-y-2 delay-400 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                        <div className={`flex-1 bg-white border border-gray-200 rounded-[20px] py-4 px-6 shadow-sm transition-all duration-[540ms] hover:-translate-y-2 delay-400 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                             <div className="text-gray-500 font-bold text-[15px] mb-1">GBD</div>
                             <div className="text-gray-900 font-black text-[32px]">1.5%</div>
                         </div>
-                        <div className={`flex-1 bg-white border border-gray-200 rounded-[20px] py-4 px-6 shadow-sm transition-all duration-[600ms] hover:-translate-y-2 delay-[425ms] ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                        <div className={`flex-1 bg-white border border-gray-200 rounded-[20px] py-4 px-6 shadow-sm transition-all duration-[540ms] hover:-translate-y-2 delay-[383ms] ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                             <div className="text-gray-500 font-bold text-[15px] mb-1">YBD</div>
                             <div className="text-gray-900 font-black text-[32px]">3.6%</div>
                         </div>
-                        <div className={`flex-1 bg-white border border-gray-200 rounded-[20px] py-4 px-6 shadow-sm transition-all duration-[600ms] hover:-translate-y-2 delay-600 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                        <div className={`flex-1 bg-white border border-gray-200 rounded-[20px] py-4 px-6 shadow-sm transition-all duration-[540ms] hover:-translate-y-2 delay-600 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                             <div className="text-gray-500 font-bold text-[15px] mb-1">CBD</div>
                             <div className="text-gray-900 font-black text-[32px]">4.1%</div>
                         </div>
@@ -138,7 +138,7 @@ export default function Section31({ isActive }) {
 
                 </div>
 
-                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[765ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[689ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>

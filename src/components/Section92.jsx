@@ -8,11 +8,11 @@ export default function Section92({ isActive }) {
     useEffect(() => {
         if (!isActive) { setStep(0); return; }
         const timers = [
-            setTimeout(() => setStep(1), 255),
-            setTimeout(() => setStep(2), 680),
-            setTimeout(() => setStep(3), 1105), // Left column (Trend/Evolution)
-            setTimeout(() => setStep(4), 1530), // Right column (4 Points)
-            setTimeout(() => setStep(5), 2210)  // Bottom thesis
+            setTimeout(() => setStep(1), 230),
+            setTimeout(() => setStep(2), 612),
+            setTimeout(() => setStep(3), 995), // Left column (Trend/Evolution)
+            setTimeout(() => setStep(4), 1377), // Right column (4 Points)
+            setTimeout(() => setStep(5), 1989)  // Bottom thesis
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -21,20 +21,20 @@ export default function Section92({ isActive }) {
         <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
-                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-blue-600 uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
                         {lang === 'kr' ? 'IGIS Senior REIT의 300조 시장 점령전' : 'IGIS Senior REIT\'s Conquest of 300T KRW Market'}
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-12 transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-12 transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? <>연기금 D2C와 헬스케어를 결합한 시니어 하우징 블루오션</> : <>Senior Housing Blue Ocean Combining Pension D2C & Healthcare</>}
                 </h2>
 
                 <div className="w-full max-w-[1100px] grid grid-cols-1 md:grid-cols-12 gap-6 mb-8 relative">
                     
                     {/* Left Column: Trend & Evolution */}
-                    <div className={`col-span-1 md:col-span-5 flex flex-col gap-6 transition-all duration-[850ms] ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
+                    <div className={`col-span-1 md:col-span-5 flex flex-col gap-6 transition-all duration-[765ms] ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
                         {/* Trend */}
                         <div className="bg-gray-50 border border-gray-200 rounded-2xl p-6 text-left shadow-sm flex-1">
                             <h3 className="text-gray-500 font-bold text-[16px] mb-2">{lang === 'kr' ? '가장 확실한 메가 트렌드' : 'The Most Certain Mega Trend'}</h3>
@@ -61,7 +61,7 @@ export default function Section92({ isActive }) {
                     </div>
 
                     {/* Right Column: Key Strategies (4 Points) */}
-                    <div className={`col-span-1 md:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-4 transition-all duration-[850ms] ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
+                    <div className={`col-span-1 md:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-4 transition-all duration-[765ms] ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
                         <div className="bg-white border-2 border-gray-100 rounded-2xl p-5 text-left shadow-sm flex flex-col justify-start">
                             <div className="bg-blue-100 text-blue-600 font-black text-[16px] rounded-full w-8 h-8 flex items-center justify-center mb-3">1</div>
                             <h3 className="font-extrabold text-[17px] md:text-[19px] text-[#1d1d1f] mb-2 break-keep leading-tight">
@@ -106,7 +106,7 @@ export default function Section92({ isActive }) {
                 </div>
 
                 {/* Bottom Thesis Text */}
-                <div className={`w-full max-w-[1100px] bg-blue-50 border border-blue-100 p-6 rounded-xl shadow-sm transition-all duration-[600ms] ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`w-full max-w-[1100px] bg-blue-50 border border-blue-100 p-6 rounded-xl shadow-sm transition-all duration-[540ms] ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <p className="text-[17px] md:text-[20px] font-bold text-[#1e3a8a] break-keep leading-relaxed text-center">
                         {lang === 'kr' 
                             ? <>KB골든라이프 모델을 시작으로, 글로벌 메리어트 운영과 연기금 퇴직자 D2C 마케팅을 결합해<br/>외인 자본(Invesco 등)을 압도할 1위 시니어 하우징 플랫폼을 구축한다.</>

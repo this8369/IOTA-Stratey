@@ -11,12 +11,12 @@ export default function Section39({ isActive }) {
             return;
         }
         const timers = [
-            setTimeout(() => setStep(1), 255),
-            setTimeout(() => setStep(2), 765),
-            setTimeout(() => setStep(3), 1275),
-            setTimeout(() => setStep(4), 1785),
-            setTimeout(() => setStep(5), 2295),
-            setTimeout(() => setStep(6), 2805)
+            setTimeout(() => setStep(1), 230),
+            setTimeout(() => setStep(2), 689),
+            setTimeout(() => setStep(3), 1148),
+            setTimeout(() => setStep(4), 1607),
+            setTimeout(() => setStep(5), 2066),
+            setTimeout(() => setStep(6), 2525)
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -72,13 +72,13 @@ export default function Section39({ isActive }) {
         <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
-                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
                         {lang === 'kr' ? '트로피 자산 계보' : 'Trophy Asset Lineage'}
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? '2002년 SFC에서 2032년 IOTA 서울에 이르기까지의 트로피 시계열' : 'Trophy Time Series from SFC (2002) to IOTA Seoul (2032)'}
                 </h2>
 
@@ -86,12 +86,12 @@ export default function Section39({ isActive }) {
                     
                     {/* Horizontal Timeline Line */}
                     <div className="absolute top-[50%] left-0 w-full h-1.5 bg-gray-200 rounded-full">
-                        <div className={`h-full bg-blue-600 rounded-full transition-all duration-[1700ms] ease-in-out`} style={{ width: step >= 2 ? '100%' : '0%' }}></div>
+                        <div className={`h-full bg-blue-600 rounded-full transition-all duration-[1530ms] ease-in-out`} style={{ width: step >= 2 ? '100%' : '0%' }}></div>
                     </div>
 
                     <div className="w-full grid grid-cols-4 gap-6 relative z-10">
                         {timelineData.map((item, idx) => (
-                            <div key={idx} className={`flex flex-col items-center transition-all duration-[850ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= idx + 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                            <div key={idx} className={`flex flex-col items-center transition-all duration-[765ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= idx + 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                                 <div className={`w-12 h-12 rounded-full bg-gradient-to-br ${item.color} flex items-center justify-center text-white font-black mb-6 z-20 translate-y-[6px]`}>
                                     {idx + 1}
                                 </div>
@@ -109,7 +109,7 @@ export default function Section39({ isActive }) {
                 </div>
 
                 {/* Summarized Bottom Text */}
-                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[765ms] ease-out ${step >= 6 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[689ms] ease-out ${step >= 6 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>

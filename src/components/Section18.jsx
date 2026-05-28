@@ -11,11 +11,11 @@ export default function Section18({ isActive }) {
             return;
         }
         const timers = [
-            setTimeout(() => setStep(1), 255),
-            setTimeout(() => setStep(2), 850),
-            setTimeout(() => setStep(3), 1360),
-            setTimeout(() => setStep(4), 1870),
-            setTimeout(() => setStep(5), 2380)
+            setTimeout(() => setStep(1), 230),
+            setTimeout(() => setStep(2), 765),
+            setTimeout(() => setStep(3), 1224),
+            setTimeout(() => setStep(4), 1683),
+            setTimeout(() => setStep(5), 2142)
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -24,13 +24,13 @@ export default function Section18({ isActive }) {
         <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
-                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
                         {lang === 'kr' ? '철강 산업의 생존을 위한 대전환' : 'Great Transition of the Steel Industry'}
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? '2차전지 소재 밸류체인으로의 피벗팅을 증명한 POSCO홀딩스' : 'POSCO Holdings Proving the Pivot to EV Battery Materials'}
                 </h2>
 
@@ -40,14 +40,14 @@ export default function Section18({ isActive }) {
                     <div className="relative w-full flex items-center justify-center h-[240px]">
                         
                         {/* Old Steel (Left) */}
-                        <div className={`absolute left-[10%] w-[200px] h-[200px] rounded-full bg-gradient-to-br from-gray-300 to-gray-500 border-4 border-white shadow-lg flex flex-col items-center justify-center transition-all duration-[850ms] ease-out ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'}`}>
+                        <div className={`absolute left-[10%] w-[200px] h-[200px] rounded-full bg-gradient-to-br from-gray-300 to-gray-500 border-4 border-white shadow-lg flex flex-col items-center justify-center transition-all duration-[765ms] ease-out ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-20'}`}>
                             <span className="text-[28px] font-black text-white">Traditional</span>
                             <span className="text-[16px] font-bold text-gray-200 mt-1">STEEL</span>
                             <span className="text-[11px] bg-black/20 text-white px-2 py-1 rounded-md mt-2">{lang === 'kr' ? '중국 과잉공급 마진 압박' : 'Margin Pressure from China'}</span>
                         </div>
 
                         {/* Arrow */}
-                        <div className={`absolute left-[38%] w-[24%] h-[60px] flex items-center justify-center z-20 transition-all duration-[850ms] ease-out ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`}>
+                        <div className={`absolute left-[38%] w-[24%] h-[60px] flex items-center justify-center z-20 transition-all duration-[765ms] ease-out ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`}>
                             <div className="relative w-full h-[8px] bg-gradient-to-r from-gray-400 to-[#7c3aed] rounded-full">
                                 <div className="absolute right-[-4px] top-1/2 -translate-y-1/2 border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-l-[14px] border-l-[#7c3aed]"></div>
                             </div>
@@ -55,7 +55,7 @@ export default function Section18({ isActive }) {
                         </div>
 
                         {/* New Materials (Right) */}
-                        <div className={`absolute right-[10%] w-[240px] h-[240px] rounded-full bg-gradient-to-br from-[#8b5cf6] to-[#4c1d95] border-4 border-white shadow-2xl flex flex-col items-center justify-center transition-all duration-[850ms] ease-out ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'}`}>
+                        <div className={`absolute right-[10%] w-[240px] h-[240px] rounded-full bg-gradient-to-br from-[#8b5cf6] to-[#4c1d95] border-4 border-white shadow-2xl flex flex-col items-center justify-center transition-all duration-[765ms] ease-out ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'}`}>
                             <span className="text-[14px] font-bold text-violet-200 mb-1">POSCO Holdings</span>
                             <span className="text-[28px] font-black text-white leading-tight text-center">Battery<br/>Materials</span>
                             <div className="flex gap-2 mt-3">
@@ -67,7 +67,7 @@ export default function Section18({ isActive }) {
                     </div>
                 </div>
 
-                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[765ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[689ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>

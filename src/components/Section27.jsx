@@ -11,11 +11,11 @@ export default function Section27({ isActive }) {
             return;
         }
         const timers = [
-            setTimeout(() => setStep(1), 255),
-            setTimeout(() => setStep(2), 850),
-            setTimeout(() => setStep(3), 1360),
-            setTimeout(() => setStep(4), 1870),
-            setTimeout(() => setStep(5), 2380)
+            setTimeout(() => setStep(1), 230),
+            setTimeout(() => setStep(2), 765),
+            setTimeout(() => setStep(3), 1224),
+            setTimeout(() => setStep(4), 1683),
+            setTimeout(() => setStep(5), 2142)
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -24,20 +24,20 @@ export default function Section27({ isActive }) {
         <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
-                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
                         {lang === 'kr' ? '코리아 디스카운트의 구조적 종언' : 'Structural End of Korea Discount'}
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? 'AI 수혜 노출과 밸류업 정책이 주도할 아시아 평균 밸류에이션 수렴' : 'Convergence to Asian Average Valuation Driven by AI Exposure and Value-up Policy'}
                 </h2>
 
                 <div className="relative w-full max-w-[1200px] mt-[22px] mb-[20px] h-auto py-4 flex flex-col md:flex-row items-center justify-center z-10 gap-10">
                     
                     {/* Key Drivers */}
-                    <div className={`relative w-full md:w-[500px] flex flex-col gap-3 transition-all duration-[850ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                    <div className={`relative w-full md:w-[500px] flex flex-col gap-3 transition-all duration-[765ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
                         <div className="text-[22px] font-black text-left text-[#1d1d1f] mb-[-6px]">{lang === 'kr' ? '5대 핵심 동력' : '5 Core Drivers'}</div>
                         
                         <div className="flex items-center gap-4 bg-gray-50 border border-gray-200 p-4 rounded-xl shadow-sm text-left">
@@ -74,7 +74,7 @@ export default function Section27({ isActive }) {
                     </div>
 
                     {/* Valuation Comparison */}
-                    <div className={`relative w-[460px] flex flex-col items-center bg-purple-900 rounded-[30px] shadow-xl p-8 mt-[34px] transition-all duration-[850ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-[170ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className={`relative w-[460px] flex flex-col items-center bg-purple-900 rounded-[30px] shadow-xl p-8 mt-[34px] transition-all duration-[765ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] delay-[153ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <div className="text-[20px] font-black text-purple-200 mb-8">{lang === 'kr' ? '2026.05 밸류에이션 비교' : 'May 2026 Valuation Comparison'}</div>
                         
                         <div className="w-full flex justify-between items-center relative py-4 px-2">
@@ -116,7 +116,7 @@ export default function Section27({ isActive }) {
 
                 </div>
 
-                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[765ms] ease-out ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[689ms] ease-out ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>

@@ -11,11 +11,11 @@ export default function Section10({ isActive }) {
             return;
         }
         
-        const t1 = setTimeout(() => setStep(1), 255); // Theme & Title
-        const t2 = setTimeout(() => setStep(2), 850); // Node 1
-        const t3 = setTimeout(() => setStep(3), 1360); // Node 2
-        const t4 = setTimeout(() => setStep(4), 1870); // Node 3
-        const t5 = setTimeout(() => setStep(5), 2380); // Intro Text
+        const t1 = setTimeout(() => setStep(1), 230); // Theme & Title
+        const t2 = setTimeout(() => setStep(2), 765); // Node 1
+        const t3 = setTimeout(() => setStep(3), 1224); // Node 2
+        const t4 = setTimeout(() => setStep(4), 1683); // Node 3
+        const t5 = setTimeout(() => setStep(5), 2142); // Intro Text
         
         return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); clearTimeout(t4); clearTimeout(t5); };
     }, [isActive]);
@@ -26,14 +26,14 @@ export default function Section10({ isActive }) {
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
                 {/* Theme */}
-                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
                         {lang === 'kr' ? '1조 달러 시대의 개막과 담금질' : 'The Dawn and Forging of the $1 Trillion Era'}
                     </span>
                 </div>
 
                 {/* Main Title */}
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? (
                         <>2007년 KOSPI 2000 돌파와<br/>금융위기를 극복한 1조 경제의 안착</>
                     ) : (
@@ -52,11 +52,11 @@ export default function Section10({ isActive }) {
                         </span>
                     </div>
                     
-                    <div className={`absolute top-1/2 left-0 h-[3px] bg-gradient-to-r from-[#1e3a8a] via-[#e11d48] to-[#1e3a8a] -translate-y-1/2 z-0 transition-all duration-[1700ms] ease-out`}
+                    <div className={`absolute top-1/2 left-0 h-[3px] bg-gradient-to-r from-[#1e3a8a] via-[#e11d48] to-[#1e3a8a] -translate-y-1/2 z-0 transition-all duration-[1530ms] ease-out`}
                          style={{ width: step >= 4 ? '100%' : step >= 3 ? '50%' : step >= 2 ? '10%' : '0%' }}></div>
 
                     {/* 2007 Node (Success) */}
-                    <div className={`relative z-10 flex flex-col items-center transition-all duration-[680ms] ease-out w-1/3 -mt-[100px] ${step >= 2 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-90'}`}>
+                    <div className={`relative z-10 flex flex-col items-center transition-all duration-[612ms] ease-out w-1/3 -mt-[100px] ${step >= 2 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-90'}`}>
                         <div className="mb-4 text-center">
                             <span className="block text-[32px] font-black text-[#1e3a8a] tracking-tight">2007</span>
                             <span className="block text-[16px] font-bold text-gray-500">{lang === 'kr' ? '최초 1조 달러 돌파' : 'First $1T Breakthrough'}</span>
@@ -85,7 +85,7 @@ export default function Section10({ isActive }) {
                     </div>
 
                     {/* 2008 Node (Crisis) */}
-                    <div className={`relative z-10 flex flex-col items-center transition-all duration-[680ms] ease-out w-1/3 mt-[100px] ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-90'}`}>
+                    <div className={`relative z-10 flex flex-col items-center transition-all duration-[612ms] ease-out w-1/3 mt-[100px] ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-90'}`}>
                         <div className="mb-4 text-center">
                             <span className="block text-[32px] font-black text-[#e11d48] tracking-tight">2008~2009</span>
                             <span className="block text-[16px] font-bold text-gray-500">{lang === 'kr' ? '글로벌 금융위기' : 'Global Financial Crisis'}</span>
@@ -101,7 +101,7 @@ export default function Section10({ isActive }) {
                     </div>
 
                     {/* 2010 Node (Recovery) */}
-                    <div className={`relative z-10 flex flex-col items-center transition-all duration-[680ms] ease-out w-1/3 -mt-[100px] ${step >= 4 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-90'}`}>
+                    <div className={`relative z-10 flex flex-col items-center transition-all duration-[612ms] ease-out w-1/3 -mt-[100px] ${step >= 4 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-12 scale-90'}`}>
                         <div className="mb-4 text-center">
                             <span className="block text-[32px] font-black text-[#1e3a8a] tracking-tight">2010~</span>
                             <span className="block text-[16px] font-bold text-gray-500">{lang === 'kr' ? '완전한 안착' : 'Complete Settlement'}</span>
@@ -127,7 +127,7 @@ export default function Section10({ isActive }) {
             
 
                 {/* Description Text */}
-                <div className={`mt-6 max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[765ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`mt-6 max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[689ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>

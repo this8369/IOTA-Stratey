@@ -8,10 +8,10 @@ export default function Section75({ isActive }) {
     useEffect(() => {
         if (!isActive) { setStep(0); return; }
         const timers = [
-            setTimeout(() => setStep(1), 255),
-            setTimeout(() => setStep(2), 680),
-            setTimeout(() => setStep(3), 1020),
-            setTimeout(() => setStep(4), 1360)
+            setTimeout(() => setStep(1), 230),
+            setTimeout(() => setStep(2), 612),
+            setTimeout(() => setStep(3), 918),
+            setTimeout(() => setStep(4), 1224)
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -20,13 +20,13 @@ export default function Section75({ isActive }) {
         <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
-                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
                         {lang === 'kr' ? '서울 메가 프로젝트 파이프라인' : 'Seoul Mega Project Pipeline'}
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-12 transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-12 transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? <>주요 도심에서 전개되는 차세대 트로피 공급망</> : <>Next-gen Trophy Supply Chain unfolding across major urban cores</>}
                 </h2>
 
@@ -34,7 +34,7 @@ export default function Section75({ isActive }) {
                 <div className="flex flex-col md:flex-row w-full max-w-[1300px] gap-6">
                     
                     {/* Box 1: YIBD */}
-                    <div className={`flex-1 bg-white border border-gray-200 shadow-lg hover:shadow-2xl transition-all duration-[425ms] rounded-xl overflow-hidden flex flex-col ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className={`flex-1 bg-white border border-gray-200 shadow-lg hover:shadow-2xl transition-all duration-[383ms] rounded-xl overflow-hidden flex flex-col ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <div className="p-8 flex flex-col flex-1">
                             <div className="flex items-center gap-4 mb-4">
                                 <div className="text-[40px]">🚆</div>
@@ -59,7 +59,7 @@ export default function Section75({ isActive }) {
                     </div>
 
                     {/* Box 2: Yeouido */}
-                    <div className={`flex-1 bg-white border border-gray-200 shadow-lg hover:shadow-2xl transition-all duration-[425ms] rounded-xl overflow-hidden flex flex-col delay-[130ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className={`flex-1 bg-white border border-gray-200 shadow-lg hover:shadow-2xl transition-all duration-[383ms] rounded-xl overflow-hidden flex flex-col delay-[117ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <div className="p-8 flex flex-col flex-1">
                             <div className="flex items-center gap-4 mb-4">
                                 <div className="text-[40px]">🏦</div>
@@ -84,7 +84,7 @@ export default function Section75({ isActive }) {
                     </div>
 
                     {/* Box 3: Jamsil MICE */}
-                    <div className={`flex-1 bg-white border border-gray-200 shadow-lg hover:shadow-2xl transition-all duration-[425ms] rounded-xl overflow-hidden flex flex-col delay-[255ms] ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className={`flex-1 bg-white border border-gray-200 shadow-lg hover:shadow-2xl transition-all duration-[383ms] rounded-xl overflow-hidden flex flex-col delay-[230ms] ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         <div className="p-8 flex flex-col flex-1">
                             <div className="flex items-center gap-4 mb-4">
                                 <div className="text-[40px]">🏟️</div>

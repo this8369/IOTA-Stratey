@@ -8,10 +8,10 @@ export default function Section59({ isActive }) {
     useEffect(() => {
         if (!isActive) { setStep(0); return; }
         const timers = [
-            setTimeout(() => setStep(1), 255),
-            setTimeout(() => setStep(2), 765),
-            setTimeout(() => setStep(3), 1190),
-            setTimeout(() => setStep(4), 1530),
+            setTimeout(() => setStep(1), 230),
+            setTimeout(() => setStep(2), 689),
+            setTimeout(() => setStep(3), 1071),
+            setTimeout(() => setStep(4), 1377),
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -20,11 +20,11 @@ export default function Section59({ isActive }) {
         <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
-                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">{lang === 'kr' ? '생산 인구 35% 증발의 충격파' : 'Shockwave of 35% Working-Age Pop Evaporation'}</span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? <>2035년 고령 비중 30% 돌파가 몰고 올<br/>잠재성장률 하방 압력</> : <>Downward pressure on potential growth<br/>driven by elderly pop exceeding 30% in 2035</>}
                 </h2>
 
@@ -32,7 +32,7 @@ export default function Section59({ isActive }) {
                 <div className="w-full max-w-[1100px] mt-[40px] mb-[30px] flex flex-col md:flex-row gap-8 justify-center">
                     
                     {/* Left: Aging Percentage */}
-                    <div className={`flex-1 flex flex-col items-center bg-gray-50 border-[4px] border-gray-300 p-8 transition-all duration-[850ms] ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                    <div className={`flex-1 flex flex-col items-center bg-gray-50 border-[4px] border-gray-300 p-8 transition-all duration-[765ms] ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
                         <h3 className="text-[24px] font-black text-black mb-8">{lang === 'kr' ? '고령 인구(65세 이상) 비중 급증' : 'Senior Pop (65+) Surge'}</h3>
                         <div className="flex w-full items-end justify-center gap-6 h-[180px]">
                             <div className="flex flex-col items-center w-[30%]">
@@ -54,7 +54,7 @@ export default function Section59({ isActive }) {
                     </div>
 
                     {/* Right: Shrinking Workforce */}
-                    <div className={`flex-1 flex flex-col items-center bg-gray-50 border-[4px] border-gray-300 p-8 transition-all duration-[850ms] delay-[170ms] ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
+                    <div className={`flex-1 flex flex-col items-center bg-gray-50 border-[4px] border-gray-300 p-8 transition-all duration-[765ms] delay-[153ms] ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
                         <h3 className="text-[24px] font-black text-gray-900 mb-8">{lang === 'kr' ? '생산가능인구(15~64세) 증발' : 'Working-age Pop (15-64) Evaporation'}</h3>
                         <div className="flex w-full items-center justify-between mt-4">
                             <div className="flex flex-col items-center">
@@ -81,7 +81,7 @@ export default function Section59({ isActive }) {
                 </div>
 
                 {/* Bottom Text */}
-                <div className={`mt-[10px] max-w-[1100px] text-[16px] md:text-[20px] leading-[1.5] font-bold text-gray-700 break-keep text-center transition-all duration-[765ms] ease-out ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`mt-[10px] max-w-[1100px] text-[16px] md:text-[20px] leading-[1.5] font-bold text-gray-700 break-keep text-center transition-all duration-[689ms] ease-out ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-3 mx-auto">
                         <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>{lang === 'kr' ? '65세 이상 고령자 비중은 2025년 20%로 초고령사회 진입 후 2035년 30%를 돌파 전망' : 'Seniors (65+) to hit 20% by 2025, topping 30% by 2035'}</span></li>
                         <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>{lang === 'kr' ? '생산가능인구(15~64세)는 2020년 3,738만 명에서 2050년 2,419만 명으로 약 35% 증발' : 'Working-age pop drops from 37.38M in 2020 to 24.19M in 2050 (~35% drop)'}</span></li>

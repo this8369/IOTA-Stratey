@@ -11,11 +11,11 @@ export default function Section32({ isActive }) {
             return;
         }
         const timers = [
-            setTimeout(() => setStep(1), 255),
-            setTimeout(() => setStep(2), 850),
-            setTimeout(() => setStep(3), 1360),
-            setTimeout(() => setStep(4), 1870),
-            setTimeout(() => setStep(5), 2380)
+            setTimeout(() => setStep(1), 230),
+            setTimeout(() => setStep(2), 765),
+            setTimeout(() => setStep(3), 1224),
+            setTimeout(() => setStep(4), 1683),
+            setTimeout(() => setStep(5), 2142)
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -24,19 +24,19 @@ export default function Section32({ isActive }) {
         <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
-                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
                         {lang === 'kr' ? '도쿄와의 격차, 그리고 수렴의 법칙' : 'The Gap with Tokyo & Law of Convergence'}
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? '누적 50% 상승에도 여전히 2배 높은 마루노우치가 제시하는 상승 여력' : 'Upside Potential Suggested by Marunouchi, Still 2x Higher Despite 50% Growth'}
                 </h2>
 
                 <div className="relative w-full max-w-[1100px] mt-[40px] mb-[30px] h-auto flex flex-col items-center justify-center z-10 gap-10">
                     
-                    <div className={`w-full flex justify-between items-end pb-8 border-b-2 border-gray-100 transition-all duration-[850ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className={`w-full flex justify-between items-end pb-8 border-b-2 border-gray-100 transition-all duration-[765ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                         
                         {/* Seoul Office Rent */}
                         <div className="flex flex-col items-start w-[45%]">
@@ -57,7 +57,7 @@ export default function Section32({ isActive }) {
                         </div>
 
                         {/* Gap */}
-                        <div className={`flex flex-col items-center pb-6 transition-all duration-[850ms] delay-[255ms] ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
+                        <div className={`flex flex-col items-center pb-6 transition-all duration-[765ms] delay-[230ms] ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
                             <div className="text-[24px] font-black text-gray-300 mb-2">Gap-to-Tokyo</div>
                             <div className="flex items-center gap-2">
                                 <div className="w-4 h-4 rounded-full bg-gray-200"></div>
@@ -83,7 +83,7 @@ export default function Section32({ isActive }) {
                     </div>
                 </div>
 
-                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[765ms] ease-out ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`mt-[10px] max-w-[1000px] text-[15px] md:text-[19px] leading-[1.45] font-medium text-gray-700 break-keep text-center transition-all duration-[689ms] ease-out ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-2 mx-auto">
                         {lang === 'kr' ? (
                             <>

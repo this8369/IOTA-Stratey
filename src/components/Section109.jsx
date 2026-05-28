@@ -8,11 +8,11 @@ export default function Section109({ isActive }) {
     useEffect(() => {
         if (!isActive) { setStep(0); return; }
         const timers = [
-            setTimeout(() => setStep(1), 255),
-            setTimeout(() => setStep(2), 680),
-            setTimeout(() => setStep(3), 1020), // Left Box
-            setTimeout(() => setStep(4), 1360), // Right Box
-            setTimeout(() => setStep(5), 1870), // Bottom Text
+            setTimeout(() => setStep(1), 230),
+            setTimeout(() => setStep(2), 612),
+            setTimeout(() => setStep(3), 918), // Left Box
+            setTimeout(() => setStep(4), 1224), // Right Box
+            setTimeout(() => setStep(5), 1683), // Bottom Text
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -21,13 +21,13 @@ export default function Section109({ isActive }) {
         <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
-                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[20px] md:text-[24px] font-bold text-[#1e3a8a] tracking-[-0.02em] mb-[12px]">
                         패밀리오피스 & 연기금 파트너십
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-4 transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-4 transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? <>새로운 자본 풀(Pool)과 거대 연기금의 전략적 동맹</> : <>Strategic Alliance of New Capital Pools & Mega Pensions</>}
                 </h2>
 
@@ -35,7 +35,7 @@ export default function Section109({ isActive }) {
                 <div className="w-full max-w-[1200px] mt-[30px] mb-[46px] flex flex-col md:flex-row gap-8 justify-center items-stretch">
                     
                     {/* Left: Emerging Family Office */}
-                    <div className={`flex-[1] bg-white border-4 border-[#1d1d1f] rounded-none p-8 flex flex-col justify-between shadow-sm transition-all duration-[850ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className={`flex-[1] bg-white border-4 border-[#1d1d1f] rounded-none p-8 flex flex-col justify-between shadow-sm transition-all duration-[765ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         <div className="text-left flex flex-col h-full">
                             <div>
                                 <div className="text-[#1d1d1f] font-black text-[24px] md:text-[28px] mb-2 uppercase">
@@ -59,7 +59,7 @@ export default function Section109({ isActive }) {
                     </div>
 
                     {/* Right: Public Pension Funds */}
-                    <div className={`flex-[1] bg-[#1e3a8a] border-4 border-[#1e3a8a] rounded-none p-8 flex flex-col justify-between shadow-md transition-all duration-[850ms] delay-[170ms] ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className={`flex-[1] bg-[#1e3a8a] border-4 border-[#1e3a8a] rounded-none p-8 flex flex-col justify-between shadow-md transition-all duration-[765ms] delay-[153ms] ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         <div className="text-left flex flex-col h-full">
                             <div>
                                 <div className="text-white font-black text-[24px] md:text-[28px] mb-2 uppercase">
@@ -91,7 +91,7 @@ export default function Section109({ isActive }) {
                 </div>
 
                 {/* Bottom Text */}
-                <div className={`max-w-[1200px] mt-2 text-[16px] md:text-[20px] leading-[1.5] font-bold text-gray-700 break-keep text-center transition-all duration-[765ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`max-w-[1200px] mt-2 text-[16px] md:text-[20px] leading-[1.5] font-bold text-gray-700 break-keep text-center transition-all duration-[689ms] ease-out ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <ul className="text-left inline-block space-y-3 mx-auto">
                         <li className="flex items-start"><span className="mr-3 text-[#1d1d1f]">▪</span><span>{lang === 'kr' ? '전통적인 기관 자본(연기금)과 신흥 거대 자본(테크 패밀리오피스)을 아우르는 이중 포섭 전략' : 'Dual-engagement strategy encompassing traditional mega-institutions and emerging tech wealth'}</span></li>
                     </ul>

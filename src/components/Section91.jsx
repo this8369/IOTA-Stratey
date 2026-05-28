@@ -8,11 +8,11 @@ export default function Section91({ isActive }) {
     useEffect(() => {
         if (!isActive) { setStep(0); return; }
         const timers = [
-            setTimeout(() => setStep(1), 255),
-            setTimeout(() => setStep(2), 680),
-            setTimeout(() => setStep(3), 1105), // Left column (Basis/Goal)
-            setTimeout(() => setStep(4), 1530), // Right column (Key 1,2,3)
-            setTimeout(() => setStep(5), 2210)  // Bottom thesis
+            setTimeout(() => setStep(1), 230),
+            setTimeout(() => setStep(2), 612),
+            setTimeout(() => setStep(3), 995), // Left column (Basis/Goal)
+            setTimeout(() => setStep(4), 1377), // Right column (Key 1,2,3)
+            setTimeout(() => setStep(5), 1989)  // Bottom thesis
         ];
         return () => timers.forEach(clearTimeout);
     }, [isActive]);
@@ -21,20 +21,20 @@ export default function Section91({ isActive }) {
         <section className="section w-full h-full bg-[#fdfdfd] flex flex-col items-center justify-center relative px-6 md:px-16 overflow-hidden">
             <div className="w-full max-w-[1400px] mx-auto flex flex-col items-center text-center">
                 
-                <div className={`transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-blue-600 uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
                         {lang === 'kr' ? 'IGIS DC REIT의 상장 마스터플랜' : 'Master Plan for IGIS DC REIT Listing'}
                     </span>
                 </div>
 
-                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-12 transition-all duration-[765ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] mb-12 transition-all duration-[689ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     {lang === 'kr' ? <>전력망 선점과 빅테크 록인, 독자 상장형 DC REIT</> : <>Independent Listed DC REIT via Power Grid Preemption & Big Tech Lock-in</>}
                 </h2>
 
                 <div className="w-full max-w-[1100px] grid grid-cols-1 md:grid-cols-12 gap-6 mb-8 relative">
                     
                     {/* Left Column: Basis & Goal */}
-                    <div className={`col-span-1 md:col-span-5 flex flex-col gap-6 transition-all duration-[850ms] ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
+                    <div className={`col-span-1 md:col-span-5 flex flex-col gap-6 transition-all duration-[765ms] ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
                         {/* Basis */}
                         <div className="bg-gray-50 border border-gray-200 rounded-2xl p-6 text-left shadow-sm flex-1">
                             <h3 className="text-gray-500 font-bold text-[16px] mb-2">{lang === 'kr' ? '현재 자산 기반' : 'Current Asset Base'}</h3>
@@ -62,7 +62,7 @@ export default function Section91({ isActive }) {
                     </div>
 
                     {/* Right Column: Key Strategies */}
-                    <div className={`col-span-1 md:col-span-7 flex flex-col gap-4 transition-all duration-[850ms] ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
+                    <div className={`col-span-1 md:col-span-7 flex flex-col gap-4 transition-all duration-[765ms] ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
                         <div className="bg-white border-2 border-[#1e3a8a] rounded-2xl p-6 text-left shadow-sm flex items-start gap-4">
                             <div className="bg-blue-100 text-blue-600 font-black text-[18px] rounded-lg w-12 h-12 flex items-center justify-center shrink-0">1</div>
                             <div>
@@ -97,7 +97,7 @@ export default function Section91({ isActive }) {
                 </div>
 
                 {/* Bottom Thesis Text */}
-                <div className={`w-full max-w-[1100px] bg-blue-50 border border-blue-100 p-6 rounded-xl shadow-sm transition-all duration-[600ms] ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className={`w-full max-w-[1100px] bg-blue-50 border border-blue-100 p-6 rounded-xl shadow-sm transition-all duration-[540ms] ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <p className="text-[17px] md:text-[20px] font-bold text-[#1e3a8a] break-keep leading-relaxed text-center">
                         {lang === 'kr' 
                             ? <>북미 13개 포트폴리오를 넘어, 국내 신규 전력 인입 권리와 빅테크 임대 확약을 바탕으로<br/>에퀴닉스에 버금갈 독자 상장형 DC REIT 플랫폼의 분사 로드맵을 띄운다.</>
