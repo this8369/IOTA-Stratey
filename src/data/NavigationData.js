@@ -229,10 +229,10 @@ export const menuDataKr = [
                 title: "",
                 items: [
                     { label: "본 고민의 전략적 위치", id: "page-3" },
-                    { label: "3조 달러 시대, 이지스자산운용의 전략적 좌표", id: "page-4" },
+                    { label: "3조달러시대 이지스 전략좌표", id: "page-4" },
                     { label: "글로벌 운용사로의 도약 분기점", id: "page-5" },
-                    { label: "IOTA 서울 프로젝트의 문명사적 의미", id: "page-6" },
-                    { label: "이지스 2030 마스터플랜의 4대 핵심 축", id: "page-7" },
+                    { label: "IOTA 서울의 문명사적 의미", id: "page-6" },
+                    { label: "이지스 마스터플랜 4대 축", id: "page-7" },
                     { label: "시대의 리듬과 이지스의 결단", id: "page-8" }
                 ]
             }
@@ -248,7 +248,7 @@ export const menuDataKr = [
                 items: [
                     { label: "1조 달러 시대의 개막과 담금질", id: "page-11" },
                     { label: "마침내 도달할 GDP 2조 달러 고지", id: "page-12" },
-                    { label: "10대 산업 듀얼 엔진의 위력과 양면성", id: "page-13" }
+                    { label: "10대산업의 위력과 양면성", id: "page-13" }
                 ]
             },
             {
@@ -291,8 +291,9 @@ export const menuDataKr = [
                 title: "Chapter 5. 산업/물류 부동산 진화",
                 id: "page-35",
                 items: [
-                    { label: "[물류 인프라 1] 단일 임차인이 창조한 쿠팡 이펙트", id: "page-36" },
-                    { label: "[물류 인프라 2] 물류센터 공급 과잉의 소화와 정상화", id: "page-37" },                    { label: "[인프라 자산 3] 전력 병목이 낳은 데이터센터의 희소성", id: "page-38" }
+                    { label: "[물류 1] 쿠팡 이펙트", id: "page-36" },
+                    { label: "[물류 2] 공급과잉의 소화", id: "page-37" },
+                    { label: "전력병목이 낳은 DC 희소성", id: "page-38" }
                 ]
             },
             {
@@ -300,7 +301,7 @@ export const menuDataKr = [
                 id: "page-39",
                 items: [
                     { label: "트로피 자산 계보", id: "page-40" },
-                    { label: "IFC 서울이 남긴 글로벌 자본 유입의 유산", id: "page-41" }
+                    { label: "IFC의 글로벌 자본 유입", id: "page-41" }
                 ]
             }
         ] 
@@ -321,7 +322,7 @@ export const menuDataKr = [
                 ]
             },
             {
-                title: "Chapter 2. 핵심 산업 모멘텀 시나리오별 전망",
+                title: "Chapter 2. 핵심 산업 시나리오별 전망",
                 id: "page-49",
                 items: [
                     { label: "AI 반도체 / HBM", id: "page-50" },
@@ -345,7 +346,7 @@ export const menuDataKr = [
                 ]
             },
             {
-                title: "Chapter 4. 서울 오피스 시장 2030~2040 전망",
+                title: "Chapter 4. 서울 오피스 2030~2040",
                 id: "page-63",
                 items: [
                     { label: "7축 메가 권역 팽창", id: "page-64" },
@@ -402,9 +403,9 @@ export const menuDataKr = [
                 title: "Chapter 1. 글로벌 운용사로의 도약",
                 id: "page-87",
                 items: [
-                    { label: "이지스의 현재 좌표와 글로벌 비교", id: "page-88" },
-                    { label: "글로벌 1선 운용사 도약의 본질 조건", id: "page-89" },
-                    { label: "이지스만의 한국적 차별점과 결합 모델", id: "page-90" }
+                    { label: "현재 이지스의 글로벌 좌표", id: "page-88" },
+                    { label: "글로벌 도약의 조건", id: "page-89" },
+                    { label: "이지스만의 차별점", id: "page-90" }
                 ]
             },
             {
@@ -413,7 +414,7 @@ export const menuDataKr = [
                 items: [
                     { label: "IGIS DC REIT 상장 마스터플랜", id: "page-92" },
                     { label: "IGIS Senior REIT 시장 점령전", id: "page-93" },
-                    { label: "Prime Mixed-Use 트로피 시리즈화", id: "page-94" }
+                    { label: "이지스 트로피 시리즈", id: "page-94" }
                 ]
             },
             {
@@ -421,7 +422,7 @@ export const menuDataKr = [
                 id: "page-95",
                 items: [
                     { label: "팩토리얼 빌더스를 운영 OS로", id: "page-96" },
-                    { label: "WeWork의 한계 극복과 글로벌 벤치마크", id: "page-97" }
+                    { label: "글로벌 벤치마크", id: "page-97" }
                 ]
             },
             {
