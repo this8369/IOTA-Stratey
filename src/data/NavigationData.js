@@ -220,6 +220,15 @@ export const menuDataEn = [
                     { label: "LP Reporting", id: "page-105" },
                     { label: "IPR Project REIT", id: "page-106" }
                 ]
+            },
+            {
+                title: "Chapter 6. Capital Structure Innovation",
+                id: "page-107",
+                items: [
+                    { label: "Cross-over Strategy", id: "page-108" },
+                    { label: "SWF & Insurance Capital", id: "page-109" },
+                    { label: "Family Office & Pensions", id: "page-110" }
+                ]
             }
         ] 
     },
@@ -452,6 +461,15 @@ export const menuDataKr = [
                     { label: "자산 운용", id: "page-104" },
                     { label: "LP 리포팅", id: "page-105" },
                     { label: "IPR Project REIT", id: "page-106" }
+                ]
+            },
+            {
+                title: "Chapter 6. 자본 구조 혁신",
+                id: "page-107",
+                items: [
+                    { label: "Cross-over 전략", id: "page-108" },
+                    { label: "SWF 파트너십 & 보험사 자본", id: "page-109" },
+                    { label: "패밀리오피스 & 연기금", id: "page-110" }
                 ]
             }
         ] 

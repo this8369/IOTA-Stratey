@@ -43,7 +43,7 @@ export default function Section105({ isActive }) {
                 </h2>
 
                 {/* Infographic Area: Simulator UI */}
-                <div className="w-full max-w-[1100px] mt-[30px] mb-[46px] flex flex-col md:flex-row gap-6 justify-center">
+                <div className="w-full max-w-[1100px] mt-[30px] mb-[46px] flex flex-col md:flex-row gap-12 justify-center">
                     
                     {/* Left: PF Tranche Stack */}
                     <div className={`flex-[0.8] bg-white border-4 border-[#1e3a8a] rounded-none p-8 shadow-sm transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-8 scale-95'}`}>
@@ -69,7 +69,7 @@ export default function Section105({ isActive }) {
                             </div>
 
                             {/* Automation Arrow Overlay */}
-                            <div className={`absolute -right-12 top-1/2 -translate-y-1/2 w-10 h-10 bg-[#1e3a8a] rounded-none flex items-center justify-center text-white shadow-sm transition-all duration-700 ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
+                            <div className={`absolute -right-[52px] top-1/2 -translate-y-1/2 w-10 h-10 bg-[#1e3a8a] rounded-none flex items-center justify-center text-white shadow-sm transition-all duration-700 ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                             </div>
                         </div>
