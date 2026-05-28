@@ -229,6 +229,15 @@ export const menuDataEn = [
                     { label: "SWF & Insurance Capital", id: "page-109" },
                     { label: "Family Office & Pensions", id: "page-110" }
                 ]
+            },
+            {
+                title: "Chapter 7. Governance",
+                id: "page-111",
+                items: [
+                    { label: "Ownership Transition", id: "page-112" },
+                    { label: "Retention Risk", id: "page-113" },
+                    { label: "Political Risk", id: "page-114" }
+                ]
             }
         ] 
     },
@@ -470,6 +479,15 @@ export const menuDataKr = [
                     { label: "Cross-over 전략", id: "page-108" },
                     { label: "SWF 파트너십 & 보험사 자본", id: "page-109" },
                     { label: "패밀리오피스 & 연기금", id: "page-110" }
+                ]
+            },
+            {
+                title: "Chapter 7. 거버넌스",
+                id: "page-111",
+                items: [
+                    { label: "지배구조 전환", id: "page-112" },
+                    { label: "핵심 인재 리텐션", id: "page-113" },
+                    { label: "정치적 안정성 변수", id: "page-114" }
                 ]
             }
         ] 
