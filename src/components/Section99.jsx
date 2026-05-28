@@ -24,7 +24,7 @@ export default function Section99({ isActive }) {
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        {lang === 'kr' ? '4.2 전략적 우선 타겟 LP' : '4.2 Priority Target LPs'}
+                        {lang === 'kr' ? '전략적 우선 타겟 LP' : 'Priority Target LPs'}
                     </span>
                 </div>
 
@@ -35,64 +35,64 @@ export default function Section99({ isActive }) {
                 <div className="w-full max-w-[1100px] grid grid-cols-1 md:grid-cols-2 gap-5 mb-10 relative">
                     
                     {/* Row 1 */}
-                    <div className={`col-span-1 bg-white border-2 border-gray-200 rounded-xl p-6 flex flex-col text-left shadow-sm transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className={`col-span-1 bg-white border-4 border-[#1e3a8a] rounded-none p-6 flex flex-col text-left shadow-sm transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         <div className="flex items-center gap-3 mb-2">
-                            <span className="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold">1</span>
-                            <h3 className="text-[#1e3a8a] font-extrabold text-[20px]">GIC, Temasek (싱가포르)</h3>
+                            <span className="w-8 h-8 rounded-full bg-blue-100 text-[#1e3a8a] flex items-center justify-center font-bold">1</span>
+                            <h3 className="text-[#1e3a8a] font-extrabold text-[22px]">GIC, Temasek (싱가포르)</h3>
                         </div>
-                        <p className="text-gray-700 font-bold text-[16px] pl-11 break-keep">
+                        <p className="text-gray-700 font-bold text-[17px] pl-11 break-keep">
                             {lang === 'kr' ? '한국 트로피 자산에 이미 LP 참여 경험 보유' : 'Prior LP participation experience in Korean trophy assets'}
                         </p>
                     </div>
 
-                    <div className={`col-span-1 bg-white border-2 border-gray-200 rounded-xl p-6 flex flex-col text-left shadow-sm transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className={`col-span-1 bg-white border-4 border-[#1e3a8a] rounded-none p-6 flex flex-col text-left shadow-sm transition-all duration-1000 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         <div className="flex items-center gap-3 mb-2">
-                            <span className="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold">2</span>
-                            <h3 className="text-[#1e3a8a] font-extrabold text-[20px]">CPPIB (캐나다 연금)</h3>
+                            <span className="w-8 h-8 rounded-full bg-blue-100 text-[#1e3a8a] flex items-center justify-center font-bold">2</span>
+                            <h3 className="text-[#1e3a8a] font-extrabold text-[22px]">CPPIB (캐나다 연금)</h3>
                         </div>
-                        <p className="text-gray-700 font-bold text-[16px] pl-11 break-keep">
+                        <p className="text-gray-700 font-bold text-[17px] pl-11 break-keep">
                             {lang === 'kr' ? 'MGRV와 코리빙 JV 사례 등 한국 시장에 적극적 스탠스' : 'Active stance in Korean market, e.g., MGRV Co-living JV'}
                         </p>
                     </div>
 
                     {/* Row 2 */}
-                    <div className={`col-span-1 bg-white border-2 border-gray-200 rounded-xl p-6 flex flex-col text-left shadow-sm transition-all duration-1000 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className={`col-span-1 bg-white border-4 border-[#1e3a8a] rounded-none p-6 flex flex-col text-left shadow-sm transition-all duration-1000 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         <div className="flex items-center gap-3 mb-2">
-                            <span className="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold">3</span>
-                            <h3 className="text-[#1e3a8a] font-extrabold text-[20px]">ADIA, Mubadala, QIA (중동)</h3>
+                            <span className="w-8 h-8 rounded-full bg-blue-100 text-[#1e3a8a] flex items-center justify-center font-bold">3</span>
+                            <h3 className="text-[#1e3a8a] font-extrabold text-[22px]">ADIA, Mubadala, QIA (중동)</h3>
                         </div>
-                        <p className="text-gray-700 font-bold text-[16px] pl-11 break-keep">
+                        <p className="text-gray-700 font-bold text-[17px] pl-11 break-keep">
                             {lang === 'kr' ? 'AI 인프라 및 데이터센터 영역에 글로벌 Capacity 대규모 배치 중' : 'Deploying massive global capacity in AI infra & Data Centers'}
                         </p>
                     </div>
 
-                    <div className={`col-span-1 bg-white border-2 border-gray-200 rounded-xl p-6 flex flex-col text-left shadow-sm transition-all duration-1000 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className={`col-span-1 bg-white border-4 border-[#1e3a8a] rounded-none p-6 flex flex-col text-left shadow-sm transition-all duration-1000 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         <div className="flex items-center gap-3 mb-2">
-                            <span className="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold">4</span>
-                            <h3 className="text-[#1e3a8a] font-extrabold text-[20px]">NBIM (노르웨이)</h3>
+                            <span className="w-8 h-8 rounded-full bg-blue-100 text-[#1e3a8a] flex items-center justify-center font-bold">4</span>
+                            <h3 className="text-[#1e3a8a] font-extrabold text-[22px]">NBIM (노르웨이)</h3>
                         </div>
-                        <p className="text-gray-700 font-bold text-[16px] pl-11 break-keep">
+                        <p className="text-gray-700 font-bold text-[17px] pl-11 break-keep">
                             {lang === 'kr' ? '부동산 직접 투자 비중 지속 확대 기조' : 'Continuous expansion of direct real estate investments'}
                         </p>
                     </div>
 
                     {/* Row 3 */}
-                    <div className={`col-span-1 bg-white border-2 border-gray-200 rounded-xl p-6 flex flex-col text-left shadow-sm transition-all duration-1000 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className={`col-span-1 bg-white border-4 border-[#1e3a8a] rounded-none p-6 flex flex-col text-left shadow-sm transition-all duration-1000 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         <div className="flex items-center gap-3 mb-2">
-                            <span className="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold">5</span>
-                            <h3 className="text-[#1e3a8a] font-extrabold text-[18px] md:text-[20px]">AustralianSuper, CalPERS, ABP</h3>
+                            <span className="w-8 h-8 rounded-full bg-blue-100 text-[#1e3a8a] flex items-center justify-center font-bold">5</span>
+                            <h3 className="text-[#1e3a8a] font-extrabold text-[20px] md:text-[22px]">AustralianSuper, CalPERS, ABP</h3>
                         </div>
-                        <p className="text-gray-700 font-bold text-[16px] pl-11 break-keep">
+                        <p className="text-gray-700 font-bold text-[17px] pl-11 break-keep">
                             {lang === 'kr' ? '인프라 및 실물 부동산 분야 강력한 글로벌 Mandate' : 'Strong global mandates in Infra & Real Estate'}
                         </p>
                     </div>
 
-                    <div className={`col-span-1 bg-white border-2 border-gray-200 rounded-xl p-6 flex flex-col text-left shadow-sm transition-all duration-1000 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className={`col-span-1 bg-white border-4 border-[#1e3a8a] rounded-none p-6 flex flex-col text-left shadow-sm transition-all duration-1000 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         <div className="flex items-center gap-3 mb-2">
-                            <span className="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold">6</span>
-                            <h3 className="text-[#1e3a8a] font-extrabold text-[18px] md:text-[20px]">Mitsubishi, Mitsui, Sumitomo (일본)</h3>
+                            <span className="w-8 h-8 rounded-full bg-blue-100 text-[#1e3a8a] flex items-center justify-center font-bold">6</span>
+                            <h3 className="text-[#1e3a8a] font-extrabold text-[20px] md:text-[22px]">Mitsubishi, Mitsui, Sumitomo (일본)</h3>
                         </div>
-                        <p className="text-gray-700 font-bold text-[16px] pl-11 break-keep">
+                        <p className="text-gray-700 font-bold text-[17px] pl-11 break-keep">
                             {lang === 'kr' ? '본격화되는 일본 자본의 한국 진입에 대한 주요 대응 채널' : 'Key channels corresponding to Japanese capital entering Korea'}
                         </p>
                     </div>

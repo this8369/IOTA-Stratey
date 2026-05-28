@@ -23,7 +23,7 @@ export default function Section98({ isActive }) {
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        {lang === 'kr' ? '4.1 글로벌 코밍글드 펀드' : '4.1 Global Commingled Fund'}
+                        {lang === 'kr' ? '글로벌 코밍글드 펀드' : 'Global Commingled Fund'}
                     </span>
                 </div>
 
@@ -34,41 +34,37 @@ export default function Section98({ isActive }) {
                 <div className="w-full max-w-[1100px] relative mb-12 flex flex-col items-center">
                     
                     {/* Center Core */}
-                    <div className={`w-full max-w-[600px] z-10 bg-[#1e3a8a] border-4 border-blue-900 rounded-2xl p-8 text-center shadow-2xl transition-all duration-1000 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
-                        <div className="bg-blue-800/50 text-blue-200 text-[14px] font-bold px-4 py-1 inline-block rounded-full mb-3 uppercase tracking-wider">
+                    <div className={`w-full max-w-[600px] z-10 bg-[#1e3a8a] border-4 border-blue-900 rounded-2xl py-5 px-8 text-center shadow-2xl transition-all duration-1000 ${step >= 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
+                        <div className="bg-blue-800/50 text-blue-200 text-[14px] font-bold px-4 py-1 inline-block rounded-full mb-2 uppercase tracking-wider">
                             Decisive Turning Point
                         </div>
-                        <h3 className="text-white font-black text-[28px] md:text-[32px] leading-tight break-keep mb-2">
+                        <h3 className="text-white font-black text-[28px] md:text-[32px] leading-tight break-keep mb-1">
                             {lang === 'kr' ? '이지스 1호 글로벌 코밍글드 펀드' : 'IGIS 1st Global Commingled Fund'}
                         </h3>
                         <p className="text-blue-300 font-extrabold text-[24px]">Target: $1B USD</p>
                     </div>
 
                     {/* Arrows & Directions */}
-                    <div className={`w-full flex flex-col md:flex-row justify-between items-center md:items-stretch gap-6 -mt-8 pt-16 px-4 transition-all duration-1000 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                    <div className={`w-full flex flex-col md:flex-row justify-between items-center md:items-stretch gap-6 -mt-10 pt-[54px] px-4 transition-all duration-1000 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         
                         {/* Left: Outbound / Globalizing Domestic Assets */}
-                        <div className="flex-1 bg-white border-2 border-gray-200 rounded-2xl p-8 flex flex-col items-center text-center shadow-sm relative w-full">
+                        <div className="flex-1 bg-white border-4 border-[#1e3a8a] rounded-2xl p-8 flex flex-col items-center text-center shadow-sm relative w-full">
                             <div className="absolute -top-6 bg-white border-2 border-gray-200 text-gray-400 rounded-full w-12 h-12 flex items-center justify-center">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                             </div>
-                            <span className="text-blue-600 font-bold text-[18px] mb-2">{lang === 'kr' ? '(1) 국내 자산의 글로벌화' : '(1) Globalizing Domestic Assets'}</span>
-                            <p className="text-[#1d1d1f] font-extrabold text-[20px] break-keep">
+                            <span className="text-blue-600 font-bold text-[20px] mb-2">{lang === 'kr' ? '(1) 국내 자산의 글로벌화' : '(1) Globalizing Domestic Assets'}</span>
+                            <p className="text-[#1d1d1f] font-extrabold text-[22px] break-keep">
                                 {lang === 'kr' ? '이지스의 한국 자산을 글로벌 LP에게 패키지 매각' : 'Package sale of IGIS Korean assets to Global LPs'}
                             </p>
                         </div>
 
-                        <div className="hidden md:flex items-center justify-center w-12 text-gray-300">
-                            <div className="w-[2px] h-full bg-gray-200"></div>
-                        </div>
-
                         {/* Right: Inbound / Attracting Global Assets */}
-                        <div className="flex-1 bg-white border-2 border-gray-200 rounded-2xl p-8 flex flex-col items-center text-center shadow-sm relative w-full">
+                        <div className="flex-1 bg-white border-4 border-[#1e3a8a] rounded-2xl p-8 flex flex-col items-center text-center shadow-sm relative w-full">
                             <div className="absolute -top-6 bg-white border-2 border-[#1e3a8a] text-[#1e3a8a] rounded-full w-12 h-12 flex items-center justify-center">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
                             </div>
-                            <span className="text-blue-600 font-bold text-[18px] mb-2">{lang === 'kr' ? '(2) 글로벌 자산의 국내 유치' : '(2) Attracting Global Assets to Korea'}</span>
-                            <p className="text-[#1d1d1f] font-extrabold text-[20px] break-keep">
+                            <span className="text-blue-600 font-bold text-[20px] mb-2">{lang === 'kr' ? '(2) 글로벌 자산의 국내 유치' : '(2) Attracting Global Assets to Korea'}</span>
+                            <p className="text-[#1d1d1f] font-extrabold text-[22px] break-keep">
                                 {lang === 'kr' ? '한국 LP의 해외 위탁 및 글로벌 딜소싱 거점화' : 'Overseas mandate for Korean LPs & Global Deal Sourcing Hub'}
                             </p>
                         </div>

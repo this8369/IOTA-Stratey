@@ -23,7 +23,7 @@ export default function Section100({ isActive }) {
                 
                 <div className={`transition-all duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="inline-block text-[22px] md:text-[26px] font-bold text-[#888] uppercase tracking-[-0.02em] mb-[12px] bg-transparent">
-                        {lang === 'kr' ? '4.3 글로벌 IB 협력 채널' : '4.3 Global IB Collaboration Channels'}
+                        {lang === 'kr' ? '글로벌 IB 협력 채널' : 'Global IB Collaboration Channels'}
                     </span>
                 </div>
 
@@ -43,13 +43,14 @@ export default function Section100({ isActive }) {
                     </div>
 
                     {/* Connecting Arrow */}
-                    <div className={`my-6 text-gray-300 transition-all duration-1000 delay-300 ${step >= 4 ? 'opacity-100 h-12' : 'opacity-0 h-0'} overflow-hidden flex flex-col items-center`}>
-                        <div className="w-[2px] h-8 bg-blue-300"></div>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#93c5fd" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="-mt-1"><polyline points="7 10 12 15 17 10"></polyline></svg>
+                    <div className={`my-3 text-blue-400 transition-all duration-1000 delay-300 ${step >= 4 ? 'opacity-100 h-8' : 'opacity-0 h-0'} overflow-hidden flex flex-col items-center justify-center`}>
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 21l-7-7h4V3h6v11h4z"/>
+                        </svg>
                     </div>
 
                     {/* Bottom: Anchor Case Core */}
-                    <div className={`w-full max-w-[900px] bg-[#1e3a8a] rounded-2xl p-8 border-4 border-blue-900 shadow-2xl relative overflow-hidden transition-all duration-1000 ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
+                    <div className={`w-full max-w-[1100px] bg-[#1e3a8a] rounded-2xl p-8 border-4 border-blue-900 shadow-2xl relative overflow-hidden transition-all duration-1000 ${step >= 4 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
                         {/* Background pattern */}
                         <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '24px 24px' }}></div>
                         
