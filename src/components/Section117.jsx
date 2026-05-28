@@ -61,14 +61,22 @@ export default function Section117({ isActive }) {
                         </ul>
                     </div>
 
-                    {/* Card 3: Global */}
+                    {/* Card 3: Global Entry */}
                     <div className="bg-[#1e3a8a] border-[6px] border-[#1e3a8a] p-8 flex flex-col shadow-sm">
-                        <div className="text-white font-black text-[26px] md:text-[30px] mb-2 uppercase">Global Entry</div>
-                        <div className="text-[#93c5fd] font-bold text-[22px] mb-6 border-b-2 border-[#3b82f6] pb-4">
-                            {lang === 'kr' ? '외국인 비즈니스 진입점' : 'Foreign Business Entry Point'}
+                        <div className="text-white font-black text-[24px] md:text-[28px] mb-2 uppercase">Global Entry</div>
+                        <div className="text-[#93c5fd] font-bold text-[20px] mb-4">
+                            {lang === 'kr' ? '외국인 비즈니스 관광 진입점' : 'Foreign Business Tourism Entry Point'}
                         </div>
-                        <p className="text-[18px] text-blue-50 font-medium leading-relaxed">
-                            {lang === 'kr' ? '인천국제공항과 공항철도로 직결되어 서울 진입 시 가장 먼저 마주하는 관문 (약 30분 소요)' : 'Directly connected to Incheon Int’l Airport, acting as the primary gateway to Seoul (approx. 30 mins).'}
+                        <p className="text-[20px] text-blue-50 font-medium leading-relaxed">
+                            {lang === 'kr' ? (
+                                <>
+                                    인천국제공항과 공항철도로 직결되어<br/>
+                                    서울 진입 시 가장 먼저 마주하는 관문<br/>
+                                    (약 30분 소요)
+                                </>
+                            ) : (
+                                'Directly connected to Incheon International Airport via AREX, serving as the first gateway upon entering Seoul (approx. 30 min).'
+                            )}
                         </p>
                     </div>
                 </div>
