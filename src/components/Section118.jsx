@@ -36,10 +36,10 @@ export default function Section118({ isActive }) {
                     {/* Card 1 */}
                     <div className="bg-white border-[6px] border-[#1e3a8a] p-8 flex flex-col shadow-sm">
                         <div className="text-[#1e3a8a] font-black text-[24px] md:text-[28px] mb-2 uppercase">Heritage</div>
-                        <div className="text-gray-700 font-bold text-[20px] mb-4">
+                        <div className="text-gray-700 font-bold text-[22px] mb-4">
                             {lang === 'kr' ? '힐튼 아트리움 보존' : 'Hilton Atrium Preservation'}
                         </div>
-                        <p className="text-[17px] text-gray-600 font-medium leading-relaxed">
+                        <p className="text-[19px] text-gray-600 font-medium leading-relaxed">
                             {lang === 'kr' ? 'SOM, Foster+Partners, DA그룹 등 세계적 설계사 참여 하에 힐튼 아트리움을 3D 디지털로 보존하여 역사적 가치 계승' : 'Preserving the historic Hilton Atrium in 3D digital format with world-class architects like SOM and Foster+Partners.'}
                         </p>
                     </div>
