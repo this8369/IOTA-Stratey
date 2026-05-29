@@ -142,7 +142,7 @@ export default function LeftNavigator({ currentPage, isOpen, setIsOpen }) {
      className="flex-1 overflow-y-auto px-3 py-6 scroll-smooth"
  >
  {menuData.map((section, idx) => {
-    const isSectionActive = section.id === activeHash.replace('#', '') || section.chapters?.some(chap => chap.id === activeHash.replace('#', '') || chap.items?.some(item => `#${item.id}` === activeHash)) || section.items?.some(item => `#${item.id}` === activeHash);
+    const isSectionActive = section.id === (activeHash || '').replace('#', '');
     
     return (
         <div key={idx} className="mb-4 last:mb-0">
@@ -154,7 +154,7 @@ export default function LeftNavigator({ currentPage, isOpen, setIsOpen }) {
                 {section.title}
             </h3>
             {section.chapters?.map((chapter, chapIdx) => {
-                const isChapterActive = chapter.id === activeHash.replace('#', '') || chapter.items?.some(item => `#${item.id}` === activeHash);
+                const isChapterActive = chapter.id === (activeHash || '').replace('#', '');
                 
                 return (
                     <div key={chapIdx} className="mb-3 last:mb-0">
