@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Section8({ isActive }) {
+    const { lang } = useLanguage();
     const [step, setStep] = useState(0);
 
     useEffect(() => {
@@ -39,8 +41,17 @@ export default function Section8({ isActive }) {
                 {/* Main Flowing Text */}
                 <h2 className={`text-[40px] md:text-[60px] lg:text-[72px] font-bold leading-[calc(1.3em-6px)] break-keep tracking-[-0.02em] transition-all duration-[918ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="gradient-text">
-                        한국 GDP 1조 → 2조 달러 시대<br/>
-                        역사적 분석
+                        {lang === 'kr' ? (
+                            <>
+                                한국 GDP 1조 → 2조 달러 시대<br/>
+                                역사적 분석
+                            </>
+                        ) : (
+                            <>
+                                Korea GDP $1T → $2T Era<br/>
+                                Historical Analysis
+                            </>
+                        )}
                     </span>
                 </h2>
 
