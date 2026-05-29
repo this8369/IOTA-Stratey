@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 
-const Section139 = ({ step }) => {
+const Section139 = ({ isActive }) => {
     const { lang } = useLanguage();
+    const [step, setStep] = useState(0);
+
+    useEffect(() => {
+        if (!isActive) { setStep(0); return; }
+        const t1 = setTimeout(() => setStep(1), 184);
+        const t2 = setTimeout(() => setStep(2), 551);
+        const t3 = setTimeout(() => setStep(3), 918);
+        const t4 = setTimeout(() => setStep(4), 1285);
+        const t5 = setTimeout(() => setStep(5), 1652);
+        const t6 = setTimeout(() => setStep(6), 2019);
+        return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); clearTimeout(t4); clearTimeout(t5); clearTimeout(t6); };
+    }, [isActive]);
 
     return (
         <div className="w-full h-full flex flex-col items-center justify-center p-8 bg-[#fbfbfd]">
