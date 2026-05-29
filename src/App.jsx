@@ -13,6 +13,8 @@ export default function App() {
  const base = BASE.endsWith('/') ? BASE.slice(0, -1) : BASE;
  let path = window.location.pathname.replace(base, '').replace(/^\//, '');
  if (path.endsWith('/')) path = path.slice(0, -1);
+ // Allow local access via /IOTA-Stratey to resolve to home
+ if (path === 'IOTA-Stratey' || path === 'iota-stratey' || path === '') return 'home';
  // default route is home
  return path || 'home';
  };
