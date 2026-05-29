@@ -82,8 +82,8 @@ export default function Section135({ isActive }) {
                     {/* Right: Text Content */}
                     <div className={`lg:col-span-5 flex flex-col transition-all duration-700 delay-500 ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
                         <div className="bg-white border-[6px] border-[#1e3a8a] px-8 py-10 flex flex-col justify-center shadow-xl h-full">
-                            <div className="text-[#1e3a8a] font-black text-[24px] md:text-[28px] mb-[12px] uppercase break-keep leading-tight">
-                                {lang === 'kr' ? '세대를 건너는 자본의 책임' : 'Cross-Generational Capital Responsibility'}
+                            <div className="text-[#1e3a8a] font-black text-[22px] md:text-[24px] mb-[8px] uppercase break-keep leading-tight">
+                                {lang === 'kr' ? '세대를 건너는 Capital Cycle' : 'Cross-Generational Capital Cycle'}
                             </div>
                             
                             <h3 className="text-gray-900 font-bold text-[32px] md:text-[36px] mb-[20px] leading-snug break-keep">

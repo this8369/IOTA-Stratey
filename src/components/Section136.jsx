@@ -57,18 +57,18 @@ export default function Section136({ isActive }) {
                                 </div>
 
                                 {/* Arrow */}
-                                <div className="text-gray-400 text-5xl font-black pb-12">→</div>
+                                <div className="text-gray-400 text-4xl font-black pb-12">→</div>
 
-                                {/* 2T Era */}
+                                {/* 4-5T Era */}
                                 <div className="flex flex-col items-center">
-                                    <div className="text-[18px] font-black text-[#1e3a8a] mb-3 uppercase">{lang === 'kr' ? '2조 달러 시대' : '$2T Era'}</div>
-                                    <div className="w-56 h-56 bg-blue-50 border-[6px] border-[#1e3a8a] flex flex-col items-center justify-center shadow-lg relative">
+                                    <div className="text-[18px] font-black text-[#1e3a8a] mb-3 uppercase">{lang === 'kr' ? '3조 → 4~5조 달러 경제 도약기' : 'Leap to $3T → $4-5T Economy'}</div>
+                                    <div className="w-64 h-64 bg-blue-50 border-[6px] border-[#1e3a8a] flex flex-col items-center justify-center shadow-xl relative">
                                         <div className="absolute top-0 w-full h-5 bg-[#1e3a8a]"></div>
-                                        <div className="text-[#1e3a8a] font-black text-[32px] text-center mt-3">
+                                        <div className="text-[#1e3a8a] font-black text-[38px] text-center mt-3">
                                             <div>IOTA</div>
                                         </div>
-                                        <div className="text-gray-800 font-black text-[18px] text-center px-4 mt-3 break-keep leading-tight">
-                                            {lang === 'kr' ? 'Block-scale Urban Project' : 'Block-scale Urban Project'}
+                                        <div className="text-gray-800 font-bold text-[18px] text-center px-4 mt-4 break-keep leading-snug">
+                                            {lang === 'kr' ? '향후 50년, 서울의 정체성을 정의하는 랜드마크' : 'Landmark Defining Seoul\'s Identity for the Next 50 Years'}
                                         </div>
                                     </div>
                                 </div>
