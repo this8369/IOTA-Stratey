@@ -62,7 +62,11 @@ export default function App() {
  }, [currentPage]);
 
  const navigateTo = (page) => {
+ try {
  window.history.pushState(null, '', toUrl(page));
+ } catch (e) {
+ console.warn('pushState not supported on this origin');
+ }
  setCurrentPage(page);
  };
 

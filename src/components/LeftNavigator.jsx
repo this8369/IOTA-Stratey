@@ -73,7 +73,11 @@ export default function LeftNavigator({ currentPage, isOpen, setIsOpen }) {
 
  if (currentPage !== 'home') {
  // Navigate to home first
- window.history.pushState(null, '', window.location.pathname + `#${targetId}`);
+ try {
+     window.history.pushState(null, '', window.location.pathname + `#${targetId}`);
+ } catch (e) {
+     console.warn('pushState not supported on this origin');
+ }
  window.dispatchEvent(new Event('popstate')); // trigger App to change currentPage
  window.location.hash = targetId;
  
