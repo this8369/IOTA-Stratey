@@ -37,7 +37,7 @@ export default function Section126({ isActive }) {
                 <div className="w-full max-w-[1300px] grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
                     
                     {/* Left: Text Content */}
-                    <div className={`lg:col-span-6 flex flex-col gap-8 transition-all duration-700 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                    <div className={`lg:col-span-6 flex flex-col gap-8 ml-[20px] transition-all duration-700 ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
                         
                         <div className={`relative pl-6 border-l-[4px] border-[#1e3a8a] transition-all duration-700 delay-500 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                             <div className="text-[#1e3a8a] font-black text-[16px] tracking-widest uppercase mb-2">Blueprint 01</div>
