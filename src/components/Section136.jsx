@@ -24,11 +24,11 @@ export default function Section136({ isActive }) {
                 <div className="w-full flex flex-col items-center text-center mb-[36px]">
                     <div className={`transition-all duration-[612ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         <span className="inline-block text-[20px] md:text-[24px] font-bold text-[#1e3a8a] tracking-[-0.02em] mb-[12px]">
-                            {lang === 'kr' ? '역사적 비교: IOTA가 가진 상징성 (3/3)' : 'Historical Comparison: Symbolic Significance of IOTA (3/3)'}
+                            {lang === 'kr' ? '상징성 및 강력한 브랜드 파급력' : 'Symbolism & Powerful Brand Effect'}
                         </span>
                     </div>
-                    <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[612ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                        {lang === 'kr' ? '상징성 및 강력한 브랜드 파급력' : 'Symbolism & Powerful Brand Effect'}
+                    <h2 className={`text-[32px] md:text-[46px] lg:text-[46px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[612ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                        {lang === 'kr' ? '단일 빌딩을 넘어 서울의 정체성을 정의하는 랜드마크' : 'Beyond a Single Building: A Landmark Defining Seoul\'s Identity'}
                     </h2>
                 </div>
 
@@ -39,35 +39,35 @@ export default function Section136({ isActive }) {
                     <div className={`lg:col-span-7 flex flex-col justify-center gap-6 transition-all duration-700 delay-300 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
                         <div className="w-full bg-white border border-gray-200 shadow-lg p-8 relative overflow-hidden flex flex-col items-center justify-center min-h-[350px]">
                             
-                            <h3 className="text-xl font-bold text-gray-800 mb-8 w-full text-left border-b-2 border-gray-100 pb-4">
+                            <h3 className="text-[22px] font-bold text-gray-800 mb-8 w-full text-left border-b-2 border-gray-100 pb-4">
                                 {lang === 'kr' ? '단일 빌딩을 넘어선 블록 스케일 패러다임' : 'Beyond Single Buildings to Block-Scale Paradigm'}
                             </h3>
                             
-                            <div className="w-full flex items-end justify-center gap-8 px-4 py-4">
+                            <div className="w-full flex items-end justify-center gap-12 px-4 py-8">
                                 
                                 {/* 1T Era */}
-                                <div className="flex flex-col items-center opacity-60">
-                                    <div className="text-[14px] font-bold text-gray-500 mb-2 uppercase">{lang === 'kr' ? '1조 달러 시대' : '$1T Era'}</div>
-                                    <div className="w-32 h-32 bg-gray-300 border-b-4 border-gray-400 flex items-center justify-center">
-                                        <div className="text-gray-600 font-bold text-center">
-                                            <div>IFC</div>
-                                            <div className="text-[11px] font-normal">{lang === 'kr' ? '단일 빌딩 한계' : 'Single Building Limit'}</div>
+                                <div className="flex flex-col items-center opacity-70">
+                                    <div className="text-[18px] font-black text-gray-500 mb-3 uppercase">{lang === 'kr' ? '1조 달러 시대' : '$1T Era'}</div>
+                                    <div className="w-40 h-40 bg-gray-200 border-b-4 border-gray-400 flex items-center justify-center">
+                                        <div className="text-gray-700 font-black text-center">
+                                            <div className="text-[24px] mb-1">IFC</div>
+                                            <div className="text-[15px] font-medium">{lang === 'kr' ? '단일 빌딩 한계' : 'Single Building Limit'}</div>
                                         </div>
                                     </div>
                                 </div>
 
                                 {/* Arrow */}
-                                <div className="text-gray-400 text-3xl font-black pb-8">→</div>
+                                <div className="text-gray-400 text-5xl font-black pb-12">→</div>
 
                                 {/* 2T Era */}
                                 <div className="flex flex-col items-center">
-                                    <div className="text-[14px] font-bold text-[#1e3a8a] mb-2 uppercase">{lang === 'kr' ? '2조 달러 시대' : '$2T Era'}</div>
-                                    <div className="w-48 h-48 bg-blue-50 border-4 border-[#1e3a8a] flex flex-col items-center justify-center shadow-md relative">
-                                        <div className="absolute top-0 w-full h-4 bg-[#1e3a8a]"></div>
-                                        <div className="text-[#1e3a8a] font-black text-2xl text-center mt-2">
+                                    <div className="text-[18px] font-black text-[#1e3a8a] mb-3 uppercase">{lang === 'kr' ? '2조 달러 시대' : '$2T Era'}</div>
+                                    <div className="w-56 h-56 bg-blue-50 border-[6px] border-[#1e3a8a] flex flex-col items-center justify-center shadow-lg relative">
+                                        <div className="absolute top-0 w-full h-5 bg-[#1e3a8a]"></div>
+                                        <div className="text-[#1e3a8a] font-black text-[32px] text-center mt-3">
                                             <div>IOTA</div>
                                         </div>
-                                        <div className="text-gray-700 font-bold text-sm text-center px-2 mt-2">
+                                        <div className="text-gray-800 font-black text-[18px] text-center px-4 mt-3 break-keep leading-tight">
                                             {lang === 'kr' ? 'Block-scale Urban Project' : 'Block-scale Urban Project'}
                                         </div>
                                     </div>

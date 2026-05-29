@@ -24,11 +24,11 @@ export default function Section135({ isActive }) {
                 <div className="w-full flex flex-col items-center text-center mb-[36px]">
                     <div className={`transition-all duration-[612ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                         <span className="inline-block text-[20px] md:text-[24px] font-bold text-[#1e3a8a] tracking-[-0.02em] mb-[12px]">
-                            {lang === 'kr' ? '역사적 비교: IOTA가 가진 상징성 (2/3)' : 'Historical Comparison: Symbolic Significance of IOTA (2/3)'}
+                            {lang === 'kr' ? '도심 권역의 장기 Stewardship 모델' : 'Long-term Stewardship of Urban Districts'}
                         </span>
                     </div>
-                    <h2 className={`text-[32px] md:text-[46px] lg:text-[52px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[612ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                        {lang === 'kr' ? '도심 권역의 장기 Stewardship 모델' : 'Long-term Stewardship of Urban Districts'}
+                    <h2 className={`text-[32px] md:text-[46px] lg:text-[46px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[612ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                        {lang === 'kr' ? '단순 ROI를 넘어 세대를 건너는 자본 순환의 시작' : 'Beyond ROI: The Start of a Cross-Generational Capital Cycle'}
                     </h2>
                 </div>
 
@@ -39,42 +39,42 @@ export default function Section135({ isActive }) {
                     <div className={`lg:col-span-7 flex flex-col justify-center gap-6 transition-all duration-700 delay-300 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
                         <div className="w-full bg-white border border-gray-200 shadow-lg p-8 relative overflow-hidden flex flex-col items-center justify-center min-h-[350px]">
                             
-                            <h3 className="text-xl font-bold text-gray-800 mb-8 w-full text-left border-b-2 border-gray-100 pb-4">
+                            <h3 className="text-[22px] font-bold text-gray-800 mb-8 w-full text-left border-b-2 border-gray-100 pb-4">
                                 {lang === 'kr' ? '단일 디벨로퍼의 30~50년 권역 마스터플랜 사례' : '30-50 Year District Masterplans by Single Developers'}
                             </h3>
                             
-                            <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6">
                                 {/* Tokyo */}
-                                <div className="flex flex-col items-center text-center p-4 bg-gray-50 border border-gray-200 rounded-lg">
-                                    <div className="w-16 h-16 rounded-full bg-white border-[4px] border-[#1e3a8a] flex items-center justify-center mb-3 shadow-sm">
-                                        <span className="font-black text-[#1e3a8a] text-sm">TOKYO</span>
+                                <div className="flex flex-col items-center text-center p-6 bg-gray-50 border border-gray-200 rounded-lg">
+                                    <div className="w-20 h-20 rounded-full bg-white border-[4px] border-[#1e3a8a] flex items-center justify-center mb-4 shadow-sm">
+                                        <span className="font-black text-[#1e3a8a] text-lg">TOKYO</span>
                                     </div>
-                                    <div className="font-bold text-gray-800 mb-1">{lang === 'kr' ? '마루노우치' : 'Marunouchi'}</div>
-                                    <div className="text-[12px] text-gray-500 font-medium">{lang === 'kr' ? '미츠비시 지소 주도' : 'Led by Mitsubishi Estate'}</div>
+                                    <div className="font-bold text-gray-800 text-[20px] mb-2">{lang === 'kr' ? '마루노우치' : 'Marunouchi'}</div>
+                                    <div className="text-[16px] text-gray-600 font-medium">{lang === 'kr' ? '미츠비시 지소 주도' : 'Led by Mitsubishi Estate'}</div>
                                 </div>
                                 
                                 {/* London */}
-                                <div className="flex flex-col items-center text-center p-4 bg-gray-50 border border-gray-200 rounded-lg">
-                                    <div className="w-16 h-16 rounded-full bg-white border-[4px] border-[#1e3a8a] flex items-center justify-center mb-3 shadow-sm">
-                                        <span className="font-black text-[#1e3a8a] text-sm">LONDON</span>
+                                <div className="flex flex-col items-center text-center p-6 bg-gray-50 border border-gray-200 rounded-lg">
+                                    <div className="w-20 h-20 rounded-full bg-white border-[4px] border-[#1e3a8a] flex items-center justify-center mb-4 shadow-sm">
+                                        <span className="font-black text-[#1e3a8a] text-lg">LONDON</span>
                                     </div>
-                                    <div className="font-bold text-gray-800 mb-1">King's Cross</div>
-                                    <div className="text-[12px] text-gray-500 font-medium">{lang === 'kr' ? '아르젠트(Argent)' : 'Argent Group'}</div>
+                                    <div className="font-bold text-gray-800 text-[20px] mb-2">King's Cross</div>
+                                    <div className="text-[16px] text-gray-600 font-medium">{lang === 'kr' ? '아르젠트(Argent)' : 'Argent Group'}</div>
                                 </div>
 
                                 {/* NY */}
-                                <div className="flex flex-col items-center text-center p-4 bg-gray-50 border border-gray-200 rounded-lg">
-                                    <div className="w-16 h-16 rounded-full bg-white border-[4px] border-[#1e3a8a] flex items-center justify-center mb-3 shadow-sm">
-                                        <span className="font-black text-[#1e3a8a] text-sm">NY</span>
+                                <div className="flex flex-col items-center text-center p-6 bg-gray-50 border border-gray-200 rounded-lg">
+                                    <div className="w-20 h-20 rounded-full bg-white border-[4px] border-[#1e3a8a] flex items-center justify-center mb-4 shadow-sm">
+                                        <span className="font-black text-[#1e3a8a] text-lg">NY</span>
                                     </div>
-                                    <div className="font-bold text-gray-800 mb-1">Hudson Yards</div>
-                                    <div className="text-[12px] text-gray-500 font-medium">{lang === 'kr' ? '릴레이티드' : 'Related Companies'}</div>
+                                    <div className="font-bold text-gray-800 text-[20px] mb-2">Hudson Yards</div>
+                                    <div className="text-[16px] text-gray-600 font-medium">{lang === 'kr' ? '릴레이티드' : 'Related Companies'}</div>
                                 </div>
                             </div>
                             
-                            <div className="w-full mt-6 bg-[#1e3a8a] text-white p-4 flex flex-col items-center justify-center font-bold text-center">
-                                <div className="text-[13px] opacity-80 mb-1 uppercase tracking-widest">Global Common Pattern</div>
-                                <div>{lang === 'kr' ? '한 운용사·디벨로퍼가 한 도시의 권역을 세대에 걸쳐 Stewardship' : 'A single developer stewarding a city district across generations'}</div>
+                            <div className="w-full mt-8 bg-[#1e3a8a] text-white p-5 flex flex-col items-center justify-center font-bold text-center">
+                                <div className="text-[15px] opacity-80 mb-2 uppercase tracking-widest">Global Common Pattern</div>
+                                <div className="text-[18px]">{lang === 'kr' ? '한 운용사·디벨로퍼가 한 도시의 권역을 세대에 걸쳐 Stewardship' : 'A single developer stewarding a city district across generations'}</div>
                             </div>
                         </div>
                     </div>
