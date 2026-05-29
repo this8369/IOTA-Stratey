@@ -37,11 +37,11 @@ const Section139 = ({ isActive }) => {
                     
                     {/* Phase 1: 즉시 */}
                     <div className={`flex flex-col md:flex-row w-full bg-[#0a1128] text-white shadow-lg transition-all duration-700 delay-300 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                        <div className="md:w-[240px] flex flex-col justify-center items-center py-4 px-4 shrink-0 border-r border-white/10">
-                            <div className="text-[28px] font-black tracking-tight leading-none mb-1">1.1 즉시</div>
+                        <div className="md:w-[240px] flex flex-col justify-center items-center py-[22px] px-4 shrink-0 border-r border-white/10">
+                            <div className="text-[28px] font-black tracking-tight leading-none mb-1">즉시</div>
                             <div className="text-[15px] font-bold text-blue-200">(2026.5 ~ 2026.9)</div>
                         </div>
-                        <div className="flex-1 py-4 px-6 md:px-8 flex flex-col justify-center">
+                        <div className="flex-1 py-[22px] px-6 md:px-8 flex flex-col justify-center">
                             <ul className="space-y-2">
                                 <li className="flex items-start gap-3">
                                     <div className="w-1.5 h-1.5 rounded-full bg-blue-300 mt-2 shrink-0"></div>
@@ -67,11 +67,11 @@ const Section139 = ({ isActive }) => {
 
                     {/* Phase 2: 단기 */}
                     <div className={`flex flex-col md:flex-row w-full bg-[#101b3b] text-white shadow-lg transition-all duration-700 delay-500 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                        <div className="md:w-[240px] flex flex-col justify-center items-center py-4 px-4 shrink-0 border-r border-white/10">
-                            <div className="text-[28px] font-black tracking-tight leading-none mb-1">1.2 단기</div>
+                        <div className="md:w-[240px] flex flex-col justify-center items-center py-[22px] px-4 shrink-0 border-r border-white/10">
+                            <div className="text-[28px] font-black tracking-tight leading-none mb-1">단기</div>
                             <div className="text-[15px] font-bold text-blue-200">(2026.9 ~ 2026.12)</div>
                         </div>
-                        <div className="flex-1 py-4 px-6 md:px-8 flex flex-col justify-center">
+                        <div className="flex-1 py-[22px] px-6 md:px-8 flex flex-col justify-center">
                             <ul className="space-y-2">
                                 <li className="flex items-start gap-3">
                                     <div className="w-1.5 h-1.5 rounded-full bg-blue-300 mt-2 shrink-0"></div>
@@ -97,11 +97,11 @@ const Section139 = ({ isActive }) => {
 
                     {/* Phase 3: 중기 */}
                     <div className={`flex flex-col md:flex-row w-full bg-[#16254e] text-white shadow-lg transition-all duration-700 delay-700 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                        <div className="md:w-[240px] flex flex-col justify-center items-center py-4 px-4 shrink-0 border-r border-white/10">
-                            <div className="text-[28px] font-black tracking-tight leading-none mb-1">1.3 중기</div>
+                        <div className="md:w-[240px] flex flex-col justify-center items-center py-[22px] px-4 shrink-0 border-r border-white/10">
+                            <div className="text-[28px] font-black tracking-tight leading-none mb-1">중기</div>
                             <div className="text-[15px] font-bold text-blue-200">(2027 ~ 2028)</div>
                         </div>
-                        <div className="flex-1 py-4 px-6 md:px-8 flex flex-col justify-center">
+                        <div className="flex-1 py-[22px] px-6 md:px-8 flex flex-col justify-center">
                             <ul className="space-y-2">
                                 <li className="flex items-start gap-3">
                                     <div className="w-1.5 h-1.5 rounded-full bg-blue-300 mt-2 shrink-0"></div>
@@ -127,11 +127,11 @@ const Section139 = ({ isActive }) => {
 
                     {/* Phase 4: 장기 */}
                     <div className={`flex flex-col md:flex-row w-full bg-[#1c2f61] text-white shadow-lg transition-all duration-700 delay-1000 ${step >= 6 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                        <div className="md:w-[240px] flex flex-col justify-center items-center py-4 px-4 shrink-0 border-r border-white/10">
-                            <div className="text-[28px] font-black tracking-tight leading-none mb-1">1.4 장기</div>
+                        <div className="md:w-[240px] flex flex-col justify-center items-center py-[22px] px-4 shrink-0 border-r border-white/10">
+                            <div className="text-[28px] font-black tracking-tight leading-none mb-1">장기</div>
                             <div className="text-[15px] font-bold text-blue-200">(2029 ~ 2031)</div>
                         </div>
-                        <div className="flex-1 py-4 px-6 md:px-8 flex flex-col justify-center">
+                        <div className="flex-1 py-[22px] px-6 md:px-8 flex flex-col justify-center">
                             <ul className="space-y-2">
                                 <li className="flex items-start gap-3">
                                     <div className="w-1.5 h-1.5 rounded-full bg-blue-300 mt-2 shrink-0"></div>
@@ -143,6 +143,13 @@ const Section139 = ({ isActive }) => {
                                     <div className="w-1.5 h-1.5 rounded-full bg-blue-300 mt-2 shrink-0"></div>
                                     <p className="text-[17px] text-gray-100 font-bold leading-snug break-keep">
                                         글로벌 LP 베이스 30%+로 확장 및 AUM 100조 원 돌파
+                                    </p>
+                                </li>
+                                {/* Hidden spacer to match Phase 3 height */}
+                                <li className="flex items-start gap-3 opacity-0 pointer-events-none select-none h-[18px]">
+                                    <div className="w-1.5 h-1.5 rounded-full bg-transparent mt-2 shrink-0"></div>
+                                    <p className="text-[17px] text-transparent font-bold leading-snug break-keep">
+                                        Spacer
                                     </p>
                                 </li>
                             </ul>
