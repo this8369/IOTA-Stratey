@@ -47,16 +47,16 @@ export default function Section79({ isActive }) {
                         {/* 2035 */}
                         <div className={`relative flex flex-col items-center justify-end h-full w-[30%] transition-all duration-[540ms] delay-[153ms] ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                             <div className="text-gray-500 font-bold text-[18px] mb-2">2035</div>
-                            <div className="text-[#1d1d1f] font-black text-[32px] md:text-[40px] leading-none mb-[120px]">11,000<br/><span className="text-indigo-600 text-[20px]">~13,000</span></div>
-                            <div className="w-5 h-5 bg-indigo-500 rounded-full absolute bottom-[110px] shadow-sm"></div>
+                            <div className="text-[#1d1d1f] font-black text-[32px] md:text-[40px] leading-none mb-[120px] md:mb-[140px]">11,000<br/><span className="text-indigo-600 text-[20px]">~13,000</span></div>
+                            <div className="w-5 h-5 bg-indigo-500 rounded-full absolute bottom-[80px] md:bottom-[100px] shadow-sm"></div>
                         </div>
 
                         {/* 2040 */}
                         <div className={`relative flex flex-col items-center justify-end h-full w-[30%] transition-all duration-[540ms] delay-400 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-                            <div className="absolute top-[-40px] text-purple-600 font-black text-[24px] uppercase tracking-widest animate-pulse">Quantum Jump 🚀</div>
-                            <div className="text-gray-500 font-bold text-[20px] mb-2 absolute top-6">2040</div>
-                            <div className="text-[#1d1d1f] font-black text-[40px] md:text-[54px] leading-none absolute top-14">15,000<br/><span className="text-purple-600 text-[26px]">~18,000</span></div>
-                            <div className="w-8 h-8 bg-purple-600 rounded-full absolute top-[135px] shadow-lg"></div>
+                            <div className="absolute top-[-50px] md:top-[-60px] text-purple-600 font-black text-[24px] uppercase tracking-widest animate-pulse">Quantum Jump 🚀</div>
+                            <div className="text-gray-500 font-bold text-[20px] mb-2 absolute -top-4 md:-top-6">2040</div>
+                            <div className="text-[#1d1d1f] font-black text-[40px] md:text-[54px] leading-none absolute top-4 md:top-2">15,000<br/><span className="text-purple-600 text-[26px]">~18,000</span></div>
+                            <div className="w-8 h-8 bg-purple-600 rounded-full absolute top-[100px] md:top-[110px] shadow-lg"></div>
                         </div>
                     </div>
 
