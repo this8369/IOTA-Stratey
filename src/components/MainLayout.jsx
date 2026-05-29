@@ -356,7 +356,7 @@ export default function MainLayout({ isNavOpen, setIsNavOpen, onNavigate }) {
                             `}
                         </style>
                         {/* 15칸 짜리 창문 */}
-                        <div className="overflow-hidden w-[382px] md:w-[438px] py-2">
+                        <div className="overflow-hidden w-[390px] md:w-[450px] py-2">
                             {/* 전체 점들이 담긴 실제 트랙 (좌우로 쓱 이동함) */}
                             <div className="flex items-center gap-0 transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] dots-track">
                                 {slides.map((_, idx) => {
