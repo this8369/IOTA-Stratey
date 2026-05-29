@@ -567,10 +567,10 @@ export const menuDataKr = [
                 ]
             },
             {
-                title: "Chapter 7. 중장기 액션플랜",
+                title: "Chapter 7. 실행전략 및 맺음말",
                 id: "page-139",
                 items: [
-                    { label: "실행전략 및 맺음말", id: "page-140" }
+                    { label: "액션 아이템 우선순위", id: "page-140" }
                 ]
             }
         ] 

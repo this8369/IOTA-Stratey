@@ -30,7 +30,7 @@ const Section138 = ({ isActive }) => {
                 </div>
                 <h2 className={`text-[34px] md:text-[54px] lg:text-[66px] font-bold leading-[calc(1.3em-6px)] break-keep transition-all duration-[734ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                     <span className="gradient-text-p4c6">
-                        {lang === 'kr' ? '중장기 액션플랜' : 'Long-term Action Plan'}
+                        {lang === 'kr' ? '실행전략 및 맺음말' : 'Execution Strategy & Conclusion'}
                     </span>
                 </h2>
             </div>

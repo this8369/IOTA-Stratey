@@ -28,7 +28,7 @@ const Section139 = ({ isActive }) => {
                         </span>
                     </div>
                     <h2 className={`text-[32px] md:text-[46px] lg:text-[46px] font-extrabold leading-[calc(1.3em-6px)] text-[#1d1d1f] break-keep tracking-[-0.02em] transition-all duration-[612ms] ease-[cubic-bezier(0.16,1,0.3,1)] ${step >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                        {lang === 'kr' ? '실행전략 및 맺음말' : 'Execution Strategy & Conclusion'}
+                        {lang === 'kr' ? '향후 액션 아이템 우선순위' : 'Future Action Item Priorities'}
                     </h2>
                 </div>
 
