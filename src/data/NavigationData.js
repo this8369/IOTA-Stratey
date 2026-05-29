@@ -253,6 +253,13 @@ export const menuDataEn = [
                     { label: "Transit Infrastructure Hub", id: "page-118" },
                     { label: "City-making", id: "page-119" }
                 ]
+            },
+            {
+                title: "Chapter 7. Long-term Action Plan",
+                id: "page-139",
+                items: [
+                    { label: "Action Item Priorities", id: "page-140" }
+                ]
             }
         ] 
     }
@@ -557,6 +564,13 @@ export const menuDataKr = [
                     { label: "4대 변곡점과 IOTA", id: "page-136" },
                     { label: "Stewardship 모델", id: "page-137" },
                     { label: "상징성과 브랜드 파급력", id: "page-138" }
+                ]
+            },
+            {
+                title: "Chapter 7. 중장기 액션플랜",
+                id: "page-139",
+                items: [
+                    { label: "실행전략 및 맺음말", id: "page-140" }
                 ]
             }
         ] 
