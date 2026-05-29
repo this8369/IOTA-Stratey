@@ -33,11 +33,11 @@ export default function Section134({ isActive }) {
                 </div>
 
                 {/* Content: 1x2 Grid (Infographic + Text) */}
-                <div className="w-full max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div className="w-full max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
                     
                     {/* Left: Infographic */}
-                    <div className={`lg:col-span-6 flex flex-col justify-center items-center gap-6 transition-all duration-700 delay-300 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
-                        <div className="w-full bg-white border border-gray-200 shadow-lg p-8 relative overflow-hidden">
+                    <div className={`lg:col-span-6 flex flex-col transition-all duration-700 delay-300 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                        <div className="w-full h-full bg-white border border-gray-200 shadow-lg p-8 relative overflow-hidden flex flex-col justify-center">
                             <div className="absolute top-0 left-0 w-2 h-full bg-[#1e3a8a]"></div>
                             
                             <h3 className="text-[22px] font-bold text-gray-800 mb-8 border-b-2 border-gray-100 pb-4">
@@ -81,23 +81,23 @@ export default function Section134({ isActive }) {
                     </div>
 
                     {/* Right: Text Content */}
-                    <div className={`lg:col-span-6 transition-all duration-700 delay-500 ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
-                        <div className="bg-white border-[6px] border-[#1e3a8a] px-8 py-10 flex flex-col shadow-xl">
-                            <div className="text-[#1e3a8a] font-black text-[22px] md:text-[24px] mb-[8px] uppercase break-keep leading-tight">
+                    <div className={`lg:col-span-6 flex flex-col transition-all duration-700 delay-500 ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
+                        <div className="bg-white border-[6px] border-[#1e3a8a] px-8 py-12 flex flex-col justify-center shadow-xl h-full">
+                            <div className="text-[#1e3a8a] font-black text-[24px] md:text-[28px] mb-[12px] uppercase break-keep leading-tight">
                                 {lang === 'kr' ? '1조 → 2조 달러 시대의 마침표' : 'The Conclusion of the $1T to $2T Era'}
                             </div>
                             
-                            <h3 className="text-gray-900 font-bold text-[28px] mb-[20px] leading-snug break-keep">
-                                {lang === 'kr' ? 'Defining Trophy' : 'Defining Trophy'}
+                            <h3 className="text-gray-900 font-bold text-[32px] md:text-[36px] mb-[24px] leading-snug break-keep">
+                                {lang === 'kr' ? '새로운 랜드마크의 탄생' : 'Birth of a New Landmark'}
                             </h3>
                             
-                            <p className="text-[16px] text-gray-700 font-medium leading-relaxed break-keep tracking-tight mb-8">
-                                {lang === 'kr' ? '21세기 한국에게 AI, 반도체, 문화, 인구는 이전 세대의 증기기관이나 핵·우주산업과 맞먹는 4대 변곡점입니다.' : 'For 21st century Korea, AI, semiconductors, culture, and population are 4 inflection points equivalent to the steam engine or space industry of past generations.'}
+                            <p className="text-[18px] md:text-[20px] text-gray-700 font-medium leading-relaxed break-keep tracking-tight mb-10">
+                                {lang === 'kr' ? '대한민국이 4대 변곡점을 지나며 맞이하는 새로운 시대. IOTA는 한국이 단일 빌딩 개발을 넘어 블록 스케일의 도시 개발로 도약하는 상징적 전환점' : 'A new era as Korea passes 4 inflection points. IOTA is a symbolic turning point leaping beyond single-building development into block-scale urban development.'}
                             </p>
 
-                            <div className="bg-gray-100 p-5 border-l-4 border-[#1e3a8a]">
-                                <p className="text-[16px] text-gray-800 font-bold leading-relaxed break-keep">
-                                    {lang === 'kr' ? '1조 달러 시대에 IFC가 상징이었다면, IOTA는 이 4대 변곡점 위에 서 있는 한국 1조→2조 달러의 마지막이자, 2조→3조 달러를 여는 첫 트로피가 될 것입니다.' : 'If IFC was the symbol of the $1T era, IOTA will be the final defining trophy of the $1T->$2T era and the first of the $2T->$3T era.'}
+                            <div className="bg-gray-100 p-6 border-l-4 border-[#1e3a8a]">
+                                <p className="text-[18px] md:text-[20px] text-gray-800 font-bold leading-relaxed break-keep">
+                                    {lang === 'kr' ? '단순한 자산 가치를 넘어 국가 경제의 스케일업을 증명할 거대한 패러다임 시프트의 최전선' : 'The frontline of a massive paradigm shift that proves the scale-up of the national economy beyond simple asset value.'}
                                 </p>
                             </div>
                         </div>

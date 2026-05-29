@@ -33,11 +33,11 @@ export default function Section136({ isActive }) {
                 </div>
 
                 {/* Content: 1x2 Grid */}
-                <div className="w-full max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-[36px]">
+                <div className="w-full max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch mb-[36px]">
                     
                     {/* Left: Diagram */}
-                    <div className={`lg:col-span-7 flex flex-col justify-center gap-6 transition-all duration-700 delay-300 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
-                        <div className="w-full bg-white border border-gray-200 shadow-lg p-8 relative overflow-hidden flex flex-col items-center justify-center min-h-[350px]">
+                    <div className={`lg:col-span-7 flex flex-col transition-all duration-700 delay-300 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                        <div className="w-full h-full bg-white border border-gray-200 shadow-lg p-8 relative overflow-hidden flex flex-col items-center justify-center min-h-[350px]">
                             
                             <h3 className="text-[22px] font-bold text-gray-800 mb-8 w-full text-left border-b-2 border-gray-100 pb-4">
                                 {lang === 'kr' ? '단일 빌딩을 넘어선 블록 스케일 패러다임' : 'Beyond Single Buildings to Block-Scale Paradigm'}
@@ -78,23 +78,23 @@ export default function Section136({ isActive }) {
                     </div>
 
                     {/* Right: Text Content */}
-                    <div className={`lg:col-span-5 transition-all duration-700 delay-500 ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
-                        <div className="bg-white border-[6px] border-[#1e3a8a] px-8 py-10 flex flex-col shadow-xl h-full">
-                            <div className="text-[#1e3a8a] font-black text-[22px] md:text-[24px] mb-[8px] uppercase break-keep leading-tight">
+                    <div className={`lg:col-span-5 flex flex-col transition-all duration-700 delay-500 ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
+                        <div className="bg-white border-[6px] border-[#1e3a8a] px-8 py-12 flex flex-col justify-center shadow-xl h-full">
+                            <div className="text-[#1e3a8a] font-black text-[24px] md:text-[28px] mb-[12px] uppercase break-keep leading-tight">
                                 {lang === 'kr' ? '서울의 정체성을 정의하는 랜드마크' : 'A Landmark Defining Seoul\'s Identity'}
                             </div>
                             
-                            <h3 className="text-gray-900 font-bold text-[28px] mb-[20px] leading-snug break-keep">
+                            <h3 className="text-gray-900 font-bold text-[32px] md:text-[36px] mb-[24px] leading-snug break-keep">
                                 {lang === 'kr' ? '도시 브랜드 파급력' : 'City Brand Effect'}
                             </h3>
                             
-                            <p className="text-[16px] text-gray-700 font-medium leading-relaxed break-keep tracking-tight mb-8">
-                                {lang === 'kr' ? '향후 50년 후 한국이 4~5조 달러 경제로 도약할 때, IOTA는 도쿄 미드타운이나 록폰기 힐스가 만든 강력한 도시 브랜드 이펙트와 동급의 상징물로 남을 것입니다.' : 'As Korea leaps to a $4-5T economy in the next 50 years, IOTA will remain a symbol with a powerful city brand effect equal to Tokyo Midtown or Roppongi Hills.'}
+                            <p className="text-[18px] md:text-[20px] text-gray-700 font-medium leading-relaxed break-keep tracking-tight mb-10">
+                                {lang === 'kr' ? '향후 50년 후 한국이 4~5조 달러 경제로 도약할 때, IOTA는 도쿄 미드타운이나 록폰기 힐스가 만든 강력한 도시 브랜드 이펙트와 동급의 상징물' : 'As Korea leaps to a $4-5T economy in the next 50 years, IOTA will remain a symbol with a powerful city brand effect equal to Tokyo Midtown or Roppongi Hills.'}
                             </p>
 
-                            <div className="bg-gray-100 p-5 border-l-4 border-[#1e3a8a]">
-                                <p className="text-[16px] text-gray-800 font-bold leading-relaxed break-keep">
-                                    {lang === 'kr' ? '이것은 단순한 부동산 개발이 아니라, 한국의 새로운 시대를 여는 도시 창조 과정입니다.' : 'This is not just real estate development, but a process of city creation that opens a new era for Korea.'}
+                            <div className="bg-gray-100 p-6 border-l-4 border-[#1e3a8a]">
+                                <p className="text-[18px] md:text-[20px] text-gray-800 font-bold leading-relaxed break-keep">
+                                    {lang === 'kr' ? '단순한 부동산 개발이 아닌, 한국의 새로운 시대를 여는 도시 창조 과정' : 'Not just real estate development, but a process of city creation that opens a new era for Korea.'}
                                 </p>
                             </div>
                         </div>

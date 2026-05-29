@@ -33,11 +33,11 @@ export default function Section135({ isActive }) {
                 </div>
 
                 {/* Content: 1x2 Grid */}
-                <div className="w-full max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div className="w-full max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch mb-[36px]">
                     
-                    {/* Left: Global Map Nodes Infographic */}
-                    <div className={`lg:col-span-7 flex flex-col justify-center gap-6 transition-all duration-700 delay-300 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
-                        <div className="w-full bg-white border border-gray-200 shadow-lg p-8 relative overflow-hidden flex flex-col items-center justify-center min-h-[350px]">
+                    {/* Left: Diagram */}
+                    <div className={`lg:col-span-7 flex flex-col transition-all duration-700 delay-300 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
+                        <div className="w-full h-full bg-white border border-gray-200 shadow-lg p-8 relative overflow-hidden flex flex-col items-center justify-center min-h-[350px]">
                             
                             <h3 className="text-[22px] font-bold text-gray-800 mb-8 w-full text-left border-b-2 border-gray-100 pb-4">
                                 {lang === 'kr' ? '단일 디벨로퍼의 30~50년 권역 마스터플랜 사례' : '30-50 Year District Masterplans by Single Developers'}
@@ -80,23 +80,23 @@ export default function Section135({ isActive }) {
                     </div>
 
                     {/* Right: Text Content */}
-                    <div className={`lg:col-span-5 transition-all duration-700 delay-500 ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
-                        <div className="bg-white border-[6px] border-[#1e3a8a] px-8 py-10 flex flex-col shadow-xl">
-                            <div className="text-[#1e3a8a] font-black text-[22px] md:text-[24px] mb-[8px] uppercase break-keep leading-tight">
-                                {lang === 'kr' ? '세대를 건너는 자본 순환' : 'Cross-Generational Capital Cycle'}
+                    <div className={`lg:col-span-5 flex flex-col transition-all duration-700 delay-500 ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
+                        <div className="bg-white border-[6px] border-[#1e3a8a] px-8 py-12 flex flex-col justify-center shadow-xl h-full">
+                            <div className="text-[#1e3a8a] font-black text-[24px] md:text-[28px] mb-[12px] uppercase break-keep leading-tight">
+                                {lang === 'kr' ? '세대를 건너는 자본의 책임' : 'Cross-Generational Capital Responsibility'}
                             </div>
                             
-                            <h3 className="text-gray-900 font-bold text-[28px] mb-[20px] leading-snug break-keep">
-                                {lang === 'kr' ? '한국형 모델의 구축' : 'Building the Korean Model'}
+                            <h3 className="text-gray-900 font-bold text-[32px] md:text-[36px] mb-[24px] leading-snug break-keep">
+                                {lang === 'kr' ? '도시와 자본의 상생' : 'Coexistence of City and Capital'}
                             </h3>
                             
-                            <p className="text-[16px] text-gray-700 font-medium leading-relaxed break-keep tracking-tight mb-8">
-                                {lang === 'kr' ? '글로벌 주요 도시들은 단순한 랜드마크 건설을 넘어 한 주체가 긴 시간 동안 권역 전체의 정체성을 이끌어가는 Stewardship 모델을 증명해왔습니다.' : 'Major global cities have proven the Stewardship model where a single entity guides the district\'s identity over a long time, going beyond simple landmark construction.'}
+                            <p className="text-[18px] md:text-[20px] text-gray-700 font-medium leading-relaxed break-keep tracking-tight mb-10">
+                                {lang === 'kr' ? '단순히 건물을 짓고 파는 모델이 아닌, 30년~50년에 걸쳐 도심 공간을 지속적으로 관리하고 진화시키는 장기 Stewardship 모델' : 'A long-term Stewardship model that continuously manages and evolves urban spaces over 30-50 years, not just building and selling.'}
                             </p>
 
-                            <div className="bg-gray-100 p-5 border-l-4 border-[#1e3a8a]">
-                                <p className="text-[16px] text-gray-800 font-bold leading-relaxed break-keep">
-                                    {lang === 'kr' ? '이지스가 IOTA를 시작으로 YIBD, 그리고 향후 트로피 에셋으로 이 모델을 확장한다면, 이는 단순 ROI 게임이 아니라 세대를 건너는 Capital Cycle 파이프라인의 구축을 의미합니다.' : 'If IGIS expands this model starting from IOTA to YIBD and future trophy assets, it means establishing a cross-generational Capital Cycle pipeline rather than a simple ROI game.'}
+                            <div className="bg-gray-100 p-6 border-l-4 border-[#1e3a8a]">
+                                <p className="text-[18px] md:text-[20px] text-gray-800 font-bold leading-relaxed break-keep">
+                                    {lang === 'kr' ? '뉴욕 릴레이티드나 런던 아르젠트처럼, IOTA는 이지스가 단순한 개발 주체를 넘어 서울을 관리하는 장기적인 파트너로 거듭나는 시발점' : 'Like NY\'s Related or London\'s Argent, IOTA marks the beginning of IGIS becoming a long-term partner managing Seoul beyond a simple developer.'}
                                 </p>
                             </div>
                         </div>
