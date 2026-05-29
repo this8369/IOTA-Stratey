@@ -554,9 +554,9 @@ export const menuDataKr = [
                 title: "Chapter 6. IOTA가 가진 상징성",
                 id: "page-135",
                 items: [
-                    { label: "4대 변곡점과 IOTA", id: "page-135" },
-                    { label: "Stewardship 모델", id: "page-136" },
-                    { label: "상징성과 브랜드 파급력", id: "page-137" }
+                    { label: "4대 변곡점과 IOTA", id: "page-136" },
+                    { label: "Stewardship 모델", id: "page-137" },
+                    { label: "상징성과 브랜드 파급력", id: "page-138" }
                 ]
             }
         ] 
