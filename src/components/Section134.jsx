@@ -40,36 +40,36 @@ export default function Section134({ isActive }) {
                         <div className="w-full h-full bg-white border border-gray-200 shadow-lg p-8 relative overflow-hidden flex flex-col justify-center">
                             <div className="absolute top-0 left-0 w-2 h-full bg-[#1e3a8a]"></div>
                             
-                            <h3 className="text-[22px] font-bold text-gray-800 mb-8 border-b-2 border-gray-100 pb-4">
+                            <h3 className="text-[20px] font-bold text-gray-800 mb-6 border-b-2 border-gray-100 pb-3">
                                 {lang === 'kr' ? '글로벌 패권과 시대적 변곡점' : 'Global Hegemony & Historical Inflection Points'}
                             </h3>
                             
-                            <div className="flex flex-col gap-8 relative">
+                            <div className="flex flex-col gap-5 relative">
                                 {/* Vertical Timeline Line */}
-                                <div className="absolute left-[27px] top-4 bottom-4 w-1 bg-gray-200"></div>
+                                <div className="absolute left-[23px] top-4 bottom-4 w-1 bg-gray-200"></div>
                                 
                                 {/* Item 1 */}
-                                <div className="flex items-center gap-6 relative z-10">
-                                    <div className="w-14 h-14 bg-gray-100 rounded-full border-[3px] border-gray-300 flex items-center justify-center font-bold text-gray-500 text-lg shrink-0">18C</div>
-                                    <div className="bg-gray-50 p-5 rounded-lg flex-1 border border-gray-200">
+                                <div className="flex items-center gap-5 relative z-10">
+                                    <div className="w-12 h-12 bg-gray-100 rounded-full border-[3px] border-gray-300 flex items-center justify-center font-bold text-gray-500 text-[16px] shrink-0">18C</div>
+                                    <div className="bg-gray-50 p-4 rounded-lg flex-1 border border-gray-200">
                                         <div className="font-bold text-gray-800 text-[18px] mb-2">{lang === 'kr' ? '산업혁명' : 'Industrial Revolution'}</div>
                                         <div className="text-[16px] text-gray-600 font-medium leading-snug">{lang === 'kr' ? '증기기관 → 단일 기술 변곡점이 글로벌 패권 형성' : 'Steam Engine → Single tech inflection point forming global hegemony'}</div>
                                     </div>
                                 </div>
                                 
                                 {/* Item 2 */}
-                                <div className="flex items-center gap-6 relative z-10">
-                                    <div className="w-14 h-14 bg-gray-100 rounded-full border-[3px] border-gray-300 flex items-center justify-center font-bold text-gray-500 text-lg shrink-0">20C</div>
-                                    <div className="bg-gray-50 p-5 rounded-lg flex-1 border border-gray-200">
-                                        <div className="font-bold text-gray-800 text-[18px] mb-2">{lang === 'kr' ? '냉전기 (미·소)' : 'Cold War (US/USSR)'}</div>
-                                        <div className="text-[16px] text-gray-600 font-medium leading-snug">{lang === 'kr' ? '핵무기·우주산업 → 새로운 지정학 형성' : 'Nuclear/Space tech → Forming new geopolitics'}</div>
+                                <div className="flex items-center gap-5 relative z-10">
+                                    <div className="w-12 h-12 bg-gray-100 rounded-full border-[3px] border-gray-300 flex items-center justify-center font-bold text-gray-500 text-[16px] shrink-0">20C</div>
+                                    <div className="bg-gray-50 p-4 rounded-lg flex-1 border border-gray-200">
+                                        <div className="font-bold text-gray-800 text-[16px] mb-1">{lang === 'kr' ? '냉전기 (미·소)' : 'Cold War (US/USSR)'}</div>
+                                        <div className="text-[15px] text-gray-600 font-medium leading-snug">{lang === 'kr' ? '핵무기·우주산업 → 새로운 지정학 형성' : 'Nuclear/Space tech → Forming new geopolitics'}</div>
                                     </div>
                                 </div>
 
                                 {/* Item 3 (Highlight) */}
-                                <div className="flex items-center gap-6 relative z-10">
-                                    <div className="w-14 h-14 bg-[#1e3a8a] rounded-full border-[3px] border-[#1e3a8a] flex items-center justify-center font-bold text-white text-lg shrink-0 shadow-md">21C</div>
-                                    <div className="bg-blue-50/50 p-5 rounded-lg flex-1 border-2 border-[#1e3a8a] shadow-sm">
+                                <div className="flex items-center gap-5 relative z-10">
+                                    <div className="w-12 h-12 bg-[#1e3a8a] rounded-full border-[3px] border-[#1e3a8a] flex items-center justify-center font-bold text-white text-[16px] shrink-0 shadow-md">21C</div>
+                                    <div className="bg-blue-50/50 p-4 rounded-lg flex-1 border-2 border-[#1e3a8a] shadow-sm">
                                         <div className="font-bold text-[#1e3a8a] text-[20px] mb-2">{lang === 'kr' ? '대한민국 4대 변곡점' : 'Korea\'s 4 Inflection Points'}</div>
                                         <div className="text-[18px] font-black text-gray-900 tracking-tight">
                                             {lang === 'kr' ? 'AI · 반도체 · 문화 · 인구' : 'AI · Semiconductors · Culture · Population'}
@@ -82,21 +82,21 @@ export default function Section134({ isActive }) {
 
                     {/* Right: Text Content */}
                     <div className={`lg:col-span-6 flex flex-col transition-all duration-700 delay-500 ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
-                        <div className="bg-white border-[6px] border-[#1e3a8a] px-8 py-12 flex flex-col justify-center shadow-xl h-full">
-                            <div className="text-[#1e3a8a] font-black text-[24px] md:text-[28px] mb-[12px] uppercase break-keep leading-tight">
+                        <div className="bg-white border-[6px] border-[#1e3a8a] px-8 py-8 flex flex-col justify-center shadow-xl h-full">
+                            <div className="text-[#1e3a8a] font-black text-[22px] md:text-[24px] mb-[8px] uppercase break-keep leading-tight">
                                 {lang === 'kr' ? '1조 → 2조 달러 시대의 마침표' : 'The Conclusion of the $1T to $2T Era'}
                             </div>
                             
-                            <h3 className="text-gray-900 font-bold text-[32px] md:text-[36px] mb-[24px] leading-snug break-keep">
+                            <h3 className="text-gray-900 font-bold text-[28px] md:text-[32px] mb-[16px] leading-snug break-keep">
                                 {lang === 'kr' ? '새로운 랜드마크의 탄생' : 'Birth of a New Landmark'}
                             </h3>
                             
-                            <p className="text-[18px] md:text-[20px] text-gray-700 font-medium leading-relaxed break-keep tracking-tight mb-10">
+                            <p className="text-[16px] md:text-[18px] text-gray-700 font-medium leading-relaxed break-keep tracking-tight mb-6">
                                 {lang === 'kr' ? '대한민국이 4대 변곡점을 지나며 맞이하는 새로운 시대. IOTA는 한국이 단일 빌딩 개발을 넘어 블록 스케일의 도시 개발로 도약하는 상징적 전환점' : 'A new era as Korea passes 4 inflection points. IOTA is a symbolic turning point leaping beyond single-building development into block-scale urban development.'}
                             </p>
 
-                            <div className="bg-gray-100 p-6 border-l-4 border-[#1e3a8a]">
-                                <p className="text-[18px] md:text-[20px] text-gray-800 font-bold leading-relaxed break-keep">
+                            <div className="bg-gray-100 p-5 border-l-4 border-[#1e3a8a]">
+                                <p className="text-[16px] md:text-[18px] text-gray-800 font-bold leading-relaxed break-keep">
                                     {lang === 'kr' ? '단순한 자산 가치를 넘어 국가 경제의 스케일업을 증명할 거대한 패러다임 시프트의 최전선' : 'The frontline of a massive paradigm shift that proves the scale-up of the national economy beyond simple asset value.'}
                                 </p>
                             </div>

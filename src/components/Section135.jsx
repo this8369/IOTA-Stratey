@@ -37,9 +37,9 @@ export default function Section135({ isActive }) {
                     
                     {/* Left: Diagram */}
                     <div className={`lg:col-span-7 flex flex-col transition-all duration-700 delay-300 ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
-                        <div className="w-full h-full bg-white border border-gray-200 shadow-lg p-8 relative overflow-hidden flex flex-col items-center justify-center min-h-[350px]">
+                        <div className="w-full h-full bg-white border border-gray-200 shadow-lg p-6 relative overflow-hidden flex flex-col items-center justify-center min-h-[350px]">
                             
-                            <h3 className="text-[22px] font-bold text-gray-800 mb-8 w-full text-left border-b-2 border-gray-100 pb-4">
+                            <h3 className="text-[22px] font-bold text-gray-800 mb-6 w-full text-left border-b-2 border-gray-100 pb-4">
                                 {lang === 'kr' ? '단일 디벨로퍼의 30~50년 권역 마스터플랜 사례' : '30-50 Year District Masterplans by Single Developers'}
                             </h3>
                             
@@ -81,16 +81,16 @@ export default function Section135({ isActive }) {
 
                     {/* Right: Text Content */}
                     <div className={`lg:col-span-5 flex flex-col transition-all duration-700 delay-500 ${step >= 4 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
-                        <div className="bg-white border-[6px] border-[#1e3a8a] px-8 py-12 flex flex-col justify-center shadow-xl h-full">
+                        <div className="bg-white border-[6px] border-[#1e3a8a] px-8 py-10 flex flex-col justify-center shadow-xl h-full">
                             <div className="text-[#1e3a8a] font-black text-[24px] md:text-[28px] mb-[12px] uppercase break-keep leading-tight">
                                 {lang === 'kr' ? '세대를 건너는 자본의 책임' : 'Cross-Generational Capital Responsibility'}
                             </div>
                             
-                            <h3 className="text-gray-900 font-bold text-[32px] md:text-[36px] mb-[24px] leading-snug break-keep">
+                            <h3 className="text-gray-900 font-bold text-[32px] md:text-[36px] mb-[20px] leading-snug break-keep">
                                 {lang === 'kr' ? '도시와 자본의 상생' : 'Coexistence of City and Capital'}
                             </h3>
                             
-                            <p className="text-[18px] md:text-[20px] text-gray-700 font-medium leading-relaxed break-keep tracking-tight mb-10">
+                            <p className="text-[18px] md:text-[20px] text-gray-700 font-medium leading-relaxed break-keep tracking-tight mb-8">
                                 {lang === 'kr' ? '단순히 건물을 짓고 파는 모델이 아닌, 30년~50년에 걸쳐 도심 공간을 지속적으로 관리하고 진화시키는 장기 Stewardship 모델' : 'A long-term Stewardship model that continuously manages and evolves urban spaces over 30-50 years, not just building and selling.'}
                             </p>
 
