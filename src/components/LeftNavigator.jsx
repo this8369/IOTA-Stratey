@@ -48,7 +48,7 @@ export default function LeftNavigator({ currentPage, isOpen, setIsOpen }) {
             setTimeout(() => {
                 const activeEl = scrollContainerRef.current.querySelector('.nav-item-active');
                 if (activeEl) {
-                    activeEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    activeEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                 }
             }, 150); // slight delay to allow rendering and layout
         }
