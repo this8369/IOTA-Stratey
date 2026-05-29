@@ -571,7 +571,8 @@ export const menuDataKr = [
                 id: "page-139",
                 items: [
                     { label: "액션 아이템 우선순위", id: "page-140" },
-                    { label: "핵심 Metric 추적", id: "page-141" }
+                    { label: "핵심 Metric 추적", id: "page-141" },
+                    { label: "맺음말", id: "page-142" }
                 ]
             }
         ] 
