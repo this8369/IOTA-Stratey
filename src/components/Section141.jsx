@@ -7,11 +7,11 @@ export default function Section141({ isActive }) {
 
     useEffect(() => {
         if (!isActive) { setStep(0); return; }
-        const t1 = setTimeout(() => setStep(1), 300);
-        const t2 = setTimeout(() => setStep(2), 1500);
-        const t3 = setTimeout(() => setStep(3), 2700);
-        const t4 = setTimeout(() => setStep(4), 3900);
-        const t5 = setTimeout(() => setStep(5), 5100);
+        const t1 = setTimeout(() => setStep(1), 100);
+        const t2 = setTimeout(() => setStep(2), 300);
+        const t3 = setTimeout(() => setStep(3), 500);
+        const t4 = setTimeout(() => setStep(4), 700);
+        const t5 = setTimeout(() => setStep(5), 900);
         return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); clearTimeout(t4); clearTimeout(t5); };
     }, [isActive]);
 
