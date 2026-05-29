@@ -31,13 +31,13 @@ export default function Section140({ isActive }) {
                 {/* 3 Column Layout */}
                 <div className="w-full max-w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-6">
                     {/* Macro */}
-                    <div className={`bg-white border-t-[4px] border-[#1e3a8a] shadow-lg p-8 flex flex-col items-start text-left transition-all duration-700 delay-300 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                        <h3 className="text-[24px] font-black text-[#1e3a8a] mb-6">2.1 거시 (Macro)</h3>
+                    <div className={`bg-white border-2 border-[#1e3a8a] shadow-lg p-8 flex flex-col items-start text-left transition-all duration-700 delay-300 ${step >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                        <h3 className="text-[24px] font-black text-[#1e3a8a] mb-6">거시 (Macro)</h3>
                         <ul className="space-y-4">
                             <li className="flex items-start gap-3">
                                 <div className="w-1.5 h-1.5 rounded-full bg-[#1e3a8a] mt-2 shrink-0"></div>
                                 <p className="text-[17px] text-gray-800 font-bold leading-snug break-keep">
-                                    <span className="text-[#1e3a8a]">KOSPI 5,000~6,000 유지 여부</span> (자본 비용 proxy)
+                                    <span className="text-[#1e3a8a]">KOSPI 5,000~6,000 유지 여부</span>
                                 </p>
                             </li>
                             <li className="flex items-start gap-3">
@@ -62,68 +62,68 @@ export default function Section140({ isActive }) {
                     </div>
                     
                     {/* Market */}
-                    <div className={`bg-white border-t-[4px] border-[#3b82f6] shadow-lg p-8 flex flex-col items-start text-left transition-all duration-700 delay-500 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                        <h3 className="text-[24px] font-black text-[#3b82f6] mb-6">2.2 시장 (Market)</h3>
+                    <div className={`bg-white border-2 border-[#1e3a8a] shadow-lg p-8 flex flex-col items-start text-left transition-all duration-700 delay-500 ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                        <h3 className="text-[24px] font-black text-[#1e3a8a] mb-6">시장 (Market)</h3>
                         <ul className="space-y-4">
                             <li className="flex items-start gap-3">
-                                <div className="w-1.5 h-1.5 rounded-full bg-[#3b82f6] mt-2 shrink-0"></div>
+                                <div className="w-1.5 h-1.5 rounded-full bg-[#1e3a8a] mt-2 shrink-0"></div>
                                 <p className="text-[17px] text-gray-800 font-bold leading-snug break-keep">
-                                    <span className="text-[#3b82f6]">서울 프라임 오피스 공실률 4%</span> 이하 유지
+                                    <span className="text-[#1e3a8a]">서울 프라임 오피스 공실률 4%</span> 이하 유지
                                 </p>
                             </li>
                             <li className="flex items-start gap-3">
-                                <div className="w-1.5 h-1.5 rounded-full bg-[#3b82f6] mt-2 shrink-0"></div>
+                                <div className="w-1.5 h-1.5 rounded-full bg-[#1e3a8a] mt-2 shrink-0"></div>
                                 <p className="text-[17px] text-gray-800 font-bold leading-snug break-keep">
-                                    <span className="text-[#3b82f6]">임대료 평당 15만 원 돌파</span> 시점 (GBD 기준)
+                                    <span className="text-[#1e3a8a]">임대료 평당 15만 원 돌파</span> 시점 (GBD 기준)
                                 </p>
                             </li>
                             <li className="flex items-start gap-3">
-                                <div className="w-1.5 h-1.5 rounded-full bg-[#3b82f6] mt-2 shrink-0"></div>
+                                <div className="w-1.5 h-1.5 rounded-full bg-[#1e3a8a] mt-2 shrink-0"></div>
                                 <p className="text-[17px] text-gray-800 font-bold leading-snug break-keep">
-                                    <span className="text-[#3b82f6]">거래량 30조 원</span> 이상 유지
+                                    <span className="text-[#1e3a8a]">거래량 30조 원</span> 이상 유지
                                 </p>
                             </li>
                             <li className="flex items-start gap-3">
-                                <div className="w-1.5 h-1.5 rounded-full bg-[#3b82f6] mt-2 shrink-0"></div>
+                                <div className="w-1.5 h-1.5 rounded-full bg-[#1e3a8a] mt-2 shrink-0"></div>
                                 <p className="text-[17px] text-gray-800 font-bold leading-snug break-keep">
-                                    <span className="text-[#3b82f6]">외국인 자본 유입 비중 25%+</span> 도달
+                                    <span className="text-[#1e3a8a]">외국인 자본 유입 비중 25%+</span> 도달
                                 </p>
                             </li>
                         </ul>
                     </div>
 
                     {/* IGIS */}
-                    <div className={`bg-white border-t-[4px] border-[#0ea5e9] shadow-lg p-8 flex flex-col items-start text-left transition-all duration-700 delay-700 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                        <h3 className="text-[24px] font-black text-[#0ea5e9] mb-6">2.3 이지스 (IGIS)</h3>
+                    <div className={`bg-white border-2 border-[#1e3a8a] shadow-lg p-8 flex flex-col items-start text-left transition-all duration-700 delay-700 ${step >= 5 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                        <h3 className="text-[24px] font-black text-[#1e3a8a] mb-6">이지스 (IGIS)</h3>
                         <ul className="space-y-4">
                             <li className="flex items-start gap-3">
-                                <div className="w-1.5 h-1.5 rounded-full bg-[#0ea5e9] mt-2 shrink-0"></div>
+                                <div className="w-1.5 h-1.5 rounded-full bg-[#1e3a8a] mt-2 shrink-0"></div>
                                 <p className="text-[17px] text-gray-800 font-bold leading-snug break-keep">
-                                    <span className="text-[#0ea5e9]">AUM 분기 성장률</span>
+                                    <span className="text-[#1e3a8a]">AUM 분기 성장률</span>
                                 </p>
                             </li>
                             <li className="flex items-start gap-3">
-                                <div className="w-1.5 h-1.5 rounded-full bg-[#0ea5e9] mt-2 shrink-0"></div>
+                                <div className="w-1.5 h-1.5 rounded-full bg-[#1e3a8a] mt-2 shrink-0"></div>
                                 <p className="text-[17px] text-gray-800 font-bold leading-snug break-keep">
-                                    <span className="text-[#0ea5e9]">글로벌 LP 비중</span>
+                                    <span className="text-[#1e3a8a]">글로벌 LP 비중</span>
                                 </p>
                             </li>
                             <li className="flex items-start gap-3">
-                                <div className="w-1.5 h-1.5 rounded-full bg-[#0ea5e9] mt-2 shrink-0"></div>
+                                <div className="w-1.5 h-1.5 rounded-full bg-[#1e3a8a] mt-2 shrink-0"></div>
                                 <p className="text-[17px] text-gray-800 font-bold leading-snug break-keep">
-                                    <span className="text-[#0ea5e9]">운용 수수료 마진</span>
+                                    <span className="text-[#1e3a8a]">운용 수수료 마진</span>
                                 </p>
                             </li>
                             <li className="flex items-start gap-3">
-                                <div className="w-1.5 h-1.5 rounded-full bg-[#0ea5e9] mt-2 shrink-0"></div>
+                                <div className="w-1.5 h-1.5 rounded-full bg-[#1e3a8a] mt-2 shrink-0"></div>
                                 <p className="text-[17px] text-gray-800 font-bold leading-snug break-keep">
-                                    <span className="text-[#0ea5e9]">인재 retention rate</span>
+                                    <span className="text-[#1e3a8a]">인재 retention rate</span>
                                 </p>
                             </li>
                             <li className="flex items-start gap-3">
-                                <div className="w-1.5 h-1.5 rounded-full bg-[#0ea5e9] mt-2 shrink-0"></div>
+                                <div className="w-1.5 h-1.5 rounded-full bg-[#1e3a8a] mt-2 shrink-0"></div>
                                 <p className="text-[17px] text-gray-800 font-bold leading-snug break-keep">
-                                    <span className="text-[#0ea5e9]">IPR 본 PF 클로징 마일스톤</span>
+                                    <span className="text-[#1e3a8a]">IPR 본 PF 클로징 마일스톤</span>
                                 </p>
                             </li>
                         </ul>
