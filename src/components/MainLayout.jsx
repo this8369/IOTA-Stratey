@@ -161,7 +161,7 @@ export default function MainLayout({ isNavOpen, setIsNavOpen, onNavigate }) {
     const [isActionDone, setIsActionDone] = useState(false);
 
     // Animation durations mapped closely to each page's visual completion timing
-    const slideAnimationTimes = [1148, 2295, 2754, 3213, 1989, 3213, 1913, 2678, 2295, 2295, 2678, 2678, 2678, 2295, 2678, 2678, 2678, 2678, 2678, 2678, 2678, 2678, 2678, 2678, 2295, 2678, 2678, 2678, 1148, 2678, 2678, 2678, 2678, 2678, 1148, 2678, 2678, 2678, 1148, 2907, 2907, 2295, 2295, 2678, 2678, 2678, 2678, 2678, 1148, 2295, 2295, 2295, 2295, 2295, 2295, 2295, 2295, 1148, 2295, 2295, 2295, 2295, 1148, 2295, 2295, 2295, 2295, 2295, 1148, 2295, 2295, 2295, 2295, 1148, 2678, 2678, 2678, 1148, 2678, 2678, 2678, 2678, 1148, 2678, 2678, 2678, 1148, 2678, 2678, 2678, 1148, 2295, 2295, 2678, 1148, 2678, 2678, 1148, 2678, 2678, 2678, 1148, 2678, 2678, 3060, 2907, 1148, 2678, 2678, 2678, 1148, 2678, 2678, 2678, 2295, 2295, 2678, 2678, 2678, 1148, 2678, 2678, 1148, 2295, 2678, 1148, 2678, 2678, 2678, 2678, 2678, 2678, 2678, 2678, 2678];
+    const slideAnimationTimes = [1148, 2295, 2754, 3213, 1989, 3213, 1913, 2678, 2295, 2295, 2678, 2678, 2678, 2295, 2678, 2678, 2678, 2678, 2678, 2678, 2678, 2678, 2678, 2678, 2295, 2678, 2678, 2678, 1148, 2678, 2678, 2678, 2678, 2678, 1148, 2678, 2678, 2678, 1148, 2907, 2907, 2295, 2295, 2678, 2678, 2678, 2678, 2678, 1148, 2295, 2295, 2295, 2295, 2295, 2295, 2295, 2295, 1148, 2295, 2295, 2295, 2295, 1148, 2295, 2295, 2295, 2295, 2295, 1148, 2295, 2295, 2295, 2295, 1148, 2678, 2678, 2678, 1148, 2678, 2678, 2678, 2678, 1148, 2678, 2678, 2678, 1148, 2678, 2678, 2678, 1148, 2295, 2295, 2678, 1148, 2678, 2678, 1148, 2678, 2678, 2678, 1148, 2678, 2678, 3060, 2907, 1148, 2678, 2678, 2678, 1148, 2678, 2678, 2678, 2295, 2295, 2678, 2678, 2678, 1148, 2678, 2678, 1148, 2295, 2678, 1148, 2678, 2678, 2678, 2678, 2678, 2678, 2678, 2678, 600];
 
  useEffect(() => {
  setIsActionDone(false);
@@ -358,7 +358,7 @@ export default function MainLayout({ isNavOpen, setIsNavOpen, onNavigate }) {
                         {/* 15칸 짜리 창문 */}
                         <div className="overflow-hidden w-[382px] md:w-[438px] py-2">
                             {/* 전체 점들이 담긴 실제 트랙 (좌우로 쓱 이동함) */}
-                            <div className="flex items-center gap-2 md:gap-3 transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] dots-track">
+                            <div className="flex items-center gap-0 transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] dots-track">
                                 {slides.map((_, idx) => {
                                     const isDotActive = currentSlide === idx;
                                     const dist = Math.abs(currentSlide - idx);
@@ -369,14 +369,16 @@ export default function MainLayout({ isNavOpen, setIsNavOpen, onNavigate }) {
                                         <div 
                                             key={idx} 
                                             onClick={() => setCurrentSlide(idx)}
-                                            className="relative flex-shrink-0 flex items-center justify-center w-[18px] h-[18px] cursor-pointer group"
-                                            style={{ transform: `scale(${dotScale})`, transition: 'transform 0.5s ease' }}
+                                            // 마우스 클릭영역 확대 (26px / 30px) 및 호버시 연한 흰색 배경
+                                            className="relative flex-shrink-0 flex items-center justify-center w-[26px] h-[26px] md:w-[30px] md:h-[30px] cursor-pointer group rounded-full hover:bg-white/10 transition-colors duration-300"
                                         >
-                                            {/* Inner Fixed Dot (항상 흰색) */}
-                                            <div className="w-[8px] h-[8px] rounded-full bg-white transition-all duration-300 group-hover:bg-gray-300"></div>
-                                            
-                                            {/* Outer Ring for Active State */}
-                                            <div className={`absolute inset-0 border-[1.5px] border-white rounded-full transition-all duration-500 ease-out ${isDotActive ? 'opacity-100 scale-100' : 'opacity-0 scale-[0.6]'}`}></div>
+                                            <div style={{ transform: `scale(${dotScale})`, transition: 'transform 0.5s ease' }} className="relative flex items-center justify-center w-[18px] h-[18px] pointer-events-none">
+                                                {/* Inner Fixed Dot (항상 흰색) */}
+                                                <div className="w-[8px] h-[8px] rounded-full bg-white transition-all duration-300 group-hover:bg-gray-300"></div>
+                                                
+                                                {/* Outer Ring for Active State */}
+                                                <div className={`absolute inset-0 border-[1.5px] border-white rounded-full transition-all duration-500 ease-out ${isDotActive ? 'opacity-100 scale-100' : 'opacity-0 scale-[0.6]'}`}></div>
+                                            </div>
                                         </div>
                                     );
                                 })}
