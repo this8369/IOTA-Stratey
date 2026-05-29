@@ -549,6 +549,13 @@ export const menuDataKr = [
                     { label: "규제 및 임차 리스크", id: "page-133" },
                     { label: "자본 및 거버넌스 리스크", id: "page-134" }
                 ]
+            },
+            {
+                title: "Chapter 6. IOTA가 가진 상징성",
+                id: "page-135",
+                items: [
+                    { label: "역사적 비교", id: "page-135" }
+                ]
             }
         ] 
     }
