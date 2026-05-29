@@ -23,11 +23,7 @@ export default function App() {
  const [currentPage, setCurrentPage] = React.useState(() => getPage());
  const [isNavOpen, setIsNavOpen] = React.useState(() => {
      const saved = sessionStorage.getItem('isNavOpen');
-     if (saved !== null) {
-         return JSON.parse(saved);
-     }
-     // Default open on desktop, closed on mobile
-     return window.innerWidth >= 1024;
+     return saved !== null ? JSON.parse(saved) : false;
  });
 
  React.useEffect(() => {
