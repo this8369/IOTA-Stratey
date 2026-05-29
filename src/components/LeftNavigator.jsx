@@ -173,7 +173,7 @@ export default function LeftNavigator({ currentPage, isOpen, setIsOpen }) {
  <div 
  key={itemIdx}
  onClick={(e) => handleNavigate(e, item)}
- className={`group relative flex items-center gap-2 p-1 rounded-md cursor-pointer transition-all duration-200 border
+ className={`group relative flex items-center gap-2 p-1 rounded-md cursor-pointer transition-all duration-200 border scroll-my-8
  ${isActive ? 'bg-white border-black shadow-sm nav-item-active' : 'bg-transparent border-transparent hover:bg-white hover:border-gray-200 hover:shadow-sm'}`}
  >
  {/* Thumbnail Representation */}
