@@ -36,11 +36,23 @@ export default function LeftNavigator({ currentPage, isOpen, setIsOpen }) {
  };
  window.addEventListener('appSlideGoto', handleGoto);
 
- return () => {
- window.removeEventListener('hashchange', handleHashChange);
- window.removeEventListener('appSlideGoto', handleGoto);
- };
- }, []);
+    return () => {
+        window.removeEventListener('hashchange', handleHashChange);
+        window.removeEventListener('appSlideGoto', handleGoto);
+    };
+    }, []);
+
+    // Auto-scroll active item into view
+    useEffect(() => {
+        if (isOpen && scrollContainerRef.current) {
+            setTimeout(() => {
+                const activeEl = scrollContainerRef.current.querySelector('.nav-item-active');
+                if (activeEl) {
+                    activeEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            }, 150); // slight delay to allow rendering and layout
+        }
+    }, [activeHash, isOpen]);
 
  const handleNavigate = (e, item) => {
  e.preventDefault();
@@ -155,7 +167,7 @@ export default function LeftNavigator({ currentPage, isOpen, setIsOpen }) {
  key={itemIdx}
  onClick={(e) => handleNavigate(e, item)}
  className={`group relative flex items-center gap-2 p-1 rounded-md cursor-pointer transition-all duration-200 border
- ${isActive ? 'bg-white border-black shadow-sm' : 'bg-transparent border-transparent hover:bg-white hover:border-gray-200 hover:shadow-sm'}`}
+ ${isActive ? 'bg-white border-black shadow-sm nav-item-active' : 'bg-transparent border-transparent hover:bg-white hover:border-gray-200 hover:shadow-sm'}`}
  >
  {/* Thumbnail Representation */}
  <div className={`shrink-0 w-10 h-6 rounded border flex items-center justify-center transition-colors
