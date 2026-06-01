@@ -142,6 +142,20 @@ import Section139 from './Section139';
 import Section140 from './Section140';
 import Section141 from './Section141';
 
+const SlideWrapper = React.memo(({ slide, isActive, transformStyle }) => {
+    return (
+        <div 
+            className="absolute inset-0 w-full h-full transition-transform duration-[200ms]"
+            style={{ 
+                transform: transformStyle,
+                transitionTimingFunction: "cubic-bezier(0.83, 0, 0.17, 1)"
+            }}
+        >
+            {React.cloneElement(slide, { isActive })}
+        </div>
+    );
+});
+
 export default function MainLayout({ isNavOpen, setIsNavOpen, onNavigate }) {
     const slidesLength = 142; 
  const [currentSlide, setCurrentSlide] = useState(() => {
@@ -156,7 +170,7 @@ export default function MainLayout({ isNavOpen, setIsNavOpen, onNavigate }) {
  return 0;
  });
 
-    const slides = [<Section1 />, <SectionExecutiveSummary />, <Section2 />, <Section3 />, <Section4 />, <Section5 />, <Section6 />, <Section7 />, <Section8 />, <Section9 />, <Section10 />, <Section11 />, <Section12 />, <Section13 />, <Section14 />, <Section15 />, <Section16 />, <Section17 />, <Section18 />, <Section19 />, <Section20 />, <Section21 />, <Section22 />, <Section23 />, <Section24 />, <Section25 />, <Section26 />, <Section27 />, <Section28 />, <Section29 />, <Section30 />, <Section31 />, <Section32 />, <Section33 />, <Section34 />, <Section35 />, <Section36 />, <Section37 />, <Section38 />, <Section39 />, <Section40 />, <Section41 />, <Section42 />, <Section43 />, <Section44 />, <Section45 />, <Section46 />, <Section47 />, <Section48 />, <Section49 />, <Section50 />, <Section51 />, <Section52 />, <Section53 />, <Section54 />, <Section55 />, <Section56 />, <Section57 />, <Section58 />, <Section59 />, <Section60 />, <Section61 />, <Section62 />, <Section63 />, <Section64 />, <Section65 />, <Section66 />, <Section67 />, <Section68 />, <Section69 />, <Section70 />, <Section71 />, <Section72 />, <Section73 />, <Section74 />, <Section75 />, <Section76 />, <Section77 />, <Section78 />, <Section79 />, <Section80 />, <Section81 />, <Section82 />, <Section83 />, <Section84 />, <Section85 />, <Section86 />, <Section87 />, <Section88 />, <Section89 />, <Section90 />, <Section91 />, <Section92 />, <Section93 />, <Section94 />, <Section95 />, <Section96 />, <Section97 />, <Section98 />, <Section99 />, <Section100 />, <Section101 />, <Section102 />, <Section103 />, <Section104 />, <Section105 />, <Section106 />, <Section107 />, <Section108 />, <Section109 />, <Section110 />, <Section111 />, <Section112 />, <Section113 />, <Section114 />, <Section115 />, <Section116 />, <Section117 />, <Section118 />, <Section119 />, <Section120 />, <Section121 />, <Section122 />, <Section123 />, <Section124 />, <Section125 />, <Section126 />, <Section131 />, <Section132 />, <Section133 />, <Section127 />, <Section128 />, <Section129 />, <Section130 />, <Section137 />, <Section134 />, <Section135 />, <Section136 />, <Section138 />, <Section139 />, <Section140 />, <Section141 />];
+    const slides = React.useMemo(() => [<Section1 />, <SectionExecutiveSummary />, <Section2 />, <Section3 />, <Section4 />, <Section5 />, <Section6 />, <Section7 />, <Section8 />, <Section9 />, <Section10 />, <Section11 />, <Section12 />, <Section13 />, <Section14 />, <Section15 />, <Section16 />, <Section17 />, <Section18 />, <Section19 />, <Section20 />, <Section21 />, <Section22 />, <Section23 />, <Section24 />, <Section25 />, <Section26 />, <Section27 />, <Section28 />, <Section29 />, <Section30 />, <Section31 />, <Section32 />, <Section33 />, <Section34 />, <Section35 />, <Section36 />, <Section37 />, <Section38 />, <Section39 />, <Section40 />, <Section41 />, <Section42 />, <Section43 />, <Section44 />, <Section45 />, <Section46 />, <Section47 />, <Section48 />, <Section49 />, <Section50 />, <Section51 />, <Section52 />, <Section53 />, <Section54 />, <Section55 />, <Section56 />, <Section57 />, <Section58 />, <Section59 />, <Section60 />, <Section61 />, <Section62 />, <Section63 />, <Section64 />, <Section65 />, <Section66 />, <Section67 />, <Section68 />, <Section69 />, <Section70 />, <Section71 />, <Section72 />, <Section73 />, <Section74 />, <Section75 />, <Section76 />, <Section77 />, <Section78 />, <Section79 />, <Section80 />, <Section81 />, <Section82 />, <Section83 />, <Section84 />, <Section85 />, <Section86 />, <Section87 />, <Section88 />, <Section89 />, <Section90 />, <Section91 />, <Section92 />, <Section93 />, <Section94 />, <Section95 />, <Section96 />, <Section97 />, <Section98 />, <Section99 />, <Section100 />, <Section101 />, <Section102 />, <Section103 />, <Section104 />, <Section105 />, <Section106 />, <Section107 />, <Section108 />, <Section109 />, <Section110 />, <Section111 />, <Section112 />, <Section113 />, <Section114 />, <Section115 />, <Section116 />, <Section117 />, <Section118 />, <Section119 />, <Section120 />, <Section121 />, <Section122 />, <Section123 />, <Section124 />, <Section125 />, <Section126 />, <Section131 />, <Section132 />, <Section133 />, <Section127 />, <Section128 />, <Section129 />, <Section130 />, <Section137 />, <Section134 />, <Section135 />, <Section136 />, <Section138 />, <Section139 />, <Section140 />, <Section141 />], []);
 
     const [isActionDone, setIsActionDone] = useState(false);
 
@@ -321,16 +335,12 @@ export default function MainLayout({ isNavOpen, setIsNavOpen, onNavigate }) {
  }
 
  return (
- <div 
- key={index} 
- className="absolute inset-0 w-full h-full transition-transform duration-[200ms]"
- style={{ 
- transform: transformStyle,
- transitionTimingFunction: "cubic-bezier(0.83, 0, 0.17, 1)" // Fast, crisp book-like slide
- }}
- >
- {React.cloneElement(slide, { isActive })}
- </div>
+ <SlideWrapper 
+ key={index}
+ slide={slide}
+ isActive={isActive}
+ transformStyle={transformStyle}
+ />
  );
  })}
 
