@@ -275,9 +275,9 @@ export default function MainLayout({ isNavOpen, setIsNavOpen, onNavigate }) {
         }
         const { clientX } = e;
         const screenWidth = window.innerWidth;
-        if (clientX < screenWidth * 0.3) {
+        if (clientX < screenWidth * 0.2) {
             prevSlide();
-        } else if (clientX > screenWidth * 0.7) {
+        } else if (clientX > screenWidth * 0.8) {
             nextSlide();
         }
     };

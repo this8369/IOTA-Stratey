@@ -106,7 +106,7 @@ export default function LeftNavigator({ currentPage, isOpen, setIsOpen }) {
  onClick={() => setIsOpen(!isOpen)}
  className={`fixed top-1/2 -translate-y-1/2 z-[101] p-1 transition-all duration-300 ease-in-out flex items-center justify-center rounded-r-md border group backdrop-blur-sm
  ${isOpen ? 'left-[240px] border-l-0 bg-white border-gray-200' : 'left-0 bg-white/20 border-gray-200/30 hover:bg-white hover:border-gray-200'}`}
- style={{ width: '24px', height: '40px' }}
+ style={{ width: '36px', height: '70px' }}
  aria-label="Toggle Navigator"
  >
  <svg 
