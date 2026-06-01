@@ -47,6 +47,7 @@
         background-color: #1F1F1E;
         color: #E5E5E5;
         -webkit-overflow-scrolling: touch;
+        overscroll-behavior: none;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-rendering: auto;
