@@ -269,6 +269,19 @@ export default function MainLayout({ isNavOpen, setIsNavOpen, onNavigate }) {
  }
  };
 
+    const handleScreenClick = (e) => {
+        if (e.target.closest('button, a, input, [role="button"], .clickable')) {
+            return;
+        }
+        const { clientX } = e;
+        const screenWidth = window.innerWidth;
+        if (clientX < screenWidth * 0.3) {
+            prevSlide();
+        } else if (clientX > screenWidth * 0.7) {
+            nextSlide();
+        }
+    };
+
  return (
  <>
  <style>{`
@@ -293,6 +306,7 @@ export default function MainLayout({ isNavOpen, setIsNavOpen, onNavigate }) {
  onTouchStart={onTouchStart}
  onTouchMove={onTouchMove}
  onTouchEnd={onTouchEnd}
+ onClick={handleScreenClick}
  >
  {slides.map((slide, index) => {
  const isActive = index === currentSlide;
