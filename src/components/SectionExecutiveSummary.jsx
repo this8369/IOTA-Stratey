@@ -61,7 +61,7 @@ export default function SectionExecutiveSummary({ isActive }) {
                         </div>
 
                         <div className="mb-6" style={{ marginTop: '42px' }}>
-                            <h2 className="text-xl font-bold mb-3 text-black">{lang === 'kr' ? 'Part 4 IOTA 서울 실행' : 'Part 4. IOTA Seoul Execution'}</h2>
+                            <h2 className="text-xl font-bold mb-3 text-black">{lang === 'kr' ? 'Part 4 IOTA Seoul의 역할' : 'Part 4. IOTA Seoul Execution'}</h2>
                             <div className="text-[15px] md:text-[17px] leading-[1.7] font-medium whitespace-pre-wrap text-gray-800 break-keep">
                                 {lang === 'kr' ? "전략의 실체인 IOTA 서울의 투자가치, 거버넌스 리스크, 자본 조달, 그리고 위기 상황 돌파를 위한 비상 대응책(Contingency Plan)을 제시하며, 당면한 핵심 과제를 12개월 타임라인으로 환산하여 즉각적인 행동을 촉구합니다." : "Presenting the investment value, governance risks, capital raising, and contingency plans for overcoming crises for IOTA Seoul—the core execution of the strategy—we translate imminent key tasks into a 12-month timeline to urge immediate action."}
                             </div>
