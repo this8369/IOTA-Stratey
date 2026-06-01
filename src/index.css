@@ -69,6 +69,12 @@
             zoom: 0.44;
             min-height: 250vh;
         }
+        .h-screen {
+            height: 227.27vh !important;
+        }
+        .min-h-screen {
+            min-height: 227.27vh !important;
+        }
     }
 }
 
